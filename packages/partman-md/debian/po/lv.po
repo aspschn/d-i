@@ -1,0 +1,576 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of lv.po to Latvian
+# Latvian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Translations from iso-codes:
+# Copyright (C) Free Software Foundation, Inc., 2001,2003.
+# Translations from KDE:
+# Andris Maziks <andzha@latnet.lv>
+#
+# Aigars Mahinovs <aigarius@debian.org>, 2006, 2008.
+# Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008.
+# Aigars Mahinovs <aigarius@debian.org>, 2006.
+# Alastair McKinstry <mckinstry@computer.org>, 2001, 2002.
+# Free Software Foundation, Inc., 2002,2004.
+# Juris Kudiņš <cooker@inbox.lv>, 2001.
+# Rihards Priedītis <rprieditis@gmail.com>, 2009, 2010.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012.
+# Peteris Krisjanis <pecisk@gmail.com>, 2008, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lv\n"
+"Report-Msgid-Bugs-To: partman-md@packages.debian.org\n"
+"POT-Creation-Date: 2009-07-17 22:47+0000\n"
+"PO-Revision-Date: 2012-05-27 12:29+0300\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latviešu <locale-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2)\n"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-md.templates:1001
+msgid "Software RAID device"
+msgstr "Programmatūras RAID ierīce"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-md.templates:2001
+msgid "Configure software RAID"
+msgstr "Konfigurēt programmatūras RAID"
+
+#. Type: text
+#. Description
+#. :sl3:
+#. What is "in use" is a partition
+#: ../partman-md.templates:3001
+msgid "In use by software RAID device ${DEVICE}"
+msgstr "Lieto programmatūras RAID ${DEVICE}"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:4001
+msgid "Software RAID not available"
+msgstr "Programmatūras RAID nav pieejams"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:4001
+msgid ""
+"The current kernel doesn't seem to support software RAID (MD) devices. This "
+"should be solved by loading the necessary modules."
+msgstr ""
+"Šis kodols neatbalsta programmatūras RAID ierīces. To varētu atrisināt, "
+"ielādējot attiecīgus moduļus."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-md.templates:5001
+msgid "Create MD device"
+msgstr "Izveidot MD ierīci"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-md.templates:5001
+msgid "Delete MD device"
+msgstr "Dzēst MD ierīci"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-md.templates:5001
+msgid "Finish"
+msgstr "Beigt"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:5002
+msgid "Software RAID configuration actions"
+msgstr "Programmatūras RAID konfigurēšanas darbības"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:5002
+msgid ""
+"This is the software RAID (or MD, \"multiple device\") configuration menu."
+msgstr ""
+"Šī ir programmatūras RAID (jeb MD, jeb daudzdisku) konfigurēšanas izvēlne."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:5002
+msgid "Please select one of the proposed actions to configure software RAID."
+msgstr ""
+"Lūdzu, izvēlieties vienu no šīm darbībām, lai konfigurētu programmatūras "
+"RAID."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:6001
+msgid "Software RAID device type:"
+msgstr "Programmatūras RAID ierīces tips:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:6001
+msgid "Please choose the type of the software RAID device to be created."
+msgstr "Lūdzu, izvēlieties, kāda tipa programmatūras RAID ierīci izveidot."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:7001
+msgid "No RAID partitions available"
+msgstr "RAID nodalījumi nav pieejami"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:7001
+msgid ""
+"No unused partitions of the type \"Linux RAID Autodetect\" are available. "
+"Please create such a partition, or delete an already used software RAID "
+"device to free its partitions."
+msgstr ""
+"Nav atrasti neaizņemti \"Linux·RAID·Autodetect\" tipa nodalījumi. Lūdzu, "
+"izveidojiet šādu nodalījumu vai dzēsiet jau izveidotu programmatūras RAID "
+"ierīci, lai atbrīvotu tajā iekļautos nodalījumus."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:7001
+msgid ""
+"If you have such partitions, they might contain actual file systems, and are "
+"therefore not available for use by this configuration utility."
+msgstr ""
+"Ja jums ir šādi nodalījumi, tie varētu jau saturēt datņu sistēmas, un tāpēc "
+"tās nav pieejamas apstrādei ar šo konfigurēšanas rīku."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:8001
+msgid "Active devices for the RAID0 array:"
+msgstr "Aktīvo ierīču skaits RAID0 masīvam:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:8001
+msgid ""
+"You have chosen to create a RAID0 array. Please choose the active devices in "
+"this array."
+msgstr ""
+"Jūs izvēlējāties izveidot RAID0 masīvu. Lūdzu, izvēlieties šī masīva aktīvās "
+"ierīces."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:9001
+msgid "Number of active devices for the RAID${LEVEL} array:"
+msgstr "Aktīvo ierīču skaits RAID${LEVEL} masīvam:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:9001
+msgid ""
+"The RAID${LEVEL} array will consist of both active and spare devices. The "
+"active devices are those used, while the spare devices will only be used if "
+"one or more of the active devices fail. A minimum of ${MINIMUM} active "
+"devices is required."
+msgstr ""
+"RAID${LEVEL} masīvs sastāvēs no aktīvām un rezerves ierīcēm. Aktīvās ierīces "
+"tiek lietotas, bet rezerves ierīces tiks lietotas tikai tad, ja viena vai "
+"vairākas aktīvās ierīces nespēs darboties. Nepieciešamas vismaz ${MINIMUM} "
+"aktīvās ierīces."
+
+#. Type: string
+#. Description
+#. :sl3:
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:9001 ../partman-md.templates:14001
+msgid "NOTE: this setting cannot be changed later."
+msgstr "PIEZĪME: šo iestatījumu vēlāk nevarēs mainīt."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:10001
+msgid "Active devices for the RAID${LEVEL} array:"
+msgstr "Aktīvās ierīces RAID${LEVEL} masīvam:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:10001
+msgid ""
+"You have chosen to create a RAID${LEVEL} array with ${COUNT} active devices."
+msgstr ""
+"Jūs izvēlējāties izveidot RAID${LEVEL} masīvu ar ${COUNT} aktīvām ierīcēm."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:10001
+msgid ""
+"Please choose which partitions are active devices. You must select exactly "
+"${COUNT} partitions."
+msgstr ""
+"Lūdzu, izvēlieties, kuri nodalījumi būs aktīvās ierīces. Jums ir jāizvēlas "
+"tieši ${COUNT} nodalījumi."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:11001
+msgid "Number of spare devices for the RAID${LEVEL} array:"
+msgstr "Rezerves ierīču skaits RAID${LEVEL} masīvam:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:12001
+msgid "Spare devices for the RAID${LEVEL} array:"
+msgstr "Rezerves ierīces RAID${LEVEL} masīvam:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:12001
+msgid ""
+"You have chosen to create a RAID${LEVEL} array with ${COUNT} spare devices."
+msgstr ""
+"Jūs izvēlējāties izveidot RAID${LEVEL} masīvu ar ${COUNT} rezerves ierīcēm."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:12001
+msgid ""
+"Please choose which partitions will be used as spare devices. You may choose "
+"up to ${COUNT} partitions. If you choose less than ${COUNT} devices, the "
+"remaining partitions will be added to the array as \"missing\". You will be "
+"able to add them to the array later."
+msgstr ""
+"Lūdzu, izvēlieties, kuri nodalījumi tiks izmantoti kā rezerves ierīces. Jūs "
+"varat izvēlēties ne vairāk kā ${COUNT} nodalījumus. Ja Jūs izvēlēsieties "
+"mazāk nekā ${COUNT} ierīces, atlikušie nodalījumi tiks pievienoti masīvam kā "
+"\"iztrūkstoši\". Jūs varēsiet tos pievienot vēlāk."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:13001
+msgid "Not enough RAID partitions available"
+msgstr "Nepietiekošs RAID nodalījumu skaits"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:13001
+msgid ""
+"There are not enough RAID partitions available for your selected "
+"configuration.  You have ${NUM_PART} RAID partitions available but your "
+"configuration requires ${REQUIRED} partitions."
+msgstr ""
+"Jūsu izvēlētajai konfigurācijai nav pieejams pietiekošs skaits brīvu RAID "
+"nodalījumu. Jums ir ${NUM_PART} brīvi RAID nodalījumi, bet jūsu izvēlētajai "
+"konfigurācijai nepieciešams(-i) ${REQUIRED}."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:14001
+msgid "Layout of the RAID10 array:"
+msgstr "Izkārtojums programmatūras RAID10 ierīcei:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:14001
+msgid ""
+"The layout must be n, o, or f (arrangement of the copies) followed by a "
+"number (number of copies of each chunk). The number must be smaller or equal "
+"to the number of active devices."
+msgstr ""
+"Izkārtojumam jābūt n, o vai f (kopiju izvietojums), kam seko skaitlis (katra "
+"gabala kopiju skaits). Skaitlim jābūt mazākam vai vienādam ar aktīvo ierīču "
+"skaitu."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:14001
+msgid ""
+"The letter is the arrangement of the copies:\n"
+" n - near copies: Multiple copies of one data block are at similar\n"
+"     offsets in different devices.\n"
+" f - far copies: Multiple copies have very different offsets\n"
+" o - offset copies: Rather than the chunks being duplicated within a\n"
+"     stripe, whole stripes are duplicated but are rotated by one\n"
+"     device so duplicate blocks are on different devices."
+msgstr ""
+"Burts ir kopiju izvietojums:\n"
+" n - near copies (tuvās kopijas) - viena datu gabala kopijas ir izvietotas\n"
+"     līdzīgās nobīdēs dažādās ierīcēs.\n"
+" f - far copies (tālās kopijas) - kopijām ir ļoti dažādas nobīdes\n"
+" o - offset copies (nobīdītas kopijas) - tā vietā, lai dublētu gabalus\n"
+"     vienā svītrā, veselas svītras tiek dublētas, bet novirzītas par\n"
+"     vienu ierīci, tā ka bloku kopijas ir dažādās ierīcēs."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:15001
+msgid "Software RAID device to be deleted:"
+msgstr "Dzēšamā programmatūras RAID ierīce:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:15001
+msgid ""
+"Deleting a software RAID device will stop it and clear the superblock of all "
+"its components."
+msgstr ""
+"Programmatūras RAID ierīces dzēšana apstādinās to un dzēsīs visu tās "
+"komponentu superbloku."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:15001
+msgid ""
+"Please note this will not immediately allow you to reuse the partitions or "
+"devices in a new software RAID device. The array will however be unusable "
+"after the deletion."
+msgstr ""
+"Piezīme: šī darbība neatļaus uzreiz izmantot šos nodalījumus jaunai "
+"programmatūras RAID ierīcei, taču masīvs pēc dzēšanas būs nelietojams."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:15001
+msgid ""
+"If you select a device for deletion, you will get some information about it "
+"and you will be given the option of aborting this operation."
+msgstr ""
+"Ja jūs izvēlēsities dzēst kādu ierīci, jums tiks sniegta informācija par šo "
+"ierīci un iespēja atcelt dzēšanas darbību."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:16001
+msgid "No software RAID devices available"
+msgstr "Programmatūras RAID ierīces nav pieejamas"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:16001
+msgid "No software RAID devices are available for deletion."
+msgstr "Programmatūras RAID ierīces dzēšanai nav atrastas."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:17001
+msgid "Really delete this software RAID device?"
+msgstr "Tiešām dzēst šo programmatūras RAID ierīci?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:17001
+msgid ""
+"Please confirm whether you really want to delete the following software RAID "
+"device:"
+msgstr ""
+"Lūdzu, apstipriniet, ka jūs tiešām vēlaties dzēst šo programmatūras RAID "
+"ierīci:"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:17001
+msgid ""
+" Device:            ${DEVICE}\n"
+" Type:              ${TYPE}\n"
+" Component devices:"
+msgstr ""
+" Ierīce:           ${DEVICE}\n"
+" Tips:              ${TYPE}\n"
+" Komponentierīces:"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:18001
+msgid "Failed to delete the software RAID device"
+msgstr "Neizdevās izdzēst programmatūras RAID ierīci"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:18001
+msgid "There was an error deleting the software RAID device. It may be in use."
+msgstr ""
+"Notikusi kļūda, mēģinot dzēst programmatūras RAID ierīci. Iespējams, ka tā "
+"šobrīd tiek izmantota."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:19001
+msgid "Write the changes to the storage devices and configure RAID?"
+msgstr "Ierakstīt izmaiņas atmiņas ierīcē un konfigurēt RAID?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:19001
+msgid ""
+"Before RAID can be configured, the changes have to be written to the storage "
+"devices.  These changes cannot be undone."
+msgstr ""
+"Pirms konfigurēt RAID, veiktās izmaiņas jāieraksta atmiņas ierīcē. Šīs "
+"izmaiņas nevarēs atcelt."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:19001 ../partman-md.templates:20001
+msgid ""
+"When RAID is configured, no additional changes to the partitions in the "
+"disks containing physical volumes are allowed.  Please convince yourself "
+"that you are satisfied with the current partitioning scheme in these disks."
+msgstr ""
+"Kad RAID ir nokonfigurēts, vairs nevar veikt izmaiņas iesaistīto disku "
+"dalījumā. Lūdzu, pārliecinieties, ka jūs apmierina esošā nodalījumu "
+"struktūra šajos diskos."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:20001
+msgid "Keep current partition layout and configure RAID?"
+msgstr "Saglabāt esošo nodalījumu izkārtojumu un konfigurēt RAID?"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:21001
+msgid "RAID configuration failure"
+msgstr "RAID konfigurēšanas kļūda"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:21001
+msgid "An error occurred while writing the changes to the storage devices."
+msgstr "Kļūda, mēģinot ierakstīt izmaiņas ierīcēs."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:21001
+msgid "RAID configuration has been aborted."
+msgstr "RAID konfigurēšana tika pārtraukta."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-md.templates:22001
+msgid "physical volume for RAID"
+msgstr "RAID fiziskais sējums"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-md.templates:23001
+msgid "raid"
+msgstr "raid"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:24001
+msgid "Remove existing software RAID partitions?"
+msgstr "Dzēst esošos programmatūras RAID nodalījumus?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:24001
+msgid ""
+"The selected device contains partitions used for software RAID devices. The "
+"following devices and partitions are about to be removed:"
+msgstr ""
+"Izvēlētā ierīce jau satur nodalījumus, ko izmanto programmatūras RAID "
+"ierīces. Šīs ierīces un nodalījumi tiks dzēsti:"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:24001
+msgid "Software RAID devices about to be removed: ${REMOVED_DEVICES}"
+msgstr "Programmatūras RAID ierīces, kas tiks likvidētas: ${REMOVED_DEVICES}"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:24001
+msgid "Partitions used by these RAID devices: ${REMOVED_PARTITIONS}"
+msgstr "Nodalījumi, ko lieto šīs ierīces: ${REMOVED_PARTITIONS}"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:24001
+msgid ""
+"Note that this will also permanently erase any data currently on the "
+"software RAID devices."
+msgstr ""
+"Piezīme: šī darbība neatgriezeniski izdzēsīs visu informāciju no šīm RAID "
+"ierīcēm."

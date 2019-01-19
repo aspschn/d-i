@@ -1,0 +1,129 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of te.po to Telugu
+# Telugu translation for debian-installer
+# This file is distributed under the same license as the debian-installer package.
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
+#
+# Translations from iso-codes:
+# వీవెన్ (Veeven) <launchpad.net>, 2007.
+# Y Giridhar Appaji Nag <giridhar@appaji.net>, 2008.
+# Arjuna Rao Chavala <arjunaraoc@gmail.com>,2010.
+# Y Giridhar Appaji Nag <appaji@debian.org>, 2008, 2009.
+# Krishna Babu K <kkrothap@redhat.com>, 2009.
+# Arjuna Rao Chavala <arjunaraoc@googlemail.com>, 2011, 2012.
+# Praveen Illa <mail2ipn@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: te\n"
+"Report-Msgid-Bugs-To: pkgsel@packages.debian.org\n"
+"POT-Creation-Date: 2018-06-27 14:00+0200\n"
+"PO-Revision-Date: 2018-12-25 14:08+0000\n"
+"Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
+"Language-Team: d-i <kde-i18n-doc@kde.org>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. should not be more than 55 columns
+#. pkgsel is the module that installs packages by running tasksel to
+#. select "tasks". Please use "install *software*" and not
+#. "install *packages*" which is less adapted for non technical users
+#: ../pkgsel.templates:1001
+msgid "Select and install software"
+msgstr "సాఫ్ట్వేర్  స్థాపనకి ఎంచుకో"
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when pkgsel is launched, before it installs packages
+#: ../pkgsel.templates:2001
+msgid "Setting up..."
+msgstr "అమర్చుట..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when upgrading already installed packages.
+#: ../pkgsel.templates:4001
+msgid "Upgrading software..."
+msgstr "సాఫ్ట్వేర్ తాజాకరణ చేయు..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when running tasksel to allow selecting packages
+#. Tasksel will then display its own screens
+#: ../pkgsel.templates:5001
+msgid "Running tasksel..."
+msgstr "టాస్క్సెల్(tasksel) నడుపు..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used at the end of the installation phase while
+#. cleaning up pkgsel's stuff
+#: ../pkgsel.templates:6001
+msgid "Cleaning up..."
+msgstr "శుభ్రపరుస్తున్నా..."
+
+#. Type: text
+#. Description
+#: ../pkgsel.templates:8001
+msgid "Running ${SCRIPT}..."
+msgstr "${SCRIPT} నడుపుట..."
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "No automatic updates"
+msgstr "స్వయంచాలక నవీకరణలు వద్దు"
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "Install security updates automatically"
+msgstr "భద్రతా నవీకరణలను స్వయంచాలకంగా స్థాపించు"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid "Updates management on this system:"
+msgstr "ఈ వ్యవస్థలో నవీకరణల నిర్వహణ:"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Applying updates on a frequent basis is an important part of keeping the "
+"system secure."
+msgstr "వ్యవస్థను భద్రంగా ఉంచుకోవడానికి తరచూ నవీకరణలను అనువర్తించడం చాలా కీలకం."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"By default, security updates are not automatically installed, as security "
+"advisories should be reviewed before manual installation of the updates "
+"using standard package management tools."
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Alternatively the unattended-upgrades package can be installed, which will "
+"install security updates automatically. Note however that automatic "
+"installation of updates may occasionally cause unexpected downtime of "
+"services provided by this machine in the rare cases where the update is not "
+"fully backward-compatible, or where the security advisory requires the "
+"administrator to perform some other manual operation."
+msgstr ""

@@ -1,0 +1,167 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Amharic translation for debian-installer
+# This file is distributed under the same license as the debian-installer package.
+# tegegne tefera <tefera@mekuria.com>, 2006.
+#
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004.
+#   Data taken from ICU-2.8; contributed by:
+#   - Daniel Yacob <yacob@geez.org>, Ge'ez Frontier Foundation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: s390-dasd@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-28 22:01+0000\n"
+"PO-Revision-Date: 2014-04-04 22:07+0100\n"
+"Last-Translator: Tegegne Tefera <tefera@mekuria.com>\n"
+"Language-Team: Amharic <linux-ethiopia@googlegroups.com>\n"
+"Language: am\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: n>1;\n"
+
+#. Type: select
+#. Choices
+#. :sl5:
+#. TRANSLATORS, please translate "Finish" the same way you translate it in
+#. the 'Select "Finish" at the bottom of the list when you are done' string
+#: ../s390-dasd.templates:1001
+msgid "Finish"
+msgstr "ጨርሽ"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+#, fuzzy
+msgid "Available devices:"
+msgstr "ያሉ ዲስኮች፦"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+#, fuzzy
+msgid ""
+"The following direct access storage devices (DASD) are available. Please "
+"select each device you want to use one at a time."
+msgstr "የሚቀጥሉት ዲስኮች በጥቅም ላይ ሊውሉ ይችላሉ። እባክዎ መጠቀም የሚፈልጉትን አንድ ባንድ ይምረጡ።"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Select \"Finish\" at the bottom of the list when you are done."
+msgstr "ሲጨርሱ በዝርዝሩ መጨረሻ (ጨርስ) \"Finish\" የሚለውን ይምረጡ።"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+#, fuzzy
+msgid "Choose device:"
+msgstr "ዲስክ ምረጥ፦"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+#, fuzzy
+msgid ""
+"Please choose a device. You have to specify the complete device number, "
+"including leading zeros."
+msgstr "እባክዎ ዲስክ ይምረጡ። የአካሉን ቁጥር ከቀዳሚ ዜሮዎች ጭምር መስጠት ይኖርብዎታል።"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+#, fuzzy
+msgid "Invalid device"
+msgstr "የተሳሳተ መጠን"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "An invalid device number has been chosen."
+msgstr "የተመረጠው የተሳሳተ የአካል ቁጥር ነው።"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001 ../s390-dasd.templates:5001
+#, fuzzy
+msgid "Format the device?"
+msgstr "ዲስኩ ይሟሽ?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid "The DASD ${device} is already low-level formatted."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid ""
+"Please choose whether you want to format again and remove any data on the "
+"DASD. Note that formatting a DASD might take a long time."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:5001
+#, fuzzy
+msgid ""
+"The DASD ${device} is not low-level formatted. DASD devices must be "
+"formatted before you can create partitions."
+msgstr ""
+"ተካዩ ${device} ይሟሽ አይሟሽ ማረጋገጥ አልቻለም። ዲስኮች ከመከፈላቸው በፊት በቅድሚያ መሟሸት አለባቸው፡፡"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+#, fuzzy
+msgid "The DASD ${device} is in use"
+msgstr "ቁስ በስራ ላይ"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid ""
+"Could not low-level format the DASD ${device} because the DASD is in use.  "
+"For example, the DASD could be a member of a mapped device in an LVM volume "
+"group."
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:7001
+msgid "Formatting ${device}..."
+msgstr "${device}ን በማሟሸት ላይ..."
+
+#. Type: text
+#. Description
+#. Main menu item. Keep translations below 55 columns
+#. :sl5:
+#: ../s390-dasd.templates:8001
+#, fuzzy
+msgid "Configure direct access storage devices (DASD)"
+msgstr "የdisk access storage devices (DASD)ን አዘጋጅ"

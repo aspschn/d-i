@@ -1,0 +1,36 @@
+## Run "di-netboot-assistant rebuild-menu" when you modify this file.
+##
+
+MENU TITLE Debian-Installer Netboot Menu
+DEFAULT bootlocal
+
+# TIMEOUT 100
+#
+# ########################################################################
+#
+# Install stable automatically.
+# For details consult '/usr/share/doc/di-netboot-assistant/README.preseed'.
+#
+#LABEL autoinstall
+#        MENU LABEL Debian stable (armhf) + preseed
+#        fdtdir stable/armhf/dtbs/
+#        kernel stable/armhf/vmlinuz
+#        append  --- auto=true priority=critical url=tftp://installbox
+#        initrd stable/armhf/initrd.gz
+#
+#
+# Installer on HDMI screen:
+#
+#LABEL testing-armhf
+#        MENU LABEL Debian testing (armhf)
+#        fdtdir testing/armhf/dtbs/
+#        kernel testing/armhf/vmlinuz
+#        append console=tty1
+#        initrd testing/armhf/initrd.gz
+#
+# ########################################################################
+
+LABEL bootlocal
+        MENU LABEL Boot local..
+        LOCALBOOT 0
+

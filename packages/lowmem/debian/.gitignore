@@ -1,0 +1,6 @@
+*.debhelper*
+*.substvars
+files
+lowmem
+lowmemcheck
+

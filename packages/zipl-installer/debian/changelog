@@ -1,0 +1,512 @@
+zipl-installer (0.0.38) unstable; urgency=medium
+
+  * Team upload
+
+  [ Cyril Brulebois ]
+  * Update Vcs-{Browser,Git} to point to salsa (alioth's replacement).
+
+  [ Updated translations ]
+  * Hebrew (he.po) by Yaron Shahrabani
+
+ -- Holger Wansing <hwansing@mailbox.org>  Mon, 27 Aug 2018 12:57:29 +0200
+
+zipl-installer (0.0.37) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Icelandic (is.po) by Sveinn í Felli
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 19 Jan 2018 06:46:56 +0100
+
+zipl-installer (0.0.36) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Norwegian Nynorsk (nn.po) by Allan Nordhøy
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 10 Dec 2017 21:03:07 +0100
+
+zipl-installer (0.0.35) unstable; urgency=medium
+
+  * Copy Ubuntu's fix-up for the btrfs subvolume check from 0.0.33ubuntu2.
+    (Closes: #840230)
+
+ -- Philipp Kern <pkern@debian.org>  Sun, 23 Oct 2016 23:25:37 +0200
+
+zipl-installer (0.0.34) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 18 Sep 2016 18:45:39 +0200
+
+zipl-installer (0.0.33) unstable; urgency=medium
+
+  * Query /target's btrfs subvolume and correctly add rootfs subvol flag
+    to the kernel arguments in the generated zipl.conf. LP: #1557329.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Fri, 01 Apr 2016 15:45:28 +0100
+
+zipl-installer (0.0.32) unstable; urgency=medium
+
+  [ Hendrik Brueckner ]
+  * Mount /sys and /dev before running zipl.
+  * Setup re-IPL settings. (Closes: #813506)
+
+ -- Philipp Kern <pkern@debian.org>  Sun, 14 Feb 2016 13:41:57 +0100
+
+zipl-installer (0.0.31) unstable; urgency=medium
+
+  [ Colin Watson ]
+  * Use HTTPS for Vcs-* URLs, and link to cgit rather than gitweb.
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 04 Feb 2016 07:00:48 +0100
+
+zipl-installer (0.0.30) unstable; urgency=medium
+
+  * Fix elif/then syntax in postinst script, thanks to Hendrik Brueckner
+    and Viktor Mihajlovski.
+
+ -- Cyril Brulebois <kibi@debian.org>  Thu, 14 Jan 2016 20:42:59 +0100
+
+zipl-installer (0.0.29) unstable; urgency=medium
+
+  [ Viktor Mihajlovski ]
+  * postinst: use UUID for root device parameter where possible
+    (Closes: #806341)
+
+ -- Philipp Kern <pkern@debian.org>  Wed, 06 Jan 2016 10:30:46 +0100
+
+zipl-installer (0.0.28) unstable; urgency=medium
+
+  * Use mapdevfs to find the device of the root filesystem.
+
+ -- Philipp Kern <pkern@debian.org>  Sun, 04 Oct 2015 20:02:20 +0200
+
+zipl-installer (0.0.27) unstable; urgency=medium
+
+  * Log the output of zipl to syslog.
+  * Mount proc before running zipl in the chroot; unmount it afterwards.
+
+ -- Philipp Kern <pkern@debian.org>  Tue, 01 Sep 2015 00:14:42 +0200
+
+zipl-installer (0.0.26) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 22 Jul 2015 09:43:33 +0200
+
+zipl-installer (0.0.25) unstable; urgency=low
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 08 Sep 2013 19:34:41 +0200
+
+zipl-installer (0.0.24) unstable; urgency=low
+
+  [ Dmitrijs Ledkovs ]
+  * Set debian source format to '3.0 (native)'.
+  * Bump debhelper compat level to 9.
+  * Set Vcs-* to canonical format.
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 20 Jul 2013 19:41:33 +0200
+
+zipl-installer (0.0.23) unstable; urgency=low
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 19 May 2013 18:33:50 +0200
+
+zipl-installer (0.0.22) unstable; urgency=low
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+
+  [ Christian Perrier ]
+  * Add myself to Uploaders
+  * Replace XC-Package-Type by Package-Type
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 13 Dec 2012 06:07:35 +0100
+
+zipl-installer (0.0.21) unstable; urgency=low
+
+  [ Updated translations ]
+  * bo (bo.po) by Tennom
+  * Welsh (cy.po) by Dafydd Tomos
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Latvian (lv.po) by Rūdolfs Mazurs
+  * Macedonian (mk.po) by Arangel Angov
+  * Punjabi (Gurmukhi) (pa.po) by A S Alam
+
+ -- Philipp Kern <pkern@debian.org>  Sat, 16 Jun 2012 11:34:33 +0000
+
+zipl-installer (0.0.20) unstable; urgency=low
+
+  [ Updated translations ]
+  * Asturian (ast.po) by Mikel González
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Estonian (et.po) by Mattias Põldaru
+  * Hebrew (he.po) by Lior Kaplan
+  * Indonesian (id.po) by Mahyuddin Susanto
+  * Icelandic (is.po) by Sveinn í Felli
+  * Kannada (kn.po) by vignesh prabhu
+  * Sinhala (si.po) by Danishka Navin
+
+ -- Otavio Salvador <otavio@debian.org>  Thu, 15 Mar 2012 15:36:39 -0300
+
+zipl-installer (0.0.19) unstable; urgency=low
+
+  [ Philipp Kern ]
+  * debian/control: add s390x
+  * debian/control: add ${misc:Depends} to get a dependency on cdebconf-udeb 
+  * debian/control: add myself to uploaders
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+  * Esperanto (eo.po) by Felipe Castro
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Italian (it.po) by Milo Casagrande
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Korean (ko.po) by Changwoo Ryu
+  * Macedonian (mk.po) by Arangel Angov
+  * Nepali (ne.po)
+  * Polish (pl.po) by Marcin Owsiany
+  * Romanian (ro.po) by Ioan Eugen Stan
+  * Northern Sami (se.po) by Børre Gaup
+  * Sinhala (si.po) by Danishka Navin
+  * Slovak (sk.po) by Ivan Masár
+  * Swedish (sv.po) by Daniel Nylander
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Uyghur (ug.po) by Sahran
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Philipp Kern <pkern@debian.org>  Sun, 02 Oct 2011 22:40:02 +0200
+
+zipl-installer (0.0.18) unstable; urgency=low
+
+  [ Updated translations ]
+  * Lao (lo.po) by Anousak Souphavanh
+  * Sinhala (si.po) by Danishka Navin
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 24 Dec 2010 20:58:39 -0200
+
+zipl-installer (0.0.17) unstable; urgency=low
+
+  [ Updated translations ]
+  * Asturian (ast.po) by maacub
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bengali (bn.po) by Israt Jahan
+  * Bosnian (bs.po) by Armin Beširović
+  * Catalan (ca.po) by Jordi Mallach
+  * Danish (da.po) by Anders Jenbo
+  * Icelandic (is.po) by Sveinn í Felli
+  * Telugu (te.po) by Arjuna Rao Chavala
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 12 Nov 2010 16:04:25 -0200
+
+zipl-installer (0.0.16) unstable; urgency=low
+
+  [ Colin Watson ]
+  * Make findfs use the last of any mounts found, in case there's more than
+    one due to pilot error in the partitioner.
+  * Upgrade to debhelper v7.
+
+  [ Frans Pop ]
+  * Remove Standards-Version field.
+
+  [ Updated translations ]
+  * Asturian (ast.po) by astur
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Bengali (bn.po) by Md. Rezwan Shahid
+  * Danish (da.po) by Jacob Sparre Andersen
+  * German (de.po) by Holger Wansing
+  * Esperanto (eo.po) by Felipe Castro
+  * Estonian (et.po) by Mattias Põldaru
+  * Basque (eu.po) by Piarres Beobide
+  * Persian (fa.po) by acathur
+  * French (fr.po) by Christian Perrier
+  * Hindi (hi.po)
+  * Italian (it.po) by Milo Casagrande
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Central Khmer (km.po) by Khoem Sokhem
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Macedonian (mk.po) by Arangel Angov
+  * Malayalam (ml.po) by Praveen Arimbrathodiyil
+  * Marathi (mr.po) by Sampada
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Tagalog (tl.po) by Eric Pareja
+  * Simplified Chinese (zh_CN.po) by 苏运强
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 12 Jul 2010 13:55:21 +0100
+
+zipl-installer (0.0.15) unstable; urgency=low
+
+  [ Updated translations ]
+  * Bosnian (bs.po) by Armin Besirovic
+  * Welsh (cy.po) by Jonathan Price
+  * Danish (da.po)
+  * French (fr.po) by Christian Perrier
+  * Croatian (hr.po) by Josip Rodin
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Marathi (mr.po) by Sampada
+  * Panjabi (pa.po) by Amanpreet Singh Alam
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Serbian (sr.po) by Veselin Mijušković
+
+ -- Frans Pop <fjp@debian.org>  Tue, 23 Sep 2008 06:18:00 +0200
+
+zipl-installer (0.0.14) unstable; urgency=low
+
+  [ Updated translations ]
+  * Amharic (am.po) by tegegne tefera
+  * Indonesian (id.po) by Arief S Fitrianto
+  * Korean (ko.po) by Changwoo Ryu
+  * Kurdish (ku.po) by Amed Çeko Jiyan
+  * Malayalam (ml.po) by Praveen|പ്രവീണ്‍ A|എ
+  * Panjabi (pa.po) by A S Alam
+  * Polish (pl.po) by Bartosz Fenski
+
+ -- Frans Pop <fjp@debian.org>  Fri, 15 Feb 2008 14:25:21 +0100
+
+zipl-installer (0.0.13) unstable; urgency=low
+
+  [ Otavio Salvador ]
+  * Replace 'base-installer' dependency by 'installed-base' virtual
+    package. Needs base-installer 1.81.
+
+  [ Bastian Blank ]
+  * Simplify debian/rules.
+
+  [ Updated translations ]
+  * Danish (da.po) by Claus Hindsgaul
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Bastian Blank <waldi@debian.org>  Sun, 28 Oct 2007 22:29:03 +0100
+
+zipl-installer (0.0.12) unstable; urgency=low
+
+  * Include debconf template (menu title) in udeb.
+
+  [ Updated translations ]
+  * Esperanto (eo.po) by Serge Leblanc
+
+ -- Frans Pop <fjp@debian.org>  Mon, 21 May 2007 16:46:06 +0200
+
+zipl-installer (0.0.11) unstable; urgency=low
+
+  [ Joey Hess ]
+  * Multiply menu-item-numbers by 100
+
+ -- Frans Pop <fjp@debian.org>  Wed, 11 Apr 2007 00:42:02 +0200
+
+zipl-installer (0.0.10) unstable; urgency=low
+
+  [ Updated translations ]
+  * Malayalam (ml.po) by Praveen A
+
+ -- Frans Pop <fjp@debian.org>  Tue, 27 Feb 2007 19:27:42 +0100
+
+zipl-installer (0.0.9) unstable; urgency=low
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Danish (da.po) by Claus Hindsgaul
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Kurdish (ku.po) by rizoye-xerzi
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Malayalam (ml.po) by Praveen A
+  * Panjabi (pa.po) by A S Alam
+  * Romanian (ro.po) by Eddy Petrișor
+
+ -- Frans Pop <fjp@debian.org>  Wed, 31 Jan 2007 13:49:02 +0100
+
+zipl-installer (0.0.8) unstable; urgency=low
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Andrei Darashenka
+  * Dzongkha (dz.po) by Jurmey Rabgay
+  * Greek, Modern (1453-) (el.po) by quad-nrg.net
+  * Estonian (et.po) by Siim Põder
+  * Basque (eu.po) by Piarres Beobide
+  * Gujarati (gu.po) by Kartik Mistry
+  * Hindi (hi.po) by Nishant Sharma
+  * Croatian (hr.po) by Josip Rodin
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Panjabi (pa.po) by A S Alam
+  * Tamil (ta.po) by Damodharan Rajalingam
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Frans Pop <fjp@debian.org>  Tue, 24 Oct 2006 19:20:55 +0200
+
+zipl-installer (0.0.7) unstable; urgency=low
+
+  * Use persistent device name.
+  * Use initramfs.
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Bosnian (bs.po) by Safir Secerovic
+  * Danish (da.po) by Claus Hindsgaul
+  * Dzongkha (dz.po)
+  * Esperanto (eo.po) by Serge Leblanc
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Irish (ga.po) by Kevin Patrick Scannell
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Khmer (km.po) by Leang Chumsoben
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Nepali (ne.po) by Shiva Pokharel
+  * Northern Sami (se.po) by Børre Gaup
+  * Slovenian (sl.po) by Jure Čuhalev
+  * Swedish (sv.po) by Daniel Nylander
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Bastian Blank <waldi@debian.org>  Thu,  1 Jun 2006 13:21:12 +0200
+
+zipl-installer (0.0.6) unstable; urgency=low
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Bengali (bn.po) by Baishampayan Ghose
+  * German (de.po) by Jens Seidel
+  * Greek (el.po) by Konstantinos Margaritis
+  * Esperanto (eo.po) by Serge Leblanc
+  * French (fr.po) by Christian Perrier
+  * Hindi (hi.po) by Nishant Sharma
+  * Icelandic (is.po) by David Steinn Geirsson
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Malagasy (mg.po) by Jaonary Rabarisoa
+  * Romanian (ro.po) by Eddy Petrişor
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovenian (sl.po) by Jure Cuhalev
+  * Swedish (sv.po) by Daniel Nylander
+  * Tagalog (tl.po) by Eric Pareja
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Frans Pop <fjp@debian.org>  Wed, 25 Jan 2006 14:27:01 +0100
+
+zipl-installer (0.0.5) unstable; urgency=low
+
+  * Updated translations: 
+    - Belarusian (be.po) by Andrei Darashenka
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Catalan (ca.po) by Guillem Jover
+    - Czech (cs.po) by Miroslav Kure
+    - Welsh (cy.po) by Dafydd Harries
+    - Danish (da.po) by Claus Hindsgaul
+    - German (de.po) by Dennis Stampfer
+    - Greek (el.po) by Greek Translation Team
+    - Esperanto (eo.po) by Serge Leblanc
+    - Spanish (es.po) by Javier Fernández-Sanguino Peña
+    - Estonian (et.po) by Siim Põder
+    - Basque (eu.po) by Piarres Beobide
+    - Finnish (fi.po) by Tapio Lehtonen
+    - French (fr.po) by Christian Perrier
+    - Gallegan (gl.po) by Jacobo Tarrio
+    - Hebrew (he.po) by Lior Kaplan
+    - Hindi (hi.po) by Ravishankar Shrivastava
+    - Croatian (hr.po) by Krunoslav Gernhard
+    - Hungarian (hu.po) by VEROK Istvan
+    - Indonesian (id.po) by Arief S Fitrianto
+    - Japanese (ja.po) by Kenshi Muto
+    - Korean (ko.po) by Changwoo Ryu
+    - Lithuanian (lt.po) by Kęstutis Biliūnas
+    - Latvian (lv.po) by Aigars Mahinovs
+    - Malagazy (mg.po) by Jaonary Rabarisoa
+    - Macedonian (mk.po) by Georgi Stanojevski
+    - Norwegian (nb.po) by Hans Fredrik Nordhaug
+    - Norwegian (nn.po) by Håvard Korsvoll
+    - Norwegian (pa_IN.po) by Amanpreet Singh Alam
+    - Polish (pl.po) by Bartosz Fenski
+    - Portuguese (pt.po) by Miguel Figueiredo
+    - Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+    - Romanian (ro.po) by Eddy Petrişor
+    - Russian (ru.po) by Yuri Kozlov
+    - Slovak (sk.po) by Peter Mann
+    - Slovenian (sl.po) by Jure Čuhalev
+    - Albanian (sq.po) by Elian Myftiu
+    - Swedish (sv.po) by Per Olofsson
+    - Tagalog (tl.po) by Eric Pareja
+    - Turkish (tr.po) by Recai Oktaş
+    - Ukrainian (uk.po) by Eugeniy Meshcheryakov
+    - Vietnamese (vi.po) by Clytie Siddall
+    - Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+    - Xhosa (xh.po) by Canonical Ltd
+    - Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
+    - Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Frans Pop <fjp@debian.org>  Mon, 18 Jul 2005 19:04:39 +0200
+
+zipl-installer (0.0.4) unstable; urgency=low
+
+  * Bastian Blank
+    - Remove devfs=nomount from command line.
+    - Set do_bootloader = yes in the target kernel-img.conf.
+
+ -- Bastian Blank <waldi@debian.org>  Mon, 06 Sep 2004 20:28:31 +0200
+
+zipl-installer (0.0.3) unstable; urgency=low
+
+  * Bastian Blank
+    - Add devfs=nomount to command line, the kernel images currently have
+      devfs mount enabled.
+  * Updated translations: 
+    - Croatian (hr.po) by Krunoslav Gernhard
+
+ -- Bastian Blank <waldi@debian.org>  Sun, 25 Jul 2004 12:49:57 +0200
+
+zipl-installer (0.0.2) unstable; urgency=low
+
+  * Bastian Blank
+    - Generate a zipl menu.
+    - Add rootdevice to parameter. (closes: #256258, #257212)
+  * Updated translations: 
+    - Arabic (ar.po) by Ossama M. Khayat
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Bosnian (bs.po) by Safir Šećerović
+    - Catalan (ca.po) by Jordi Mallach
+    - Czech (cs.po) by Miroslav Kure
+    - Danish (da.po) by Claus Hindsgaul
+    - German (de.po) by Alwin Meschede
+    - Greek (el.po) by Konstantinos Margaritis
+    - Basque (eu.po) by Piarres Beobide Egaña
+    - Finnish (fi.po) by Tapio Lehtonen
+    - French (fr.po) by Christian Perrier
+    - Hebrew (he.po) by Lior Kaplan
+    - Hungarian (hu.po) by VERÓK István
+    - Indonesian (id.po) by Parlin Imanuel Toh
+    - Japanese (ja.po) by Kenshi Muto
+    - Korean (ko.po) by Changwoo Ryu
+    - Lithuanian (lt.po) by Kęstutis Biliūnas
+    - Dutch (nl.po) by Bart Cornelis
+    - Norwegian (nn.po) by Håvard Korsvoll
+    - Polish (pl.po) by Bartosz Fenski
+    - Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+    - Portuguese (pt.po) by Miguel Figueiredo
+    - Romanian (ro.po) by Eddy Petrisor
+    - Russian (ru.po) by Yuri Kozlov
+    - Slovak (sk.po) by Peter KLFMANiK Mann
+    - Slovenian (sl.po) by Jure Cuhalev
+    - Albanian (sq.po) by Elian Myftiu
+    - Turkish (tr.po) by Recai Oktaş
+    - Ukrainian (uk.po) by Eugeniy Meshcheryakov
+    - Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
+    - Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Bastian Blank <waldi@debian.org>  Sun, 18 Jul 2004 22:50:06 +0200
+
+zipl-installer (0.0.1) unstable; urgency=low
+
+  * First release
+
+ -- Bastian Blank <waldi@debian.org>  Thu, 20 May 2004 12:18:59 +0200

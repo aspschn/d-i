@@ -1,0 +1,6 @@
+files
+rescue-check
+rescue-mode
+*.debhelper*
+*.substvars
+

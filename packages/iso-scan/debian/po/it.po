@@ -1,0 +1,343 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Italian messages for debian-installer.
+# Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# The translation team (for all four levels):
+# Cristian Rigamonti <cri@linux.it>
+# Danilo Piazzalunga <danilopiazza@libero.it>
+# Davide Meloni <davide_meloni@fastwebnet.it>
+# Davide Viti <zinosat@tiscali.it>
+# Filippo Giunchedi <filippo@esaurito.net>
+# Giuseppe Sacco <eppesuig@debian.org>
+# Lorenzo 'Maxxer' Milesi
+# Renato Gini
+# Ruggero Tonelli
+# Samuele Giovanni Tonon <samu@linuxasylum.net>
+# Stefano Canepa <sc@linux.it>
+# Stefano Melchior <stefano.melchior@openlabs.it>
+#
+#
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@computer.org>, 2001
+# Alessio Frusciante <algol@firenze.linux.it>, 2001
+# Andrea Scialpi <solopec@tiscalinet.it>, 2001
+# (translations from drakfw)
+# Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
+# Danilo Piazzalunga <danilopiazza@libero.it>, 2004
+# Davide Viti <zinosat@tiscali.it>, 2006
+# Marcello Raffa <mrooth@tiscalinet.it>, 2001
+# Tobias Toedter <t.toedter@gmx.net>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Milo Casagrande <milo@milo.name>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2018-04-03 09:25+0200\n"
+"Last-Translator: Milo Casagrande <milo@milo.name>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "Cercare sui dischi fissi un'immagine ISO del programma d'installazione"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "Ricerca dei dischi fissi nel sistema"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "Ricerca di un'immagine ISO del programma d'installazione sui dischi"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "Montaggio di ${DRIVE}..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "Analisi di ${DRIVE} (in ${DIRECTORY})..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr ""
+"Eseguire una ricerca completa del disco per un'immagine ISO del programma "
+"d'installazione?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"La ricerca rapida per le immagini ISO del programma d'installazione, che "
+"cerca solo in posizioni comuni, non ha trovato un'immagine ISO del programma "
+"d'installazione. Può darsi che una ricerca più approfondita trovi l'immagine "
+"ISO, ma potrebbe occorrere molto più tempo."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "Impossibile trovare un'immagine ISO del programma d'installazione"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"Non è stata trovata alcuna immagine ISO del programma d'installazione. Se "
+"l'immagine è stata scaricata, potrebbe avere un nome errato (che non termina "
+"in «.iso») o potrebbe trovarsi in un file system che non può essere montato."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"È necessario usare un metodo d'installazione alternativo, selezionare un "
+"altro device per cercare un'immagine ISO oppure riprovare dopo aver risolto "
+"il problema dell'immagine ISO."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"Sebbene siano state trovate una o più possibili immagini ISO, non è stato "
+"possibile montarle. Le immagini ISO scaricate potrebbero essere danneggiate."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "Nessuna immagine ISO del programma d'installazione trovata"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"Sebbene siano state trovate una o più possibili immagini ISO, non sembrano "
+"essere immagini ISO del programma d'installazione valide."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "L'immagine ISO del programma d'installazione ${SUITE} è stata montata"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"Il file ISO ${FILENAME} su ${DEVICE} (${SUITE}) sarà usato come immagine ISO "
+"d'installazione."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "Tutti i device rilevati"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "Inserire il device manualmente"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "Device o partizione su cui cercare ISO d'installazione:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"È possibile selezionare un device, specificare manualmente un device non "
+"rilevato o rieseguire l'analisi dei device disponibili (utile per "
+"dispositivi USB lenti)."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "Nome device:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "Ricerca completa"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "File ISO da usare:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"Uno o più file ISO sono stati rilevati sui device selezionati. Scegliere "
+"quale usare o eseguire una ricerca più approfondita."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr "Usare il file ISO ${FILENAME} come immagine per l'installazione?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"Il file ISO ${FILENAME} su ${DEVICE} (${SUITE}, codice ${CODENAME}, "
+"descritto come «${DESCRIPTION}») sarà usato come immagine ISO "
+"d'installazione."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"Se sono presenti più file ISO sulla stessa unità d'installazione, è "
+"possibile selezionare quale utilizzare."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr "Copiare l'immagine ISO nella memoria RAM prima di montarla?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr ""
+"La memoria RAM disponibile è sufficiente per potervi copiare l'immagine ISO."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+"Selezionando questa opzione è possibile riutilizzare il disco su cui è "
+"presente l'immagine ISO. In caso contrario, il disco viene utilizzato per "
+"leggere l'immagine ISO e non può essere modificato dal sistema "
+"d'installazione."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+"Notare che se il disco che contiene l'immagine ISO viene sovrascritto, il "
+"computer non può essere riavviato prima del termine dell'installazione "
+"altrimenti non sarà possibile riprendere il processo d'installazione."
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "Caricare i componenti del programma d'installazione da un'immagine ISO"

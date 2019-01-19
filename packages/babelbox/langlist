@@ -1,0 +1,74 @@
+# Languages are used in order; an "x" in the second field indicates the
+# current language (next to be used).
+# The first field must contain a valid locale; the fourth field can
+# optionally contain extra parameters to pass as boot options.
+
+am_ET:x:Amharic
+ar_EG::Arabic
+ast_ES::Asturian
+be_BY::Belarusian
+bg_BG::Bulgarian
+bn_BD::Bengali
+bs_BA::Bosnian
+ca_ES::Catalan
+cs_CZ::Czech
+da_DK::Danish
+de_DE::German
+dz_BT::Dzongkha
+el_GR::Greek
+en_US::English
+eo_GB::Esperanto
+es_ES::Spanish
+et_EE::Estonian
+eu_ES::Basque
+fa_IR::Persian
+fi_FI::Finnish
+fr_FR::French
+ga_IE::Irish
+gl_ES::Galician
+gu_IN::Gujarati
+he_IL::Hebrew
+hi_IN::Hindi
+hr_HR::Croatian
+hu_HU::Hungarian
+id_ID::Indonesian
+is_IS::Icelandic
+it_IT::Italian
+ja_JP::Japanese
+ka_GE::Georgian
+kk_KZ::Kazakh
+km_KH::Khmer
+kn_IN::Kannada
+ko_KR::Korean
+ku_TR::Kurdish
+lo_LA::Lao
+lt_LT::Lithuanian
+lv_LV::Latvian
+mk_MK::Macedonian
+ml_IN::Malayalam
+mr_IN::Marathi
+nb_NO::Norwegian Bokmaal
+ne_NP::Nepali
+nl_NL::Dutch
+nn_NO::Norwegian Nynorsk
+pa_IN::Punjabi
+pl_PL::Polish
+pt_BR::Portuguese
+ro_RO::Romanian
+ru_RU::Russian
+se_NO::Northern Sami
+si_LK::Sinhala
+sk_SK::Slovak
+sl_SI::Slovenian
+sq_AL::Albanian
+sr_RS::Serbian
+sv_SE::Swedish
+ta_IN::Tamil
+te_IN::Telugu
+th_TH::Thai
+tl_PH::Tagalog
+tr_TR::Turkish
+uk_UA::Ukrainian
+vi_VN::Vietnamese
+zh_CN::Chinese (Simplified)
+zh_TW::Chinese (Traditional)

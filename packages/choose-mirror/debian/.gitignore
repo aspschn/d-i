@@ -1,0 +1,15 @@
+*.debhelper*
+*.substvars
+choose-mirror
+choose-mirror.postinst
+choose-mirror-bin
+choose-mirror-bin.templates
+files
+ftplist-countries
+httplist-countries
+iso_3166.tab
+iso-codes
+pobuild
+templates-countries
+templates.tmp
+

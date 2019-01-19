@@ -1,0 +1,8 @@
+#!/bin/sh
+cd ${HOME}/trunk/scripts/l10n/l10n-spellcheck/cfg
+git pull
+./update_po.sh
+for i in man l1 l2 l3 ; do
+#        echo Spellchecking level $i
+	./scheck.sh $i
+done

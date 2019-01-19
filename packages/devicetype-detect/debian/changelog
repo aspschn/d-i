@@ -1,0 +1,57 @@
+devicetype-detect (0.15) UNRELEASED; urgency=medium
+
+  * Update Vcs-{Browser,Git} to point to salsa (alioth's replacement).
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 27 Apr 2018 03:43:00 +0200
+
+devicetype-detect (0.14) not-yet-RELEASED; urgency=low
+
+  [ Emmet Hikory ]
+  * devicetype-detect.in: remove laptop-support compatibility
+  * devicetype-detect.1: undocument --compat option
+  * Makefile: move scripts to /usr/sbin
+  * device*-detect.1: move to .8 to match move to /usr/sbin
+  * debian/devicetype-detect.manpages: use .8 manpages
+  * devicename-detect.in: Use full path for dmidecode to work around $PATH issues
+  * Add laptop-detect.in as a compatible wrapper for devicetype-detect
+  * Add laptop-detect.8 (from laptop-detect package)
+  * Makefile: Add laptop-detect.in to SCRIPTS
+  * debian/copyright: Document license for laptop-detect.8
+  * debian/copyright: Update copyright on code
+  * Add debian/devicetype-detect.install and debian/laptop-detect.install
+  * Add debian/laptop-detect.manpages
+  * debian/control: add laptop-detect transitional support package
+  * debian/changelog: Bump version to exceed laptop-detect in Debian unstable
+
+  [ Otavio Salvador ]
+  * debian/*.install: fix installation path
+  * debian/control: change maintainer to Debian Install System Team
+    and add Emmet Hikory as uploader.
+  * debian/control: add Vcs-Browser and Vcs-Git fields
+
+ -- Emmet Hikory <emmet.hikory@gmail.com>  Sat, 30 Jul 2011 18:56:35 +0900
+
+devicetype-detect (0.03) oneiric; urgency=low
+
+  * devicetype-detect.in: Fix sed expression for i386/amd64 apple laptops
+  * devicetype-detect.in: Uncomment and fix /proc ACPI tests
+
+ -- Emmet Hikory <persia@ubuntu.com>  Fri, 29 Jul 2011 07:57:01 +0900
+
+devicetype-detect (0.02) oneiric; urgency=low
+
+  * devicetype-detect.in: Wrap xrandr calls in conditionals (LP: #702416)
+  * devicetype-detect.in: Syntax cleanups when battery is detected
+  * devicename-detect.in: don't use -e: shell doesn't notice all the tests
+  * devicename-detect.in: clean up missing ports analysis
+  * debian/control: Update description to promote devicename-detect
+  * debian/control: Add Suggests for x11-xserver-utils for xrandr
+  * Bump standards to 3.9.2 (no changes)
+
+ -- Emmet Hikory <persia@ubuntu.com>  Fri, 29 Jul 2011 02:17:02 +0900
+
+devicetype-detect (0.01) natty; urgency=low
+
+  * Initial release.
+
+ -- Emmet Hikory <persia@ubuntu.com>  Fri, 19 Nov 2010 03:28:01 +0900

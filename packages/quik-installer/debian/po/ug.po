@@ -1,0 +1,314 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+#
+# Debian Installer master translation for Uyghur
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+# Translations from iso-codes:
+# Sahran <sahran.ug@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-21 10:05+0100\n"
+"PO-Revision-Date: 2013-11-26 16:08+0600\n"
+"Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:1001
+msgid "Installing quik"
+msgstr "quik ئورنىتىۋاتىدۇ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:2001
+msgid "Installing quik boot loader"
+msgstr "quik قوزغىتىش يېتەكلىگۈچ ئورنىتىۋاتىدۇ"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:3001
+msgid "quik installation failed. Continue anyway?"
+msgstr "quik ئورنىتىش مەغلۇپ بولدى. يەنىلا داۋاملاشتۇرامسىز؟"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:3001
+msgid ""
+"The quik package failed to install into /target/.  Installing quik as a boot "
+"loader is a required step.  The install problem might however be unrelated "
+"to quik, so continuing the installation may be possible."
+msgstr ""
+"quik يۇمشاق دېتال بوغچىسىنى /target/ قا ئورنىتالمىدى. بۇ quik نى قوزغىتىش "
+"يېتەكلىگۈچ قىلىپ ئورنىتىشنىڭ زۆرۈر قەدىمى. بۇ ئورنىتىش مەسىلىسى quik بىلەن "
+"مۇناسىۋەتسىز بولۇشى مۇمكىن، شۇڭلاشقا داۋاملىق ئورنىتىشقا بولۇۋېرىشى مۇمكىن."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:4001
+msgid "Checking partitions"
+msgstr "رايونلارنى تەكشۈرۈۋاتىدۇ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:5001
+msgid "No root partition found"
+msgstr "غول رايون تېپىلمىدى"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:5001
+msgid ""
+"No partition is mounted as your new root partition. You must mount a root "
+"partition first."
+msgstr ""
+"يېڭى غول رايون ئېگەرلەنمىدى. سىز ئالدى بىلەن غول رايوندىن بىرنى ئېگەرلەڭ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:6001
+msgid "Boot partition not on first disk"
+msgstr "قوزغىتىش رايونى بىرىنچى قاتتىق دىسكىدا ئەمەس"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:6001
+msgid ""
+"The quik boot loader requires partition that holds /boot to be on the first "
+"disk. Please return to the partitioning step."
+msgstr ""
+"quik قوزغىتىش يېتەكلىگۈچ /boot تۇرۇشلۇق رايوننىڭ بىرىنچى قاتتىق دىسكىدا "
+"بولۇشىنى تەلەپ قىلىدۇ. رايونغا ئايرىش قەدىمىگە قايتىڭ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:7001
+msgid "Boot partition must be on ext2"
+msgstr "قوزغىتىش رايونى چوقۇم ext2 بولۇشى لازىم"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:7001
+msgid ""
+"The quik boot loader requires the partition that holds /boot to be formatted "
+"using the ext2 file system. Please return to the partitioning step."
+msgstr ""
+"quik قوزغىتىش يېتەكلىگۈچ /boot تۇرۇشلۇق رايوننىڭ ext2 ھۆججەت سىستېمىسى "
+"فورماتىدا بولۇشىنى تەلەپ قىلىدۇ. رايونغا ئايرىش قەدىمىگە قايتىڭ."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001 ../quik-installer.templates:9001
+msgid "Do you really want to install the quik boot loader?"
+msgstr "quik قوزغىتىش يېتەكلىگۈچنى راستىنلا ئورنىتامسىز؟"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001
+msgid ""
+"You have chosen to install the quik boot loader. You will not be able to "
+"boot any other operating system from this disk. Furthermore, your machine "
+"may not be bootable in any manner after this process completes. If you are "
+"left with a blank screen, you may need to try a cold boot and hold down "
+"Command-Option-P-R."
+msgstr ""
+"quik قوزغىتىش يېتەكلىگۈچنى ئورناتتىڭىز. سىز بۇ قاتتىق دىسكىدىن باشقا ھەر "
+"قانداق مەشغۇلات سىستېمىسىنى قوزغىتالمايسىز. تېخىمۇ ئېغىر بولغىنى، بۇ "
+"مەشغۇلات تاماملانغاندىن كېيىن، ماشىنىڭىز پەقەت قوزغىلالماسلىقى مۇمكىن. ئەگەر "
+"بوش ئېكران ھادىسىسىگە يولۇقسىڭىز، سوغۇق قوزغىتىشنى سىناڭ ھەمدە Command-"
+"Option-P-R نى بېسىپ تۇرۇڭ."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001 ../quik-installer.templates:9001
+msgid "Be aware that this code has not been thoroughly tested."
+msgstr "دىققەت بۇ پروگراممىنىڭ كودى تېخى تەلتۆكۈس سىنالمىغان."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:9001
+msgid ""
+"You have chosen to install the quik boot loader. You will not be able to "
+"boot any other operating system from this disk. Furthermore, your machine "
+"may not be bootable in any manner after this process completes."
+msgstr ""
+"quik قوزغىتىش يېتەكلىگۈچنى ئورنىتىشنى تاللىدىڭىز. سىز بۇ قاتتىق دىسكىدىن "
+"باشقا ھەر قانداق مەشغۇلات سىستېمىسىنى قوزغىتالمايسىز. تېخىمۇ ئېغىر بولغىنى، "
+"بۇ مەشغۇلات تاماملانغاندىن كېيىن، ماشىنىڭىز پەقەت قوزغىلالماسلىقى مۇمكىن."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:10001
+msgid "Creating quik configuration"
+msgstr "quik سەپلىمەسى قۇرۇۋاتىدۇ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001
+msgid "Failed to create quik configuration"
+msgstr "quik سەپلىمەسى قۇرۇش مەغلۇپ بولدى"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001
+msgid "The creation of the main quik configuration file failed."
+msgstr "quik ئاساسىي سەپلىمە ھۆججىتى قۇرۇش مەغلۇپ بولدى."
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001 ../quik-installer.templates:13001
+#: ../quik-installer.templates:17001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"/var/log/syslog نى تەكشۈرۈڭ ياكى 4-مەۋھۇم كونترول سۇپىسىنى(console) كۆرۈپ "
+"تېخىمۇ كۆپ تەپسىلىي ئۇچۇرغا ئېرىشىڭ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001 ../quik-installer.templates:17001
+msgid "Warning: Your system may be unbootable!"
+msgstr "ئاگاھلاندۇرۇش: سىستېمىڭىز قوزغالماسلىقى مۇمكىن!"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:12001
+msgid "Installing quik into bootstrap partition"
+msgstr "quik نى قوزغىتىش رايونىغا ئورنىتىۋاتىدۇ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "Failed to install boot loader"
+msgstr "قوزغىتىش يېتەكلىگۈچنى ئورنىتىش مەغلۇپ بولدى"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "The installation of the quik boot loader failed."
+msgstr "quik قوزغىتىش يېتەكلىگۈچنى ئورنىتىش مەغلۇپ بولدى."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "Warning: your system may be unbootable!"
+msgstr "ئاگاھلاندۇرۇش: سىستېمىڭىز قوزغالماسلىقى مۇمكىن!"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:14001
+msgid "Setting up OpenFirmware"
+msgstr "OpenFirmware نى تەڭشەۋاتىدۇ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:15001
+msgid "Unable to configure OpenFirmware"
+msgstr "OpenFirmware نى سەپلىيەلمىدى"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:15001
+msgid ""
+"Setting the OpenFirmware boot-device variable failed. You will have to "
+"configure OpenFirmware yourself to boot."
+msgstr ""
+"OpenFirmware قوزغىتىش ئۈسكۈنە ئۆزگەرگۈچى مىقدارنى تەڭشىيەلمىدى. سىز چوقۇم "
+"ئۆزىڭىز OpenFirmware نى تەڭشىسىڭىز اندىن قوزغىلالايدۇ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#. This error may not be fatal, depending on the exact type of Mac.
+#: ../quik-installer.templates:16001
+msgid "Problem configuring OpenFirmware"
+msgstr "OpenFirmware نى سەپلەۋاتقاندا مەسىلە كۆرۈلدى"
+
+#. Type: error
+#. Description
+#. :sl4:
+#. This error may not be fatal, depending on the exact type of Mac.
+#: ../quik-installer.templates:16001
+msgid ""
+"Setting the OpenFirmware boot-command variable failed. You may have "
+"intermittent boot failures."
+msgstr ""
+"OpenFirmware قوزغىتىش بۇيرۇق ئۆزگەرگۈچى مىقدارنى تەڭشىيەلمىدى. سىز تاسادىپىي "
+"قوزغالماسلىققا يولۇققان بولۇشىڭىز مۇمكىن."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:17001
+msgid "Failed to mount /target/proc"
+msgstr "/target/proc ئېگەرلەش مەغلۇپ بولدى"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:17001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "proc ھۆججەت سىستېمىسىنى /target/proc غا ئېگەرلەش مەغلۇپ بولدى."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl4:
+#: ../quik-installer.templates:18001
+msgid "Install quik on a hard disk"
+msgstr "quik نى قاتتىق دىسكىغا ئورنات"

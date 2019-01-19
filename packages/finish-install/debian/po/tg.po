@@ -1,0 +1,97 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: finish-install@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-18 22:02+0000\n"
+"PO-Revision-Date: 2018-02-08 14:24+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../finish-install.templates:1001
+msgid "Finish the installation"
+msgstr "Ба анҷом расонидани насб"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:2001
+msgid "Finishing the installation"
+msgstr "Ба анҷом расонидани насб"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:3001
+msgid "Running ${SCRIPT}..."
+msgstr "Иҷрокунии ${SCRIPT}..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:4001
+msgid "Configuring network..."
+msgstr "Шабака танзим шуда истодааст..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:5001
+msgid "Setting up frame buffer..."
+msgstr "Танзими миёнҷии чорчӯба..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:6001
+msgid "Unmounting file systems..."
+msgstr "Ҷудокунии низоми файлӣ..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:7001
+msgid "Rebooting into your new system..."
+msgstr "Ба низоми нави шумо аз нав бор шуда истодааст..."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../finish-install.templates:8001
+msgid "Installation complete"
+msgstr "Насб ба анҷом расид"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../finish-install.templates:8001
+msgid ""
+"Installation is complete, so it is time to boot into your new system. Make "
+"sure to remove the installation media, so that you boot into the new system "
+"rather than restarting the installation."
+msgstr ""
+"Насб ба анҷом расид ва акнун шумо бояд низоми навро ба кор дароред. Мутмаин "
+"шавед, ки расонаи насбкунии низомро бароред (аз CD-ROM, дискҳои флоппи, "
+"драйви флеш), то ки тавонед ба низоми нав ворид шавед ва насби наверо аз нав "
+"оғоз накунед."

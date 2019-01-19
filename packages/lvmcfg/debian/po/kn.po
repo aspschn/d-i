@@ -1,0 +1,801 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+# Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:33+0000\n"
+"PO-Revision-Date: 2012-01-24 19:34+0530\n"
+"Last-Translator: Prabodh C P <prabodh@fsmk.org>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../lvmcfg.templates:1001
+msgid "Configure the Logical Volume Manager"
+msgstr "ತಾರ್ಕಿಕ ಪರಿಮಾಣ ನಿರ್ವಾಹಕನನ್ನು ಸಂರಚಿಸು"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:1001
+msgid "Activate existing volume groups?"
+msgstr "ಈಗಿರುವ ಪರಿಮಾಣದ ಗುಂಪನ್ನು ಕಾರ್ಯಗತಗೊಳಿಸಿ?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:1001
+msgid ""
+"${COUNT} existing volume groups have been found. Please indicate whether you "
+"want to activate them."
+msgstr ""
+"${COUNT} ಸಂಪುಟ ಸಮೂಹಗಳು ಅಸ್ತಿತ್ವದಲ್ಲಿವೆ ಎಂದು ಪತ್ತೆಯಾಗಿದೆ. ದಯಮಾಡಿ ಅವುಗಳನ್ನು "
+"ಸಕ್ರಿಯಗೊಳಿಸಬೇಕೆ ಎಂದು ಸೂಚಿಸಿ."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. LVM main menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:2001
+msgid "Modify volume groups (VG)"
+msgstr "ಪರಿಮಾಣದ ಗುಂಪನ್ನು(VG) ಬದಲಾಯಿಸು"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. LVM main menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:2001
+msgid "Modify logical volumes (LV)"
+msgstr "ತಾರ್ಕಿಕ ಪರಿಮಾಣಗಳನ್ನು(LV) ಬದಲಾಯಿಸು "
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. LVM main menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. Type: select
+#. Choices
+#. :sl3:
+#. Volume groups configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. Type: select
+#. Choices
+#. :sl3:
+#. Logical volumes configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:2001 ../lvmcfg-utils.templates:3001
+#: ../lvmcfg-utils.templates:4001
+msgid "Leave"
+msgstr "Leave"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:2002
+msgid "LVM configuration action:"
+msgstr "LVM ಸಂರಚನಾ ಕಾರ್ಯ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:2002
+msgid "This is the Logical Volume Manager configuration menu."
+msgstr "ಇದು ತಾರ್ಕಿಕ ಸಂಪುಟ ಸಮೂಹ ವ್ಯವಸ್ಥಾಪಕ ಸಂರಚನಾ ಆಯ್ಕೆಪಟ್ಟಿಯಾಗಿದೆ."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Volume groups configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:3001
+msgid "Create volume groups"
+msgstr "ಸುಒಂದು ಪರಿಮಾಣ ಗುಂಪನ್ನ್ನು ಸ್ರುಷ್ಥ"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Volume groups configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:3001
+msgid "Delete volume groups"
+msgstr "ಪರಿಮಾಣ ಗುಂಪನ್ನ್ನು ಅಳಿ"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Volume groups configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:3001
+msgid "Extend volume groups"
+msgstr "ಪರಿಮಾಣ ಗುಂಪನ್ನ್ನು ಅಗಲಿಸು"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Volume groups configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:3001
+msgid "Reduce volume groups"
+msgstr "ಶೇಖರಣಾ ಪರಿಮಾಣ ವನ್ನು ಕುಗ್ಗಿಸು"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:3002
+msgid "Volume groups configuration action:"
+msgstr "ಪರಿಮಾಣದ ಗುಂಪಿನ ಸಂರಚನಾ ಕಾರ್ಯ:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Logical volumes configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:4001
+msgid "Create logical volumes"
+msgstr " ತಾರ್ಕಿಕ ಪರಿಣಾಮವನ್ನು ರಚಿಸು"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Logical volumes configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:4001
+msgid "Delete logical volumes"
+msgstr " ತಾರ್ಕಿಕ ಪರಿಣಾಮವನ್ನು ತೆಗೆದುಹಾಕು"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:4002
+msgid "Logical volumes configuration action:"
+msgstr "ತಾರ್ಕಿಕ ಪರಿಮಾಣದ ಗುಂಪಿನ ಸಂರಚನಾ ಕಾರ್ಯ:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:5001
+msgid "Devices for the new volume group:"
+msgstr "ಹೊಸ ಶೇಖರಣಾ ಪರಿಮಾಣ ಗುಂಪಿನ ಸಾಧನಗಳು:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:5001
+msgid "Please select the devices for the new volume group."
+msgstr "ದಯಮಾಡಿ ಹೊಸ ಸಂಪುಟ ಸಮೂಹಕ್ಕೆ ಬೇಕಾದ ಉಪಕರಣಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:5001 ../lvmcfg-utils.templates:17001
+msgid "You can select one or more devices."
+msgstr "ನೀವು ಒಂದು ಅಥವಾ ಹೆಚ್ಚು ಸಾಧನಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:6001
+msgid "Volume group name:"
+msgstr "ಶೇಖರಣಾ ಪರಿಮಾಣ ಗುಂಪಿನ ಹೆಸರನ್ನು ದಾಖಲಿಸಿ"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:6001
+msgid "Please enter the name you would like to use for the new volume group."
+msgstr "ದಯಮಾಡಿ ಹೊಸ ಸಂಪುಟ ಸಮೂಹಕ್ಕೆ ನೀವು ಬಳಸಲು ಬಯಸುವ ಹೆಸರನ್ನು ನಮೂದಿಸಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:7001 ../lvmcfg-utils.templates:18001
+msgid "No physical volumes selected"
+msgstr "ಯಾವುದೇ ಭೌತಿಕ ಸಂಪುಟಗಳನ್ನು ಆಯ್ಕೆಮಾಡಲಾಗಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:7001
+msgid ""
+"No physical volumes were selected. The creation of a new volume group was "
+"aborted."
+msgstr ""
+"ಯಾವುದೇ ಭೌತಿಕ ಸಂಪುಟಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾಗಿಲ್ಲ. ಹೊಸದೊಂದು ಸಂಪುಟ ಸಮೂಹ ರಚನೆಯನ್ನು "
+"ಸ್ತಗಿಥಗೊಳಿಸಲಾಗಿದೆ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:8001
+msgid "No volume group name entered"
+msgstr "ಯಾವುದೇ ಪರಿಮಾಣ ಸಮೂಹದ ಹೆಸರನ್ನು ನಮೂದಿಸಲಾಗಿಲ್ಲ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:8001
+msgid "No name for the volume group has been entered.  Please enter a name."
+msgstr "ಸಂಪುಟ ಸಮೂಹಕ್ಕೆ ಯಾವುದೇ ಹೆಸರನ್ನು ಕೊಡಲಾಗಿಲ್ಲ. ದಯಮಾಡಿ ಒಂದು ಹೆಸರನ್ನು ದಾಖಲಿಸಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:9001
+msgid "Volume group name already in use"
+msgstr "ಶೇಖರಣಾ ಪರಿಮಾಣದ ಹೆಸರು ಈಗಾಗಲೆ ಬಳಕೆಯಲ್ಲಿದೆ."
+
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:9001
+msgid ""
+"The selected volume group name is already in use. Please choose another name."
+msgstr ""
+"ಆಯ್ಕೆ ಮಾಡಲಾದ ಸಂಪುಟ ಸಮೂಹ ನಾಮವು ಆಗಲೇ ಬಳಕೆಯಲ್ಲಿದೆ. ದಯಮಾಡಿ ಬೇರೊಂದು ಹೆಸರನ್ನು ಸೂಚಿಸಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:10001
+msgid "Volume group name overlaps with device name"
+msgstr "ಸಂಪುಟ ಸಮೂಹ ನಾಮವು ಉಪಕರಣದ ಹೆಸರಿನೊಂದಿಗೆ ಹೋಲುತ್ತದೆ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:10001
+msgid ""
+"The selected volume group name overlaps with an existing device name. Please "
+"choose another name."
+msgstr ""
+"ಆಯ್ಕೆ ಮಾಡಲಾದ ಸಂಪುಟ ಸಮೂಹ ನಾಮವು ಸದ್ಯದಲ್ಲಿ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಒಂದು ಉಪಕರಣದ ಹೆಸರಿನೊಂದಿಗೆ "
+"ಹೋಲುತ್ತದೆ. ದಯಮಾಡಿ ಬೇರೊಂದು ಹೆಸರನ್ನು ಆಯ್ಕೆಮಾಡಿ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:11001
+msgid "Volume group to delete:"
+msgstr "ತೆಗೆದುಹಾಕಬೇಕಾದ ಸಂಪುಟ ಸಮೂಹ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:11001
+msgid "Please select the volume group you wish to delete."
+msgstr "ದಯಮಾಡಿ ನೀವು ಅಳಿಸಿ ಹಾಕಲು ಬಯಸುವ ಸಂಪುಟ ಸಮೂಹವನ್ನು ಆಯ್ಕೆಮಾಡಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:12001 ../lvmcfg-utils.templates:15001
+#: ../lvmcfg-utils.templates:20001 ../lvmcfg-utils.templates:25001
+#: ../lvmcfg-utils.templates:26001 ../lvmcfg-utils.templates:33001
+msgid "No volume group found"
+msgstr "ಯಾವುದೇ ಸಂಪುಟ ಸಮೂಹ ಪತ್ತೆಯಾಗಿಲ್ಲ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:12001 ../lvmcfg-utils.templates:15001
+#: ../lvmcfg-utils.templates:20001
+msgid "No volume group has been found."
+msgstr "ಯಾವುದೇ ಸಂಪುಟ ಸಮೂಹ ಪತ್ತೆಯಾಗಿರುವುದಿಲ್ಲ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:12001
+msgid "The volume group may have already been deleted."
+msgstr "ಬಹುಶಃ ಸಂಪುಟ ಸಮೂಹವನ್ನು ಆಗಲೇ ಅಳಿಸಿಯಾಗಿರಬೇಕು."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:13001
+msgid "Really delete the volume group?"
+msgstr "ನಿಜವಾಗಿಯು ಶೇಖರಣಾ ಪರಿಮಾಣ ಸಮೂಹವನ್ನು  ಅಳಿಸಲು ಇಚ್ಚಿಸುತ್ತೀರ?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:13001
+msgid "Please confirm the ${VG} volume group removal."
+msgstr "${VG} ಸಂಪುಟ ಸಮೂಹವನ್ನು ತೆಗೆದು ಹಾಕಲು ದಯಮಾಡಿ ದೃಢಪಡಿಸಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:14001
+msgid "Error while deleting volume group"
+msgstr "ಶೇಖರಣಾ ಪರಿಮಾಣ ಸಮೂಹವನ್ನು  ಅಳಿಸುವಾಗ ದೋಷಊಂಟಾಗಿದೆ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:14001
+msgid ""
+"The selected volume group could not be deleted. One or more logical volumes "
+"may currently be in use."
+msgstr ""
+"ಆಯ್ಕೆಮಾಡಲಾದ ಸಂಪುಟ ಸಮೂಹವನ್ನು ನಾಶಪಡಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಸಂಪುಟ "
+"ಸಮೂಹಗಳು ಸದ್ಯದಲ್ಲಿ ಬಳಕೆಯಲ್ಲಿರಬೇಕು."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:15001
+msgid "No volume group can be deleted."
+msgstr "ಯಾವುದೇ ಶೇಖರಣಾ ಪರಿಮಾಣ ಸಮೂಹವು ಕಂಡು ಬಂದಿಲ್ಲ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:16001
+msgid "Volume group to extend:"
+msgstr "ಶೇಖರಣಾ ಪರಿಮಾಣ ಸಮೂಹವನ್ನು ವಿಸ್ತರಿಸು:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:16001
+msgid "Please select the volume group you wish to extend."
+msgstr "ದಯಮಾಡಿ ನೀವು ವಿಸ್ತರಿಸಲು ಬಯಸುವ ಸಂಪುಟ ಸಮೂಹವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:17001
+msgid "Devices to add to the volume group:"
+msgstr "ಶೇಖರಣ ಪರಿಮಾಣಕೆ ಸೇರಿಸಲ್ಪಡುವ ಸಾಧನಗಳು:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:17001
+msgid "Please select the devices you wish to add to the volume group."
+msgstr "ದಯಮಾಡಿ ಸಂಪುಟ ಸಮೂಹಕ್ಕೆ ನೀವು ಸೇರಿಸಲು ಬಯಸುವ ಉಪಕರಣಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:18001
+msgid ""
+"No physical volumes were selected. Extension of the volume group was aborted."
+msgstr ""
+"ಯಾವುದೇ ಭೌತಿಕ ಸಂಪುಟ ಸಮೂಹಗಳನ್ನು ಆಯ್ಕೆಮಾಡಲಾಗಿಲ್ಲ. ಸಂಪುಟ ಸಮೂಹದ ವಿಸ್ತರಣೆಯನ್ನು "
+"ಸ್ತಗಿಥಗೊಳಿಸಲಾಗಿದೆ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:19001
+msgid "Error while extending volume group"
+msgstr "ಶೇಖರಣಾ ಪರಿಮಾಣ ಸಮೂಹವನ್ನು  ವಿಸ್ತರಿಸುವಾಗ ದೋಷಊಂಟಾಗಿದೆ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:19001
+msgid ""
+"The physical volume ${PARTITION} could not be added to the selected volume "
+"group."
+msgstr ""
+"${PARTITION} ಭೌತಿಕ ಸಂಪುಟವನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾದ ಸಂಪುಟ ಸಮೂಹಕ್ಕೆ ಸೇರಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:20001
+msgid "No volume group can be reduced."
+msgstr "ಯಾವುದೇ ಶೇಖರಣಾ ಪರಿಮಾಣವನ್ನು ಕುಗ್ಗಿಸಲಾಗುವುದಿಲ್ಲ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:21001
+msgid "Volume group to reduce:"
+msgstr "ಕುಗ್ಗಿಸಲ್ಪಡುವ ಶೇಖರಣ ಪರಿಮಾಣ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:21001
+msgid "Please select the volume group you wish to reduce."
+msgstr "ದಯಮಾದಡಿ ನೀವು ತಗ್ಗಿಸಲು ಬಯಸುವ ಸಂಪುಟ ಸಮೂಹವನ್ನು ಆಯ್ಕೆಮಾಡಿ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:22001
+msgid "Device to remove from volume group:"
+msgstr "ಸಂಪುಟ ಸಮೂಹದಿಂದ ತೆಗೆಯಬೇಕಾದ ಉಪಕರಣ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:22001
+msgid "Please select the device you wish to remove from the volume group."
+msgstr "ಸಂಪುಟ ಸಮೂಹದಿಂದ ನೀವು ತೆಗೆಯಲು ಬಯಸುವ ಉಪಕರಣವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:23001 ../lvmcfg-utils.templates:24001
+msgid "Error while reducing volume group"
+msgstr "ಶೇಖರಣಾ ಪರಿಮಾಣ ಸಮೂಹವನ್ನು  ಕುಗ್ಗಿಸುವಾಗ ದೋಷಊಂಟಾಗಿದೆ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:23001
+msgid ""
+"The selected volume group (${VG}) could not be reduced. There is only one "
+"physical volume attached. Please delete the volume group instead."
+msgstr ""
+"ಅಯ್ಕೆ ಮಾಡಲಾದ ($VG)ಸಂಪುಟ ಸಮೂಹವನ್ನು ಕುಗ್ಗಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ಇಲ್ಲಿ ಕೇವಲ ಒಂದೇ ಭೌತಿಕ "
+"ಸಂಪುಟವನ್ನು ಸೇರಿಸಲಾಗಿದೆ. ದಯಮಾಡಿ ಅದರ ಬದಲಾಗಿ ಸಂಪುಟ ಸಮೂಹವನ್ನೆ ತೆಗೆದುಹಾಕಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:24001
+msgid ""
+"The physical volume ${PARTITION} could not be removed from the selected "
+"volume group."
+msgstr ""
+"${PARTITION} ಭೌತಿಕ ಸಂಪುಟವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ ಸಂಪುಟ ಸಮೂಹದಿಂದ ತೆಗೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:24001 ../lvmcfg-utils.templates:32001
+#: ../lvmcfg-utils.templates:37001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"/var/log/syslogನಲ್ಲಿ ಅಥವಾ ಅವಾಸ್ತವಿಕ ಆಜ್ಞಾಫಲಕ ೪ ರಲ್ಲಿ ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಪರೀಕ್ಷಿಸಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:25001
+msgid ""
+"No volume groups were found for creating a new logical volume.  Please "
+"create more physical volumes and volume groups."
+msgstr ""
+"ಹೊಸದೊಂದು ತಾರ್ಕಿಕ ಸಂಪುಟವನ್ನು ನಿರ್ಮಿಸಲು ಯಾವುದೇ ಸಂಪುಟ ಸಮೂಹಗಳು ಪತ್ತೆಯಾಗಿಲ್ಲ. ದಯಮಾಡಿ "
+"ಹೆಚ್ಚು ಭೌತಿಕ ಸಂಪುಟಗಳು ಹಾಗು ಸಂಪುಟ ಸಮೂಹಗಳನ್ನು ನಿರ್ಮಿಸಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:26001
+msgid ""
+"No free volume groups were found for creating a new logical volume. Please "
+"create more physical volumes and volume groups, or reduce an existing volume "
+"group."
+msgstr ""
+"ಹೊಸ ತಾರ್ಕಿಕ ಸಂಪುಟವನ್ನು ರಚಿಸಲು ಯಾವುದೇ ಬಿಡುವಾದ ಸಂಪುಟ ಸಮೂಹಗಳು ಪತ್ತೆಯಾಗಿಲ್ಲ. ದಯಮಾಡಿ "
+"ಇನ್ನು ಹೆಚ್ಚು ಭೌತಿಕ ಸಂಪುಟಗಳನ್ನು ಮತ್ತು ಸಂಪುಟ ಸಮೂಹಗಳನ್ನು ರಚಿಸಿ ಅಥವಾ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ "
+"ಒಂದು ಸಂಪುಟ ಸಮೂಹವನ್ನು ಕುಗ್ಗಿಸಿ."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:27001
+msgid "Logical volume name:"
+msgstr "ತಾರ್ಕಿಕ ಪರಿಮಾಣದ ಹೆಸರು:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:27001
+msgid "Please enter the name you would like to use for the new logical volume."
+msgstr "ದಯಮಾಡಿ ಹೊಸ ತಾರ್ಕಿಕ ಸಂಪುಟಕ್ಕೆ ಬಳಸಬೇಕಾದ ಹೆಸರನ್ನು ದಾಖಲಿಸಿ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:28001 ../lvmcfg-utils.templates:34001
+msgid "Volume group:"
+msgstr "ಶೇಖರಣ ಪರಿಮಾಣ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:28001
+msgid ""
+"Please select the volume group where the new logical volume should be "
+"created."
+msgstr ""
+"ದಯಮಾಡಿ ಹೊಸ ತಾರ್ಕಿಕ ಸಂಪುಟವನ್ನು ಯಾವ ಸಂಪುಟ ಸಮೂಹದಲ್ಲಿ ನಿರ್ಮಿಸಬೇಕು ಎಂದು ಆಯ್ಕೆ ಮಾಡಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:29001
+msgid "No logical volume name entered"
+msgstr "ಯಾವುದೇ ತಾರ್ಕಿಕ  ಪರಿಮಾಣ ಹೆಸರನ್ನು ನಮೂದಿಸಲಾಗಿಲ್ಲ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:29001
+msgid "No name for the logical volume has been entered.  Please enter a name."
+msgstr ""
+"ತಾರ್ಕಿಕ ಸಂಪುಟಕ್ಕೆ ಯಾವುದೇ ಹೆಸರನ್ನು ಸದ್ಯಕ್ಕೆ ಕೊಡಲಾಗಿಲ್ಲ. ದಯಮಾಡಿ ಒಂದು ಹೆಸರನ್ನು ನಮೂದಿಸಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:30001 ../lvmcfg-utils.templates:32001
+msgid "Error while creating a new logical volume"
+msgstr "ಹೊಸ ತಾರ್ಕಿಕ ಪರಿಮಾಣ ರಚಿಸುವಾಗ ದೋಷಉಂಟಾಗಿದೆ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:30001
+msgid ""
+"The name ${LV} is already in use by another logical volume on the same "
+"volume group (${VG})."
+msgstr ""
+"${LV}ಎಂಬ ಹೆಸರು ಈಗಾಗಲೇ ಇದೇ (${VG})ಸಂಪುಟ ಸಮೂಹದ ಬೇರೊಂದು ತಾರ್ಕಿಕ ಸಂಪುಟಕ್ಕೆ "
+"ಬಳಸಲಾಗುತ್ತಿದೆ "
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:31001
+msgid "Logical volume size:"
+msgstr "ತಾರ್ಕಿಕ ಪರಿಮಾಣ ಗಾತ್ರ:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:31001
+msgid ""
+"Please enter the size of the new logical volume. The size may be entered in "
+"the following formats: 10K (Kilobytes), 10M (Megabytes), 10G (Gigabytes), "
+"10T (Terabytes). The default unit is Megabytes."
+msgstr ""
+"ದಯಮಾಡಿ ಹೊಸ ತಾರ್ಕಿಕ ಸಂಪುಟದ ಗಾತ್ರವನ್ನು ದಾಖಲಿಸಿ. ಈ ಮುಂದಿನ ಶೈಲಿಗಳೊಂದರಲ್ಲಿ "
+"ದಾಖಲಿಸಬಹುದಾಗಿದೆ: 10K(ಕಿಲೊಬೈಟ್),10M(ಮೆಗಾಬೈಟ್),10G(ಗಿಗಾಬೈಟ್),10T(ಟೆರಾಬೈಟ್). "
+"ಪೂರ್ವನಿಯೋಜಿತ ಏಕಮಾನ ಮೆಗಾಬೈಟ್ ಆಗಿದೆ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:32001
+msgid ""
+"Unable to create a new logical volume (${LV}) on ${VG} with the new size "
+"${SIZE}."
+msgstr ""
+"${SIZE}ನಷ್ಟು ಹೊಸ ಗಾತ್ರದ ಹೊಸ ತಾರ್ಕಿಕ ಸಂಪುಟ (${LV})ಅನ್ನು ${VG}ಮೇಲೆ ನಿರ್ಮಿಸಲು "
+"ಸಾಧ್ಯವಾಗಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:33001
+msgid "No volume group has been found for deleting a logical volume."
+msgstr "ತಾರ್ಕಿಕ ಸಂಪುಟವೊಂದನ್ನು ತೆಗೆದುಹಾಕಲು ಯಾವುದೇ ಸಂಪುಟ ಸಮೂಹ ಪತ್ತೆಯಾಗಿಲ್ಲ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:34001
+msgid ""
+"Please select the volume group which contains the logical volume to be "
+"deleted."
+msgstr ""
+"ತೆಗೆದುಹಾಕಬೇಕಾದ ತಾರ್ಕಿಕ ಸಂಪುಟವನ್ನು ಹೊಂದಿರುವ ಸಂಪುಟ ಸಮೂಹವನ್ನು ದಯಮಾಡಿ ಆಯ್ಕೆ ಮಾಡಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:35001
+msgid "No logical volume found"
+msgstr "ಯಾವುದೇ ತಾರ್ಕಿಕ ಪರಿಮಾಣವು ಕಂಡುಬಂದಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:35001
+msgid ""
+"No logical volume has been found.  Please create a logical volume first."
+msgstr ""
+"ಯಾವುದೇ ತಾರ್ಕಿಕ ಸಂಪುಟ ಪತ್ತೆಯಾಗಿಲ್ಲ. ದಯಮಾಡಿ ಮೊದಲು ತಾರ್ಕಿಕ ಸಂಪುಟವೊಂದನ್ನು ನಿರ್ಮಿಸಿ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:36001
+msgid "Logical volume:"
+msgstr "ತಾರ್ಕಿಕ ಪರಿಮಾಣ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:36001
+msgid "Please select the logical volume to be deleted on ${VG}."
+msgstr "ದಯಮಾಡಿ ${VG}ಯಲ್ಲಿರುವ ಯಾವ ತಾರ್ಕಿಕ ಸಂಪುಟವನ್ನು ತೆಗೆದುಹಾಕಬೇಕೆಂದು ಆಯ್ಕೆ ಮಾಡಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:37001
+msgid "Error while deleting the logical volume"
+msgstr "ತಾರ್ಕಿಕ ಪರಿಮಾಣವ್ನ್ನು ಅಳಿಸುವಾಗ  ದೋಷವುಂಟಾಗಿದೆ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:37001
+msgid "The logical volume (${LV}) on ${VG} could not be deleted."
+msgstr "${VG}ಮೇಲಿನ (${LV}) ತಾರ್ಕಿಕ ಸಂಪುಟವನ್ನು ತೆಗೆದುಹಾಕಲು ಸಧ್ಯವಾಗಿಲ್ಲ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:38001
+msgid "No usable physical volumes found"
+msgstr "ಯಾವುದೇ ಬಳಸಬಲ್ಲಂತಹ ಭೌತಿಕ ಸಂಪುಟಗಳು ಪತ್ತೆಯಾಗಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:38001
+msgid ""
+"No physical volumes (i.e. partitions) were found in your system. All "
+"physical volumes may already be in use. You may also need to load some "
+"required kernel modules or re-partition the hard drives."
+msgstr ""
+"ಯಾವುದೇ ಭೌತಿಕ ಸಂಪುಟಗಳು (ಅಂದರೆ ವಿಭಜನೆಗಳು) ನಿಮ್ಮ ಗಣಕ ವ್ಯವಸ್ಥೆಯಲ್ಲಿ ಪತ್ತೆಯಾಗಿಲ್ಲ. ಎಲ್ಲ "
+"ಭೌತಿಕ ಸಂಪುಟಗಳು ಆಗಲೇ ಬಳಕೆಯಲ್ಲಿರಬಹುದು. ನೀವು ಕೆಲವು ಬೇಕಾದ ಕರ್ನಲ್ ಘಟಕಗಳನ್ನು "
+"ತುಂಬಬೇಕಾಗಬಹುದು  ಅಥವಾ ಹಾರ್ಡ್ ಡ್ರೈವುಗಳನ್ನು ಮರುವಿಭಜಿಸಬೇಕಾಗಬಹುದು."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:39001
+msgid "Logical Volume Manager not available"
+msgstr "ತಾರ್ಕಿಕ ಪರಿಮಾಣ ನಿರ್ವಾಹಕ ಲಭ್ಯವಿಲ್ಲ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:39001
+msgid ""
+"The current kernel doesn't support the Logical Volume Manager. You may need "
+"to load the lvm-mod module."
+msgstr ""
+"ಪ್ರಸ್ತುತ ಕರ್ನಲ್ ತಾರ್ಕಿಕ ಸಂಪುಟ ವ್ಯವಸ್ಥಾಪಕವನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ನೀವು lvm-mod ಘಟಕವನ್ನು "
+"ತುಂಬಬೇಕಾಗಬಹುದು."

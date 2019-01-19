@@ -1,0 +1,722 @@
+# Estonian translation of Debian-installer
+#
+# This translation is released under the same licence as the debian-installer.
+#
+# Siim Põder <siim@p6drad-teel.net>, 2007.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2009-2012, 2014.
+# Kristjan Räts <kristjanrats@gmail.com>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2017-11-19 13:25+0000\n"
+"Last-Translator: Kristjan Räts <kristjanrats@gmail.com>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18-dev\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "Virtuaalketas %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "Virtuaalketas %s, partitsioon #%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - POSIX.1e Access Control List tugi"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr "lühinimed - kasutatakse ainult vanu MS-DOS 8.3 laadis failinimesid"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"Et su uut süsteemi käivitada, kasutatakse alglaadurit. See paigaldatakse "
+"alglaaduripartitsioonile. Sellele partitsioonile pead alglaaditavuse lipu "
+"püsti seadma. Sääraseid partitsioone märgib partitsioneerimise peamenüüs "
+"\"${BOOTABLE}\"."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! VIGA: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "KLAHVIVAJUTUSED:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "„%c”"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "Näita seda abistavat teadet"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "Mine tagasi eelmise küsimuse juurde"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "Vali tühi kirje"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr "Teised valikud on saadaval '%c' ja '%c'-ga"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr "Varasemad valikud on saadaval '% c'-ga"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr "Järgmised valikud on saadaval '% c'-ga"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "Küsimus: '%c' abi saamiseks, vaikimisi=%d> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "Küsimus: '%c' abi saamiseks> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "Küsimus: '%c' abi saamiseks, vaikimisi=%s> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[Jätkamiseks vajuta enterit]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "Kasutatav liides:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"debconf'i kasutavate pakkide seadistamisel on ühtne välimus ja tunnetus. "
+"Võid valida, millist kasutajaliidest debconf kasutab."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "Pole"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "'Pole' korral ei küsita kunagi ühtegi küsimust."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "Tekst"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "'Tekst' on tavapärane lihttekstiga liides."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "Newt"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "'Newt' on täisekraanil tekstipõhine liides."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "GTK"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr ""
+"'GTK' on graafiline liides, mida saab kasutada kõigis graafilistes "
+"keskkondades."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "/target/proc haakimine nurjus"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "Failisüsteemi /target/proc ei õnnestunud külge haakida."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "Hoiatus: Su süsteem võib olla alglaadimatu!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "Püsivara muutujate seadmine automaatseks alglaadimiseks"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"Et su süsteem võiks automaatselt Debiani alglaadida, tuleb seada mõned "
+"Pegasos OpenFirmware muutujad. Paigaldamise lõpus sooritab süsteem "
+"alglaadimise. Automaatse alglaadimise saavutamiseks sisesta Pegasos "
+"OpenFirmware käsureal järgnevad muutujad:"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"Pead nõnda tegema ainult ühe korra. Edaspidi sisesta käsk \"boot\" või "
+"soorita alglaadimine, et jätkata paigaldamise järgmise astmega."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"Teise variandina võid kerneli ka käsitsi alglaadida, püsivara käsureale "
+"järgnevat sisestades:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"Et su süsteem võiks automaatselt alglaadida, tuleb CFE-s määrata mõned "
+"muutujad. Paigaldamise lõpus sooritab süsteem alglaadimise. Automaatse "
+"alglaadimise lihtsustamiseks sisesta käsureal järgnevad muutujad:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"Seda tuleb teha ainult üks kord. Sellega saad käivitada  käsu \"boot_debian"
+"\" CFE käsuviibalt."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"Kui sa eelistad igal käivitusel automaatset alglaadimist, võid ülalasuvatele "
+"lisaks määrata järgmise muutuja:"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "Kas paigaldada GRUB?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB 2 on GNU  GRUB-i järgmine põlvkond, alglaadur, mida kasutatakse "
+"tavaliselt i386/amd64 PC arvutitel. Nüüd on see saadaval ka platvormidele: "
+"${ARCH}."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"Kuigi sellel on huvitavad uued võimalused, on sellel arhitektuuril tegemist "
+"siiski veel katsetamisjärgus oleva tarkvaraga. Kui valid selle paigaldamise, "
+"peaksid valmis olema tõrgeteks ning teadma, kuidas mittealglaaduvat süsteemi "
+"taastada. Seda pole soovitatav töömasinates kasutada."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "Paigalda alglaadur Arcboot kõvakettale"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "Ketas alglaaduri paigaldamiseks:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"Arcboot tuleb paigaldada SGI kettasildiga ketta volüümi päisesse. Tavaliselt "
+"kasutatakse /dev/sda volüümi päiseid. Palun sisesta seadme nimi, millele "
+"arcboot panna."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "Arcboot seadistatud kasutama järjestikkonsooli"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"Arcboot on seadistatud kasutama konsoolina järjestikporti ${PORT}. "
+"Järjestikpordi kiirus on seatud ${SPEED} peale."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "Arcboot paigaldamine nurjus. Kas jätkata sellele vaatamata?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"Paketi arcboot /target/ peale paigaldamine nurjus. Alglaaduri arcboot "
+"paigaldamine on küll vajalik samm, kuid ilmnenud probleem ei pruugi üldse "
+"arcboot'ga seotud olla, mistõttu võib osutuda võimalikuks jätkata."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "Arcboot jaoks PROM muutujate seadmine"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"Kui käesolev on selle masina esimene Linuxi paigaldus või kui kõvakettaid on "
+"ümber partitsioneeritud, tuleb süsteemi normaalseks alglaadimiseks seada "
+"mõned PROM muutujad."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"Selle paigaldamise astme lõpus sooritab süsteem alglaadimise. Peale seda "
+"sisene \"Stop for Maitenance\" valikust käsukuvarisse ja sisesta järgnevad "
+"käsud:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "Võrgu blokkseadme seadistamine"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD seadistamise tegevus:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "Praegu on ühendatud ${NUMBER} seadet."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "Võrgu blokkseadme (NBD) server:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"Palun sisesta selle arvuti hostinimi või IP-aadress, kus töötab nbd-server."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "NBD ekspordi nimi"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"Palun sisesta NBD ekspordi nimi, et nbd serverit kasutada. Siia sisestatud "
+"nimi peaks vastama serveri olemasolevale ekspordile."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "Võrgu blokkseadme sõlm (node):"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"Palun vali võrgu blokkseadme (NBD) sõlm, mida soovid ühendada või mille "
+"ühendust katkestada."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD serveriga ühendumine nurjus"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd-server'iga ühendumine nurjus. Veendu, et sisestatud host ja ekspori nimi "
+"on õiged, et nbd-serveri protsess töötab selles hostis, et võrk on õigesti "
+"seadistatud ja seejärel proovi uuesti."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "Pole rohkem võrgu blokkseadme (NBD) sõlmi"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"Kas kõik NBD seadme sõlmed on kasutusel või läks midagi valesti seadme "
+"sõlmede tuvastamisel."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"Rohkem NBD seadme sõlmi pole võimalik seadistada kuni seadistatud sõlmedega "
+"ühendus katkestatakse."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "Ühtegi ühendatud võrgu blokkseadme (NBD) sõlme ei leitud"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"Praegu pole ühtegi võrgu blokkseadme (NBD) sõlme ühendatud ühegi serveriga. "
+"Seetõttu pole ühtegi võimalik ühtegi sellist ühendust ka katkestada."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "Võrgu blokkseadme ühendamine"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "Katkesta ühendus võrgu blokkseadmega"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "Lõpeta ja naase partitsioneerimise juurde"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "Flash mälu seadistamine süsteemi alglaadimiseks"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "Süsteemi tegemine alglaaduvaks"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "Süsteemi ettevalmistamine..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "Kerneli kirjutamine flash-mällu..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "Kettale alglaadimistõmmise loomine..."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "Süsteemi tegemine alglaaduvaks"

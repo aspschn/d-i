@@ -1,0 +1,142 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Korean messages for debian-installer.
+# Copyright (C) 2003,2004,2005,2008 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Changwoo Ryu <cwryu@debian.org>, 2010-2012, 2014-2015, 2017-2018.
+#
+# Translations from iso-codes:
+# Copyright (C)
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   Changwoo Ryu <cwryu@debian.org>, 2004, 2008, 2009, 2010, 2011.
+#   Copyright (C) 2000 Free Software Foundation, Inc.
+#   Eungkyu Song <eungkyu@sparcs.org>, 2001.
+#   Free Software Foundation, Inc., 2001,2003
+#   Jaegeum Choe <baedaron@hananet.net>, 2001.
+#   (translations from drakfw)
+#   Kang, JeongHee <Keizi@mail.co.kr>, 2000.
+#   Sunjae Park <darehanl@gmail.com>, 2006-2007.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: pkgsel@packages.debian.org\n"
+"POT-Creation-Date: 2018-06-27 14:00+0200\n"
+"PO-Revision-Date: 2018-07-25 18:28+0800\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. should not be more than 55 columns
+#. pkgsel is the module that installs packages by running tasksel to
+#. select "tasks". Please use "install *software*" and not
+#. "install *packages*" which is less adapted for non technical users
+#: ../pkgsel.templates:1001
+msgid "Select and install software"
+msgstr "프로그램 선택 및 설치"
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when pkgsel is launched, before it installs packages
+#: ../pkgsel.templates:2001
+msgid "Setting up..."
+msgstr "준비하는 중입니다..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when upgrading already installed packages.
+#: ../pkgsel.templates:4001
+msgid "Upgrading software..."
+msgstr "소프트웨어 업그레이드하는 중입니다..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when running tasksel to allow selecting packages
+#. Tasksel will then display its own screens
+#: ../pkgsel.templates:5001
+msgid "Running tasksel..."
+msgstr "tasksel 실행하는 중입니다..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used at the end of the installation phase while
+#. cleaning up pkgsel's stuff
+#: ../pkgsel.templates:6001
+msgid "Cleaning up..."
+msgstr "정리 작업 중입니다..."
+
+#. Type: text
+#. Description
+#: ../pkgsel.templates:8001
+msgid "Running ${SCRIPT}..."
+msgstr "${SCRIPT} 스크립트를 실행하는 중입니다..."
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "No automatic updates"
+msgstr "자동 업데이트 없음"
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "Install security updates automatically"
+msgstr "보안 업데이트를 자동으로 설치"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid "Updates management on this system:"
+msgstr "이 시스템의 업데이트 관리"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Applying updates on a frequent basis is an important part of keeping the "
+"system secure."
+msgstr "잦은 업데이트 적용이 시스템을 안전하게 유지하는 중요한 부분입니다."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"By default, security updates are not automatically installed, as security "
+"advisories should be reviewed before manual installation of the updates "
+"using standard package management tools."
+msgstr ""
+"기본값으로 보안 업데이트는 자동으로 설치하지 않습니다. 일반 패키지 관리 도구"
+"로 업데이트를 설치할 때 수동으로 보안 자문을 검토해야 합니다."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Alternatively the unattended-upgrades package can be installed, which will "
+"install security updates automatically. Note however that automatic "
+"installation of updates may occasionally cause unexpected downtime of "
+"services provided by this machine in the rare cases where the update is not "
+"fully backward-compatible, or where the security advisory requires the "
+"administrator to perform some other manual operation."
+msgstr ""
+"다른 방법으로 unattended-upgrades 패키지를 설치할 수도 있습니다. 그러면 보안 "
+"업데이트를 자동으로 설치합니다. 하지만 업데이트를 자동 설치하면 드물게 이 컴"
+"퓨터에서 제공하는 서비스가 예상치 못하게 멈출 수 있습니다. 업데이트가 이전 버"
+"전과 호환되지 않는 경우, 또는 보안 자문에 따라 관리자가 수동으로 특정 조작을 "
+"해야 하는 경우입니다."

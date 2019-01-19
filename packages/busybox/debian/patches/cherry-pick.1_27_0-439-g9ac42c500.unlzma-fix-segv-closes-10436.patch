@@ -1,0 +1,24 @@
+Subject: Unlzma: fix SEGV, closes 10436
+ID: CVE-2017-15874
+Origin: 1_27_0-439-g9ac42c500
+Upstream-Author: Denys Vlasenko <vda.linux@googlemail.com>
+Date: Fri Oct 27 15:37:03 2017 +0200
+
+    Signed-off-by: Denys Vlasenko <vda.linux@googlemail.com>
+
+--- a/archival/libarchive/decompress_unlzma.c
++++ b/archival/libarchive/decompress_unlzma.c
+@@ -450,8 +450,12 @@
+  IF_NOT_FEATURE_LZMA_FAST(string:)
+ 			do {
+ 				uint32_t pos = buffer_pos - rep0;
+-				if ((int32_t)pos < 0)
++				if ((int32_t)pos < 0) {
+ 					pos += header.dict_size;
++					/* bug 10436 has an example file where this triggers: */
++					if ((int32_t)pos < 0)
++						goto bad;
++				}
+ 				previous_byte = buffer[pos];
+  IF_NOT_FEATURE_LZMA_FAST(one_byte2:)
+ 				buffer[buffer_pos++] = previous_byte;

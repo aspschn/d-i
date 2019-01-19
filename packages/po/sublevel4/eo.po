@@ -1,0 +1,721 @@
+# translation of Debian Installer templates to Esperanto.
+# Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2013 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Samuel Gimeno <sgimeno@gmail.com>, 2005.
+# Serge Leblanc <serge.leblanc@wanadoo.fr>, 2005, 2006, 2007.
+# Felipe Castro <fefcas@gmail.com>, 2008, 2009, 2010, 2011, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: eo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2017-12-22 19:55+0000\n"
+"Last-Translator: Felipe Castro <fefcas@gmail.com>\n"
+"Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.19-dev\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "Virtuala disko %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "Virtuala disko %s, diskparto #%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - subteni POSIX.1E Alir-Kontrola Listo"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr "nometoj - nur uzi la malnovajn dosiernomojn laŭ stilo 8.3 de MS-DOS"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"Ekŝargilo estos uzita por ekfunkciigi vian novan sistemon. Ĝi estos "
+"instalata en ekŝarga diskparto. Vi nepre deklaru ĝian ekŝargeblan flagon. "
+"Tio estos anoncata per '${BOOTABLE}'-marko en la diskpartiga menuo."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! ERARO: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "KLAVOFRAPOJ:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "'%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "Montri tiun ĉi helpmesaĝon"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "Retroiri al antaŭa demando"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "Elektu malplenan registrokampon"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr "Aliaj elektoj disponeblas per '%c' kaj '%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr "Antaŭaj elektoj disponeblas per '%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr "Sekvaj elektoj disponeblas per '%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "Tajpu: '%c' por helpo, implicita valoro=%d> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "Tajpu: '%c' por helpo> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "Tajpu: '%c' por helpo, implicita valoro=%s> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[Premu enigon por plu iri]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "Uzota interfaco:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"Pakoj kiuj uzas debconf por agordo kunhavas komunan aspekton. Vi povas "
+"elekti la tipon de interfaco kiun ili uzos."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "Neniu"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "'Neniu' igos ke neniu demando estos farata."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "Teksto"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "'Teksto' estas tradicia plata teksta interfaco."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "'Newt'"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "'Newt' estas interfaco plen-ekrana, surbazita de signoj."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "GTK"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr ""
+"'GTK' estas grafika interfaco kiu povas esti uzata en iu ajn grafika medio."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "Malsukcesis munti /target/proc"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "Muntado de dosiersistemo proc sur /target/proc malsukcesis."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "Averto: Via sistemo eble ne estos ekŝargebla!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "Ni alĝustigas mikroprogramajn variablojn por aŭtomata ekŝargo"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"Kelkaj variabloj bezonas esti difinitaj en la mikroprogramaro Genesi por ke "
+"via sistemo aŭtomate ekŝargiĝu. Je la fino de la instalado, la sistemo re-"
+"ekŝargiĝos. Je komandinvito de la mikroprogramaro, difinu la jenajn "
+"mikroprogramajn variablojn por aktivigi aŭtomatan ekŝargon:"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"Vi bezonos fari tion ĉi nur unu foje. Poste, tajpu la komandon \"boot\" aŭ "
+"reŝargu je la sistemo por uzi vian nove instalitan sistemon."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"Alternative, vi povos permane ekŝargi je la kerno, enmetante ĉe la "
+"mikroprogramara invito:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"Kelkaj variabloj bezonas esti difinitaj en CFE por ke via sistemo aŭtomate "
+"ekŝargiĝu. Je la fino de instalado, la sistemo re-ekŝargiĝos. Je "
+"komandinvito de la mikroprogramaro, difinu la jenajn variablojn por simpligi "
+"ekŝargon:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"Vi bezonos fari tion ĉi nur unu foje. Tio ĉi permesos al vi uzi la simplan "
+"ordonon \"boot_debian\" ĉe la invito de CFE."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"Se vi preferas aŭtomatan ekŝargon dum ĉiu komenciĝo, vi povas difini la "
+"jenan variablon aldone al la antaŭaj supre:"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "Ĉu instali GRUB?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB 2 estas la nova generacio de GNU GRUB, la ekŝargilo kiu estas plej "
+"kutime uzata kun komputiloj i386/amd64. Ĝi estas disponebla ankaŭ por "
+"${ARCH}."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"Ĝi havas interesajn novajn apartaĵojn sed ankoraŭ estas eksperimenta "
+"programaro por tiu ĉi arkitekturo. Se vi elektas instali ĝin, vi devos esti "
+"preparita por rompiĝo, kaj vi devas koni ion pri kiel restarigi vian "
+"sistemon se ĝi iĝos ne-ŝargebla. Vi estas admonata ne provi tion ĉi en "
+"produktantaj medioj."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "Instalu la 'Arcboot'-ekŝargilon sur fiksitan diskon"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "Disko sur kiu instali ekŝargilon:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"'Arcboot'-n endas instali en la kapo de volumo de disko kun disketikedo "
+"'SGI'. Ordinare, la kapo de volumo de '/dev/sda' estas uzata. Bonvolu tajpi "
+"la aparatnomon de la disko sur kiu vi volas instali 'arcboot'."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "Agordita 'Arcboot'-o por uzi serian konzolon"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"'Arcboot'-o estas agordita por uzi serian pordon '${PORT}' kiel konzolon. La "
+"seria porda rapido estas '${SPEED}'-a."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "'Arcboot'-a instalado malsukcesis. Ĉu tamen daŭrigi?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"La 'arcboot'-pakon neeblas instali en '/target/'-o. Instali 'Arcboot'-on "
+"kiel ekŝargilon estas bezonata ago. Tamen se la problemo ne dependus de "
+"'Arcboot'-o, nu eblus daŭrigi la instaladon."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "Akomodado de 'PROM'-variabloj necesiĝas por 'Arcboot'"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"Se temas pri la unua Linuksa instalado sur tiu maŝino, aŭ se la fiksitaj "
+"diskoj estas rediskpartigitaj, iujn 'PROM'-variablojn endos modifi por "
+"normale eble ekŝargi la sistemon."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"La sistemo denove startos kiam tiu insaladfazo finiĝos. Poste, lanĉu la "
+"dialogan interpretilon (\"command monitor\") per la 'Stopu por vartado'-"
+"elekto (\"Stop for Maintenance\"), kaj plenumu la sekvantajn ordonojn:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "Agordi la Retan Blok-Aparaton (NBD)"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "Agorda-ago de NBD:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "Nune estas ${NUMBER} aparatoj konektataj."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "Servilo de Reta Blok-Aparato:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"Bonvolu enmeti la gastigantan nomon aŭ la IP-adreson de la sistemo kiu "
+"ruligas 'nbd-server'."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "Nomo por eksporto NBD"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"Bonvolu enmeti la nomo de ekzporto NBD por aliri la nbd-servilon. La nomo "
+"enmetata devos akordi kun ekzistanta ekzporto en la servilo."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "Aparato-nodo de la Reta Blok-Aparato:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"Bonvolu elekti la aparat-nodon de NBD kiun vi deziras konekti aŭ malkonekti."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "Konekto al servilo NBD malsukcesis"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"Konekto al la nbd-servilo malsukcesis. Bonvolu certigi ke la gastiganto kaj "
+"la ekzporta nomo kie vi aliris estas ĝustaj, ke la procezo 'nbd-server' "
+"rulas en tiu gastiganto, ke la reto estas ĝuste agordita, kaj reprovu."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "Neniu alia nodo de Reta Blok-Aparato restas"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"Aŭ ĉiuj disponeblaj nodoj de aparatoj NBD estas okupataj aŭ io misfunkciis "
+"en la detektado de la nodoj de aparatoj."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"Neniu alia nodo de aparato NBD povas estis akomodata ĝis iu jam akomodita "
+"estu malkonektita."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "Neniu konektita nodo de Reta Blok-Aparato estis trovata"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"Ekzistas nun neniu nodo de Reta Blok-Aparato konektata al iu servilo. Tial, "
+"vi ne povas malkonekti iun ajn el ili."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "Konekti Retan Blok-Aparaton"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "Malkonekti Retan Blok-Aparaton"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "Fini kaj retroiri al la diskpartigilo"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "Akomodado de memoro 'flash' por ekŝargi la sistemon"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "Oni igas la sistemon ekŝargebla"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "Preparado de la sistemo..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "Skribado de la kerno en memoro 'flash'..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "Kreado de ekŝarga bildo en la disko..."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "Igi la sistemon ekŝargebla"

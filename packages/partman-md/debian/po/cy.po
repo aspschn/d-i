@@ -1,0 +1,568 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of Debian Installer templates to Welsh
+# Copyright (C) 2004-2008 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Jonathan Price <mynamesnotclive@notclive.co.uk>, 2008.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004.
+#   - translations from ICU-3.0
+#   Dafydd Harries <daf@muse.19inch.net>, 2002,2004,2006.
+#   Free Software Foundation, Inc., 2002,2004
+#   Alastair McKinstry <mckinstry@computer.org>, 2001
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: partman-md@packages.debian.org\n"
+"POT-Creation-Date: 2009-07-17 22:47+0000\n"
+"PO-Revision-Date: 2012-06-14 09:46-0000\n"
+"Last-Translator: Dafydd Tomos <l10n@da.fydd.org>\n"
+"Language-Team: Welsh <>\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-md.templates:1001
+msgid "Software RAID device"
+msgstr "Dyfais RAID meddalwedd"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-md.templates:2001
+msgid "Configure software RAID"
+msgstr "Cyflunio RAID meddalwedd"
+
+#. Type: text
+#. Description
+#. :sl3:
+#. What is "in use" is a partition
+#: ../partman-md.templates:3001
+msgid "In use by software RAID device ${DEVICE}"
+msgstr "Mewn defnydd gan ddyfais RAID meddalwedd ${DEVICE}"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:4001
+msgid "Software RAID not available"
+msgstr "RAID meddalwedd ddim ar gael"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:4001
+msgid ""
+"The current kernel doesn't seem to support software RAID (MD) devices. This "
+"should be solved by loading the necessary modules."
+msgstr ""
+"Nid yw'r cnewyllyn cyfredol yn cynnal dyfeisiau RAID meddalwedd (MD). Dylid "
+"datrys hyn drwy lwytho'r modiwlau angenrheidiol."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-md.templates:5001
+msgid "Create MD device"
+msgstr "Creu dyfais Amlddisg (MD)"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-md.templates:5001
+msgid "Delete MD device"
+msgstr "Dileu dyfais Amlddisg (MD)"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-md.templates:5001
+msgid "Finish"
+msgstr "Gorffen"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:5002
+msgid "Software RAID configuration actions"
+msgstr "Gweithredoedd cyflunio RAID meddalwedd"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:5002
+msgid ""
+"This is the software RAID (or MD, \"multiple device\") configuration menu."
+msgstr "Dyma ddewislen RAID meddalwedd (MD, neu \"aml ddyfais\")."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:5002
+msgid "Please select one of the proposed actions to configure software RAID."
+msgstr ""
+"Dewiswch un o'r gweithredoedd a gynigir er mwyn cyflunio RAID meddalwedd."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:6001
+msgid "Software RAID device type:"
+msgstr "Math dyfais RAID meddalwedd:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:6001
+msgid "Please choose the type of the software RAID device to be created."
+msgstr "Os gwelwch yn dda, dewiswch y math o RAID meddalwedd i'w greu."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:7001
+msgid "No RAID partitions available"
+msgstr "Dim rhaniadau RAID ar gael"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:7001
+msgid ""
+"No unused partitions of the type \"Linux RAID Autodetect\" are available. "
+"Please create such a partition, or delete an already used software RAID "
+"device to free its partitions."
+msgstr ""
+"Nid oes rhaniadau heb ei ddefnyddio o'r math \"RAID Linux Awtoddarganfod\" "
+"ar gael. Crëwch rhaniad o'r math yma os gwelwch yn dda, neu dilewch ddyfais "
+"RAID meddalwedd a ddefnyddir eisioes er mwyn rhyddhau ei raniadau."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:7001
+msgid ""
+"If you have such partitions, they might contain actual file systems, and are "
+"therefore not available for use by this configuration utility."
+msgstr ""
+"Os oes y fath rhaniadau gennych, fe allent gynnwys systemau ffeiliau, a "
+"felly nid ydynt ar gael i'w defnyddio gan y teclyn cyflunio hwn."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:8001
+msgid "Active devices for the RAID0 array:"
+msgstr "Dyfeisiau gweithredol ar gyfer yr araë RAID0:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:8001
+msgid ""
+"You have chosen to create a RAID0 array. Please choose the active devices in "
+"this array."
+msgstr ""
+"Rydych wedi dewis creu araë RAID0. Dewiswch y dyfeisiau gweithredol yn yr "
+"araë hwn."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:9001
+msgid "Number of active devices for the RAID${LEVEL} array:"
+msgstr "Nifer y dyfeisiau gweithredol ar gyfer yr araë RAID${LEVEL}:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:9001
+msgid ""
+"The RAID${LEVEL} array will consist of both active and spare devices. The "
+"active devices are those used, while the spare devices will only be used if "
+"one or more of the active devices fail. A minimum of ${MINIMUM} active "
+"devices is required."
+msgstr ""
+"Fe fydd yr araë RAID${LEVEL} yn cynnwys rhaniadau gweithredol a sbâr. "
+"Defnyddir y rhaniadau gweithredol, tra caiff y dyfeisiau sbâr eu defnyddio "
+"dim ond os yw un neu fwy o'r dyfeisiau gweithredol yn methu. Mae'n rhaid "
+"cael lleiafrif o ${MINIMUM} dyfais."
+
+#. Type: string
+#. Description
+#. :sl3:
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:9001 ../partman-md.templates:14001
+msgid "NOTE: this setting cannot be changed later."
+msgstr "SYLWER: ni ellir newid y gosodiad yma wedyn."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:10001
+msgid "Active devices for the RAID${LEVEL} array:"
+msgstr "Dyfeisiau gweithredol ar gyfer yr araë RAID${LEVEL}:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:10001
+msgid ""
+"You have chosen to create a RAID${LEVEL} array with ${COUNT} active devices."
+msgstr ""
+"Rydych wedi dewis creu araë RAID${LEVEL} gyda ${COUNT} dyfais gweithredol."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:10001
+msgid ""
+"Please choose which partitions are active devices. You must select exactly "
+"${COUNT} partitions."
+msgstr ""
+"Os gwelwch yn dda, dewiswch pa rhaniadau sy'n ddyfeisiau gweithredol. Rhaid "
+"i chi ddewis ${COUNT} rhaniad yn union."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:11001
+msgid "Number of spare devices for the RAID${LEVEL} array:"
+msgstr "Nifer o ddyfeisiau sbâr ar gyfer yr araë RAID${LEVEL}:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:12001
+msgid "Spare devices for the RAID${LEVEL} array:"
+msgstr "Dyfeisiau sbâr ar gyfer yr araë RAID${LEVEL}:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:12001
+msgid ""
+"You have chosen to create a RAID${LEVEL} array with ${COUNT} spare devices."
+msgstr "Rydych wedi dewis creu araë RAID${LEVEL} gyda ${COUNT} dyfais sbâr."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-md.templates:12001
+msgid ""
+"Please choose which partitions will be used as spare devices. You may choose "
+"up to ${COUNT} partitions. If you choose less than ${COUNT} devices, the "
+"remaining partitions will be added to the array as \"missing\". You will be "
+"able to add them to the array later."
+msgstr ""
+"Os gwelwch yn dda, dewiswch pa rhaniadau a caiff eu defnyddio fel dyfeisiau "
+"sbâr. Cewch ddewis hyd at ${COUNT} rhaniad. Os ydych chi'n dewis llai na "
+"${COUNT} dyfais, caiff y rhaniadau dros ben eu ychwanegu fel \"ar goll\". "
+"Cewch eu hychwanegu nhw i'r araë nes ymlaen."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:13001
+msgid "Not enough RAID partitions available"
+msgstr "Dim digon o raniadau RAID ar gael"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:13001
+msgid ""
+"There are not enough RAID partitions available for your selected "
+"configuration.  You have ${NUM_PART} RAID partitions available but your "
+"configuration requires ${REQUIRED} partitions."
+msgstr ""
+"Does dim digon o raniadau RAID ar gael ar gyfer eich cyfluniad dewisiesig. "
+"Mae gennych ${NUM_PART} rhaniad RAID ar gael ond mae eich cyfluniad yn mynnu "
+"${REQUIRED} rhaniad."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:14001
+msgid "Layout of the RAID10 array:"
+msgstr "Cynllun yr arae RAID10:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:14001
+msgid ""
+"The layout must be n, o, or f (arrangement of the copies) followed by a "
+"number (number of copies of each chunk). The number must be smaller or equal "
+"to the number of active devices."
+msgstr ""
+"Rhaid i'r cynllun fod yn n, o neu f (trefniant y copïau) wedi ei ddilyn gan "
+"rif (nifer o gopïau o bob talp). Rhaid i'r rhif fod yn llai neu hafal i'r "
+"nifer o ddyfeisiau gweithredol."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../partman-md.templates:14001
+msgid ""
+"The letter is the arrangement of the copies:\n"
+" n - near copies: Multiple copies of one data block are at similar\n"
+"     offsets in different devices.\n"
+" f - far copies: Multiple copies have very different offsets\n"
+" o - offset copies: Rather than the chunks being duplicated within a\n"
+"     stripe, whole stripes are duplicated but are rotated by one\n"
+"     device so duplicate blocks are on different devices."
+msgstr ""
+"Y llythyren yw'r trefniant o gopïau:\n"
+"n - copïau agos (near): Mae amryw gopïau o'r un bloc data ar\n"
+"     atredau tebyg ar ddyfeisiau gwahanol.\n"
+"f - copïau pell (far): Mae amryw gopïau ar atredau gwahanol iawn\n"
+"o - copïau atred (offset): Yn hytrach na talpiau yn cael eu dyblygu o\n"
+"     fewn streip, mae streipiau cyfan yn cael eu dyblygu ond yn cael\n"
+"     eu cylchdroi o un dyfais felly fe fydd blociau dyblyg ar wahanol\n"
+"     ddyfeisiau."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:15001
+msgid "Software RAID device to be deleted:"
+msgstr "Dyfais RAID meddalwedd i'w ddileu:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:15001
+msgid ""
+"Deleting a software RAID device will stop it and clear the superblock of all "
+"its components."
+msgstr ""
+"Mi fydd dileu dyfais RAID meddalwedd yn ei stopio ac yna clirio'r uwchfloc "
+"o'i holl gydrannau."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:15001
+msgid ""
+"Please note this will not immediately allow you to reuse the partitions or "
+"devices in a new software RAID device. The array will however be unusable "
+"after the deletion."
+msgstr ""
+"Sylwer na fydd hyn yn caniatáu i chi ailddefnyddio'r rhaniadau na dyfeisiau "
+"mewn dyfais RAID meddalwedd newydd yn syth. Fodd bynnag, ni ellir "
+"defnyddio'r araë ar ol y dilëad."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-md.templates:15001
+msgid ""
+"If you select a device for deletion, you will get some information about it "
+"and you will be given the option of aborting this operation."
+msgstr ""
+"Os ydych chi'n dewis dileu dyfais, cewch fanylion amdano a cyfle i beidio "
+"mynd ymlaen â'r weithred."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:16001
+msgid "No software RAID devices available"
+msgstr "Nid oes dyfeisiau RAID meddalwedd ar gael"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:16001
+msgid "No software RAID devices are available for deletion."
+msgstr "Nid oes dyfeisiau RAID meddalwedd ar gael i'w dileu."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:17001
+msgid "Really delete this software RAID device?"
+msgstr "Gwir ddileu'r ddyfais RAID meddalwedd hwn?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:17001
+msgid ""
+"Please confirm whether you really want to delete the following software RAID "
+"device:"
+msgstr ""
+"Os gwelwch yn dda, cadarnhewch eich bod am ddileu y ddyfais RAID meddalwedd "
+"canlynol:"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:17001
+msgid ""
+" Device:            ${DEVICE}\n"
+" Type:              ${TYPE}\n"
+" Component devices:"
+msgstr ""
+" Dyfais:            ${DEVICE}\n"
+" Math:              ${TYPE}\n"
+" Dyfeisiau cydran:"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:18001
+msgid "Failed to delete the software RAID device"
+msgstr "Methwyd dileu y ddyfais RAID meddalwedd"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:18001
+msgid "There was an error deleting the software RAID device. It may be in use."
+msgstr ""
+"Roedd gwall wrth ddileu y ddyfais RAID meddalwedd. Efallai ei fod mewn "
+"defnydd."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:19001
+msgid "Write the changes to the storage devices and configure RAID?"
+msgstr "Ysgrifennu'r newidiadau i'r dyfeisiau storfa a chyflunio RAID?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:19001
+msgid ""
+"Before RAID can be configured, the changes have to be written to the storage "
+"devices.  These changes cannot be undone."
+msgstr ""
+"Cyn gellir cyflunio RAID, rhaid ysgrifennu'r newidiadau i'r dyfeisiau "
+"storfa. Ni ellir dadwneud y newidiadau yma."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:19001 ../partman-md.templates:20001
+msgid ""
+"When RAID is configured, no additional changes to the partitions in the "
+"disks containing physical volumes are allowed.  Please convince yourself "
+"that you are satisfied with the current partitioning scheme in these disks."
+msgstr ""
+"Pan mae RAID wedi ei gyflunio, ni chaniateir unrhyw newidiadau i'r rhaniadau "
+"yn y disgiau sy'n cynnwys cyfrolau corfforol. Os gwelwch yn dda, sicrhewch "
+"eich bod chi'n fodlon gyda'r cynllun rhaniadu cyfredol yn y disgiau hyn."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:20001
+msgid "Keep current partition layout and configure RAID?"
+msgstr "Cadw'r cynllun rhaniad cyfredol a chyflunio RAID?"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:21001
+msgid "RAID configuration failure"
+msgstr "Methiant cyfluniad RAID"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:21001
+msgid "An error occurred while writing the changes to the storage devices."
+msgstr "Digwyddodd gwall wrth ysgrifennu'r newidiadau i'r dyfeisiau storfa."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-md.templates:21001
+msgid "RAID configuration has been aborted."
+msgstr "Mae cyflunio RAID wedi ei derfynu."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-md.templates:22001
+msgid "physical volume for RAID"
+msgstr "cyfrol corfforol ar gyfer RAID"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-md.templates:23001
+msgid "raid"
+msgstr "raid"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:24001
+msgid "Remove existing software RAID partitions?"
+msgstr "Dileu y rhaniadau RAID meddalwedd presennol?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:24001
+msgid ""
+"The selected device contains partitions used for software RAID devices. The "
+"following devices and partitions are about to be removed:"
+msgstr ""
+"Mae'r ddyfais ddewiswyd yn cynnwys rhaniadau ar gyfer dyfeisiau RAID "
+"meddalwedd. Mae'r dyfeisiau a'r rhaniadau canlynol am gael eu dileu:"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:24001
+msgid "Software RAID devices about to be removed: ${REMOVED_DEVICES}"
+msgstr "Dyfeisiau RAID meddalwedd ar fin cael eu dileu: ${REMOVED_DEVICES}"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:24001
+msgid "Partitions used by these RAID devices: ${REMOVED_PARTITIONS}"
+msgstr ""
+"Y rhaniadau sy'n cael eu defnyddio gan y dyfeisiau RAID hyn: "
+"${REMOVED_PARTITIONS}"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-md.templates:24001
+msgid ""
+"Note that this will also permanently erase any data currently on the "
+"software RAID devices."
+msgstr ""
+"Noder y bydd hwn yn dileu yn barhaol unrhyw ddata sy'n bresennol ar y "
+"dyfeisiau RAID meddalwedd."

@@ -1,0 +1,387 @@
+Subject: Tar: postpone creation of symlinks with "suspicious" targets. Closes 8411
+Origin: 1_27_0-148-gb920a38dc
+Upstream-Author: Denys Vlasenko <vda.linux@googlemail.com>
+Date: Mon Jul 24 17:20:13 2017 +0200
+Bug-Debian: https://bugs.debian.org/802702
+ID: CVE-2011-5325
+
+    function                                             old     new   delta
+    data_extract_all                                     968    1038     +70
+    tar_main                                             952     986     +34
+    scan_tree                                            258     262      +4
+    ------------------------------------------------------------------------------
+    (add/remove: 0/0 grow/shrink: 3/0 up/down: 108/0)             Total: 108 bytes
+
+    Signed-off-by: Denys Vlasenko <vda.linux@googlemail.com>
+
+--- a/archival/libarchive/data_extract_all.c
++++ b/archival/libarchive/data_extract_all.c
+@@ -128,10 +128,11 @@
+ 		res = link(hard_link, dst_name);
+ 		if (res != 0 && !(archive_handle->ah_flags & ARCHIVE_EXTRACT_QUIET)) {
+ 			/* shared message */
+-			bb_perror_msg("can't create %slink "
+-					"%s to %s", "hard",
++			bb_perror_msg("can't create %slink '%s' to '%s'",
++					"hard",
+ 					dst_name,
+-					hard_link);
++					hard_link
++			);
+ 		}
+ 		/* Hardlinks have no separate mode/ownership, skip chown/chmod */
+ 		goto ret;
+@@ -178,15 +179,44 @@
+ 	case S_IFLNK:
+ 		/* Symlink */
+ //TODO: what if file_header->link_target == NULL (say, corrupted tarball?)
++
++		/* To avoid a directory traversal attack via symlinks,
++		 * for certain link targets postpone creation of symlinks.
++		 *
++		 * For example, consider a .tar created via:
++		 *  $ tar cvf bug.tar anything.txt
++		 *  $ ln -s /tmp symlink
++		 *  $ tar --append -f bug.tar symlink
++		 *  $ rm symlink
++		 *  $ mkdir symlink
++		 *  $ tar --append -f bug.tar symlink/evil.py
++		 *
++		 * This will result in an archive that contains:
++		 *  $ tar --list -f bug.tar
++		 *  anything.txt
++		 *  symlink [-> /tmp]
++		 *  symlink/evil.py
++		 *
++		 * Untarring bug.tar would otherwise place evil.py in '/tmp'.
++		 */
++		if (file_header->link_target[0] == '/'
++		 || strstr(file_header->link_target, "..")
++		) {
++			llist_add_to(&archive_handle->symlink_placeholders,
++				xasprintf("%s%c%s", file_header->name, '\0', file_header->link_target)
++			);
++			break;
++		}
+ 		res = symlink(file_header->link_target, dst_name);
+ 		if (res != 0
+ 		 && !(archive_handle->ah_flags & ARCHIVE_EXTRACT_QUIET)
+ 		) {
+ 			/* shared message */
+-			bb_perror_msg("can't create %slink "
+-				"%s to %s", "sym",
++			bb_perror_msg("can't create %slink '%s' to '%s'",
++				"sym",
+ 				dst_name,
+-				file_header->link_target);
++				file_header->link_target
++			);
+ 		}
+ 		break;
+ 	case S_IFSOCK:
+--- a/archival/tar.c
++++ b/archival/tar.c
+@@ -22,24 +22,6 @@
+  *
+  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
+  */
+-/* TODO: security with -C DESTDIR option can be enhanced.
+- * Consider tar file created via:
+- * $ tar cvf bug.tar anything.txt
+- * $ ln -s /tmp symlink
+- * $ tar --append -f bug.tar symlink
+- * $ rm symlink
+- * $ mkdir symlink
+- * $ tar --append -f bug.tar symlink/evil.py
+- *
+- * This will result in an archive which contains:
+- * $ tar --list -f bug.tar
+- * anything.txt
+- * symlink
+- * symlink/evil.py
+- *
+- * Untarring it puts evil.py in '/tmp' even if the -C DESTDIR is given.
+- * This doesn't feel right, and IIRC GNU tar doesn't do that.
+- */
+ 
+ //config:config TAR
+ //config:	bool "tar"
+@@ -296,6 +278,23 @@
+ 	xwrite(fd, hp, sizeof(*hp));
+ }
+ 
++static void replace_symlink_placeholders(llist_t *list)
++{
++	while (list) {
++		char *target;
++
++		target = list->data + strlen(list->data) + 1;
++		if (symlink(target, list->data)) {
++			/* shared message */
++			bb_error_msg_and_die("can't create %slink '%s' to '%s'",
++				"sym",
++				list->data, target
++			);
++		}
++		list = list->link;
++	}
++}
++
+ #if ENABLE_FEATURE_TAR_GNU_EXTENSIONS
+ static void writeLongname(int fd, int type, const char *name, int dir)
+ {
+@@ -1252,6 +1251,8 @@
+ 	while (get_header_tar(tar_handle) == EXIT_SUCCESS)
+ 		bb_got_signal = EXIT_SUCCESS; /* saw at least one header, good */
+ 
++	replace_symlink_placeholders(tar_handle->symlink_placeholders);
++
+ 	/* Check that every file that should have been extracted was */
+ 	while (tar_handle->accept) {
+ 		if (!find_list_entry(tar_handle->reject, tar_handle->accept->data)
+--- /dev/null
++++ b/archival/tar_symlink_attack
+@@ -0,0 +1,16 @@
++#!/bin/sh
++# Makes "symlink attack" tarball (needs GNU tar for --append)
++
++true >anything.txt
++tar cvf tar_symlink_attack.tar anything.txt
++rm anything.txt
++
++ln -s /tmp symlink
++tar --append -f tar_symlink_attack.tar symlink
++rm symlink
++
++mkdir symlink
++echo BUG >symlink/bb_test_evilfile
++tar --append -f tar_symlink_attack.tar symlink/bb_test_evilfile
++rm symlink/bb_test_evilfile
++rmdir symlink
+--- a/coreutils/link.c
++++ b/coreutils/link.c
+@@ -33,7 +33,7 @@
+ 	if (link(argv[0], argv[1]) != 0) {
+ 		/* shared message */
+ 		bb_perror_msg_and_die("can't create %slink "
+-					"%s to %s", "hard",
++					"'%s' to '%s'", "hard",
+ 					argv[1], argv[0]
+ 		);
+ 	}
+--- a/include/bb_archive.h
++++ b/include/bb_archive.h
+@@ -64,6 +64,9 @@
+ 	/* Currently processed file's header */
+ 	file_header_t *file_header;
+ 
++	/* List of symlink placeholders */
++	llist_t *symlink_placeholders;
++
+ 	/* Process the header component, e.g. tar -t */
+ 	void FAST_FUNC (*action_header)(const file_header_t *);
+ 
+@@ -188,6 +191,7 @@
+ char get_header_cpio(archive_handle_t *archive_handle) FAST_FUNC;
+ char get_header_tar(archive_handle_t *archive_handle) FAST_FUNC;
+ char get_header_tar_gz(archive_handle_t *archive_handle) FAST_FUNC;
++char get_header_tar_xz(archive_handle_t *archive_handle) FAST_FUNC;
+ char get_header_tar_bz2(archive_handle_t *archive_handle) FAST_FUNC;
+ char get_header_tar_lzma(archive_handle_t *archive_handle) FAST_FUNC;
+ char get_header_tar_xz(archive_handle_t *archive_handle) FAST_FUNC;
+--- a/testsuite/tar.tests
++++ b/testsuite/tar.tests
+@@ -10,9 +10,6 @@
+ unset LC_ALL
+ umask 022
+ 
+-rm -rf tar.tempdir 2>/dev/null
+-mkdir tar.tempdir && cd tar.tempdir || exit 1
+-
+ # testing "test name" "script" "expected result" "file input" "stdin"
+ 
+ testing "Empty file is not a tarball" '\
+@@ -53,6 +50,7 @@
+ "" ""
+ SKIP=
+ 
++mkdir tar.tempdir && cd tar.tempdir || exit 1
+ # "tar cf test.tar input input_dir/ input_hard1 input_hard2 input_hard1 input_dir/ input":
+ # GNU tar 1.26 records as hardlinks:
+ #  input_hard2 -> input_hard1
+@@ -64,7 +62,6 @@
+ # We also don't use "hrw-r--r--" notation for hardlinks in "tar tv" listing.
+ optional FEATURE_TAR_CREATE FEATURE_LS_SORTFILES
+ testing "tar hardlinks and repeated files" '\
+-rm -rf input_* test.tar 2>/dev/null
+ >input_hard1
+ ln input_hard1 input_hard2
+ mkdir input_dir
+@@ -95,10 +92,11 @@
+ " \
+ "" ""
+ SKIP=
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
+ 
++mkdir tar.tempdir && cd tar.tempdir || exit 1
+ optional FEATURE_TAR_CREATE FEATURE_LS_SORTFILES
+ testing "tar hardlinks mode" '\
+-rm -rf input_* test.tar 2>/dev/null
+ >input_hard1
+ chmod 741 input_hard1
+ ln input_hard1 input_hard2
+@@ -128,10 +126,11 @@
+ " \
+ "" ""
+ SKIP=
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
+ 
++mkdir tar.tempdir && cd tar.tempdir || exit 1
+ optional FEATURE_TAR_CREATE FEATURE_LS_SORTFILES
+ testing "tar symlinks mode" '\
+-rm -rf input_* test.tar 2>/dev/null
+ >input_file
+ chmod 741 input_file
+ ln -s input_file input_soft
+@@ -159,10 +158,11 @@
+ " \
+ "" ""
+ SKIP=
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
+ 
++mkdir tar.tempdir && cd tar.tempdir || exit 1
+ optional FEATURE_TAR_CREATE FEATURE_TAR_LONG_OPTIONS
+ testing "tar --overwrite" "\
+-rm -rf input_* test.tar 2>/dev/null
+ ln input input_hard
+ tar cf test.tar input_hard
+ echo WRONG >input
+@@ -174,12 +174,13 @@
+ " \
+ "Ok\n" ""
+ SKIP=
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
+ 
++mkdir tar.tempdir && cd tar.tempdir || exit 1
+ test x"$SKIP_KNOWN_BUGS" = x"" && {
+ # Needs to be run under non-root for meaningful test
+ optional FEATURE_TAR_CREATE
+ testing "tar writing into read-only dir" '\
+-rm -rf input_* test.tar 2>/dev/null
+ mkdir input_dir
+ >input_dir/input_file
+ chmod 550 input_dir
+@@ -201,7 +202,9 @@
+ "" ""
+ SKIP=
+ }
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
+ 
++mkdir tar.tempdir && cd tar.tempdir || exit 1
+ # Had a bug where on extract autodetect first "switched off" -z
+ # and then failed to recognize .tgz extension
+ optional FEATURE_TAR_CREATE FEATURE_SEAMLESS_GZ GUNZIP
+@@ -217,7 +220,9 @@
+ " \
+ "" ""
+ SKIP=
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
+ 
++mkdir tar.tempdir && cd tar.tempdir || exit 1
+ # Do we detect XZ-compressed data (even w/o .tar.xz or txz extension)?
+ # (the uuencoded hello_world.txz contains one empty file named "hello_world")
+ optional UUDECODE FEATURE_TAR_AUTODETECT FEATURE_SEAMLESS_XZ
+@@ -236,7 +241,9 @@
+ ====
+ "
+ SKIP=
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
+ 
++mkdir tar.tempdir && cd tar.tempdir || exit 1
+ # On extract, everything up to and including last ".." component is stripped
+ optional FEATURE_TAR_CREATE
+ testing "tar strips /../ on extract" "\
+@@ -255,7 +262,9 @@
+ " \
+ "" ""
+ SKIP=
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
+ 
++mkdir tar.tempdir && cd tar.tempdir || exit 1
+ # attack.tar.bz2 has symlink pointing to a system file
+ # followed by a regular file with the same name
+ # containing "root::0:0::/root:/bin/sh":
+@@ -270,6 +279,7 @@
+ testing "tar does not extract into symlinks" "\
+ >>/tmp/passwd && uudecode -o input && tar xf input 2>&1 && rm passwd; cat /tmp/passwd; echo \$?
+ " "\
++tar: can't create symlink 'passwd' to '/tmp/passwd'
+ 0
+ " \
+ "" "\
+@@ -281,12 +291,15 @@
+ ====
+ "
+ SKIP=
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
++
++mkdir tar.tempdir && cd tar.tempdir || exit 1
+ # And same with -k
+ optional UUDECODE FEATURE_TAR_AUTODETECT FEATURE_SEAMLESS_BZ2
+ testing "tar -k does not extract into symlinks" "\
+ >>/tmp/passwd && uudecode -o input && tar xf input -k 2>&1 && rm passwd; cat /tmp/passwd; echo \$?
+ " "\
+-tar: can't open 'passwd': File exists
++tar: can't create symlink 'passwd' to '/tmp/passwd'
+ 0
+ " \
+ "" "\
+@@ -298,7 +311,9 @@
+ ====
+ "
+ SKIP=
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
+ 
++mkdir tar.tempdir && cd tar.tempdir || exit 1
+ optional UNICODE_SUPPORT FEATURE_TAR_GNU_EXTENSIONS FEATURE_SEAMLESS_BZ2 FEATURE_TAR_AUTODETECT
+ testing "Pax-encoded UTF8 names and symlinks" '\
+ tar xvf ../tar.utf8.tar.bz2 2>&1; echo $?
+@@ -318,8 +333,36 @@
+ " \
+ "" ""
+ SKIP=
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
+ 
+-
+-cd .. && rm -rf tar.tempdir || exit 1
++mkdir tar.tempdir && cd tar.tempdir || exit 1
++optional FEATURE_SEAMLESS_BZ2 FEATURE_TAR_AUTODETECT
++testing "Symlink attack: create symlink and then write through it" '\
++exec 2>&1
++uudecode -o input && tar xvf input; echo $?
++ls /tmp/bb_test_evilfile
++ls bb_test_evilfile
++ls symlink/bb_test_evilfile
++' "\
++anything.txt
++symlink
++symlink/bb_test_evilfile
++tar: can't create symlink 'symlink' to '/tmp'
++1
++ls: /tmp/bb_test_evilfile: No such file or directory
++ls: bb_test_evilfile: No such file or directory
++symlink/bb_test_evilfile
++" \
++"" "\
++begin-base64 644 tar_symlink_attack.tar.bz2
++QlpoOTFBWSZTWZgs7bQAALT/hMmQAFBAAf+AEMAGJPPv32AAAIAIMAC5thlR
++omAjAmCMADQT1BqNE0AEwAAjAEwElTKeo9NTR6h6gaeoA0DQNLVdwZZ5iNTk
++AQwCAV6S00QFJYhrlfFkVCEDEGtgNVqYrI0uK3ggnt30gqk4e1TTQm5QIAKa
++SJqzRGSFLMmOloHSAcvLiFxxRiQtQZF+qPxbo173ZDISOAoNoPN4PQPhBhKS
++n8fYaKlioCTzL2oXYczyUUIP4u5IpwoSEwWdtoA=
++====
++"
++SKIP=
++cd .. || exit 1; rm -rf tar.tempdir 2>/dev/null
+ 
+ exit $FAILCOUNT

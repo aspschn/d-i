@@ -1,0 +1,703 @@
+# Telugu translation for debian-installer
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
+# This file is distributed under the same license as the debian-installer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
+# Arjuna Rao Chavala <arjunaraoc@gmail.com>, 2010.
+# Arjuna Rao Chavala <arjunaraoc@googlemail.com>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-03-08 22:27+0530\n"
+"Last-Translator: Arjuna Rao Chavala <arjunaraoc@googlemail.com>\n"
+"Language-Team: d-i <kde-i18n-doc@kde.org>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.0\n"
+"X-Launchpad-Export-Date: 2008-06-29 14:12+0000\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "మిథ్యా డిస్క్  %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "మిథ్యా డిస్క్   %s, పార్టిషన్ #%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - POSIX.1e అందుబాటు నియంత్రణ జాబితా  తోడ్పాటు"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr "పొట్టిపేర్లు- పాత MS-DOS 8.3 రూపుఫైల్ పేర్లు మాత్రమే"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"మీ కొత్తవ్యవస్థ ప్రారంభానికి,బూట్ లోడర్ వాడబడుతుంది. అది బూట్ పార్టిషన్ లో స్థాపించబడుతుంది. దానికిబూటబుల్ "
+"ప్లాగ్  సెట్ చేయాలి. అటువంటి పార్టిషన్ \"${BOOTABLE}\" గా ప్రధాన పార్టిషనింగ్లో  పేర్కొనబడుతుంది."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! తప్పు: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "మీట నొక్కులు:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "'%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "ఈ సహాయం చూపించు"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "ముందరి ప్రశ్న?"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "ఒక ఖాళీ ఎంట్రీ ని ఎంచుకో"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "ప్రాంప్ట్: '%c' సహాయానికి, అప్రమేయం=%d> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "ప్రాంప్ట్: '%c' సహాయానికి> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "ప్రాంప్ట్: '%c' సహాయానికి, అప్రమేయం=%s> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "కొనసాగించడానికి  ఎంటర్  ని నొక్కండి"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "ఉపయోగించాల్సిన అంతరవర్తి:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"అమరికలకోసం డెబ్కాన్ఫ్ ని వాడే    పాకేజీలు, ఏకరూపాన్ని, అనుభూతిని కలిగిస్తాయి. అవి  వాడే అంతరవర్తి ని(UI) "
+"ఎంచుకోవచ్చు "
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "None"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "'None' ఏ ప్రశ్నను ఇక అడగదు."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "Text"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "'Text' ఒక సాంప్రదాయిక ప్రాథమికమైన పాఠ్య అంతర్వర్తి"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "Newt"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "'Newt' పూర్తితెర వాడే  అక్షరాల అధారిత అంతర్వర్తి"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "GTK"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr "'GTK' గ్రాఫిక్స్ పర్యావరణంలో వాడడానికి అనువైన గ్రాఫిక్స్ అంతర్వర్తి"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "/target/proc సంధానము విఫలమైంది"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "/target/proc పై proc ఫైల్ వ్యవస్థ  సంధానము విఫలమైంది"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "హెచ్చరిక: మీ వ్యవస్థ బూట్ కాకపోవచ్చు!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "స్వయంచాలక బూట్ కొరకు ఫర్మ్ వేర్ వేరియబల్స్  విలువలివ్వబడుతున్నది"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"మీ  వ్యవస్థ  స్వయంచాలక ప్రారంభానికి,జెనెసి ఫర్మ్ వేర్ లో  వేరియబల్స్ కు   విలువలివ్వబడాలి.స్థాపన పూర్తయిన "
+"తరువాత, వ్యవస్థ తిరిగి బూట్ అవుతుంది. ఫర్మ్ వేర్ ప్రాంప్ట్ దగ్గర  స్వయంచాలక బూట్ కొరకు  క్రింద "
+"ఇవ్వబడిన ఫర్మ్ వేర్ వేరియబల్స్ కి విలువలివ్వండి."
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"ఈ పని ఒక్కసారే చేయాలి. ఆ తరువాత, \"boot\" ఆదేశాన్నిచ్చి లేక తిరిగి బూట్ చేసి, మీ కొత్త స్థాపిత వ్యవస్థకి "
+"వెళ్లవచ్చు."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr "ఇంకొక విధంగా, ఫర్మ్వేర్ ప్రాంప్ట్ దగ్గర కెర్నెల్ని మానవీయంగా బూట చేయవచ్చు:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"మీ  వ్యవస్థ  స్వయంచాలక ప్రారంభానికి,CFE లో  కొన్ని వేరియబల్స్ కు   విలువలివ్వబడాలి.స్థాపన పూర్తయిన "
+"తరువాత, వ్యవస్థ తిరిగి బూట్ అవుతుంది. ఫర్మ్ వేర్ ప్రాంప్ట్ దగ్గర బూట్ సులభం చేయుట కొరకు  క్రింద "
+"ఇవ్వబడిన ఫర్మ్ వేర్ వేరియబల్స్ కి విలువలివ్వండి."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"ఈ పని ఒక్కసారే చేయాలి. ఆ తరువాత,CFE ప్రాంప్ట్ వద్ద \"boot_debian\" ఆదేశాన్ని ఇవ్వటానికి వీలవుతుంది."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"ప్రతి ప్రారంభానికి, స్వయంచాలకబూట్ ఇష్టపడితే, పై వాటితో పాటు, క్రింద ఇవ్వబడిన వేరియబుల్స్ కు విలువలివ్వాలి."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "GRUB ని  స్థాపన చేయాలా?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB 2  (GNU GRUB i386/amd64 PC లపై సాధారణంగా వాడబడే used on బూట్ లోడర్ యొక్క తదుపరి "
+"రూపం) ఇప్పుడ ${ARCH} కొరకు అందుబాటులో వుంది."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"దీనిలో కొత్త సౌలభ్యాలున్నాయి కాని ఇది ఈ ఆర్కిటెక్చర్ కొరకు ప్రయోగస్థాయిలోవుంది . మీరు స్థాపించదలచుకుంటే, మీ "
+"వ్యవస్థ చిన్నాభిన్నం అయ్యేందుకు సిద్ధపడాలి బూట్ కాకపోతేదానిని సరిచేసేందుకు మీకు ఊహ వుండాలి . రోజువారిపని "
+"పర్యావరణంలో దీనిని ప్రయత్నించవద్దు."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "Arcboot బూట్ లోడర్ ని హార్డ్ డిస్క్ పై స్థాపన"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "బూట్ లోడర్ స్థాపన కు డిస్క్:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"Arcboot ని   SGI  డిస్క్ లేబుల్ గా గల డిస్క్ కి వాల్యూమ్ హెడర్  లో మాత్రమే  స్థాపించాలి. సాధారణంగా  "
+"వాల్యూమ్ హెడర్  /dev/sda వాడబడుతుంది. దయచేసి  arcboo  పెట్టవలసిన డిస్క్ యొక్క డివైస్ పేరు ఇవ్వండి."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "Arcboot  సరణి కన్సోల్ వాడుటకు అమర్చబడినది"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"Arcboot  సరణి పోర్ట్   ${PORT} ని  కన్సోల్ గా వాడుటకు అమర్చబడినది. సరణి పోర్టు  వేగం ${SPEED} "
+"గా మార్చబడినది."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "Arcboot  స్థాపన విఫలమైంది. ఐనా సరే కొనసాగించాలా?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"arcboot పాకేజి  /target/ పై స్థాపన విఫలమైంది.   దీనిని బూట్ లోడర్ గా స్థాపన చేయటం అవసరమైన అంశం.  "
+"స్థాపన సమస్య arcboot కి సంబంధించినది కాకపోవచ్చు.స్థాపన కొనసాగించటం వీలవవచ్చు.  "
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "Arcboot కి  PROM చలరాసులకు విలువలివ్వుట"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"ఈ యంత్రము పై లినక్స్ స్థాపన ప్రథమంగా చేస్తున్నట్లయితే లేక, హార్డ్ డ్రైవు లు పార్టిషన్ మార్పులు చేసినట్లయితే, "
+"వ్యవస్థ మామూలుగా బూట్ కావటానికి, PROM లో కొన్ని చలరాసులకు విలువలివ్వాలి"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"స్థాపన చివరి దశలో, వ్యవస్థ తిరిగి బూట్ అవుతుంది.  అప్పుడు  \"Stop for Maintenance\" "
+"ఐచ్ఛికంనుండి ఆదేశ మానిటర్ ప్రవేశించండి  మరియు క్రింద ఇవ్వబడిన ఆదేశాలు ఇవ్వండి:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "నెట్వర్క్  బ్లాక్ డివైస్ అమరిక"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD అమరిక  చర్య:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "ప్రస్తుతం ${NUMBER} డివైస్ లు అనుసంధానించబడివున్నాయి."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "నెట్వర్క్ బ్లాక్ డివైస్ సేవిక:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "nbd-server నడుపుతున్న వ్యవస్థకి హోస్ట్ పేరు లేక IP చిరునామా ప్రవేశ పెట్టండి."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "నెట్వర్క్  బ్లాక్ డివైస్  డివైస్ నోడ్:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "కలపవలసిన లేక తొలగింపదలచిన NBD డివైస్ నోడ్  ఎంచుకో."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD సేవిక అనుసంధానం విఫలం"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+#| msgid ""
+#| "Connecting to the nbd-server failed. Please ensure that the host and the "
+#| "port or the name which you entered are correct, that the nbd-server "
+#| "process is running on that host and port (or using that name), that the "
+#| "network is configured correctly, and retry."
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd-server అనుసంధానం విఫలం. ప్రవేశపెట్టబడిన హోస్ట్ పోర్ట్ లేక పేరు సరియైనదిగా నిర్థారించు, మరియు  "
+"nbd-server ప్రాసెస్ ఆలా తెలుపబడిన వ్యవస్థపై నడుస్తున్నదని మరియు నెట్వర్క్ అమరిక సరిగావుందని "
+"నిర్ధారించి  మరలప్రయత్నించు."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "నెట్వర్క్ బ్లాక్ డివైస్ నోడ్లు మిగలలేదు."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"అందుబాటులో వున్న NBD డివైస్ నోడ్లన్నీ వుపయోగంలోవున్నాయి లేక   డివైస్ నోడ్లు కనుగొనటంలో తప్పుజరిగింది."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr "ముందుగా అమర్చిన నోడ్ తొలగించినంతవరకు.  ఇక ఏ NBD డివైస్ నోడ్ అమరిక కుదరదు."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "అనుసంధానించిన నెట్వర్క్ బ్లాక్ డివైస్ నోడ్లు కనబడలేదు."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"ఏ సేవికకు అనుసంధానించిన నెట్వర్క్ బ్లాక్ డివైస్ నోడ్లు లేవు.  అందువలన వాటి అనుసంధానం తొలగించలేము."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "నెట్వర్క్ బ్లాక్ డివైస్ అమరిక"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "నెట్వర్క్ బ్లాక్ డివైస్ అనుసంధానం తొలగించు"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "మీరు విభజన మెనూ కి తిరిగి  వెళ్లాలనుకుంటున్నారా?"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "వ్యవస్థ బూట్ చేయటానికి, ఫ్లాష్ మెమరీ అమరిక"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "వ్యవస్థని బూట్ చేయుటకి అనుగుణంగా మార్చుట"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "వ్యవస్థ  తయారుచేయుట..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "ఫ్లాష్ మెమరీలో కెర్నెల్ వ్రాయుట..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "బూట్  ఇమేజ్ డిస్క్ పై తయారు చేయుట..."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "వ్యవస్థని బూట్ చేయుటకి అనుగుణంగా మార్చు"

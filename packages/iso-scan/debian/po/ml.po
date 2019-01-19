@@ -1,0 +1,318 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of Debian Installer Level 1 - sublevel 1 to malayalam
+# Copyright (c)  2006-2010 Debian Project
+# Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, 2006-2010.
+# Santhosh Thottingal <santhosh00@gmail.com>, 2006.
+# Sreejith :: ശ്രീജിത്ത് കെ <sreejithk2000@gmail.com>, 2006.
+# Credits:  V Sasi Kumar, Sreejith N, Seena N, Anivar Aravind, Hiran Venugopalan and Suresh P
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt#
+#
+#
+# Translations from iso-codes:
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Praveen A <pravi.a@gmail.com>, 2006, 2008.
+#   Ani Peter <peter.ani@gmail.com>, 2009
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Debian Installer Level 1\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2012-10-30 10:16+0530\n"
+"Last-Translator: Hrishikesh K B <hrishi.kb@gmail.com>\n"
+"Language-Team: Debian Malayalam <debian-l10n-malayalam@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "ഇന്‍സ്റ്റാളര്‍ ISO ഇമേജിനായി ഹാര്‍ഡ് ഡ്രൈവുകളില്‍ തെരയുക"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "ഹാര്‍ഡ് ഡ്രൈവുകള്‍ക്കായി ഹാര്‍ഡ്‌വെയര്‍ കണ്ടുപിടിച്ചുകൊണ്ടിരിയ്ക്കുന്നു"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "ഇന്‍സ്റ്റാളര്‍ ISO ഇമേജിനായി ഡ്രൈവുകളില്‍ തെരഞ്ഞുകൊണ്ടിരിയ്ക്കുന്നു"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "${DRIVE} മൌണ്ട് ചെയ്തു കൊണ്ടിരിയ്ക്കുന്നു..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "${DRIVE} ല്‍ തെരഞ്ഞുകൊണ്ടിരിയ്ക്കുന്നു (${DIRECTORY} യില്‍)..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "ഇന്‍സ്റ്റാളര്‍ ISO ഇമേജിനായി മുഴുവന്‍ ഡിസ്കിലും തിരയണോ?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"സാധാരണ സ്ഥലങ്ങളില്‍ മാത്രം തിരയുന്ന പെട്ടെന്നുള്ള തിരച്ചിലില്‍ ഇന്‍സ്റ്റാളര്‍ ISO ഇമേജ് കണ്ടില്ല.  "
+"കൂടുതല്‍ സമഗ്രമായ ഒരു തിരച്ചിലില്‍ ISO ഇമേജ് കണ്ടുകിട്ടിയേക്കാം, പക്ഷേ ഇതു് നീണ്ട "
+"സമയമെടുത്തേക്കാം."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "ഇന്‍സ്റ്റാളര്‍ ISO ഇമേജ് കണ്ടുപിടിക്കുന്നതില്‍ പരാജയപ്പെട്ടു"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"ഇന്‍സ്റ്റാളര്‍ ISO ഇമേജുകളൊന്നും കണ്ടില്ല. നിങ്ങള്‍ ISO ഇമേജ് ഡൌണ്‍ലോഡ് ചെയ്തിട്ടുണ്ടെങ്കില്‍ അതിനൊരു "
+"ചീത്ത ഫയല്‍നാമം (\".iso\" യില്‍ അവസാനിക്കാത്ത) ഉണ്ടാകുകയോ അതൊരു മൌണ്ട് ചെയ്യാന്‍ പറ്റാത്ത ഫയല്‍ "
+"സിസ്റ്റത്തിലായിരിക്കുകയോ ചെയ്യാം."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"നിങ്ങള്‍ക്കു് വേറൊരു ഇന്‍സ്റ്റലേഷന്‍ രീതി ഉപയോഗിയ്ക്കേണ്ടി വന്നേയ്ക്കാം, അല്ലെങ്കില്‍ ഐഎസ്ഒ ഇമേജ് "
+"ശരിയാക്കിയതിനു് ശേഷം വീണ്ടും ശ്രമിയ്ക്കുക."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"ഒന്നോ അതിലതികമോ സാധ്യതയുള്ള ISO ഇമേജുകള്‍ കണ്ടെങ്കിലും അവ മൌണ്ട് ചെയ്യാന്‍ സാധ്യമല്ല. നിങ്ങള്‍ "
+"ഡൌണ്‍ലോഡ് ചെയ്ത ISO ഇമേജ് ദുഷിച്ച് പോയതാകാം."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "ഇന്‍സ്റ്റാളര്‍ ISO ഇമേജുകളൊന്നും കണ്ടില്ല"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"ഒന്നോ അതിലതികമോ സാധ്യതയുള്ള ISO ഇമേജുകള്‍ കണ്ടെങ്കിലും അവ സാധുവായ ISO ഇമേജുകളാണെന്ന് "
+"തോന്നുന്നില്ല."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "${SUITE} എന്ന ഇന്‍സ്റ്റാളര്‍ ISO ഇമേജ് വിജയകരമായി മൌണ്ട് ചെയ്തു"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"${DEVICE} ലുള്ള ${FILENAME} എന്ന ISO ഫയല്‍ (${SUITE}) ഇന്‍സ്റ്റാളേഷനുള്ള ISO ഇമേജായി "
+"ഉപയോഗിക്കുന്നതായിരിയ്ക്കും."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "എല്ലാ ലഭ്യമായിട്ടുള്ള ഉപകരണങ്ങളും"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "ഉപകരണം മാന്വലായി നല്‍കുക"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "ഇന്‍സ്റ്റലേഷന്‍ ISO(കള്‍) തിരയാനാവാശ്യമായ പാര്‍ട്ടിഷന്‍ അല്ലെങ്കില്‍ ഡിവൈസ്"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"താങ്കള്‍ക്ക് ഒരു ഡിവൈസ് തിരഞ്ഞെടുക്കുകയോ, ഡിറ്റക്റ്റ് ചെയ്യപ്പെടാത്ത ഒരു ഡിവൈസ് സ്പെസിഫൈ ചെയ്യുകയോ, "
+"ലഭ്യമായ ഡിവൈസുകള്‍ക്കായി റീസ്കാന്‍ ചെയ്യുകയോ ചെയ്യാം (വേഗം  കുറഞ്ഞ യുഎസ്ബി ഡിവൈസുകള്‍ക്ക് "
+"ഉപയോഗപ്രദം)"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "ഉപകരണത്തിന്റെ പേരു്:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "മുഴുവന്‍ തെരയുക"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "ഉപയോഗിയ്ക്കേണ്ട ISO ഫയല്‍:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"തിരഞ്ഞെടുത്ത ഡിവസില്‍(ഡിവൈസുകളില്‍) ഒന്നോ അതിലധികമോ ISO ഫയലുകള്‍ ഡിറ്റക്റ്റ് ചെയ്തിരിക്കുന്നു. "
+"ഇതില്‍ ഏതു വേണമെന്ന് തിരഞ്ഞെടുക്കുക. അല്ലെങ്കില്‍ കൂടുതല്‍ വിശദമായുള്ള തിരച്ചിലിനായി ചോദിക്കുക.  "
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr "${FILENAME} എന്ന ISO ഫയല്‍ ഇന്‍സ്റ്റാളേഷനാവശ്യമായ ശരിയായ ഇമേജാണോ?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"${DEVICE} ലുള്ള ${FILENAME} എന്ന ISO ഫയല്‍ (${SUITE} , '${DESCRIPTION}') "
+"ഇന്‍സ്റ്റാളേഷനുള്ള ISO ഇമേജായി ഉപയോഗിക്കുന്നതായിരിയ്ക്കും."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"ഒരേ ഇന്‍സ്റ്റാളര്‍ ഡ്രൈവില്‍ ഒന്നില്‍ കൂടുതല്‍ ISO ഫയലുകള്‍ ഉണ്ടെങ്കില്‍ താങ്കള്‍ക്ക് ആവശ്യമായത് "
+"തിരഞ്ഞെടൂക്കാവുന്നതാണ്"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "ഇന്‍സ്റ്റാളര്‍ ഐഎസ്ഒയില്‍ നിന്നും ഇന്‍സ്റ്റാളര്‍ ഘടകങ്ങള്‍ ചേര്‍ക്കുക"

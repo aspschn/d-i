@@ -1,0 +1,713 @@
+# Japanese messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2016-02-16 20:45+0900\n"
+"Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
+"Language: ja\n"
+"Language-Team: Debian L10n Japanese <debian-japanese@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "仮想ディスク %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "仮想ディスク %s, パーティション %s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - POSIX.1e Access Control List のサポート"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr "shortnames - 古い MS-DOS 8.3 形式のファイル名のみを使用"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"あなたの新しいシステムを開始するために、ブートローダと呼ばれるものが使われま"
+"す。これは、ブートパーティションにインストールされます。このパーティションに"
+"は、ブートフラグを設定する必要があります。そのようなパーティションはメイン"
+"パーティショニングメニューで \"${BOOTABLE}\" マークが付きます。"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! エラー: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "キーストローク:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "'%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "このヘルプメッセージの表示"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "前の質問に戻る"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "空のエントリを選択"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr "ほかの選択肢は '%c' と '%c' が選択可能です"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr "前の選択肢は '%c' が選択可能です"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr "次の選択肢は '%c' が選択可能です"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "プロンプト: ヘルプ '%c', デフォルト=%d> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "プロンプト: ヘルプ '%c'> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "プロンプト: ヘルプ '%c', デフォルト=%s> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[続けるには Enter を押してください]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "利用するインターフェイス:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"設定に debconf を用いるパッケージは、共通のルック＆フィールを用います。どの種"
+"類のユーザインターフェイスを用いるかを選んでください。"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "なし"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "'なし' は以降何も質問しなくなります。"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "テキスト"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "'テキスト' は従来のプレインテキストインターフェイスです。"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "Newt"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "'Newt' はフルスクリーンの文字ベースインターフェイスです。"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "GTK"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr "'GTK' はグラフィカル環境で利用できるグラフィカルインターフェイスです。"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "/target/proc のマウントに失敗しました"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "proc ファイルシステムを /target/proc にマウントするのに失敗しました。"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "警告: あなたのシステムは起動できない恐れがあります!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "自動起動するためのファームウェア変数を設定しています"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"あなたのシステムで Debian を自動的に起動するために、Genesi ファームウェアにい"
+"くつかの変数を設定する必要があります。このインストールの終わりに、システムは"
+"再起動します。ファームウェアプロンプトでは、自動起動できるように、次のように"
+"ファームウェア変数を設定します:"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"これを 1 度だけ行う必要があります。そのあとで、新しいインストールシステムに進"
+"むために、\"boot\" コマンドを入力するかシステムを再起動します。"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"または、ファームウェアプロンプトで次のように主動で入力することで、カーネルを"
+"ブートすることができます:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"あなたのシステムで Debian を自動的に起動するために、CFE にいくつかの変数を設"
+"定する必要があります。このインストールの終わりに、システムは再起動します。"
+"ファームウェアプロンプトでは、簡単に起動できるように、次のようにファームウェ"
+"ア変数を設定します:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"この操作は一度のみ行います。これで CFE プロンプトで \"boot_debian\" コマンド"
+"を発行するだけとなります。"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"スタートアップのたびに自動起動したいなら、上記のものに加えて以下の値を設定で"
+"きます。"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "GRUB をインストールしますか?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB 2 は GNU GRUB の次世代製品で、i386/amd64 PC で一般に使われるブートローダ"
+"です。現在、${ARCH} でも利用可能です。"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"興味深い新機能を備えてはいますが、このアーキテクチャにはまだ実験的なソフト"
+"ウェアです。インストールを選ぶ場合、失敗に備えて、起動しなくなったときにどの"
+"ようにシステムを復旧させるかの考えを持っておくべきです。プロダクション環境に"
+"おいては、インストールを試すべきではありません。"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "Arcboot ブートローダをハードディスクにインストール"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "ブートローダをインストールするディスク:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"arcboot は SGI ディスクラベル付きのディスクのボリュームヘッダにインストールす"
+"る必要があります。通常 /dev/sda のボリュームヘッダが使われます。arcboot を置"
+"きたいディスクのデバイス名を入力してください。"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "arcboot はシリアルコンソールを使うよう設定されています"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"arcboot はコンソールとしてシリアルポート ${PORT} を使うよう設定されています。"
+"シリアルポートの速度は ${SPEED} に設定されています。"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "arcboot のインストールに失敗しました。続けますか?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"arcboot パッケージを /target/ にインストールするのに失敗しました。arcboot を"
+"ブートローダとしてインストールすることは必須の手順です。インストールの問題が "
+"arcboot に関係ないのであれば、可能なインストール作業を続けることができます。"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "Arcboot のために PROM 変数を設定しています"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"これがこのマシンへの最初の Linux インストールであるか、ハードドライブが再パー"
+"ティショニングされたのであれば、システムを正常にブートするようにする前に、"
+"PROM のいくつかの変数を設定する必要があります。"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"このインストールステージの最後に、システムは再起動します。このあと、\"Stop "
+"for Maintenance\" オプションからコマンドモニタに入り、次のコマンドを入力しま"
+"す:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "ネットワークブロックデバイスの設定"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD 設定アクション:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "現在 ${NUMBER} 個の接続されたデバイスがあります。"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "ネットワークブロックデバイスサーバ:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"nbd-server を実行しているシステムのホスト名または IP アドレスを入力してくださ"
+"い。"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "NBD エクスポートの名前"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"nbd-server にアクセスするのに必要な NBD エクスポート名を入力してください。こ"
+"こで入力する名前はサーバの既存のエクスポートに合致しなければなりません。"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "ネットワークブロックデバイスのノード:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "接続または切断したい NBD デバイスを選択してください。"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD サーバとの接続に失敗しました"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd-server との接続に失敗しました。入力したホストおよびエクスポート名が正しい"
+"こと、nbd-server プロセスがそのホストで実行されていること、ネットワークが正し"
+"く設定されていることを確認し、再試行してください。"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ネットワークブロックデバイスノードの残りはありません"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"すべての使用可能な NBD デバイスノードが使用中、あるいは何かデバイスノードの検"
+"出に問題が起きています。"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"設定された 1 つが切断されるまで、NBD デバイスノードをさらに設定することはでき"
+"ません。"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "接続されたネットワークブロックデバイスノードが見つかりませんでした"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"現在何らかのサーバに接続しているネットワークブロックデバイスノードはありませ"
+"ん。そのため、それらを切断することもできません。"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "ネットワークブロックデバイスの接続"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "ネットワークブロックデバイスの切断"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "完了してパーティショナーに戻る"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "システムをブートするためにフラッシュメモリを設定しています"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "システムを起動可能にする"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "システムを準備しています..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "カーネルをフラッシュメモリに書き込んでいます..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "ディスクにブートイメージを生成しています..."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "システムを起動可能にする"

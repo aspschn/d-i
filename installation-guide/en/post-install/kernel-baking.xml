@@ -1,0 +1,19 @@
+<!-- retain these comments for translator revision tracking -->
+<!-- $Id$ -->
+
+ <sect1 arch="linux-any" id="kernel-baking"><title>Compiling a New Kernel</title>
+<para>
+
+Why would someone want to compile a new kernel? It is most probably not
+necessary since the default kernel shipped with &debian; handles almost all
+configurations.
+
+</para><para>
+
+If you want to compile your own kernel nevertheless, this is of course
+possible and we recommend the use of the <quote>make deb-pkg</quote> target.
+For more information read the
+<ulink url="&url-kernel-handbook;">Debian Linux Kernel Handbook</ulink>.
+
+</para>
+ </sect1>

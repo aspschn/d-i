@@ -1,0 +1,934 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
+"POT-Creation-Date: 2013-10-30 22:04+0000\n"
+"PO-Revision-Date: 2018-02-08 14:24+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#. Type: text
+#. Description
+#. File system name
+#. Keep translations short enough
+#. :sl3:
+#: ../partman-crypto.templates:1001
+msgid "physical volume for encryption"
+msgstr "ҳаҷми ҷисмонӣ барои рамзгузорӣ"
+
+#. Type: text
+#. Description
+#. Short file system name (untranslatable in many languages)
+#. Should be kept very short or unstranslated
+#. :sl3:
+#: ../partman-crypto.templates:2001
+msgid "crypto"
+msgstr "рамзгузорӣ"
+
+#. Type: text
+#. Description
+#. This is related to "encryption method"
+#. Encryption type for a file system
+#. Translations should be kept below 40 columns
+#. :sl3:
+#: ../partman-crypto.templates:3001
+msgid "Device-mapper (dm-crypt)"
+msgstr "Дастгоҳи нишонгузорӣ (dm-crypt)"
+
+#. Type: text
+#. Description
+#. This is related to "encryption method"
+#. Encryption type for a file system
+#. :sl3:
+#: ../partman-crypto.templates:5001
+msgid "not active"
+msgstr "ғайрифаъол"
+
+#. Type: text
+#. Description
+#. Should be kept below 24 columns
+#. :sl3:
+#: ../partman-crypto.templates:6001
+msgid "Encryption method:"
+msgstr "Усули рамзгузорӣ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:7001
+msgid "Encryption method for this partition:"
+msgstr "Усули рамзгузорӣ барои ин қисми диск:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:7001
+msgid ""
+"Changing the encryption method will set other encryption-related fields to "
+"their default values for the new encryption method."
+msgstr ""
+"Тағйирдиҳии ин усули рамзгузорӣ майдонҳои дигари ба рамзгузорӣ алоқаманд ба "
+"қиматҳои пешфарзи онҳо барои усули нави рамзгузорӣ таъин мекунад."
+
+#. Type: text
+#. Description
+#. Should be kept below 24 columns
+#. :sl3:
+#: ../partman-crypto.templates:8001
+msgid "Encryption:"
+msgstr "Рамзгузорӣ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:9001
+msgid "Encryption for this partition:"
+msgstr "Рамзгузорӣ кардани ин қисми диск:"
+
+#. Type: text
+#. Description
+#. Should be kept below 24 columns
+#. :sl3:
+#: ../partman-crypto.templates:10001
+msgid "Key size:"
+msgstr "Андозаи калид:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:11001
+msgid "Key size for this partition:"
+msgstr "Андозаи калид барои ин қисми диск:"
+
+#. Type: text
+#. Description
+#. An initialization vector is the initial value used to seed
+#. the encryption algorithm
+#. Should be kept below 24 columns
+#. :sl3:
+#: ../partman-crypto.templates:12001
+msgid "IV algorithm:"
+msgstr "Алгоритми IV:"
+
+#. Type: select
+#. Description
+#. An initialization vector is the initial randomness used to seed
+#. the encryption algorithm
+#. :sl3:
+#: ../partman-crypto.templates:13001
+msgid "Initialization vector generation algorithm for this partition:"
+msgstr "Алгоритми эҷодкунии вектори омодасозӣ барои ин қисми диск:"
+
+#. Type: select
+#. Description
+#. An initialization vector is the initial randomness used to seed
+#. the encryption algorithm
+#. :sl3:
+#: ../partman-crypto.templates:13001
+msgid ""
+"Different algorithms exist to derive the initialization vector for each "
+"sector. This choice influences the encryption security. Normally, there is "
+"no reason to change this from the recommended default, except for "
+"compatibility with older systems."
+msgstr ""
+"Барои таъмин кардани вектори омодасозӣ барои ҳар як сектор алгоритмҳои "
+"гуногун мавҷуд мебошанд. Ин интихоб ба амнияти рамзгузорӣ таъсир мерасонад. "
+"Одатан, ягон сабаб барои тағйир додани ин аз қимати пешфарз вуҷуд надорад, "
+"ба ғайр аз мувофиқат бо низомҳои кӯҳнатар."
+
+#. Type: text
+#. Description
+#. Should be kept below 24 columns
+#. :sl3:
+#: ../partman-crypto.templates:14001
+msgid "Encryption key:"
+msgstr "Калиди рамзгузорӣ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:15001
+msgid "Type of encryption key for this partition:"
+msgstr "Навъи калиди рамзгузорӣ барои ин қисми диск:"
+
+#. Type: text
+#. Description
+#. Should be kept below 24 columns
+#. :sl3:
+#: ../partman-crypto.templates:16001
+msgid "Encryption key hash:"
+msgstr "Ҳэши калиди рамзгузорӣ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:17001
+msgid "Type of encryption key hash for this partition:"
+msgstr "Навъи калиди рамзгузории hash барои ин қисми диск:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:17001
+msgid ""
+"The encryption key is derived from the passphrase by applying a one-way hash "
+"function to it. Normally, there is no reason to change this from the "
+"recommended default and doing so in the wrong way can reduce the encryption "
+"strength."
+msgstr ""
+"Калиди рамзгузорӣ аз калидвожа тавассути таъин кардани функсияи яксамтаи ҳэш "
+"гирифта мешавад. Одатан ягон сабаби тағйир додани ин аз пешфарзи тавсияшуда "
+"вуҷуд надорад ва иҷрокунии нодурусти ин амал метавонад қавии рамзгузориро "
+"пасттар кунад."
+
+#. Type: text
+#. Description
+#. This shows up in a screen summarizing options and will be followed
+#. by "yes" or "no"
+#. :sl3:
+#: ../partman-crypto.templates:18001
+msgid "Erase data:"
+msgstr "Пок кардани иттилоот:"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:19001
+msgid "no"
+msgstr "не"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:20001
+msgid "yes"
+msgstr "ҳа"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:21001
+msgid "Erase data on this partition"
+msgstr "Маълумотро дар ин қисми диск пок намоед"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:22001 ../partman-crypto.templates:26001
+msgid "Really erase the data on ${DEVICE}?"
+msgstr "Маълумоти ${DEVICE}-ро дар ҳақиқат тоза мекунед?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:22001
+msgid ""
+"The data on ${DEVICE} will be overwritten with zeroes. It can no longer be "
+"recovered after this step has completed. This is the last opportunity to "
+"abort the erase."
+msgstr ""
+"Иттилоот дар ${DEVICE} бо сифрҳо рӯйҳамнависӣ карда мешавад. Баъд аз ба "
+"анҷом расидани ин қадам, он дигар барқарор карда намешавад. Барои бекор "
+"кардани ин амал шумо имконияти охирин доред."
+
+#. Type: text
+#. Description
+#. :sl3:
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:23001 ../partman-crypto.templates:27001
+msgid "Erasing data on ${DEVICE}"
+msgstr "Поксозии маълумот дар ${DEVICE}"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:24001
+msgid ""
+"The installer is now overwriting ${DEVICE} with zeroes to delete its "
+"previous contents. This step may be skipped by cancelling this action."
+msgstr ""
+"Насбкунанда ${DEVICE}-ро бо сифрҳо барои несткунии муҳтавои қаблӣ "
+"рӯйҳамнависӣ карда истодааст. Ин қадам метавонад бо бекоркунии ин амал қатъ "
+"карда шавад."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:25001 ../partman-crypto.templates:29001
+msgid "Erasing data on ${DEVICE} failed"
+msgstr "Поксозии маълумот дар ${DEVICE} қатъ шуд"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:25001
+msgid ""
+"An error occurred while trying to overwrite the data on ${DEVICE} with "
+"zeroes. The data has not been erased."
+msgstr ""
+"Ҳангоми рӯиҳамнависии ${DEVICE} бо иттилооти сифрӣ хато ба вуҷуд омад. "
+"Иттилоот тоза карда нашудааст."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:26001
+msgid ""
+"The data on ${DEVICE} will be overwritten with random data. It can no longer "
+"be recovered after this step has completed. This is the last opportunity to "
+"abort the erase."
+msgstr ""
+"Иттилоот дар ${DEVICE} бо иттилооти тасодуфӣ рӯйҳамнависӣ мешавад. Баъд аз "
+"ба анҷом расонидани ин қадам, он дигар барқарор карда намешавад. Барои қатъ "
+"кардани поксозӣ ин имкони ниҳоӣ аст."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:28001
+msgid ""
+"The installer is now overwriting ${DEVICE} with random data to prevent meta-"
+"information leaks from the encrypted volume. This step may be skipped by "
+"cancelling this action, albeit at the expense of a slight reduction of the "
+"quality of the encryption."
+msgstr ""
+"Насбкунанда ${DEVICE}-ро бо иттилооти тасодуфӣ барои пешгирӣ кардани "
+"пайдоиши метаиттилоот аз ҳаҷми рамздор рӯйҳамнависӣ карда истодааст. Ин "
+"қадам метавонад бо бекоркунии ин амал қатъ карда шавад, вале сифати "
+"рамзгузорӣ пасттар мешавад."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:29001
+msgid ""
+"An error occurred while trying to overwrite ${DEVICE} with random data. "
+"Recovery of the device's previous contents is possible and meta-information "
+"of its new contents may be leaked."
+msgstr ""
+"Ҳангоми рӯиҳамнависии ${DEVICE} бо иттилооти тасодуфӣ хато ба вуҷуд омад. "
+"Барқарори муҳтавои қаблӣ ва пайдоиши метаиттилооти муҳтавои нави он мумкин "
+"аст."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:30001
+msgid "Setting up encryption..."
+msgstr "Танзимкунии рамзгузорӣ..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:31001
+msgid "Configure encrypted volumes"
+msgstr "Танзим кардани ҳаҷмҳои рамздор"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:32001
+msgid "No partitions to encrypt"
+msgstr "Ягон қисми диск барои рамзгузорӣ нест"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:32001
+msgid "No partitions have been selected for encryption."
+msgstr "Ягон қисми диск барои рамзгузорӣ интихоб карда нашуд."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:33001
+msgid "Required programs missing"
+msgstr "Барномаҳои лозимӣ вуҷуд надоранд"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:33001
+msgid ""
+"This build of debian-installer does not include one or more programs that "
+"are required for partman-crypto to function correctly."
+msgstr ""
+"Ин сохти debian-installer як ё зиёда барномаро, ки барои кори дурусти "
+"partman-crypto лозиманд, дар бар намегирад."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:34001
+msgid "Required encryption options missing"
+msgstr "Имконоти лозимии рамзгузорӣ намерасад"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:34001
+msgid ""
+"The encryption options for ${DEVICE} are incomplete. Please return to the "
+"partition menu and select all required options."
+msgstr ""
+"Имконоти рамзгузорӣ барои ${DEVICE} нопурра мебошанд. Лутфан, ба менюи "
+"қисмбандӣ баргардед ва ҳамаи имконоти лозимиро интихоб намоед."
+
+#. Type: text
+#. Description
+#. :sl3:
+#. Translators: this string is used to assemble a string of the format
+#. "$specify_option: $missing". If this proves to be a problem in your
+#. language, please contact the maintainer and we can do it differently.
+#: ../partman-crypto.templates:35001
+msgid "missing"
+msgstr "мавҷуд нест"
+
+#. Type: text
+#. Description
+#. :sl3:
+#. What is "in use" is a partition
+#: ../partman-crypto.templates:36001
+msgid "In use as physical volume for encrypted volume ${DEV}"
+msgstr "Ҳамчун ҳаҷми ҷисмонӣ барои ҳаҷми рамздор истифода мешавад ${DEV}"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:37001
+msgid "Encryption package installation failure"
+msgstr "Ҳангоми насбкунии бастаи рамзгузорӣ нокомӣ ба вуҷуд омадааст"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:37001
+msgid ""
+"The kernel module package ${PACKAGE} could not be found or an error occurred "
+"during its installation."
+msgstr ""
+"Бастаи модули ҳастаи ${PACKAGE} ёфт нашуд, ё ки ҳангоми насб кардани он хато "
+"ба вуҷуд омадааст."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:37001
+msgid ""
+"It is likely that there will be problems setting up encrypted partitions "
+"when the system is rebooted. You may be able to correct this by installing "
+"the required package(s) later on."
+msgstr ""
+"Эҳтимол аст, ки баъд аз бозоғозидани низом ҳангоми танзим кардани қисмҳои "
+"диски рамздор мушкилиҳо ба вуҷуд меоянд. Шумо метавонед инро бо насб кардани "
+"баста(ҳо)и лозимӣ баъдтар ислоҳ намоед."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:38001
+msgid "Write the changes to disk and configure encrypted volumes?"
+msgstr "Тағйиротро ба диск менависед ва ҳаҷмҳои рамздорро танзим мекунед?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:38001
+msgid ""
+"Before encrypted volumes can be configured, the current partitioning scheme "
+"has to be written to disk.  These changes cannot be undone."
+msgstr ""
+"Пеш аз танзим шудани ҳаҷмҳои рамздор, схемаи қисмбандиии ҷорӣ бояд ба диск "
+"навишта шавад. Ин тағйирот наметавонад ботил сохта шавад."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:38001 ../partman-crypto.templates:39001
+msgid ""
+"After the encrypted volumes have been configured, no additional changes to "
+"the partitions on the disks containing encrypted volumes are allowed. Please "
+"decide if you are satisfied with the current partitioning scheme for these "
+"disks before continuing."
+msgstr ""
+"Баъд аз танзим шудани ҳаҷмҳои рамздор, ягон тағйироти иловагӣ ба қисмҳои "
+"диск дар дискҳо бо ҳаҷмҳои рамздор иҷозат дода намешавад. Лутфан, пеш аз "
+"идомадиҳӣ мутмаин шавед, ки шумо бо нақшаи қисмбандии ҷорӣ розӣ мебошед."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:39001
+msgid "Keep current partition layout and configure encrypted volumes?"
+msgstr ""
+"Тарҳбандии қисмбандии ҷориро нигоҳ дошта, ҳаҷмҳои рамздорро танзим мекунед?"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:40001
+msgid "Configuration of encrypted volumes failed"
+msgstr "Танзимкунии ҳаҷмҳои рамздор қатъ шуд"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:40001
+msgid "An error occurred while configuring encrypted volumes."
+msgstr "Ҳангоми танзим кардани ҳаҷмҳои рамздор хато ба вуҷуд омадааст."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:40001
+msgid "The configuration has been aborted."
+msgstr "Танзим қатъ карда шуд."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:41001
+msgid "Initialisation of encrypted volume failed"
+msgstr "Омодасозии ҳаҷми рамздор бо нокомӣ дучор шуд"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:41001
+msgid "An error occurred while setting up encrypted volumes."
+msgstr "Ҳангоми танзим кардани ҳаҷмҳои рамздор хато ба вуҷуд омадааст."
+
+#. Type: text
+#. Description
+#. :sl3:
+#. This is a key type for encrypted file systems
+#. It can be either protected by a passphrase, a keyfile
+#. of a random key
+#. This text is one of these choices, so keep it short
+#: ../partman-crypto.templates:42001
+msgid "Passphrase"
+msgstr "Калидвожа"
+
+#. Type: text
+#. Description
+#. :sl3:
+#. This is a key type for encrypted file systems
+#. It can be either protected by a passphrase, a keyfile
+#. of a random key
+#. This text is one of these choices, so keep it short
+#: ../partman-crypto.templates:43001
+msgid "Keyfile (GnuPG)"
+msgstr "Файли калидӣ (GnuPG)"
+
+#. Type: text
+#. Description
+#. :sl3:
+#. This is a key type for encrypted file systems
+#. It can be either protected by a passphrase, a keyfile
+#. of a random key
+#. This text is one of these choices, so keep it short
+#: ../partman-crypto.templates:44001
+msgid "Random key"
+msgstr "Калиди ихтиёрӣ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:45001
+msgid "Unsafe swap space detected"
+msgstr "Фосилаи мубодилаи ҳифзнашуда ёфт шудааст"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:45001
+msgid "An unsafe swap space has been detected."
+msgstr "Фазои беэътимоди мубодилакунӣ ташхис карда шуд."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:45001
+msgid ""
+"This is a fatal error since sensitive data could be written out to disk "
+"unencrypted. This would allow someone with access to the disk to recover "
+"parts of the encryption key or passphrase."
+msgstr ""
+"Ин хатои ногузир мебошад, чунки иттилооти муҳим ба диск бе рамзгузорӣ "
+"навишта шуд. Ин ба ягон нафаре, ки ба диск дастрасӣ дорад, иҷозат медиҳад, "
+"ки қисмҳои калид ё калидвожаи рамзгузориро барқарор намояд."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:45001
+msgid ""
+"Please disable the swap space (e.g. by running swapoff) or configure an "
+"encrypted swap space and then run setup of encrypted volumes again. This "
+"program will now abort."
+msgstr ""
+"Лутфан, фазои мубодилакуниро нест намоед (масалан, бо иҷрои фармони "
+"swapoff), ё ки фазои рамздори мубодилакуниро танзим карда, танзимкунии "
+"ҳаҷмҳои рамздорро аз нав иҷро намоед. Ин барнома ҳозир қатъ карда мешавад."
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:46001
+msgid "Encryption passphrase:"
+msgstr "Калидвожаи рамзгузорӣ:"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:46001
+msgid "You need to choose a passphrase to encrypt ${DEVICE}."
+msgstr "Шумо бояд калидвожаро барои рамзгузории ${DEVICE} интихоб намоед."
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:46001
+msgid ""
+"The overall strength of the encryption depends strongly on this passphrase, "
+"so you should take care to choose a passphrase that is not easy to guess. It "
+"should not be a word or sentence found in dictionaries, or a phrase that "
+"could be easily associated with you."
+msgstr ""
+"Қуввати умумии рамзгузорӣ аз ин калидвожа вобаста аст, барои ҳамин шумо бояд "
+"калидвожаеро эҷод намоед, ки ёфтани он осон нест. Он бояд калима ё ҷумлае "
+"набошад, ки дар луғатҳо ёфта мешавад, ё ба осонӣ бо шумо алоқаманд мешавад."
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:46001
+msgid ""
+"A good passphrase will contain a mixture of letters, numbers and "
+"punctuation. Passphrases are recommended to have a length of 20 or more "
+"characters."
+msgstr ""
+"Калидвожаи хуб маҷмӯи ҳарфҳо, рақамҳо ва аломатҳои китобатӣ мебошад. Тавсия "
+"мешавад, ки калидвожаҳо аз 20 ё зиёда аломат иборатанд."
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:47001
+msgid "Re-enter passphrase to verify:"
+msgstr "Калидвожаро барои тафтиш дубора ворид намоед:"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:47001
+msgid ""
+"Please enter the same passphrase again to verify that you have typed it "
+"correctly."
+msgstr ""
+"Лутфан, он калидвожаро як маротибаи дигар ворид намоед, то ин ки тасдиқ "
+"намоед, ки шумо онро ба таври дуруст чоп кардед."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:48001
+msgid "Passphrase input error"
+msgstr "Хатои вуруди калидвожа"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:48001
+msgid "The two passphrases you entered were not the same. Please try again."
+msgstr ""
+"Ду калидвожае, ки шумо ворид кардед, якхела набуданд. Лутфан, амалро такрор "
+"намоед."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:49001
+msgid "Empty passphrase"
+msgstr "Калидвожа холӣ аст"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:49001
+msgid ""
+"You entered an empty passphrase, which is not allowed. Please choose a non-"
+"empty passphrase."
+msgstr ""
+"Шумо калидвожаи холиро ворид кардед, ки иҷозат дода намешавад. Лутфан, "
+"калидвожаи ғайрихолиро интихоб намоед."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:50001
+msgid "Use weak passphrase?"
+msgstr "Калидвожаи сустро истифода мебаред?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
+#: ../partman-crypto.templates:50001
+msgid ""
+"You entered a passphrase that consists of less than ${MINIMUM} characters, "
+"which is considered too weak. You should choose a stronger passphrase."
+msgstr ""
+"Шумо калидвожаеро ворид кардед, ки кам аз ${MINIMUM} аломат мебошад ва қавӣ "
+"нест. Шумо бояд калидвожаи қавитарро интихоб намоед."
+
+#. Type: entropy
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:51001
+msgid "The encryption key for ${DEVICE} is now being created."
+msgstr "Калиди рамзгузорӣ барои ${DEVICE} дар айни ҳол эҷод шуда истодааст."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:52001
+msgid "Key data has been created successfully."
+msgstr "Иттилооти калид бомуваффақият эҷод карда шуд."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:53001
+msgid "Keyfile creation failure"
+msgstr "Файли калид эҷод карда нашуд"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:53001
+msgid "An error occurred while creating the keyfile."
+msgstr "Ҳангоми эҷод кардани файли калид хато ба вуҷуд омадааст."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:54001 ../partman-crypto.templates:55001
+msgid "Encryption configuration failure"
+msgstr "Ҳангоми танзим кардани рамзгузорӣ нокомӣ ба вуҷуд омадааст"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:54001
+msgid ""
+"You have selected the root file system to be stored on an encrypted "
+"partition. This feature requires a separate /boot partition on which the "
+"kernel and initrd can be stored."
+msgstr ""
+"Шумо интихоб кардед, ки низоми файлии root дар қисми диски рамздор нигоҳ "
+"дошта шавад. Барои ин хусусият қисми диски алоҳидаи /boot лозим аст, ки дар "
+"он ҳаста ва initrd нигоҳ дошта мешаванд."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:54001
+msgid "You should go back and setup a /boot partition."
+msgstr "Шумо бояд ба қафо гузаред ва қисми диски \"/boot\"-ро танзим намоед."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:55001
+msgid ""
+"You have selected the /boot file system to be stored on an encrypted "
+"partition. This is not possible because the boot loader would be unable to "
+"load the kernel and initrd. Continuing now would result in an installation "
+"that cannot be used."
+msgstr ""
+"Шумо интихоб кардед, ки низоми файлии /boot дар қисми диски рамздор нигоҳ "
+"дошта шавад. Ин имконнопазир аст, чунки он гоҳ худроҳандозӣ наметавонад "
+"ҳаста ва initrd-ро бор кунад. Агар шумо ҳозир идома диҳед, насбкунӣ истифода "
+"намешавад."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:55001
+msgid ""
+"You should go back and choose a non-encrypted partition for the /boot file "
+"system."
+msgstr ""
+"Шумо бояд ба қафо гузашта, қисми диски рамзнадоштаро барои низоми файлии /"
+"boot интихоб намоед."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:56001
+msgid "Are you sure you want to use a random key?"
+msgstr "Шумо мутмаин ҳастед, ки калиди таваккалиро истифода мебаред?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:56001
+msgid ""
+"You have chosen a random key type for ${DEVICE} but requested the "
+"partitioner to create a file system on it."
+msgstr ""
+"Шумо намуди таваккалии калидро барои ${DEVICE} интихоб кардед, аммо аз "
+"василаи қисмбандӣ талаб кардед, ки дар он низоми файлӣ эҷод карда шавад."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:56001
+msgid ""
+"Using a random key type means that the partition data is going to be "
+"destroyed upon each reboot. This should only be used for swap partitions."
+msgstr ""
+"Истифодабарии калиди таваккалӣ маънои онро дорад, ки иттилооти қисми диск "
+"ҳангоми ҳар як бозоғозӣ вайрон карда мешавад. Ин бояд танҳо барои қисмҳои "
+"диски мубодилакунӣ истифода шавад."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+msgid "Failed to download crypto components"
+msgstr "Боргирии ҷузъҳои рамзгузорӣ ба анҷом нарасид"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+msgid "An error occurred trying to download additional crypto components."
+msgstr ""
+"Ҳангоми кӯшиши боркунии ҷузъҳои иловагии криптографӣ хато ба вуҷуд омадааст."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:58001
+msgid "Proceed to install crypto components despite insufficient memory?"
+msgstr ""
+"Ба ҳофизаи ғайрикофӣ нигоҳ накарда, ба насбкунии ҷузъҳои рамзгузорӣ "
+"мегузаред?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:58001
+msgid ""
+"There does not seem to be sufficient memory available to install additional "
+"crypto components. If you choose to go ahead and continue anyway, the "
+"installation process could fail."
+msgstr ""
+"Барои насб кардани унсурҳои иловагии рамзгузорӣ ҳофизаи кофӣ нест. Агар шумо "
+"интихоб намоед, ки ба ҳар ҳол идома диҳед, раванди насбкунӣ метавонад бо "
+"нокомб дучор шавад."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-crypto.templates:59001
+msgid "Create encrypted volumes"
+msgstr "Эҷод кардани ҳаҷмҳои рамздор"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-crypto.templates:59001
+msgid "Finish"
+msgstr "Тайёр"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:59002
+msgid "Encryption configuration actions"
+msgstr "Амалҳои танзими рамзгузорӣ"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:59002
+msgid "This menu allows you to configure encrypted volumes."
+msgstr "Ин меню танзим кардани ҳаҷмҳои рамздорро иҷозат медиҳад."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:60001
+msgid "Devices to encrypt:"
+msgstr "Дастгоҳҳо барои рамзгузорӣ:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:60001
+msgid "Please select the devices to be encrypted."
+msgstr "Лутфан, дастгоҳҳоро барои рамзгузорӣ интихоб намоед."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:60001
+msgid "You can select one or more devices."
+msgstr "Шумо метавонед як ё зиёда дастгоҳро интихоб намоед."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:61001
+msgid "No devices selected"
+msgstr "Ягон дастгоҳ интихоб нашудааст"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:61001
+msgid "No devices were selected for encryption."
+msgstr "Ягон дастгоҳ барои рамзгузорӣ интихоб нашуд."

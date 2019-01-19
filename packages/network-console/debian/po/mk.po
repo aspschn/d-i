@@ -1,0 +1,252 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of debian-installer_packages_po_sublevel1_mk.po to Macedonian
+# translation of mk.po to
+# Macedonian strings from the debian-installer.
+#
+# Georgi Stanojevski, <glisha@gmail.com>, 2004, 2005, 2006.
+# Georgi Stanojevski <georgis@unet.com.mk>, 2005, 2006.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2002
+#   Arangel Angov <ufo@linux.net.mk>, 2008.
+#   Free Software Foundation, Inc., 2002,2004
+#   Georgi Stanojevski <glisha@gmail.com>, 2004, 2006.
+# Translations from KDE:
+#   Danko Ilik <danko@mindless.com>
+# Arangel Angov <arangel@linux.net.mk>, 2008, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer_packages_po_sublevel1_mk\n"
+"Report-Msgid-Bugs-To: network-console@packages.debian.org\n"
+"POT-Creation-Date: 2012-10-01 22:05+0000\n"
+"PO-Revision-Date: 2012-09-23 01:33+0200\n"
+"Last-Translator: Arangel Angov <arangel@linux.net.mk>\n"
+"Language-Team: Macedonian <>\n"
+"Language: mk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n!=1);\n"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:1001
+msgid "Continue installation remotely using SSH"
+msgstr "Продолжи со инстлацијата оддалечено користејќи SSH"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start installer"
+msgstr "Пушти инсталер"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start installer (expert mode)"
+msgstr "Пушти инсталер (експертски режим)"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start shell"
+msgstr "Стартувај школка"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid "Network console option:"
+msgstr "Опција за мрежна конзола:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid ""
+"This is the network console for the Debian installer. From here, you may "
+"start the Debian installer, or execute an interactive shell."
+msgstr ""
+"Ова е мрежната конзола за инсталерот на Debian. Од тука можете да го "
+"подигнете инсталерот на Debian, или да извршите интерактивна школка."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid "To return to this menu, you will need to log in again."
+msgstr "За да се вратиш во ова мени, ќе треба повторно да се логираш."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:3001
+msgid "Generating SSH host key"
+msgstr "Генерирање на SSH клуч за домаќинот"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid "Remote installation password:"
+msgstr "Лозинка за оддалечена инсталација:"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid ""
+"You need to set a password for remote access to the Debian installer. A "
+"malicious or unqualified user with access to the installer can have "
+"disastrous results, so you should take care to choose a password that is not "
+"easy to guess. It should not be a word found in the dictionary, or a word "
+"that could be easily associated with you, like your middle name."
+msgstr ""
+"Потребно е да поставиш лозинка за да му пристапиш на Debian инсталерот. "
+"Злобен или некфалификуван корисник со пристап до инсталерот може да направи "
+"разурнивачки ефекти, па препорачливо е да избереш лозинка која не е лесно да "
+"се погоди. Не треба да биде збор од речник или збор кој може лесно да се "
+"поврзе со тебе, како твоето презиме."
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid ""
+"This password is used only by the Debian installer, and will be discarded "
+"once you finish the installation."
+msgstr ""
+"Оваа лозинка се користи само за инсталерот на Debian и ќе биде отфрлена штом "
+"заврши инсталацијата."
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+msgid "Re-enter password to verify:"
+msgstr "Повторно внеси ја лозинката за потврда:"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+msgid ""
+"Please enter the same remote installation password again to verify that you "
+"have typed it correctly."
+msgstr ""
+"Ве молам повторно внесете ја истата лозинка за оддалечена инсталација за да "
+"се потврди дека сте ја внеле правилно."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid "Empty password"
+msgstr "Празна лозинка"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid ""
+"You entered an empty password, which is not allowed. Please choose a non-"
+"empty password."
+msgstr ""
+"Внесе празна лозинка, што е недозволиво Те молам одбери не-празна лозинка."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+msgid "Password mismatch"
+msgstr "Лозинките се разликуваат"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+msgid ""
+"The two passwords you entered were not the same. Please enter a password "
+"again."
+msgstr ""
+"Двете лозинки што ги внесовте не се исти. Ве молам повторно внесете лозинка."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "Start SSH"
+msgstr "Подигни SSH"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+#, fuzzy
+msgid ""
+"To continue the installation, please use an SSH client to connect to the IP "
+"address ${ips} and log in as the \"installer\" user. For example:"
+msgstr ""
+"За да продолжите со инсталацијата, Ве молам користите SSH клиент за да се "
+"поврзете на IP адресата ${ip} и да се најавите како корисникот installer. На "
+"пр:"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "The fingerprint of this SSH server's host key is: ${fingerprint}"
+msgstr "Отпечатокот за SSH клучот за овој сервер е: ${fingerprint}"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid ""
+"Please check this carefully against the fingerprint reported by your SSH "
+"client."
+msgstr ""
+"Ве молам проверете го внимателно со отпечатокот пријавен од страна на Вашиот "
+"SSH клиент."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Could not fetch SSH authorized keys"
+msgstr "Не можам да ги соберам авторизираните SSH клучеви"
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Translators: do NOT translate the "LOCATION" variable name
+#: ../network-console.templates:10001
+msgid "An error occurred while fetching SSH authorized keys from ${LOCATION}."
+msgstr ""
+"Се случи грешка при собирање на авторизираните SSH клучеви од ${LOCATION}."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"Провери во /var/log/syslog или види ја виртуелната конзола 4 за детали."

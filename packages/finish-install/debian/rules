@@ -1,0 +1,14 @@
+#! /usr/bin/make -f
+%:
+	dh $@
+
+DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
+
+# The default console configuration shipped by sysvinit is enough
+# on s390(x). Hence the console setup script should not be installed
+# there but everywhere else.
+override_dh_install:
+	dh_install
+	@if [ "$(DEB_HOST_ARCH)" = "s390" -o "$(DEB_HOST_ARCH)" = "s390x" ]; then \
+		rm -v debian/finish-install/usr/lib/finish-install.d/90console; \
+	fi

@@ -1,0 +1,110 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of Debian Installer templates to Welsh
+# Copyright (C) 2004-2008 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Jonathan Price <mynamesnotclive@notclive.co.uk>, 2008.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004.
+#   - translations from ICU-3.0
+#   Dafydd Harries <daf@muse.19inch.net>, 2002,2004,2006.
+#   Free Software Foundation, Inc., 2002,2004
+#   Alastair McKinstry <mckinstry@computer.org>, 2001
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: partman-btrfs@packages.debian.org\n"
+"POT-Creation-Date: 2016-10-04 22:00+0000\n"
+"PO-Revision-Date: 2018-03-19 21:51+0000\n"
+"Last-Translator: Huw Waters <huwwaters@gmail.com>\n"
+"Language-Team: Welsh <>\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0) ? 0 : (n==1) ? 1 : (n==2) ? 2 : "
+"(n==3) ? 3 :(n==6) ? 4 : 5;\n"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. File system name (untranslatable in many languages)
+#. Type: text
+#. Description
+#. :sl1:
+#. Short file system name (untranslatable in many languages)
+#: ../partman-btrfs.templates:1001 ../partman-btrfs.templates:3001
+msgid "btrfs"
+msgstr "btrfs"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. File system name
+#: ../partman-btrfs.templates:2001
+msgid "btrfs journaling file system"
+msgstr "System ffeiliau dyddlyfru brtfs"
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../partman-btrfs.templates:4001
+msgid "btrfs root file system not supported without separate /boot"
+msgstr "Nid yw system ffeil gwraidd btrfs wedi ei gefnogi heb /boot ar wahân"
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../partman-btrfs.templates:4001
+msgid ""
+"Your root file system is a btrfs file system. This is not supported by the "
+"boot loader used by default by this installer."
+msgstr ""
+"Mae eich system ffeiliau gwraidd yn system ffeiliau JFS. Fe all hyn achosi "
+"problemau gyda'r bŵtlwythydd a ddefnyddir yn rhagosodedig gan y sefydlydd "
+"hwn."
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../partman-btrfs.templates:4001
+msgid ""
+"You should use a small /boot partition with another file system, such as "
+"ext4."
+msgstr ""
+"Dylech ddefnyddio rhaniad /boot bychan gyda system ffeiliau arall, megis "
+"ext4."
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../partman-btrfs.templates:5001
+msgid "btrfs file system not supported for /boot"
+msgstr "Dim system ffeiliau wedi ei glymu at /target"
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../partman-btrfs.templates:5001
+msgid ""
+"You have mounted a btrfs file system as /boot. This is not supported by the "
+"boot loader used by default by this installer."
+msgstr ""
+"Mae eich system ffeiliau gwraidd yn system ffeiliau JFS. Fe all hyn achosi "
+"problemau gyda'r bŵtlwythydd a ddefnyddir yn rhagosodedig gan y sefydlydd "
+"hwn."
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../partman-btrfs.templates:5001
+msgid ""
+"You should use another file system, such as ext4, for the /boot partition."
+msgstr ""
+"Dylech ddefnyddio system ffeiliau arall, megis ext4, i'r rhaniad /boot."

@@ -1,0 +1,137 @@
+#! /bin/sh -e
+# 
+# Copyright 2010 Emmet Hikory <persia@ubuntu.com>
+#
+# With thanks to Thom May and Otavio Salvador for documenting battery
+# detection interfaces in laptop-detect
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+usage () {
+    echo "Usage: $0 [-h|--help|-v|--verbose|-V|--version]"
+    echo ""
+    echo "  -h | --help      print this help"
+    echo "  -v | --verbose   be verbose (messages go to STDERR)"
+    echo "  -V | --version   print version information"
+}
+
+VERBOSE=""
+if [ "$1" != "" ]; then
+    case "$1" in
+        "-h" | "--help")
+            usage
+            exit 2
+            ;;
+        "-V" | "--version")
+            echo "Version: @VERSION@"
+            exit 2
+            ;;
+        --debug)
+            set -x
+            ;;
+        "-v" | "--verbose")
+            VERBOSE="Tell Me Everything!!!"
+            ;;
+    esac
+fi
+
+# Get resolution and screen size
+if [ -x /usr/bin/xrandr ]; then
+    RESOLUTION=$(/usr/bin/xrandr -q | awk -F, '/current/ {print $2 }')
+    SIZE=$(/usr/bin/xrandr -q | awk -F\  '/ connected/ {print $(NF-2) " x " $NF }')
+    [ -z "$VERBOSE" ] || xrandr --current --query 1>&2
+
+    XRES=$(echo "$RESOLUTION" | cut -d\  -f3)
+    [ -z "$VERBOSE" ] || echo X Resolution appears to be $XRES 1>&2
+    YRES=$(echo "$RESOLUTION" | cut -d\  -f5)
+    [ -z "$VERBOSE" ] || echo Y Resolution appears to be $YRES 1>&2
+
+    XSIZE=$(echo "$SIZE" | cut -dx -f1 | tr -d \ m )
+    [ -z "$VERBOSE" ] || echo X Size appears to be $XSIZE 1>&2
+    YSIZE=$(echo "$SIZE" | cut -dx -f2 | tr -d \ m )
+    [ -z "$VERBOSE" ] || echo Y Size appears to be $YSIZE 1>&2
+else
+    XRES=0
+    YRES=0
+    XSIZE=0
+    YSIZE=0
+fi
+
+# Check for batteries
+BATTERIES=0
+BATTERY="/bin/false"
+
+# ACPI Batteries (/proc/ interface)
+if [ -d /proc/acpi/battery ]; then
+    # Lie and pretend any battery detection is a single battery
+    [ ! -z $(find /proc/acpi/battery -mindepth 1 -type d) ] && BATTERIES="1"
+    [ -z "$VERBOSE" -o "$BATTERIES" -ne "0" ] || \
+        echo Found ACPI Battery 1>&2
+fi
+"$BATTERY" || [ "$BATTERIES" -ne "0" ] && BATTERY="/bin/true"
+
+# APM Batteries
+if [ -d /proc/apm ]; then
+    # Lie and pretend any battery detection is a single battery
+    BATMASK=$(cut -d\ -f6 < /proc/apm)
+    [ "$BATMASK" != "0xff" -a $BATMASK != "0x80" ] && BATTERIES="1"
+    [ -z "$VERBOSE" -o "$BATTERIES" -ne "0" ] || \
+        echo Found APM Battery 1>&2
+fi
+"$BATTERY" || [ "$BATTERIES" -ne "0" ] && BATTERY="/bin/true"
+
+# PMU Batteries
+if [ -d /proc/pmu ]; then
+    BATTERIES=$(grep Battery /proc/pmu/info | cut -d: -f2)
+    [ -z "$VERBOSE" -o "$BATTERIES" -ne "0" ] || \
+         echo Found "$BATTERIES PMU" Batteries 1>&2
+fi
+"$BATTERY" || [ "$BATTERIES" -ne "0" ] && BATTERY="/bin/true"
+
+# ACPI Batteries (/sys/ interface)
+if [ -d /sys/class/power_supply ]; then
+    BATTERIES=$(grep Battery /sys/class/power_supply/*/type 2>/dev/null | wc -l)
+    [ -z "$VERBOSE" -o "$BATTERIES" -ne "0" ] || \
+         echo Found "$BATTERIES" ACPI Batteries 1>&2
+fi
+"$BATTERY" || [ "$BATTERIES" -ne "0" ] && BATTERY="/bin/true"
+
+# TODO: parse /proc/bus/input/devices to determine if there is a keyboard
+
+# Determine the device type
+
+# If the screen is tiny, it's probably a phone
+if [ "$XSIZE" -ne "0" -a "$XSIZE" -lt "100" -a \
+     "$YSIZE" -ne "0" -a "$YSIZE" -lt "60" ]; then
+    [ -z "$VERBOSE" ] || echo "The screen is very small: probably a phone" 2>&1
+    echo "phone"
+fi
+
+# If there is no battery, it's probably a desktop
+if ! "$BATTERY"; then
+    [ -z "$VERBOSE" ] || echo "There is no battery: probably a desktop" 2>&1
+    echo "desktop"
+fi
+
+# If the resolution is low, it's probably a netbook
+if [ "$XRES" -ne "0" -a "$XRES" -lt "1025" -a \
+     "$YRES" -ne "0" -a "$YRES" -lt "601" ]; then
+    [ -z "$VERBOSE" ] || echo "The resolution is low: probably a netbook" 2>&1
+    echo "netbook"
+    exit 0
+fi
+
+# Otherwise, it's probably a laptop
+echo "laptop"
+[ -z "$VERBOSE" ] || echo "Battery, sufficient screen: call it a laptop" 1>&2
+exit 0

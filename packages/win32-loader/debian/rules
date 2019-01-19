@@ -1,0 +1,69 @@
+#!/usr/bin/make -f
+
+# Install the win32-loader-standalone.exe as debian/tools/win32-loader/$(SUITE)/win32-loader.exe on the mirrors
+BYHAND ?= yes
+
+BUILD_DATE := $(shell dpkg-parsechangelog -S Date)
+
+W32_VERSION := $(shell dpkg-parsechangelog | sed -rne 's,^Version: ([^-]+).*,\1,p')
+W32_BYHAND_NAME := win32-loader_$(W32_VERSION)_all
+
+B_D_PACKAGES := grub-pc-bin cpio-win32 gzip-win32 gpgv-win32 debian-archive-keyring loadlin ipxe nsis libgcrypt-mingw-w64-dev libgpg-error-mingw-w64-dev
+
+PACKAGES_LIST := $(shell set -e; \
+	for p in ${B_D_PACKAGES}; \
+	do \
+		dpkg-query --showformat='$${source:Package;-25} $${source:Version;-25} http://deb.debian.org/debian/pool/main/$${source:Package;1}/$${source:Package}\\n' --show $$p; \
+	done)
+
+BUILT_USING_LIST := $(shell set -e; \
+	for p in ${B_D_PACKAGES}; \
+	do \
+		dpkg-query --showformat='$${source:Package} (= $${source:Version}), ' --show $$p; \
+	done)
+
+NSIS_VERSION  := $(shell dpkg-query -f='$${Version}' -W nsis )
+
+%:
+	dh $@
+
+override_dh_auto_build:
+ifeq ($(BYHAND),yes)
+	# Build the standalone+pxe version
+	# Don't allow non-Linux kernels, as their download is currently broken (see #819092)
+	STANDALONE=yes \
+		PXE=yes \
+		NOT_ALLKERNELS=yes \
+		OUTFILE_NAME=$(W32_BYHAND_NAME).exe \
+		BUILD_DATE="$(BUILD_DATE)" \
+		dh_auto_build
+	
+	# Prepare the README file
+	gawk '{sub(/@PACKAGES_LIST@/,"$(PACKAGES_LIST)")}1 \
+	      {sub(/@NSIS_VERSION@/,"$(NSIS_VERSION)")}1 \
+	      {sub(/@W32_VERSION@/,"$(W32_VERSION)")}1' \
+		debian/win32-loader_doc.txt > $(W32_BYHAND_NAME).txt
+	cat debian/copyright >> $(W32_BYHAND_NAME).txt
+endif
+	# Build the cdrom version
+	OUTFILE_NAME=win32-loader.exe \
+		BUILD_DATE="$(BUILD_DATE)" \
+		dh_auto_build
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f $(W32_BYHAND_NAME).exe
+	rm -f $(W32_BYHAND_NAME).txt
+
+override_dh_builddeb:
+	dh_builddeb
+ifeq ($(BYHAND),yes)
+	cp $(W32_BYHAND_NAME).exe ../
+	dpkg-distaddfile $(W32_BYHAND_NAME).exe byhand -
+
+	cp $(W32_BYHAND_NAME).txt ../
+	dpkg-distaddfile $(W32_BYHAND_NAME).txt byhand -
+endif
+
+override_dh_gencontrol:
+	dh_gencontrol -- -Vw32-loader:built-using="$(BUILT_USING_LIST)"

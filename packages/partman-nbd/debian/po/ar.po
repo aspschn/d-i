@@ -1,0 +1,199 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of ar.po to Arabic
+# Arabic messages for debian-installer. Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Ossama Khayat <okhayat@yahoo.com>, 2005 - 2013.
+# Abdelhak Bougouffa, 2017.
+# najib LAARIBI <supnano@gmail.com>, 2018.
+# ButterflyOfFire <ButterflyOfFire@protonmail.com>, 2018.
+#
+# Translations from iso-codes:
+#     Translations taken from ICU SVN on 2007-09-09
+#   Translations from kde-i18n/desktop.po:
+#
+#   Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
+#   Alastair McKinstry <mckinstry@computer.org>, 2002.
+#   Free Software Foundation, Inc., 2002, 2004.
+#   Ossama M. Khayat <okhayat@yahoo.com>, 2006, 2008, 2010.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#   Mohammad Gamal <f2c2001@yahoo.com>, 2001.
+msgid ""
+msgstr ""
+"Project-Id-Version: ar\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2018-12-18 10:08+0000\n"
+"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "تهيئة الواجهة الشبكيّة"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "إجراء تهيئة الواجهة الشبكيّة (NBD):"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "عدد الأجهزة المتصلة حالياً هو ${NUMBER}."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "خادم الواجهة الشبكيّة:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "رجاءً أدخل اسم المُضيف أو عنوان IP للنظام الذي يعمل عليه خادم nbd."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "تسمية لتصدير NBD"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "نوع جهاز الشبكة:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "رجاءً اختر جهاز NBD التي تود وصله أو فصله."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "تعذر الاتصال بخادم NBD"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"تعذر الاتصال بخادم nbd. رجاءً تأكد من صحّة كتابة اسم المضيف واسم التصدير الذي "
+"أدخلته، وأن خدمة خادم nbd تعمل حالياً على ذلك المضيف، وأن الشبكة مُهيّأة بشكل "
+"صحيح، ثم أعد المحاولة."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "لا يوجد أي نقط شاغرة للواجهة الشبكيّة"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"إما أن جميع نقط أجهزة الواجهة الشبكيّة مُستخدمة أو أي خللاً ما حدث أثناء "
+"استكشاف نقاط الأجهزة."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"لا يمكن تهيئة المزيد من نقاط أجهزة الواجهة الشبكيّة حتى تقطع اتصال أحدها."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "لا يوجد أي نقاط أجهزة واجهة شبكيّة متصلة"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"ليس هناك حالياً أي نقاط أجهزة شبكيّة متصلة على أي خادم. لذا، لا يمكنك قطع "
+"اتصال أي منها."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "ربط جهاز الشبكة"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "فصل جهاز الشبكة"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "أنه العملية وارجع إلى برنامج التجزئة"

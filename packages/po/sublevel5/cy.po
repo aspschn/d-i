@@ -1,0 +1,503 @@
+# Welsh messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2018-03-18 01:12+0000\n"
+"Last-Translator: Huw Waters <huwwaters@gmail.com>\n"
+"Language-Team: Welsh <daf@muse.19inch.net>\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0) ? 0 : (n==1) ? 1 : (n==2) ? 2 : "
+"(n==3) ? 3 :(n==6) ? 4 : 5;\n"
+"X-Generator: Weblate 2.20-dev\n"
+"X-Launchpad-Export-Date: 2008-07-14 12:48+0000\n"
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../partman-base.templates:60001
+#, no-c-format
+msgid "ZFS pool %s, volume %s"
+msgstr "Pwll ZFS %s, cyfrol %s"
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../partman-base.templates:62001
+#, no-c-format
+msgid "DASD %s (%s)"
+msgstr "DASD %s (%s)"
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../partman-base.templates:63001
+#, no-c-format
+msgid "DASD %s (%s), partition #%s"
+msgstr "DASD %s (%s), rhaniad #%s"
+
+#. Type: text
+#. Description
+#. :sl5:
+#. Setting to reserve a small part of the disk for use by BIOS-based bootloaders
+#. such as GRUB.
+#: ../partman-partitioning.templates:32001
+msgid "Reserved BIOS boot area"
+msgstr "Ardal ymgychwyn BIOS neilltuedig"
+
+#. Type: text
+#. Description
+#. :sl5:
+#. short variant of 'Reserved BIOS boot area'
+#. Up to 10 character positions
+#: ../partman-partitioning.templates:33001
+msgid "biosgrub"
+msgstr "biosgrub"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../partman-basicfilesystems.templates:60001
+msgid ""
+"Your boot partition has not been configured with the ext2 file system. This "
+"is needed by your machine in order to boot. Please go back and use the ext2 "
+"file system."
+msgstr ""
+"Nid yw eich rhaniad ymgychwyn wedi ei gyflunio gyda system ffeil ext2. Mae "
+"angen hwn ar y peiriant er mwyn iddo gychwyn. Dychwelwch a defnyddiwch "
+"system ffeil ext2."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../partman-basicfilesystems.templates:61001
+msgid ""
+"Your boot partition is not located on the first partition of your hard disk. "
+"This is needed by your machine in order to boot.  Please go back and use "
+"your first partition as a boot partition."
+msgstr ""
+"Nid yw'ch rhaniad ymgychwyn wedi'i leoli ar y rhaniad cyntaf o'ch ddisg "
+"caled. Mae angen hwn ar eich peiriant er mwyn iddo gychwyn. Dychwelwch a "
+"defnyddiwch eich rhaniad cyntaf fel rhaniad ymgychwyn."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "ctc: Channel to Channel (CTC) or ESCON connection"
+msgstr "ctc: Sianel i Sianel (CTC) neu gysylltiad ESCON"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "qeth: OSA-Express in QDIO mode / HiperSockets"
+msgstr "qeth: OSA-Express yn y modd QDIO / HiperSockets"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "iucv: Inter-User Communication Vehicle - available for VM guests only"
+msgstr "iucv: Inter-User Communication Vehicle - ar gael i westeion VM yn unig"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "virtio: KVM VirtIO"
+msgstr "virtio: KVM VirtIO"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:1002
+msgid "Network device type:"
+msgstr "Math dyfais rhwydwaith:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:1002
+msgid ""
+"Please choose the type of your primary network interface that you will need "
+"for installing the Debian system (via NFS or HTTP). Only the listed devices "
+"are supported."
+msgstr ""
+"Dewiswch y math o brif rhyngwyneb rhwydwaith fyddwch angen ar gyfer gosod y "
+"system Debian (drwy NFS neu HTTP). Dim ond y dyfeisiau rhestrwyd a gefnogir."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:2001
+msgid "CTC read device:"
+msgstr "Dyfais darllen CTC:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:2001 ../s390-netdevice.templates:3001
+msgid "The following device numbers might belong to CTC or ESCON connections."
+msgstr ""
+"Fe allai'r rhifau dyfais canlynol berthyn i gysylltiadau CTC neu ESCON."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:3001
+msgid "CTC write device:"
+msgstr "Dyfais ysgrifennu CTC:"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:4001 ../s390-netdevice.templates:8001
+#: ../s390-netdevice.templates:12001
+msgid "Do you accept this configuration?"
+msgstr "Ydych chi'n derbyn y cyfluniad hwn?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:4001
+msgid ""
+"The configured parameters are:\n"
+" read channel  = ${device_read}\n"
+" write channel = ${device_write}\n"
+" protocol      = ${protocol}"
+msgstr ""
+"Y paramedrau cyfluniwyd oedd:\n"
+" sianel darllen    = ${device_read}\n"
+" sianel ysgrifennu = ${device_write}\n"
+" protocol          = ${protocol}"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:5001
+msgid "No CTC or ESCON connections"
+msgstr "Dim cysylltiadau CTC na ESCON"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:5001
+msgid "Please make sure that you have set them up correctly."
+msgstr "Gwnewch yn siwr eich bod wedi eu gosod nhw fyny yn gywir."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:6001
+msgid "Protocol for this connection:"
+msgstr "Protocol ar gyfer y cysylltiad hwn:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:7001
+msgid "Device:"
+msgstr "Dyfais:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:7001
+msgid "Please select the OSA-Express QDIO / HiperSockets device."
+msgstr "Dewiswch y ddyfais OSA-Express QDIO / HiperSockets device."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:8001
+msgid ""
+"The configured parameters are:\n"
+" channels = ${device0}, ${device1}, ${device2}\n"
+" port     = ${port}\n"
+" layer2   = ${layer2}"
+msgstr ""
+"Y paramedrau a gyfluniwyd yw:\n"
+" sianeli  = ${device0}, ${device1}, ${device2}\n"
+" porth    = ${port}\n"
+" layer2   = ${layer2}"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:9001
+msgid "No OSA-Express QDIO cards / HiperSockets"
+msgstr "Dim cardiau OSA-Express QDIO / HiperSockets"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:9001
+msgid ""
+"No OSA-Express QDIO cards / HiperSockets were detected. If you are running "
+"VM please make sure that your card is attached to this guest."
+msgstr ""
+"Ni chanfuwyd unrhyw gardiau OSA-Express QDIO / HiperSockets. Os ydych yn "
+"rhedeg VM gwnewch yn siwr fod y gerdyn wedi ei gysylltu i'r gwestai."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:10001
+msgid "Port:"
+msgstr "Porth:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:10001
+msgid "Please enter a relative port for this connection."
+msgstr "Rhowch borth perthynol ar gyfer y cysylltiad hwn."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:11001
+msgid "Use this device in layer2 mode?"
+msgstr "Defnyddio'r ddyfais hon mewn modd \"layer2\"?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:11001
+msgid ""
+"By default OSA-Express cards use layer3 mode. In that mode LLC headers are "
+"removed from incoming IPv4 packets. Using the card in layer2 mode will make "
+"it keep the MAC addresses of IPv4 packets."
+msgstr ""
+"Yn ddiofyn mae cardiau OSA-Express ddefnyddio modd \"layer3\". Yn y modd "
+"hynny mae pennawdau LLC yn cael eu dileu o bacedi IPv4 i fewn. Mae defnyddio "
+"y cerdyn yn y modd \"layer2\" yn gwneud iddo gadw cyfeiriadau MAC y pacedi "
+"IPv4."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:12001
+msgid ""
+"The configured parameter is:\n"
+" peer  = ${peer}"
+msgstr ""
+"Y paramedr cyfluniwyd yw:\n"
+" cymar = ${peer}"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid "VM peer:"
+msgstr "Cymar VM:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid "Please enter the name of the VM peer you want to connect to."
+msgstr "Rhowch enw y cymar VM hoffech gysylltu iddo."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid ""
+"If you want to connect to multiple peers, separate the names by colons, e."
+"g.  tcpip:linux1."
+msgstr ""
+"Os ydych am gysylltu i nifer o gymheiriaid, gwahanwch yr enwau gyda colon, e."
+"e. tcpip:linux1."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid ""
+"The standard TCP/IP server name on VM is TCPIP; on VIF it's $TCPIP. Note: "
+"IUCV must be enabled in the VM user directory for this driver to work and it "
+"must be set up on both ends of the communication."
+msgstr ""
+"Yr enw gweinydd TCP/IP safonol ar VM yw TCPIP; $TCPIP yw e ar VIF. Noder: "
+"Rhaid galluogi IUCV yn cyfeiriadur defnyddiwr y VM er mwyn i'r gyriant hwn i "
+"weithio a mae'n rhaid ei osod ar ddau ben y cysylltiad."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl5:
+#: ../s390-netdevice.templates:14001
+msgid "Configure the network device"
+msgstr "Cyflunio'r ddyfais rhwydwaith"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Available devices:"
+msgstr "Dyfeisiau ar gael:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid ""
+"The following direct access storage devices (DASD) are available. Please "
+"select each device you want to use one at a time."
+msgstr ""
+"Mae'r dyfeisiau storfa mynediad uniongyrchol (\"direct storage access device"
+"\" neu DASD) ar gael. Dewiswch pa ddyfeisiau hoffech chi ddefnyddio, un ar y "
+"tro."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Select \"Finish\" at the bottom of the list when you are done."
+msgstr "Dewiswch \"Gorffen\" ar waelod y rhestr pan ydych wedi gorffen."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid "Choose device:"
+msgstr "Dewis dyfais:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid ""
+"Please choose a device. You have to specify the complete device number, "
+"including leading zeros."
+msgstr ""
+"Dewiswch ddyfais. Rhaid rhoi rhif y ddyfais yn llawn, yn cynnwys seros ar y "
+"dechrau."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "Invalid device"
+msgstr "Dyfais annilys"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "An invalid device number has been chosen."
+msgstr "Dewiswyd rhif dyfais annilys."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001 ../s390-dasd.templates:5001
+msgid "Format the device?"
+msgstr "Fformatio'r ddyfais?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid "The DASD ${device} is already low-level formatted."
+msgstr "Mae ${device} DASD eisoes wedi ei fformatio'n lefel isel."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid ""
+"Please choose whether you want to format again and remove any data on the "
+"DASD. Note that formatting a DASD might take a long time."
+msgstr ""
+"Dewiswch a ydych eisio fformatio eto a thynnu unrhyw ddata ar y DASD. Gall "
+"fformatio DASD gymryd amser hir."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:5001
+msgid ""
+"The DASD ${device} is not low-level formatted. DASD devices must be "
+"formatted before you can create partitions."
+msgstr ""
+"Nid yw dyfais ${device} DASD wedi ei fformatio'n lefel isel. Rhaid fformatio "
+"dyfeisiau DASD cyn i chi allu greu rhaniadau."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid "The DASD ${device} is in use"
+msgstr "Mae'r dyfais DASD ${device} mewn defnydd"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid ""
+"Could not low-level format the DASD ${device} because the DASD is in use.  "
+"For example, the DASD could be a member of a mapped device in an LVM volume "
+"group."
+msgstr ""
+"Methu fformatio'n lefel isel ${device} DASD, oherwydd bod DASD mewn defnydd. "
+"Er enghraifft, gall y DASD fod yn aelod o ddyfais wedi ei fapio mewn grŵp "
+"cyfrol LVM."
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:7001
+msgid "Formatting ${device}..."
+msgstr "Yn fformatio ${device}..."
+
+#. Type: text
+#. Description
+#. Main menu item. Keep translations below 55 columns
+#. :sl5:
+#: ../s390-dasd.templates:8001
+msgid "Configure direct access storage devices (DASD)"
+msgstr ""
+"Cyflunio dyfeisiau storfa mynediad uniongyrchol (\"direct storage access "
+"device\" neu DASD)"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl5:
+#: ../zipl-installer.templates:1001
+msgid "Install the ZIPL boot loader on a hard disk"
+msgstr "Sefydlu llwythwr ymgychwyn ZIPL ar ddisg galed"

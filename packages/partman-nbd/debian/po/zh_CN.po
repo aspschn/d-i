@@ -1,0 +1,202 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Simplified Chinese translation for Debian Installer.
+#
+# Copyright (C) 2003-2008 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Translated by Yijun Yuan (2004), Carlos Z.F. Liu (2004,2005,2006),
+# Ming Hua (2005,2006,2007,2008), Xiyue Deng (2008), Kov Chai (2008),
+# Kenlen Lai (2008), WCM (2008), Ren Xiaolei (2008).
+#
+#
+# Translations from iso-codes:
+#   Tobias Toedter <t.toedter@gmx.net>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#
+#   Free Software Foundation, Inc., 2002, 2003, 2007, 2008.
+#   Alastair McKinstry <mckinstry@computer.org>, 2001,2002.
+#   Translations taken from KDE:
+#   - Wang Jian <lark@linux.net.cn>, 2000.
+#   - Carlos Z.F. Liu <carlosliu@users.sourceforge.net>, 2004 - 2006.
+#   LI Daobing <lidaobing@gmail.com>, 2007, 2008, 2009, 2010.
+#   YunQiang Su <wzssyqa@gmail.com>, 2011.
+#
+#   Mai Hao Hui <mhh@126.com>, 2001 (translations from galeon)
+# YunQiang Su <wzssyqa@gmail.com>, 2010, 2011, 2012, 2013.
+# Yangfl <mmyangfl@gmail.com>, 2017.
+# Boyuan Yang <073plan@gmail.com>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2018-07-14 10:35+0000\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
+"Language-Team: <debian-l10n-chinese@lists.debian.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "配置网络块设备"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD 配置动作："
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "当前连接了 ${NUMBER} 个设备。"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "网络块设备服务器："
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "请输入运行着 nbd-server 的系统的主机名或 IP。"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "NBD export 名称"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"请输入连接 nbd-server 所需的 NBD export 名称。该名称应该要符合目前在服务器中"
+"的 export。"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "网络块设备节点："
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "请选择要连接或断开的 NBD 设备节点。"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "连接 NBD 服务器失败"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"配置 nbd-server 失败。请检查输入的主机和 export 名是否正确，确认该主机运行 "
+"nbd-server 程序，确保网络配置正确，然后重试。"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "没有剩下的网络块设备节点了"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr "可能是所有可用的 NBD 设备节点都正在使用，或者探测时发生了一些错误。"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr "没有更多的 NBD 设备节点可以配置，直到断开一个已经配置了的。"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "没有发现已连接的网络块设备"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr "当前没有网络块设备节点连接当任何服务器。因此您不能断开任何一个。"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "连接一个网络块设备"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "断开一个网络块设备"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "完成并返回到分区管理界面"

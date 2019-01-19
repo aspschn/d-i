@@ -1,0 +1,452 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+# Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-08-06 20:14+0000\n"
+"PO-Revision-Date: 2012-01-24 19:34+0530\n"
+"Last-Translator: Prabodh C P <prabodh@fsmk.org>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../mdcfg-utils.templates:1001
+msgid "Configure MD devices"
+msgstr "MD ಸಾಧನಗಳನ್ನು ಸಂರಚಿಸಿ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:2001
+msgid "Multidisk (MD) not available"
+msgstr "multidisk(MD) ಲಭ್ಯವಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:2001
+msgid ""
+"The current kernel doesn't seem to support multidisk devices. This should be "
+"solved by loading the needed modules."
+msgstr ""
+"ಪ್ರಸ್ತುತ ಕರ್ನಲ್ ಮಲ್ಟಿಡಿಸ್ಕ್ ಉಪಕರಣಗಳನ್ನು ಬೆಂಬಲಿಸುವಂತೆ ಕಾಣುವುದಿಲ್ಲ. ಇದಕ್ಕೆ ಬೇಕಾದಂತಹ "
+"ಘಟಕಗಳನ್ನು ತುಂಬುವುದರಿಂದ ಇದನ್ನು ಸರಿಪಡಿಸಬಹುದು."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../mdcfg-utils.templates:3001
+msgid "Create MD device"
+msgstr "MD ಡಿವೈಸ್ಅನ್ನು ರಚಿಸು"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../mdcfg-utils.templates:3001
+msgid "Delete MD device"
+msgstr "MD ಡಿವೈಸ್ಅನ್ ತೆಗೆದುಹಾಕು"
+
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../mdcfg-utils.templates:3001
+msgid "Finish"
+msgstr "ಮುಗಿಸು"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:3002
+msgid "Multidisk configuration actions"
+msgstr "multidisk ಸಂರಚನ ಕಾರ್ಯಗಳು"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:3002
+msgid "This is the Multidisk (MD) and software RAID configuration menu."
+msgstr "ಇದು ಮಲ್ಟಿಡಿಸ್ಕ (MD) ಮತ್ತು ತಂತ್ರಾಂಶ RAID ಸಂರಚನಾ ಆಯ್ಕೆಪಟ್ಟಿಯಾಗಿದೆ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:3002
+msgid ""
+"Please select one of the proposed actions to configure multidisk devices."
+msgstr "ದಯಮಾಡಿ ಮಲ್ಟಿಡಿಸ್ಕ್ ಉಪಕರಣಗಳನ್ನುಸಂರcಇಸಲು ಸೂಚಿಸಲಾದ ಕಾರ್ಯಗಳಲ್ಲಿ ಒಂದನ್ನು ಆಯ್ಕೆಮಾಡಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:4001
+msgid "No RAID partitions available"
+msgstr "ಯಾವುದೆ RAID ವಿಭಜನೆಗಳು ಲಭ್ಯವಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:4001
+msgid ""
+"No unused partitions of the type \"Linux RAID Autodetect\" are available. "
+"Please create such a partition, or delete an already used multidisk device "
+"to free its partitions."
+msgstr ""
+"ಯಾವುದೇ \"Linux RAID Autodetect\"ಬಗೆಯ ಬಳಸದೇ ಇರದ್ದ್ ವಿಭಜನೆಗಳು ಲಭ್ಯವಿರುವುದಿಲ್ಲ. "
+"ದಯಮಾಡಿ ಇಂತಹ ವಿಭಜನೆಯನ್ನು ನಿರ್ಮಿಸಿ ಅಥವಾ ಆಗಲೇ ಬಳಕೆಯಲ್ಲಿರುವ ಮಲ್ಟಿಡಿಸ್ಕ್ ಉಪಕರಣವನ್ನು "
+"ತೆಗೆದುಹಾಕುವ ಮೂಲಕ ಅದರ ವಿಭಜನೆಗಳನ್ನು ಬಿಡುವು ಮಾಡಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:4001
+msgid ""
+"If you have such partitions, they might contain actual file systems, and are "
+"therefore not available for use by this configuration utility."
+msgstr ""
+"ನಿಮ್ಮಲ್ಲಿ ಈ ತರಹದ ವಿಭಜನೆಗಳಿದ್ದರೆ, ಅವುಗಳು ವಾಸ್ತವಿಕ ಕಡತ ವ್ಯವಸ್ಥೆಗಳನ್ನು ಹೊಂದಿರಬಹುದು, "
+"ಆದ್ದರಿಂದ ಈ ನಿತ್ಯೋಪಯೋಗಿ ಸಂರಚನಾ ತಂತ್ರಾಂಶದ ಬಳಕೆಗೆ ಲಭ್ಯವಿರುವುದಿಲ್ಲ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:5001
+msgid "Not enough RAID partitions available"
+msgstr "ಸಾಕಷ್ಟು RAID ವಿಭಜನೆಗಳು ಲಭ್ಯವಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:5001
+msgid ""
+"There are not enough RAID partitions available for your selected "
+"configuration.  You have ${NUM_PART} RAID partitions available but your "
+"configuration requires ${REQUIRED} partitions."
+msgstr ""
+"ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಸಂಯೋಜನೆಗೆ ಸಾಕಷ್ಟು RAID ವಿಭಜನೆಗಳು ಲಭ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಬಳಿ "
+"${NUM_PART} RAID  ವಿಭಜನೆಗಳು ಲಭ್ಯವಿವೆ ಆದರೆ ನಿಮ್ಮ ಸಂಯೋಜನೆಗೆ ${REQUIRED} "
+"ವಿಭಜನೆಗಳು ಬೇಕಿದೆ."
+
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#. Type: select
+#. Choices
+#. :sl3:
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../mdcfg-utils.templates:6001 ../mdcfg-utils.templates:13001
+msgid "Cancel"
+msgstr "ರದ್ದು ಮಾಡು"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:6002
+msgid "Multidisk device type:"
+msgstr "Multidisk ಸಾಧನದ ಬಗೆ"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:6002
+msgid "Please choose the type of the multidisk device to be created."
+msgstr "ಯಾವ ತರಹದ Multidisck ಸಾಧನ ಸ್ರುಷ್ಥಿಸಬೇಕೆಂಬುದನ್ನು ಆಯ್ಕೆಮಾಡಿ."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:7001
+msgid "Active devices for the RAID0 multidisk device:"
+msgstr "RAID0 ಮಲ್ಟಿಡಿಸ್ಕ್ ಉಪಕರಣಕ್ಕೆ ಕ್ರಿಯಶೀಲವಾದ ಉಪಕರಣಗಳು."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:7001
+msgid ""
+"You have chosen to create a RAID0 array. Please choose the active devices in "
+"this array."
+msgstr ""
+"ನೀವು RAID0 ಸಾಲನ್ನು ನಿರ್ಮಿಸಲು ಆಯ್ಕೆ ಮಾಡಿರುವಿರಿ. ದಯಮಾಡಿ ಈ ಸಾಲಿನಲ್ಲಿನ ಕಾರ್ಯಶೀಲ "
+"ಉಪಕರಣಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:8001
+msgid "Number of active devices for the RAID${LEVEL} array:"
+msgstr "RAID${LEVEL} ಸಾಲಿನಲ್ಲಿರುವ ಕ್ರಿಯಾಶೀಲವಾದ ಉಪಕರಣಗಳ ಸಂಖ್ಯೆ:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:8001
+msgid ""
+"The RAID${LEVEL} array will consist of both active and spare partitions. The "
+"active partitions are those used, while the spare devices will only be used "
+"if one or more of the active devices fail. A minimum of ${MINIMUM} active "
+"devices is required."
+msgstr ""
+"RAID${LEVEL} ಸಾಲು ಕ್ರಿಯಾಶೀಲ ಮತ್ತು ಬಿಡಿ ವಿಭಜನೆಗಳೆರಡನ್ನು ಹೊಂದಿರುತ್ತದೆ. ಕ್ರಿಯಾಶೀಲ "
+"ವಿಭಜನೆಗಳು ಬಳಸಲಾಗುತ್ತಿರುವ ವಿಭಜನೆಗಳಾಗಿದ್ದರೆ, ಬಿಡಿ ವಿಭಜನೆಗಳು ಕೇವಲ ಒಂದು ಅಥವಾ "
+"ಹೆಚ್ಚಿನ ಉಪಕರಣಗಳು ವಿಫಲವಾದಾಗ ಬಳಸಲಾಗುತ್ತದೆ. ಕನಿಷ್ಟ ${MINIMUM} ಕ್ರಿಯಾಶೀಲ ಉಪಕರಣಗಳು "
+"ಬೇಕಾಗಿರುತ್ತವೆ."
+
+#. Type: string
+#. Description
+#. :sl3:
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:8001 ../mdcfg-utils.templates:12001
+msgid "NOTE: this setting cannot be changed later."
+msgstr "ಗಮನಿಸಿ: ಈ ಹೊಂದಿಕೆಯನ್ನು ಮತ್ತೆ ನಂತರದಲ್ಲಿ ಬದಲಾಯಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:9001
+msgid "Active devices for the RAID${LEVEL} multidisk device:"
+msgstr "RAID${LEVEL} ಮಲ್ಟಿಡಿಸ್ಕ್ ಉಪಕರಣಕ್ಕೆ ಕ್ರಿಯಶೀಲವಾದ ಉಪಕರಣಗಳು."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:9001
+msgid ""
+"You have chosen to create a RAID${LEVEL} array with ${COUNT} active devices."
+msgstr ""
+"\"ನೀವು RAID${LEVEL} ಸಾಲನ್ನು ${COUNT} ಕಾರ್ಯಶೀಲ ಉಪಕರಣಗಳೊಂದಿಗೆ ನಿರ್ಮಿಸಲು ಆಯ್ಕೆ "
+"ಮಾಡಿರುವಿರಿ."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:9001
+msgid ""
+"Please choose which partitions are active devices. You must select exactly "
+"${COUNT} partitions."
+msgstr ""
+"ದಯಮಾಡಿ ಯಾವ ವಿಭಜನೆಗಳು ಕಾರ್ಯಶೀಲ ಉಪಕರಣಗಳೆಂದು ಆಯ್ಕೆಮಾಡಿ. ನೀವು ಸರಿಯಾಗಿ ${COUNT} "
+"ವಿಭಜನೆಗಳನ್ನು ಮಾತ್ರ ಆಯ್ಕೆ ಮಾಡಬೇಕು."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:10001
+msgid "Number of spare devices for the RAID${LEVEL} array:"
+msgstr "RAID${LEVEL} ಸಾಲಿಗಾಗಿನ ಬಿಡಿ ಉಪಕರಣಗಳ ಸಂಖ್ಯೆ"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:11001
+msgid "Spare devices for the RAID${LEVEL} multidisk device:"
+msgstr "RAID${LEVEL} ಮಲ್ಟಿಡಿಸ್ಕ್ ಉಪಕರಣಕ್ಕೆ ಬದಲಿ ಉಪಕರಣಗಳು."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:11001
+msgid ""
+"You have chosen to create a RAID${LEVEL} array with ${COUNT} spare devices."
+msgstr ""
+"ನೀವು ಒಂದು RAID${LEVEL} ಸಾಲನ್ನು ${COUNT} ಬಿಡಿ ಉಪಕರಣಗಳೊಂದಿಗೆ ನಿರ್ಮಿಸಲು ಆಯ್ಕೆ "
+"ಮಾಡಿರುವಿರಿ."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:11001
+msgid ""
+"Please choose which partitions will be used as spare devices. You may choose "
+"up to ${COUNT} partitions. If you choose less than ${COUNT} devices, the "
+"remaining partitions will be added to the array as \"missing\". You will be "
+"able to add them later to the array."
+msgstr ""
+"ದಯಮಾಡಿ ಯಾವ ವಿಭಜನೆಗಳು ಬಿಡಿ ಉಪಕರಣಗಳಾಗಿ ಬಳಸಲಾಗುತ್ತದೆ ಎಂದು ಆಯ್ಕೆಮಾಡಿ. ನೀವು "
+"${COUNT} ವಿಭಜನೆಗಳಷ್ಟರವರೆಗೆ ಆಯ್ಕೆ ಮಾಡಬಹುದು. ನೀವು ${COUNT} ಉಪಕರಣಗಳಿಗಿಂತ ಕಡಿಮೆ "
+"ಆಯ್ಕೆಮಾಡಿದರೆ ಇನ್ನುಳಿದ ವಿಭಜನೆಗಳನ್ನು \"missing\" ಎಂದು ಸಾಲಿಗೆ ಸೇರಿಸಲಾಗಿರುತ್ತದೆ. "
+"ನೀವು ಅವುಗಳನ್ನು ನಂತರ ಸಾಲಿಗೆ ಸೇರಿಸಬಹುದು."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:12001
+msgid "Layout of the RAID10 multidisk device:"
+msgstr "RAID10 multidisk ಸಾಧನದ ನಕ್ಷೆ:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:12001
+msgid ""
+"The layout must be n, o, or f (arrangement of the copies) followed by a "
+"number (number of copies of each chunk). The number must be smaller or equal "
+"to the number of active devices."
+msgstr ""
+"ವಿನ್ಯಾಸವು n,o, ಅಥವಾ f(ನಕಲು ಪ್ರತಿಗಳ ಜೋಡಣೆ) ನಂತರ ಒಂದು ಸಂಖ್ಯೆಯನ್ನು (ಪ್ರತಿ ತುಣುಕಿನ "
+"ನಕಲು ಪ್ರತಿಗಳ ಸಂಖ್ಯೆ)ಹೊಂದಿರಲೇಬೇಕು. ಈ ಸಂಖ್ಯೆಯು ಕ್ರಿಯಾಶೀಲ ಉಪಕರಣಗಳ ಸಂಖ್ಯೆಗಿಂತ ಕಡಿಮೆ "
+"ಅಥವಾ ಸಮನಾಗಿರಬೇಕು."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:12001
+msgid ""
+"The letter is the arrangement of the copies:\n"
+" n - near copies: Multiple copies of one data block are at similar\n"
+"     offsets in different devices.\n"
+" f - far copies: Multiple copies have very different offsets\n"
+" o - offset copies: Rather than the chunks being duplicated within a\n"
+"     stripe, whole stripes are duplicated but are rotated by one\n"
+"     device so duplicate blocks are on different devices."
+msgstr ""
+"ಅಕ್ಷರವು ನಕಲು ಪ್ರತಿಗಳ ಜೋಡಣೆಯಾಗಿರುತ್ತದೆ:\n"
+" n -  ಸಮೀಪದ ಪ್ರತಿಗಳು: ಒಂದು ಮಾಹಿತಿ ತುಣುಕಿನ ಅನೇಕ ಪ್ರತಿಗಳು ಸಮಾನ \n"
+"          ದೂರದಲ್ಲಿರುವ ಆದರೆ ಬೇರೆಬೇರೆ ಉಪಕರಣಗಳಲ್ಲಿರುವ.\n"
+"f - ದೂರದ ಪ್ರತಿಗಳು: ಅನೇಕ ಪ್ರತಿಗಳು ಬೇರೆಬೇರೆ ದೂರದಲ್ಲಿರುವ \n"
+"o - ಆಫ್ ಸೆಟ್ ಪ್ರತಿಗಳು: ತುಣುಕಗಳನ್ನು ಒಂದೇ ಸಾಲಿನೊಳಗೆ ನಕಲು ಮಾಡುವ ಬದಲು,\n"
+"    ಇಡೀ ಸಾಲನ್ನು ನಕಲುಗೊಳಿಸಲಾಗುತ್ತದೆ ಆದರೆ ಒಂದು ಉಪಕರಣದಷ್ಟು ಚಕ್ರಾಕಾರವಾಗಿ "
+"ತಿರುಗಿಸಲಾಗುತ್ತದೆ\n"
+"   ಆದ್ದರಿಂದ ನಕಲಿ ಘಟಕಗಳು ವಿಭಿನ್ನ ಉಪಕರಣಗಳ ಮೇಲಿರುತ್ತವೆ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:13002
+msgid "Multidisk device to be deleted:"
+msgstr "ಅಳಿಸಬೇಕಾಗಿರುವ multidisk ಸಾಧನ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:13002
+msgid ""
+"Deleting a multidisk device will stop it and clear the superblock of all its "
+"components."
+msgstr ""
+"ಒಂದು ಮಲ್ಟಿಡಿಸ್ಕ್ ಉಪಕರಣವನ್ನು ತೆಗೆದುಹಾಕಿದರೆ ಆ ಉಪಕರಣವನ್ನು ನಿಲ್ಲಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅದರ "
+"ಎಲ್ಲ ಘಟಕದ ಸೂಪರ್ ಬ್ಲಾಕನ್ನು ಖಾಲಿ ಮಾಡಲಾಗುತ್ತದೆ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:13002
+msgid ""
+"Please note this will not immediately allow you to reuse the partitions or "
+"devices in a new multidisk device. The array will however be unusable after "
+"the deletion."
+msgstr ""
+"ದಯಮಾಡಿ ಗಮನಿಸಿ ಇದು ತಕ್ಷಣಕ್ಕೆ ಹೊಸ ಮಲ್ಟಿಡಿಸ್ಕ್ ಉಪಕರಣದಲ್ಲಿನ ವಿಭಜನೆಗಳು ಹಾಗು ಉಪಕರಣಗಳನ್ನು "
+"ಮರುಬಳಕೆ ಮಾಡಲು ಬಿಡುವುದಿಲ್ಲ. ಈ ಸಾಲನ್ನು ತೆಗೆದುಹಾಕಿದ ನಂತರ ಇದು ನಿರುಪಯೋಜಕವಾಗುತ್ತದೆ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:13002
+msgid ""
+"If you select a device for deletion, you will get some information about it "
+"and you will be given the option of aborting this operation."
+msgstr ""
+"ನೀವು ಒಂದು ಉಪಕರಣವನ್ನು ತೆಗೆದುಹಾಕಲು ಆಯ್ಕೆಮಾಡಿದರೆ, ನಿಮಗೆ ಅದರ ಬಗ್ಗೆ ಸ್ವಲ್ಪ ಮಾಹಿತಿಯನ್ನು "
+"ನೀಡಲಾಗುತ್ತದೆ ಮತ್ತು ಈ ಕಾರ್ಯಾಚರಣೆಯನ್ನು ರದ್ದುಗೊಳಿಸುವ ಆಯ್ಕೆಯನ್ನು ನೀಡಲಾಗುತ್ತದೆ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:14001
+msgid "No multidisk devices available"
+msgstr "ಯಾವುದೆ Multidisk ಸಾಧನಗಳು ಲಭ್ಯವಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:14001
+msgid "No multidisk devices are available for deletion."
+msgstr "ತೆಗೆದುಹಾಕುವುದಕ್ಕೆ ಯಾವುದೇ ಮಲ್ಟಿಡಿಸ್ಕ್ ಉಪಕರಣಗಳು ಲಭ್ಯವಿಲ್ಲ."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:15001
+msgid "Really delete this multidisk device?"
+msgstr "multidisk ಸಾಧನವನ್ನು ಅಳಿಸು?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:15001
+msgid ""
+"Please confirm whether you really want to delete the following multidisk "
+"device:"
+msgstr ""
+"ನೀವು ನಿಜವಾಗಿಯೂ ಮುಂದಿನ ಮಲ್ಟಿಡಿಸ್ಕ್ ಉಪಕರಣವನ್ನು ತೆಗೆದುಹಾಕಲು ಬಯಸುವಿರಾ ಎಂದು ದಯಮಾಡಿ "
+"ಧೃಡಪಡಿಸಿ:"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:15001
+msgid ""
+" Device:            ${DEVICE}\n"
+" Type:              ${TYPE}\n"
+" Component devices:"
+msgstr ""
+"ಸಾಧನ: ${DEVICE}\n"
+" ಬಗೆ: ${Type}\n"
+"component ಸಾದನಗಳು:"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:16001
+msgid "Failed to delete the multidisk device"
+msgstr "multidisk ಸಾಧನವನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:16001
+msgid "There was an error deleting the multidisk device. It may be in use."
+msgstr ""
+"ಮಲ್ಟಿಡಿಸ್ಕ್ ಉಪಕರಣವನ್ನು ತೆಗೆದುಹಾಕುವಾಗ ದೋಷವುಂಟಾಗಿದೆ. ಪ್ರಾಯಶಃ ಅದು ಬಳಕೆಯಲ್ಲಿರಬಹುದು."

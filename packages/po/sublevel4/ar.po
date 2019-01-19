@@ -1,0 +1,707 @@
+# translation of ar.po to Arabic
+# Arabic messages for debian-installer. Copyright (C) 2003 Software in the Public Interest, Inc. This file is distributed under the same license as debian-installer. Ossama M. Khayat <okhayat@yahoo.com>, 2005.
+# Ossama M. Khayat <okhayat@yahoo.com>, 2006, 2007, 2008, 2009, 2010.
+# Ossama Khayat <okhayat@yahoo.com>, 2011, 2012, 2013.
+# ButterflyOfFire <ButterflyOfFire@protonmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: ar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2018-12-18 10:08+0000\n"
+"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
+"Language-Team: Arabic <okhayat@gmail.com>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 3.4-dev\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "القرص الافتراضي%s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "القرص الافتراضي %s، الجزء#%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - دعم قائمة التحكم بالوصول POSIX.1e"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr "shortnames - استخدام نمط أسماء ملفات MS-DOS 8.3 القديم"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"حتّى يتسنّى لك تشغيل نظامك الجديد سيستعمل ما يسمى بمحمّل الإقلاع. يثبّت هذا في "
+"جزء إقلاع. يجب تعيين علامة الإقلاع للجزء. سيشار إلى ذلك الجزء بالعلامة "
+"\"${BOOTABLE}\" في قائمة التجزئة الرّئيسيّة."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! خطأ: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "ضربات المفاتيح:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "\"%c\""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "إظهار رسالة المساعدة هذه"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "العودة إلى السؤال السابق"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "اختيار مُدخل فارغ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr "تتوفر خيارات أخرى مع '%c' و '%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr "الخيارات السابقة متاحة باستخدام '%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr "الخيارات المقبلة متاحة باستخدام '%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "ملقّن: '%c' للمساعدة، الافتراضي=%d> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "ملقّن: '%c' للمساعدة> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "ملقّن: '%c' للمساعدة، الافتراضي=%s> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[اضغط زر الإدخال للاستمرار]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "الواجهة المراد استخدامها:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"الحزم التي تستخدم debconf لتهيئتها تشترك بنفس المظهر. يمكن اختيار نوع واجهة "
+"المستخدم التي تستخدمها."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "لاشيء"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "عند اختيار 'لاشيء' لن تُسأل أي سؤال."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "النصيّة"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "'النصيّة' هي الواجهة النصيّة الاعتيادية البسيطة."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "Newt"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "'Newt' هي واجهة شاشة كاملة، تعتمد الأحرف للرسم."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "GTK"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr "'GTK' هي الواجهة الرسومية التي تستخدم في البيئات الرسوميّة."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "فشل تركيب /target/proc"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "فشل تركيب نظام ملفّات proc عند /target/proc."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "تحذير: قد يكون نظامك غير قابلٍ للإقلاع!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "تعيين متغيّرات البرمجيّات الضمنيّة للإقلاع التلقائي"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"يجب تعيين بعض المتغيرات في Genesi firmware كي يتمكن نظامك من الإقلاع آليا. "
+"عند نهاية التثبيت، سيتم إعادة إقلاع النظام. يجب تعيين متغيرات  firmware عند "
+"ملقن firmware لتمكين الإقلاع الآلي:"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"ستحتاج للقيام بهذا مرة واحدة فقط. بعد ذلك، أدخل الأمر \"boot\" أو قم بإعادة "
+"تشغيل النظام كي تتقدّم نحو مرحلة التثبيت التالية."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"عوضاً عن ذلك، ستكون قادراً على إقلاع النواة يدوياً بكتابة ما يلي عند ملقن "
+"firmware:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"يجب تعيين بعض المتغيرات في CFE كي يتمكن نظامك من الإقلاع آليا. عند نهاية "
+"التثبيت، سيتم إعادة إقلاع النظام. يجب تعيين متغيرات  firmware عند ملقن "
+"firmware لتمكين الإقلاع الآلي:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"ستحتاج إلى هذا هذه المرة فقط. سيمكنك هذا من إصدار الأمر \"boot_debian\" عند "
+"ملقن CFE."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"إن كنت تفضل الإقلاع الآلي عند كل تشغيل، يمكنك تعيين المتغير التالي بالإضافة "
+"إلى التي أعلاه:"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "تريد تثبيت GRUB؟"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB 2 هو الجيل الجديد من GNU GRUB، مُحمّل الإقلاع شائع الاستخدام على حاسبات "
+"i386/amd64. وهو الآن متوفر لمنصة ${ARCH}."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"يشتمل هذا البرنامج على مزايا جديدة لكنها لا زالت قيد الاختبار. ان اخترت "
+"تثبيتها، فكن على استعداد لمواجهة المشاكل، وكيفية إصلاح نظامك في حال عدم "
+"قدرته على الإقلاع. كما ننصحك بعدم تجربة هذه المزايات في أجهزة العمل الفعلي."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "تثبيت محمّل الإقلاع arcboot على القرص الصّلب"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "القرص المطلوب تثبيت محمّل الإقلاع عليه:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"يجب أن يتم تثبيت arcboot على ترويسة الكتلة لقرصٍ ذي تسمية قرص SGI. عادةً "
+"تستخدم ترويسة /dev/sda. الرجاء إدخال اسم الجهاز للقرص الذي ترغب بوضع arcboot "
+"عليه."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "تمت تهيئة arcboot ليستخدم طرفيّةً متوالية"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"تمت تهيئة arcboot ليستخدم المنفذ المتوالي ${PORT} كطرفيّة. سرعة المنفذ "
+"المتوالي معيّنة لـ ${SPEED}."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "فشل تثبيت arcboot. هل تريد المتابعة على كلّ حال؟"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"فشل تثبيت حزمة arcboot على /target/. تثبيت Arcboot كمحمّل إقلاع خطوةٌ مطلوبة. "
+"مع ذلك، فإنّ مشكلة التثبيت قد لا تكون متعلّقةً بarcboot، لذا فإنّ الاستمرار "
+"بالتثبيت قد يكون ممكناً."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "تحديد متغيّرات PROM لArcboot"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"إن كان هذا هو التثبيت الأول للينكس على هذا الجهاز، أو إن حدثت إعادة جزء "
+"للأقراص الصّلبة، فيجب تحديد بعض المتغيّرات في PROM قبل أن يستطيع النظام "
+"الإقلاع بشكلٍ طبيعي."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"في نهاية مرحلة التثبيت هذه سيقوم النظام بإعادة التّشغيل. بعد هذا أُدخل إلى "
+"مراقب الأوامر من خيار \"توقّف للصّيانة\"، و أدخل الأوامر التّالية:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "تهيئة الواجهة الشبكيّة"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "إجراء تهيئة الواجهة الشبكيّة (NBD):"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "عدد الأجهزة المتصلة حالياً هو ${NUMBER}."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "خادم الواجهة الشبكيّة:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "رجاءً أدخل اسم المُضيف أو عنوان IP للنظام الذي يعمل عليه خادم nbd."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "تسمية لتصدير NBD"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "نوع جهاز الشبكة:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "رجاءً اختر جهاز NBD التي تود وصله أو فصله."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "تعذر الاتصال بخادم NBD"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"تعذر الاتصال بخادم nbd. رجاءً تأكد من صحّة كتابة اسم المضيف واسم التصدير الذي "
+"أدخلته، وأن خدمة خادم nbd تعمل حالياً على ذلك المضيف، وأن الشبكة مُهيّأة بشكل "
+"صحيح، ثم أعد المحاولة."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "لا يوجد أي نقط شاغرة للواجهة الشبكيّة"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"إما أن جميع نقط أجهزة الواجهة الشبكيّة مُستخدمة أو أي خللاً ما حدث أثناء "
+"استكشاف نقاط الأجهزة."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"لا يمكن تهيئة المزيد من نقاط أجهزة الواجهة الشبكيّة حتى تقطع اتصال أحدها."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "لا يوجد أي نقاط أجهزة واجهة شبكيّة متصلة"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"ليس هناك حالياً أي نقاط أجهزة شبكيّة متصلة على أي خادم. لذا، لا يمكنك قطع "
+"اتصال أي منها."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "ربط جهاز الشبكة"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "فصل جهاز الشبكة"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "أنه العملية وارجع إلى برنامج التجزئة"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "تهيئة ذاكرة فلاش لإقلاع النظام"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "جعل النظام قابلاً للإقلاع"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "تجهيز النظام..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "كتابة النواة على ذاكرة فلاش..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "توليد صورة الإقلاع على القرص..."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "جعل النظام قابلاً للإقلاع"

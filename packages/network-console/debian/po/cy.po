@@ -1,0 +1,249 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of Debian Installer templates to Welsh
+# Copyright (C) 2004-2008 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Jonathan Price <mynamesnotclive@notclive.co.uk>, 2008.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004.
+#   - translations from ICU-3.0
+#   Dafydd Harries <daf@muse.19inch.net>, 2002,2004,2006.
+#   Free Software Foundation, Inc., 2002,2004
+#   Alastair McKinstry <mckinstry@computer.org>, 2001
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: network-console@packages.debian.org\n"
+"POT-Creation-Date: 2012-10-01 22:05+0000\n"
+"PO-Revision-Date: 2018-03-19 21:51+0000\n"
+"Last-Translator: Huw Waters <huwwaters@gmail.com>\n"
+"Language-Team: Welsh <>\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0) ? 0 : (n==1) ? 1 : (n==2) ? 2 : "
+"(n==3) ? 3 :(n==6) ? 4 : 5;\n"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:1001
+msgid "Continue installation remotely using SSH"
+msgstr "Parhau gyda sefydlu, o bell, drwy ddefnyddio SSH"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start installer"
+msgstr "Dechrau sefydlydd"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start installer (expert mode)"
+msgstr "Dechrau sefydlydd (modd arbennigwr)"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start shell"
+msgstr "Dechrau cragen"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid "Network console option:"
+msgstr "Dewis consol rhwydwaith:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid ""
+"This is the network console for the Debian installer. From here, you may "
+"start the Debian installer, or execute an interactive shell."
+msgstr ""
+"Dyma gonsol rhwydwaith i sefydlydd Debian. O'r fan hyn, fe allwch ddechrau "
+"sefydlydd Debian, neu weithredu cragen rhyngweithiol."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid "To return to this menu, you will need to log in again."
+msgstr ""
+"Er mwyn dychwelyd i'r ddewislen yma, fydd rhaid i chi mewngofnodi mewn eto."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:3001
+msgid "Generating SSH host key"
+msgstr "Creu allwedd gwesteiwr SSH"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid "Remote installation password:"
+msgstr "Cyfrinair sefydlu o bell:"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid ""
+"You need to set a password for remote access to the Debian installer. A "
+"malicious or unqualified user with access to the installer can have "
+"disastrous results, so you should take care to choose a password that is not "
+"easy to guess. It should not be a word found in the dictionary, or a word "
+"that could be easily associated with you, like your middle name."
+msgstr ""
+"Rhaid i chi osod cyfrinair ar gyfer mynediad o bell i sefydlydd Debian. Gall "
+"ddefnyddiwr maleisus neu anghymwys gyda mynediad 'root' gael canlyniadau "
+"trychinebus, felly dylwch gymryd ofal i ddewis gyfrinair 'root' nad yw'n "
+"hawdd i'w ddyfalu. Ni ddylai fod yn air mewn geiriadur, neu'n air a ellir ei "
+"gysylltu'n hawdd a chi, fel eich enw canol."
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid ""
+"This password is used only by the Debian installer, and will be discarded "
+"once you finish the installation."
+msgstr ""
+"Mae'r cyfrinair hyn i'w ddefnyddio gan sefydlydd Debian, a chaiff ei "
+"ddinistrio unwaith i chi orffen y sefydliad."
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+msgid "Re-enter password to verify:"
+msgstr "Ail-rhowch y cyfrinair er mwyn dilysu:"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+msgid ""
+"Please enter the same remote installation password again to verify that you "
+"have typed it correctly."
+msgstr ""
+"Os gwelwch yn dda, rhowch yr un cyfrinair 'root' eto er mwyn gwirio eich bod "
+"wedi ei deipio'n gywir."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid "Empty password"
+msgstr "Cyfrinair gwag"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid ""
+"You entered an empty password, which is not allowed. Please choose a non-"
+"empty password."
+msgstr ""
+"Fe rhoddoch gyfrinair gwag, ond ni chaniateir hyn. Dewiswch gyfrinair nad "
+"yw'n wag."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+msgid "Password mismatch"
+msgstr "Cyfrinair annilys"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+msgid ""
+"The two passwords you entered were not the same. Please enter a password "
+"again."
+msgstr ""
+"Nid oedd y ddau gyfrinair y roddoch yr yn peth. Ceisiwch eto os gwelwch yn "
+"dda."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "Start SSH"
+msgstr "Dechrau SSH"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid ""
+"To continue the installation, please use an SSH client to connect to the IP "
+"address ${ips} and log in as the \"installer\" user. For example:"
+msgstr ""
+"I barhau gyda'r sefydliad, defnyddiwch gleient SSH i gysylltu i'r cyfeiriad "
+"IP ${ips} a mewngofnodwch fel y defnyddiwr \"installer\". Er enghraifft:"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "The fingerprint of this SSH server's host key is: ${fingerprint}"
+msgstr "Olion bysedd allwedd gwesteiwr y gweinydd SSH hwn yw: ${fingerprint}"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid ""
+"Please check this carefully against the fingerprint reported by your SSH "
+"client."
+msgstr ""
+"Gwiriwch hwn yn ofalus yn erbyn yr olion bysedd a ddangosir gan eich cleient "
+"SSH."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Could not fetch SSH authorized keys"
+msgstr "Methwyd cyrchu'r allweddi SSH awdurdodedig"
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Translators: do NOT translate the "LOCATION" variable name
+#: ../network-console.templates:10001
+msgid "An error occurred while fetching SSH authorized keys from ${LOCATION}."
+msgstr "Cafwyd gwall wrth gyrchu'r allweddi SSH awdurdodedig o ${LOCATION}."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr "Gwiriwch /var/log/syslog neu gwelwch consol rhithwir 4 am y manylion."

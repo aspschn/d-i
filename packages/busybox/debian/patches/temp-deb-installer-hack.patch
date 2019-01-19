@@ -1,0 +1,49 @@
+Subject: Temporary hack re-enable invalid variable names
+From: Chris Boot <bootc@debian.org>
+Forwarded: not-needed
+
+Upstream busybox commit b6838b520 ("ash: [VAR] Sanitise environment
+variable names on entry") breaks assumptions used by debian-installer's
+preseed system. This results in settings passed to the installer on the
+kernel command-line getting stripped out if they contain invalid
+characters in the variable name, such as '/', which is actually very
+common in this use case.
+
+This is not a long term fix for this problem: a different approach is
+needed to parse the values from the kernel command-line, but we don't
+want to be responsible for holding up the debian-installer alpha
+release any longer than it has already.
+
+--- a/shell/Config.src
++++ b/shell/Config.src
+@@ -154,6 +154,13 @@
+ 	  to set shell history size. Note that its max value is capped
+ 	  by "History size" setting in library tuning section.
+ 
++config FEATURE_DI_ENV_HACK
++	bool "Use d-i environment variable hack"
++	default n
++	depends on ASH || HUSH || SH_IS_ASH || BASH_IS_ASH || SH_IS_HUSH || BASH_IS_HUSH
++	help
++	  Do NOT use this. You don't want this. Really.
++
+ endif # Options common to all shells
+ 
+ endmenu
+--- a/shell/ash.c
++++ b/shell/ash.c
+@@ -13402,8 +13402,13 @@
+ 
+ 		initvar();
+ 		for (envp = environ; envp && *envp; envp++) {
++#if ENABLE_FEATURE_DI_ENV_HACK
++			if (strchr(*envp, '='))
++#else
+ 			p = endofname(*envp);
+-			if (p != *envp && *p == '=') {
++			if (p != *envp && *p == '=')
++#endif
++			{
+ 				setvareq(*envp, VEXPORT|VTEXTFIXED);
+ 			}
+ 		}

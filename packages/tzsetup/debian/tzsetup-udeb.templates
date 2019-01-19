@@ -1,0 +1,5 @@
+Template: finish-install/progress/tzsetup
+Type: text
+# finish-install progress bar item
+# :sl1:
+_Description: Saving the time zone...

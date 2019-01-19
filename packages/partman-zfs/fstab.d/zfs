@@ -1,0 +1,49 @@
+#!/bin/sh
+
+. /lib/partman/lib/base.sh
+. /lib/partman/lib/zfs-base.sh
+
+for dev in $DEVICES/*; do
+	[ -d $dev ] || continue
+	cd $dev
+	open_dialog PARTITIONS
+	while { read_line num id size type fs path name; [ "$id" ]; }; do
+		[ $fs != free ] || continue
+		[ -f "$id/method" ] || continue
+		[ -f "$id/acting_filesystem" ] || continue
+		method=$(cat $id/method)
+		filesystem=$(cat $id/acting_filesystem)
+		case "$filesystem" in
+		    zfs)
+			[ -f "$id/mountpoint" ] || continue
+			mountpoint=$(cat $id/mountpoint)
+			# due to #249322, #255135, #258117:
+			if [ "$mountpoint" = /tmp ]; then
+				rm -f $id/options/noexec
+			fi
+			options=$(get_mountoptions $dev $id)
+			if [ "$options" = defaults ]; then
+				options="rw"
+			fi
+			echo "${path#/dev/zvol/}" "$mountpoint" zfs $options 0 0
+			;;
+		esac
+	done
+	close_dialog
+done
+
+# NOTE: This won't work if filesystems isn't created in tree format.
+local vg lv val mp rootfs
+for vg in $(vg_list); do
+	for lv in $(vg_list_lvs $vg); do
+		val=`get_lv_value $lv mountpoint`
+		if [ "$val" = "/" -o "$val" = "/target" ]; then
+			# This is the root FS.
+			rootfs=$lv
+			echo "$lv / zfs defaults 0 0"
+		elif [ "$val" = "legacy" -a -n "$rootfs" ]; then
+			mp=$(echo "$lv" | sed "s@$rootfs@@")
+			[ -n "$mp" ] && echo "$lv $mp zfs defaults 0 0"
+		fi
+	done
+done

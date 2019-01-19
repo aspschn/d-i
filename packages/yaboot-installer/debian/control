@@ -1,0 +1,18 @@
+Source: yaboot-installer
+Section: debian-installer
+Priority: standard
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Bastian Blank <waldi@debian.org>, Colin Watson <cjwatson@debian.org>, Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9), po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/yaboot-installer
+Vcs-Git: https://salsa.debian.org/installer-team/yaboot-installer.git
+
+Package: yaboot-installer
+Architecture: powerpc ppc64
+Package-Type: udeb
+XB-Subarchitecture: powermac_newworld chrp chrp_rs6k chrp_ibm cell
+Provides: bootable-system
+Depends: ${misc:Depends}, kernel-installer, partconf-find-partitions (>= 1.08), di-utils (>= 1.15), di-utils-mapdevfs, os-prober, archdetect
+XB-Installer-Menu-Item: 7300
+Description: Install yaboot on a hard disk
+ This package will install yaboot on the hard disk.

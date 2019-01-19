@@ -1,0 +1,339 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of bg.po to Bulgarian
+# Bulgarian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+#
+#
+# Translations from iso-codes:
+#     Translations taken from ICU SVN on 2007-09-09
+# Copyright (C)
+#   (translations from drakfw)
+#   - further translations from ICU-3.9
+# Translation of ISO 639 (language names) to Bulgarian
+# Copyright (C) 2010 Free Software Foundation, Inc.
+#
+# Copyright (C)
+#
+# Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004, 2005, 2006.
+# Nikola Antonov <nikola@linux-bg.org>, 2004.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#   Free Software Foundation, Inc., 2004.
+#   Georgi Georgiev <assenov_g@operamail.com>, 2001, 2004.
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004.
+#   Damyan Ivanov <dmn@debian.org>, 2006, 2007, 2008, 2009, 2010.
+#   Roumen Petrov <transl@roumenpetrov.info>, 2010.
+# Damyan Ivanov <dmn@debian.org>, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bg\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2017-12-06 22:55+0200\n"
+"Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
+"Language-Team: Български <dict@fsa-bg.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "Сканиране на твърдите дискове за ISO-файл на инсталиращ диск"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "Разпознаване на хардуер, за да бъдат намерени твърди дискове"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "Претърсване на устройствата за ISO-файл на инсталиращ диск"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "Монтиране на ${DRIVE}..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "Сканиране на ${DRIVE} (в ${DIRECTORY})..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "Пълно претърсване за ISO-файл на инсталиращ диск?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"Бързото сканиране за ISO-файл на инсталиращ диск, което преглежда само "
+"популярни места, не намери ISO-файл на инсталиращ диск. Възможно е по-"
+"подробно търсене да намери ISO-файл, но това ще отнеме много време."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "Не беше намерен ISO-файл на инсталиращ диск"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"Не бяха намерени ISO образи. Ако сте изтеглили ISO образ, той може да има "
+"неправилно име (незавършващо на „.iso“), или да е  върху файлова система, "
+"която не може да бъде монтирана."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"Ще се наложи да използвате друг метод за инсталиране, да изберете друго "
+"устройство, съдържащо образа ISO или да опитате пак след като го поправите."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"Бяха намерени един или повече ISO-файлове, но те не можаха да бъдат "
+"монтирани. ISO-файловете, които сте изтеглили, може би са развалени."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "Не беше намерен ISO-файл на инсталиращ диск"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"Бяха намерени един или повече ISO-файлове, но не изглеждат валидни за "
+"инсталиране."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "Успешно беше монтиран ISO-файлът на инсталиращ диск ${SUITE}"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"ISO-файлът ${FILENAME} върху ${DEVICE} (${SUITE}) ще бъде използван като ISO-"
+"файл на инсталиращ диск."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "Всички достъпни устройства"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "Ръчно въвеждане на устройство"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr ""
+"Устройство или дял, който да се претърси за образи ISO на инсталационни "
+"носители:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"Можете да изберете устройство, да укажете ръчно устройство, което не е било "
+"открито или да предизвикате повторно сканиране на наличните устройства "
+"(полезно при бавни носители USB)."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "Устройство:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "Пълно претърсване"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "Файл ISO, който да се използва:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"На избраното устройство(а) са открити са един или повече файлове ISO. "
+"Изберете кой от тях да се използва или поискайте пълно претърсване."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr ""
+"Файлът ISO ${FILENAME} ли е правилният образ, който да се използва за "
+"инсталиране?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"ISO-файлът ${FILENAME} върху ${DEVICE} (${SUITE}, кодово име ${CODENAME}, "
+"представящ се като „${DESCRIPTION}“) ще бъде използван като образ на "
+"инсталиращ носител."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"В случай, че на устройството, от което се инсталира има повече от един файл "
+"ISO е необходимо да бъде избран един от тях, който да се използва."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr "Копиране на образа ISO в оперативната памет преди монтирането му?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr "Налице е достатъчно оперативна памет за да събере копие на образа ISO."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+"Избирането на тази възможност позволява използването на диска, съдържащ "
+"образа ISO. В противен случай инсталаторът ще изключи диска от фазата за "
+"разделяне и форматиране на дискове."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+"Обърнете внимание, че ако форматирате диска, съдържащ образа ISO не трябва "
+"да рестартирате системата преди инсталацията да завърши, защото няма да "
+"имате възможност да рестартирате инсталацията, тъй като образът ще е изтрит "
+"от диска и оперативната памет."
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "Зареждане на компоненти на инсталатора от ISO-файл на инсталиращ диск"

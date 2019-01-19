@@ -1,0 +1,22 @@
+#! /bin/sh
+
+# Script run at the end of the installation (as set in preseed.cfg); prepares
+# to boot into the installed system, briefly log into Gnome and then reboot.
+
+set -e
+
+: >/target/BABELBOX
+cp /hd-media/srv/babelbox/cronscript /target/root
+echo "@reboot	root	/root/cronscript; reboot" >>/target/etc/crontab
+
+mount /dev/discs/disc0/part1 /hd-media -o remount,rw
+
+sed -i "s/^\([[:space:]]*\)set default=\"[[:digit:]]*\"$/\1set default=\"3\"/" /hd-media/boot/grub/grub.cfg
+
+if [ -d /target/etc/gdm3 ] ; then
+	# Enable automatic login (chroot because of bug in busybox sed)
+	in-target sed -i "/^\[daemon\]/a\AutomaticLoginEnable = true\nAutomaticLogin = debian" /etc/gdm3/daemon.conf
+fi
+
+
+exit 0

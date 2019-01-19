@@ -1,0 +1,27 @@
+Source: iso-scan
+Section: debian-installer
+Priority: optional
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: dpkg-dev (>= 1.7.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/iso-scan
+Vcs-Git: https://salsa.debian.org/installer-team/iso-scan.git
+
+Package: iso-scan
+Package-Type: udeb
+Architecture: all
+Depends: ${misc:Depends}, hw-detect, loop-modules, di-utils (>= 1.48)
+Provides: cdrom-detect
+XB-Installer-Menu-Item: 1300
+Description: Scan hard drives for an installer ISO image
+ This udeb will try to find an installer ISO image on a hard drive, and will
+ mount it on /cdrom.
+
+Package: load-iso
+Package-Type: udeb
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends}, iso-scan, cdrom-retriever, anna (>= 1.07)
+XB-Installer-Menu-Item: 1600
+Description: Load installer components from an installer ISO

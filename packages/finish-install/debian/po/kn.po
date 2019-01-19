@@ -1,0 +1,105 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+# Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: finish-install@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-18 22:02+0000\n"
+"PO-Revision-Date: 2011-11-18 19:11+0530\n"
+"Last-Translator: Prabodh C P <prabodh@fsmk.org>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../finish-install.templates:1001
+msgid "Finish the installation"
+msgstr "ಅನುಸ್ಥಾಪನೆಯನ್ನು ಅಂತ್ಯಗೊಳಿಸು"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:2001
+msgid "Finishing the installation"
+msgstr "ಅನುಸ್ಥಾಪನೆಯನ್ನು ಅಂತ್ಯಗೊಳಿಸಲಾಗುತ್ತಿದೆ."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:3001
+msgid "Running ${SCRIPT}..."
+msgstr "${SCRIPT}ನ್ನು ಚಲಾಯಿಸಲಾಗುತ್ತಿದೆ..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:4001
+msgid "Configuring network..."
+msgstr "ಜಾಲಬಂಧವನ್ನು ಸಂರಚಿಸಲಾಗುತ್ತಿದೆ..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:5001
+msgid "Setting up frame buffer..."
+msgstr "Frame buffer ಅನ್ನು ಅಣಿಗೊಳಿಸಲಾಗುತ್ತಿದೆ..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:6001
+msgid "Unmounting file systems..."
+msgstr "ಕಡತ ವ್ಯವಸ್ಥೆಗಳನ್ನು ಅವರೋಹಿಸಲಾಗುತ್ತಿದೆ..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:7001
+msgid "Rebooting into your new system..."
+msgstr "ನಿಮ್ಮ ಹೊಸ ಕಾರ್ಯವ್ಯವಸ್ಥೆಯನ್ನು ಪುನರಾರಂಭಿಸಲಾಗುತ್ತಿದೆ."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../finish-install.templates:8001
+msgid "Installation complete"
+msgstr "ಅನುಸ್ಥಾಪನೆಯು ಸಂಪೂರ್ಣವಾಗಿದೆ"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../finish-install.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Installation is complete, so it is time to boot into your new system. "
+#| "Make sure to remove the installation media (CD-ROM, floppies), so that "
+#| "you boot into the new system rather than restarting the installation."
+msgid ""
+"Installation is complete, so it is time to boot into your new system. Make "
+"sure to remove the installation media, so that you boot into the new system "
+"rather than restarting the installation."
+msgstr ""
+"ಅನುಸ್ಥಾಪನೆಯು ಮುಗಿದಿದೆ, ನಿಮ್ಮ ಹೊಸ ಕಾರ್ಯವ್ಯವಸ್ಥೆಯನ್ನು ಈಗ ಆರಂಭಿಸುವುದಕ್ಕೆ ಇದು ಸಕಾಲ. "
+"ಅನುಸ್ಥಾಪನಾ ಮಾಧ್ಯಮಗಳನ್ನು(ಸಿಡಿ, ಫ್ಲಾಪಿ) ಹೊರತೆಗೆಯಲು ಮರೆಯದಿರಿ, ಹಾಗಾಗಿ ಅನುಸ್ಥಾಪನೆಯನ್ನು "
+"ಪುನರಾರಂಭಿಸುವ ಬದಲು ನೀವು ನಿಮ್ಮ ಹೊಸ ಕಾರ್ಯವ್ಯವಸ್ಥೆಯನ್ನು ಆರಂಭಿಸಬಹುದು."

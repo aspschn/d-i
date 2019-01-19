@@ -1,0 +1,312 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004.
+#   Priti Patil <prithisd@gmail.com>, 2007.
+#   Sampada Nakhare, 2007.
+#   Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2012-02-21 21:03+0530\n"
+"Last-Translator: sampada <sampadanakhare@gmail.com>\n"
+"Language-Team: Marathi, janabhaaratii, C-DAC, Mumbai, India "
+"<janabhaaratii@cdacmumbai.in>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "अधिष्ठापक आयएसओ प्रतिमेसाठी हार्ड ड्राईव्हज् तपासा"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "हार्ड ड्राईव्हज् शोधण्याकरिता हार्डवेअर तपासत आहे"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "अधिष्ठापक आयएसओ प्रतिमा ड्राईव्हज् वर शोधली जात आहे"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "${DRIVE} आरोहित होत आहे..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "(${DIRECTORY} मध्ये) ${DRIVE} शोधला जात आहे..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "अधिष्ठापक आयएसओ प्रतिमा संपूर्ण ड्राईव्हवर शोधायची?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"शीघ्र शोध पद्धतीने ज्यात फक्त नेहमीच्या जागेत शोध होतो, कोणतीही अधिष्ठापक आय.एस.ओ. "
+"प्रतिमा सापडली नाही. संपुर्ण शोध पद्धत वापरल्यास कदाचित ही आय.एस.ओ. प्रतिमा सापडू "
+"शकेल, पण त्याला अधिक वेळ लागेल."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "अधिष्ठापक आय.एस.ओ. प्रतिमा शोधण्यात अपयश"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"कोणतीही अधिष्ठापक आय.एस.ओ. प्रतिमा सापडली नाही. ही आय.एस.ओ. प्रतिमा जर तुम्ही "
+"डाऊनलोड केली असेल तर, एकतर त्या फाईलचे नाव चुकीचे असेल (नावाचा शेवट \".iso\" नसेल) "
+"किंवा ती ज्याचे आरोहण होऊ शकले नाही अशा फाईल प्रणालीत असेल."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"तुम्हाला अधिष्ठापना पद्धतीचे अन्य पर्याय वापरावे लागतील, आयएसओ प्रतिमा शोधण्यासाठी अन्य "
+"उपकरण निवडावे लागेल किंवा ती दुरुस्त करून पुन्हा प्रयत्न करावा लागेल."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"एक किंवा जास्त संभाव्य आय.एस्.ओ. प्रतिमा सापडल्या  आहेत, त्यांचे आरोहण करता येत नाही. "
+"तुम्ही डाऊनलोड केलेली आय्.एस्.ओ. प्रतिमा भ्रष्ट असावी."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "कोणतीही अधिष्ठापक आय्.एस्.ओ. प्रतिमा सापडली नाही"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"एक किंवा जास्त संभाव्य आय्.एस्.ओ. प्रतिमा सापडल्या आहेत, परंतू त्या वैध अधिष्ठापन आय्.एस्.ओ. "
+"प्रतिमेसारख्या वाटल्या नाहीत."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "${SUITE} अधिष्ठापक आय्.एस्.ओ. प्रतिमेचे यशस्वी आरोहण केले."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"${DEVICE} (${SUITE}) वरची ${FILENAME} ही आय्.एस्.ओ. फाइल अधिष्ठापक आय्.एस्.ओ. "
+"प्रतिमा म्हणून वापरली जाईल."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "सापडलेली सर्व उपकरणे"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "उपकरण स्वहस्ते प्रविष्ट करा"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "अधिष्ठापना आयएसओ शोधण्यासाठी उपकरण वा विभाजन:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"तुम्ही उपकरण निवडू शकता, शोधता न आलेले उपकरण स्वतः निर्धारित करू शकता, वा उपलब्ध "
+"उपकरणांसाठी पुन्हा स्कॅन करू शकता (हळू असलेल्या यूएसबी उपकरणांसाठी उपयोगी)."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "उपकरणाचे नाव:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "संपूर्ण शोध"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "वापरायची आयएसओ फाईल:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"निवडलेल्या उपकरणा(णां)वर एक वा अधिक आयएसओ फायली सापडल्या. कृपया कोणती वापरायची ते "
+"निवडा, वा आणखी परिपूर्ण शोधाची मागणी करा."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr "आयएसओ फाईल ${FILENAME} ही अधिष्ठापनेसाठी योग्य प्रतिमा आहे?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"${DEVICE} (${SUITE} वरची आयएसओ फाइल ${FILENAME}, कोड ${CODENAME}, जिचे स्वयं-"
+"वर्णन '${DESCRIPTION}') असे आहे, ही अधिष्ठापक आयएसओ प्रतिमा म्हणून वापरली जाईल."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"त्याच अधिष्ठापक ड्राईव्हवर अनेक आयएसओ फायली असल्यास, तुम्ही कोणती वापरायची ते निवडू "
+"शकता.\t"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "अधिष्ठापक आय्.एस्.ओ. मधून अधिष्ठापक घटक लोड करा"

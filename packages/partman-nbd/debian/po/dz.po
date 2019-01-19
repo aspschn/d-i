@@ -1,0 +1,190 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of dz.po to Dzongkha
+# Translation of debian-installer level 1 Dzongkha
+# Debian Installer master translation file template
+# Copyright @ 2006 Free Software Foundation, Inc.
+# Sonam Rinchen <somchen@druknet.bt>, 2006.
+#
+#
+# Translations from iso-codes:
+#   Free Software Foundation, Inc., 2006
+#   Kinley Tshering <gaseokuenden2k3@hotmail.com>, 2006
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dDz.po\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2012-02-29 04:41-0500\n"
+"Last-Translator: Jurmey Rabgay <jrabgay@dit.gov.bt>\n"
+"Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
+"Language: dz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་རིམ་སྒྲིག་འབད།"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "ཨེན་བི་ཌི་ རིམ་སྒྲིག་བྱ་བ་:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "ད་ལྟོ་ ཐབས་འཕྲུལ་ ${NUMBER} མཐུད་ཅི།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་སར་བར་:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "ཨེན་བི་ཌི་-སར་བར་གཡོག་བཀོལ་མི་རིམ་ལུགས་ཀྱི་ཧོསཊི་མིང་ ཡང་ན་ ཨའི་པི་ཁ་བྱང་བཙུགས་གནང་།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་ནོཌི་་:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "ཁྱོད་ཀྱིས་ མཐུད་ནི་ ཡང་ན་ མཐུད་ལམ་བཏོག་ནི་ཨིན་པའི་ཨེན་ཌི་བི་ཐབས་འཕྲུལ་ནོཌི་འདི་སེལ་འཐུ་འབད།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "ཨེན་བི་ཌི་སར་བར་ལུ་མཐུད་མ་ཚུགས།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"ཨེན་བི་ཌི་-སར་བར་ལུ་མཐུད་མ་ཚུགས་པས། ཧོསཊི་དང་འདྲེན་ལམ་ ཡང་ན་ བཙུགས་མི་མིང་འདི་ འཛོལ་ནི་མི་"
+"འོང་། དེ་མ་ཚད་ ཨེན་བི་ཌི་-སར་བར་ལས་སྦྱོར་འདི་ ཧོསཊི་དང་འདྲེན་ལམ་ (མིང་དེ་ལག་ལེན་འཐབ་ཐོག་ལས་) "
+"གཡོག་བཀོལ་དགོཔ་དང་ ཡོངས་འབྲེལ་འདི་ཡང་  མ་འཛོལ་བར་རིམ་སྒྲིག་འབད་དགོ དེ་ལས་ ལོག་འབད།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་ནོཌི་ཅིག་ཡང་མེད།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"ཨེན་བི་ཌི་ཐབས་འཕྲུལ་ག་ར་ ཡང་ཅིན་ ལག་ལེན་འཐབ་སྟེ་ཡོདཔ་དང་ ཡང་ན་ ཐབས་འཕྲུལ་ནོཌི་གི་སྐྱོན་འཛིན་འདི་"
+"མེདཔ་ཐལ་སོངཔ་འོང་ནི་མས།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr "རིམ་སྒྲིག་འབད་ཡོད་མི་འདི་མཐུད་ལམ་མ་བཏོག་ཚུན་ ཨེན་བི་ཌི་ཐབས་འཕྲུལ་ནོཌི་ཚུ་རིམ་སྒྲིག་མི་འབད།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "མཐུད་ཡོད་པའི་ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་ནོཌི་མ་ཐོབ།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"ད་ལྟོ་ ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་ནོཌི་ཚུ་ སར་བར་ག་ལུ་ཡང་མ་མཐུད་པས། དེ་འབདཝ་ལས་ ཁྱོད་ཀྱིས་ "
+"དེ་ཚུ་ག་ཡང་མཐུད་ལམ་མ་བཏོག"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་ལུ་མཐུད།"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་མཐུན་ལམ་བཏོག"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "མཇུག་བསྡུ་སྟེ་ ལོག་བར་བཅད་འབད་མི་ནང་འགྱོ།"

@@ -1,0 +1,3 @@
+Tests: std-run
+Depends: @, grub-efi-amd64-bin, ca-certificates, debian-installer-netboot-amd64
+Restrictions: needs-root

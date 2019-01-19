@@ -1,0 +1,96 @@
+#!/bin/sh
+
+## make sure the tftp-root and needed directories exists:
+mkdir -vp /var/lib/tftpboot/d-i/n-pkg
+mount -v --bind /usr/lib/debian-installer/ /var/lib/tftpboot/d-i/n-pkg/
+
+c='di-netboot-assistant install stable --arch=all'
+echo "########## install with '--arch=all':"
+echo "########## # $c"
+$c
+
+c='di-netboot-assistant uninstall stable'
+echo "########## uninstall again:"
+echo "########## # $c"
+$c
+
+c='di-netboot-assistant install wheezy --alias=oldi'
+echo "########## install with alias (oldest debian release not yet archived):"
+echo "########## # $c"
+$c
+
+c='di-netboot-assistant install daily --ignore-sig'
+echo "########## install daily which is not signed:"
+echo "########## # $c"
+$c
+
+c='di-netboot-assistant -v rebuild-menu'
+echo "########## rebuild menu:"
+echo "########## # $c"
+$c
+
+c='di-netboot-assistant -v rebuild-grub'
+echo "########## rebuild grub-efi:"
+echo "########## # $c"
+$c
+
+c='di-netboot-assistant install stable testing'
+echo "########## install two images in one run:"
+echo "########## # $c"
+$c
+
+c='di-netboot-assistant fw-toggle stable --ignore-sig'
+echo "########## install non-free firmware:"
+echo "########## # $c"
+$c
+ls -l /var/lib/tftpboot/d-i/n-a/stable/amd64/
+
+c='di-netboot-assistant fw-toggle stable'
+echo "########## remove non-free firmware:"
+echo "########## # $c"
+$c
+ls -l /var/lib/tftpboot/d-i/n-a/stable/amd64/
+
+c='di-netboot-assistant fw-toggle n-pkg --ignore-sig'
+echo "########## install non-free firmware:"
+echo "########## # $c"
+$c
+ls -l /var/lib/tftpboot/d-i/n-pkg/images/*/amd64/*/debian-installer/amd64/
+
+c='di-netboot-assistant fw-toggle n-pkg'
+echo "########## remove non-free firmware:"
+echo "########## # $c"
+$c
+ls -l /var/lib/tftpboot/d-i/n-pkg/images/*/amd64/*/debian-installer/amd64/
+
+c='cat -n /var/lib/tftpboot/d-i/n-a/pxelinux.cfg/default'
+echo "########## list PXE linux menu:"
+echo "########## # $c"
+$c
+
+c='cat -n /var/lib/tftpboot/d-i/n-a/pxelinux.cfg/default-arm'
+echo "########## list PXE u-boot menu:"
+echo "########## # $c"
+$c
+
+c='cat -n /var/lib/tftpboot/d-i/n-a/grub/grub.cfg'
+echo "########## list grub menu:"
+echo "########## # $c"
+$c
+
+c='ls -l /var/lib/tftpboot/d-i/n-a/  /var/lib/di-netboot-assistant/  /var/cache/di-netboot-assistant/'
+echo "########## list files (metadata and cache):"
+echo "########## # $c"
+$c
+
+c='di-netboot-assistant -v purge stable testing wheezy oldi daily --arch=all'
+echo "########## purge all images installed:"
+echo "########## # $c"
+$c
+
+c='ls -l /var/lib/tftpboot/d-i/n-a/  /var/lib/di-netboot-assistant/  /var/cache/di-netboot-assistant/'
+echo "########## list files left over:"
+echo "########## # $c"
+$c
+
+umount -v /var/lib/tftpboot/d-i/n-pkg/ 2>&1

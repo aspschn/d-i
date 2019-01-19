@@ -1,0 +1,20 @@
+# Set some compatibility variables for distro_bootcmd emulation using
+# the default values from u-boot 2016.05 for the odroid target.
+if test -z "${devtype}"; then
+  setenv devtype mmc
+fi
+if test -z "${devnum}" ; then
+  setenv devnum ${mmcbootdev}
+fi
+if test -z "${distro_bootpart}" ; then
+  setenv distro_bootpart ${mmcbootpart}
+fi
+if test -z "${kernel_addr_r}" ; then
+  setenv kernel_addr_r 0x40007fc0
+fi
+if test -z "${fdt_addr_r}" ; then
+  setenv fdt_addr_r ${fdtaddr}
+fi
+if test -z "${ramdisk_addr_r}" ; then
+  setenv ramdisk_addr_r ${initrdaddr}
+fi

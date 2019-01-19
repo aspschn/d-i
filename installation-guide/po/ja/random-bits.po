@@ -1,0 +1,2292 @@
+# KURASAWA Nozomu <nabetaro@debian.or.jp>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2018-11-09 16:26+0000\n"
+"PO-Revision-Date: 2016-12-27 03:56+0900\n"
+"Last-Translator: KURASAWA Nozomu (nabetaro) <nabetaro@debian.or.jp>\n"
+"Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. Tag: title
+#: random-bits.xml:4
+#, no-c-format
+msgid "Random Bits"
+msgstr "雑多な事柄"
+
+#. Tag: title
+#: random-bits.xml:11
+#, no-c-format
+msgid "Linux Devices"
+msgstr "Linux のデバイス"
+
+#. Tag: para
+#: random-bits.xml:12
+#, no-c-format
+msgid ""
+"In Linux various special files can be found under the directory <filename>/"
+"dev</filename>. These files are called device files and behave unlike "
+"ordinary files. The most common types of device files are for block devices "
+"and character devices. These files are an interface to the actual driver "
+"(part of the Linux kernel) which in turn accesses the hardware. Another, "
+"less common, type of device file is the named <firstterm>pipe</firstterm>. "
+"The most important device files are listed in the tables below."
+msgstr ""
+"Linux では、<filename>/dev</filename> に特別なファイルがいろいろとあります。"
+"このファイルはデバイスファイルと呼ばれ、通常のファイルと異なる振る舞いをしま"
+"す。デバイスファイルの一般的なものは、ブロックデバイスとキャラクタデバイスで"
+"す。このファイルは、ハードウェアにアクセスする実際のドライバ (Linux カーネル"
+"の一部) へのインターフェースです。その他、あまり一般的ではありませんが、"
+"<firstterm>パイプ</firstterm> というデバイスファイルの形式もあります。以下"
+"に、最も重要なデバイスファイルを一覧します。"
+
+#. Tag: filename
+#: random-bits.xml:27
+#, no-c-format
+msgid "<filename>fd0</filename>"
+msgstr "<filename>fd0</filename>"
+
+#. Tag: entry
+#: random-bits.xml:28
+#, no-c-format
+msgid "First Floppy Drive"
+msgstr "第 1 フロッピードライブ"
+
+#. Tag: filename
+#: random-bits.xml:30
+#, no-c-format
+msgid "<filename>fd1</filename>"
+msgstr "<filename>fd1</filename>"
+
+#. Tag: entry
+#: random-bits.xml:31
+#, no-c-format
+msgid "Second Floppy Drive"
+msgstr "第 2 フロッピードライブ"
+
+#. Tag: filename
+#: random-bits.xml:37
+#, no-c-format
+msgid "<filename>sda</filename>"
+msgstr "<filename>sda</filename>"
+
+#. Tag: entry
+#: random-bits.xml:38
+#, no-c-format
+msgid "First hard disk"
+msgstr "第 1 ハードディスク"
+
+#. Tag: filename
+#: random-bits.xml:40
+#, no-c-format
+msgid "<filename>sdb</filename>"
+msgstr "<filename>sdb</filename>"
+
+#. Tag: entry
+#: random-bits.xml:41
+#, no-c-format
+msgid "Second hard disk"
+msgstr "第 2 ハードディスク"
+
+#. Tag: filename
+#: random-bits.xml:43
+#, no-c-format
+msgid "sda1"
+msgstr "sda1"
+
+#. Tag: entry
+#: random-bits.xml:44
+#, no-c-format
+msgid "First partition of the first hard disk"
+msgstr "最初のハードディスクの最初のパーティション"
+
+#. Tag: filename
+#: random-bits.xml:46
+#, no-c-format
+msgid "sdb7"
+msgstr "sdb7"
+
+#. Tag: entry
+#: random-bits.xml:47
+#, no-c-format
+msgid "Seventh partition of the second hard disk"
+msgstr "2番目のハードディスクの7番目のパーティション"
+
+#. Tag: filename
+#: random-bits.xml:53
+#, no-c-format
+msgid "<filename>sr0</filename>"
+msgstr "<filename>sr0</filename>"
+
+#. Tag: entry
+#: random-bits.xml:54
+#, no-c-format
+msgid "First CD-ROM"
+msgstr "第 1 CD-ROM"
+
+#. Tag: filename
+#: random-bits.xml:56
+#, no-c-format
+msgid "<filename>sr1</filename>"
+msgstr "<filename>sr1</filename>"
+
+#. Tag: entry
+#: random-bits.xml:57
+#, no-c-format
+msgid "Second CD-ROM"
+msgstr "第 1 CD-ROM"
+
+#. Tag: filename
+#: random-bits.xml:63
+#, no-c-format
+msgid "ttyS0"
+msgstr "ttyS0"
+
+#. Tag: entry
+#: random-bits.xml:64
+#, no-c-format
+msgid "Serial port 0, COM1 under MS-DOS"
+msgstr "シリアルポート 0、MS-DOS では COM1"
+
+#. Tag: filename
+#: random-bits.xml:66
+#, no-c-format
+msgid "ttyS1"
+msgstr "ttyS1"
+
+#. Tag: entry
+#: random-bits.xml:67
+#, no-c-format
+msgid "Serial port 1, COM2 under MS-DOS"
+msgstr "シリアルポート 1、MS-DOS では COM2"
+
+#. Tag: filename
+#: random-bits.xml:69
+#, no-c-format
+msgid "psaux"
+msgstr "psaux"
+
+#. Tag: entry
+#: random-bits.xml:70
+#, no-c-format
+msgid "PS/2 mouse device"
+msgstr "PS/2 マウスデバイス"
+
+#. Tag: filename
+#: random-bits.xml:72
+#, no-c-format
+msgid "gpmdata"
+msgstr "gpmdata"
+
+#. Tag: entry
+#: random-bits.xml:73
+#, no-c-format
+msgid "Pseudo device, repeater data from GPM (mouse) daemon"
+msgstr "疑似デバイス、GPM (マウス) デーモンからのリピータデータ"
+
+#. Tag: filename
+#: random-bits.xml:79
+#, no-c-format
+msgid "cdrom"
+msgstr "cdrom"
+
+#. Tag: entry
+#: random-bits.xml:80
+#, no-c-format
+msgid "Symbolic link to the CD-ROM drive"
+msgstr "CD-ROM ドライブへのシンボリックリンク"
+
+#. Tag: filename
+#: random-bits.xml:82
+#, no-c-format
+msgid "mouse"
+msgstr "mouse"
+
+#. Tag: entry
+#: random-bits.xml:83
+#, no-c-format
+msgid "Symbolic link to the mouse device file"
+msgstr "マウスデバイスファイルへのシンボリックリンク"
+
+#. Tag: filename
+#: random-bits.xml:89
+#, no-c-format
+msgid "null"
+msgstr "null"
+
+#. Tag: entry
+#: random-bits.xml:90
+#, no-c-format
+msgid "Anything written to this device will disappear"
+msgstr "書き込まれたものをすべて消してしまうデバイス"
+
+#. Tag: filename
+#: random-bits.xml:92
+#, no-c-format
+msgid "zero"
+msgstr "zero"
+
+#. Tag: entry
+#: random-bits.xml:93
+#, no-c-format
+msgid "One can endlessly read zeros out of this device"
+msgstr "無限に 0 を読み出せるデバイス"
+
+#. Tag: title
+#: random-bits.xml:100
+#, no-c-format
+msgid "Setting Up Your Mouse"
+msgstr "マウスのセットアップ"
+
+#. Tag: para
+#: random-bits.xml:101
+#, no-c-format
+msgid ""
+"The mouse can be used in both the Linux console (with gpm) and the X window "
+"environment. Normally, this is a simple matter of installing <filename>gpm</"
+"filename> and the X server itself. Both should be configured to use "
+"<filename>/dev/input/mice</filename> as the mouse device. The correct mouse "
+"protocol is named <userinput>exps2</userinput> in gpm, and "
+"<userinput>ExplorerPS/2</userinput> in X. The respective configuration files "
+"are <filename>/etc/gpm.conf</filename> and <filename>/etc/X11/xorg.conf</"
+"filename>."
+msgstr ""
+"(gpm が動いている) Linux コンソールと X ウィンドウ環境の両方で、マウスを使用"
+"できます。通常、<filename>gpm</filename> や X サーバ自体をインストールするだ"
+"けです。どちらも、マウスデバイスとして <filename>/dev/input/mice</filename> "
+"を使用するように設定されています。正しいマウスプロトコルは、gpm では "
+"<userinput>exps2</userinput>、X では <userinput>ExplorerPS/2</userinput> とさ"
+"れています。それぞれの設定ファイルは <filename>/etc/gpm.conf</filename> と "
+"<filename>/etc/X11/xorg.conf</filename> です。"
+
+#. Tag: para
+#: random-bits.xml:112
+#, no-c-format
+msgid ""
+"Certain kernel modules must be loaded in order for your mouse to work. In "
+"most cases the correct modules are autodetected, but not always for old-"
+"style serial and bus mice<footnote> <para> Serial mice usually have a 9-hole "
+"D-shaped connector; bus mice have an 8-pin round connector, not to be "
+"confused with the 6-pin round connector of a PS/2 mouse or the 4-pin round "
+"connector of an ADB mouse. </para> </footnote>, which are quite rare except "
+"on very old computers. Summary of Linux kernel modules needed for different "
+"mouse types: <informaltable><tgroup cols=\"2\"><thead> <row> <entry>Module</"
+"entry> <entry>Description</entry> </row> </thead><tbody> <row> "
+"<entry>psmouse</entry> <entry>PS/2 mice (should be autodetected)</entry> </"
+"row> <row> <entry>usbhid</entry> <entry>USB mice (should be autodetected)</"
+"entry> </row> <row> <entry>sermouse</entry> <entry>Most serial mice</entry> "
+"</row> <row> <entry>logibm</entry> <entry>Bus mouse connected to Logitech "
+"adapter card</entry> </row> <row> <entry>inport</entry> <entry>Bus mouse "
+"connected to ATI or Microsoft InPort card</entry> </row> </tbody></tgroup></"
+"informaltable> To load a mouse driver module, you can use the "
+"<command>modconf</command> command (from the package with the same name) and "
+"look in the category <userinput>kernel/drivers/input/mouse</userinput>."
+msgstr ""
+"あなたのマウスが動作するには、特定のカーネルモジュールを読み込まなければなり"
+"ません。ほとんどの場合、正しいモジュールを自動検出しますが、旧式のシリアルマ"
+"ウスや、バスマウスでは<footnote><para>シリアルマウスには、通常 9 穴の D 型コ"
+"ネクタが、バスマウスには、8 ピン円形コネクタが付いており、PS/2 マウスの 6 ピ"
+"ン円形コネクタや、ADB マウスの 4 ピン円形コネクタと混同することはないでしょ"
+"う。</para></footnote>いつもそうとは限りません。とはいえ、非常に古いコン"
+"ピュータでなければ、かなり「まれ」です。以下に、マウスのタイプごとの、Linux "
+"カーネルモジュールをまとめます。<informaltable><tgroup cols=\"2\"><thead> "
+"<row> <entry>モジュール</entry> <entry>説明</entry> </row> </thead><tbody> "
+"<row> <entry>psmouse</entry> <entry>PS/2 マウス (自動検出可)</entry> </row> "
+"<row> <entry>usbhid</entry> <entry>USB マウス (自動検出可)</entry> </row> "
+"<row> <entry>sermouse</entry> <entry>ほとんどのシリアルマウス</entry> </row> "
+"<row> <entry>logibm</entry> <entry>Logitech アダプタカードに接続するバスマウ"
+"ス</entry> </row> <row> <entry>inport</entry> <entry>ATI や Microsoft の "
+"InPort カードに接続するバスマウス</entry> </row> </tbody></tgroup></"
+"informaltable> マウスドライバモジュールを読み込むのに、<command>modconf</"
+"command> コマンド (同名のパッケージに収録) を使用でき、<userinput>kernel/"
+"drivers/input/mouse</userinput> カテゴリから探せます。"
+
+#. Tag: para
+#: random-bits.xml:159
+#, no-c-format
+msgid ""
+"Modern kernels give you the capability to emulate a three-button mouse when "
+"your mouse only has one button. Just add the following lines to <filename>/"
+"etc/sysctl.conf</filename> file."
+msgstr ""
+"最近のカーネルは、マウスにボタンが 1 つしかなくても、3 ボタンエミュレーション"
+"機能があります。<filename>/etc/sysctl.conf</filename> に以下の行を記述してく"
+"ださい。"
+
+#. Tag: screen
+#: random-bits.xml:166
+#, no-c-format
+msgid ""
+"# 3-button mouse emulation\n"
+"# turn on emulation\n"
+"/dev/mac_hid/mouse_button_emulation = 1\n"
+"# Send middle mouse button signal with the F11 key\n"
+"/dev/mac_hid/mouse_button2_keycode = 87\n"
+"# Send right mouse button signal with the F12 key\n"
+"/dev/mac_hid/mouse_button3_keycode = 88\n"
+"# For different keys, use showkey to tell you what the code is."
+msgstr ""
+"# 3-button mouse emulation\n"
+"# turn on emulation\n"
+"/dev/mac_hid/mouse_button_emulation = 1\n"
+"# Send middle mouse button signal with the F11 key\n"
+"/dev/mac_hid/mouse_button2_keycode = 87\n"
+"# Send right mouse button signal with the F12 key\n"
+"/dev/mac_hid/mouse_button3_keycode = 88\n"
+"# For different keys, use showkey to tell you what the code is."
+
+#. Tag: title
+#: random-bits.xml:173
+#, no-c-format
+msgid "Disk Space Needed for Tasks"
+msgstr "タスクに必要なディスクの空き容量"
+
+#. Tag: para
+#: random-bits.xml:174
+#, no-c-format
+msgid ""
+"A standard installation for the amd64 architecture, including all standard "
+"packages and using the default kernel, takes up &std-system-size;MB of disk "
+"space. A minimal base installation, without the <quote>Standard system</"
+"quote> task selected, will take &base-system-size;MB."
+msgstr ""
+"amd64 アーキテクチャの全標準パッケージを含む標準インストールで、デフォルトの "
+"カーネルを用いると、&std-system-size;MB 以上のディスク領域を必要とします。"
+"<quote>標準システム</quote>タスクを選択しない最小の基本インストールでは、"
+"&base-system-size;MB 必要でしょう。"
+
+#. Tag: para
+#: random-bits.xml:182
+#, no-c-format
+msgid ""
+"In both cases this is the actual disk space used <emphasis>after</emphasis> "
+"the installation is finished and any temporary files deleted. It also does "
+"not take into account overhead used by the file system, for example for "
+"journal files. This means that significantly more disk space is needed both "
+"<emphasis>during</emphasis> the installation and for normal system use."
+msgstr ""
+"どちらの場合も、インストールが完了し一時ファイルを削除した<emphasis>後</"
+"emphasis>の、実際のディスク領域です。ジャーナルファイルのような、ファイルシス"
+"テムのオーバーヘッドで消費される量は含まれていません。これは、インストールの"
+"<emphasis>最中</emphasis>や通常のシステム利用では、もっと大量にディスク領域が"
+"必要だということです。"
+
+#. Tag: para
+#: random-bits.xml:191
+#, no-c-format
+msgid ""
+"The following table lists sizes reported by aptitude for the tasks listed in "
+"tasksel. Note that some tasks have overlapping constituents, so the total "
+"installed size for two tasks together may be less than the total obtained by "
+"adding up the numbers."
+msgstr ""
+"以下の表は tasksel で表示されるタスクについて、aptitude が報告したサイズで"
+"す。いくつかのタスクでは、内容が一部重複していることに注意してください。つま"
+"り、2 つのタスクを一緒にインストールした後のインストールサイズは、挙げてある"
+"数値を合計したものよりも、小さくなるということです。"
+
+#. Tag: para
+#: random-bits.xml:198
+#, no-c-format
+msgid ""
+"By default the installer will install the GNOME desktop environment, but "
+"alternative desktop environments can be selected either by using one of the "
+"special CD images, or by specifying the desired desktop environment when the "
+"installer is booted (see <xref linkend=\"pkgsel\"/>)."
+msgstr ""
+"デフォルトでは、インストーラは GNOME デスクトップ環境をインストールしますが、"
+"特殊な CD イメージを使用したり、インストーラがブートする際に希望のデスクトッ"
+"プ環境を指定して、その他のデスクトップ環境を選択できます (<xref linkend="
+"\"pkgsel\"/> 参照)。"
+
+#. Tag: para
+#: random-bits.xml:205
+#, no-c-format
+msgid ""
+"Note that you will need to add the sizes listed in the table to the size of "
+"the standard installation when determining the size of partitions. Most of "
+"the size listed as <quote>Installed size</quote> will end up in <filename>/"
+"usr</filename> and in <filename>/lib</filename>; the size listed as "
+"<quote>Download size</quote> is (temporarily) required in <filename>/var</"
+"filename>."
+msgstr ""
+"パーティションのサイズを決定するとき、標準インストールのサイズに加え、以下の"
+"表に列挙したサイズが必要であるのに注意してください。<quote>Installed size</"
+"quote> はインストール完了時に <filename>/usr</filename> と <filename>/lib</"
+"filename> に必要なサイズを、<quote>Download size</quote> は <filename>/var</"
+"filename> に (一時的に) 必要なサイズを記述しています。"
+
+#. Tag: entry
+#: random-bits.xml:219
+#, no-c-format
+msgid "Task"
+msgstr "タスク"
+
+#. Tag: entry
+#: random-bits.xml:220
+#, no-c-format
+msgid "Installed size (MB)"
+msgstr "インストールサイズ (MB)"
+
+#. Tag: entry
+#: random-bits.xml:221
+#, no-c-format
+msgid "Download size (MB)"
+msgstr "ダウンロードサイズ (MB)"
+
+#. Tag: entry
+#: random-bits.xml:222
+#, no-c-format
+msgid "Space needed to install (MB)"
+msgstr "インストールに必要な空き容量 (MB)"
+
+#. Tag: entry
+#: random-bits.xml:228
+#, no-c-format
+msgid "Desktop environment"
+msgstr "デスクトップ環境"
+
+#. Tag: entry
+#: random-bits.xml:229 random-bits.xml:230 random-bits.xml:231
+#, no-c-format
+msgid "&nbsp;"
+msgstr "&nbsp;"
+
+#. Tag: entry
+#: random-bits.xml:234
+#, no-c-format
+msgid "&nbsp;&nbsp;&bull;&nbsp;GNOME (default)"
+msgstr "&nbsp;&nbsp;&bull;&nbsp;GNOME (デフォルト)"
+
+#. Tag: entry
+#: random-bits.xml:235
+#, no-c-format
+msgid "&task-desktop-gnome-inst;"
+msgstr "&task-desktop-gnome-inst;"
+
+#. Tag: entry
+#: random-bits.xml:236
+#, no-c-format
+msgid "&task-desktop-gnome-dl;"
+msgstr "&task-desktop-gnome-dl;"
+
+#. Tag: entry
+#: random-bits.xml:237
+#, no-c-format
+msgid "&task-desktop-gnome-tot;"
+msgstr "&task-desktop-gnome-tot;"
+
+#. Tag: entry
+#: random-bits.xml:240
+#, no-c-format
+msgid "&nbsp;&nbsp;&bull;&nbsp;KDE Plasma"
+msgstr "&nbsp;&nbsp;&bull;&nbsp;KDE Plasma"
+
+#. Tag: entry
+#: random-bits.xml:241
+#, no-c-format
+msgid "&task-desktop-kde-inst;"
+msgstr "&task-desktop-kde-inst;"
+
+#. Tag: entry
+#: random-bits.xml:242
+#, no-c-format
+msgid "&task-desktop-kde-dl;"
+msgstr "&task-desktop-kde-dl;"
+
+#. Tag: entry
+#: random-bits.xml:243
+#, no-c-format
+msgid "&task-desktop-kde-tot;"
+msgstr "&task-desktop-kde-tot;"
+
+#. Tag: entry
+#: random-bits.xml:246
+#, no-c-format
+msgid "&nbsp;&nbsp;&bull;&nbsp;Xfce"
+msgstr "&nbsp;&nbsp;&bull;&nbsp;Xfce"
+
+#. Tag: entry
+#: random-bits.xml:247
+#, no-c-format
+msgid "&task-desktop-xfce-inst;"
+msgstr "&task-desktop-xfce-inst;"
+
+#. Tag: entry
+#: random-bits.xml:248
+#, no-c-format
+msgid "&task-desktop-xfce-dl;"
+msgstr "&task-desktop-xfce-dl;"
+
+#. Tag: entry
+#: random-bits.xml:249
+#, no-c-format
+msgid "&task-desktop-xfce-tot;"
+msgstr "&task-desktop-xfce-tot;"
+
+#. Tag: entry
+#: random-bits.xml:252
+#, no-c-format
+msgid "&nbsp;&nbsp;&bull;&nbsp;LXDE"
+msgstr "&nbsp;&nbsp;&bull;&nbsp;LXDE"
+
+#. Tag: entry
+#: random-bits.xml:253
+#, no-c-format
+msgid "&task-desktop-lxde-inst;"
+msgstr "&task-desktop-lxde-inst;"
+
+#. Tag: entry
+#: random-bits.xml:254
+#, no-c-format
+msgid "&task-desktop-lxde-dl;"
+msgstr "&task-desktop-lxde-dl;"
+
+#. Tag: entry
+#: random-bits.xml:255
+#, no-c-format
+msgid "&task-desktop-lxde-tot;"
+msgstr "&task-desktop-lxde-tot;"
+
+#. Tag: entry
+#: random-bits.xml:258
+#, no-c-format
+msgid "&nbsp;&nbsp;&bull;&nbsp;MATE"
+msgstr "&nbsp;&nbsp;&bull;&nbsp;MATE"
+
+#. Tag: entry
+#: random-bits.xml:259
+#, no-c-format
+msgid "&task-desktop-mate-inst;"
+msgstr "&task-desktop-mate-inst;"
+
+#. Tag: entry
+#: random-bits.xml:260
+#, no-c-format
+msgid "&task-desktop-mate-dl;"
+msgstr "&task-desktop-mate-dl;"
+
+#. Tag: entry
+#: random-bits.xml:261
+#, no-c-format
+msgid "&task-desktop-mate-tot;"
+msgstr "&task-desktop-mate-tot;"
+
+#. Tag: entry
+#: random-bits.xml:264
+#, no-c-format
+msgid "&nbsp;&nbsp;&bull;&nbsp;Cinnamon"
+msgstr "&nbsp;&nbsp;&bull;&nbsp;Cinnamon"
+
+#. Tag: entry
+#: random-bits.xml:265
+#, no-c-format
+msgid "&task-desktop-cinnamon-inst;"
+msgstr "&task-desktop-cinnamon-inst;"
+
+#. Tag: entry
+#: random-bits.xml:266
+#, no-c-format
+msgid "&task-desktop-cinnamon-dl;"
+msgstr "&task-desktop-cinnamon-dl;"
+
+#. Tag: entry
+#: random-bits.xml:267
+#, no-c-format
+msgid "&task-desktop-cinnamon-tot;"
+msgstr "&task-desktop-cinnamon-tot;"
+
+#. Tag: entry
+#: random-bits.xml:271
+#, no-c-format
+msgid "Web server"
+msgstr "ウェブサーバ"
+
+#. Tag: entry
+#: random-bits.xml:272
+#, no-c-format
+msgid "&task-web-inst;"
+msgstr "&task-web-inst;"
+
+#. Tag: entry
+#: random-bits.xml:273
+#, no-c-format
+msgid "&task-web-dl;"
+msgstr "&task-web-dl;"
+
+#. Tag: entry
+#: random-bits.xml:274
+#, no-c-format
+msgid "&task-web-tot;"
+msgstr "&task-web-tot;"
+
+#. Tag: entry
+#: random-bits.xml:278
+#, no-c-format
+msgid "Print server"
+msgstr "印刷サーバ"
+
+#. Tag: entry
+#: random-bits.xml:279
+#, no-c-format
+msgid "&task-print-inst;"
+msgstr "&task-print-inst;"
+
+#. Tag: entry
+#: random-bits.xml:280
+#, no-c-format
+msgid "&task-print-dl;"
+msgstr "&task-print-dl;"
+
+#. Tag: entry
+#: random-bits.xml:281
+#, no-c-format
+msgid "&task-print-tot;"
+msgstr "&task-print-tot;"
+
+#. Tag: entry
+#: random-bits.xml:285
+#, no-c-format
+msgid "SSH server"
+msgstr "SSH サーバ"
+
+#. Tag: entry
+#: random-bits.xml:286
+#, no-c-format
+msgid "&task-ssh-inst;"
+msgstr "&task-ssh-inst;"
+
+#. Tag: entry
+#: random-bits.xml:287
+#, no-c-format
+msgid "&task-ssh-dl;"
+msgstr "&task-ssh-dl;"
+
+#. Tag: entry
+#: random-bits.xml:288
+#, no-c-format
+msgid "&task-ssh-tot;"
+msgstr "&task-ssh-tot;"
+
+#. Tag: para
+#: random-bits.xml:294
+#, no-c-format
+msgid ""
+"If you install in a language other than English, <command>tasksel</command> "
+"may automatically install a <firstterm>localization task</firstterm>, if one "
+"is available for your language. Space requirements differ per language; you "
+"should allow up to 350MB in total for download and installation."
+msgstr ""
+"英語以外の言語でインストールする場合、その言語が有効なら <command>tasksel</"
+"command> は <firstterm>地域化タスク</firstterm> を、自動的にインストールしま"
+"す。必要な容量は言語によって異なりますが、ダウンロードとインストールで最大 "
+"350MB 必要となります。"
+
+#. Tag: title
+#: random-bits.xml:309
+#, no-c-format
+msgid "Installing &debian-gnu; from a Unix/Linux System"
+msgstr "Unix/Linux システムからの &debian-gnu; のインストール"
+
+#. Tag: para
+#: random-bits.xml:311
+#, no-c-format
+msgid ""
+"This section explains how to install &debian-gnu; from an existing Unix or "
+"Linux system, without using the menu-driven installer as explained in the "
+"rest of the manual. This <quote>cross-install</quote> HOWTO has been "
+"requested by users switching to &debian-gnu; from Red Hat, Mandriva, and "
+"SUSE. In this section some familiarity with entering *nix commands and "
+"navigating the file system is assumed. In this section, <prompt>$</prompt> "
+"symbolizes a command to be entered in the user's current system, while "
+"<prompt>#</prompt> refers to a command entered in the &debian; chroot."
+msgstr ""
+"この節は、マニュアルの他の部分で説明されているメニュードリブンインストーラを"
+"使用せずに、既存の Unix・Linux システムから &debian-gnu; をインストールする方"
+"法について説明します。この <quote>クロスインストール</quote> HOWTO は、Red "
+"Hat, Mandriva, SUSE から &debian-gnu; に移行するユーザの要望で書かれました。"
+"本節では、*nix コマンドの入力について熟知し、ファイルシステムを操作できるのが"
+"前提となっています。本節では、<prompt>#</prompt>が &debian; chroot に入力され"
+"たコマンドを示し、<prompt>$</prompt> はユーザの現在のシステムに入力されるコマ"
+"ンドを表します。"
+
+#. Tag: para
+#: random-bits.xml:323
+#, no-c-format
+msgid ""
+"Once you've got the new &debian; system configured to your preference, you "
+"can migrate your existing user data (if any) to it, and keep on rolling. "
+"This is therefore a <quote>zero downtime</quote> &debian-gnu; install. It's "
+"also a clever way for dealing with hardware that otherwise doesn't play "
+"friendly with various boot or installation media."
+msgstr ""
+"一旦、新しい &debian; システムを好みに設定したら、既存のユーザデータを (ある"
+"なら) 稼働したまま移行できます。したがって、これは <quote>ダウンタイム無し</"
+"quote>での &debian-gnu; インストールになります。またこれは、様々な起動・イン"
+"ストールメディアと相性のよくないハードウェアに対処するうまい方法です。"
+
+#. Tag: para
+#: random-bits.xml:334
+#, no-c-format
+msgid ""
+"As this is a mostly manual procedure, you should bear in mind that you will "
+"need to do a lot of basic configuration of the system yourself, which will "
+"also require more knowledge of &debian; and of &arch-kernel; in general than "
+"performing a regular installation. You cannot expect this procedure to "
+"result in a system that is identical to a system from a regular "
+"installation. You should also keep in mind that this procedure only gives "
+"the basic steps to set up a system. Additional installation and/or "
+"configuration steps may be needed."
+msgstr ""
+"これはほとんど手作業になりますから、自分でシステムの大部分の基本設定を行う必"
+"要があります。それには通常のインストールよりも &debian; や &arch-kernel; の一"
+"般的な知識が必要なことを覚えておいてください。また、この手順で通常のインス"
+"トールと全く同じシステムになると期待してはいけません。これはシステムをセット"
+"アップする基本的な手順でしかありません。追加インストールや追加設定が必要にな"
+"るかもしれません。"
+
+#. Tag: title
+#: random-bits.xml:348
+#, no-c-format
+msgid "Getting Started"
+msgstr "はじめに"
+
+#. Tag: para
+#: random-bits.xml:349
+#, no-c-format
+msgid ""
+"With your current *nix partitioning tools, repartition the hard drive as "
+"needed, creating at least one filesystem plus swap. You need around &base-"
+"system-size;MB of space available for a console only install, or about &task-"
+"desktop-lxde-inst;MB if you plan to install X (more if you intend to install "
+"desktop environments like GNOME or KDE Plasma)."
+msgstr ""
+"今の *nix のパーティション分割ツールで、スワップと最低 1 つファイルシステムを"
+"作成するよう、ハードディスクを希望に添って再分割してください。コンソールのみ"
+"のインストールには、最低 &base-system-size;MB の空き領域が必要ですし、X をイ"
+"ンストールする予定なら &task-desktop-lxde-inst;MB (GNOME や KDE Plasma のよう"
+"なデスクトップ環境をインストールする場合はもっと) 必要です。"
+
+#. Tag: para
+#: random-bits.xml:357
+#, no-c-format
+msgid ""
+"Next, create file systems on the partitions. For example, to create an ext3 "
+"file system on partition <filename>/dev/sda6</filename> (that's our example "
+"root partition): <informalexample><screen>\n"
+"# mke2fs -j /dev/<replaceable>sda6</replaceable>\n"
+"</screen></informalexample> To create an ext2 file system instead, omit "
+"<userinput>-j</userinput>."
+msgstr ""
+"次に、パーティションにファイルシステムを作成してください。例えば、<filename>/"
+"dev/sda6</filename> パーティションに、ext3 ファイルシステムを作成するには、以"
+"下のようにします。(今回の例ではこのパーティションを root パーティションとしま"
+"す) <informalexample><screen>\n"
+"# mke2fs -j /dev/<replaceable>sda6</replaceable>\n"
+"</screen></informalexample> ext3 ではなく ext2 ファイルシステムを作成するに"
+"は、<userinput>-j</userinput> を取ってください。"
+
+#. Tag: para
+#: random-bits.xml:367
+#, no-c-format
+msgid ""
+"Initialize and activate swap (substitute the partition number for your "
+"intended &debian; swap partition): <informalexample><screen>\n"
+"# mkswap /dev/<replaceable>sda5</replaceable>\n"
+"# sync\n"
+"# swapon /dev/<replaceable>sda5</replaceable>\n"
+"</screen></informalexample> Mount one partition as <filename>/mnt/debinst</"
+"filename> (the installation point, to be the root (<filename>/</filename>) "
+"filesystem on your new system). The mount point name is strictly arbitrary, "
+"it is referenced later below."
+msgstr ""
+"スワップを以下のように初期化して有効にしてください。(パーティション番号は、"
+"&debian; スワップパーティションにするパーティション番号に、読み替えてくださ"
+"い) <informalexample><screen>\n"
+"# mkswap /dev/<replaceable>sda5</replaceable>\n"
+"# sync\n"
+"# swapon /dev/<replaceable>sda5</replaceable>\n"
+"</screen></informalexample>パーティションを <filename>/mnt/debinst</"
+"filename> (インストールポイント。新システムの root (<filename>/</filename>) "
+"ファイルシステムになります) にマウントしてください。厳密にいうとマウントポイ"
+"ント名は何でも構いません。以降の説明ではこれを使用します。"
+
+#. Tag: screen
+#: random-bits.xml:379
+#, no-c-format
+msgid ""
+"# mkdir /mnt/debinst\n"
+"# mount /dev/<replaceable>sda6</replaceable> /mnt/debinst"
+msgstr ""
+"# mkdir /mnt/debinst\n"
+"# mount /dev/<replaceable>sda6</replaceable> /mnt/debinst"
+
+#. Tag: para
+#: random-bits.xml:382
+#, no-c-format
+msgid ""
+"If you want to have parts of the filesystem (e.g. /usr) mounted on separate "
+"partitions, you will need to create and mount these directories manually "
+"before proceding with the next stage."
+msgstr ""
+"分割したパーティションをファイルシステムの一部 (例 /usr) にマウントする場合、"
+"次のステージに進む前に、手動でそのディレクトリを作成・マウントする必要があり"
+"ます。"
+
+#. Tag: title
+#: random-bits.xml:392
+#, no-c-format
+msgid "Install <command>debootstrap</command>"
+msgstr "<command>debootstrap</command> のインストール"
+
+#. Tag: para
+#: random-bits.xml:393
+#, no-c-format
+msgid ""
+"The utility used by the &debian; installer, and recognized as the official "
+"way to install a &debian; base system, is <command>debootstrap</command>. It "
+"uses <command>wget</command> and <command>ar</command>, but otherwise "
+"depends only on <classname>/bin/sh</classname> and basic Unix/Linux "
+"tools<footnote> <para> These include the GNU core utilities and commands "
+"like <command>sed</command>, <command>grep</command>, <command>tar</command> "
+"and <command>gzip</command>. </para> </footnote>. Install <command>wget</"
+"command> and <command>ar</command> if they aren't already on your current "
+"system, then download and install <command>debootstrap</command>."
+msgstr ""
+"&debian; インストーラが使用するユーティリティで、&debian; 基本システムをイン"
+"ストールする公式の方法と認められているのが <command>debootstrap</command> で"
+"す。<command>wget</command> と <command>ar</command> を使用しますが、"
+"<classname>/bin/sh</classname> と基本的な Unix/Linux ツール<footnote><para>こ"
+"れには、<command>sed</command>, <command>grep</command>, <command>tar</"
+"command>, <command>gzip</command> といった、GNU コアユーティリティが含まれま"
+"す。</para></footnote>にのみ依存しています。今のシステムにまだインストールし"
+"ていなければ、<command>wget</command> と <command>ar</command> をインストール"
+"し、その後 <command>debootstrap</command> をダウンロード・インストールしてく"
+"ださい。"
+
+#. Tag: para
+#: random-bits.xml:423
+#, no-c-format
+msgid ""
+"Or, you can use the following procedure to install it manually. Make a work "
+"folder for extracting the .deb into: <informalexample><screen>\n"
+"# mkdir work\n"
+"# cd work\n"
+"</screen></informalexample> The <command>debootstrap</command> binary is "
+"located in the &debian; archive (be sure to select the proper file for your "
+"architecture). Download the <command>debootstrap</command> .deb from the "
+"<ulink url=\"http://ftp.debian.org/debian/pool/main/d/debootstrap/\"> pool</"
+"ulink>, copy the package to the work folder, and extract the files from it. "
+"You will need to have root privileges to install the files."
+msgstr ""
+"また、手動でインストールするには、以下の手順になります。まず .deb を展開する"
+"ために作業フォルダを次のように作ってください。<informalexample><screen>\n"
+"# mkdir work\n"
+"# cd work\n"
+"</screen></informalexample> <command>debootstrap</command> バイナリは、"
+"&debian; アーカイブ (あなたのアーキテクチャに適合するファイルを必ず選ぶこと) "
+"にあります。<ulink url=\"http://ftp.debian.org/debian/pool/main/d/"
+"debootstrap/\">pool</ulink> から <command>debootstrap</command> .deb をダウン"
+"ロードして、作業フォルダにパッケージをコピーし、ファイルを展開してください。"
+"ファイルをインストールする際には root 権限を持つ必要があるでしょう。"
+
+#. Tag: screen
+#: random-bits.xml:438
+#, no-c-format
+msgid ""
+"# ar -x debootstrap_0.X.X_all.deb\n"
+"# cd /\n"
+"# zcat /full-path-to-work/work/data.tar.gz | tar xv"
+msgstr ""
+"# ar -x debootstrap_0.X.X_all.deb\n"
+"# cd /\n"
+"# zcat /full-path-to-work/work/data.tar.gz | tar xv"
+
+#. Tag: title
+#: random-bits.xml:444
+#, no-c-format
+msgid "Run <command>debootstrap</command>"
+msgstr "<command>debootstrap</command> の実行"
+
+#. Tag: para
+#: random-bits.xml:445
+#, no-c-format
+msgid ""
+"<command>debootstrap</command> can download the needed files directly from "
+"the archive when you run it. You can substitute any &debian; archive mirror "
+"for <userinput>&archive-mirror;/debian</userinput> in the command example "
+"below, preferably a mirror close to you network-wise. Mirrors are listed at "
+"<ulink url=\"http://www.debian.org/mirror/list\"></ulink>."
+msgstr ""
+"<command>debootstrap</command> を実行すると、アーカイブから必要なファイルを直"
+"接ダウンロードできます。以下のコマンドの例では、<userinput>&archive-mirror;/"
+"debian</userinput> としていますが、ネットワーク的に近い &debian; アーカイブミ"
+"ラーサイトで代用できます。ミラーサイトは、<ulink url=\"http://www.debian.org/"
+"mirror/list\"></ulink> に一覧があります。"
+
+#. Tag: para
+#: random-bits.xml:454
+#, no-c-format
+msgid ""
+"If you have a &releasename; &debian-gnu; CD mounted at <filename>/cdrom</"
+"filename>, you could substitute a file URL instead of the http URL: "
+"<userinput>file:/cdrom/debian/</userinput>"
+msgstr ""
+"&releasename; &debian-gnu; CD を持っていて、<filename>/cdrom</filename> にマ"
+"ウントしていれば、http URL に代えて file URL (<userinput>file:/cdrom/debian/"
+"</userinput>) を使用することができます。"
+
+#. Tag: para
+#: random-bits.xml:460
+#, no-c-format
+msgid ""
+"Substitute one of the following for <replaceable>ARCH</replaceable> in the "
+"<command>debootstrap</command> command: <userinput>amd64</userinput>, "
+"<userinput>arm64</userinput>, <userinput>armel</userinput>, "
+"<userinput>armhf</userinput>, <userinput>i386</userinput>, <userinput>mips</"
+"userinput>, <userinput>mips64el</userinput>, <userinput>mipsel</userinput>, "
+"<userinput>powerpc</userinput>, <userinput>ppc64el</userinput>, or "
+"<userinput>s390x</userinput>. <informalexample><screen>\n"
+"# /usr/sbin/debootstrap --arch ARCH &releasename; \\\n"
+"     /mnt/debinst http://ftp.us.debian.org/debian\n"
+"</screen></informalexample> If the target architecture is different than the "
+"host, you should add the <userinput>--foreign</userinput> option."
+msgstr ""
+"<command>debootstrap</command> コマンドの <replaceable>ARCH</replaceable> "
+"は、<userinput>amd64</userinput>, <userinput>arm64</userinput>, "
+"<userinput>armel</userinput>, <userinput>armhf</userinput>, <userinput>i386</"
+"userinput>, <userinput>mips</userinput>, <userinput>mips64el</userinput>, "
+"<userinput>mipsel</userinput>, <userinput>powerpc</userinput>, "
+"<userinput>ppc64el</userinput>, <userinput>s390x</userinput> のどれかと置き換"
+"えるか、<informalexample><screen>\n"
+"# /usr/sbin/debootstrap --arch ARCH &releasename; \\\n"
+"     /mnt/debinst http://ftp.us.debian.org/debian\n"
+"</screen></informalexample> のようにします。所用のアーキテクチャがホストとは"
+"異なる場合には <userinput>--foreign</userinput> オプションを追加します。"
+
+#. Tag: title
+#: random-bits.xml:486
+#, no-c-format
+msgid "Configure The Base System"
+msgstr "基本システムの設定"
+
+#. Tag: para
+#: random-bits.xml:487
+#, no-c-format
+msgid ""
+"Now you've got a real &debian; system, though rather lean, on disk. "
+"<command>chroot</command> into it: <informalexample><screen>\n"
+"# LANG=C.UTF-8 chroot /mnt/debinst /bin/bash\n"
+"</screen></informalexample> If the target architecture is different from the "
+"host, you will need to first copy qemu-user-static to the new host: "
+"<informalexample><screen>\n"
+"# cp /usr/bin/qemu-ARCH-static /mnt/debinst/usr/bin\n"
+"# LANG=C.UTF-8 chroot /mnt/debinst qemu-ARCH-static /bin/bash\n"
+"</screen></informalexample> After chrooting you may need to set the terminal "
+"definition to be compatible with the &debian; base system, for example: "
+"<informalexample><screen>\n"
+"# export TERM=<replaceable>xterm-color</replaceable>\n"
+"</screen></informalexample> Depending on the value of TERM, you may have to "
+"install the <classname>ncurses-term</classname> package to get support for "
+"it."
+msgstr ""
+"さあ、これでディスクに真の &debian; システムを (いくぶん中がスカスカですが) "
+"手に入れました。そこに <command>chroot</command> してください。"
+"<informalexample><screen>\n"
+"# LANG=C.UTF-8 chroot /mnt/debinst /bin/bash\n"
+"</screen></informalexample> 所用のアーキテクチャがホストとは異なる場合にはま"
+"ず、qemu-user-static を新しいホストにコピーする必要があるかもしれません。"
+"<informalexample><screen>\n"
+"# cp /usr/bin/qemu-ARCH-static /mnt/debinst/usr/bin\n"
+"# LANG=C.UTF-8 chroot /mnt/debinst qemu-ARCH-static /bin/bash\n"
+"</screen></informalexample> chroot した後で &debian; 基本システムと互換のある"
+"端末定義を設定する必要があるかもしれません。例えば<informalexample><screen>\n"
+"# export TERM=<replaceable>xterm-color</replaceable>\n"
+"</screen></informalexample> のようにします。TERM の値により、その値をサポート"
+"するのに <classname>ncurses-term</classname> パッケージをインストールする必要"
+"があるかもしれません。"
+
+#. Tag: para
+#: random-bits.xml:507
+#, no-c-format
+msgid ""
+"If the target architecture is different from the host, you need to finish "
+"the multi-stage boot strap:"
+msgstr ""
+"所用のアーキテクチャがホストとは異なる場合には複数段階の前処理を終えておく必"
+"要があるかもしれません。"
+
+#. Tag: screen
+#: random-bits.xml:511
+#, no-c-format
+msgid "/debootstrap/debootstrap --second-stage"
+msgstr "/debootstrap/debootstrap --second-stage"
+
+#. Tag: title
+#: random-bits.xml:516
+#, no-c-format
+msgid "Create device files"
+msgstr "デバイスファイルの作成"
+
+#. Tag: para
+#: random-bits.xml:517
+#, no-c-format
+msgid ""
+"At this point <filename>/dev/</filename> only contains very basic device "
+"files. For the next steps of the installation additional device files may be "
+"needed. There are different ways to go about this and which method you "
+"should use depends on the host system you are using for the installation, on "
+"whether you intend to use a modular kernel or not, and on whether you intend "
+"to use dynamic (e.g. using <classname>udev</classname>) or static device "
+"files for the new system."
+msgstr ""
+"この時点で、<filename>/dev/</filename> には、非常に基本的なデバイスファイルが"
+"あるだけです。おそらくインストールの次のステップで、追加デバイスファイルが必"
+"要になります。インストールに使用するホストシステムがモジュール化カーネルを使"
+"用するかどうかや、新しいシステムで動的デバイスファイル (例: <classname>udev</"
+"classname> を使用) と静的デバイスファイルのどちらを使用するかにより、どの方法"
+"で行うかが異なります。"
+
+#. Tag: para
+#: random-bits.xml:527
+#, no-c-format
+msgid "A few of the available options are:"
+msgstr "以下のような選択肢があります。"
+
+#. Tag: para
+#: random-bits.xml:532
+#, no-c-format
+msgid ""
+"install the makedev package, and create a default set of static device files "
+"using (after chrooting)"
+msgstr ""
+"makedev パッケージをインストールし、次のようにして (chroot してから)、デフォ"
+"ルトの静的デバイスファイル群を作成してください。"
+
+#. Tag: screen
+#: random-bits.xml:536
+#, no-c-format
+msgid ""
+"# apt install makedev\n"
+"# mount none /proc -t proc\n"
+"# cd /dev\n"
+"# MAKEDEV generic"
+msgstr ""
+"# apt install makedev\n"
+"# mount none /proc -t proc\n"
+"# cd /dev\n"
+"# MAKEDEV generic"
+
+#. Tag: para
+#: random-bits.xml:539
+#, no-c-format
+msgid ""
+"manually create only specific device files using <command>MAKEDEV</command>"
+msgstr ""
+"<command>MAKEDEV</command> を使用して、指定したデバイスファイルのみを手で作成"
+"します。"
+
+#. Tag: para
+#: random-bits.xml:544
+#, no-c-format
+msgid ""
+"bind mount /dev from your host system on top of /dev in the target system; "
+"note that the postinst scripts of some packages may try to create device "
+"files, so this option should only be used with care"
+msgstr ""
+"ホストシステムの /dev をターゲットシステムの /dev の先頭にマウントします。い"
+"くつかのパッケージの postinst スクリプトでは、デバイスファイルを作成しようと"
+"するのに注意してください。そのため、この選択肢は注意深く使用するべきです。"
+
+#. Tag: title
+#: random-bits.xml:557
+#, no-c-format
+msgid "Mount Partitions"
+msgstr "パーティションのマウント"
+
+#. Tag: para
+#: random-bits.xml:558
+#, no-c-format
+msgid ""
+"You need to create <filename>/etc/fstab</filename>. "
+"<informalexample><screen>\n"
+"# editor /etc/fstab\n"
+"</screen></informalexample> Here is a sample you can modify to suit: "
+"<informalexample><screen>\n"
+"# /etc/fstab: static file system information.\n"
+"#\n"
+"# file system    mount point   type    options                  dump pass\n"
+"/dev/XXX         /             ext3    defaults                 0    1\n"
+"/dev/XXX         /boot         ext3    ro,nosuid,nodev          0    2\n"
+"\n"
+"/dev/XXX         none          swap    sw                       0    0\n"
+"proc             /proc         proc    defaults                 0    0\n"
+"\n"
+"/dev/fd0         /media/floppy auto    noauto,rw,sync,user,exec 0    0\n"
+"/dev/cdrom       /media/cdrom  iso9660 noauto,ro,user,exec      0    0\n"
+"\n"
+"/dev/XXX         /tmp          ext3    rw,nosuid,nodev          0    2\n"
+"/dev/XXX         /var          ext3    rw,nosuid,nodev          0    2\n"
+"/dev/XXX         /usr          ext3    rw,nodev                 0    2\n"
+"/dev/XXX         /home         ext3    rw,nosuid,nodev          0    2\n"
+"</screen></informalexample> Use <userinput>mount -a</userinput> to mount all "
+"the file systems you have specified in your <filename>/etc/fstab</filename>, "
+"or, to mount file systems individually, use: <informalexample><screen>\n"
+"# mount /path   # e.g.: mount /usr\n"
+"</screen></informalexample> Current &debian; systems have mountpoints for "
+"removable media under <filename>/media</filename>, but keep compatibility "
+"symlinks in <filename>/</filename>. Create these as as needed, for example: "
+"<informalexample><screen>\n"
+"# cd /media\n"
+"# mkdir cdrom0\n"
+"# ln -s cdrom0 cdrom\n"
+"# cd /\n"
+"# ln -s media/cdrom\n"
+"</screen></informalexample> You can mount the proc file system multiple "
+"times and to arbitrary locations, though <filename>/proc</filename> is "
+"customary. If you didn't use <userinput>mount -a</userinput>, be sure to "
+"mount proc before continuing:"
+msgstr ""
+"<filename>/etc/fstab</filename> を作る必要があります。"
+"<informalexample><screen>\n"
+"# editor /etc/fstab\n"
+"</screen></informalexample>以下のサンプルを自分に合うように編集できます。"
+"<informalexample><screen>\n"
+"# /etc/fstab: static file system information.\n"
+"#\n"
+"# file system    mount point   type    options                  dump pass\n"
+"/dev/XXX         /             ext3    defaults                 0    1\n"
+"/dev/XXX         /boot         ext3    ro,nosuid,nodev          0    2\n"
+"\n"
+"/dev/XXX         none          swap    sw                       0    0\n"
+"proc             /proc         proc    defaults                 0    0\n"
+"\n"
+"/dev/fd0         /media/floppy auto    noauto,rw,sync,user,exec 0    0\n"
+"/dev/cdrom       /media/cdrom  iso9660 noauto,ro,user,exec      0    0\n"
+"\n"
+"/dev/XXX         /tmp          ext3    rw,nosuid,nodev          0    2\n"
+"/dev/XXX         /var          ext3    rw,nosuid,nodev          0    2\n"
+"/dev/XXX         /usr          ext3    rw,nodev                 0    2\n"
+"/dev/XXX         /home         ext3    rw,nosuid,nodev          0    2\n"
+"</screen></informalexample> <filename>/etc/fstab</filename> で指定したファイ"
+"ルシステムを、すべてマウントするには <userinput>mount -a</userinput> としてく"
+"ださい。また、ファイルシステムを別々にマウントするには、以下のようにしてくだ"
+"さい。<informalexample><screen>\n"
+"# mount /path   # e.g.: mount /usr\n"
+"</screen></informalexample> 現在 &debian; システムでは、リムーバブルメディア"
+"のマウントポイントを <filename>/media</filename> にしていますが、<filename>/"
+"</filename> にシンボリックリンクを置き互換性を保っています。以下の例のよう"
+"に、必要であれば作成してください。<informalexample><screen>\n"
+"# cd /media\n"
+"# mkdir cdrom0\n"
+"# ln -s cdrom0 cdrom\n"
+"# cd /\n"
+"# ln -s media/cdrom\n"
+"</screen></informalexample> proc ファイルシステムは、どこでも何度でもマウント"
+"することができますが、慣習的に <filename>/proc</filename> にマウントします。"
+"<userinput>mount -a</userinput> を使用しなかった場合は、以下のように先に進む"
+"前に必ず proc をマウントしてください。"
+
+#. Tag: screen
+#: random-bits.xml:584
+#, no-c-format
+msgid "# mount -t proc proc /proc"
+msgstr "# mount -t proc proc /proc"
+
+#. Tag: para
+#: random-bits.xml:586
+#, no-c-format
+msgid ""
+"The command <userinput>ls /proc</userinput> should now show a non-empty "
+"directory. Should this fail, you may be able to mount proc from outside the "
+"chroot:"
+msgstr ""
+"<userinput>ls /proc</userinput> コマンドは、今度は空のディレクトリにはならな"
+"いはずです。これが失敗するようなら、以下のように chroot の外側から proc をマ"
+"ウントできるかもしれません。"
+
+#. Tag: screen
+#: random-bits.xml:592
+#, no-c-format
+msgid "# mount -t proc proc /mnt/debinst/proc"
+msgstr "# mount -t proc proc /mnt/debinst/proc"
+
+#. Tag: title
+#: random-bits.xml:598
+#, no-c-format
+msgid "Setting Timezone"
+msgstr "タイムゾーンの設定"
+
+#. Tag: para
+#: random-bits.xml:599
+#, no-c-format
+msgid ""
+"Setting the third line of the file <filename>/etc/adjtime</filename> to "
+"<quote>UTC</quote> or <quote>LOCAL</quote> determines whether the system "
+"will interpret the hardware clock as being set to UTC respective local time. "
+"The following command allows you to set that. <informalexample><screen>\n"
+"# editor /etc/adjtime\n"
+"</screen></informalexample> Here is a sample: <informalexample><screen>\n"
+"0.0 0 0.0\n"
+"0\n"
+"UTC\n"
+"</screen></informalexample> The following command allows you to choose your "
+"timezone."
+msgstr ""
+"<filename>/etc/adjtime</filename> ファイルの 3 行目に、<quote>UTC</quote> か "
+"<quote>LOCAL</quote> を設定し、システムがハードウェアの時計を UTC として解釈"
+"するか、それぞれの現地時間として解釈するかを決定します。以下のコマンドで、上"
+"記の選択とタイムゾーンの選択を行えます。<informalexample><screen>\n"
+"# editor /etc/adjtime\n"
+"</screen></informalexample> 以下に例を示します。<informalexample><screen>\n"
+"0.0 0 0.0\n"
+"0\n"
+"UTC\n"
+"</screen></informalexample> 以下のコマンドでタイムゾーンの選択ができます。"
+
+#. Tag: screen
+#: random-bits.xml:613
+#, no-c-format
+msgid "# dpkg-reconfigure tzdata"
+msgstr "# dpkg-reconfigure tzdata"
+
+#. Tag: title
+#: random-bits.xml:619
+#, no-c-format
+msgid "Configure Networking"
+msgstr "ネットワークの設定"
+
+#. Tag: para
+#: random-bits.xml:620
+#, fuzzy, no-c-format
+#| msgid ""
+#| "To configure networking, edit <filename>/etc/network/interfaces</"
+#| "filename>, <filename>/etc/resolv.conf</filename>, <filename>/etc/"
+#| "hostname</filename> and <filename>/etc/hosts</filename>. "
+#| "<informalexample><screen>\n"
+#| "# editor /etc/network/interfaces\n"
+#| "</screen></informalexample> Here are some simple examples from <filename>/"
+#| "usr/share/doc/ifupdown/examples</filename>: <informalexample><screen>\n"
+#| "######################################################################\n"
+#| "# /etc/network/interfaces -- configuration file for ifup(8), ifdown(8)\n"
+#| "# See the interfaces(5) manpage for information on what options are\n"
+#| "# available.\n"
+#| "######################################################################\n"
+#| "\n"
+#| "# We always want the loopback interface.\n"
+#| "#\n"
+#| "auto lo\n"
+#| "iface lo inet loopback\n"
+#| "\n"
+#| "# To use dhcp:\n"
+#| "#\n"
+#| "# auto eth0\n"
+#| "# iface eth0 inet dhcp\n"
+#| "\n"
+#| "# An example static IP setup: (broadcast and gateway are optional)\n"
+#| "#\n"
+#| "# auto eth0\n"
+#| "# iface eth0 inet static\n"
+#| "#     address 192.168.0.42\n"
+#| "#     network 192.168.0.0\n"
+#| "#     netmask 255.255.255.0\n"
+#| "#     broadcast 192.168.0.255\n"
+#| "#     gateway 192.168.0.1\n"
+#| "</screen></informalexample> Enter your nameserver(s) and search "
+#| "directives in <filename>/etc/resolv.conf</filename>: "
+#| "<informalexample><screen>\n"
+#| "# editor /etc/resolv.conf\n"
+#| "</screen></informalexample> A simple example <filename>/etc/resolv.conf</"
+#| "filename>: <informalexample><screen>\n"
+#| "search hqdom.local\n"
+#| "nameserver 10.1.1.36\n"
+#| "nameserver 192.168.9.100\n"
+#| "</screen></informalexample> Enter your system's host name (2 to 63 "
+#| "characters): <informalexample><screen>\n"
+#| "# echo DebianHostName &gt; /etc/hostname\n"
+#| "</screen></informalexample> And a basic <filename>/etc/hosts</filename> "
+#| "with IPv6 support: <informalexample><screen>\n"
+#| "127.0.0.1 localhost\n"
+#| "127.0.1.1 DebianHostName\n"
+#| "\n"
+#| "# The following lines are desirable for IPv6 capable hosts\n"
+#| "::1     ip6-localhost ip6-loopback\n"
+#| "fe00::0 ip6-localnet\n"
+#| "ff00::0 ip6-mcastprefix\n"
+#| "ff02::1 ip6-allnodes\n"
+#| "ff02::2 ip6-allrouters\n"
+#| "ff02::3 ip6-allhosts\n"
+#| "</screen></informalexample> If you have multiple network cards, you "
+#| "should arrange the names of driver modules in the <filename>/etc/modules</"
+#| "filename> file into the desired order. Then during boot, each card will "
+#| "be associated with the interface name (eth0, eth1, etc.) that you expect."
+msgid ""
+"To configure networking, edit <filename>/etc/network/interfaces</filename>, "
+"<filename>/etc/resolv.conf</filename>, <filename>/etc/hostname</filename> "
+"and <filename>/etc/hosts</filename>. <informalexample><screen>\n"
+"# editor /etc/network/interfaces\n"
+"</screen></informalexample> Here are some simple examples from <filename>/"
+"usr/share/doc/ifupdown/examples</filename>: <informalexample><screen>\n"
+"######################################################################\n"
+"# /etc/network/interfaces -- configuration file for ifup(8), ifdown(8)\n"
+"# See the interfaces(5) manpage for information on what options are\n"
+"# available.\n"
+"######################################################################\n"
+"\n"
+"# The loopback interface isn't really required any longer, but can be used\n"
+"# if needed.\n"
+"#\n"
+"# auto lo\n"
+"# iface lo inet loopback\n"
+"\n"
+"# To use dhcp:\n"
+"#\n"
+"# auto eth0\n"
+"# iface eth0 inet dhcp\n"
+"\n"
+"# An example static IP setup: (network, broadcast and gateway are optional)\n"
+"#\n"
+"# auto eth0\n"
+"# iface eth0 inet static\n"
+"#     address 192.168.0.42\n"
+"#     network 192.168.0.0\n"
+"#     netmask 255.255.255.0\n"
+"#     broadcast 192.168.0.255\n"
+"#     gateway 192.168.0.1\n"
+"</screen></informalexample> Enter your nameserver(s) and search directives "
+"in <filename>/etc/resolv.conf</filename>: <informalexample><screen>\n"
+"# editor /etc/resolv.conf\n"
+"</screen></informalexample> A simple example <filename>/etc/resolv.conf</"
+"filename>: <informalexample><screen>\n"
+"search example.com\n"
+"nameserver 10.1.1.36\n"
+"nameserver 192.168.9.100\n"
+"</screen></informalexample> Enter your system's host name (2 to 63 "
+"characters): <informalexample><screen>\n"
+"# echo DebianHostName &gt; /etc/hostname\n"
+"</screen></informalexample> And a basic <filename>/etc/hosts</filename> with "
+"IPv6 support: <informalexample><screen>\n"
+"127.0.0.1 localhost\n"
+"127.0.1.1 DebianHostName\n"
+"\n"
+"# The following lines are desirable for IPv6 capable hosts\n"
+"::1     ip6-localhost ip6-loopback\n"
+"fe00::0 ip6-localnet\n"
+"ff00::0 ip6-mcastprefix\n"
+"ff02::1 ip6-allnodes\n"
+"ff02::2 ip6-allrouters\n"
+"ff02::3 ip6-allhosts\n"
+"</screen></informalexample> If you have multiple network cards, you should "
+"arrange the names of driver modules in the <filename>/etc/modules</filename> "
+"file into the desired order. Then during boot, each card will be associated "
+"with the interface name (eth0, eth1, etc.) that you expect."
+msgstr ""
+"ネットワークの設定をするには、<filename>/etc/network/interfaces</filename>, "
+"<filename>/etc/resolv.conf</filename>, <filename>/etc/hostname</filename> "
+"and <filename>/etc/hosts</filename> を編集してください。"
+"<informalexample><screen>\n"
+"# editor /etc/network/interfaces\n"
+"</screen></informalexample> 次は、<filename>/usr/share/doc/ifupdown/"
+"examples</filename> のシンプルな例です。<informalexample><screen>\n"
+"######################################################################\n"
+"# /etc/network/interfaces -- configuration file for ifup(8), ifdown(8)\n"
+"# See the interfaces(5) manpage for information on what options are\n"
+"# available.\n"
+"######################################################################\n"
+"\n"
+"# We always want the loopback interface.\n"
+"#\n"
+"auto lo\n"
+"iface lo inet loopback\n"
+"\n"
+"# To use dhcp:\n"
+"#\n"
+"# auto eth0\n"
+"# iface eth0 inet dhcp\n"
+"\n"
+"# An example static IP setup: (broadcast and gateway are optional)\n"
+"#\n"
+"# auto eth0\n"
+"# iface eth0 inet static\n"
+"#     address 192.168.0.42\n"
+"#     network 192.168.0.0\n"
+"#     netmask 255.255.255.0\n"
+"#     broadcast 192.168.0.255\n"
+"#     gateway 192.168.0.1\n"
+"</screen></informalexample> <filename>/etc/resolv.conf</filename> に、ネーム"
+"サーバと search ディレクティブを入力してください。<informalexample><screen>\n"
+"# editor /etc/resolv.conf\n"
+"</screen></informalexample> 以下は、<filename>/etc/resolv.conf</filename> の"
+"簡単な例です。<informalexample><screen>\n"
+"search hqdom.local\n"
+"nameserver 10.1.1.36\n"
+"nameserver 192.168.9.100\n"
+"</screen></informalexample> システムのホスト名 (2 から 63 文字) を入力してく"
+"ださい。<informalexample><screen>\n"
+"# echo DebianHostName &gt; /etc/hostname\n"
+"</screen></informalexample>また、IPv6 をサポートした基本的な <filename>/etc/"
+"hosts</filename> は以下のようにします。<informalexample><screen>\n"
+"127.0.0.1 localhost\n"
+"127.0.1.1 DebianHostName\n"
+"\n"
+"# The following lines are desirable for IPv6 capable hosts\n"
+"::1     ip6-localhost ip6-loopback\n"
+"fe00::0 ip6-localnet\n"
+"ff00::0 ip6-mcastprefix\n"
+"ff02::1 ip6-allnodes\n"
+"ff02::2 ip6-allrouters\n"
+"ff02::3 ip6-allhosts\n"
+"</screen></informalexample>複数のネットワークカードを持っているなら、"
+"<filename>/etc/modules</filename> ファイルに希望の順番で、ドライバモジュール"
+"の名前を配置してください。その後起動中に、各カードは期待通りにインターフェー"
+"ス名 (eth0, eth1 など) と結びつけられます。"
+
+#. Tag: title
+#: random-bits.xml:661
+#, no-c-format
+msgid "Configure Apt"
+msgstr "apt の設定"
+
+#. Tag: para
+#: random-bits.xml:662
+#, no-c-format
+msgid ""
+"Debootstrap will have created a very basic <filename>/etc/apt/sources.list</"
+"filename> that will allow installing additional packages. However, you may "
+"want to add some additional sources, for example for source packages and "
+"security updates: <informalexample><screen>\n"
+"deb-src http://ftp.us.debian.org/debian &releasename; main\n"
+"\n"
+"deb http://security.debian.org/ &releasename;/updates main\n"
+"deb-src http://security.debian.org/ &releasename;/updates main\n"
+"</screen></informalexample> Make sure to run <userinput>apt update</"
+"userinput> after you have made changes to the sources list."
+msgstr ""
+"debootstrap は、追加パッケージをインストールする、非常に基本的な <filename>/"
+"etc/apt/sources.list</filename> を作成します。しかし、他のパッケージ取得先を"
+"追加したくなると思います。以下の例はソースパッケージとセキュリティ更新を追加"
+"しています。<informalexample><screen>\n"
+"deb-src http://ftp.us.debian.org/debian &releasename; main\n"
+"\n"
+"deb http://security.debian.org/ &releasename;/updates main\n"
+"deb-src http://security.debian.org/ &releasename;/updates main\n"
+"</screen></informalexample>sources list を更新したら、<userinput>apt update</"
+"userinput> を必ず実行してください。"
+
+#. Tag: title
+#: random-bits.xml:678
+#, no-c-format
+msgid "Configure Locales and Keyboard"
+msgstr "ロケールとキーボードの設定"
+
+#. Tag: para
+#: random-bits.xml:679
+#, no-c-format
+msgid ""
+"To configure your locale settings to use a language other than English, "
+"install the <classname>locales</classname> support package and configure it. "
+"Currently the use of UTF-8 locales is recommended. "
+"<informalexample><screen>\n"
+"# apt install locales\n"
+"# dpkg-reconfigure locales\n"
+"</screen></informalexample> To configure your keyboard (if needed):"
+msgstr ""
+"英語以外の言語を使用するようロケールの設定をするために、ロケールをサポートす"
+"るパッケージ (<classname>locales</classname>) をインストール・設定してくださ"
+"い。現在は UTF-8 ロケールを使用するのをお勧めします。"
+"<informalexample><screen>\n"
+"# apt install locales\n"
+"# dpkg-reconfigure locales\n"
+"</screen></informalexample> (必要なら) 以下のようにキーボードの設定を行ってく"
+"ださい。"
+
+#. Tag: screen
+#: random-bits.xml:689
+#, no-c-format
+msgid ""
+"# apt install console-setup\n"
+"# dpkg-reconfigure keyboard-configuration"
+msgstr ""
+"# apt install console-setup\n"
+"# dpkg-reconfigure keyboard-configuration"
+
+#. Tag: para
+#: random-bits.xml:691
+#, no-c-format
+msgid ""
+"Note that the keyboard cannot be set while in the chroot, but will be "
+"configured for the next reboot."
+msgstr ""
+"chroot 内では、キーボードを設定できませんが、再起動後に有効になることに注意し"
+"てください。"
+
+#. Tag: title
+#: random-bits.xml:701
+#, no-c-format
+msgid "Install a Kernel"
+msgstr "カーネルのインストール"
+
+#. Tag: para
+#: random-bits.xml:702
+#, no-c-format
+msgid ""
+"If you intend to boot this system, you probably want a &arch-kernel; kernel "
+"and a boot loader. Identify available pre-packaged kernels with:"
+msgstr ""
+"このシステムを起動できるようにするなら、おそらく &arch-kernel; カーネルとブー"
+"トローダが必要でしょう。以下のようにして、パッケージ化済みカーネルを確認して"
+"ください。"
+
+#. Tag: screen
+#: random-bits.xml:707
+#, no-c-format
+msgid "# apt search &kernelpackage;"
+msgstr "# apt search &kernelpackage;"
+
+#. Tag: para
+#: random-bits.xml:709
+#, no-c-format
+msgid "Then install the kernel package of your choice using its package name."
+msgstr ""
+"その後、パッケージ名を指定して、選択したカーネルパッケージをインストールして"
+"ください。"
+
+#. Tag: screen
+#: random-bits.xml:713
+#, no-c-format
+msgid "# apt install &kernelpackage;-<replaceable>arch-etc</replaceable>"
+msgstr "# apt install &kernelpackage;-<replaceable>arch-etc</replaceable>"
+
+#. Tag: title
+#: random-bits.xml:719
+#, no-c-format
+msgid "Set up the Boot Loader"
+msgstr "ブートローダのセットアップ"
+
+#. Tag: para
+#: random-bits.xml:720
+#, no-c-format
+msgid ""
+"To make your &debian-gnu; system bootable, set up your boot loader to load "
+"the installed kernel with your new root partition. Note that "
+"<command>debootstrap</command> does not install a boot loader, but you can "
+"use <command>apt</command> inside your &debian; chroot to do so."
+msgstr ""
+"&debian-gnu; システムを起動できるようにするために、インストールしたカーネルを"
+"新しい root パーティションから読み込むように、ブートローダをセットアップして"
+"ください。<command>debootstrap</command> は、ブートローダをインストールしない"
+"ことに注意してください。とは言っても、セットアップするのに &debian; chroot 内"
+"部の <command>apt</command> を使用できます。"
+
+#. Tag: para
+#: random-bits.xml:727
+#, no-c-format
+msgid ""
+"Check <userinput>info grub</userinput> <phrase arch=\"x86\">or "
+"<userinput>man lilo.conf</userinput></phrase> for instructions on setting up "
+"the bootloader. If you are keeping the system you used to install &debian;, "
+"just add an entry for the &debian; install to your existing grub2 "
+"<filename>grub.cfg</filename><phrase arch=\"x86\"> or <filename>lilo.conf</"
+"filename>. For <filename>lilo.conf</filename>, you could also copy it to the "
+"new system and edit it there. After you are done editing, call "
+"<command>lilo</command> (remember it will use <filename>lilo.conf</filename> "
+"relative to the system you call it from)</phrase>."
+msgstr ""
+"ブートローダのセットアップについての説明は、<userinput>info grub</userinput> "
+"<phrase arch=\"x86\">や <userinput>man lilo.conf</userinput> </phrase>を"
+"チェックしてください。&debian; をインストールするのに使用したシステムを保持す"
+"る場合、既存の grub2 の <filename>grub.cfg</filename><phrase arch=\"x86\"> "
+"や <filename>lilo.conf</filename>  </phrase>に、&debian; インストールへのエン"
+"トリを単に加えてください。<phrase arch=\"x86\"><filename>lilo.conf</"
+"filename> では新システムにそれをコピーし、そこで編集してください。編集を終え"
+"た後、<command>lilo</command> を呼び出してください (lilo を呼び出したシステム"
+"と関係あるところの、<filename>lilo.conf</filename> が使われるということを覚え"
+"ていてください)。</phrase>"
+
+#. Tag: para
+#: random-bits.xml:739
+#, no-c-format
+msgid ""
+"Installing and setting up <classname>grub2</classname> is as easy as: "
+"<informalexample><screen>\n"
+"# apt install grub-pc\n"
+"# grub-install /dev/<replaceable>sda</replaceable>\n"
+"# update-grub\n"
+"</screen></informalexample> The second command will install <command>grub2</"
+"command> (in this case in the MBR of <literal>sda</literal>). The last "
+"command will create a sane and working <filename>/boot/grub/grub.cfg</"
+"filename>."
+msgstr ""
+"<classname>grub2</classname> のインストールと設定は以下のように簡単です。"
+"<informalexample><screen>\n"
+"# apt install grub-pc\n"
+"# grub-install /dev/<replaceable>sda</replaceable>\n"
+"# update-grub\n"
+"</screen></informalexample> 2 つ目のコマンドで、<command>grub2</command> を "
+"(この場合は <literal>sda</literal> の MBR に) インストールします。最後のコマ"
+"ンドで、正しく動作する <filename>/boot/grub/grub.cfg</filename> を作成しま"
+"す。"
+
+#. Tag: para
+#: random-bits.xml:749
+#, no-c-format
+msgid ""
+"Note that this assumes that a <filename>/dev/sda</filename> device file has "
+"been created. There are alternative methods to install <command>grub2</"
+"command>, but those are outside the scope of this appendix."
+msgstr ""
+"<filename>/dev/sda</filename> デバイスファイルは、作成済みだと仮定しているこ"
+"とに注意してください。<command>grub2</command> のインストールには別の方法もあ"
+"りますが、それはこの付録では扱いません。"
+
+#. Tag: para
+#: random-bits.xml:755
+#, no-c-format
+msgid "Here is a basic <filename>/etc/lilo.conf</filename> as an example:"
+msgstr "以下は基本的な <filename>/etc/lilo.conf</filename> の例です。"
+
+#. Tag: screen
+#: random-bits.xml:759
+#, no-c-format
+msgid ""
+"boot=/dev/<replaceable>sda6</replaceable>\n"
+"root=/dev/<replaceable>sda6</replaceable>\n"
+"install=menu\n"
+"delay=20\n"
+"lba32\n"
+"image=/vmlinuz\n"
+"initrd=/initrd.img\n"
+"label=Debian"
+msgstr ""
+"boot=/dev/<replaceable>sda6</replaceable>\n"
+"root=/dev/<replaceable>sda6</replaceable>\n"
+"install=menu\n"
+"delay=20\n"
+"lba32\n"
+"image=/vmlinuz\n"
+"initrd=/initrd.img\n"
+"label=Debian"
+
+#. Tag: para
+#: random-bits.xml:761
+#, no-c-format
+msgid ""
+"Check <userinput>man yaboot.conf</userinput> for instructions on setting up "
+"the bootloader. If you are keeping the system you used to install &debian;, "
+"just add an entry for the &debian; install to your existing <filename>yaboot."
+"conf</filename>. You could also copy it to the new system and edit it there. "
+"After you are done editing, call ybin (remember it will use <filename>yaboot."
+"conf</filename> relative to the system you call it from)."
+msgstr ""
+"ブートローダのセットアップについての説明は、<userinput>man yaboot.conf</"
+"userinput> をチェックしてください。&debian; をインストールするのに使用したシ"
+"ステムを保持する場合、既存の <filename>yaboot.conf</filename> に、&debian; イ"
+"ンストールへのエントリを単に加えてください。そして新システムにそれをコピー"
+"し、そこで編集してください。編集を終えた後、ybin を呼び出してください。(ybin "
+"を呼び出したシステムと関係あるところの、<filename>yaboot.conf</filename> が使"
+"われるということを覚えていてください)"
+
+#. Tag: para
+#: random-bits.xml:771
+#, no-c-format
+msgid ""
+"Here is a basic <filename>/etc/yaboot.conf</filename> as an example: "
+"<informalexample><screen>\n"
+"boot=/dev/sda2\n"
+"device=hd:\n"
+"partition=6\n"
+"root=/dev/sda6\n"
+"magicboot=/usr/lib/yaboot/ofboot\n"
+"timeout=50\n"
+"image=/vmlinux\n"
+"label=Debian\n"
+"</screen></informalexample> On some machines, you may need to use "
+"<userinput>ide0:</userinput> instead of <userinput>hd:</userinput>."
+msgstr ""
+"以下は基本的な <filename>/etc/yaboot.conf</filename> の例です。"
+"<informalexample><screen>\n"
+"boot=/dev/sda2\n"
+"device=hd:\n"
+"partition=6\n"
+"root=/dev/sda6\n"
+"magicboot=/usr/lib/yaboot/ofboot\n"
+"timeout=50\n"
+"image=/vmlinux\n"
+"label=Debian\n"
+"</screen></informalexample> いくつかのマシンでは、<userinput>hd:</userinput> "
+"の代わりに <userinput>ide0:</userinput> を使う必要があるかもしれません。"
+
+#. Tag: title
+#: random-bits.xml:784
+#, no-c-format
+msgid "Remote access: Installing SSH and setting up access"
+msgstr "リモートアクセス: SSH のインストールとアクセス方法の設定"
+
+#. Tag: para
+#: random-bits.xml:785
+#, no-c-format
+msgid ""
+"In case you can login to the system via console, you can skip this section. "
+"If the system should be accessible via the network later on, you need to "
+"install SSH and set up access. <informalexample><screen>\n"
+"# apt install ssh\n"
+"</screen></informalexample> Root login with password is disabled by default, "
+"so setting up access can be done by setting a password and re-enable root "
+"login with password: <informalexample><screen>\n"
+"# passwd\n"
+"# editor /etc/ssh/sshd_config\n"
+"</screen></informalexample> This is the option to be enabled: "
+"<informalexample><screen>\n"
+"PermitRootLogin yes\n"
+"</screen></informalexample> Access can also be set up by adding an ssh key "
+"to the root account: <informalexample><screen>\n"
+"# mkdir /root/.ssh\n"
+"# cat &lt;&lt; EOF &gt; /root/.ssh/authorized_keys\n"
+"ssh-rsa ....\n"
+"EOF\n"
+"</screen></informalexample> Lastly, access can be set up by adding a non-"
+"root user and setting a password:"
+msgstr ""
+"コンソール経由でシステムにログインできる場合はこの節を飛ばせます。後でネット"
+"ワーク経由でシステムにアクセスできるようにする必要がある場合は SSH をインス"
+"トールしてアクセス方法を用意する必要があります。<informalexample><screen>\n"
+"# apt install ssh\n"
+"</screen></informalexample> パスワードによる root のログインはデフォルトで無"
+"効になっているため、パスワードを設定してパスワードによる root のログインを有"
+"効にしてアクセス方法を用意します: <informalexample><screen>\n"
+"# passwd\n"
+"# editor /etc/ssh/sshd_config\n"
+"</screen></informalexample> 有効にするオプション: <informalexample><screen>\n"
+"PermitRootLogin yes\n"
+"</screen></informalexample> root アカウントに SSH の鍵を追加してアクセス方法"
+"を用意することもできます: <informalexample><screen>\n"
+"# mkdir /root/.ssh\n"
+"# cat &lt;&lt; EOF &gt; /root/.ssh/authorized_keys\n"
+"ssh-rsa ....\n"
+"EOF\n"
+"</screen></informalexample> 最後に、root ユーザを追加してパスワードを設定して"
+"アクセス方法を用意することもできます:"
+
+#. Tag: screen
+#: random-bits.xml:809
+#, no-c-format
+msgid ""
+"# adduser joe\n"
+"# passwd joe"
+msgstr ""
+"# adduser joe\n"
+"# passwd joe"
+
+#. Tag: title
+#: random-bits.xml:814
+#, no-c-format
+msgid "Finishing touches"
+msgstr "仕上げに"
+
+#. Tag: para
+#: random-bits.xml:815
+#, no-c-format
+msgid ""
+"As mentioned earlier, the installed system will be very basic. If you would "
+"like to make the system a bit more mature, there is an easy method to "
+"install all packages with <quote>standard</quote> priority: "
+"<informalexample><screen>\n"
+"# tasksel install standard\n"
+"</screen></informalexample> Of course, you can also just use <command>apt</"
+"command> to install packages individually."
+msgstr ""
+"すでに述べたように、インストールしたシステムは非常に基本的な物になります。"
+"もっと成熟したシステムにしたければ、優先度が <quote>standard</quote> のパッ"
+"ケージを、すべてインストールする簡単な方法があります。以下のようにしてくださ"
+"い。<informalexample><screen>\n"
+"# tasksel install standard\n"
+"</screen></informalexample> もちろん <command>apt</command> で、個々のパッ"
+"ケージをインストールすることもできます。"
+
+#. Tag: para
+#: random-bits.xml:826
+#, no-c-format
+msgid ""
+"After the installation there will be a lot of downloaded packages in "
+"<filename>/var/cache/apt/archives/</filename>. You can free up some "
+"diskspace by running:"
+msgstr ""
+"インストールが終わると、ダウンロードしたパッケージが <filename>/var/cache/"
+"apt/archives/</filename> に大量に残っています。以下のようにして、ディスク領域"
+"を解放できます。"
+
+#. Tag: screen
+#: random-bits.xml:832
+#, no-c-format
+msgid "# apt clean"
+msgstr "# apt clean"
+
+#. Tag: title
+#: random-bits.xml:843
+#, no-c-format
+msgid "Installing &debian-gnu; over Parallel Line IP (PLIP)"
+msgstr "パラレルライン IP (PLIP) による &debian-gnu; のインストール"
+
+#. Tag: para
+#: random-bits.xml:845
+#, no-c-format
+msgid ""
+"This section explains how to install &debian-gnu; on a computer without an "
+"Ethernet card, but with just a remote gateway computer attached via a Null-"
+"Modem cable (also called Null-Printer cable). The gateway computer should be "
+"connected to a network that has a &debian; mirror on it (e.g. to the "
+"Internet)."
+msgstr ""
+"本節では、イーサネットカードがなくても、リモートゲートウェイコンピュータにヌ"
+"ルモデムケーブル (ヌルプリンタケーブルとも呼ばれます) で接続して &debian-"
+"gnu; をコンピュータにインストールする方法を説明します。ゲートウェイコンピュー"
+"タは、&debian; ミラーがあるネットワーク (例: インターネット) に接続していなけ"
+"ればなりません。"
+
+#. Tag: para
+#: random-bits.xml:853
+#, no-c-format
+msgid ""
+"In the example in this appendix we will set up a PLIP connection using a "
+"gateway connected to the Internet over a dial-up connection (ppp0). We will "
+"use IP addresses 192.168.0.1 and 192.168.0.2 for the PLIP interfaces on the "
+"target system and the source system respectively (these addresses should be "
+"unused within your network address space)."
+msgstr ""
+"この付録の例では、ダイアルアップ接続 (ppp0) でインターネットに接続したゲート"
+"ウェイを用いて、PLIP 接続を設定します。target システムと source システムそれ"
+"ぞれの PLIP インターフェースに対して、192.168.0.1 と 192.168.0.2 の IP アドレ"
+"スを使用します。(このアドレスは、あなたのネットワークアドレス空間で使われてい"
+"てはいけません)"
+
+#. Tag: para
+#: random-bits.xml:861
+#, no-c-format
+msgid ""
+"The PLIP connection set up during the installation will also be available "
+"after the reboot into the installed system (see <xref linkend=\"boot-new\"/"
+">)."
+msgstr ""
+"PLIP 接続をインストール中に設定しておくと、インストールしたシステムを再起動し"
+"たときに有効になります。(<xref linkend=\"boot-new\"/> をご覧ください)"
+
+#. Tag: para
+#: random-bits.xml:866
+#, no-c-format
+msgid ""
+"Before you start, you will need to check the BIOS configuration (IO base "
+"address and IRQ) for the parallel ports of both the source and target "
+"systems. The most common values are <literal>io=0x378</literal>, "
+"<literal>irq=7</literal>."
+msgstr ""
+"始める前に、source システム、target システムの双方で、パラレルポートの BIOS "
+"設定 (IO ベースアドレスと IRQ) をチェックする必要があります。よく使用される共"
+"通の値は、<literal>io=0x378</literal>, <literal>irq=7</literal> です。"
+
+#. Tag: title
+#: random-bits.xml:876
+#, no-c-format
+msgid "Requirements"
+msgstr "必要な物"
+
+#. Tag: para
+#: random-bits.xml:879
+#, no-c-format
+msgid ""
+"A target computer, called <emphasis>target</emphasis>, where &debian; will "
+"be installed."
+msgstr ""
+"&debian; をインストールする対象コンピュータ。(<emphasis>target</emphasis> と"
+"呼びます)"
+
+#. Tag: para
+#: random-bits.xml:885
+#, no-c-format
+msgid "System installation media; see <xref linkend=\"installation-media\"/>."
+msgstr ""
+"システムをインストールするメディア。<xref linkend=\"installation-media\"/> を"
+"ご覧ください。"
+
+#. Tag: para
+#: random-bits.xml:890
+#, no-c-format
+msgid ""
+"Another computer connected to the Internet, called <emphasis>source</"
+"emphasis>, that will function as the gateway."
+msgstr ""
+"ゲートウェイとして機能する、インターネットに繋がっている別のコンピュータ。"
+"(<emphasis>source</emphasis> と呼びます)"
+
+#. Tag: para
+#: random-bits.xml:896
+#, no-c-format
+msgid ""
+"A DB-25 Null-Modem cable. See the <ulink url=\"&url-plip-install-howto;"
+"\">PLIP-Install-HOWTO</ulink> for more information on this cable and "
+"instructions how to make your own."
+msgstr ""
+"DB-25 ヌルモデムケーブル。このケーブルの詳細や自分で作成する方法については、"
+"<ulink url=\"&url-plip-install-howto;\">PLIP-Install-HOWTO</ulink> をご覧くだ"
+"さい。"
+
+#. Tag: title
+#: random-bits.xml:908
+#, no-c-format
+msgid "Setting up source"
+msgstr "source のセットアップ"
+
+#. Tag: para
+#: random-bits.xml:909
+#, no-c-format
+msgid ""
+"The following shell script is a simple example of how to configure the "
+"source computer as a gateway to the Internet using ppp0."
+msgstr ""
+"以下のシェルスクリプトは、source コンピュータをインターネットへのゲートウェ"
+"イ (ppp0 利用) に設定する簡単なサンプルです。"
+
+#. Tag: screen
+#: random-bits.xml:914
+#, no-c-format
+msgid ""
+"#!/bin/sh\n"
+"\n"
+"# We remove running modules from kernel to avoid conflicts and to\n"
+"# reconfigure them manually.\n"
+"modprobe -r lp parport_pc\n"
+"modprobe parport_pc io=<replaceable>0x378</replaceable> irq=<replaceable>7</"
+"replaceable>\n"
+"modprobe plip\n"
+"\n"
+"# Configure the plip interface (plip0 for me, see dmesg | grep plip)\n"
+"ifconfig <replaceable>plip0 192.168.0.2</replaceable> pointopoint "
+"<replaceable>192.168.0.1</replaceable> netmask 255.255.255.255 up\n"
+"\n"
+"# Configure gateway\n"
+"modprobe iptable_nat\n"
+"iptables -t nat -A POSTROUTING -o <replaceable>ppp0</replaceable> -j "
+"MASQUERADE\n"
+"echo 1 &gt; /proc/sys/net/ipv4/ip_forward"
+msgstr ""
+"#!/bin/sh\n"
+"\n"
+"# We remove running modules from kernel to avoid conflicts and to\n"
+"# reconfigure them manually.\n"
+"# (カーネルから競合するモジュールを取り除き、手動で再設定します)\n"
+"modprobe -r lp parport_pc\n"
+"modprobe parport_pc io=<replaceable>0x378</replaceable> irq=<replaceable>7</"
+"replaceable>\n"
+"modprobe plip\n"
+"\n"
+"# Configure the plip interface (plip0 for me, see dmesg | grep plip)\n"
+"# (plip インターフェースの設定 (私の環境では plip0。dmesg | grep plip 参"
+"照))\n"
+"ifconfig <replaceable>plip0 192.168.0.2</replaceable> pointopoint "
+"<replaceable>192.168.0.1</replaceable> netmask 255.255.255.255 up\n"
+"\n"
+"# Configure gateway\n"
+"# (ゲートウェイの設定)\n"
+"modprobe iptable_nat\n"
+"iptables -t nat -A POSTROUTING -o <replaceable>ppp0</replaceable> -j "
+"MASQUERADE\n"
+"echo 1 &gt; /proc/sys/net/ipv4/ip_forward"
+
+#. Tag: title
+#: random-bits.xml:920
+#, no-c-format
+msgid "Installing target"
+msgstr "target のインストール"
+
+#. Tag: para
+#: random-bits.xml:921
+#, no-c-format
+msgid ""
+"Boot the installation media. The installation needs to be run in expert "
+"mode; enter <userinput>expert</userinput> at the boot prompt. If you need to "
+"set parameters for kernel modules, you also need to do this at the boot "
+"prompt. For example, to boot the installer and set values for the <quote>io</"
+"quote> and <quote>irq</quote> options for the parport_pc module, enter the "
+"following at the boot prompt: <informalexample><screen>\n"
+"expert parport_pc.io=<replaceable>0x378</replaceable> parport_pc."
+"irq=<replaceable>7</replaceable>\n"
+"</screen></informalexample> Below are the answers that should be given "
+"during various stages of the installation."
+msgstr ""
+"インストールメディアで起動してください。インストールするには、エキスパート"
+"モードで動作する必要があります。ブートプロンプトで <userinput>expert</"
+"userinput> と入力してください。カーネルモジュールにパラメータをセットする必要"
+"がある場合は、ブートプロンプトにさらに設定しなければなりません。例えばインス"
+"トーラ起動時に、parport_pc モジュールに <quote>io</quote> オプションと "
+"<quote>irq</quote> オプションを渡す場合、以下のようにブートプロンプトに入力し"
+"ます。<informalexample><screen>\n"
+"expert parport_pc.io=<replaceable>0x378</replaceable> parport_pc."
+"irq=<replaceable>7</replaceable>\n"
+"</screen></informalexample> 以下は、インストール中の各段階で与える値です。"
+
+#. Tag: guimenuitem
+#: random-bits.xml:940
+#, no-c-format
+msgid "Load installer components from CD"
+msgstr "インストーラコンポーネントを CD からロード"
+
+#. Tag: para
+#: random-bits.xml:942
+#, no-c-format
+msgid ""
+"Select the <userinput>plip-modules</userinput> option from the list; this "
+"will make the PLIP drivers available to the installation system."
+msgstr ""
+"一覧から <userinput>plip-modules</userinput> オプションを選択してください。こ"
+"れにより、インストールするシステムで PLIP ドライバが使用可能になります。"
+
+#. Tag: guimenuitem
+#: random-bits.xml:950
+#, no-c-format
+msgid "Detect network hardware"
+msgstr "ネットワークハードウェアの検出"
+
+#. Tag: para
+#: random-bits.xml:955
+#, no-c-format
+msgid ""
+"If target <emphasis>does</emphasis> have a network card, a list of driver "
+"modules for detected cards will be shown. If you want to force &d-i; to use "
+"plip instead, you have to deselect all listed driver modules. Obviously, if "
+"target doesn't have a network card, the installer will not show this list."
+msgstr ""
+"target にネットワークカードが<emphasis>ある</emphasis>場合、ドライバモジュー"
+"ル一覧に検出したカードが表示されます。&d-i; で plip を使用するよう強制するに"
+"は、一覧にあるドライバモジュールの選択をすべてはずさなくてはなりません。言う"
+"までもありませんが、target にネットワークカードがなければ、このリストには何も"
+"現れません。"
+
+#. Tag: para
+#: random-bits.xml:964
+#, no-c-format
+msgid ""
+"Because no network card was detected/selected earlier, the installer will "
+"ask you to select a network driver module from a list. Select the "
+"<userinput>plip</userinput> module."
+msgstr ""
+"ネットワークカードの検出・選択が行われないと、インストーラは、ネットワークド"
+"ライバモジュールを一覧から選択するようにうながします。<userinput>plip</"
+"userinput> モジュールを選択してください。"
+
+#. Tag: guimenuitem
+#: random-bits.xml:976
+#, no-c-format
+msgid "Configure the network"
+msgstr "ネットワークの設定"
+
+#. Tag: para
+#: random-bits.xml:979
+#, no-c-format
+msgid "Auto-configure network with DHCP: No"
+msgstr ""
+"「DHCP でネットワークを自動的に設定していますか」には「いいえ」と答えます。"
+
+#. Tag: para
+#: random-bits.xml:984
+#, no-c-format
+msgid ""
+"IP address: <userinput><replaceable>192.168.0.1</replaceable></userinput>"
+msgstr ""
+"「IP アドレス」は <userinput><replaceable>192.168.0.1</replaceable></"
+"userinput> とします。"
+
+#. Tag: para
+#: random-bits.xml:989
+#, no-c-format
+msgid ""
+"Point-to-point address: <userinput><replaceable>192.168.0.2</replaceable></"
+"userinput>"
+msgstr ""
+"「Point-to-Point アドレス」は <userinput><replaceable>192.168.0.2</"
+"replaceable></userinput> とします。"
+
+#. Tag: para
+#: random-bits.xml:995
+#, no-c-format
+msgid ""
+"Name server addresses: you can enter the same addresses used on source (see "
+"<filename>/etc/resolv.conf</filename>)"
+msgstr ""
+"「ネームサーバアドレス」には、source で使用しているのと同じアドレスを指定しま"
+"す。(<filename>/etc/resolv.conf</filename> をご覧ください)"
+
+#. Tag: title
+#: random-bits.xml:1014
+#, no-c-format
+msgid "Installing &debian-gnu; using PPP over Ethernet (PPPoE)"
+msgstr "PPP over Ethernet (PPPoE) を用いた &debian-gnu; のインストール"
+
+#. Tag: para
+#: random-bits.xml:1016
+#, no-c-format
+msgid ""
+"In some countries PPP over Ethernet (PPPoE) is a common protocol for "
+"broadband (ADSL or cable) connections to an Internet Service Provider. "
+"Setting up a network connection using PPPoE is not supported by default in "
+"the installer, but can be made to work very simply. This section explains "
+"how."
+msgstr ""
+"いくつかの国でインターネットサービスプロバイダに接続するのに、ブロードバンド"
+"接続 (ADSL やケーブル TV) の一般的なプロトコルは、PPP over Ethernet (PPPoE) "
+"です。インストーラでは、PPPoE を用いたネットワーク接続のセットアップをサポー"
+"トしていませんが、非常に簡単に設定できます。この節ではその方法を説明します。"
+
+#. Tag: para
+#: random-bits.xml:1024
+#, no-c-format
+msgid ""
+"The PPPoE connection set up during the installation will also be available "
+"after the reboot into the installed system (see <xref linkend=\"boot-new\"/"
+">)."
+msgstr ""
+"また、インストール中に PPPoE 接続をセットアップすると、インストールしたシステ"
+"ムを再起動した後でも有効になります (<xref linkend=\"boot-new\"/> 参照)。"
+
+#. Tag: para
+#: random-bits.xml:1029
+#, no-c-format
+msgid ""
+"To have the option of setting up and using PPPoE during the installation, "
+"you will need to install using one of the CD-ROM/DVD images that are "
+"available. It is not supported for other installation methods (e.g. "
+"netboot<phrase condition=\"supports-floppy-boot\"> or floppy</phrase>)."
+msgstr ""
+"インストール中に PPPoE をセットアップし使用するには、CD-ROM/DVD イメージを使"
+"用する必要があります。その他のインストール方法 (例: netboot <phrase "
+"condition=\"supports-floppy-boot\">やフロッピー</phrase>) では、サポートして"
+"いません。"
+
+#. Tag: para
+#: random-bits.xml:1036
+#, no-c-format
+msgid ""
+"Installing over PPPoE is mostly the same as any other installation. The "
+"following steps explain the differences."
+msgstr ""
+"PPPoE でのインストールは、他のインストール方法とほとんど同じです。以下で説明"
+"するステップが異なるだけです。"
+
+#. Tag: para
+#: random-bits.xml:1044
+#, no-c-format
+msgid ""
+"Boot the installer with the boot parameter <userinput>modules=ppp-udeb</"
+"userinput><footnote arch=\"x86\"> <para> See <xref linkend=\"boot-screen\"/> "
+"for information on how to add a boot parameter. </para> </footnote>. This "
+"will ensure the component responsible for the setup of PPPoE (<classname>ppp-"
+"udeb</classname>) will be loaded and run automatically."
+msgstr ""
+"ブートパラメータに <userinput>modules=ppp-udeb</userinput><footnote arch="
+"\"x86\"> <para>ブートパラメータの追加方法は <xref linkend=\"boot-screen\"/> "
+"をご覧ください。</para> </footnote> を指定してインストーラを起動してくださ"
+"い。これにより、PPPoE のセットアップに使用するコンポーネント (<classname>ppp-"
+"udeb</classname>) を確実に読み込み、自動的に起動します。"
+
+#. Tag: para
+#: random-bits.xml:1059
+#, no-c-format
+msgid ""
+"Follow the regular initial steps of the installation (language, country and "
+"keyboard selection; the loading of additional installer components<footnote> "
+"<para> The <classname>ppp-udeb</classname> component is loaded as one of the "
+"additional components in this step. If you want to install at medium or low "
+"priority (expert mode), you can also manually select the <classname>ppp-"
+"udeb</classname> instead of entering the <quote>modules</quote> parameter at "
+"the boot prompt. </para> </footnote>)."
+msgstr ""
+"通常のインストール初期化手順 (言語、国、キーボードの選択、追加インストーラコ"
+"ンポーネント<footnote><para><classname>ppp-udeb</classname> コンポーネント"
+"は、このステップの追加コンポーネントの 1 つとして読み込まれます。優先度を"
+"「中」「低」でインストールする場合 (エキスパートモード)、ブートプロンプトの "
+"<quote>modules</quote> パラメータに入力する代わりに、<classname>ppp-udeb</"
+"classname> を選択することもできます。</para> </footnote>の読み込み) を行いま"
+"す。"
+
+#. Tag: para
+#: random-bits.xml:1078
+#, no-c-format
+msgid ""
+"The next step is the detection of network hardware, in order to identify any "
+"Ethernet cards present in the system."
+msgstr ""
+"次のステップでは、システムにあるイーサネットカードを特定するのに、ネットワー"
+"クハードウェアを検出します。"
+
+#. Tag: para
+#: random-bits.xml:1084
+#, no-c-format
+msgid ""
+"After this the actual setup of PPPoE is started. The installer will probe "
+"all the detected Ethernet interfaces in an attempt to find a PPPoE "
+"concentrator (a type of server which handles PPPoE connections)."
+msgstr ""
+"この後、実際の PPPoE のセットアップが始まります。インストーラは、PPPoE コンセ"
+"ントレータ (PPPoE 接続を扱う一種のサーバ) を見つけるのに、検出したすべての"
+"イーサネットインターフェースを調べます。"
+
+#. Tag: para
+#: random-bits.xml:1090
+#, no-c-format
+msgid ""
+"It is possible that the concentrator will not to be found at the first "
+"attempt. This can happen occasionally on slow or loaded networks or with "
+"faulty servers. In most cases a second attempt to detect the concentrator "
+"will be successful; to retry, select <guimenuitem>Configure and start a "
+"PPPoE connection</guimenuitem> from the main menu of the installer."
+msgstr ""
+"最初の試行では、コンセントレータが見つからない可能性があります。これはネット"
+"ワークが遅い・負荷が高い場合や、サーバ側のエラーで起こる可能性があります。ほ"
+"とんどの場合、2 回目の試行でコンセントレータの検出に成功します。再試行するに"
+"は、インストーラのメニューにある <guimenuitem>Configure and start a PPPoE "
+"connection</guimenuitem> を選択してください。"
+
+#. Tag: para
+#: random-bits.xml:1099
+#, no-c-format
+msgid ""
+"After a concentrator is found, the user will be prompted to type the login "
+"information (the PPPoE username and password)."
+msgstr ""
+"コンセントレータを検出した後、ログイン情報 (PPPoE のユーザ名とパスワード) を"
+"入力してください。"
+
+#. Tag: para
+#: random-bits.xml:1105
+#, no-c-format
+msgid ""
+"At this point the installer will use the provided information to establish "
+"the PPPoE connection. If the correct information was provided, the PPPoE "
+"connection should be configured and the installer should be able to use it "
+"to connect to the Internet and retrieve packages over it (if needed). If the "
+"login information is not correct or some error appears, the installer will "
+"stop, but the configuration can be attempted again by selecting the menu "
+"entry <guimenuitem>Configure and start a PPPoE connection</guimenuitem>."
+msgstr ""
+"インストーラは、先ほど入力した情報を用いて PPPoE 接続を確立します。正しい情報"
+"を入力していれば PPPoE 接続の設定を行い、インストーラはその接続を用いてイン"
+"ターネットに接続し、(必要なら) パッケージを取得できます。ログイン情報が正しく"
+"ない場合や、何かエラーが発生した場合、インストーラは停止しますが、メニューの "
+"<guimenuitem>Configure and start a PPPoE connection</guimenuitem> を選択し"
+"て、設定を再度行えます。"
+
+#~ msgid "Laptop"
+#~ msgstr "ラップトップ"
+
+#~ msgid "&task-laptop-inst;"
+#~ msgstr "&task-laptop-inst;"
+
+#~ msgid "&task-laptop-dl;"
+#~ msgstr "&task-laptop-dl;"
+
+#~ msgid "&task-laptop-tot;"
+#~ msgstr "&task-laptop-tot;"

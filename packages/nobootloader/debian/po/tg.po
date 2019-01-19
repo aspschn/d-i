@@ -1,0 +1,180 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: nobootloader@packages.debian.org\n"
+"POT-Creation-Date: 2009-05-29 22:50+0000\n"
+"PO-Revision-Date: 2018-02-08 14:24+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../nobootloader.templates:1001
+msgid "Continue without boot loader"
+msgstr "Идома додан бе худроҳандозӣ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Failed to mount /target/proc"
+msgstr "/target/proc васл карда нашуд"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "Низоми файлии proc дар /target/proc бо нокомӣ дучор шуд."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"Файли /var/log/syslog -ро санҷед ё барои тафсилот консоли виртуалии 4-ро "
+"кушоед."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Warning: Your system may be unbootable!"
+msgstr "Огоҳӣ: Эҳтимол аст, ки низоми шумо худроҳандозӣ намешавад!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "Танзимкунии тағйирёбандаҳои нармафзор барои роҳандозии худкор"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"Барои ба таври худкор роҳандозӣ шудани низоми шумо, баъзе тағйирёбандаҳо "
+"бояд дар нармафзори дарунсохти Genesi таъин карда шаванд.  Дар охири "
+"насбкунӣ низоми шумо бозоғозӣ мешавад.  Дар сатри фармони нармафзори "
+"дарунсохт барои фаъол кардани роҳандозии худкор тағйирёбандаҳои зеринро "
+"таъин намоед:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"Ба шумо иҷрои ин амал танҳо як маротиба лозим мешавад.  Баъдан, фармони "
+"\"boot\"-ро ворид намоед, ё ки низомро бозоғозӣ намоед, то ин ки ба низоми "
+"насбшудаи нави худ гузаред."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"Илова бар ин, шумо метавонед мағзро ба таври дастӣ роҳандозӣ намоед - барои "
+"ин дар сатри фармони миёнафзор зеринро ворид намоед:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"Барои ба таври худкор бор шудани низоми шумо, баъзе тағйирёбандаҳо бояд дар "
+"CFE таъин шуда бошанд. Дар охири насбкунӣ, низом бозоғозӣ мешавад. Дар сатри "
+"фармони нармафзори дарунсохт барои осон кардани роҳандозӣ тағйирёбандаҳои "
+"зеринро таъин намоед:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"Ба шумо иҷрои ин амал танҳо як маротиба лозим мешавад. Ин ба шумо имкон "
+"медиҳад, ки танҳо фармони \"boot_debian\"-ро дар сатри фармони CFE иҷро "
+"намоед."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"Агар шумо хоҳед, ки ҳангоми ҳар як оғози кор роҳандозии худкор иҷро шавад, "
+"шумо метавонед ба ғайр аз тағйирёбандаҳои дар боло номбаршуда тағйирёбандаи "
+"зеринро таъин намоед:"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid "No boot loader installed"
+msgstr "Ягон худроҳандозӣ насб нашудааст"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid ""
+"No boot loader has been installed, either because you chose not to or "
+"because your specific architecture doesn't support a boot loader yet."
+msgstr ""
+"Ягон худроҳандозӣ насб нашудааст, чунки шумо инро нахостед, ё ки аз сабаби "
+"он, ки сохтори мушаххаси шумо ҳоло худроҳандозиро дастгирӣ намекунад."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid ""
+"You will need to boot manually with the ${KERNEL} kernel on partition "
+"${BOOT} and ${ROOT} passed as a kernel argument."
+msgstr ""
+"Ба шумо лозим мешавад, ки компютери худро ба таври дастӣ бо ҳастаи ${KERNEL} "
+"дар қисми диски ${BOOT}ва ${ROOT} ҳамчун аргументи ҳаста роҳандозӣ намоед."

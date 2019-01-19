@@ -1,0 +1,62 @@
+prefix=@prefix@
+etcdir=@sysconfdir@
+bindir=${prefix}/bin
+sbindir=${prefix}/sbin
+libdir=${prefix}/lib
+moddir=${libdir}/cdebconf/frontend
+sharedir=${prefix}/share/debconf
+mandir=${prefix}/share/man
+incdir=${prefix}/include/cdebconf
+
+PACKAGE=@PACKAGE@
+CC=@CC@
+CFLAGS=@CFLAGS@ -I.
+CPPFLAGS=@CPPFLAGS@
+LDFLAGS=@LDFLAGS@
+NEWT_CFLAGS=@NEWT_CFLAGS@
+NEWT_LIBS=@NEWT_LIBS@
+GTK_CFLAGS=@GTK_CFLAGS@
+GTK_LIBS=@GTK_LIBS@
+
+TEXTWRAP_LIBS=@TEXTWRAP_LIBS@
+
+FRONTENDS=@FRONTENDS@
+PLUGIN_MODULES=$(addsuffix -plugin-$(PACKAGE).so,$(FRONTENDS))
+
+all: $(PLUGIN_MODULES)
+
+install: $(PLUGIN_MODULES)
+	for p in $(PLUGIN_MODULES); do \
+		install -m755 -d $(DESTDIR)/$(moddir)/$${p%%-*} ; \
+		install -m644 $$p $(DESTDIR)/$(moddir)/$${p%%-*}/$${p#*-} ; \
+	done
+
+text-plugin-$(PACKAGE).so: text-plugin-$(PACKAGE).opic
+	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -shared -o $@ text-plugin-$(PACKAGE).opic
+
+newt-plugin-$(PACKAGE).so: newt-plugin-$(PACKAGE).opic
+	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -shared -o $@ newt-plugin-$(PACKAGE).opic $(NEWT_LIBS) $(TEXTWRAP_LIBS)
+
+gtk-plugin-$(PACKAGE).so: gtk-plugin-$(PACKAGE).opic
+	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -shared -o $@ $^ $(GTK_LIBS)
+
+clean:
+	rm -f $(PLUGIN_MODULES)
+	rm -f *.opic
+
+distclean: clean
+	rm -f config.log config.status
+	rm -f Makefile
+
+newt-%.opic: newt-%.c
+	@echo "Compiling $< to $@"
+	$(CC) $(CPPFLAGS) $(CFLAGS) $(NEWT_CFLAGS) -fPIC -o $@ -c $<
+
+gtk-%.opic: gtk-%.c
+	@echo "Compiling $< to $@"
+	$(CC) $(CPPFLAGS) $(CFLAGS) $(GTK_CFLAGS) -fPIC -o $@ -c $<
+
+%.opic: %.c
+	@echo "Compiling $< to $@"
+	$(CC) $(CPPFLAGS) $(CFLAGS) -fPIC -o $@ -c $<
+

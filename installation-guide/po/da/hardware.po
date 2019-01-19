@@ -1,0 +1,3636 @@
+# Danish translation of hardware.
+# Copyright (C) 2018 Free Software Foundation, Inc.
+# Joe Hansen <joedalton2@yahoo.dk>, 2014, 2015, 2016, 2017, 2018.
+#
+# 32-bit processorer (er anvendt selv om 32-bit-processorer er den korrekte brug)
+# installer -> installationsprogram
+# language -> sprog
+# locale -> sted (lokalitet andet?)
+# locales -> steder (sprogområder)
+# scheme -> plan
+# stateful -> tilstandebærende
+# stateless -> tilstandsfri
+# volume -> diskenhed
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: d-i-manual_hardware\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2017-07-12 09:14+0000\n"
+"PO-Revision-Date: 2018-12-27 21:25+0100\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-xml2pot; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: hardware.xml:5
+#, no-c-format
+msgid "System Requirements"
+msgstr "Systemkrav"
+
+#. Tag: para
+#: hardware.xml:7
+#, no-c-format
+msgid ""
+"This section contains information about what hardware you need to get "
+"started with &debian;. You will also find links to further information about "
+"hardware supported by GNU and &arch-kernel;."
+msgstr ""
+"Dette afsnit indeholder information om det udstyr, du har brug for til at "
+"komme i gang med &debian;. Du kan også finde henvisninger til yderligere "
+"information om udstyr understøttet af GNU og &arch-kernel;."
+
+#. Tag: title
+#: hardware.xml:20
+#, no-c-format
+msgid "Supported Hardware"
+msgstr "Understøttet udstyr"
+
+#. Tag: para
+#: hardware.xml:21
+#, no-c-format
+msgid ""
+"&debian; does not impose hardware requirements beyond the requirements of "
+"the Linux or kFreeBSD kernel and the GNU tool-sets. Therefore, any "
+"architecture or platform to which the Linux or kFreeBSD kernel, libc, "
+"<command>gcc</command>, etc. have been ported, and for which a &debian; port "
+"exists, can run &debian;. Please refer to the Ports pages at <ulink url="
+"\"&url-ports;\"></ulink> for more details on &arch-title; architecture "
+"systems which have been tested with &debian-gnu;."
+msgstr ""
+"&debian; indfører ikke udstyrskrav udover kravene fra Linux- eller kFreeBSD-"
+"kernen og GNU-værktøjssættene. Derfor kan enhver arkitektur eller platform "
+"som Linux- eller kFreeBSD-kernen, libc, <command>gcc</command>, etc. er "
+"blevet porteret til, og for hvem en &debian;-port findes afvikle &debian;. "
+"Se porteringsiderne på  <ulink url=\"&url-ports;\"></ulink> for yderligere "
+"detaljer om &arch-title; arkitektursystemer, som er blevet testet med "
+"&debian-gnu;."
+
+#. Tag: para
+#: hardware.xml:32
+#, no-c-format
+msgid ""
+"Rather than attempting to describe all the different hardware configurations "
+"which are supported for &arch-title;, this section contains general "
+"information and pointers to where additional information can be found."
+msgstr ""
+"Frem for at forsøge at beskrive alle de forskelige udstyrskonfigurationer, "
+"som er understøttet for &arch-title;, dette afsnit indeholder generel "
+"information og henvisninger til hvor yderligere information kan findes."
+
+#. Tag: title
+#: hardware.xml:41
+#, no-c-format
+msgid "Supported Architectures"
+msgstr "Understøttede arkitekturer"
+
+#. Tag: para
+#: hardware.xml:42
+#, no-c-format
+msgid ""
+"&debian; GNU/Linux &release; supports ten major architectures and several "
+"variations of each architecture known as <quote>flavors</quote>."
+msgstr ""
+"&debian; GNU/Linux &release; understøtter 10 væsentlige arkitekturer og "
+"flere variationer af hver arkitektur kendt som <quote>varianter (flavors)</"
+"quote>."
+
+#. Tag: entry
+#: hardware.xml:53
+#, no-c-format
+msgid "Architecture"
+msgstr "Arkitektur"
+
+#. Tag: entry
+#: hardware.xml:53
+#, no-c-format
+msgid "&debian; Designation"
+msgstr "&debian; Designation"
+
+#. Tag: entry
+#: hardware.xml:54
+#, no-c-format
+msgid "Subarchitecture"
+msgstr "Underarkitektur"
+
+#. Tag: entry
+#: hardware.xml:54
+#, no-c-format
+msgid "Flavor"
+msgstr "Variant"
+
+#. Tag: entry
+#: hardware.xml:60
+#, no-c-format
+msgid "Intel x86-based"
+msgstr "Intel x86-baseret"
+
+#. Tag: entry
+#: hardware.xml:61
+#, no-c-format
+msgid "i386"
+msgstr "i386"
+
+#. Tag: entry
+#: hardware.xml:62
+#, no-c-format
+msgid "default x86 machines"
+msgstr "standard for x86-maskiner"
+
+#. Tag: entry
+#: hardware.xml:63
+#, no-c-format
+msgid "default"
+msgstr "standard"
+
+#. Tag: entry
+#: hardware.xml:65
+#, no-c-format
+msgid "Xen PV domains only"
+msgstr "Ḱun Xen PV-domæner"
+
+#. Tag: entry
+#: hardware.xml:66
+#, no-c-format
+msgid "<entry>xen</entry>"
+msgstr "<entry>xen</entry>"
+
+#. Tag: entry
+#: hardware.xml:70
+#, no-c-format
+msgid "AMD64 &amp; Intel 64"
+msgstr "AMD64 &amp; Intel 64"
+
+#. Tag: entry
+#: hardware.xml:71
+#, no-c-format
+msgid "amd64"
+msgstr "amd64"
+
+#. Tag: entry
+#: hardware.xml:77
+#, no-c-format
+msgid "<entry>ARM</entry>"
+msgstr "<entry>ARM</entry>"
+
+#. Tag: entry
+#: hardware.xml:78
+#, no-c-format
+msgid "armel"
+msgstr "armel"
+
+#. Tag: entry
+#: hardware.xml:79
+#, no-c-format
+msgid "Marvell Kirkwood and Orion"
+msgstr "Marvell Kirkwood og Orion"
+
+#. Tag: entry
+#: hardware.xml:80
+#, no-c-format
+msgid "marvell"
+msgstr "marvell"
+
+#. Tag: entry
+#: hardware.xml:84
+#, no-c-format
+msgid "ARM with hardware FPU"
+msgstr "ARM med udstyr FPU"
+
+#. Tag: entry
+#: hardware.xml:85
+#, no-c-format
+msgid "armhf"
+msgstr "armhf"
+
+#. Tag: entry
+#: hardware.xml:86
+#, no-c-format
+msgid "multiplatform"
+msgstr "flerplatform"
+
+#. Tag: entry
+#: hardware.xml:87
+#, no-c-format
+msgid "armmp"
+msgstr "armmp"
+
+#. Tag: entry
+#: hardware.xml:91
+#, no-c-format
+msgid "64bit ARM"
+msgstr "64-bit ARM"
+
+#. Tag: entry
+#: hardware.xml:92
+#, no-c-format
+msgid "arm64"
+msgstr "arm64"
+
+#. Tag: entry
+#: hardware.xml:98
+#, no-c-format
+msgid "32bit MIPS (big-endian)"
+msgstr "32-bit MIPS (big endian)"
+
+#. Tag: entry
+#: hardware.xml:99
+#, no-c-format
+msgid "mips"
+msgstr "mips"
+
+#. Tag: entry
+#: hardware.xml:100 hardware.xml:110 hardware.xml:123
+#, no-c-format
+msgid "<entry>MIPS Malta</entry>"
+msgstr "<entry>MIPS Malta</entry>"
+
+#. Tag: entry
+#: hardware.xml:101 hardware.xml:124
+#, no-c-format
+msgid "4kc-malta"
+msgstr "4kc-malta"
+
+#. Tag: entry
+#: hardware.xml:103 hardware.xml:113 hardware.xml:126
+#, no-c-format
+msgid "<entry>Cavium Octeon</entry>"
+msgstr "<entry>Cavium Octeon</entry>"
+
+#. Tag: entry
+#: hardware.xml:104 hardware.xml:114 hardware.xml:127
+#, no-c-format
+msgid "octeon"
+msgstr "octeon"
+
+#. Tag: entry
+#: hardware.xml:108
+#, no-c-format
+msgid "64bit MIPS (little-endian)"
+msgstr "64-bit MIPS (little endian)"
+
+#. Tag: entry
+#: hardware.xml:109
+#, no-c-format
+msgid "mips64el"
+msgstr "mips64el"
+
+#. Tag: entry
+#: hardware.xml:111
+#, no-c-format
+msgid "5kc-malta"
+msgstr "5kc-malta"
+
+#. Tag: entry
+#: hardware.xml:116 hardware.xml:129
+#, no-c-format
+msgid "<entry>Loongson 3</entry>"
+msgstr "<entry>Loongson 3</entry>"
+
+#. Tag: entry
+#: hardware.xml:117 hardware.xml:130
+#, no-c-format
+msgid "loongson-3"
+msgstr "loongson-3"
+
+#. Tag: entry
+#: hardware.xml:121
+#, no-c-format
+msgid "32bit MIPS (little-endian)"
+msgstr "32-bit MIPS (little endian)"
+
+#. Tag: entry
+#: hardware.xml:122
+#, no-c-format
+msgid "mipsel"
+msgstr "mipsel"
+
+#. Tag: entry
+#: hardware.xml:148
+#, no-c-format
+msgid "Power Systems"
+msgstr "Power Systems"
+
+#. Tag: entry
+#: hardware.xml:149
+#, no-c-format
+msgid "ppc64el"
+msgstr "ppc64el"
+
+#. Tag: entry
+#: hardware.xml:150
+#, no-c-format
+msgid "IBM POWER8 or newer machines"
+msgstr "IBM POWER8 eller nyere maskiner"
+
+#. Tag: entry
+#: hardware.xml:175
+#, no-c-format
+msgid "64bit IBM S/390"
+msgstr "64-bit IBM S/390"
+
+#. Tag: entry
+#: hardware.xml:176
+#, no-c-format
+msgid "s390x"
+msgstr "s390x"
+
+#. Tag: entry
+#: hardware.xml:177
+#, no-c-format
+msgid "IPL from VM-reader and DASD"
+msgstr "IPL fra VM-reader og DASD"
+
+#. Tag: entry
+#: hardware.xml:178
+#, no-c-format
+msgid "generic"
+msgstr "generisk"
+
+#. Tag: para
+#: hardware.xml:185
+#, no-c-format
+msgid ""
+"This document covers installation for the <emphasis>&arch-title;</emphasis> "
+"architecture using the <emphasis>&arch-kernel;</emphasis> kernel. If you are "
+"looking for information on any of the other &debian;-supported architectures "
+"take a look at the <ulink url=\"http://www.debian.org/ports/\">&debian;-"
+"Ports</ulink> pages."
+msgstr ""
+"Dette dokument dækker intallationen for arkitekturen  <emphasis>&arch-title;"
+"</emphasis>, der bruger kernen <emphasis>&arch-kernel;</emphasis>. Hvis du "
+"er på udkig efter information om en af de andre &debian;-understøttede "
+"arkitekturer så tag et kig på siderne om <ulink url=\"http://www.debian.org/"
+"ports/\">&debian;-porteringer</ulink>."
+
+#. Tag: para
+#: hardware.xml:195
+#, no-c-format
+msgid ""
+"This is the first official release of &debian-gnu; for the &arch-title; "
+"architecture. We feel that it has proven itself sufficiently to be released. "
+"However, because it has not had the exposure (and hence testing by users) "
+"that some other architectures have had, you may encounter a few bugs. Use "
+"our <ulink url=\"&url-bts;\">Bug Tracking System</ulink> to report any "
+"problems; make sure to mention the fact that the bug is on the &arch-title; "
+"platform using the <emphasis>&arch-kernel;</emphasis> kernel. It can be "
+"necessary to use the <ulink url=\"&url-list-subscribe;\">debian-&arch-"
+"listname; mailing list</ulink> as well."
+msgstr ""
+"Dette er den første officielle udgivelse af &debian-gnu; for arkitekturen "
+"&arch-title;. Vi har den opfattelse, at den har bevist, at den er klar til "
+"udgivelse. Da den endnu ikke har haft lige så stor udbredelse (og dermed "
+"test fra mange brugere) som nogle arkitekturer, så kan du møde nogle få "
+"fejl. Brug vores <ulink url=\"&url-bts;\">fejlsporingssystem</ulink> til at "
+"rapportere eventuelle problemer; husk at nævne at fejlen er opstået på &arch-"
+"title;-platformen der bruger kernen <emphasis>&arch-kernel;</emphasis>. Det "
+"kan også være nødvendigt at bruge <ulink url=\"&url-list-subscribe;"
+"\">postlisten debian-&arch-listname;</ulink>."
+
+#. Tag: title
+#: hardware.xml:217
+#, no-c-format
+msgid "CPU Support"
+msgstr "CPU-understøttelse"
+
+#. Tag: para
+#: hardware.xml:218
+#, no-c-format
+msgid "Both AMD64 and Intel 64 processors are supported."
+msgstr "Både AMD64- og Intel 64-processorer er understøttet."
+
+#. Tag: title
+#: hardware.xml:242
+#, no-c-format
+msgid "Three different ARM ports"
+msgstr "Tre forskellige ARM-porte"
+
+#. Tag: para
+#: hardware.xml:244
+#, no-c-format
+msgid ""
+"The ARM architecture has evolved over time and modern ARM processors provide "
+"features which are not available in older models. &debian; therefore "
+"provides three ARM ports to give the best support for a very wide range of "
+"different machines:"
+msgstr ""
+"ARM-arkitekturen har udviklet sig over tid og moderne ARM-processorer "
+"tilbyder funktioner som er tilgængelige i ældre modeller. &debian; tilbyder "
+"derfor tre ARM-porte så du har den bedste understøttelse for en bred vifte "
+"af forskellige maskiner:"
+
+#. Tag: para
+#: hardware.xml:250
+#, no-c-format
+msgid ""
+"&debian;/armel targets older 32-bit ARM processors without support for a "
+"hardware floating point unit (FPU),"
+msgstr ""
+"&debian;/armel er til ældre 32-bit ARM-processorer uden understøttelse for "
+"en udstyrs-FPU (loating point unit),"
+
+#. Tag: para
+#: hardware.xml:254
+#, no-c-format
+msgid ""
+"&debian;/armhf works only on newer 32-bit ARM processors which implement at "
+"least the ARMv7 architecture with version 3 of the ARM vector floating point "
+"specification (VFPv3). It makes use of the extended features and performance "
+"enhancements available on these models."
+msgstr ""
+"&debian;/armhf fungerer kun på nyere 32-bit ARM-processorer, som "
+"implementerer mindst ARMv7-arkitekturen med version 3 af ARM vector floating "
+"point-specifikationen (VFPv3). Den gør brug af de udvidede funktioner og "
+"ydelsesforbedringer tilgængelige på disse modeller."
+
+#. Tag: para
+#: hardware.xml:261
+#, no-c-format
+msgid ""
+"&debian;/arm64 works on 64-bit ARM processors which implement at least the "
+"ARMv8 architecture."
+msgstr ""
+"&debian;/arm64 fungerer på 64-bit ARM-processorer, der som minimum "
+"implementerer ARMv8-arkitekturen."
+
+#. Tag: para
+#: hardware.xml:268
+#, no-c-format
+msgid ""
+"Technically, all currently available ARM CPUs can be run in either endian "
+"mode (big or little), but in practice the vast majority use little-endian "
+"mode. All of &debian;/arm64, &debian;/armhf and &debian;/armel support only "
+"little-endian systems."
+msgstr ""
+"Teknisk kan alle nuværende ARM CPU'er køre enten i endian-tilstand (big "
+"eller little), men i praksis bruger hovedparten little-endian-tilstand. "
+"&debian;/arm64, &debian;/armhf og &debian;/armel understøtter kun little-"
+"endian-systemer."
+
+#. Tag: title
+#: hardware.xml:277
+#, no-c-format
+msgid "Variations in ARM CPU designs and support complexity"
+msgstr "Variationer i ARM CPU-design og understøttelseskompleksitet"
+
+#. Tag: para
+#: hardware.xml:279
+#, no-c-format
+msgid ""
+"ARM systems are much more heterogeneous than those based on the i386/amd64-"
+"based PC architecture, so the support situation can be much more complicated."
+msgstr ""
+"ARM-systemer er meget mere heterogene end dem baseret på den i386/amd64-"
+"baserede pc-arkitektur, så undestøttelsessituationen kan være meget mere "
+"kompliceret."
+
+#. Tag: para
+#: hardware.xml:285
+#, no-c-format
+msgid ""
+"The ARM architecture is used mainly in so-called <quote>system-on-chip</"
+"quote> (SoC) designs. These SoCs are designed by many different companies "
+"with vastly varying hardware components even for the very basic "
+"functionality required to bring the system up. System firmware interfaces "
+"have been increasingly standardised over time, but especially on older "
+"hardware firmware/boot interfaces vary a great deal, so on these systems the "
+"Linux kernel has to take care of many system-specific low-level issues which "
+"would be handled by the mainboard's BIOS in the PC world."
+msgstr ""
+"ARM-arkitekturen bruges hovedsagelig i såkaldte <quote>systems-on-chip</"
+"quote> (SOC'er). Disse SOC'er er designet af mange forskellige firmaer med "
+"mange og varierende udstyrskomponeneter selv for den meget grundlæggende "
+"funktionalitet krævet for at få systemet i gang. Systemernes "
+"firmwaregrænseflader er i stadig stigende grad blevet standardiseret over "
+"tid, men specielt på ældre udstyr kan firmware/boot-grænseflader varierer "
+"meget, så på disse systemer skal Linuxkernen håndtere mange systemspecifikke "
+"problemstillinger på lavt niveau, som i pc-verdenen ville blive håndteret af "
+"bundkortets BIOS."
+
+#. Tag: para
+#: hardware.xml:297
+#, no-c-format
+msgid ""
+"At the beginning of the ARM support in the Linux kernel, the hardware "
+"variety resulted in the requirement of having a separate kernel for each ARM "
+"system in contrast to the <quote>one-fits-all</quote> kernel for PC systems. "
+"As this approach does not scale to a large number of different systems, work "
+"was done to allow booting with a single ARM kernel that can run on different "
+"ARM systems. Support for newer ARM systems is now implemented in a way that "
+"allows the use of such a multiplatform kernel, but for several older systems "
+"a separate specific kernel is still required. Because of this, the standard "
+"&debian; distribution only supports installation on a selected number of "
+"such older ARM systems, alongside the newer systems which are supported by "
+"the ARM multiplatform kernels (called <quote>armmp</quote>) in &debian;/"
+"armhf."
+msgstr ""
+"I begyndelsen af ARM-understøttelsen i Linux-kernen medførte "
+"udstyrsvariationen i kravet om at have en separat kerne for hvert ARM-system "
+"i kontrast til <quote>en passer alle</quote>-kernen for pc-systemer. Da "
+"denne fremgangsmåde ikke skalerer til et stort antal forskellige systemer, "
+"er arbejde blevet påbegyndt for at tilbyde en enkel ARM-kerne, som kan "
+"afvikles på forskellige ARM-systemer. Understøttelse for nyere ARM-systemer "
+"bliver nu implementeret på en måde, som giver mulighed for en "
+"flerplatformskerne, men for flere ældre systemer er en separat og specifik "
+"kerne stadig nødvendig. Derfor understøtter standarddistributionen for "
+"&debian; kun installation på et udvalgt antal ældre ARM-systemer udover de "
+"nyeste systemer, som er understøttet af ARM-flerplatformskernerne (navngivet "
+"<quote>armmp</quote>) i &debian;/armhf."
+
+#. Tag: para
+#: hardware.xml:313
+#, no-c-format
+msgid ""
+"The ARM architecture is used mainly in so-called <quote>system-on-chip</"
+"quote> (SoC) designs. These SoCs are designed by many different companies, "
+"often with vastly varying hardware components even for the very basic "
+"functionality required to bring the system up. Older versions of the ARM "
+"architecture have seen massive differences from one SoC to the next, but "
+"ARMv8 (arm64) is much more standardised and so is easier for the Linux "
+"kernel and other software to support."
+msgstr ""
+"ARM-arkitekturen bruges hovedsagelig i såkaldte <quote>systems-on-chip</"
+"quote> (SOC'er). Disse SOC'er er designet af mange forskellige firmaer med "
+"mange og varierende udstyrskomponenter selv for den meget grundlæggende "
+"funktionalitet krævet for at få systemet i gang. Ældre versioner af ARM-"
+"arkitekturen har oplevet massive forskelle fra en SoC til den næste, men "
+"ARMv8 (arm64) er meget mere standardiseret og er derfor nemmere at "
+"understøtte for Linuxkernen og andre programmer."
+
+#. Tag: para
+#: hardware.xml:324
+#, no-c-format
+msgid ""
+"Server versions of ARMv8 hardware are typically configured using the Unified "
+"Extensible Firmware Interface (UEFI) and Advanced Configuration and Power "
+"Interface (ACPI) standards. These two provide common, device-independent "
+"ways to boot and configure computer hardware. They are also common in the "
+"x86 PC world."
+msgstr ""
+"Serverversioner af ARMv8-arkitekturen konfigureres typisk via Unified "
+"Extensible Firmware Interface (UEFI) og Advanced Configuration and Power "
+"Interface-standarderne (ACPI). Disse to tilbyder fælles, enhedsuafhængige "
+"måder at starte op og konfigurere computerudstyr. De er også udbredt i x86 "
+"pc-verdenen."
+
+#. Tag: title
+#: hardware.xml:334
+#, no-c-format
+msgid "Platforms supported by Debian/arm64"
+msgstr "Platforme understøttet af Debian/arm64"
+
+#. Tag: para
+#: hardware.xml:336
+#, no-c-format
+msgid ""
+"Arm64/AArch64/ARMv8 hardware became available quite late in the &debian; "
+"&releasename-cap; release cycle so not many platforms had support merged in "
+"the mainline kernel version by the time of this release; this is the main "
+"requirement to have &d-i; working on them. The following platforms are known "
+"to be supported by &debian;/arm64 in this release. There is only one kernel "
+"image, which supports all the listed platforms."
+msgstr ""
+"Arm64/AArch64/ARMv8-udstyr blev tilgængelig ret sent i udgivelsescyklussen "
+"for &debian; &releasename-cap; så få platforme have understøttelse i "
+"hovedudgivelsens kerneversion på tidspunktet for udgivelsen; dette er det "
+"vigtigste krav for at &d-i; fungerer på dem. De følgende platforme vides at "
+"være understøttet af &debian;/arm64 i denne udgivelse. Der er kun et "
+"kerneaftryk, som understøtter alle de angivne platforme."
+
+#. Tag: term
+#: hardware.xml:348
+#, no-c-format
+msgid "Applied Micro (APM) Mustang/X-Gene"
+msgstr "Applied Micro (APM) Mustang/X-Gene"
+
+#. Tag: para
+#: hardware.xml:350
+#, no-c-format
+msgid ""
+"The APM Mustang was the first Linux-capable ARMv8 system available. It uses "
+"the X-gene SoC, which has since also been used in other machines. It is an 8-"
+"core CPU, with ethernet, USB and serial. A common form-factor looks just "
+"like a desktop PC box, but many other versions are expected in the future. "
+"Most of the hardware is supported in the mainline kernel, but at this point "
+"USB support is lacking in the &releasename-cap; kernel."
+msgstr ""
+"ARM Mustang var det første Linux-aktiverede ARMv8-system tilgængeligt. Det "
+"bruger X-gene SoC, som også siden er blevet brugt i andre maskiner. Det er "
+"en 8-kerne cpu, med ethernet, USB og seriel. En normal formfaktor ligner en "
+"skrivebords-pc-boks, men mange andre versioner forventes i fremtiden. Det "
+"meste af udstyret er understøttet i hovedlinjens kerne, men mangler på dette "
+"tidpsunkt USB-understøttelse i kernen for &releasename-cap;."
+
+#. Tag: term
+#: hardware.xml:364
+#, no-c-format
+msgid "ARM Juno Development Platform"
+msgstr "ARM Juno Development Platform"
+
+#. Tag: para
+#: hardware.xml:366
+#, no-c-format
+msgid ""
+"Juno is a capable development board with a 6-core (2xA57, 4xA53) ARMv8-A "
+"800Mhz CPU, Mali (T624) graphics, 8GB DDR3 RAM, Ethernet, USB, Serial. It "
+"was designed for system bring-up and power testing so is neither small nor "
+"cheap, but was one of the first boards available. All the on-board hardware "
+"is supported in the mainline kernel and in &releasename-cap;."
+msgstr ""
+"Juno er et godt udviklingsbundkort med en 6-kerne (2xA57, 4xA53) ARMv8-A "
+"800Mhz CPU, Mali (T624) grafik, 8GB DDR3 RAM, Ethernet, USB, Serial. Det "
+"blev designet for systemopstart og funktionalitetstest så er hverken lille "
+"eller billig, men var et af de første bundkort tilgængelige. Alt indbygget "
+"udstyr er understøttet i hovedlinjens kerne og i &releasename-cap;."
+
+#. Tag: para
+#: hardware.xml:380
+#, no-c-format
+msgid ""
+"When using &d-i; on non-UEFI systems, you may have to manually make the "
+"system bootable at the end of the installation, e.g. by running the required "
+"commands in a shell started from within &d-i;. flash-kernel knows how to set "
+"up an X-Gene system booting with U-Boot."
+msgstr ""
+"Når du bruger &d-i; på ikke-UEFI-systemer, så skal du manuelt gøre systemet "
+"opstartsbart i slutningen af installationen, f.eks. ved at køre de krævede "
+"kommandoer i en skal startet inden fra &d-i;. Flash-kernel ved hvordan et X-"
+"Gene-system skal sættes op til start med U-Boot."
+
+#. Tag: title
+#: hardware.xml:388
+#, no-c-format
+msgid "Other platforms"
+msgstr "Andre platforme"
+
+#. Tag: para
+#: hardware.xml:389
+#, no-c-format
+msgid ""
+"The multiplatform support in the arm64 Linux kernel may also allow running "
+"&d-i; on arm64 systems not explicitly listed above. So long as the kernel "
+"used by &d-i; has support for the target system's components, and a device-"
+"tree file for that target is available, a new target system may work just "
+"fine. In these cases, the installer can usually provide a working "
+"installation, and so long as UEFI is in use, it should be able to make the "
+"system bootable as well. If UEFI is not used you may also need to perform "
+"some manual configuration steps to make the system bootable."
+msgstr ""
+"Flerplatformsunderstøttelsen i arm64-Linuxkernen kan også afvikle &d-i; på "
+"arm64-systemer som ikke eksplicit er anført ovenfor så længe, at kernen "
+"brugt af &d-i; har understøttelse for målsystemets komponenter og en "
+"enhedstræfil for målet er tilgængelig. I disse tilfælde kan "
+"installationsprogrammet normalt tilbyde en fungerende installation, og så "
+"længe at UEFI er i brug, så bør systemet også kunne startes op. Hvis UEFI "
+"ikke bruges, så skal du måske også udføre nogle manuelle konfigurationstrin "
+"for at systemet kan starte op."
+
+#. Tag: title
+#: hardware.xml:405
+#, no-c-format
+msgid "Platforms supported by Debian/armhf"
+msgstr "Platforme understøttet af Debian/armhf"
+
+#. Tag: para
+#: hardware.xml:407
+#, no-c-format
+msgid ""
+"The following systems are known to work with &debian;/armhf using the "
+"multiplatform (armmp) kernel:"
+msgstr ""
+"De følgende systemer er kendt for at fungere med &debian;/armhf via "
+"flerplatformskernen (armmp):"
+
+#. Tag: term
+#: hardware.xml:414
+#, no-c-format
+msgid "Freescale MX53 Quick Start Board (MX53 LOCO Board)"
+msgstr "Freescale MX53 Quick Start Board (MX53 LOCO Board)"
+
+#. Tag: para
+#: hardware.xml:416
+#, no-c-format
+msgid "The IMX53QSB is a development board based on the i.MX53 SoC."
+msgstr "IMX53QSB er et udviklingskort baseret på i.MX53 SoC."
+
+#. Tag: term
+#: hardware.xml:423
+#, no-c-format
+msgid "Versatile Express"
+msgstr "Versatile Express"
+
+#. Tag: para
+#: hardware.xml:425
+#, no-c-format
+msgid ""
+"The Versatile Express is a development board series from ARM consisting of a "
+"baseboard which can be equipped with various CPU daughter boards."
+msgstr ""
+"Versatile Express er en serie udviklingskort fra ARM, der består af et "
+"basisbundkort, som kan udstyres med diverse CPU-datterbundkort."
+
+#. Tag: term
+#: hardware.xml:434
+#, no-c-format
+msgid "Certain Allwinner sunXi-based development boards and embedded systems"
+msgstr ""
+"Bestemte Allwinner sunXi-baserede udviklingskort og indlejrede systemer"
+
+#. Tag: para
+#: hardware.xml:437
+#, no-c-format
+msgid ""
+"The armmp kernel supports several development boards and embedded systems "
+"based on the Allwinner A10 (architecture codename <quote>sun4i</quote>), "
+"A10s/A13 (architecture codename <quote>sun5i</quote>), A20 (architecture "
+"codename <quote>sun7i</quote>), A31/A31s (architecture codename "
+"<quote>sun6i</quote>) and A23/A33 (part of the <quote>sun8i</quote> family) "
+"SoCs. Full installer support (including provision of ready-made SD card "
+"images with the installer) is currently available for the following sunXi-"
+"based systems:"
+msgstr ""
+"Armmp-kernen understøtter flere udviklingskort og indlejrede systemer "
+"baseret på Allwinner A10 (arkitekturkodenavn <quote>sun4i</quote>), A10s/A13 "
+"(arkitekturkodenavn <quote>sun5i</quote>), A20 (arkitekturkodenavn "
+"<quote>sun7i</quote>), A31/A31s (arkitekturkodenavn <quote>sun6i</quote>) og "
+"A23/A33 (del af familien <quote>sun8i</quote>) SoC'er. Fuld "
+"installationsunderstøttelse (inklusive provision af klargjorte SD-kortaftryk "
+"med installationsprogrammet) er i øjeblikket tilgængelig for de følgende "
+"sunXi-baserede systemer:"
+
+#. Tag: para
+#: hardware.xml:451
+#, no-c-format
+msgid "Cubietech Cubieboard 1 + 2 / Cubietruck"
+msgstr "Cubietech Cubieboard 1 + 2 / Cubietruck"
+
+#. Tag: para
+#: hardware.xml:454
+#, no-c-format
+msgid "LeMaker Banana Pi and Banana Pro"
+msgstr "LeMaker Banana Pi og Banana Pro"
+
+#. Tag: para
+#: hardware.xml:457
+#, no-c-format
+msgid "LinkSprite pcDuino and pcDuino3"
+msgstr "LinkSprite pcDuino og pcDuino3"
+
+#. Tag: para
+#: hardware.xml:460
+#, no-c-format
+msgid ""
+"Olimex A10-Olinuxino-LIME / A20-Olinuxino-LIME / A20-Olinuxino-LIME2 / A20-"
+"Olinuxino Micro / A20-SOM-EVB"
+msgstr ""
+"Olimex A10-Olinuxino-LIME / A20-Olinuxino-LIME / A20-Olinuxino-LIME2 / A20-"
+"Olinuxino Micro / A20-SOM-EVB"
+
+#. Tag: para
+#: hardware.xml:464
+#, no-c-format
+msgid "Xunlong OrangePi Plus"
+msgstr "Xunlong OrangePi Plus"
+
+#. Tag: para
+#: hardware.xml:470
+#, no-c-format
+msgid ""
+"System support for Allwinner sunXi-based devices is limited to drivers and "
+"device-tree information available in the mainline Linux kernel. Vendor-"
+"specific kernel trees (such as the Allwinner SDK kernels) and the android-"
+"derived linux-sunxi.org kernel 3.4 series are not supported by &debian;."
+msgstr ""
+"Systemunderstøttelse for Allwinner sunXi-baserede enheder er begrænset til "
+"drivere og enhedstræ-information tilgængelig i hovedkernen for Linux. "
+"Leverandørspecifikke kernetræer (såsom Allwinner SDK-kerner) og "
+"Androidafledte linux-sunxi.org 3.4-kerneserie er ikke understøttet af "
+"&debian;."
+
+#. Tag: para
+#: hardware.xml:478
+#, no-c-format
+msgid ""
+"The mainline Linux kernel generally supports serial console, ethernet, SATA, "
+"USB and MMC/SD-cards on Allwinner A10, A10s/A13, A20, A23/A33 and A31/A31s "
+"SoCs. The level of support for local display (HDMI/VGA/LCD) and audio "
+"hardware varies between individual systems. For most systems, the kernel "
+"doesn't have native graphics drivers but instead uses the <quote>simplefb</"
+"quote> infrastructure in which the bootloader initializes the display and "
+"the kernel just re-uses the pre-initialized framebuffer. This generally "
+"works reasonably well, although it results in certain limitations (the "
+"display resolution cannot be changed on the fly and display powermanagement "
+"is not possible)."
+msgstr ""
+"Hovedlinjen for Linuxkernen understøtter seriel konsol, ethernet, SATA, USB "
+"og MMC/SD-kort på Allwinner A10, A10s/A13, A20, A23/A33 og A31/A31s SOC'er. "
+"Niveauet for understøttelse af lokale skærme (HDMI/VGA/LCD) og lydudstyr "
+"varierer mellem individuelle systemer. For de fleste systemer har kernen "
+"ikke medfølgende grafikdrivere men bruger i stedet for infrastrukturen "
+"<quote>simplefb</quote> hvori opstartsindlæseren initialiserer skærmen og "
+"kernen genbruger bare den præigangsatte framebuffer. Dette fungerer generelt "
+"okay, selvom det medfører bestemte begrænsninger (skærmopløsningen kan ikke "
+"ændres løbende og strømstyring af skærmen er ikke mulig)."
+
+#. Tag: para
+#: hardware.xml:493
+#, no-c-format
+msgid ""
+"Onboard flash memory intended to be used as a mass storage device generally "
+"exists in two basic variants on sunXi-based systems: raw NAND flash and eMMC "
+"flash. Most older sunXi-based boards with onboard flash storage use raw NAND "
+"flash for which support is not generally available in the mainline kernel "
+"and therefore also not in Debian. A number of newer systems use eMMC flash "
+"instead of raw NAND flash. An eMMC flash chip basically appears as a fast, "
+"non-removable SD card and is supported in the same way as a regular SD card."
+msgstr ""
+"Indbygget flashhukommelse lavet for brug som en masselagerenhed findes "
+"generelt i to grundlæggende varianter på sunXi-baserede systemer; rå NAND-"
+"flash og eMMC-flash. De fleste ældre sunXi-baserede bundkort med indbygget "
+"flashlager bruger rå NAND-flash hvor understøttelse generelt ikke er "
+"tilgængelig i hovedkernen og derfor heller ikke i Debian. Et antal nyere "
+"systemer bruger eMMC-flash i stedet for rå NAND-flash. En eMMC-flashchip "
+"fremstår grundlæggende som et hurtigt, ikkeflytbart SD-kort og er "
+"understøttet på den samme måde som et normalt SD-kort."
+
+#. Tag: para
+#: hardware.xml:506
+#, no-c-format
+msgid ""
+"The installer includes basic support for a number of sunXi-based systems not "
+"listed above, but it is largely untested on those systems as the &debian; "
+"project doesn't have access to the corresponding hardware. No pre-built SD "
+"card images with the installer are provided for those systems. Development "
+"boards with such limited support include:"
+msgstr ""
+"Installationsprogrammet indeholder grundlæggende understøttelse for et antal "
+"sunXi-baserede systemer, som ikke er vist ovenfor, men er ikke rigtig testet "
+"på disse systemer, da &debian;-projektet ikke har adgang til det tilsvarende "
+"udstyr. Ingen præbyggede SD-kortaftryk med installationsprogrammet laves for "
+"disse systemer. Udviklingsbundkort med sådan begrænset understøttelse "
+"inkluderer:"
+
+#. Tag: para
+#: hardware.xml:515
+#, no-c-format
+msgid "Olimex A10s-Olinuxino Micro / A13-Olinuxino / A13-Olinuxino Micro"
+msgstr "Olimex A10s-Olinuxino Micro / A13-Olinuxino / A13-Olinuxino Micro"
+
+#. Tag: para
+#: hardware.xml:519
+#, no-c-format
+msgid "Sinovoip BPI-M2 (A31s-based)"
+msgstr "Sinovoip BPI-M2 (A31s-baseret)"
+
+#. Tag: para
+#: hardware.xml:522
+#, no-c-format
+msgid "Xunlong Orange Pi (A20-based) / Orange Pi Mini (A20-based)"
+msgstr "Xunlong Orange Pi (A20-baseret) / Orange Pi Mini (A20-baseret)"
+
+#. Tag: para
+#: hardware.xml:527
+#, no-c-format
+msgid ""
+"In addition to the SoCs and systems listed above, the installer has very "
+"limited support for the Allwinner H3 SoC and a number of boards based on it. "
+"Mainline kernel support for the H3 is still largely work in progress at the "
+"time of the Debian 9 release freeze, so the installer only supports serial "
+"console, MMC/SD and the USB host controller on H3-based systems. There is no "
+"driver for the on-board ethernet port of the H3 yet, so networking is only "
+"possible with a USB ethernet adaptor or a USB wifi dongle. Systems based on "
+"the H3 for which such very basic installer support is available include:"
+msgstr ""
+"Udover SoC'erne og systemerne vist ovenfor, så har installationsprogrammet "
+"meget begrænset understøttelse for Allwinner H3 SoC og et antal bundkort "
+"baseret på denne. Hovedkernens understøttelse for H3'en er stadig under "
+"udarbejdelse på tidspunktet for Debian 9-udgivelsen, så "
+"installationsprogrammet understøtter kun seriel konsol, MMC/SD og USB-"
+"værtscontrolleren på H3-baserede systemer. Der er ingen driver for den "
+"indbyggede ethernetport for H3 endnu, så netværk er kun muligt med en USB-"
+"ethernetadaptor eller en USB wifi-dongle. Systemer baseret på H3'en hvor en "
+"sådan meget primitiv installationsprogramunderstøttelse er tilgængelig "
+"inkluderer:"
+
+#. Tag: para
+#: hardware.xml:540
+#, no-c-format
+msgid "FriendlyARM NanoPi NEO"
+msgstr "FriendlyARM NanoPi NEO"
+
+#. Tag: para
+#: hardware.xml:543
+#, no-c-format
+msgid ""
+"Xunlong Orange Pi Lite / Orange Pi One / Orange Pi PC / Orange Pi PC Plus / "
+"Orange Pi Plus / Orange Pi Plus 2E / Orange Pi 2"
+msgstr ""
+"Xunlong Orange Pi Lite / Orange Pi One / Orange Pi PC / Orange Pi PC Plus / "
+"Orange Pi Plus / Orange Pi Plus 2E / Orange Pi 2"
+
+#. Tag: term
+#: hardware.xml:554
+#, no-c-format
+msgid "NVIDIA Jetson TK1"
+msgstr "NVIDIA Jetson TK1"
+
+#. Tag: para
+#: hardware.xml:556
+#, no-c-format
+msgid ""
+"The NVIDIA Jetson TK1 is a developer board based on the Tegra K1 chip (also "
+"known as Tegra 124). The Tegra K1 features a quad-core 32-bit ARM Cortex-A15 "
+"CPU and Kepler GPU (GK20A) with 192 CUDA cores. Other systems based on the "
+"Tegra 124 may work, too."
+msgstr ""
+"The NVIDIA Jetson TK1 er et udvikler bundkort baseret på Tegra K1-chippen "
+"(også kendt som Tegra 124). Tegra K1 har en quad-kerne 32-bit ARM Cortex-A15 "
+"CPU og Kepler GPU (GK20A) med 192 CUDA-kerner. Andre systemer baseret på "
+"Tegra 124 vil måske også virke."
+
+#. Tag: term
+#: hardware.xml:567
+#, no-c-format
+msgid "Seagate Personal Cloud and Seagate NAS"
+msgstr "Seagate Personal Cloud og Seagate NAS"
+
+#. Tag: para
+#: hardware.xml:569
+#, no-c-format
+msgid ""
+"The Seagate Personal Cloud and Seagate NAS are NAS devices based on "
+"Marvell's Armada 370 platform. Debian supports the Personal Cloud (SRN21C), "
+"Personal Cloud 2-Bay (SRN22C), Seagate NAS 2-Bay (SRPD20) and Seagate NAS 4-"
+"Bay (SRPD40)."
+msgstr ""
+"Seagate Personal Cloud og Seagate NAS er NAS-enheder baseret på Marvells "
+"Armada 370-platform. Debian understøtter Personal Cloud (SRN21C), Personal "
+"Cloud 2-Bay (SRN22C), Seagate NAS 2-Bay (SRPD20) og Seagate NAS 4-Bay "
+"(SRPD40)."
+
+#. Tag: term
+#: hardware.xml:579
+#, no-c-format
+msgid "SolidRun Cubox-i2eX / Cubox-i4Pro"
+msgstr "SolidRun Cubox-i2eX / Cubox-i4Pro"
+
+#. Tag: para
+#: hardware.xml:581
+#, no-c-format
+msgid ""
+"The Cubox-i series is a set of small, cubical-shaped systems based on the "
+"Freescale i.MX6 SoC family. System support for the Cubox-i series is limited "
+"to drivers and device-tree information available in the mainline Linux "
+"kernel; the Freescale 3.0 kernel series for the Cubox-i is not supported by "
+"&debian;. Available drivers in the mainline kernel include serial console, "
+"ethernet, USB, MMC/SD-card and display support over HDMI (console and X11). "
+"In addition to that, the eSATA port on the Cubox-i4Pro is supported."
+msgstr ""
+"Cubox-i-serien er et sæt af små, kubisk-formede systemer baseret på "
+"Freescale i.MX6 SoC-familien. Systemunderstøttelse for Cubox-i-serien er "
+"begrænset til drivere og information om enhedstræet tilgængelig i "
+"hovedlinjen af Linuxkernen; Freescale 3.0-kerneserien for Cubox-i er ikke "
+"understøttet af &debian;. Tilgængelige drivere i kernen i hovedlinjen "
+"inkluderer seriel konsol, ethernet, USB, MMC/SD-kort og skærmunderstøttelse "
+"over HDMI (konsol og X11). Derudover er eSATA-porten på Cubox-i4Pro "
+"understøttet."
+
+#. Tag: term
+#: hardware.xml:596
+#, no-c-format
+msgid "Wandboard"
+msgstr "Wandboard"
+
+#. Tag: para
+#: hardware.xml:598
+#, no-c-format
+msgid ""
+"The Wandboard Quad, Dual and Solo are development boards based on the "
+"Freescale i.MX6 Quad SoC. System support is limited to drivers and device-"
+"tree information available in the mainline Linux kernel; the wandboard-"
+"specific 3.0 and 3.10 kernel series from wandboard.org are not supported by "
+"&debian;. The mainline kernel includes driver support for serial console, "
+"display via HDMI (console and X11), ethernet, USB, MMC/SD, SATA (Quad only) "
+"and analog audio. Support for the other audio options (S/PDIF, HDMI-Audio) "
+"and for the onboard WLAN/Bluetooth module is untested or not available in "
+"&debian; 9."
+msgstr ""
+"Wandboard Quad, Dual og Solo er udviklingskort baseret på Freescale i.MX6 "
+"Quad SoC. Systemunderstøttelsen er begrænset til drivere og "
+"enhedstræinformation i Linuxkernens hovedlinje; den wandboard-specifikke 3.0 "
+"og 3.10 kerneserie fra wandboard.org er ikke understøttet af &debian;. "
+"Hovedlinjens kerne inkluderer driverunderstøttelse for seriel konsol, skærm "
+"via HDMI (konsol og X11), ethernet, USB, MMC/SD og SATA (kun Quad). "
+"Understøttelse for de indbyggede lydindstillinger (analog, S/PDIF, HDMI-"
+"Audio) og for det indbyggede WLAN/Bluetooth-modul er ikke testet og "
+"utilgængelig i &debian; 9."
+
+#. Tag: para
+#: hardware.xml:616
+#, no-c-format
+msgid ""
+"Generally, the ARM multiplatform support in the Linux kernel allows running "
+"&d-i; on armhf systems not explicitly listed above, as long as the kernel "
+"used by &d-i; has support for the target system's components and a device-"
+"tree file for the target is available. In these cases, the installer can "
+"usually provide a working installation, but it may not be able to "
+"automatically make the system bootable. Doing that in many cases requires "
+"device-specific information."
+msgstr ""
+"Generelt giver ARM-flerplatformsunderstøttelsen i Linuxkernen mulighed for "
+"at køre &d-i; på armhf-systemer som ikke eksplicit er anført ovenfor så "
+"længe, at kernen brugt af &d-i; har understøttelse for målsystemets "
+"komponenter og en enhedstræfil for målet er tilgængelig. I disse tilfælde "
+"kan installationsprogrammet normalt tilbyde en fungerende installation, men "
+"kan sandsynligvis ikke gøre at systemet automatisk starter op. Dette kræver "
+"i mange tilfælde enhedsspecifik information."
+
+#. Tag: para
+#: hardware.xml:628
+#, no-c-format
+msgid ""
+"When using &d-i; on such systems, you may have to manually make the system "
+"bootable at the end of the installation, e.g. by running the required "
+"commands in a shell started from within &d-i;."
+msgstr ""
+"Når du bruger &d-i; på sådanne systmer, så skal du eventuelt manuelt gøre "
+"systemet opstartsbart i slutningen af installationen, f.eks. ved at køre de "
+"krævede kommandoer i en skal startet inden fra &d-i;."
+
+#. Tag: title
+#: hardware.xml:637
+#, no-c-format
+msgid "Platforms no longer supported by Debian/armhf"
+msgstr "Platforme der ikke længere understøttes af Debian/armhf"
+
+#. Tag: term
+#: hardware.xml:641
+#, no-c-format
+msgid "EfikaMX"
+msgstr "EfikaMX"
+
+#. Tag: para
+#: hardware.xml:642
+#, no-c-format
+msgid ""
+"The EfikaMX platform (Genesi Efika Smartbook and Genesi EfikaMX nettop) was "
+"supported in &debian; 7 with a platform-specific kernel, but is no longer "
+"supported from &debian; 8 onwards. The code required to build the formerly "
+"used platform-specific kernel has been removed from the upstream Linux "
+"kernel source in 2012, so &debian; cannot provide newer builds. Using the "
+"armmp multiplatform kernel on the EfikaMX platform would require device-tree "
+"support for it, which is currently not available."
+msgstr ""
+"EfikaMX-platformen (Genesi Efika Smartbook og Genesi EfikaMX nettop) er "
+"blevet understøttet i &debian; 7 med en platformspecifik kerne, men er ikke "
+"understøttet mere fra og med &debian; 8. Koden krævet for at bygge den "
+"tidligere anvendte platformspecifikke kerne er blevet fjernet fra "
+"Linuxkernens opstrømskilde i 2012, så Debian kan ikke tilbyde nyere "
+"bygninger. Brug af armmp-flerplatformskernen på EfikaMX-platformen ville "
+"kræve enhedstræunderstøttelse for den, hvilket i øjeblikket ikke er "
+"tilgængelig."
+
+#. Tag: title
+#: hardware.xml:660
+#, no-c-format
+msgid "Platforms supported by Debian/armel"
+msgstr "Platforme understøttet af Debian/armel"
+
+#. Tag: para
+#: hardware.xml:662
+#, no-c-format
+msgid ""
+"The following platforms are supported by &debian;/armel; they require "
+"platform-specific kernels."
+msgstr ""
+"De følgende platforme er understøttet af &debian;/armel; de kræver kerner "
+"specifikke for platformen."
+
+#. Tag: term
+#: hardware.xml:670
+#, no-c-format
+msgid "Kirkwood"
+msgstr "Kirkwood"
+
+#. Tag: para
+#: hardware.xml:671
+#, no-c-format
+msgid ""
+"Kirkwood is a system-on-chip (SoC) from Marvell that integrates an ARM CPU, "
+"Ethernet, SATA, USB, and other functionality in one chip. &debian; currently "
+"supports the following Kirkwood based devices:"
+msgstr ""
+"Kirkwood er en system-on-chip (SoC) fra Marvell som integrerer en ARM CPU, "
+"Ethernet, SATA, USB og anden funktionalitet i en chip. &debian; understøtter "
+"i øjeblikket de følgende Kirkwoodbaserede enheder:"
+
+#. Tag: ulink
+#: hardware.xml:679
+#, no-c-format
+msgid ""
+"Plug computers (SheevaPlug, GuruPlug, DreamPlug and Seagate FreeAgent "
+"DockStar)"
+msgstr ""
+"Plugcomputere (SheevaPlug, GuruPlug, DreamPlug og Seagate FreeAgent DockStar)"
+
+#. Tag: para
+#: hardware.xml:682
+#, no-c-format
+msgid ""
+"<ulink url=\"&url-arm-cyrius-qnap-kirkwood;\">QNAP Turbo Station</ulink> "
+"(all TS-11x/TS-12x, HS-210, TS-21x/TS-22x and TS-41x/TS-42x models)"
+msgstr ""
+"<ulink url=\"&url-arm-cyrius-qnap-kirkwood;\">QNAP Turbo Station</ulink> "
+"(alle modellerne TS-11x/TS-12x, HS-210, TS-21x/TS-22x og TS-41x/TS-42x)"
+
+#. Tag: para
+#: hardware.xml:686
+#, no-c-format
+msgid ""
+"LaCie NASes (Network Space v2, Network Space Max v2, Internet Space v2, d2 "
+"Network v2, 2Big Network v2 and 5Big Network v2)"
+msgstr ""
+"LaCie NASes (Network Space v2, Network Space Max v2, Internet Space v2, d2 "
+"Network v2, 2Big Network v2 og 5Big Network v2)"
+
+#. Tag: para
+#: hardware.xml:690
+#, no-c-format
+msgid "OpenRD (OpenRD-Base, OpenRD-Client and OpenRD-Ultimate)"
+msgstr "OpenRD (OpenRD-Base, OpenRD-Client og OpenRD-Ultimate)"
+
+#. Tag: term
+#: hardware.xml:699 hardware.xml:743
+#, no-c-format
+msgid "Orion5x"
+msgstr "Orion5x"
+
+#. Tag: para
+#: hardware.xml:700
+#, no-c-format
+msgid ""
+"Orion is a system-on-chip (SoC) from Marvell that integrates an ARM CPU, "
+"Ethernet, SATA, USB, and other functionality in one chip. There are many "
+"Network Attached Storage (NAS) devices on the market that are based on an "
+"Orion chip. &debian; currently supports the following Orion based devices: "
+"<ulink url=\"&url-arm-cyrius-kuroboxpro;\">Buffalo Kurobox</ulink> and "
+"<ulink url=\"&url-arm-cyrius-mv2120;\">HP mv2120</ulink>."
+msgstr ""
+"Orion er et system på en chip (SoC) fra Marvell, som integrerer en ARM CPU, "
+"Ethernet, SATA, USB og anden funktionalitet i en chip. Der er mange Network "
+"Attached Storage-enheder (NAS) på markedet, som er baseret på en Orion-chip. "
+"&debian; understøtter i øjeblikket de følgende Orion-baserede enheder: "
+"<ulink url=\"&url-arm-cyrius-kuroboxpro;\">Buffalo Kurobox</ulink> og "
+"<ulink url=\"&url-arm-cyrius-mv2120;\">HP mv2120</ulink>."
+
+#. Tag: term
+#: hardware.xml:714
+#, no-c-format
+msgid "Versatile"
+msgstr "Versatile"
+
+#. Tag: para
+#: hardware.xml:715
+#, no-c-format
+msgid ""
+"The Versatile platform is emulated by QEMU and is therefore a nice way to "
+"test and run &debian; on ARM if you don't have real hardware."
+msgstr ""
+"Platformen Versatile emuleres af QEMU og er derfor en god måde at teste og "
+"afvikle &debian; på ARM hvis du ikke har udstyret."
+
+#. Tag: title
+#: hardware.xml:728
+#, no-c-format
+msgid "Platforms and devices no longer supported by Debian/armel"
+msgstr "Platforme og enheder der ikke længere er understøttet af Debian/armel"
+
+#. Tag: term
+#: hardware.xml:732
+#, no-c-format
+msgid "IXP4xx"
+msgstr "IXP4xx"
+
+#. Tag: para
+#: hardware.xml:733
+#, no-c-format
+msgid ""
+"Support for the Intel IXP4xx platform has been dropped in &debian; 9. The "
+"Linksys NSLU2 device is based on IXP4xx and is therefore no longer supported."
+msgstr ""
+"Understøttelse for Intel IXP4xx-platformen er blevet droppet i &debian; 9. "
+"Linksys NSLU2-enheden er baseret på IXP4xx og er derfor ikke længere "
+"understøttet."
+
+#. Tag: para
+#: hardware.xml:744
+#, no-c-format
+msgid ""
+"Support for the D-Link DNS-323 and Conceptronic CH3SNAS devices has been "
+"dropped from the Orion5x platform in &debian; 9. The Linux kernel no longer "
+"fits into the flash on these devices. Other Orion devices, such as Buffalo "
+"Kurobox and HP mv2120, are still supported."
+msgstr ""
+"Understøttelse for enhederne D-Link DNS-323 og Conceptronic CH3SNAS er "
+"blevet droppet fra Orion5x-platformen i &debian; 9. Linuxkernen passer ikke "
+"længere ind i flashen på disse enheder. Andre Orionenheder, såsom Buffalo "
+"Kurobox og HP mv2120, er stadig understøttet."
+
+#. Tag: title
+#: hardware.xml:763 hardware.xml:931 hardware.xml:1374
+#, no-c-format
+msgid "CPU, Main Boards, and Video Support"
+msgstr "Understøttelse af CPU, bundkort og video"
+
+#. Tag: para
+#: hardware.xml:764
+#, no-c-format
+msgid ""
+"Complete information concerning supported peripherals can be found at <ulink "
+"url=\"&url-hardware-howto;\">Linux Hardware Compatibility HOWTO</ulink>. "
+"This section merely outlines the basics."
+msgstr ""
+"Fuldstændig information vedrørende understøttede tilslutningsenheder kan "
+"findes på <ulink url=\"&url-hardware-howto;\">Linux Hardware Compatibility "
+"HOWTO</ulink>. Dette afsnit viser kun de grundlæggende oplysninger."
+
+#. Tag: title
+#: hardware.xml:772 hardware.xml:875
+#, no-c-format
+msgid "<title>CPU</title>"
+msgstr "<title>CPU</title>"
+
+#. Tag: para
+#: hardware.xml:773
+#, no-c-format
+msgid ""
+"Nearly all x86-based (IA-32) processors still in use in personal computers "
+"are supported. This also includes 32-bit AMD and VIA (former Cyrix) "
+"processors, and processors like the Athlon XP and Intel P4 Xeon."
+msgstr ""
+"Næsten alle x86-baserede (IA-32) processorer stadig i brug i personlige "
+"computere er understøttet. Dette inkluderer også 32-bit AMD- og VIA-"
+"processorer (tidligere Cyrix), og processorer såsom Athlon XP og Intel P4 "
+"Xeon."
+
+#. Tag: para
+#: hardware.xml:780
+#, no-c-format
+msgid ""
+"However, &debian; GNU/Linux &releasename; will <emphasis>not</emphasis> run "
+"on 586 (Pentium) or earlier processors."
+msgstr ""
+"Dog vil &debian; GNU/Linux &releasename; <emphasis>ikke</emphasis> kunne "
+"afvikles på 586 (Pentium) eller tidligere processorer."
+
+#. Tag: para
+#: hardware.xml:786
+#, no-c-format
+msgid ""
+"If your system has a 64-bit processor from the AMD64 or Intel 64 families, "
+"you will probably want to use the installer for the amd64 architecture "
+"instead of the installer for the (32-bit) i386 architecture."
+msgstr ""
+"Hvis dit system har en 64-bit processor fra AMD64- eller Intel 64-familien, "
+"så skal du anvende installationsprogramemt for amd64-arkitekturen i stedet "
+"for installationsprogrammet for (32-bit9 i386-arkitekturen."
+
+#. Tag: title
+#: hardware.xml:795
+#, no-c-format
+msgid "I/O Bus"
+msgstr "I/O Bus"
+
+#. Tag: para
+#: hardware.xml:796
+#, no-c-format
+msgid ""
+"The system bus is the part of the motherboard which allows the CPU to "
+"communicate with peripherals such as storage devices. Your computer must use "
+"the PCI, PCIe, or PCI-X bus. Essentially all personal computers sold in "
+"recent years use one of these."
+msgstr ""
+"Systembussen er en del af bundkortet, som giver CPU'en mulighed for at "
+"kommunikere med eksternt udstyr såsom lagerenheder. Din computer skal bruge "
+"en af busserne PCI, PCIe eller PCI-X. Så godt som alle personlige computere "
+"solgt indenfor de senste år bruger en af disse."
+
+#. Tag: title
+#: hardware.xml:813
+#, no-c-format
+msgid "Platforms supported by the &debian; &architecture; port"
+msgstr "Platforme understøttet af &debian; &architecture;-porten"
+
+#. Tag: para
+#: hardware.xml:815
+#, no-c-format
+msgid "&debian; on &arch-title; supports the following platforms:"
+msgstr "&debian; på &arch-title; understøtter de følgende platforme:"
+
+#. Tag: term
+#: hardware.xml:821
+#, no-c-format
+msgid "<term>Cavium Octeon</term>"
+msgstr "<term>Cavium Octeon</term>"
+
+#. Tag: para
+#: hardware.xml:823
+#, no-c-format
+msgid ""
+"Cavium designs a range of 64-bit MIPS Octeon processors which are mainly "
+"used in networking devices. Devices with these processors include the "
+"Ubiquiti EdgeRouter and the Rhino Labs UTM8."
+msgstr ""
+"Cavium designer en række 64-bit MIPS Octeon-processorer, som hovedsagelig "
+"bruges i netværksenheder. Enheder med disse processorer inkluderer Ubiquiti "
+"EdgeRouter og Rhino Labs UTM8."
+
+#. Tag: term
+#: hardware.xml:832
+#, no-c-format
+msgid "<term>Loongson 3</term>"
+msgstr "<term>Loongson 3</term>"
+
+#. Tag: para
+#: hardware.xml:834
+#, no-c-format
+msgid "Devices based on the Loongson 3A and 3B processors are supported."
+msgstr "Enheder baseret på Loongson 3A- og 3B-processorer er understøttet."
+
+#. Tag: term
+#: hardware.xml:842
+#, no-c-format
+msgid "<term>MIPS Malta</term>"
+msgstr "<term>MIPS Malta</term>"
+
+#. Tag: para
+#: hardware.xml:844
+#, no-c-format
+msgid ""
+"This platform is emulated by QEMU and is therefore a nice way to test and "
+"run &debian; on MIPS if you don't have the hardware."
+msgstr ""
+"Denne platform emuleres af QEMU og er derfor en god måde at teste og afvikle "
+"&debian; på MIPS, hvis du ikke har udstyret."
+
+#. Tag: para
+#: hardware.xml:848
+#, no-c-format
+msgid ""
+"There are two Malta kernel flavours: 4kc-malta is built for 32-bit "
+"processors, and 5kc-malta is built for 64-bit processors."
+msgstr ""
+"Der er to varianter af Maltakernen: 4kc-malta er bygget for 32-bit "
+"processorer og 5kc-malta er bygget for 64-bit processorer."
+
+#. Tag: para
+#: hardware.xml:856
+#, no-c-format
+msgid ""
+"In addition, other boards which contain <phrase arch=\"mips;mipsel"
+"\">MIPS32r2 or</phrase> MIPS64r2 based processors should also be able to run "
+"&debian;, however kernels for these processors are not built and the "
+"&debian; installer does not directly support them."
+msgstr ""
+"Derudover bør andre bundkort, som indeholder <phrase arch=\"mips;mipsel"
+"\">MIPS32r2- eller</phrase> MIPS64r2-baserede processorer, også kunne "
+"afvikle &debian;. Kerner for disse to processorer bliver dog ikke bygget og "
+"&debian;-installationsprogrammet understøtter dem ikke direkte."
+
+#. Tag: para
+#: hardware.xml:864
+#, no-c-format
+msgid ""
+"Complete information regarding supported mips/mipsel/mips64el machines can "
+"be found at the <ulink url=\"&url-linux-mips;\">Linux-MIPS homepage</ulink>. "
+"In the following, only the systems supported by the &debian; installer will "
+"be covered. If you are looking for support for other subarchitectures, "
+"please contact the <ulink url=\"&url-list-subscribe;\"> debian-&arch-"
+"listname; mailing list</ulink>."
+msgstr ""
+"Fuldstændig information om understøttede mips/mipsel/mips64el-maskiner kan "
+"findes på <ulink url=\"&url-linux-mips;\">Linux-MIPS-hjemmeside</ulink>. I "
+"det følgende vil kun systemerne  understøttet af &debian;-"
+"installationsprogrammet være dækket. Hvis du er på udkig efter andre "
+"underarkitekturer, så kontakt venligst <ulink url=\"&url-list-subscribe;\"> "
+"debian-&arch-listname;-postlisten</ulink>."
+
+#. Tag: para
+#: hardware.xml:876
+#, no-c-format
+msgid ""
+"Some MIPS machines can be operated in both big and little endian mode. "
+"<phrase arch=\"mips64el;mipsel\"> For little endian MIPS, please read the "
+"documentation for the mipsel and mips64el architectures. </phrase> <phrase "
+"arch=\"mips\"> For big endian MIPS, please read the documentation for the "
+"mips architecture. </phrase>"
+msgstr ""
+"Nogle MIPS-maskiner kan opereres i både big og little endian-tilstand. "
+"<phrase arch=\"mips64el;mipsel\"> For little endian MIPS, læs venligst "
+"dokumentationen for mipsel- og mips64el-arkitekturerne. </phrase> <phrase "
+"arch=\"mips\"> For big endian MIPS, læs venligst dokumentationen for mips-"
+"arkitekturen. </phrase>"
+
+#. Tag: title
+#: hardware.xml:891
+#, no-c-format
+msgid "Platforms no longer supported by the &debian; &architecture; port"
+msgstr ""
+"Platforme der ikke længere understøttes af &debian; &architecture;-porten"
+
+#. Tag: para
+#: hardware.xml:892
+#, no-c-format
+msgid ""
+"Since &debian; Stretch, support for all MIPS processors which do not "
+"implement MIPS32 Release 2 have been dropped. Therefore the following "
+"platforms supported in Jessie are no longer supported:"
+msgstr ""
+"Siden &debian; Stretch er understøttelse for alle MIPS-processorer, som ikke "
+"implementerer MIPS32 Release 2, droppet. De følgende platforme, understøttet "
+"i Jessie, er derfor ikke længere understøttet:"
+
+#. Tag: term
+#: hardware.xml:899
+#, no-c-format
+msgid "Loongson 2E and 2F"
+msgstr "Loongson 2E og 2F"
+
+#. Tag: listitem
+#: hardware.xml:900
+#, no-c-format
+msgid ""
+"These are the older Loongson processors. Devices based on them include the "
+"Fuloong Mini-PC and the Lemote Yeeloong laptop."
+msgstr ""
+"Dette er de ældre Loongsonprocessoreer. Enheder baseret på dem inkluderer "
+"Fuloong Mini-PC og den bærbare Lemote Yeelong."
+
+#. Tag: term
+#: hardware.xml:906
+#, no-c-format
+msgid "SGI IP22"
+msgstr "SGI IP22"
+
+#. Tag: listitem
+#: hardware.xml:907
+#, no-c-format
+msgid "This platform includes the SGI machines Indy, Indigo 2 and Challenge S."
+msgstr "Denne platform inluderer SGI-maskinerne Indy, Indigo 2 og Challenge S."
+
+#. Tag: term
+#: hardware.xml:912
+#, no-c-format
+msgid "SGI IP32"
+msgstr "SGI IP32"
+
+#. Tag: listitem
+#: hardware.xml:913
+#, no-c-format
+msgid "This platform is generally known as SGI O2."
+msgstr "Denne platform er generelt kendt som SGI 02."
+
+#. Tag: term
+#: hardware.xml:916
+#, no-c-format
+msgid "Broadcom BCM91250"
+msgstr "Broadcom BCM91250"
+
+#. Tag: listitem
+#: hardware.xml:917
+#, no-c-format
+msgid ""
+"Development board for Broadcom's SiByte core. Also known by its codename "
+"SWARM."
+msgstr ""
+"Udviklingsbundkort for Broadcoms SiByte-kerne. Også kendt på sit kodenavn "
+"SWARM."
+
+#. Tag: para
+#: hardware.xml:932
+#, no-c-format
+msgid ""
+"For &debian-gnu; &release; only the PMac (Power-Macintosh or PowerMac) and "
+"PreP subarchitectures are supported."
+msgstr ""
+"&debian-gnu; &release; er kun PMac (Power-Macintosh eller PowerMac) og PreP-"
+"underarkitekturer understøttet."
+
+#. Tag: title
+#: hardware.xml:953
+#, no-c-format
+msgid "Kernel Flavours"
+msgstr "Kernevarianter"
+
+#. Tag: para
+#: hardware.xml:955
+#, no-c-format
+msgid ""
+"There are two flavours of the powerpc kernel in &debian;, based on the CPU "
+"type:"
+msgstr ""
+"Der er to varianter af powerpc-kernen i &debian;, baseret på CPU-typen:"
+
+#. Tag: term
+#: hardware.xml:962
+#, no-c-format
+msgid "powerpc"
+msgstr "powerpc"
+
+#. Tag: para
+#: hardware.xml:963
+#, no-c-format
+msgid ""
+"This kernel flavour supports the PowerPC 601, 603, 604, 740, 750, and 7400 "
+"processors. All Apple PowerMac machines up to and including the one marketed "
+"as G4 use one of these processors."
+msgstr ""
+"Denne kernevariant understøtter processorerne PowerPC 601, 603, 604, 740, "
+"750 og 7400. Alle Apple PowerMac-maskiner op til og inklusiv den markedsført "
+"som G4 bruger en af disse processorer."
+
+#. Tag: term
+#: hardware.xml:973
+#, no-c-format
+msgid "powerpc-smp"
+msgstr "powerpc-smp"
+
+#. Tag: para
+#: hardware.xml:974
+#, no-c-format
+msgid "All Apple PowerMac G4 SMP machines."
+msgstr "Alle Apple PowerMac G4 SMP-maskiner."
+
+#. Tag: term
+#: hardware.xml:982
+#, no-c-format
+msgid "power64"
+msgstr "power64"
+
+#. Tag: para
+#: hardware.xml:983
+#, no-c-format
+msgid "The power64 kernel flavour supports the following CPUs:"
+msgstr "Power64-kernevarianten understøtter de følgende cpu'er:"
+
+#. Tag: para
+#: hardware.xml:987
+#, no-c-format
+msgid ""
+"The POWER3 processor is used in older IBM 64-bit server systems: known "
+"models include the IntelliStation POWER Model 265, the pSeries 610 and 640, "
+"and the RS/6000 7044-170, 7043-260, and 7044-270."
+msgstr ""
+"POWER3-processoren bruges i ældre IBM 64-bit serversystemer: kendte modeller "
+"inkluderer IntelliStation POWER Model 265, pSeries 610 og 640 og RS/6000 "
+"7044-170, 7043-260 og 7044-270."
+
+#. Tag: para
+#: hardware.xml:993
+#, no-c-format
+msgid ""
+"The POWER4 processor is used in more recent IBM 64-bit server systems: known "
+"models include the pSeries 615, 630, 650, 655, 670, and 690."
+msgstr ""
+"POWER4-processoren bruges i de seneste IBM 64-bit serversystemer: kendte "
+"modeller inkluderer pSeries 615, 630, 650, 655, 670 og 690."
+
+#. Tag: para
+#: hardware.xml:998
+#, no-c-format
+msgid ""
+"Systems using the PPC970 processor (Apple G5, YDL PowerStation, IBM "
+"Intellistation POWER 185) are also based on the POWER4 architecture, and use "
+"this kernel flavour."
+msgstr ""
+"Systemer der bruger PPC970-procssoren (Apple G5, YDL PowerStation, IBM "
+"Intellistation POWER 185) er også baseret på POWER4-arkitekturen, og bruger "
+"denne kernevariant."
+
+#. Tag: para
+#: hardware.xml:1004
+#, no-c-format
+msgid "Newer IBM systems using POWER5, POWER6, and POWER7 processors."
+msgstr "Nyere IBM-systemer der bruger POWER5-, POWER6- og POWER7-processorer."
+
+#. Tag: title
+#: hardware.xml:1037
+#, no-c-format
+msgid "Power Macintosh (pmac) subarchitecture"
+msgstr "Power Macintosh-underarkitekturer (pmac)"
+
+#. Tag: para
+#: hardware.xml:1039
+#, no-c-format
+msgid ""
+"Apple (and briefly a few other manufacturers &mdash; Power Computing, for "
+"example) made a series of Macintosh computers based on the PowerPC "
+"processor. For purposes of architecture support, they are categorized as "
+"NuBus (not supported by &debian;), OldWorld, and NewWorld."
+msgstr ""
+"Apple (og i kort tid nogle få andre producenter &mdash; Power Computing, for "
+"ekseampel)  lavede en serie Macintosh-computere basreet på PowerPC-"
+"processoren. For formål vedrørende arkitekturunderstøtelse, kategoriseres de "
+"som NuBus (ikke understøttet af &debian;), OldWorld og NewWorld."
+
+#. Tag: para
+#: hardware.xml:1046
+#, no-c-format
+msgid ""
+"OldWorld systems are most Power Macintoshes with a floppy drive and a PCI "
+"bus. Most 603, 603e, 604, and 604e based Power Macintoshes are OldWorld "
+"machines. Those pre-iMac PowerPC models from Apple use a four digit naming "
+"scheme, except for the beige colored G3 systems, which are also OldWorld."
+msgstr ""
+"OldWorld-systemer er mest Power Macintoshes med et diskettedrev og en PCI-"
+"bus. De fleste 603-, 603e-, 604- og 604e-baserede Power Macintosh'er er "
+"OldWorld-maskiner. Disse præ-iMac PowerPC-modeller fra Apple bruger et "
+"fircifret navneskema, undtagen for de beige-farvede G3-systemer, som også er "
+"OldWorld."
+
+#. Tag: para
+#: hardware.xml:1054
+#, no-c-format
+msgid ""
+"The so called NewWorld PowerMacs are any PowerMacs in translucent colored "
+"plastic cases and later models. That includes all iMacs, iBooks, G4 systems, "
+"blue colored G3 systems, and most PowerBooks manufactured in and after 1999. "
+"The NewWorld PowerMacs are also known for using the <quote>ROM in RAM</"
+"quote> system for MacOS, and were manufactured from mid-1998 onwards."
+msgstr ""
+"De såkaldte NewWorld PowerMac'er er alle PowerMac'er i gennemskinnelig "
+"plastik og senere modeller. Det inkluderer alle iMac'er, iBook'er, G4-"
+"systemer, blåfarvede G3-systemer og de fleste PowerBook'er fremstillet i og "
+"efter 1999. NewWorld PowerMac'er er også kendt for at bruge systemet "
+"<quote>ROM in RAM</quote> for MacOS, og de blev produceret fra midten af "
+"1998 og fremad."
+
+#. Tag: para
+#: hardware.xml:1062
+#, no-c-format
+msgid ""
+"Specifications for Apple hardware are available at <ulink url=\"http://www."
+"info.apple.com/support/applespec.html\">AppleSpec</ulink>, and, for older "
+"hardware, <ulink url=\"http://www.info.apple.com/support/applespec.legacy/"
+"index.html\">AppleSpec Legacy</ulink>."
+msgstr ""
+"Specifikationer for Apple-udstyr er tilgængelige på <ulink url=\"http://www."
+"info.apple.com/support/applespec.html\">AppleSpec</ulink>, og, for ældre "
+"udstyr, <ulink url=\"http://www.info.apple.com/support/applespec.legacy/"
+"index.html\">AppleSpec Legacy</ulink>."
+
+#. Tag: entry
+#: hardware.xml:1078 hardware.xml:1213 hardware.xml:1257 hardware.xml:1290
+#, no-c-format
+msgid "Model Name/Number"
+msgstr "Modelnavn/nummer"
+
+#. Tag: entry
+#: hardware.xml:1079
+#, no-c-format
+msgid "Generation"
+msgstr "Generation"
+
+#. Tag: entry
+#: hardware.xml:1085
+#, no-c-format
+msgid "Apple"
+msgstr "Apple"
+
+#. Tag: entry
+#: hardware.xml:1086
+#, no-c-format
+msgid "iMac Bondi Blue, 5 Flavors, Slot Loading"
+msgstr "iMac Bondi Blue, 5 varianter, Slot Loading"
+
+#. Tag: entry
+#: hardware.xml:1087 hardware.xml:1090 hardware.xml:1093 hardware.xml:1096
+#: hardware.xml:1099 hardware.xml:1102 hardware.xml:1105 hardware.xml:1108
+#: hardware.xml:1111 hardware.xml:1114 hardware.xml:1117 hardware.xml:1120
+#: hardware.xml:1123 hardware.xml:1126 hardware.xml:1129 hardware.xml:1132
+#, no-c-format
+msgid "NewWorld"
+msgstr "NewWorld"
+
+#. Tag: entry
+#: hardware.xml:1089
+#, no-c-format
+msgid "iMac Summer 2000, Early 2001"
+msgstr "iMac Summer 2000, tidlig 2001"
+
+#. Tag: entry
+#: hardware.xml:1092
+#, no-c-format
+msgid "iMac G5"
+msgstr "iMac G5"
+
+#. Tag: entry
+#: hardware.xml:1095
+#, no-c-format
+msgid "iBook, iBook SE, iBook Dual USB"
+msgstr "iBook, iBook SE, iBook Dual USB"
+
+#. Tag: entry
+#: hardware.xml:1098
+#, no-c-format
+msgid "iBook2"
+msgstr "iBook2"
+
+#. Tag: entry
+#: hardware.xml:1101
+#, no-c-format
+msgid "iBook G4"
+msgstr "iBook G4"
+
+#. Tag: entry
+#: hardware.xml:1104
+#, no-c-format
+msgid "Power Macintosh Blue and White (B&amp;W) G3"
+msgstr "Power Macintosh blå og hvid (B&amp;W) G3"
+
+#. Tag: entry
+#: hardware.xml:1107
+#, no-c-format
+msgid "Power Macintosh G4 PCI, AGP, Cube"
+msgstr "Power Macintosh G4 PCI, AGP, Cube"
+
+#. Tag: entry
+#: hardware.xml:1110
+#, no-c-format
+msgid "Power Macintosh G4 Gigabit Ethernet"
+msgstr "Power Macintosh G4 Gigabit Ethernet"
+
+#. Tag: entry
+#: hardware.xml:1113
+#, no-c-format
+msgid "Power Macintosh G4 Digital Audio, Quicksilver"
+msgstr "Power Macintosh G4 Digital Audio, Quicksilver"
+
+#. Tag: entry
+#: hardware.xml:1116
+#, no-c-format
+msgid "Power Macintosh G5"
+msgstr "Power Macintosh G5"
+
+#. Tag: entry
+#: hardware.xml:1119
+#, no-c-format
+msgid "PowerBook G3 FireWire Pismo (2000)"
+msgstr "PowerBook G3 FireWire Pismo (2000)"
+
+#. Tag: entry
+#: hardware.xml:1122
+#, no-c-format
+msgid "PowerBook G3 Lombard (1999)"
+msgstr "PowerBook G3 Lombard (1999)"
+
+#. Tag: entry
+#: hardware.xml:1125
+#, no-c-format
+msgid "PowerBook G4 Titanium"
+msgstr "PowerBook G4 Titanium"
+
+#. Tag: entry
+#: hardware.xml:1128
+#, no-c-format
+msgid "PowerBook G4 Aluminum"
+msgstr "PowerBook G4 Aluminum"
+
+#. Tag: entry
+#: hardware.xml:1131
+#, no-c-format
+msgid "Xserve G5"
+msgstr "Xserve G5"
+
+#. Tag: entry
+#: hardware.xml:1134
+#, no-c-format
+msgid "Performa 4400, 54xx, 5500"
+msgstr "Performa 4400, 54xx, 5500"
+
+#. Tag: entry
+#: hardware.xml:1135 hardware.xml:1138 hardware.xml:1141 hardware.xml:1144
+#: hardware.xml:1147 hardware.xml:1150 hardware.xml:1153 hardware.xml:1156
+#: hardware.xml:1159 hardware.xml:1162 hardware.xml:1165 hardware.xml:1168
+#: hardware.xml:1174 hardware.xml:1177 hardware.xml:1183 hardware.xml:1189
+#: hardware.xml:1195
+#, no-c-format
+msgid "OldWorld"
+msgstr "OldWorld"
+
+#. Tag: entry
+#: hardware.xml:1137
+#, no-c-format
+msgid "Performa 6360, 6400, 6500"
+msgstr "Performa 6360, 6400, 6500"
+
+#. Tag: entry
+#: hardware.xml:1140
+#, no-c-format
+msgid "Power Macintosh 4400, 5400"
+msgstr "Power Macintosh 4400, 5400"
+
+#. Tag: entry
+#: hardware.xml:1143
+#, no-c-format
+msgid "Power Macintosh 7200, 7300, 7500, 7600"
+msgstr "Power Macintosh 7200, 7300, 7500, 7600"
+
+#. Tag: entry
+#: hardware.xml:1146
+#, no-c-format
+msgid "Power Macintosh 8200, 8500, 8600"
+msgstr "Power Macintosh 8200, 8500, 8600"
+
+#. Tag: entry
+#: hardware.xml:1149
+#, no-c-format
+msgid "Power Macintosh 9500, 9600"
+msgstr "Power Macintosh 9500, 9600"
+
+#. Tag: entry
+#: hardware.xml:1152
+#, no-c-format
+msgid "Power Macintosh (Beige) G3 Minitower"
+msgstr "Power Macintosh (Beige) G3 Minitower"
+
+#. Tag: entry
+#: hardware.xml:1155
+#, no-c-format
+msgid "Power Macintosh (Beige) Desktop, All-in-One"
+msgstr "Power Macintosh (Beige) Desktop, All-in-One"
+
+#. Tag: entry
+#: hardware.xml:1158
+#, no-c-format
+msgid "PowerBook 2400, 3400, 3500"
+msgstr "PowerBook 2400, 3400, 3500"
+
+#. Tag: entry
+#: hardware.xml:1161
+#, no-c-format
+msgid "PowerBook G3 Wallstreet (1998)"
+msgstr "PowerBook G3 Wallstreet (1998)"
+
+#. Tag: entry
+#: hardware.xml:1164
+#, no-c-format
+msgid "Twentieth Anniversary Macintosh"
+msgstr "Twentieth Anniversary Macintosh"
+
+#. Tag: entry
+#: hardware.xml:1167
+#, no-c-format
+msgid "Workgroup Server 7250, 7350, 8550, 9650, G3"
+msgstr "Workgroup Server 7250, 7350, 8550, 9650, G3"
+
+#. Tag: entry
+#: hardware.xml:1172
+#, no-c-format
+msgid "Power Computing"
+msgstr "Power Computing"
+
+#. Tag: entry
+#: hardware.xml:1173
+#, no-c-format
+msgid "PowerBase, PowerTower / Pro, PowerWave"
+msgstr "PowerBase, PowerTower / Pro, PowerWave"
+
+#. Tag: entry
+#: hardware.xml:1176
+#, no-c-format
+msgid "PowerCenter / Pro, PowerCurve"
+msgstr "PowerCenter / Pro, PowerCurve"
+
+#. Tag: entry
+#: hardware.xml:1181
+#, no-c-format
+msgid "UMAX"
+msgstr "UMAX"
+
+#. Tag: entry
+#: hardware.xml:1182
+#, no-c-format
+msgid "C500, C600, J700, S900"
+msgstr "C500, C600, J700, S900"
+
+#. Tag: entry
+#: hardware.xml:1187
+#, no-c-format
+msgid "<entry>APS</entry>"
+msgstr "<entry>APS</entry>"
+
+#. Tag: entry
+#: hardware.xml:1188
+#, no-c-format
+msgid "APS Tech M*Power 604e/2000"
+msgstr "APS Tech M*Power 604e/2000"
+
+#. Tag: entry
+#: hardware.xml:1193 hardware.xml:1219
+#, no-c-format
+msgid "Motorola"
+msgstr "Motorola"
+
+#. Tag: entry
+#: hardware.xml:1194
+#, no-c-format
+msgid "Starmax 3000, 4000, 5000, 5500"
+msgstr "Starmax 3000, 4000, 5000, 5500"
+
+#. Tag: title
+#: hardware.xml:1203
+#, no-c-format
+msgid "PReP subarchitecture"
+msgstr "PReP-underarkitektur"
+
+#. Tag: entry
+#: hardware.xml:1220
+#, no-c-format
+msgid "Firepower, PowerStack Series E, PowerStack II"
+msgstr "Firepower, PowerStack Series E, PowerStack II"
+
+#. Tag: entry
+#: hardware.xml:1222
+#, no-c-format
+msgid "MPC 7xx, 8xx"
+msgstr "MPC 7xx, 8xx"
+
+#. Tag: entry
+#: hardware.xml:1224
+#, no-c-format
+msgid "MTX, MTX+"
+msgstr "MTX, MTX+"
+
+#. Tag: entry
+#: hardware.xml:1226
+#, no-c-format
+msgid "MVME2300(SC)/24xx/26xx/27xx/36xx/46xx"
+msgstr "MVME2300(SC)/24xx/26xx/27xx/36xx/46xx"
+
+#. Tag: entry
+#: hardware.xml:1228
+#, no-c-format
+msgid "MCP(N)750"
+msgstr "MCP(N)750"
+
+#. Tag: entry
+#: hardware.xml:1232 hardware.xml:1263
+#, no-c-format
+msgid "IBM RS/6000"
+msgstr "IBM RS/6000"
+
+#. Tag: entry
+#: hardware.xml:1233
+#, no-c-format
+msgid "40P, 43P"
+msgstr "40P, 43P"
+
+#. Tag: entry
+#: hardware.xml:1235
+#, no-c-format
+msgid "Power 830/850/860 (6070, 6050)"
+msgstr "Power 830/850/860 (6070, 6050)"
+
+#. Tag: entry
+#: hardware.xml:1237
+#, no-c-format
+msgid "6030, 7025, 7043"
+msgstr "6030, 7025, 7043"
+
+#. Tag: entry
+#: hardware.xml:1239
+#, no-c-format
+msgid "p640"
+msgstr "p640"
+
+#. Tag: title
+#: hardware.xml:1247
+#, no-c-format
+msgid "CHRP subarchitecture"
+msgstr "CHRP-underarkitektur"
+
+#. Tag: entry
+#: hardware.xml:1264
+#, no-c-format
+msgid "B50, 43P-150, 44P"
+msgstr "B50, 43P-150, 44P"
+
+#. Tag: entry
+#: hardware.xml:1267
+#, no-c-format
+msgid "Genesi"
+msgstr "Genesi"
+
+#. Tag: entry
+#: hardware.xml:1268
+#, no-c-format
+msgid "Pegasos I, Pegasos II"
+msgstr "Pegasos I, Pegasos II"
+
+#. Tag: entry
+#: hardware.xml:1271
+#, no-c-format
+msgid "Fixstars"
+msgstr "Fixstars"
+
+#. Tag: entry
+#: hardware.xml:1272
+#, no-c-format
+msgid "YDL PowerStation"
+msgstr "YDL PowerStation"
+
+#. Tag: title
+#: hardware.xml:1280
+#, no-c-format
+msgid "APUS subarchitecture (unsupported)"
+msgstr "APUS-underarkitektur (ikke understøttet)"
+
+#. Tag: entry
+#: hardware.xml:1296
+#, no-c-format
+msgid "Amiga Power-UP Systems (APUS)"
+msgstr "Amiga Power-UP Systems (APUS)"
+
+#. Tag: entry
+#: hardware.xml:1297
+#, no-c-format
+msgid "A1200, A3000, A4000"
+msgstr "A1200, A3000, A4000"
+
+#. Tag: title
+#: hardware.xml:1305
+#, no-c-format
+msgid "Nubus PowerMac subarchitecture (unsupported)"
+msgstr "Nubus PowerMac-underarkitektur (ikke understøttet)"
+
+#. Tag: para
+#: hardware.xml:1307
+#, no-c-format
+msgid ""
+"NuBus systems are not currently supported by &debian;/powerpc. The "
+"monolithic Linux/PPC kernel architecture does not have support for these "
+"machines; instead, one must use the MkLinux Mach microkernel, which &debian; "
+"does not yet support. These include the following: <itemizedlist> "
+"<listitem><para> Power Macintosh 6100, 7100, 8100 </para></listitem> "
+"<listitem><para> Performa 5200, 6200, 6300 </para></listitem> "
+"<listitem><para> Powerbook 1400, 2300, and 5300 </para></listitem> "
+"<listitem><para> Workgroup Server 6150, 8150, 9150 </para></listitem> </"
+"itemizedlist> A linux kernel for these machines and limited support is "
+"available at <ulink url=\"http://nubus-pmac.sourceforge.net/\"></ulink>."
+msgstr ""
+"NuBus-systemer er i øjeblikket ikke understøttet af &debian;/powerpc. Den "
+"monolitiske Linux/PPC-kernearkitektur har ikke understøttelse for disse "
+"maskiner; i stedet skal man bruge MkLinux Mach-mikrokernen, som &debian; "
+"endnu ikke understøtter. Disse inkluderer de følgende: <itemizedlist> "
+"<listitem><para> Power Macintosh 6100, 7100, 8100 </para></listitem> "
+"<listitem><para> Performa 5200, 6200, 6300 </para></listitem> "
+"<listitem><para> Powerbook 1400, 2300, and 5300 </para></listitem> "
+"<listitem><para> Workgroup Server 6150, 8150, 9150 </para></listitem> </"
+"itemizedlist> En Linux-kerne for disse maskiner og begrænset understøttelse "
+"er tilgængelig på <ulink url=\"http://nubus-pmac.sourceforge.net/\"></ulink>."
+
+#. Tag: title
+#: hardware.xml:1344
+#, no-c-format
+msgid "Non-PowerPC Macs"
+msgstr "Non-PowerMac Macs"
+
+#. Tag: para
+#: hardware.xml:1346
+#, no-c-format
+msgid ""
+"Macintosh computers using the 680x0 series of processors are <emphasis>not</"
+"emphasis> in the PowerPC family but are instead m68k machines. Those models "
+"start with <quote>Mac II</quote> series, go on to the <quote>LC</quote> "
+"family, then the Centris series, and culminate in the Quadras and Performas. "
+"These models usually have a Roman numeral or 3-digit model number such as "
+"Mac IIcx, LCIII or Quadra 950."
+msgstr ""
+"Macintosh-computere der bruger 680x0-processorserien er <emphasis>ikke</"
+"emphasis> i PowerPC-familien, men er i stedet for m68k-maskiner. Disse "
+"modeller starter med <quote>Mac II</quote>-serien, går videre til <quote>LC</"
+"quote>-familien, så Centris-serien og ender i Quadras og Performas. Disse "
+"modeller har normalt et romertal eller et 3-cifret modelnummer såsom Mac "
+"IIcx, LCIII eller Quadra 950."
+
+#. Tag: para
+#: hardware.xml:1355
+#, no-c-format
+msgid ""
+"This model range started with the Mac II (Mac II, IIx, IIcx, IIci, IIsi, "
+"IIvi, IIvx, IIfx), then the LC (LC, LCII, III, III+, 475, 520, 550, 575, "
+"580, 630), then the Mac TV, then the Centris (610, 650, 660AV), the Quadra "
+"(605, 610, 630, 650, 660AV, 700, 800, 840AV, 900, 950), and finally the "
+"Performa 200-640CD."
+msgstr ""
+"Dette modelinterval startede med Mac II (Mac II, IIx, IIcx, IIci, IIsi, "
+"IIvi, IIvx, IIfx), then the LC (LC, LCII, III, III+, 475, 520, 550, 575, "
+"580, 630), derefter Mac TV, og derefter Centris (610, 650, 660AV), Quadra "
+"(605, 610, 630, 650, 660AV, 700, 800, 840AV, 900, 950) og endelig Performa "
+"200-640CD."
+
+#. Tag: para
+#: hardware.xml:1363
+#, no-c-format
+msgid ""
+"In laptops, it started with the Mac Portable, then the PowerBook 100-190cs "
+"and the PowerBook Duo 210-550c (excluding PowerBook 500 which is Nubus, "
+"please see the section above)."
+msgstr ""
+"I bærbare startede det med Mac Portable, så PowerBook 100-190cs og PowerBook "
+"Duo 210-550c (dog ikke PowerBook 500 som er Nubus, se afsnittet ovenfor)."
+
+#. Tag: title
+#: hardware.xml:1377
+#, no-c-format
+msgid "Machines"
+msgstr "Maskiner"
+
+#. Tag: para
+#: hardware.xml:1380
+#, no-c-format
+msgid "S822L"
+msgstr "S822L"
+
+#. Tag: para
+#: hardware.xml:1385
+#, no-c-format
+msgid "S821L"
+msgstr "S821L"
+
+#. Tag: para
+#: hardware.xml:1390
+#, no-c-format
+msgid "S822"
+msgstr "S822"
+
+#. Tag: para
+#: hardware.xml:1395
+#, no-c-format
+msgid "S821"
+msgstr "S821"
+
+#. Tag: para
+#: hardware.xml:1400
+#, no-c-format
+msgid "TYAN GN70-BP010"
+msgstr "TYAN GN70-BP010"
+
+#. Tag: title
+#: hardware.xml:1415
+#, no-c-format
+msgid "zSeries and System z machine types"
+msgstr "zSerie- og System z-maskintyper"
+
+#. Tag: para
+#: hardware.xml:1416
+#, no-c-format
+msgid ""
+"Since &debian; Squeeze, support for booting in ESA/390 mode was dropped. "
+"Your machine needs to support the z/Architecture, 64-bit support is "
+"mandatory. The userland of the S/390 port is still compiled for ESA/390, "
+"though. All zSeries and System z hardware is fully supported. &arch-title; "
+"support software is included from the kernel 4.3 development stream. The "
+"most current information about IBM's Linux support can be found at the "
+"<ulink url=\"http://www.ibm.com/developerworks/linux/linux390/"
+"development_technical.html\"> Linux on <trademark class=\"registered"
+"\">System z</trademark> page on developerWorks</ulink>."
+msgstr ""
+"Siden &debian; Squeeze blev understøttelse for opstart i ESA/390-tilstand "
+"droppet. Din maskine kræver understøttelse for z/arkitekturen, 64-bit "
+"understøttelse krævet. Brugerland for S/390-porten er dog stadig kompileret "
+"for ESA/390. Alle zSerier og System z-udstyr er fuldt understøttet. &arch-"
+"title;-understøttelsesprogrammer er inkluderet fra kerne 4.3-"
+"udviklingsgrenen. Den mest aktuelle information om IBM's Linux-"
+"understøttelse kan findes på <ulink url=\"http://www.ibm.com/developerworks/"
+"linux/linux390/development_technical.html\"> Linux på <trademark class="
+"\"registered\">System z</trademark>-siden på developerWorks</ulink>."
+
+#. Tag: title
+#: hardware.xml:1433
+#, no-c-format
+msgid "PAV and HyperPAV"
+msgstr "PAV og HyperPAV"
+
+#. Tag: para
+#: hardware.xml:1434
+#, no-c-format
+msgid ""
+"PAV and HyperPAV are supported transparently, multipathing is not needed to "
+"take advantage of these storage system features. Be sure to configure the "
+"devices during DASD device selection. The alias devices will not be offered "
+"neither for formatting, partitioning nor direct use."
+msgstr ""
+"PAV og HyperPAV er understøttet gennemsigtigt, multipathing er ikke krævet "
+"for at få fordel af disse lagersystemers funktioner. Vær sikker på, at "
+"konfigurere enheder under DASD-enhedsvalg. Alias-enhederne vil ikke blive "
+"tilbudt hverken for formatering, partitionering eller direkte brug."
+
+#. Tag: title
+#: hardware.xml:1450
+#, no-c-format
+msgid "CPU and Main Boards Support"
+msgstr "Understøttelse af CPU og bundkort"
+
+#. Tag: para
+#: hardware.xml:1451
+#, no-c-format
+msgid ""
+"Sparc-based hardware is divided into a number of different subarchitectures, "
+"identified by one of the following names: sun4, sun4c, sun4d, sun4m, sun4u "
+"or sun4v. The following list describes what machines they include and what "
+"level of support may be expected for each of them."
+msgstr ""
+"Sparc-baseret udstyr er opdelt i et antal forskellige underarkitekturer, "
+"identificeret af et af de følgende navne: sun4, sun4c, sun4d, sun4m, sun4u "
+"eller sun4v. Den følgende liste beskriver hvilke maskiner de inkluderer og "
+"hvilket understøttelsesniveau du kan forvente på hver af dem."
+
+#. Tag: term
+#: hardware.xml:1462
+#, no-c-format
+msgid "sun4, sun4c, sun4d, sun4m"
+msgstr "sun4, sun4c, sun4d, sun4m"
+
+#. Tag: para
+#: hardware.xml:1464
+#, no-c-format
+msgid ""
+"None of these 32-bit sparc subarchitectures (sparc32) is supported. For a "
+"complete list of machines belonging to these subarchitectures, please "
+"consult the <ulink url=\"http://en.wikipedia.org/wiki/SPARCstation"
+"\">Wikipedia SPARCstation page</ulink>."
+msgstr ""
+"Ingen af disse 32-bit sparc-underarkitekturer (sparc32) er understøttet. For "
+"en fuldstændig liste over maskiner, der tilhører disse underarkitekturer, så "
+"se venligst <ulink url=\"http://en.wikipedia.org/wiki/SPARCstation"
+"\">Wikipedia SPARCstation-siden</ulink>."
+
+#. Tag: para
+#: hardware.xml:1471
+#, no-c-format
+msgid ""
+"The last &debian; release to support sparc32 was Etch, but even then only "
+"for sun4m systems. Support for the other 32-bits subarchitectures had "
+"already been discontinued after earlier releases."
+msgstr ""
+"Den sidste &debian;-udgivelse som understøtter sparc32 var Etch, men selv da "
+"kun for sun4m-systemer. Understøttelse for andre 32-bit underarkitekturer "
+"var allerede blevet afsluttet i tidligere udgivelser."
+
+#. Tag: term
+#: hardware.xml:1481
+#, no-c-format
+msgid "sun4u"
+msgstr "sun4u"
+
+#. Tag: para
+#: hardware.xml:1483
+#, no-c-format
+msgid ""
+"This subarchitecture includes all 64-bit machines (sparc64) based on the "
+"UltraSparc processor and its clones. Most of the machines are well "
+"supported, even though for some you may experience problems booting from CD "
+"due to firmware or bootloader bugs (this problem may be worked around by "
+"using netbooting). Use the sparc64 or sparc64-smp kernel in UP and SMP "
+"configurations respectively."
+msgstr ""
+"Denne underarkitektur inkluderer alle 64-bit maskiner (sparc64) baseret på "
+"UltraSparc-processoren og dens kloner. De fleste maskiner har god "
+"understøttelse, selv om du for nogle kan opleve problemer under opstart fra "
+"cd på grund af firmware- og opstartsindlæserfejl (dette problem kan omgås "
+"ved at bruge netbooting). Brug respektiv sparc64- eller sparc64-smp-kernen i "
+"UP- og SMP-konfigurationer."
+
+#. Tag: term
+#: hardware.xml:1496
+#, no-c-format
+msgid "sun4v"
+msgstr "sun4v"
+
+#. Tag: para
+#: hardware.xml:1498
+#, no-c-format
+msgid ""
+"This is the newest addition to the Sparc family, which includes machines "
+"based on the Niagara multi-core CPUs. At the moment such CPUs are only "
+"available in T1000 and T2000 servers by Sun, and are well supported. Use the "
+"sparc64-smp kernel."
+msgstr ""
+"Dette er den nyeste tilføjesle til Sparc-familien, som inkluderer maskiner "
+"baseret på Niagara-cpu'er med flere kerner. I øjeblikket er sådanne cpu'er "
+"kun tilgængelige i T1000- og T2000-servere fra Sun og de er godt "
+"understøttet. Brug sparc64-smp-kernen."
+
+#. Tag: para
+#: hardware.xml:1509
+#, no-c-format
+msgid ""
+"Note that Fujitsu's SPARC64 CPUs used in PRIMEPOWER family of servers are "
+"not supported due to lack of support in the Linux kernel."
+msgstr ""
+"Bemærk at Fujitsus SPARC64-cpu'er brugt i PRIMEPOWER-serverfamilien ikke er "
+"understøttet på grund af mangel på understøttelse i Linux-kernen."
+
+#. Tag: title
+#: hardware.xml:1518
+#, no-c-format
+msgid "Laptops"
+msgstr "Bærbare"
+
+#. Tag: para
+#: hardware.xml:1519
+#, no-c-format
+msgid ""
+"From a technical point of view, laptops are normal PCs, so all information "
+"regarding PC systems applies to laptops as well. Installations on laptops "
+"nowadays usually work out of the box, including things like automatically "
+"suspending the system on closing the lid and laptop specfic hardware buttons "
+"like those for disabling the wifi interfaces (<quote>airplane mode</quote>). "
+"Nonetheless sometimes the hardware vendors use specialized or proprietary "
+"hardware for some laptop-specific functions which might not be supported. To "
+"see if your particular laptop works well with GNU/Linux, see for example the "
+"<ulink url=\"&url-x86-laptop;\">Linux Laptop pages</ulink>."
+msgstr ""
+"Fra et teknisk synspunkt er bærbare normale pc'ere, så al information "
+"jævnfør pc-systemer gælder også for bærbare. Installationer på bærbare "
+"virker i dag uden problemer, inklusive automatisk dvale af systemet når "
+"skærmen lukkes og bærbare-specifikke knapper såsom dem der deaktiverer wifi-"
+"grænseflader (<quote>flytilstand</quote>). Alligevel bruger leverandørerne "
+"undertiden specialiseret eller proprietært udstyr for nogle specifikke "
+"funktioner, som måske ikke er understøttet. For at se om din specifikke "
+"bærbare fungerer godt med GNU/Linux, kan du for eksempel kigge på <ulink url="
+"\"&url-x86-laptop;\">Linux-bærbare</ulink>."
+
+#. Tag: title
+#: hardware.xml:1536 hardware.xml:1556 hardware.xml:1578 hardware.xml:1601
+#, no-c-format
+msgid "Multiple Processors"
+msgstr "Flere processorer"
+
+#. Tag: para
+#: hardware.xml:1537
+#, no-c-format
+msgid ""
+"Multiprocessor support &mdash; also called <quote>symmetric multiprocessing</"
+"quote> or SMP &mdash; is available for this architecture. Having multiple "
+"processors in a computer was originally only an issue for high-end server "
+"systems but has become common in recent years nearly everywhere with the "
+"introduction of so called <quote>multi-core</quote> processors. These "
+"contain two or more processor units, called <quote>cores</quote>, in one "
+"physical chip."
+msgstr ""
+"Understøttelse af flere processorer &mdash; også kaldt <quote>symmetrisk "
+"flerbehandling</quote> eller SMP &mdash; er tilgængelig for denne "
+"arkitektur. AT have flere processorer i en computer var oprindelig kun en "
+"problemstilling for serversystemer i den dyre ende, men er nu blevet "
+"almindeligt næsten overalt med introduktionen af såkaldte <quote>multi-core</"
+"quote>-processorer. Disse indeholder to eller flere processorenheder, kaldt "
+"<quote>kerner</quote>, i en fysisk chip."
+
+#. Tag: para
+#: hardware.xml:1547
+#, no-c-format
+msgid ""
+"The standard &debian; &release; kernel image has been compiled with SMP "
+"support. It is also usable on non-SMP systems without problems."
+msgstr ""
+"Standard &debian; &release;-kerneaftrykket er blevet kompileret med SMP-"
+"understøttelse. Det kan også bruges på ikke-SMP-systmemer uden problemer."
+
+#. Tag: para
+#: hardware.xml:1558
+#, no-c-format
+msgid ""
+"Multiprocessor support &mdash; also called <quote>symmetric multiprocessing</"
+"quote> or SMP &mdash; is available for this architecture. The standard "
+"&debian; &release; kernel image has been compiled with <firstterm>SMP-"
+"alternatives</firstterm> support. This means that the kernel will detect the "
+"number of processors (or processor cores) and will automatically deactivate "
+"SMP on uniprocessor systems."
+msgstr ""
+"Understøttelse af flere processorer &mdash; også kaldt <quote>symmetrisk "
+"flerbehandling</quote> eller SMP &mdash; er tilgængelig for denne "
+"arkitektur. Standard &debian; &release;-kerneaftrykket er blevet kompileret "
+"med understøttelse for <firstterm>SMP-alternativer</firstterm>. Dette "
+"betyder at kernen vil detektere antallet af processorer (eller "
+"processorkerner) og automatisk vil deaktivere SMP på systemer med en "
+"processor."
+
+#. Tag: para
+#: hardware.xml:1567
+#, no-c-format
+msgid ""
+"Having multiple processors in a computer was originally only an issue for "
+"high-end server systems but has become common in recent years nearly "
+"everywhere with the introduction of so called <quote>multi-core</quote> "
+"processors. These contain two or more processor units, called <quote>cores</"
+"quote>, in one physical chip."
+msgstr ""
+"Det at have flere processorer i en computer var tidligere kun en "
+"problemstilling for serversystemer i den dyre ende, men er blevet mere "
+"udbredt de seneste år næsten overalt med introduktionen af såkaldte "
+"<quote>flerkerne</quote>-processorer. Disse indeholder to eller flere "
+"processorenheder, kaldt <quote>kerner</quote>, i en fysisk chip."
+
+#. Tag: para
+#: hardware.xml:1579
+#, no-c-format
+msgid ""
+"Multiprocessor support &mdash; also called <quote>symmetric multiprocessing</"
+"quote> or SMP &mdash; is available for this architecture. However, the "
+"standard &debian; &release; kernel image does not support SMP. This should "
+"not prevent installation, since the standard, non-SMP kernel should boot on "
+"SMP systems; the kernel will simply use only the first CPU."
+msgstr ""
+"Understøttelse af flere processorer &mdash; også kaldt <quote>symmetrisk "
+"flerbehandling</quote> eller SMP &mdash; er tilgængelig for denne "
+"arkitektur. Standard &debian; &release;-kerneaftrykket understøtter ikke "
+"SMP. Dette bør ikke forhindre installation, da den gængse ikke-SMTP-kerne "
+"bør starte på SMP-systemer; kernen vil bare bruge den første cpu."
+
+#. Tag: para
+#: hardware.xml:1588
+#, no-c-format
+msgid ""
+"In order to take advantage of multiple processors, you'll have to replace "
+"the standard &debian; kernel.<phrase arch=\"linux-any\"> You can find a "
+"discussion of how to do this in <xref linkend=\"kernel-baking\"/>. At this "
+"time (kernel version &kernelversion;) the way you enable SMP is to select "
+"<quote>&smp-config-option;</quote> in the <quote>&smp-config-section;</"
+"quote> section of the kernel config.</phrase>"
+msgstr ""
+"For at udnytte flere processorer, så skal ud erstatte standardkernen i "
+"&debian;. <phrase arch=\"linux-any\"> Du kan finde en diskussion om, hvordan "
+"dette øgres i <xref linkend=\"kernel-baking\"/>. På dette tidspunkt "
+"(kerneversion &kernelversion;) er måden du aktiverer SMP at vælge "
+"<quote>&smp-config-option;</quote> i <quote>&smp-config-section;</quote> "
+"sektionen for kernekonfiguration.</phrase>"
+
+#. Tag: para
+#: hardware.xml:1602
+#, no-c-format
+msgid ""
+"Multiprocessor support &mdash; also called <quote>symmetric multiprocessing</"
+"quote> or SMP &mdash; is available for this architecture, and is supported "
+"by a precompiled &debian; kernel image. Depending on your install media, "
+"this SMP-capable kernel may or may not be installed by default. This should "
+"not prevent installation, since the standard, non-SMP kernel should boot on "
+"SMP systems; the kernel will simply use the first CPU."
+msgstr ""
+"Understøttelse af flere processorer &mdash; også kaldt <quote>symmetrisk "
+"flerbehandling</quote> eller SMP &mdash; er tilgængelig for denne "
+"arkitektur, og understøttes af et prækompileret &debian;-kerneaftryk. "
+"Afhængig af dit installationsmedie, kan denne SMP-egnede kerne installeres "
+"som standard. Dette bør ikke forhindre installation, da den gængse ikke-SMP-"
+"kerne bør starte på SMP-systemer; kernen vil bare bruge den første cpu."
+
+#. Tag: para
+#: hardware.xml:1612
+#, no-c-format
+msgid ""
+"In order to take advantage of multiple processors, you should check to see "
+"if a kernel package that supports SMP is installed, and if not, choose an "
+"appropriate kernel package."
+msgstr ""
+"For at udnytte flere processorer bør du kontrollere om en kernepakke, som "
+"understøtter SMP, er installeret, og hvis ikke, vælge en passende kernepakke."
+
+#. Tag: para
+#: hardware.xml:1618
+#, no-c-format
+msgid ""
+"You can also build your own customized kernel to support SMP.<phrase arch="
+"\"linux-any\"> You can find a discussion of how to do this in <xref linkend="
+"\"kernel-baking\"/>. At this time (kernel version &kernelversion;) the way "
+"you enable SMP is to select <quote>&smp-config-option;</quote> in the "
+"<quote>&smp-config-section;</quote> section of the kernel config.</phrase>"
+msgstr ""
+"Du kan også bygge din egen tilpassede kerne til at understøtte SMP.<phrase "
+"arch=\"linux-any\"> Du kan finde en diskussion af hvordan dette gøres i "
+"<xref linkend=\"kernel-baking\"/>. På dette tidspunkt (kerneversion "
+"&kernelversion;) er måden du aktiverer SMP at vælge <quote>&smp-config-"
+"option;</quote> i <quote>&smp-config-section;</quote>-sektionen af "
+"kernekonfigurationen.</phrase>"
+
+#. Tag: title
+#: hardware.xml:1629
+#, no-c-format
+msgid "Graphics Hardware Support"
+msgstr "Understøttelse af grafikudstyr"
+
+#. Tag: para
+#: hardware.xml:1630
+#, no-c-format
+msgid ""
+"&debian;'s support for graphical interfaces is determined by the underlying "
+"support found in X.Org's X11 system, and the kernel. Basic framebuffer "
+"graphics is provided by the kernel, whilst desktop environments use X11. "
+"Whether advanced graphics card features such as 3D-hardware acceleration or "
+"hardware-accelerated video are available, depends on the actual graphics "
+"hardware used in the system and in some cases on the installation of "
+"additional <quote>firmware</quote> images (see <xref linkend=\"hardware-"
+"firmware\"/>)."
+msgstr ""
+"&debian;s understøttelse for grafiske grænseflader bestemmes af den "
+"underliggende understøttelse i X.org's X11-system og kernen. Grundlæggende "
+"framebuffergrafik tilbydes af kernen, mens skrivebordsmiljøer bruger X11. Om "
+"avancerede grafikkort-funktioner såsom 3D-udstyrsacceleration eller "
+"udstyrsaccelereret video er tilgængelig, afhænger af det faktiske "
+"grafikudstyr brugt i systemet og i nogle tilfælde af installationen af "
+"yderligere <quote>firmware</quote>-aftryk (se <xref linkend=\"hardware-"
+"firmware\"/>)."
+
+#. Tag: para
+#: hardware.xml:1642
+#, no-c-format
+msgid ""
+"On modern PCs, having a graphical display usually works out of the box. In "
+"very few cases there have been reports about hardware on which installation "
+"of additional graphics card firmware was required even for basic graphics "
+"support, but these have been rare exceptions. For quite a lot of hardware, "
+"3D acceleration also works well out of the box, but there is still some "
+"hardware that needs binary blobs to work well."
+msgstr ""
+"På moderne pc'er fungerer en grafisk skærm normalt uden videre. I nogle "
+"meget sjældne tilfælde har der været rapporter om udstyr hvor installation "
+"af yderligere grafikkortfirmware var krævet for selv grundlæggende "
+"grafikunderstøttelse, men det er sjældne undtagelser. For det meste udstyr "
+"fungerer også 3D-acceleration uden videre, men der er stadig noget udstyr "
+"som kræver binære blob'er for at fungere godt."
+
+#. Tag: para
+#: hardware.xml:1653
+#, no-c-format
+msgid ""
+"Nearly all ARM machines have the graphics hardware built-in, rather than "
+"being on a plug-in card. Some machines do have expansion slots which will "
+"take graphics cards, but that is a rarity. Hardware designed to be headless "
+"with no graphics at all is quite common. Whilst basic framebuffer video "
+"provided by the kernel should work on all devices that have graphics, fast "
+"3D graphics invariably needs binary drivers to work. The situation is "
+"changing quickly but at the time of the &releasename; release free drivers "
+"for nouveau (Nvidia Tegra K1 SoC) and freedreno (Qualcomm Snapdragon SoCs) "
+"are available in the release. Other hardware needs non-free drivers from 3rd "
+"parties."
+msgstr ""
+"Næsten alle ARM-maskiner har grafikudstyret indbygget, frem for i et separat "
+"kort. Nogle maskiner har dog udvidelsespladser, som kan anvende grafikkort, "
+"men det er sjældent. Udstyr som er designet til at være uden grafik i det "
+"hele taget er ret normalt. Mens grundlæggende framebuffervideo tilbudt af "
+"kenren før fungere på alle enheder som har grafik, så kræver hurtig 3D-"
+"grafik binære drivere for at fungere. Situationen ændrer sig hurtigt, men i "
+"udgivelsesøjeblikket for &releasename; er frie drivere for nouveau (Nvidia "
+"Tegra K1 SoC) og freedreno (Qualcomm Snapdragon SoCs) tilgængelige i "
+"udgivelsen. Andet udstyr kræver proprietære drivere fra tredjeparter."
+
+#. Tag: para
+#: hardware.xml:1667
+#, no-c-format
+msgid ""
+"Details on supported graphics hardware and pointing devices can be found at "
+"<ulink url=\"&url-xorg;\"></ulink>. &debian; &release; ships with X.Org "
+"version &x11ver;."
+msgstr ""
+"Detaljer om understøttede grafikudstyr og pegeenheder kan findes på <ulink "
+"url=\"&url-xorg;\"></ulink>. &debian; &release; leveres med X.Org version "
+"&x11ver;."
+
+#. Tag: para
+#: hardware.xml:1672
+#, no-c-format
+msgid ""
+"Most graphics options commonly found on Sparc-based machines are supported. "
+"X.org graphics drivers are available for sunbw2, suncg14, suncg3, suncg6, "
+"sunleo and suntcx framebuffers, Creator3D and Elite3D cards (sunffb driver), "
+"PGX24/PGX64 ATI-based video cards (ati driver), and PermediaII-based cards "
+"(glint driver). To use an Elite3D card with X.org you additionally need to "
+"install the <classname>afbinit</classname> package, and read the "
+"documentation included with it on how to activate the card."
+msgstr ""
+"De fleste grafikindstillinger ofte fundet på Sparc-baserede maskiner er "
+"understøttet. X.org-grafikdrivere er tilgængelige for sunbw2-, suncg14-, "
+"suncg3-, suncg6-, sunleo- og suntcx-framebuffere, Creator3D- og Elite3D-kort "
+"(sunffb-driver), PGX24/PGX64 ATI-baserede kort (ati-driver) og PermediaII-"
+"baserede kort (glint-driver). For at bruge et Elite3D-kort med X.org skal du "
+"også installere pakken <classname>afbinit</classname>, og læse "
+"dokumentationen inkluderet med den om hvordan kortet aktiveres."
+
+#. Tag: para
+#: hardware.xml:1682
+#, no-c-format
+msgid ""
+"It is not uncommon for a Sparc machine to have two graphics cards in a "
+"default configuration. In such a case there is a possibility that the Linux "
+"kernel will not direct its output to the card initially used by the "
+"firmware. The lack of output on the graphical console may then be mistaken "
+"for a hang (usually the last message seen on console is 'Booting Linux...'). "
+"One possible solution is to physically remove one of the video cards; "
+"another option is to disable one of the cards using a kernel boot parameter. "
+"Also, if graphical output is not required or desired, serial console may be "
+"used as an alternative. On some systems use of serial console can be "
+"activated automatically by disconnecting the keyboard before booting the "
+"system."
+msgstr ""
+"Det er ikke usædvanligt at Sparc-maskiner har to grafikkort i en "
+"standardkonfiguration. I disse tilfælde er der en risiko for, at Linuxkernen "
+"ikke vil dirigere sine uddata til kortet oprindelig brugt af firmwaren. "
+"Manglen på uddata på den grafiske kosol kan derfor forveksles med et nedbrud "
+"(normalt er den sidste besked set på konsollen »Booting Linux...«). En mulig "
+"løsning er fysisk at flytte en af videokortene; en anden mulighed er at "
+"deaktiver et af kortene via en kerne-opstartsparameter. Hvis grafiske uddata "
+"ikke er krævet eller ønsket, kan en seriel konsol måske benyttes som et "
+"alternativ. På nogle systemer kan brugen af en seriel konsol aktiveres "
+"automatisk ved at frakoble tastaturet før opstart af systemet."
+
+#. Tag: title
+#: hardware.xml:1704
+#, no-c-format
+msgid "Network Connectivity Hardware"
+msgstr "Udstry for netværksforbindelse"
+
+#. Tag: para
+#: hardware.xml:1705
+#, no-c-format
+msgid ""
+"Almost any network interface card (NIC) supported by the &arch-kernel; "
+"kernel should also be supported by the installation system; drivers should "
+"normally be loaded automatically. <phrase arch=\"x86\">This includes most "
+"PCI/PCI-Express cards as well as PCMCIA/Express Cards on laptops.</phrase> "
+"<phrase arch=\"i386\">Many older ISA cards are supported as well.</phrase>"
+msgstr ""
+"Næsten alle netværksgrænsefladekort (NIC) understøttet af &arch-kernel;-"
+"kernen bør også være understøttet af installationssystemet; drivere bliver "
+"normalt indlæst automatisk. <phrase arch=\"x86\">Dette inkluderer de fleste "
+"PCI/PCI-Express-kort samt PCMCIA/Express-kort på bærbare.</phrase> <phrase "
+"arch=\"i386\">Mange ældre ISA-kort er også understøttet.</phrase>"
+
+#. Tag: para
+#: hardware.xml:1715
+#, no-c-format
+msgid ""
+"This includes a lot of generic PCI cards (for systems that have PCI) and the "
+"following NICs from Sun:"
+msgstr ""
+"Dette inkluderer en masse generiske PCI-kort (for systemer som har PCI) og "
+"de følgende NIC'er fra Sun:"
+
+#. Tag: para
+#: hardware.xml:1721
+#, no-c-format
+msgid "Sun LANCE"
+msgstr "Sun LANCE"
+
+#. Tag: para
+#: hardware.xml:1726
+#, no-c-format
+msgid "Sun Happy Meal"
+msgstr "Sun Happy Meal"
+
+#. Tag: para
+#: hardware.xml:1731
+#, no-c-format
+msgid "Sun BigMAC"
+msgstr "Sun BigMAC"
+
+#. Tag: para
+#: hardware.xml:1736
+#, no-c-format
+msgid "Sun QuadEthernet"
+msgstr "Sun QuadEthernet"
+
+#. Tag: para
+#: hardware.xml:1741
+#, no-c-format
+msgid "MyriCOM Gigabit Ethernet"
+msgstr "MyriCOM Gigabit Ethernet"
+
+#. Tag: para
+#: hardware.xml:1748
+#, no-c-format
+msgid "The list of supported network devices is:"
+msgstr "Listen over understøttede netværksenheder er:"
+
+#. Tag: para
+#: hardware.xml:1753
+#, no-c-format
+msgid "Channel to Channel (CTC) and ESCON connection (real or emulated)"
+msgstr "Channel to Channel (CTC) og ESCON connection (reel eller emuleret)"
+
+#. Tag: para
+#: hardware.xml:1758
+#, no-c-format
+msgid "OSA-2 Token Ring/Ethernet and OSA-Express Fast Ethernet (non-QDIO)"
+msgstr "OSA-2 Token Ring/Ethernet og OSA-Express Fast Ethernet (ikke-QDIO)"
+
+#. Tag: para
+#: hardware.xml:1763
+#, no-c-format
+msgid "OSA-Express in QDIO mode, HiperSockets and Guest-LANs"
+msgstr "OSA-Express i QDIO-tilstand, HiperSockets og Guest-LAN'er"
+
+#. Tag: para
+#: hardware.xml:1772
+#, no-c-format
+msgid ""
+"On &arch-title;, most built-in Ethernet devices are supported and modules "
+"for additional PCI and USB devices are provided."
+msgstr ""
+"På &arch-title;, er de fleste indbyggede Ethernet-enheder understøttet og "
+"moduler for yderligere PCI- og USB-enheder tilbydes."
+
+#. Tag: para
+#: hardware.xml:1777
+#, no-c-format
+msgid "ISDN is supported, but not during the installation."
+msgstr "ISDN er understøttet, men ikke under installationen."
+
+#. Tag: title
+#: hardware.xml:1784
+#, no-c-format
+msgid "Wireless Network Cards"
+msgstr "Trådløse netværkskort"
+
+#. Tag: para
+#: hardware.xml:1785
+#, no-c-format
+msgid ""
+"Wireless networking is in general supported as well and a growing number of "
+"wireless adapters are supported by the official &arch-kernel; kernel, "
+"although many of them do require firmware to be loaded."
+msgstr ""
+"Trådløst netværk er generelt også understøttet og et voksende antal trådløse "
+"adaptere er understøttet af den officielle &arch-kernel;-kerne, selvom mange "
+"af dem ikke kræver firmware for at blive indlæst."
+
+#. Tag: para
+#: hardware.xml:1792
+#, no-c-format
+msgid ""
+"If firmware is needed, the installer will prompt you to load firmware. See "
+"<xref linkend=\"loading-firmware\"/> for detailed information on how to load "
+"firmware during the installation."
+msgstr ""
+"Hvis firmware er krævet, så vil installationsprogrammet spørge dig om at "
+"indlæse firmware. Se <xref linkend=\"loading-firmware\"/> for detaljeret "
+"information om hvordan firmware skal indlæses under installationen."
+
+#. Tag: para
+#: hardware.xml:1797
+#, no-c-format
+msgid ""
+"Wireless NICs that are not supported by the official &arch-kernel; kernel "
+"can generally be made to work under &debian-gnu;, but are not supported "
+"during the installation."
+msgstr ""
+"Trådløse NIC'er som ikke er understøttet af den officielle &arch-kernel;-"
+"kerne kan generelt tilpasses til at fungere under &debian-gnu;, men er ikke "
+"understøttet under installationen."
+
+#. Tag: para
+#: hardware.xml:1802
+#, no-c-format
+msgid ""
+"If there is a problem with wireless and there is no other NIC you can use "
+"during the installation, it is still possible to install &debian-gnu; using "
+"a full CD-ROM or DVD image. Select the option to not configure a network and "
+"install using only the packages available from the CD/DVD. You can then "
+"install the driver and firmware you need after the installation is completed "
+"(after the reboot) and configure your network manually."
+msgstr ""
+"Hvis der er et problem med trådløs og der ikke er nogen anden NIC, du kan "
+"bruge under installationen, så er det stadig muligt at installere &debian-"
+"gnu; via et fuldt cd-rom eller dvd-aftryk. Vælg indstillingen for ikke at "
+"konfigurere et netværk og installer ved kun at bruge pakkerne tilgængelige "
+"fra cd/dvd'en. Du kan så installere driveren og firmwaren, du skal bruge "
+"efter installationen er færdig (efter genstart) og konfigurere dit netværk "
+"manuelt."
+
+#. Tag: para
+#: hardware.xml:1812
+#, no-c-format
+msgid ""
+"In some cases the driver you need may not be available as a &debian; "
+"package. You will then have to look if there is source code available in the "
+"internet and compile the driver yourself. How to do this is outside the "
+"scope of this manual. <phrase arch=\"x86\">If no Linux driver is available, "
+"your last resort is to use the <classname>ndiswrapper</classname> package, "
+"which allows you to use a Windows driver.</phrase>"
+msgstr ""
+"I nogle tilfælde er driveren du skal bruge måske ikke tilgængelig som en "
+"&debian;-pakke. Så skal du kigge efter om der er kildekode tilgængelig på "
+"internettet og kompilere driveren selv. Hvordan dette skal gøres er uden for "
+"denne manuals omfang. <phrase arch=\"x86\">Hvis ingen Linux-driver er "
+"tilgængelig, er din sidste mulighed at bruge pakken <classname>ndiswrapper</"
+"classname>, hvor du kan bruge en Windows-driver.</phrase>"
+
+#. Tag: title
+#: hardware.xml:1826
+#, no-c-format
+msgid "Known Issues for &arch-title;"
+msgstr "Kendte problemstillinger for &arch-title;"
+
+#. Tag: para
+#: hardware.xml:1827
+#, no-c-format
+msgid ""
+"There are a couple of issues with specific network cards that are worth "
+"mentioning here."
+msgstr ""
+"Der er en række problemstillinger med specifikke netværkskort, som er værd "
+"at nævne her."
+
+#. Tag: title
+#: hardware.xml:1834
+#, no-c-format
+msgid "Conflict between tulip and dfme drivers"
+msgstr "Konflikt mellem tulip- og dfme-drivere"
+
+#. Tag: para
+#: hardware.xml:1836
+#, no-c-format
+msgid ""
+"There are various PCI network cards that have the same PCI identification, "
+"but are supported by related, but different drivers. Some cards work with "
+"the <literal>tulip</literal> driver, others with the <literal>dfme</literal> "
+"driver. Because they have the same identification, the kernel cannot "
+"distinguish between them and it is not certain which driver will be loaded. "
+"If this happens to be the wrong one, the NIC may not work, or work badly."
+msgstr ""
+"Der er diverse PC-netværkskort, som har den samme PCI-identifikation, men er "
+"understøttet af relaterede, men forskellige drivere. Nogle kort fungerer med "
+"<literal>tulip</literal>-driveren, andre med <literal>dfme</literal>-"
+"driveren. Da de har samme identifikation, kan kernen ikke skelne mellem dem "
+"og det er ikke sikkert hvilken driver der bliver indlæst. Hvis det er den "
+"forkerte, fungerer NIC'en måske ikke, eller også fungerer den meget dårligt."
+
+#. Tag: para
+#: hardware.xml:1846
+#, no-c-format
+msgid ""
+"This is a common problem on Netra systems with a Davicom (DEC-Tulip "
+"compatible) NIC. In that case the <literal>tulip</literal> driver is "
+"probably the correct one. You can prevent this issue by blacklisting the "
+"wrong driver module as described in <xref linkend=\"module-blacklist\"/>."
+msgstr ""
+"Dette er et gængs problem på Netrasystemer med en Davicom (DEC-Tulip-"
+"kompatibel) NIC. I det tilfælde er driveren <literal>tulip</literal> "
+"sandsynligvis den korrekte. Du kan forhindre problemstillinger ved at "
+"sortliste det forkerte drivermodul som beskrivet i <xref linkend=\"module-"
+"blacklist\"/>."
+
+#. Tag: para
+#: hardware.xml:1854
+#, no-c-format
+msgid ""
+"An alternative solution during the installation is to switch to a shell and "
+"unload the wrong driver module using <userinput>modprobe -r "
+"<replaceable>module</replaceable></userinput> (or both, if they are both "
+"loaded). After that you can load the correct module using "
+"<userinput>modprobe <replaceable>module</replaceable></userinput>. Note that "
+"the wrong module may then still be loaded when the system is rebooted."
+msgstr ""
+"En alternativ løsning under installationen er at skifte til en skal og "
+"udlæse det forkerte drivermodul via <userinput>modprobe -r "
+"<replaceable>modul</replaceable></userinput> (eller begge, hvis de begge er "
+"indlæst). Derefter kan du indlæse det korrekte modul via <userinput>modprobe "
+"<replaceable>module</replaceable></userinput>. Bemærk at det forkerte modul "
+"stadig kan indlæses når systemet genstartes."
+
+#. Tag: title
+#: hardware.xml:1867
+#, no-c-format
+msgid "Sun B100 blade"
+msgstr "Sun B100 blade"
+
+#. Tag: para
+#: hardware.xml:1869
+#, no-c-format
+msgid ""
+"The <literal>cassini</literal> network driver does not work with Sun B100 "
+"blade systems."
+msgstr ""
+"<literal>Cassini</literal>-netværksdriveren fungerer ikke med Sun B100 blade-"
+"systemer."
+
+#. Tag: title
+#: hardware.xml:1884
+#, no-c-format
+msgid "Braille Displays"
+msgstr "Braille-skærme"
+
+#. Tag: para
+#: hardware.xml:1885
+#, no-c-format
+msgid ""
+"Support for braille displays is determined by the underlying support found "
+"in <classname>brltty</classname>. Most displays work under "
+"<classname>brltty</classname>, connected via either a serial port, USB or "
+"bluetooth. Details on supported braille devices can be found on the <ulink "
+"url=\"&url-brltty;\"><classname>brltty</classname> website</ulink>. &debian-"
+"gnu; &release; ships with <classname>brltty</classname> version &brlttyver;."
+msgstr ""
+"Understøttelse for braille-skærme bestemmes af den underliggende "
+"understøttelse set i <classname>brltty</classname>. De fleste skærme "
+"fungerer under <classname>brltty</classname>, forbundet via enten en "
+"serielport, USB eller bluetooth. Detaljer om understøttede braille-enheder "
+"kan findes på <ulink url=\"&url-brltty;\"><classname>brltty</classname>-"
+"hjemmesiden</ulink>. &debian-gnu; &release; kommer med <classname>brltty</"
+"classname> version &brlttyver;."
+
+#. Tag: title
+#: hardware.xml:1899
+#, no-c-format
+msgid "Hardware Speech Synthesis"
+msgstr "Udstyr med talesyntese"
+
+#. Tag: para
+#: hardware.xml:1900
+#, no-c-format
+msgid ""
+"Support for hardware speech synthesis devices is determined by the "
+"underlying support found in <classname>speakup</classname>. "
+"<classname>speakup</classname> only supports integrated boards and external "
+"devices connected to a serial port (no USB, serial-to-USB or PCI adapters "
+"are supported). Details on supported hardware speech synthesis devices can "
+"be found on the <ulink url=\"&url-speakup;\"><classname>speakup</classname> "
+"website</ulink>. &debian-gnu; &release; ships with <classname>speakup</"
+"classname> version &speakupver;."
+msgstr ""
+"Understøttelse for udstyrsenheder til talesyntese bestemmes af den "
+"underliggende understøttelse fundet i <classname>speakup</classname>. "
+"<classname>speakup</classname> understøtter kun integrerede kort og eksterne "
+"enheder forbundet til en seriel port (ingen USB, seriel til USB eller PCI-"
+"adapatere er understøttede). Detaljer om understøttede udstyrsenheder til "
+"talesyntese kan findes på <ulink url=\"&url-speakup;\"><classname>speakup</"
+"classname>s hjemmeside</ulink>. &debian-gnu; &release; har "
+"<classname>speakup</classname> version &speakupver;."
+
+#. Tag: title
+#: hardware.xml:1920
+#, no-c-format
+msgid "Peripherals and Other Hardware"
+msgstr "Ekstraudstyr"
+
+#. Tag: para
+#: hardware.xml:1921
+#, no-c-format
+msgid ""
+"&arch-kernel; supports a large variety of hardware devices such as mice, "
+"printers, scanners, PCMCIA/CardBus/ExpressCard and USB devices. However, "
+"most of these devices are not required while installing the system."
+msgstr ""
+"&arch-kernel; understøtter en bred vifte af udstyr såsom mus, printere, "
+"skannere, PCMCIA/CardBus/ExpressCard- og USB-enheder. De fleste af dette "
+"udstyr er dog ikke krævet under installation af systemet."
+
+#. Tag: para
+#: hardware.xml:1927
+#, no-c-format
+msgid ""
+"USB hardware generally works fine. On some very old PC systems some USB "
+"keyboards may require additional configuration (see <xref linkend=\"hardware-"
+"issues\"/>). On modern PCs, USB keyboards and mice work without requiring "
+"any specific configuration."
+msgstr ""
+"USB-udstyr fungerer normalt fint. På nogle gamle pc-systemer kan nogle USB-"
+"tastaturer kræver yderligere konfiguration (se <xref linkend=\"hardware-"
+"issues\"/>). På moderne pc'er, fungerer USB-tastaturer og mus uden nogen "
+"specfik konfiguration."
+
+#. Tag: para
+#: hardware.xml:1936
+#, no-c-format
+msgid ""
+"Package installations from XPRAM and tape are not supported by this system. "
+"All packages that you want to install need to be available on a DASD or over "
+"the network using NFS, HTTP or FTP."
+msgstr ""
+"Pakkeinstallationer fra XPRAM og bånd er ikke understøttet af dette system. "
+"Alle pakke som du ønsker at installere kræver at være tilgængelig på en DASD "
+"eller over netværket via NFS, HTTP eller FTP."
+
+#. Tag: title
+#: hardware.xml:1949
+#, no-c-format
+msgid "Devices Requiring Firmware"
+msgstr "Enheder som kræver firmware"
+
+#. Tag: para
+#: hardware.xml:1950
+#, no-c-format
+msgid ""
+"Besides the availability of a device driver, some hardware also requires so-"
+"called <firstterm>firmware</firstterm> or <firstterm>microcode</firstterm> "
+"to be loaded into the device before it can become operational. This is most "
+"common for network interface cards (especially wireless NICs), but for "
+"example some USB devices and even some hard disk controllers also require "
+"firmware. With many graphics cards, basic functionality is available without "
+"additional firmware, but the use of advanced features requires an "
+"appropriate firmware file to be installed in the system."
+msgstr ""
+"Udover tilgængeligheden for en enhedsdriver kræver noget udstyr også at "
+"såkaldt <firstterm>firmware</firstterm> eller <firstterm>microcode</"
+"firstterm> indlæses i enheden før den kan fungere. Dette er mest udbredt for "
+"netværksgrænsefladekort (specielt trådløse NIC'er), men for eksempel nogle "
+"USB-enheder og selv nogle harddisk-controllere kræver også firmware. Med "
+"mange grafikkort, er basisfunktionalitet tilgængelig uden yderligere "
+"firmware, men brugen af avancerede funktioner kræver, at en passende "
+"firmware-fil installeres på systemet."
+
+#. Tag: para
+#: hardware.xml:1961
+#, no-c-format
+msgid ""
+"On many older devices which require firmware to work, the firmware file was "
+"permanently placed in an EEPROM/Flash chip on the device itself by the "
+"manufacturer. Nowadays most new devices do not have the firmware embedded "
+"this way anymore, so the firmware file must be uploaded into the device by "
+"the host operating system every time the system boots."
+msgstr ""
+"På mange ældre enheder, som kræver firmware for at fungere, blev "
+"firmwarefilen placeret permanent i en EEPROM/Flash-chip på selve enheden af "
+"producenten. I dag har de fleste nye enheder ikke firmwaren indlejret på den "
+"måde, så firmwarefilen skal overføres til enheden af værtsoperativsystemet "
+"hver gang systemet starter op."
+
+#. Tag: para
+#: hardware.xml:1969
+#, no-c-format
+msgid ""
+"In most cases firmware is non-free according to the criteria used by the "
+"&debian-gnu; project and thus cannot be included in the main distribution or "
+"in the installation system. If the device driver itself is included in the "
+"distribution and if &debian-gnu; legally can distribute the firmware, it "
+"will often be available as a separate package from the non-free section of "
+"the archive."
+msgstr ""
+"I de fleste tilfælde er firmware ikke fri jævnfør de kriterier som bruges af "
+"&debian-gnu;-projektet og kan derfor ikke inkluderes i hoveddistributionen "
+"eller i installationssystemet. Hvis enhedsdriveren selv er inkluderet i "
+"distributionen og hvis &debian-gnu; legalt kan distribuere firmwaren, så vil "
+"den ofte være tilgængelig som en separat pakke fra den ikkefrie (non-free) "
+"del af arkivet."
+
+#. Tag: para
+#: hardware.xml:1978
+#, no-c-format
+msgid ""
+"However, this does not mean that such hardware cannot be used during an "
+"installation. Starting with &debian-gnu; 5.0, &d-i; supports loading "
+"firmware files or packages containing firmware from a removable medium, such "
+"as a USB stick. See <xref linkend=\"loading-firmware\"/> for detailed "
+"information on how to load firmware files or packages during the "
+"installation."
+msgstr ""
+"Dette betyder dog ikke at sådant udstyr ikke kan bruges under en "
+"installation. Startende med &debian-gnu; 5.0 understøtter &d-i; indlæsning "
+"af firmwarefiler eller pakker indeholdende firmware fra et eksternt medie, "
+"såsom et USB-drev. Se <xref linkend=\"loading-firmware\"/> for detaljeret "
+"information om hvordan firmwarefiler eller pakker skal indlæses under "
+"installationen."
+
+#. Tag: para
+#: hardware.xml:1987
+#, no-c-format
+msgid ""
+"If the &d-i; prompts for a firmware file and you do not have this firmware "
+"file available or do not want to install a non-free firmware file on your "
+"system, you can try to proceed without loading the firmware. There are "
+"several cases where a driver prompts for additional firmware because it may "
+"be needed under certain circumstances, but the device does work without it "
+"on most systems (this e.g. happens with certain network cards using the tg3 "
+"driver)."
+msgstr ""
+"Hvis &d-i; anmoder om en firmwarefil og du ikke har denne firmwarefil "
+"tilgængelig eller ikke ønsker at installere en ikkefri firmwarefil på dit "
+"system, så kan du fortsætte uden at indlæse firmwaren. Der er flere tilfælde "
+"hvor en driver anmoder om yderligere firmware fordi det skal bruges under "
+"bestemte omstændigheder, men enheden fungerer uden denne på de fleste "
+"systemer (dette sker f.eks. med bestemet netværkskort der bruger tg3-"
+"driveren)."
+
+#. Tag: title
+#: hardware.xml:2004
+#, no-c-format
+msgid "Purchasing Hardware Specifically for GNU/&arch-kernel;"
+msgstr "Køb af udstyr specifikt for GNU/&arch-kernel;"
+
+#. Tag: para
+#: hardware.xml:2006
+#, no-c-format
+msgid ""
+"There are several vendors, who ship systems with &debian; or other "
+"distributions of GNU/Linux <ulink url=\"&url-pre-installed;\">pre-installed</"
+"ulink>. You might pay more for the privilege, but it does buy a level of "
+"peace of mind, since you can be sure that the hardware is well-supported by "
+"GNU/Linux."
+msgstr ""
+"Der er flere leverandører som leverer systemet med &debian; eller andre "
+"distributioner af GNU/Linux <ulink url=\"&url-pre-installed;"
+"\">forhåndsinstalleret</ulink>. Du betaler måske mere for privilegiet, men "
+"det giver lidt ro isindet, da du er sikker på, at udstyret er godt "
+"understøttet af GNU/Linux."
+
+#. Tag: para
+#: hardware.xml:2014
+#, no-c-format
+msgid ""
+"If you do have to buy a machine with Windows bundled, carefully read the "
+"software license that comes with Windows; you may be able to reject the "
+"license and obtain a rebate from your vendor. Searching the Internet for "
+"<quote>windows refund</quote> may get you some useful information to help "
+"with that."
+msgstr ""
+"Hvis du er nød til at købe en maskine med en medfølgende Windows, så læs "
+"omhyggelig programlicensen som følger med Windows; du kan måske afvise "
+"licensen og få et beløb retur fra leverandøren. Søgning på internettet for "
+"<quote>windows refund</quote> kan give dig nogle nyttige informationer til "
+"at hjælpe med det."
+
+#. Tag: para
+#: hardware.xml:2022
+#, no-c-format
+msgid ""
+"Whether or not you are purchasing a system with &arch-kernel; bundled, or "
+"even a used system, it is still important to check that your hardware is "
+"supported by the &arch-kernel; kernel. Check if your hardware is listed in "
+"the references found above. Let your salesperson (if any) know that you're "
+"shopping for a &arch-kernel; system. Support &arch-kernel;-friendly hardware "
+"vendors."
+msgstr ""
+"Uanset om du købet et system med &arch-kernel; eller måske et brugt system, "
+"så er det stadig vigtig at kontrollere om dit udstyr er understøttet af "
+"&arch-kernel;-kernen. Kontroller om dit udstyr er nævnt i referencerne nævnt "
+"ovenfor. Lad din sælger (hvis en sådan findes/kan kontaktes) vide at du "
+"ønsker at købe et &arch-kernel;-system. Støt &arch-kernel;-venlige "
+"udstyrsleverandører."
+
+#. Tag: title
+#: hardware.xml:2033
+#, no-c-format
+msgid "Avoid Proprietary or Closed Hardware"
+msgstr "Undgå proprietær eller lukket udstyr"
+
+#. Tag: para
+#: hardware.xml:2034
+#, no-c-format
+msgid ""
+"Some hardware manufacturers simply won't tell us how to write drivers for "
+"their hardware. Others won't allow us access to the documentation without a "
+"non-disclosure agreement that would prevent us from releasing the driver's "
+"source code, which is one of the central elements of free software. Since we "
+"haven't been granted access to usable documentation on these devices, they "
+"simply won't work under &arch-kernel;."
+msgstr ""
+"Nogle producenter vil ikke fortælle os hvordan vi skal skrive drivere for "
+"deres udstyr. Andre giver os ikke lov til at se dokumentationen uden en "
+"fortrolighedsaftale, som forhindrer os i at udgive driverens kildekode som "
+"åben kildekode, som er et af de centrale elementer i frie programmer. Da vi "
+"ikke har fået adgang til brugbar dokumentation vedrørende disse enheder, så "
+"vil de ikke fungere under &arch-kernel;."
+
+#. Tag: para
+#: hardware.xml:2044
+#, no-c-format
+msgid ""
+"In many cases there are standards (or at least some de-facto standards) "
+"describing how an operating system and its device drivers communicate with a "
+"certain class of devices. All devices which comply to such a (de-"
+"facto-)standard can be used with a single generic device driver and no "
+"device-specific drivers are required. With some kinds of hardware (e.g. USB "
+"<quote>Human Interface Devices</quote>, i.e. keyboards, mice, etc., and USB "
+"mass storage devices like USB flash disks and memory card readers) this "
+"works very well and practically every device sold in the market is standards-"
+"compliant."
+msgstr ""
+"I mange tilfælde er der standarder (eller i det mindste de-facto "
+"standarder), der beskriver hvordan et operativsystem og dets enhedsdrivere "
+"kommunikerer med en bestemt klasse af enheder. Alle enheder som over en "
+"sådan (de-facto) standard kan bruges med en enkel generisk enhedsdriver og "
+"ingen enhedsspecifikke drivere er krævet. Med noget udstyr (f.eks. USB "
+"<quote>Human Interface Devices</quote>, d.v.s. tastaturer, mus etc. og USB-"
+"lagerenheder såsom USB-drev og hukommelseskortlæsere) fungerer dette godt og "
+"praktisk talt alle enheder solgt på markedet overholder standarderne."
+
+#. Tag: para
+#: hardware.xml:2056
+#, no-c-format
+msgid ""
+"In other fields, among them e.g. printers, this is unfortunately not the "
+"case. While there are many printers which can be addressed via a small set "
+"of (de-facto-)standard control languages and therefore can be made to work "
+"without problems in any operating system, there are quite a few models which "
+"only understand proprietary control commands for which no usable "
+"documentation is available and therefore either cannot be used at all on "
+"free operating systems or can only be used with a vendor-supplied closed-"
+"source driver."
+msgstr ""
+"På andre områder, blandt dem f.eks. printere, er dette desværre ikke "
+"tilfældet. Selvom der er mange printere som kan adresseres via et lille sæt "
+"af (de-facto) standardkontrolsporg og derfor kan fungere uden problemer i "
+"ethvert operativsystem, så er der ret så mange modeller, som kun forstår "
+"proprietære kontrolkommandoer hvor ingen brugbar dokumentation er "
+"tilgængelig og som derfor slet ikke kan bruges på frie operativsystemer "
+"eller kun kan bruges med en leverandørdriver i lukket kildekode."
+
+#. Tag: para
+#: hardware.xml:2067
+#, no-c-format
+msgid ""
+"Even if there is a vendor-provided closed-source driver for such hardware "
+"when purchasing the device, the practical lifespan of the device is limited "
+"by driver availability. Nowadays product cycles have become short and it is "
+"not uncommon that a short time after a consumer device has ceased "
+"production, no driver updates get made available any more by the "
+"manufacturer. If the old closed-source driver does not work anymore after a "
+"system update, an otherwise perfectly working device becomes unusable due to "
+"lacking driver support and there is nothing that can be done in this case. "
+"You should therefore avoid buying closed hardware in the first place, "
+"regardless of the operating system you want to use it with."
+msgstr ""
+"Selv om der er en leverandørdriver i lukket kildekode for sådant udstyr når "
+"du køber enhede, så er den praktiske brugsperiode på enheden begrænset af "
+"drivertilgængelighed. I dag er produktcyklusser blevet korte og det er "
+"derfor ikke usandsynligt at kort tid efter at en forbrugerenhed er stoppet "
+"med at blive produceret er der ingen driveropdateringer tilgængelige fra "
+"leverandørens side. Hvis den gamle driver i lukket kildekode ikke længere "
+"fungerer efter en systemopdatering, så kan en ellers perfekt fungerende "
+"enhed blive ubrugelig på grund af manglende driverunderstøttelse og der er "
+"intet som kan gøres i dette tilfælde. Du bør derfor undgå at købe lukket "
+"udstyr i første omgang, uanset hvilket operativsystem du ønsker at bruge på "
+"det."
+
+#. Tag: para
+#: hardware.xml:2080
+#, no-c-format
+msgid ""
+"You can help improve this situation by encouraging manufacturers of closed "
+"hardware to release the documentation and other resources necessary for us "
+"to provide free drivers for their hardware."
+msgstr ""
+"Du kan hjælpe med at forbedre situationen ved at opfordre producenter af "
+"lukket udstyr til at frigive dokumentationen og andre ressourcer nødvendige "
+"for at vi kan tilbyde frie drivere til deres udstyr."
+
+#. Tag: title
+#: hardware.xml:2095
+#, no-c-format
+msgid "Installation Media"
+msgstr "Installationsmedie"
+
+#. Tag: para
+#: hardware.xml:2097
+#, no-c-format
+msgid ""
+"This section will help you determine which different media types you can use "
+"to install &debian;. There is a whole chapter devoted to media, <xref "
+"linkend=\"install-methods\"/>, which lists the advantages and disadvantages "
+"of each media type. You may want to refer back to this page once you reach "
+"that section."
+msgstr ""
+"Dette afsnit vil hjælpe dig med at bestemme hvilke forskellige medietyper du "
+"kan bruge til at installere &debian;. Der er et helt kapitel reserveret til "
+"medie, <xref linkend=\"install-methods\"/>, som angiver fordelene og "
+"ulemperne for hver medietype. Du kan gå tilbage til denne side, når du når "
+"det afsnit."
+
+#. Tag: title
+#: hardware.xml:2107
+#, no-c-format
+msgid "Floppies"
+msgstr "Diskettedrev"
+
+#. Tag: para
+#: hardware.xml:2108
+#, no-c-format
+msgid ""
+"In some cases, you'll have to do your first boot from floppy disks. "
+"Generally, all you will need is a high-density (1440 kilobytes) 3.5 inch "
+"floppy drive."
+msgstr ""
+"I nogle tilfælde skal din første opstart foretages fra disketter. Generelt "
+"er alt du skal brue en »high-density« (1440 kilobyte) 3,5 tomme diskette."
+
+#. Tag: para
+#: hardware.xml:2114
+#, no-c-format
+msgid "For CHRP, floppy support is currently broken."
+msgstr "For CHRP fungerer understøttelse af diskettedrev ikke i øjeblikket."
+
+#. Tag: title
+#: hardware.xml:2121
+#, no-c-format
+msgid "CD-ROM/DVD-ROM/BD-ROM"
+msgstr "Cd-rom/dvd-rom/bd-rom"
+
+#. Tag: para
+#: hardware.xml:2123
+#, no-c-format
+msgid ""
+"Whenever you see <quote>CD-ROM</quote> in this manual, it applies to all of "
+"CD-ROMs, DVD-ROMs and BD-ROMs, because all these technologies are really the "
+"same from the operating system's point of view."
+msgstr ""
+"Når du ser <quote>cd-rom</quote> i denne manual, så gælder det for både cd-"
+"rommer, dvd-rommer og bd-rommer, da begge teknologier er ens set fra "
+"operativsystemets side."
+
+#. Tag: para
+#: hardware.xml:2129
+#, no-c-format
+msgid "CD-ROM based installation is supported for most architectures."
+msgstr ""
+"Cd-rom-baseret installation er understøttet for de fleste arkitekturer."
+
+#. Tag: para
+#: hardware.xml:2133
+#, no-c-format
+msgid ""
+"On PCs SATA, IDE/ATAPI, USB and SCSI CD-ROMs are supported, as are FireWire "
+"devices that are supported by the ohci1394 and sbp2 drivers."
+msgstr ""
+"På pc'er er SATA-, IDE/ATAPI-, USB- og SCSI-cd-rommer også understøttet samt "
+"FireWire-enheder som er understøttet af ohci1394- og sbp2-drivere."
+
+#. Tag: title
+#: hardware.xml:2150
+#, no-c-format
+msgid "USB Memory Stick"
+msgstr "USB-hukommelsesdrev"
+
+#. Tag: para
+#: hardware.xml:2152
+#, no-c-format
+msgid ""
+"USB flash disks a.k.a. USB memory sticks have become a commonly used and "
+"cheap storage device. Most modern computer systems also allow booting the &d-"
+"i; from such a stick. Many modern computer systems, in particular netbooks "
+"and thin laptops, do not have a CD/DVD-ROM drive anymore at all and booting "
+"from USB media is the standard way of installing a new operating system on "
+"them."
+msgstr ""
+"USB-flashdiske a.k.a. USB-hukommelsesdrev er blevet en ofte anvendt og "
+"billig lagerenhed. De fleste moderne computere tillader opstart af &d-i; fra "
+"sådan et drev. Mange moderne computersystemer, specielt netbooks og tynde "
+"bærbare, har ikke et cd/dvd-rom-drev mere og opstart fra USB-mediet er "
+"standardmåden at installere et nyt operativsystem."
+
+#. Tag: title
+#: hardware.xml:2164
+#, no-c-format
+msgid "Network"
+msgstr "Netværk"
+
+#. Tag: para
+#: hardware.xml:2166
+#, no-c-format
+msgid ""
+"The network can be used during the installation to retrieve files needed for "
+"the installation. Whether the network is used or not depends on the "
+"installation method you choose and your answers to certain questions that "
+"will be asked during the installation. The installation system supports most "
+"types of network connections (including PPPoE, but not ISDN or PPP), via "
+"either HTTP or FTP. After the installation is completed, you can also "
+"configure your system to use ISDN and PPP."
+msgstr ""
+"Netværket kan bruges under installationen for at hente filer krævet for "
+"installationen. Hvorvidt netværket bruges eller ej afhænger af "
+"installationsmetoden du valgte og dine svar til bestemte spørgsmål, som du "
+"får stillet under installationen. Installationssystemet understøtter de "
+"fleste typer at netværksforbindelser (inklusive PPPoE, men ikke ISDN, eller "
+"PPP), via enten HTTP eller FTP. Efter installationen er færdig, kan du også "
+"konfigurere dit system til at bruge ISDN og PPP."
+
+#. Tag: para
+#: hardware.xml:2176
+#, no-c-format
+msgid ""
+"You can also <emphasis>boot</emphasis> the installation system over the "
+"network without needing any local media like CDs/DVDs or USB sticks. If you "
+"already have a netboot-infrastructure available (i.e. you are already "
+"running DHCP and TFTP services in your network), this allows an easy and "
+"fast deployment of a large number of machines. Setting up the necessary "
+"infrastructure requires a certain level of technical experience, so this is "
+"not recommended for novice users. <phrase arch=\"mips;mipsel;mips64el\">This "
+"is the preferred installation technique for &arch-title;.</phrase>"
+msgstr ""
+"Du kan også <emphasis>starte</emphasis> installationssystemet op over "
+"netværket uden behov for et lokalt medie såsom cd'er/dvd'er eller USB-drev. "
+"Hvis du allerede har en netboot-infrastruktur tilgængelig (dvs. du allerede "
+"kører DHCP- og TFTP-tjenester i dit netværk), dette muliggør en nem og "
+"hurtig udrulning af et stort antal maskiner. Opsætning af den nødvendige "
+"infrastruktur kræver et bestemt niveau af teknisk erfaring, så det anbefales "
+"ikke for begyndere. <phrase arch=\"mips;mipsel;mips64el\">Dette er den "
+"foretrukne installationsteknik for &arch-title;.</phrase>"
+
+#. Tag: para
+#: hardware.xml:2189
+#, no-c-format
+msgid ""
+"Diskless installation, using network booting from a local area network and "
+"NFS-mounting of all local filesystems, is another option."
+msgstr ""
+"Diskløs installation, via netværksopstart fra et lokalt netværk og NFS-"
+"montering af alle lokale filsystemer, er en anden mulighed."
+
+#. Tag: title
+#: hardware.xml:2198
+#, no-c-format
+msgid "Hard Disk"
+msgstr "Harddisk"
+
+#. Tag: para
+#: hardware.xml:2200
+#, no-c-format
+msgid ""
+"Booting the installation system directly from a hard disk is another option "
+"for many architectures. This will require some other operating system to "
+"load the installer onto the hard disk. This method is only recommended for "
+"special cases when no other installation method is available."
+msgstr ""
+"Opstart af installationssystemet direkte fra en harddisk er en mulighed for "
+"mange arkitekturer. Dette vil kræve et andet operativsystem til at indlæse "
+"installationsprogrammet på harddisken. Denne metode anbefales kun i "
+"specielle tilfælde, hvor ingen anden installationsmetode er tilgængelig."
+
+#. Tag: para
+#: hardware.xml:2207
+#, no-c-format
+msgid ""
+"Although the &arch-title; does not allow booting from SunOS (Solaris), you "
+"can install from a SunOS partition (UFS slices)."
+msgstr ""
+"Selvom &arch-title; ikke tillader opstart fra SunOS (Solaris), så kan du "
+"installere fra en SunOS-partition (UFS-dias)."
+
+#. Tag: title
+#: hardware.xml:2216
+#, no-c-format
+msgid "Un*x or GNU system"
+msgstr "Un*x eller GNU-system"
+
+#. Tag: para
+#: hardware.xml:2218
+#, no-c-format
+msgid ""
+"If you are running another Unix-like system, you could use it to install "
+"&debian-gnu; without using the &d-i; described in the rest of this manual. "
+"This kind of install may be useful for users with otherwise unsupported "
+"hardware or on hosts which can't afford downtime. If you are interested in "
+"this technique, skip to the <xref linkend=\"linux-upgrade\"/>. This "
+"installation method is only recommended for advanced users when no other "
+"installation method is available."
+msgstr ""
+"Hvis du køre et andet Unix-lignende system, så kan du bruge det til at "
+"installere &debian-gnu; uden at bruge %d-i; som beskrevet i resten af denne "
+"manual. Denne slags installation kan være nyttig for brugere med udstyr der "
+"ellers ikke understøttes eller på værter som ikke må have nedetid. Hvis du "
+"er interesseret i denne teknik, så gå til <xref linkend=\"linux-upgrade\"/>. "
+"Denne installationsmetode anbefales kun for avancerede brugere når ingen "
+"andre installationsmetoder er tilgængelige."
+
+#. Tag: title
+#: hardware.xml:2231
+#, no-c-format
+msgid "Supported Storage Systems"
+msgstr "Understøttede lagersystemer"
+
+#. Tag: para
+#: hardware.xml:2233
+#, no-c-format
+msgid ""
+"The &debian; installer contains a kernel which is built to maximize the "
+"number of systems it runs on."
+msgstr ""
+"&debian;-installationsprogrammet indeholder en kerne, som er bygget til at "
+"maksimere antallet af systemer det kan køre på."
+
+#. Tag: para
+#: hardware.xml:2237
+#, no-c-format
+msgid ""
+"Generally, the &debian; installation system includes support for IDE (also "
+"known as PATA) drives, SATA and SCSI controllers and drives, USB, and "
+"FireWire. The supported file systems include FAT, Win-32 FAT extensions "
+"(VFAT) and NTFS."
+msgstr ""
+"Generelt inkluderer &debian;-installationssystemet understøttelse for IDE-"
+"drivere (også kendt som PATA), SATA- og SCSI-controllere og drivere, USB og "
+"FireWire. De understøttede filsystemer inkluderer FAT, Win-32 FAT-udvidelser "
+"(VFAT) og NTFS."
+
+#. Tag: para
+#: hardware.xml:2254
+#, no-c-format
+msgid ""
+"Any storage system supported by the Linux kernel is also supported by the "
+"boot system. The following SCSI drivers are supported in the default kernel: "
+"<itemizedlist> <listitem><para> Sparc ESP </para></listitem> "
+"<listitem><para> PTI Qlogic,ISP </para></listitem> <listitem><para> Adaptec "
+"AIC7xxx </para></listitem> <listitem><para> NCR and Symbios 53C8XX </para></"
+"listitem> </itemizedlist> IDE systems (such as the UltraSPARC 5) are also "
+"supported. See <ulink url=\"&url-sparc-linux-faq;\">Linux for SPARC "
+"Processors FAQ</ulink> for more information on SPARC hardware supported by "
+"the Linux kernel."
+msgstr ""
+"Alle lagersystemer understøttet af Linux-kernen er også understøttet af "
+"opstartssystemet. De følgende SCSI-drivere er understøttet i standardkernen: "
+"<itemizedlist> <listitem><para> Sparc ESP </para></listitem> "
+"<listitem><para> PTI Qlogic,ISP </para></listitem> <listitem><para> Adaptec "
+"AIC7xxx </para></listitem> <listitem><para> NCR og Symbios 53C8XX </para></"
+"listitem> </itemizedlist> IDE-systemer (såsom UltraSPARC 5) er også "
+"understøttet. Se <ulink url=\"&url-sparc-linux-faq;\">Linux for SPARC "
+"Processors FAQ</ulink> for yderligere information om SPARC-udstyr "
+"understøttet af Linux-kernen."
+
+#. Tag: para
+#: hardware.xml:2287
+#, no-c-format
+msgid ""
+"Any storage system supported by the Linux kernel is also supported by the "
+"boot system. Note that the current Linux kernel does not support floppies on "
+"CHRP systems at all."
+msgstr ""
+"Alle lagersystemer understøttet af Linux-kernen er også understøttet af "
+"opstartssystemet. Bemærk at den nuværende Linux-kerne ikke understøtter "
+"disketter på CHRP-systemer."
+
+#. Tag: para
+#: hardware.xml:2293
+#, no-c-format
+msgid ""
+"Any storage system supported by the Linux kernel is also supported by the "
+"boot system. Note that the current Linux kernel does not support the floppy "
+"drive."
+msgstr ""
+"Alle lagersystemer understøttet af Linux-kernen er også understøttet af "
+"opstartssystemet. Bemærk at den nuværende Linux-kerne ikke understøtter "
+"diskettedrevet."
+
+#. Tag: para
+#: hardware.xml:2299
+#, no-c-format
+msgid ""
+"Any storage system supported by the Linux kernel is also supported by the "
+"boot system."
+msgstr ""
+"Alle lagersystemer understøttet af Linux-kernen er også understøttet af "
+"opstartssystemet."
+
+#. Tag: para
+#: hardware.xml:2304
+#, no-c-format
+msgid ""
+"Any storage system supported by the Linux kernel is also supported by the "
+"boot system. This means that FBA and ECKD DASDs are supported with the old "
+"Linux disk layout (ldl) and the new common S/390 disk layout (cdl)."
+msgstr ""
+"Alle lagersystemer understøttet af Linux-kernen er også understøttet af "
+"opstartssystemet. Dette betyder at FBA og ECKD DASD'er er understøttet med "
+"det gamle Linux-disklayout (ldl) og det nye fælles S/390-disklayout (cdl)."
+
+#. Tag: title
+#: hardware.xml:2321
+#, no-c-format
+msgid "Memory and Disk Space Requirements"
+msgstr "Hukommelses- og diskpladskrav"
+
+#. Tag: para
+#: hardware.xml:2323
+#, no-c-format
+msgid ""
+"You must have at least &minimum-memory; of memory and &minimum-fs-size; of "
+"hard disk space to perform a normal installation. Note that these are fairly "
+"minimal numbers. For more realistic figures, see <xref linkend=\"minimum-"
+"hardware-reqts\"/>."
+msgstr ""
+"Du skal have mindst &minimum-memory; hukommelse og &minimum-fs-size; "
+"harddiskplads for at udføre en normal installation. Bemærk at dette er "
+"omtrentlige minimumstal. For mere realistiske tal, se <xref linkend="
+"\"minimum-hardware-reqts\"/>."
+
+#. Tag: para
+#: hardware.xml:2330
+#, no-c-format
+msgid ""
+"Installation on systems with less memory<footnote condition=\"gtk\"> <para> "
+"Installation images that support the graphical installer require more memory "
+"than images that support only the textual installer and should not be used "
+"on systems with less than &minimum-memory; of memory. If there is a choice "
+"between booting the text-based and the graphical installer, the former "
+"should be selected on such systems. </para> </footnote> or disk space "
+"available may be possible but is only advised for experienced users."
+msgstr ""
+"Installation på systemer med mindre tilgængelig hukommelse<footnote "
+"condition=\"gtk\"> <para> Installationsaftryk som understøtter det grafiske "
+"installationsprogram kræver mere hukommelse end aftryk som kun understøtter "
+"tekst-installationsprogrammet og bør ikke bruges på systemer med mindre end "
+"&minimum-memory; hukommelse. Hvis der er et valg mellem at starte det "
+"tekstbaserede og det grafiske installationsprogram, så bør den første "
+"vælges. </para> </footnote> eller diskplads kan lade sig gøre, men tilrådes "
+"kun for erfarne brugere."

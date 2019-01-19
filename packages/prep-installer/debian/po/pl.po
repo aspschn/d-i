@@ -1,0 +1,139 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Polish messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Copyright (C) 2004-2010 Bartosz Feński <fenio@debian.org>
+#
+#
+# Translations from iso-codes:
+#     Translations taken from ICU SVN on 2007-09-09
+#
+#      Translations from KDE:
+#      - Jacek Stolarczyk <jacek@mer.chemia.polsl.gliwice.pl>
+#
+#   Tobias Toedter <t.toedter@gmx.net>, 2007.
+#   Jakub Bogusz <qboosh@pld-linux.org>, 2009-2011.
+#      Alastair McKinstry <mckinstry@computer.org>, 2001.
+#      Alastair McKinstry, <mckinstry@debian.org>, 2004.
+#      Andrzej M. Krzysztofowicz <ankry@mif.pg.gda.pl>, 2007.
+#      Cezary Jackiewicz <cjackiewicz@poczta.onet.pl>, 2000-2001.
+#      Free Software Foundation, Inc., 2000-2010.
+#      Free Software Foundation, Inc., 2004-2009.
+#      GNOME PL Team <translators@gnome.pl>, 2001.
+#      Jakub Bogusz <qboosh@pld-linux.org>, 2007-2011.
+#      Tomasz Z. Napierala <zen@debian.linux.org.pl>, 2004, 2006.
+# Marcin Owsiany <porridge@debian.org>, 2011.
+# Michał Kułach <michal.kulach@gmail.com>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2011-09-26 10:46+0100\n"
+"Last-Translator: Michał Kułach <michal.kulach@gmail.com>\n"
+"Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Main menu item
+#. Keep translations below 55 ccolumns (1 character=1 column
+#. except for wide character languages such as Chinese/Japanese/Korean)
+#. A bit of context for translators :
+#. PReP stands for PowerPC Reference Platform, is an acronym, and should not be
+#. translated. The PReP boot partition is a partition of type 0x41, which is
+#. used by PReP boxes and IBM CHRP boxes to boot yaboot or the kernel from.
+#: ../prep-installer.templates:1001
+msgid "Install the kernel on a PReP boot partition"
+msgstr "Instalowanie jądra na partycji rozruchowej PReP"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Type: text
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:2001 ../prep-installer.templates:7001
+msgid "Copying the kernel to the PReP boot partition"
+msgstr "Kopiowanie jądra na partycję rozruchową PReP"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:3001
+msgid "Looking for PReP boot partitions"
+msgstr "Poszukiwanie partycji rozruchowej PReP"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:4001
+msgid "No PReP boot partitions"
+msgstr "Brak partycji rozruchowych PReP"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:4001
+msgid ""
+"No PReP boot partitions were found. You must create a PReP boot partition "
+"within the first 8MB of your hard disk."
+msgstr ""
+"Nie znaleziono partycji rozruchowych PReP. Musisz utworzyć taką partycję na "
+"pierwszych 8MB dysku twardego."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:5001
+msgid "Looking for the root partition"
+msgstr "Poszukiwanie partycji głównej"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:6001
+msgid "No root partition found"
+msgstr "Nie znaleziono głównej partycji"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:6001
+msgid ""
+"No partition is mounted as your new root partition. You must mount a root "
+"partition first."
+msgstr ""
+"Żadna partycja nie jest zamontowana jako Twoja nowa główna partycja. Musisz "
+"najpierw zamontować główną partycję."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:8001
+msgid "Successfully installed PReP"
+msgstr "PReP pomyślnie zainstalowany"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:8001
+msgid "The kernel was properly copied to the PReP boot partition."
+msgstr "Kopiowanie jądra na partycję rozruchową PReP pomyślnie zakończone."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:8001
+msgid "The new system is now ready to boot."
+msgstr "Nowy system jest gotowy do uruchomienia."

@@ -1,0 +1,28 @@
+partman-auto/text/atomic_scheme ::
+
+10 10 10 free
+	$iflabel{ gpt }
+	$reusemethod{ }
+	method{ biosgrub } .
+
+50 500 100 ext2
+	$iflabel{ sun }
+	$bootable{ }
+	method{ format }
+	format{ }
+	use_filesystem{ }
+	filesystem{ ext2 }
+	mountpoint{ /boot } .
+
+800 10000 -1 $default_filesystem
+	$lvmok{ }
+	method{ format }
+	format{ }
+	use_filesystem{ }
+	$default_filesystem{ }
+	mountpoint{ / } .
+
+100% 512 300% linux-swap
+	$lvmok{ }
+	method{ swap }
+	format{ } .

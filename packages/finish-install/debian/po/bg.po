@@ -1,0 +1,116 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of bg.po to Bulgarian
+# Bulgarian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+#
+#
+# Translations from iso-codes:
+#     Translations taken from ICU SVN on 2007-09-09
+# Copyright (C)
+#   (translations from drakfw)
+#   - further translations from ICU-3.9
+# Translation of ISO 639 (language names) to Bulgarian
+# Copyright (C) 2010 Free Software Foundation, Inc.
+#
+# Copyright (C)
+#
+# Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004, 2005, 2006.
+# Nikola Antonov <nikola@linux-bg.org>, 2004.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#   Free Software Foundation, Inc., 2004.
+#   Georgi Georgiev <assenov_g@operamail.com>, 2001, 2004.
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004.
+#   Damyan Ivanov <dmn@debian.org>, 2006, 2007, 2008, 2009, 2010.
+#   Roumen Petrov <transl@roumenpetrov.info>, 2010.
+# Damyan Ivanov <dmn@debian.org>, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bg\n"
+"Report-Msgid-Bugs-To: finish-install@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-18 22:02+0000\n"
+"PO-Revision-Date: 2017-01-15 10:14+0200\n"
+"Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
+"Language-Team: Български <dict@fsa-bg.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../finish-install.templates:1001
+msgid "Finish the installation"
+msgstr "Завършване на инсталирането"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:2001
+msgid "Finishing the installation"
+msgstr "Завършване на инсталацията"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:3001
+msgid "Running ${SCRIPT}..."
+msgstr "Изпълнение на ${SCRIPT}..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:4001
+msgid "Configuring network..."
+msgstr "Настройване на мрежа..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:5001
+msgid "Setting up frame buffer..."
+msgstr "Настройване на frame buffer..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:6001
+msgid "Unmounting file systems..."
+msgstr "Демонтиране на файловите системи..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:7001
+msgid "Rebooting into your new system..."
+msgstr "Рестартиране в инсталираната система..."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../finish-install.templates:8001
+msgid "Installation complete"
+msgstr "Инсталирането завърши"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../finish-install.templates:8001
+msgid ""
+"Installation is complete, so it is time to boot into your new system. Make "
+"sure to remove the installation media, so that you boot into the new system "
+"rather than restarting the installation."
+msgstr ""
+"Инсталирането завърши и е време за зареждане на новоинсталираната система. "
+"Уверете се, че сте извадили инсталационния носител за да не започне наново "
+"процеса на инсталиране."

@@ -1,0 +1,251 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of eu.po to Euskara
+# Basque messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Translations from iso-codes:
+# Copyright (C)
+# Translations from KDE:
+# Piarres Beobide <pi@beobide.net>, 2004-2009, 2011.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008, 2010.
+# Mikel Olasagasti <hey_neken@mundurat.net>, 2004.
+# Piarres Beobide Egaña <pi@beobide.net>, 2004,2006,2007, 2008, 2009.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2010.
+# Free Software Foundation, Inc., 2002.
+# Alastair McKinstry <mckinstry@computer.org>, 2002.
+# Marcos Goienetxe <marcos_g@infonegocio.com>, 2002.
+# Piarres Beobide <pi@beobide.net>, 2008.
+# Xabier Bilbao <xabidu@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: eu\n"
+"Report-Msgid-Bugs-To: network-console@packages.debian.org\n"
+"POT-Creation-Date: 2012-10-01 22:05+0000\n"
+"PO-Revision-Date: 2012-10-19 19:41+0200\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+"Language-Team: debian-l10n-eu@lists.debian.org\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Content-Transfer-Encoding=UTF-8Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:1001
+msgid "Continue installation remotely using SSH"
+msgstr "Jarraitu urrunetik instalatzen SSH erabiliz"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start installer"
+msgstr "Abiarazi instalatzailea"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start installer (expert mode)"
+msgstr "Abiarazi instalatzailea (adituen moduan)"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start shell"
+msgstr "Abiarazi shell-a"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid "Network console option:"
+msgstr "Sareko kontsolaren aukera:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid ""
+"This is the network console for the Debian installer. From here, you may "
+"start the Debian installer, or execute an interactive shell."
+msgstr ""
+"Hau Debian instalatzailearen sareko kontsola da. Hemendik, Debian "
+"instalatzailea abiarazi edo shell elkarreragile bat exekuta dezakezu."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid "To return to this menu, you will need to log in again."
+msgstr "Menu honetara itzultzeko, saioa berriro hasi beharko duzu."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:3001
+msgid "Generating SSH host key"
+msgstr "SSH ostalari-gakoa sortzen"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid "Remote installation password:"
+msgstr "Urruneko instalazioaren pasahitza:"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid ""
+"You need to set a password for remote access to the Debian installer. A "
+"malicious or unqualified user with access to the installer can have "
+"disastrous results, so you should take care to choose a password that is not "
+"easy to guess. It should not be a word found in the dictionary, or a word "
+"that could be easily associated with you, like your middle name."
+msgstr ""
+"Debian-en instalatzailea urrunetik atzitzeko pasahitza behar duzu. "
+"Instalatzailerako atzipena duen erabiltzaile maltzur edo baimenik gabeko "
+"batek kalte larriak eragin ditzake, eta horregatik asmatzen erraza ez den "
+"pasahitza aukeratzea komeni da. Ez du hiztegiko hitza izan behar, ezta "
+"zurekin erraz erreferentzia daitekeena ere, adibidez, bigarren deitura."
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid ""
+"This password is used only by the Debian installer, and will be discarded "
+"once you finish the installation."
+msgstr ""
+"Pasahitz hori Debian-eko instalatzaileak bakarrik erabiliko du, eta baztertu "
+"egingo da instalazioa amaitutakoan."
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+msgid "Re-enter password to verify:"
+msgstr "Berretsi pasahitza:"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+msgid ""
+"Please enter the same remote installation password again to verify that you "
+"have typed it correctly."
+msgstr ""
+"Sartu urrunetik instalatzeko pasahitza berriro, ondo idatzi duzula "
+"egiaztatzeko."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid "Empty password"
+msgstr "Pasahitz hutsa"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid ""
+"You entered an empty password, which is not allowed. Please choose a non-"
+"empty password."
+msgstr ""
+"Pasahitz hutsa sartu duzu, eta ez dago onartuta. Hautatu hutsik ez dagoen "
+"pasahitza."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+msgid "Password mismatch"
+msgstr "Pasahitzak ez datoz bat"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+msgid ""
+"The two passwords you entered were not the same. Please enter a password "
+"again."
+msgstr "Sartutako bi pasahitzak ez dira berdinak. Sartu pasahitza berriro."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "Start SSH"
+msgstr "Abiarazi SSH"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+#, fuzzy
+msgid ""
+"To continue the installation, please use an SSH client to connect to the IP "
+"address ${ips} and log in as the \"installer\" user. For example:"
+msgstr ""
+"Instalatzen jarraitzeko, erabili SSH bezeroa ${ip} IP helbidera konektatzeko "
+"eta \"installer\" erabiltzaileaz saioa hasi. Adibidez:"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "The fingerprint of this SSH server's host key is: ${fingerprint}"
+msgstr ""
+"SSH zerbitzariaren ostalari-gako honen hatz-marka hau da: ${fingerprint}"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid ""
+"Please check this carefully against the fingerprint reported by your SSH "
+"client."
+msgstr "Konparatu hau arretaz SSH bezeroak emandako hatz-markarekin."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Could not fetch SSH authorized keys"
+msgstr "Ezin dira SSH baimendutako gakoak eskuratu"
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Translators: do NOT translate the "LOCATION" variable name
+#: ../network-console.templates:10001
+msgid "An error occurred while fetching SSH authorized keys from ${LOCATION}."
+msgstr ""
+"Errorea gertatu da ${LOCATION}.-etik baimendutako SSH gakoak eskuratzerakoan."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr "Egiaztatu /var/log/messages edo ikusi 4. kontsola xehetasunetarako."

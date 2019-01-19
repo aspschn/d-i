@@ -1,0 +1,32 @@
+This document briefly describes how to make a installation-guide release.
+
+- First make sure to be up to date
+
+    git pull
+
+- Set the release date
+
+    dch -r
+
+    and set the package version to the date.
+
+- Commit that
+
+    git commit
+
+- Build (use a machine with a lot of cores to make this fast)
+
+    pdebuild
+
+- Compare against a previous version to make sure we didn't mess it up
+  completely
+
+    debdiff installation-guide_2017WWWW_amd64.changes installation-guide_2017XXXX_amd64.changes
+
+- Upload the result
+
+- When ACCEPTed, Tag the commit:
+
+    git tag 2017XXXX
+    git push
+    git push --tags

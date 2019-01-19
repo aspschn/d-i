@@ -1,0 +1,498 @@
+<!-- retain these comments for translator revision tracking -->
+<!-- $Id$ -->
+
+  <sect2 arch="any-x86" condition="bootable-usb" id="usb-boot-x86">
+  <title>Booting from USB Memory Stick</title>
+
+&boot-installer-intro-usb.xml;
+
+  </sect2>
+
+  <sect2 arch="any-x86"><title>Booting from a CD-ROM</title>
+
+&boot-installer-intro-cd.xml;
+
+  </sect2>
+
+  <sect2 arch="any-x86" id="boot-win32">
+  <title>Booting from Windows</title>
+<para>
+
+To start the installer from Windows, you can either
+
+<itemizedlist>
+<listitem><para>
+
+obtain CD-ROM/DVD-ROM<phrase condition="bootable-usb"> or USB memory
+stick</phrase> installation media as described in
+<xref linkend="official-cdrom"/><phrase condition="bootable-usb"> respective
+<xref linkend="boot-usb-files"/></phrase> or
+
+</para></listitem>
+<listitem><para>
+
+download a standalone Windows executable, which is available as
+<ulink url="&win32-loader-exe;">tools/win32-loader/stable/win32-loader.exe</ulink>
+on the &debian; mirrors.
+
+</para></listitem>
+</itemizedlist>
+
+</para><para>
+
+If you use an installation CD or DVD, a pre-installation program should be
+launched automatically when you insert the disc.
+In case Windows does not start it automatically, or if you are using a USB
+memory stick, you can run it manually by accessing the device and executing
+<command>setup.exe</command>.
+
+</para><para>
+
+After the program has been started, a few preliminary questions will be
+asked and the system will be prepared to reboot into the &debian-gnu;
+installer.
+
+</para>
+  </sect2>
+
+  <sect2 arch="x86" id="install-from-dos">
+  <title>Booting from DOS using loadlin</title>
+<para>
+
+Boot into DOS (not Windows).  To do this, you can for instance boot from a
+recovery or diagnostic disk.
+
+</para><para>
+
+If you can access the installation CD, change the current drive to the CD-ROM
+drive, e.g.
+
+<informalexample><screen>
+d:
+</screen></informalexample>
+
+else make sure you have first prepared your hard disk as explained in
+<xref linkend="files-loadlin"/>, and change the current drive to it if needed.
+
+</para><para>
+
+Enter the subdirectory for the flavor you chose, e.g.,
+
+<informalexample><screen>
+cd \&x86-install-dir;
+</screen></informalexample>
+
+If you prefer using the graphical installer, enter the <filename>gtk</filename>
+sub-directory.
+
+<informalexample><screen>
+cd gtk
+</screen></informalexample>
+
+Next, execute <command>install.bat</command>.
+The kernel will load and launch the installer system.
+
+</para>
+  </sect2>
+
+  <sect2 arch="x86" id="boot-initrd">
+  <title>Booting from Linux using <command>LILO</command> or
+  <command>GRUB</command></title>
+
+<para>
+To boot the installer from hard disk, you must first download
+and place the needed files as described in <xref linkend="boot-drive-files"/>.
+</para>
+
+<para>
+If you intend to use the hard drive only for booting and then
+download everything over the network, you should download the
+<filename>netboot/debian-installer/&architecture;/initrd.gz</filename> file and its
+corresponding kernel
+<filename>netboot/debian-installer/&architecture;/linux</filename>. This will allow you
+to repartition the hard disk from which you boot the installer, although you
+should do so with care.
+</para>
+
+<para>
+Alternatively, if you intend to keep an existing partition on the hard
+drive unchanged during the install, you can download the
+<filename>hd-media/initrd.gz</filename> file and its kernel, as well as
+copy a CD (or DVD) iso to the drive (make sure the file is named ending in
+<literal>.iso</literal>). The installer can then boot from the drive
+and install from the CD/DVD image, without needing the network.
+</para>
+
+<para>
+For <command>LILO</command>, you will need to configure two
+essential things in <filename>/etc/lilo.conf</filename>:
+<itemizedlist>
+<listitem><para>
+
+to load the <filename>initrd.gz</filename> installer at boot time;
+
+</para></listitem>
+<listitem><para>
+
+have the <filename>vmlinuz</filename> kernel use a RAM disk as
+its root partition.
+
+</para></listitem>
+</itemizedlist>
+
+Here is a <filename>/etc/lilo.conf</filename> example:
+
+</para><para>
+
+<informalexample><screen>
+image=/boot/newinstall/vmlinuz
+       label=newinstall
+       initrd=/boot/newinstall/initrd.gz
+</screen></informalexample>
+
+For more details, refer to the
+<citerefentry><refentrytitle>initrd</refentrytitle>
+<manvolnum>4</manvolnum></citerefentry> and
+<citerefentry><refentrytitle>lilo.conf</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry> man pages. Now run
+<userinput>lilo</userinput> and reboot.
+
+</para><para>
+
+The procedure for <command>GRUB1</command> is quite similar. Locate your
+<filename>menu.lst</filename> in the <filename>/boot/grub/</filename>
+directory (or sometimes <filename>/boot/boot/grub/</filename>) and add an
+entry for the installer, for example (assuming <filename>/boot</filename>
+is on the first partition of the first disk in the system):
+
+<informalexample><screen>
+title  New Install
+root   (hd0,0)
+kernel /boot/newinstall/vmlinuz
+initrd /boot/newinstall/initrd.gz
+</screen></informalexample>
+
+</para><para>
+
+The procedure for <command>GRUB2</command> is very similar. The file is named
+<filename>grub.cfg</filename> instead of <filename>menu.lst</filename>. An entry
+for the installer would be for instance for example:
+
+<informalexample><screen>
+menuentry 'New Install' {
+insmod part_msdos
+insmod ext2
+set root='(hd0,msdos1)'
+linux /boot/newinstall/vmlinuz
+initrd /boot/newinstall/initrd.gz
+}
+</screen></informalexample>
+
+</para><para>
+
+From here on, there should be no difference between <command>GRUB</command>
+or <command>LILO</command>.
+
+</para>
+  </sect2>
+
+  <sect2 arch="x86" condition="supports-floppy-boot" id="floppy-boot">
+  <title>Booting from Floppies</title>
+<para>
+
+You will have already downloaded the floppy images you needed and
+created floppies from the images in <xref linkend="create-floppy"/>.
+<!-- missing-doc FIXME If you need to, you can also modify the boot floppy; see
+<xref linkend="rescue-replace-kernel"/>. -->
+
+</para><para>
+
+To boot from the installer boot floppy, place it in the primary floppy
+drive, shut down the system as you normally would, then turn it back
+on.
+
+</para><para>
+
+For installing from an LS-120 drive (ATAPI version) with a set of
+floppies, you need to specify the virtual location for the floppy
+device.  This is done with the <emphasis>root=</emphasis> boot
+argument, giving the device that the ide-floppy driver maps the device
+to. For example, if your LS-120 drive is connected as the first IDE
+device (master) on the second cable, you enter
+<userinput>install root=/dev/hdc</userinput> at the boot prompt.
+
+</para><para>
+
+Note that on some machines, <keycombo><keycap>Control</keycap>
+<keycap>Alt</keycap> <keycap>Delete</keycap></keycombo> does not
+properly reset the machine, so a <quote>hard</quote> reboot is recommended.  If
+you are installing from an existing operating system (e.g., from a DOS
+box) you don't have a choice. Otherwise, please do a hard reboot when
+booting.
+
+</para><para>
+
+The floppy disk will be accessed, and you should then see a screen
+that introduces the boot floppy and ends with the <prompt>boot:</prompt>
+prompt.
+
+</para><para>
+
+Once you press &enterkey;, you should see the message
+<computeroutput>Loading...</computeroutput>, followed by
+<computeroutput>Uncompressing Linux...</computeroutput>, and
+then a screenfull or so of information about the hardware in your
+system.  More information on this phase of the boot process can be
+found below in <xref linkend="kernel-msgs"/>.
+
+</para><para>
+
+After booting from the boot floppy, the root floppy is
+requested. Insert the root floppy and press &enterkey;, and the
+contents are loaded into memory. The installer program
+<command>debian-installer</command> is automatically launched.
+
+</para>
+  </sect2>
+
+  <sect2 arch="x86" id="boot-tftp-x86"><title>Booting with TFTP</title>
+
+&boot-installer-intro-net.xml;
+
+<para>
+
+There are various ways to do a TFTP boot on i386.
+
+</para>
+
+   <sect3><title>NIC or Motherboard that support PXE</title>
+<para>
+
+It could be that your Network Interface Card or Motherboard provides
+PXE boot functionality.
+This is a <trademark class="trade">Intel</trademark> re-implementation
+of TFTP boot. If so, you may be able to configure your BIOS to boot from the
+network.
+
+</para>
+   </sect3>
+
+   <sect3><title>NIC with Network BootROM</title>
+<para>
+
+It could be that your Network Interface Card provides
+TFTP boot functionality.
+
+</para><para condition="FIXME">
+
+Let us (<email>&email-debian-boot-list;</email>) know how did you manage it.
+Please refer to this document.
+
+</para>
+   </sect3>
+
+   <sect3><title>Etherboot</title>
+<para>
+
+The <ulink url="http://www.etherboot.org">etherboot project</ulink>
+provides bootdiskettes and even bootroms that do a TFTPboot.
+
+</para>
+   </sect3>
+  </sect2>
+
+  <sect2 arch="x86" id="boot-screen">
+  <title>The Boot Screen</title>
+<para>
+
+When the installer boots, you should be presented with a friendly graphical
+screen showing the &debian; logo and a menu:
+
+<informalexample><screen>
+&debian-gnu; installer boot menu
+
+Graphical install
+Install
+Advanced options             >
+Help
+Install with speech synthesis
+</screen></informalexample>
+
+</para>
+
+<note><para>
+
+This graphical screen will look very slightly different depending on
+how your computer has booted (BIOS or UEFI), but the same options will
+be shown.
+
+</para></note>
+
+<para>
+
+Depending on the installation method you are using, the <quote>Graphical
+install</quote> option may not be available. Bi-arch images additionally have a
+64 bit variant for each install option, right below it, thus almost doubling the
+number of options.
+
+</para><para>
+
+For a normal installation, select either the <quote>Graphical install</quote> or
+the <quote>Install</quote> entry &mdash; using either the
+arrow keys on your keyboard or by typing the first (highlighted) letter &mdash;
+and press &enterkey; to boot the installer. The 
+<quote>Graphical install</quote> entry is already selected by default.
+
+</para><para>
+
+The <quote>Advanced options</quote> entry gives access to a second menu
+that allows to boot the installer in expert mode, in rescue mode and for
+automated installs.
+
+</para><para>
+
+If you wish or need to add any boot parameters for either the
+installer or the kernel, press &tabkey; (BIOS boot), or &ekey; then
+&downkey; three times then &endkey; (UEFI boot).
+This will bring the boot command for the selected menu entry
+and allow you to edit it to suit your needs.  Note that the keyboard layout at
+this point is still QWERTY. The help screens (see
+below) list some common possible options. Press &enterkey; (BIOS boot)
+or &f10key; (UEFI boot) to boot the installer with your options;
+pressing &escapekey; will return you to the boot menu and undo any
+changes you made.
+
+</para><para>
+
+Choosing the <quote>Help</quote> entry will result in the first help screen
+being displayed which gives an overview of all available help screens.
+To return to the boot menu after the help screens have been
+displayed, type 'menu' at the boot prompt and press &enterkey;. All
+help screens have a boot prompt at which the boot command can be typed:
+
+<informalexample><screen>
+Press F1 for the help index, or ENTER to boot:
+</screen></informalexample>
+
+At this boot prompt you can either just press &enterkey; to boot the
+installer with default options or enter a specific boot command and,
+optionally, boot parameters. A number of boot parameters which might be
+useful can be found on the various help screens. If you do add any
+parameters to the boot command line, be sure to first type the boot method
+(the default is <userinput>install</userinput>) and a space before the
+first parameter (e.g., <userinput>install fb=false</userinput>).
+
+<note><para>
+
+The keyboard is assumed to have a default American English layout at this
+point. This means that if your keyboard has a different (language-specific)
+layout, the characters that appear on the screen may be different from what
+you'd expect when you type parameters. Wikipedia has a
+<ulink url="&url-us-keymap;">schema of the US keyboard layout</ulink> which
+can be used as a reference to find the correct keys to use.
+
+</para></note>
+<note><para>
+
+If you are using a system that has the BIOS configured to use serial console,
+you may not be able to see the initial graphical splash screen upon booting
+the installer; you may even not see the boot menu. The same can happen if
+you are installing the system via a remote management device that provides a
+text interface to the VGA console. Examples of these devices include the text
+console of Compaq's <quote>integrated Lights Out</quote> (iLO) and HP's
+<quote>Integrated Remote Assistant</quote> (IRA).
+
+</para><para>
+
+To bypass the graphical boot screen you can either blindly press &escapekey;
+to get a text boot prompt, or (equally blindly) press <quote>H</quote>
+followed by &enterkey; to select the <quote>Help</quote> option described
+above. After that your keystrokes should be echoed at the prompt.
+To prevent the installer from using the framebuffer for the rest of the
+installation, you will also want to add <userinput>vga=normal fb=false</userinput>
+to the boot prompt, as described in the help text.
+
+</para></note>
+</para>
+
+  </sect2>
+
+  <sect2 condition="gtk" id="graphical">
+  <title>The Graphical Installer</title>
+<para>
+
+The graphical version of the installer is only available for a limited
+number of architectures, including &arch-title;. The functionality of
+the graphical installer is essentially the same as that of the text-based
+installer as it basically uses the same programs, but with a different
+frontend.
+
+</para><para>
+
+Although the functionality is identical, the graphical installer still has
+a few significant advantages. The main advantage is that it supports more
+languages, namely those that use a character set that cannot be displayed
+with the text-based <quote>newt</quote> frontend. It also has a few usability
+advantages such as the option to use a mouse, and in some cases several
+questions can be displayed on a single screen.
+
+</para><para arch="any-x86">
+
+The graphical installer is available with all CD images and with the
+hd-media installation method. To boot the graphical installer simply select
+the relevant option from the boot menu. Expert and rescue mode for the
+graphical installer can be selected from the <quote>Advanced options</quote>
+menu. The previously used boot methods <userinput>installgui</userinput>,
+<userinput>expertgui</userinput> and <userinput>rescuegui</userinput> can
+still be used from the boot prompt which is shown after selecting the
+<quote>Help</quote> option in the boot menu.
+
+</para><para arch="any-x86">
+
+There is also a graphical installer image that can be netbooted. And there
+is a special <quote>mini</quote> ISO image<footnote id="gtk-miniiso-x86">
+
+<para>
+The mini ISO image can be downloaded from a &debian; mirror as described
+in <xref linkend="downloading-files"/>.
+Look for <filename>netboot/gtk/mini.iso</filename>.
+</para>
+
+</footnote>, which is mainly useful for testing.
+
+</para><para arch="powerpc">
+
+For &arch-title;, currently only an experimental <quote>mini</quote> ISO
+image is available<footnote id="gtk-miniiso-powerpc">
+
+<para>
+The mini ISO image can be downloaded from a &debian; mirror as described
+in <xref linkend="downloading-files"/>.
+Look for <filename>netboot/gtk/mini.iso</filename>.
+</para>
+
+</footnote>. It should work on almost all PowerPC systems that have
+an ATI graphical card, but is unlikely to work on other systems.
+
+</para><para>
+
+Just as with the text-based installer it is possible to add boot parameters
+when starting the graphical installer.
+
+</para>
+<note><para>
+
+The graphical installer requires significantly more memory to run than
+the text-based installer: &minimum-memory-gtk;. If insufficient memory is
+available, it will automatically fall back to the text-based
+<quote>newt</quote> frontend.
+
+</para><para>
+
+If the amount of memory in your system is below &minimum-memory;,
+the graphical installer may fail to boot at all while booting the
+text-based installer would still work. Using the text-based installer is
+recommended for systems with little available memory.
+
+</para></note>
+ </sect2>

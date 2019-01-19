@@ -1,0 +1,511 @@
+#!/bin/sh
+. /usr/share/debconf/confmodule
+set -e
+
+ARCH=$(udpkg --print-architecture)
+
+log () {
+	logger -t iso-scan "$@"
+}
+
+mount_device () {
+	local dev_to_mount=$1
+	local RET
+
+	db_subst iso-scan/progress_mount DRIVE "$dev_to_mount"
+	db_progress INFO iso-scan/progress_mount
+	mount -t auto -o ro "$dev_to_mount" /hd-media 2>/dev/null
+}
+
+is_debian_iso () {
+	test -e /cdrom/.disk/info
+}
+
+analyze_cd () {
+	local dir relfile suite version codename descr
+
+	# Make sure that the iso is usable for the architecture. If so,
+	# set the suite and codename to the suite/codename that is on the CD.
+	# This assumes that there will be no more than one distribution on
+	# the CD, and that one of the testing, stable, or unstable links will
+	# point to it. Since the CDs currently have many links, parse the
+	# Release file to get the actual suite name to use.
+	# Prefer the suite in default-release.
+	for dir in $(cat /etc/default-release) $(ls -1 /cdrom/dists/); do
+		# FIXME: Would be better if CDs that don't support the ARCH
+		# and mini.iso's would be logged as well.
+		# FIXME: we should probably also only allow CDs for which
+		# the codename matches.
+		relfile=/cdrom/dists/"$dir"/Release
+		if [ -e "$relfile" ] && \
+		   egrep -q "Architectures:.* $ARCH( |$)" "$relfile"; then
+			suite=$(sed -n 's/^Suite: *//p' "$relfile")
+			codename=$(sed -n 's/^Codename: *//p' "$relfile")
+			log "Detected ISO with '$suite' ($codename) distribution"
+			version=$(sed -n 's/^Version: *//p' $relfile)
+
+			db_set cdrom/suite "$suite"
+			db_set cdrom/codename "$codename"
+
+			log "Detected ISO with distribution '$suite' ($codename)"
+
+			# FIXME: Should we display codename instead of suite?
+			# Would be more in line w/ current thinking about releases.
+			descr="$(printf "[%s] %s (%s)\n" \
+				 "$(echo $iso_device | sed -e 's?^/dev/??')" \
+				 "${iso_to_try#.}" \
+				 "$suite${version:+ - $version}")"
+			# comma is used to separate possible ISO
+			echo "$descr" | sed -e 's/,/ /g'
+
+			return 0
+		fi
+	done
+
+	return 1
+}
+
+# Try to mount a file as an iso, and see if it's a Debian cd.
+add_usable_iso () {
+	local iso_to_try=$1
+	local iso_device=$2
+	local isodesc
+	if ! mount -t iso9660 -o loop,ro,exec $iso_to_try /cdrom 2>/dev/null; then
+		log "Failed mounting $iso_to_try (from $iso_device) as an ISO image"
+		return
+	fi
+	ISO_MOUNT_COUNT=$(($ISO_MOUNT_COUNT + 1))
+
+	if is_debian_iso; then
+		if isodesc=$(analyze_cd); then
+			log "Debian ISO $iso_to_try usable"
+			ISOS_FOUND="${ISOS_FOUND:+$ISOS_FOUND, }$isodesc"
+		else
+			log "Debian ISO not usable, skipping"
+		fi
+	else
+		log "$iso_to_try not a Debian ISO"
+	fi
+	umount -d /cdrom
+}
+
+# scan a list of devices for available Debian ISO
+scan_device_for_isos() {
+	local look_subdirs=$1
+	local devs=$2
+	local RET dev_count dev devlist dir iso_list iso opt progress progress_count
+
+	if [ "$look_subdirs" = 1 ]; then
+		devlist=$MOUNTABLE_DEVS
+		progress=dir
+		progress_count=$TOPLEVEL_DIRS_COUNT
+
+	else
+		devlist=$devs
+
+		dev_count=0
+		for dev in $devs; do
+			dev_count=$(($dev_count + 1))
+		done
+		progress=device
+		progress_count=$dev_count
+
+		if [ $dev_count = 1 ] && mount_device $devs; then
+			progress=dir
+			progress_count=1 # count dirs + mount device directly
+			cd /hd-media
+			for dir in . ./*; do
+				[ -d "$dir" ] && progress_count=$(($progress_count + 1))
+			done
+			cd /
+			umount /hd-media
+		fi
+	fi
+	db_progress START 0 $progress_count iso-scan/progress_title
+
+	ISOS_FOUND=
+	ISO_COUNT=0
+	ISO_MOUNT_COUNT=0
+	for dev in $devlist; do
+		if ! mount_device "$dev"; then
+			if [ "$look_subdirs" = 0 ]; then
+				log "Waiting for $dev to possibly get ready..."
+				sleep 3
+				if ! mount_device $dev; then
+					db_progress STEP 1
+					continue
+				fi
+			else
+				continue
+			fi
+		fi
+
+		db_subst iso-scan/progress_scan DRIVE "$dev"
+		if [ "$look_subdirs" = 1 ]; then
+			log "Mounted $dev for second pass"
+		else
+			log "Mounted $dev for first pass"
+			MOUNTABLE_DEVS="$MOUNTABLE_DEVS $dev"
+			MOUNTABLE_DEVS_COUNT=$(($MOUNTABLE_DEVS_COUNT + 1))
+		fi
+
+		cd /hd-media
+		for dir in . ./*; do
+			[ -d "$dir" ] || continue
+
+			db_subst iso-scan/progress_scan DIRECTORY "${dir#.}/"
+			db_progress INFO iso-scan/progress_scan
+
+			opt=
+			if [ "$dir" = . ] || [ "$look_subdirs" = 0 ]; then
+				opt="-maxdepth 1"
+			elif [ "$look_subdirs" = 1 ]; then
+				opt="-type f"
+			fi
+			isolist=$(find "$dir" $opt -name "*.iso" -o -name "*.ISO" 2>/dev/null)
+			TOPLEVEL_DIRS_COUNT=$(($TOPLEVEL_DIRS_COUNT + 1))
+
+			for iso in $isolist; do
+				# FIXME: is this enough to detect broken symlinks?
+				[ -e $iso ] || continue
+
+				log "Found ISO $iso on $dev"
+				ISO_COUNT=$(($ISO_COUNT + 1))
+				add_usable_iso $iso $dev
+			done
+			if [ $progress = dir ]; then
+				db_progress STEP 1
+			fi
+		done
+		cd /
+		# -d option let loop used to mount ISO image to be also
+		# released, else we can't umount /hd-media!
+		# -l also helps
+		umount -d -l /hd-media
+
+		if [ $look_subdirs = 0 ]; then
+			# It's possible that the ISO was written right
+			# to the front of a device, and not to a filesystem.
+			# (Hey, we may even be spinning a real CD here,
+			# though that would be pretty weird...)
+			add_usable_iso $dev $dev
+
+			db_progress STEP 1
+		fi
+	done
+
+	db_progress STOP
+}
+
+# Mount selected ISO as Installer image
+use_this_iso () {
+	local iso_to_try=${1#/}
+	local iso_device=$2
+	local ram=$(grep ^MemAvailable: /proc/meminfo | { read label size unit; echo ${size:-0}; })
+	local iso_size=0
+	local RET
+
+	mount -t auto -o ro $iso_device /hd-media 2>/dev/null
+
+	# Get iso size in kB to compare with $ram in kB too
+	iso_size=$(ls -sk /hd-media/$iso_to_try | { read size filename; echo ${size:-0}; })
+
+	if [ $(( $iso_size + 100000 )) -lt $ram ]; then
+		# We have enough RAM to be able to copy the ISO to RAM,
+		# let's offer it to the user
+		db_input low iso-scan/copy_iso_to_ram || true
+		db_go
+		db_get iso-scan/copy_iso_to_ram
+	else
+		log "Skipping debconf question iso-scan/copy_iso_to_ram:" \
+		    "not enough memory available ($ram kB) to copy" \
+		    "/hd-media/$iso_to_try ($iso_size kB) into RAM and still" \
+		    "have 100 MB free."
+		RET="false"
+	fi
+
+	if [ "$RET" = false ]; then
+		# Direct mount
+		log "Mounting /hd-media/$iso_to_try on /cdrom"
+		mount -t iso9660 -o loop,ro,exec /hd-media/$iso_to_try /cdrom 2>/dev/null
+	else
+		# We copy the ISO to RAM before mounting it
+		log "Copying /hd-media/$iso_to_try to /installer.iso"
+		cp /hd-media/$iso_to_try /installer.iso
+		log "Mounting /installer.iso on /cdrom"
+		mount -t iso9660 -o loop,ro,exec /installer.iso /cdrom 2>/dev/null
+		# So that we can free the original device
+		umount /hd-media
+	fi
+
+	analyze_cd
+
+	db_subst iso-scan/success FILENAME $iso_to_try
+	db_set iso-scan/filename $iso_to_try
+	db_subst iso-scan/success DEVICE $iso_device
+	# FIXME !!!
+	db_subst iso-scan/success SUITE FIXME
+	db_input medium iso-scan/success || true
+	db_go || true
+
+	anna-install apt-mirror-setup || true
+	if [ ! -e /cdrom/.disk/base_installable ]; then
+		log "Base system not installable from CD image, requesting choose-mirror"
+		anna-install choose-mirror || true
+	else
+		anna-install apt-cdrom-setup || true
+
+		# Install <codename>-support udeb (if available)
+		db_get cdrom/codename
+		anna-install $RET-support || true
+	fi
+	exit 0
+}
+
+# iso-scan is divided in following stages:
+# 1  : get list of devices (no debconf question)
+# 2/3: select a device (or all detected ones)
+# 4/5: parse selected devices looking for Debian ISOs and let choose one
+
+# This conf script is capable of backing up
+db_capb backup
+
+# Main loop starts here
+# Use a state machine to allow jumping back to previous questions.
+# Main states are multiples of 10 to allow "preparation" states to be
+# skipped when backing up.
+STATE=1
+LASTSTATE=0
+BACKUPSTATE=	# If used, must be set just before db_input
+CRITICAL=
+
+SELECTED_ISO=
+while :; do
+	case $STATE in
+	     0) # Back up to menu
+		exit 10
+		;;
+
+	     1)	# Get list of devices
+
+		# Try to unmount anything that was previously mounted
+		umount -d /cdrom 2>/dev/null || true
+		umount -d /hd-media 2>/dev/null || true
+
+		# Hopefully this will find the drive
+		hw-detect iso-scan/detect_progress_title || true
+
+		# Load up every filesystem known to man. The drive could have anything.
+		FS="ext2 ext3 ext4 fat vfat xfs jfs iso9660 hfsplus hfs ntfs btrfs"
+		for fs in $FS; do
+			modprobe $fs >/dev/null 2>&1 || true
+		done
+		modprobe loop >/dev/null || true
+
+		# Detect LVM logical volumes if possible
+		modprobe dm_mod >/dev/null || true
+		if type vgchange >/dev/null 2>&1; then
+			vgchange -a y >/dev/null || true
+		fi
+
+		mkdir /cdrom 2>/dev/null || true
+		mkdir /hd-media 2>/dev/null || true
+
+		DEVS="$(list-devices partition; list-devices disk; list-devices maybe-usb-floppy)"
+		log "devices found: '$DEVS'"
+		STATE=10
+		continue
+		;;
+
+	    10)	# Ask user to select a device (all by default)
+		devlist=
+		for dev in $DEVS; do
+			devlist=${devlist:+$devlist, }$dev
+		done
+
+		db_subst shared/ask_device DEVICES_LIST $devlist
+		db_input ${CRITICAL:-medium} shared/ask_device || true
+		;;
+
+	    11)
+		db_get shared/ask_device
+		case "$RET" in
+		    manual)
+			: ;;
+		    all)
+			selected_devices=$DEVS
+			STATE=19
+			continue
+			;;
+		    *) # specific device
+			selected_devices=$RET
+			STATE=19
+			continue
+			;;
+		esac
+
+		log "let user specify device"
+		db_input critical shared/enter_device || true
+		;;
+
+	    12)	# Parse selected device(s)
+		db_get shared/enter_device
+		selected_devices=$RET
+		STATE=19
+		continue
+		;;
+
+	    19)	# User has selected device(s); scan for ISOs (first pass)
+		log "selected_device(s)='$selected_devices'"
+
+		# Variables that are preserved for the 2nd pass
+		TOPLEVEL_DIRS_COUNT=0
+		MOUNTABLE_DEVS=
+		MOUNTABLE_DEVS_COUNT=0
+
+		scan_device_for_isos 0 "$selected_devices"
+		log "ISOS_FOUND='$ISOS_FOUND'"
+
+		if [ -z "$ISOS_FOUND" ]; then
+			# no ISO found
+			log "MOUNTABLE_DEVS_COUNT='$MOUNTABLE_DEVS_COUNT'"
+			if [ $MOUNTABLE_DEVS_COUNT -gt 0 ]; then
+				STATE=100
+			else
+				STATE=110
+			fi
+			continue
+		fi
+		;;
+
+	    20)	# One or multiple ISO(s) found: ask which one we'll use
+		# FIXME: not l10n safe
+		db_subst iso-scan/ask_which_iso ISOS_LIST "$ISOS_FOUND"
+		db_input ${CRITICAL:-medium} iso-scan/ask_which_iso || true
+		;;
+
+	    21)
+		db_get iso-scan/ask_which_iso
+		if [ "$RET" != "Full search" ]; then
+			# We have an ISO
+			SELECTED_ISO=$RET
+			break
+		fi
+		STATE=29
+		continue
+		;;
+
+	    29)	# Scan for ISOs (second pass)
+		ISOS_FOUND=
+		scan_device_for_isos 1 "$selected_devices"
+		log "ISOS_FOUND (2nd pass)='$ISOS_FOUND'"
+
+		if [ -z "$ISOS_FOUND" ]; then
+			STATE=120
+			continue
+		fi
+		;;
+
+	    30)	# One or multiple ISO(s) found: ask which one we'll use
+		db_clear
+		db_subst iso-scan/ask_which_iso ISOS_LIST "$ISOS_FOUND"
+		db_subst iso-scan/ask_which_iso SECOND_PASS "."
+		if echo "$ISOS_FOUND" | grep -q ', '; then
+			priority=high
+		else
+			priority=medium
+		fi
+		BACKUPSTATE=10
+		db_input ${CRITICAL:-$priority} iso-scan/ask_which_iso || true
+		;;
+
+	    31)	# We have an ISO
+		db_get iso-scan/ask_which_iso
+		if [ "$RET" != "Full search" ]; then
+			# We have an ISO
+			SELECTED_ISO=$RET
+			break
+		fi
+		STATE=29
+		continue
+		;;
+
+	   ####	The rest are error/exception handling states
+	   100)	# No ISO found; offer second pass (except for automated installs)
+		db_get debconf/priority
+		if [ "$RET" = critical ] && [ -z "$CRITICAL" ]; then
+			STATE=110
+			continue
+		fi
+		BACKUPSTATE=10
+		db_input ${CRITICAL:-high} iso-scan/ask_second_pass || true
+		;;
+	   101)
+		db_get iso-scan/ask_second_pass
+		if [ "$RET" = false ]; then
+			exit 1
+		fi
+		STATE=29
+		continue
+		;;
+
+	   110)	# Device(s) not mountable
+		BACKUPSTATE=10
+		db_input critical iso-scan/no-isos || true
+		;;
+	   111)
+		exit 1
+		;;
+
+	   120)	# Display suitable error and fail
+		log "Failing with ISO_COUNT = $ISO_COUNT, MOUNTABLE_DEVS_COUNT = $MOUNTABLE_DEVS_COUNT, ISO_MOUNT_COUNT = $ISO_MOUNT_COUNT"
+
+		BACKUPSTATE=10
+		if [ "$ISO_COUNT" = 0 ]; then
+			db_input critical iso-scan/no-isos || true
+		elif [ "$ISO_MOUNT_COUNT" != "$ISO_COUNT" ]; then
+			db_input critical iso-scan/bad-isos || true
+		else
+			db_input critical iso-scan/other-isos || true
+		fi
+		;;
+	    121)
+		exit 1
+		;;
+
+	    *)
+		log "Error: undefined STATE '$STATE'"
+		exit 1
+		;;
+	esac
+
+	LASTSTATE=$STATE
+	if db_go; then
+		STATE=$(($STATE + 1))
+	else
+		if [ -z "$CRITICAL" ]; then
+			CRITICAL=critical
+			db_fset shared/ask_device seen false
+			db_fset iso-scan/ask_which_iso seen false
+		fi
+		if [ "$BACKUPSTATE" ]; then
+			STATE=$BACKUPSTATE
+			BACKUPSTATE=
+		else
+			STATELEVEL=$(($STATE / 10 * 10)) # round down to multiple of 10
+			if [ $STATE -eq $STATELEVEL ]; then
+				STATE=$(($STATE - 10))
+			else
+				STATE=$(($STATE - 1))
+			fi
+		fi
+	fi
+done
+
+device=/dev/$(echo "$SELECTED_ISO" | sed -e 's/\[\(.*\)\] .*/\1/')
+iso=$(echo "$SELECTED_ISO" | sed -e 's/\[.*\] \(.*\) (.*/\1/')
+log "Selected ISO: $iso on $device"
+
+use_this_iso $iso $device
+
+exit 0

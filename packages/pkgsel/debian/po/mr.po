@@ -1,0 +1,133 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@debian.org>, 2004.
+# Priti Patil <prithisd@gmail.com>, 2007.
+# Sampada Nakhare, 2007.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2010.
+# localuser <sampadanakhare@gmail.com>, 2015.
+# Nayan Nakhare <nayannakhare@rediffmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: pkgsel@packages.debian.org\n"
+"POT-Creation-Date: 2018-06-27 14:00+0200\n"
+"PO-Revision-Date: 2018-10-07 18:30+0000\n"
+"Last-Translator: Nayan Nakhare <nayannakhare@rediffmail.com>\n"
+"Language-Team: CDAC_DI\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. should not be more than 55 columns
+#. pkgsel is the module that installs packages by running tasksel to
+#. select "tasks". Please use "install *software*" and not
+#. "install *packages*" which is less adapted for non technical users
+#: ../pkgsel.templates:1001
+msgid "Select and install software"
+msgstr "सॉफ्टवेअर निवडा व अधिष्ठापित करा"
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when pkgsel is launched, before it installs packages
+#: ../pkgsel.templates:2001
+msgid "Setting up..."
+msgstr "संरचना होत आहे..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when upgrading already installed packages.
+#: ../pkgsel.templates:4001
+msgid "Upgrading software..."
+msgstr "सॉफ्टवेअर श्रेणीवर्धित होत आहे..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when running tasksel to allow selecting packages
+#. Tasksel will then display its own screens
+#: ../pkgsel.templates:5001
+msgid "Running tasksel..."
+msgstr "टास्कसेल चालवला जातोय..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used at the end of the installation phase while
+#. cleaning up pkgsel's stuff
+#: ../pkgsel.templates:6001
+msgid "Cleaning up..."
+msgstr "सफाई होत आहे..."
+
+#. Type: text
+#. Description
+#: ../pkgsel.templates:8001
+msgid "Running ${SCRIPT}..."
+msgstr "${SCRIPT} चालवत आहे..."
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "No automatic updates"
+msgstr "स्वयं अद्यतने नको"
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "Install security updates automatically"
+msgstr "सुरक्षा अद्यतने आपोआप स्थापित करा"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid "Updates management on this system:"
+msgstr "या प्रणालीवरील अद्यतन व्यवस्थापन:"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Applying updates on a frequent basis is an important part of keeping the "
+"system secure."
+msgstr "प्रणाली सुरक्षित राखण्यासाठी वारंवार अद्यतने लागू करणे महत्वाचे आहे."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"By default, security updates are not automatically installed, as security "
+"advisories should be reviewed before manual installation of the updates "
+"using standard package management tools."
+msgstr ""
+"मूलनिर्धारितपणे, सुरक्षा अद्यतने स्वयंचलित स्थापित होत नाहीत, कारण प्रमाण पॅकेज व्यवस्थापन "
+"साधने वापरून स्वहस्ते सुरक्षा अद्यतने स्थापित करण्यापूर्वी सुरक्षा सल्ले अवलोकन केले गेले पाहिजेत."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Alternatively the unattended-upgrades package can be installed, which will "
+"install security updates automatically. Note however that automatic "
+"installation of updates may occasionally cause unexpected downtime of "
+"services provided by this machine in the rare cases where the update is not "
+"fully backward-compatible, or where the security advisory requires the "
+"administrator to perform some other manual operation."
+msgstr ""
+"पर्यायस्वरूपी, लक्ष न देता अपग्रेड करणारे पॅकेज स्थापित होऊ शकते, जे अद्यतने स्वयंचलित स्थापित "
+"करेल. लक्षात घ्या, अद्यतने स्वयंचलित स्थापित केल्याने अद्यतने पूर्णपणे मागच्याशी जुळणारी नसतील "
+"तेव्हा, वा सुरक्षा सल्ला प्रशासकाने काही स्वहस्ते ऑपरेशन करणे आवश्यक करतो तेव्हा या यंत्राने "
+"पुरवलेल्या सेवा दुर्मिळ परिस्थितीत अनपेक्षित बंद होऊ शकतात."

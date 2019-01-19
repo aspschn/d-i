@@ -1,0 +1,328 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Turkish messages for debian-installer.
+# Copyright (C) 2003, 2004 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Recai Oktaş <roktas@omu.edu.tr>, 2004, 2005, 2008.
+# Osman Yüksel <yuxel@sonsuzdongu.com>, 2004.
+# Özgür Murat Homurlu <ozgurmurat@gmx.net>, 2004.
+# Halil Demirezen <halild@bilmuh.ege.edu.tr>, 2004.
+# Murat Demirten <murat@debian.org>, 2004.
+# Mert Dirik <mertdirik@gmail.com>, 2008-2012, 2014.
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@computer.org>, 2001.
+# (translations from drakfw)
+# Fatih Demir <kabalak@gmx.net>, 2000.
+# Free Software Foundation, Inc., 2000,2004
+# Kemal Yilmaz <kyilmaz@uekae.tubitak.gov.tr>, 2001.
+# Mert Dirik <mertdirik@gmail.com>, 2008, 2014.
+# Nilgün Belma Bugüner <nilgun@fide.org>, 2001.
+# Recai Oktaş <roktas@omu.edu.tr>, 2004.
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Ömer Fadıl USTA <omer_fad@hotmail.com>, 1999.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2018-01-03 16:05+0300\n"
+"Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
+"Language-Team: Debian L10N Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "Sabit diskleri kurulumda kullanılabilecek ISO dosyası için tara"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "Sabit disk sürücülerini bulmak amacıyla donanım algılanıyor"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "Kurulumda kullanılabilecek ISO dosyası için sürücüler aranıyor"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "${DRIVE} sürücüsü bağlanıyor..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "${DRIVE} sürücüsü taranıyor (${DIRECTORY} dizini)..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "Kurulum ISO dosyası için tüm disk aransın mı?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"Kurulum ISO dosyaları için bilinen yerlerde yapılan hızlı arama sonuç "
+"vermedi. Daha geniş çaplı bir aramayla ISO dosyası bulunabilir, ancak bu "
+"işlem uzun sürebilir."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "Kurulumda kullanılabilecek bir ISO dosyası bulunamadı"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"Kurulum ISO dosyası bulunamadı. Bir ISO dosyası indirdiyseniz dosya yanlış "
+"şekilde adlandırılmış (\".iso\" uzantısının bulunmaması gibi) veya "
+"bağlanamayan bir dosya sistemi üzerinde bulunuyor olabilir."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"Başka bir kurulum yöntemi kullanmalı ya da ISO dosyasını tamir edip tekrar "
+"denemelisiniz."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"Bir veya daha fazla ISO dosyası bulundu ancak bağlanamadı. İndirdiğiniz ISO "
+"dosyası hasar görmüş olabilir."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "Herhangi bir kurulum ISO dosyası bulunamadı"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"Bir veya daha fazla ISO dosyası bulundu ancak geçerli kurulum ISO dosyaları "
+"gibi görünmüyor."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "${SUITE} kurulum ISO dosyası başarıyla bağlandı"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"${DEVICE} (${SUITE}) aygıtındaki ${FILENAME} dosyası kurulum ISO dosyası "
+"olarak kullanılacak."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "Algılanan aygıtlar"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "Aygıtı elle gir"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "Kurulum ISO'larının aranacağı aygıt ya da bölüm:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"Bir aygıtı seçebilir, algılanmayan aygıtları elle belirtebilir ya da takılı "
+"aygıtları tekrar taratabilirsiniz (yavaş USB aygıtları için faydalı "
+"olabilir)."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "Aygıt adı:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "Tam arama"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "Kullanılacak ISO dosyası:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"Seçilen aygıt(lar)da bir veya birden fazla ISO dosyası bulundu. Lütfen hangi "
+"dosyayı kullanmak istediğinizi seçin ya da daha ayrıntılı bir arama isteyin."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr ""
+"${FILENAME} adlı ISO dosyası kurulum için kullanılabilecek bir dosya mı?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"${DEVICE} aygıtındaki (${SUITE}, ${CODENAME} kodlu, kendini '${DESCRIPTION}' "
+"olarak tanıtan) ${FILENAME} dosyası kurulum ISO dosyası olarak kullanılacak."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"Eğer aynı sürücüde birden fazla ISO dosyası varsa kurulumda hangi dosyayı "
+"kullanmak istediğinizi seçebilirsiniz."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr "ISO dosyası bağlanmadan önce RAM'e kopyalansın mı?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr "ISO dosyasını RAM'e kopyalamaya yetecek kadar sistem belleği mevcut."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+"Bu seçeneği seçmek ISO dosyasını barındıran diski kurulum esnasında "
+"kullanabilmenize olanak tanır. Aksi takdirde bu disk ISO dosyasına erişmek "
+"için kullanılacağı için  kurulum programı tarafından bölümleme işleminde "
+"kullanılamayacaktır."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+"ISO dosyasını barındıran diskin üzerine yazarsanız, ISO dosyası hem diskten "
+"hem de bellekten silinmiş olacağı için kurulum bitmeden önce kurulum "
+"programını yeniden başlatamayacağınız göz önünde bulundurun."
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "Kurulum bileşenlerini bir kurulum ISO dosyasından yükle"

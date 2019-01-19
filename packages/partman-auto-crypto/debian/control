@@ -1,0 +1,14 @@
+Source: partman-auto-crypto
+Section: debian-installer
+Priority: optional
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Max Vozeler <xam@debian.org>, Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/partman-auto-crypto
+Vcs-Git: https://salsa.debian.org/installer-team/partman-auto-crypto.git
+
+Package: partman-auto-crypto
+Package-Type: udeb
+Architecture: all
+Depends: ${misc:Depends}, partman-auto (>= 81), partman-auto-lvm (>= 24), partman-crypto (>= 25), partman-base (>= 114)
+Description: Automatically partition storage devices using crypto and LVM

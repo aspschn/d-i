@@ -1,0 +1,17 @@
+#! /bin/sh
+set -e
+
+# If possible, save a random seed so that the installed system has better
+# entropy on first boot.  Based on /etc/init.d/urandom in initscripts.
+if [ -c /dev/urandom ] && [ -d /target/var/lib/urandom ]; then
+	if ! POOLBYTES=$((
+		($(cat /proc/sys/kernel/random/poolsize 2>/dev/null) + 7) / 8
+	)); then
+		POOLBYTES=512
+	fi
+	umask 077
+	dd if=/dev/urandom of=/target/var/lib/urandom/random-seed \
+		bs="$POOLBYTES" count=1 >/dev/null 2>&1
+fi
+
+exit 0

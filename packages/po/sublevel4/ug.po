@@ -1,0 +1,728 @@
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-05-31 10:42+0600\n"
+"Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "مەۋھۇم دىسكا %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "مەۋھۇم دىسكا %s، #%s رايون (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - POSIX.1e نى قوللايدىغان زىيارەت تىزگىن تىزىملىكى"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr ""
+"shortnames - پەقەت كونا MS-DOS 8.3 ئۇسلۇبىدىكى ھۆججەت ئىسمىنى ئىشلىتىدۇ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"يېڭى سىستېمىڭىزنىڭ قوزغىلالىشى ئۈچۈن، قوزغىتىشنى يېتەكلەش پروگراممىسىدىن "
+"بىرنى ئىشلىتىشىڭىز لازىم. ئۇ  قاتتىق دىسكىنىڭ يېتەكلەش رايونغا ئورنىتىلسا "
+"بولىدۇ، سىز بۇ رايونغا قوزغىلىش بەلگىسى بەلگىلىشىڭىز لازىم. ئاساسىي رايون "
+"تىزىملىكىدە بۇ رايون \"${BOOTABLE}\" قىلىپ بەلگە قويۇلىدۇ."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!!خاتالىق: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "كۇنۇپكا:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "'%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "ياردەم ئۇچۇرىنى كۆرسىتىدۇ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "ئالدىنقى مەسىلىگە قايتىدۇ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "بوش قالدۇرۇلغاننى تاللايدۇ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "ئەسكەرتىش: '%c'نى بېسىپ ياردەمگە ئېرىشىڭ. كۆڭۈلدىكى قىممىتى=%d> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "ئەسكەرتىش: ياردەم ئۈچۈن '%c' "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "ئەسكەرتىش:«%c»نى بېسىپ ياردەمگە ئېرىشىدۇ، كۆڭۈلدىكى=«%c» > "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[enter نى بېسىپ داۋاملاشتۇرۇڭ]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "ئىشلىتىدىغان ئارايۈز:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"debconf ئىشلىتىپ تەڭشىلىدىغان بوغچىلار ئورتاق كۆرۈنۈشنى ئىشلىتىدۇ. تەڭشەش "
+"جەريانىدا ئىشلىتىدىغان ئىشلەتكۈچى ئارايۈزى تاللاڭ."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "ھېچقايسى"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "«ھېچقايسى» تاللانسا سىزدىن ھېچقانداق سوئال سورىمايدۇ."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "تېكىست"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "«تېكىست» بولسا ئەنئەنىۋى ئاددىي تېكىست ئارايۈزىدۇر."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "Newt"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "‹Newt› بولسا تولۇق ئېكرانلىق، ھەرپ ئاساسىدىكى ئارايۈزدۇر."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "GTK"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr "‹GTK› بولسا گرافىكىلىق مۇھىتتا ئىشلىتىلىدىغان گرافىكىلىق ئارايۈزدۇر."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "/target/proc ئېگەرلەش مەغلۇپ بولدى"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "proc ھۆججەت سىستېمىسىنى /target/proc غا ئېگەرلەش مەغلۇپ بولدى."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "ئاگاھلاندۇرۇش: سىستېمىڭىز قوزغالماسلىقى مۇمكىن!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "ئۆزلۈكىدىن قوزغىلىش ئۈچۈن firmware نىڭ ئۆزگەرگۈچىلىرىنى تەڭشەۋاتىدۇ"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"سىستېمىنىڭ ئۆزلۈكىدىن قوزغىلىشى ئۈچۈن Genesi مۇقىم دېتال(firmware)نىڭ بىر "
+"قىسىم ئۆزگەرگۈچىلىرىنى تەڭشىشىڭىز لازىم. ئورنىتىش ئاخىرلاشقاندا سىستېما "
+"قايتا قوزغىلىدۇ. مۇقىم دېتال كۆرسەتمە بەلگىسى كۆرۈنگەندىن كېيىن، تۆۋەندىكى "
+"بىر قانچە مۇقىم دېتال ئۆزگىرىشچان قىممىتىنى بەلگىلەپ ئۆزلۈكىدىن قوزغىلىش "
+"ئىقتىدارىنى قوزغىتىڭ:"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"بۇ جەريان پەقەت بىرلا قېتىم ئىجرا بولىدۇ. ئاندىن \"boot\" بۇيرۇقى كىرگۈزۈڭ "
+"ياكى قايتا قوزغىتىپ يېڭىدىن ئورناتقان سىستېمىغا كىرىڭ."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"ئۇنىڭدىن باشقا، مۇقىم دېتال كۆرسەتمە بەلگىسى ھالىتىدە تۆۋەندىكى مەزمۇننى "
+"كىرگۈزۈپ ئۆزىڭىز يادرونى قوزغاتسىڭىزمۇ بولىدۇ:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"سىستېمىنىڭ ئۆزلۈكىدىن قوزغىلىشى ئۈچۈن CFE غا بىر قىسىم ئۆزگەرگۈچى "
+"مىقدارلارنى تەڭشىشىڭىز لازىم. ئورنىتىش ئاخىرلاشقاندا سىستېما قايتا "
+"قوزغىلىدۇ. مۇقىم دېتال كۆرسەتمە بەلگىسى كۆرۈنگەندىن كېيىن، تۆۋەندىكى بىر "
+"قانچە مۇقىم دېتال ئۆزگىرىشچان قىممىتىنى بەلگىلەپ ئۆزلۈكىدىن قوزغىلىش "
+"ئىقتىدارىنى قوزغىتىڭ:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"بۇ جەريان بىرلا قېتىم ئىجرا قىلىنسىلا بولىدۇ.   CFE كۆرسەتمە بەلگىسى "
+"ھالىتىدە \"boot_debian\" نى ئىجرا قىلىشقا يول قويىدۇ."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"ئەگەر ھەر قېتىم قوزغالغاندا ئۆزلۈكىدىن قوزغاتماقچى بولسىڭىز، يۇقىرىدا تىلغا "
+"ئېلىنغان ئۆزگەرگۈچىدىن سىرت تۆۋەندىكى ئۆزگەرگۈچىنى تەڭشەڭ:"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "GRUB يېتەكلىگۈچ ئورنىتامدۇ؟"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB 2 بولسا GNU GRUB نىڭ كېيىنكى نەشرى بولۇپ، i386/amd64 يەككە كىشىلىك "
+"كومپيۇتېرلارغا كۆپ ئىشلىتىلىدىغان قوزغىتىش يېتەكلىگۈچ. ھازىر ئۇنى ${ARCH} دا "
+"ئىشلەتكىلى بولىدۇ."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"ئۇ قىزىقارلىق يېڭى ئىقتىدار ئەمما بۇ قۇرۇلۇشنىڭ تەجرىبە باسقۇچىدىكى يۇمشاق "
+"دېتالى. ئەگەر ئۇنى ئورنىتىشنى تاللىسىڭىز، بۇزۇلۇشقا تەييارلىق قىلىپ، ناۋادا "
+"سىستېما قوزغالماي قالسا سىستېمىنى قانداق ئەسلىگە كەلتۈرۈشنى ئويلىشىڭ. "
+"ئىشلەپچىقىرىش مۇھىتىدا بۇنى سىنىماسلىقىڭىزنى تەۋسىيە قىلىمىز."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "Arcboot قوزغىتىش يېتەكلىگۈچنى قاتتىق دىسكىغا ئورنات"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "قوزغىتىش يېتەكلىگۈچ ئورنىتىدىغان دىسكا:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"Arcboot نى چوقۇم SGI دىسكا ئەنى بار دىسكا ئەنىنىڭ بېشىغا ئورنىتىش لازىم. "
+"ئادەتتە /dev/sda ئىشلىتىلىدۇ. arcboot ئورنىتىدىغان دىسكىنىڭ ئۈسكۈنە ئىسمىنى "
+"بېرىڭ."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "arcboot ئارقىمۇ-ئارقا تىزگىن سۇپىسى ئىشلىتىشكە سەپلەندى"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"arcboot ئارقىمۇ-ئارقا ئېغىز ${PORT} تىزگىن سۇپىسى ئىشلىتىشكە سەپلەندى. "
+"ئارقىمۇ-ئارقا ئېغىز سۈرئىتى ${SPEED} قىلىپ تەڭشەلدى."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "arcboot ئورنىتىش مەغلۇپ بولدى. يەنىلا داۋاملاشتۇرامسىز؟"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"arcboot يۇمشاق دېتال بوغچىسىنى /target/ قا ئورنىتالمىدى. بۇ arcboot نى "
+"قوزغىتىش يېتەكلىگۈچ قىلىپ ئورنىتىشنىڭ زۆرۈر قەدىمى. بۇ ئورنىتىش مەسىلىسى "
+"arcboot بىلەن مۇناسىۋەتسىز بولۇشى مۇمكىن، شۇڭلاشقا داۋاملىق ئورنىتىشقا "
+"بولۇۋېرىشى مۇمكىن."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "Arcboot غا PROM ئۆزگەرگۈچى مىقدار تەڭشەۋاتىدۇ"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"ئەگەر بۇ مەزكۇر كومپيۇتېرغا تۇنجى قېتىم لىنۇكس ئورنىتىش ياكى قاتتىق دىسكىنى "
+"قايتىدىن رايونغا ئايرىش بولسا، ئۇنداقتا سىستېما نورمال قوزغىلىشتىن ئىلگىرى "
+"PROM دا بەزى ئۆزگەرگۈچى مىقدارلارنى تەڭشەش زۆرۈر."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"بۇ ئورنىتىش جەريانى تاماملانغاندا، سىستېما قايتا قوزغىتىلىدۇ. ئاندىن \"Stop "
+"for Maintenance\" تاللانمىسى ئارقىلىق بۇيرۇق كۆزەتكۈچكە كىرىپ، تۆۋەندىكى "
+"بۇيرۇقنى كىرگۈزۈڭ:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "تور بۆلەك ئۈسكىنىسى سەپلاش"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD سەپلەش مەشغۇلاتى:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "ھازىر باغلانغان ئۈسكۈنىلەرنىڭ سانى ${NUMBER} ."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "تور بۆلەك ئۈسكىنە مۇلازىمېتىرى:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"nbd-server ئىجرا بولۇۋاتقان سىستېمىنىڭ IP ئادرېسىنى ۋە كومپيۇتېر ئاتىنى "
+"كىرگۈزۈڭ."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "تور بۆلەك ئۈسكىنە تۈگۈنى:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "باغلانماقچى ياكى ئۈزۈلمەكچى بولغان NBD ئۈسكىنە تۈگۈنىنى كىرگۈزۈڭ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD مۇلازىمېتىرىغا باغلىنىش مەغلۇپ بولدى."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+#| msgid ""
+#| "Connecting to the nbd-server failed. Please ensure that the host and the "
+#| "port or the name which you entered are correct, that the nbd-server "
+#| "process is running on that host and port (or using that name), that the "
+#| "network is configured correctly, and retry."
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"NBD مۇلازىمېتىرىغا باغلىنىش مەغلۇپ بولدى. كىرگۈزگەن ماشىنا ئادرېس ۋە ئېغىز "
+"ياكى ئات توغرىمۇ، ماشىنا ۋە ئېغىز (ياكى ئىشلەتكەن ئات) تىكى nbd-server ئىجرا "
+"بولۇۋاتامدۇ،  تور توغرا تەڭشەلگەنمۇ ھەممىنى تەكشۈرۈپ ئاندىن قايتا سىناڭ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ئەمدى تور بۆلەك ئۈسكۈنىسى تۈگۈنى قالمىدى."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"بارلىق NBD ئۈسكۈنە تۈگۈنى ئىشلىتىلىۋاتىدۇ ياكى ئۈسكىنە تۈگۈنىنى ئىزدەشتە "
+"مەسىلە كۆرۈلدى."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"ھازىر سەپلەنگەن تۈگۈندىن ئۈزۈلمىگۈچە باشقا NBD ئۈسكۈنە تۈگۈنىنى سەپلىگىلى "
+"بولمايدۇ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "باغلانغان تور بۆلەك ئۈسكۈنە تۈگۈنى تېپىلمىدى."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"نۆۋەتتە تور بۆلەك ئۈسكىنە تۈگۈنى ھېچقانداق مۇلازىمېتىرغا باغلانمىدى. شۇڭا "
+"سىز ھېچقايسىسىدىن ئۈزۈلەلمەيسىز."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "بىر تور بۆلەك ئۈسكۈنىسىگە باغلىنىش"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "بىر تور بۆلەك ئۈسكۈنىسىدىن ئۈزۈلۈش"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "تاماملاپ رايون ئايرىغۇغا(partitioner) قايتىش"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "سىستېمىنى قوزغىتىش ئۈچۈن تېز ساقلىغۇچ (flash memory)نى سەپلەۋاتىدۇ"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "سىستېمىنى قوزغىلىشچان قىلىۋاتىدۇ"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "سىستېما تەييارلاۋاتىدۇ…"
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "يادرولۇق پروگراممىنى تېز ساقلىغۇچ (flash memory) قا يېزىۋاتىدۇ…"
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "دىسكىدا قوزغىتىش تەسۋىرى ياساۋاتىدۇ…"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "سىستېمىنى قوزغىلىشچان قىلىدۇ"

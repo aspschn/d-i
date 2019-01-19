@@ -1,0 +1,6 @@
+*.debhelper*
+*.substvars
+cdrom-retriever
+files
+load-cdrom
+

@@ -1,0 +1,199 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Serbian/Cyrillic messages for debian-installer.
+# Copyright (C) 2010-2012 Software in the Public Interest, Inc.
+# Copyright (C) 2008 THE cp6Linux'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the debian-installer package.
+# Karolina Kalic <karolina@resenje.org>, 2010-2012.
+# Janos Guljas <janos@resenje.org>, 2010-2012.
+# Veselin Mijušković <veselin.mijuskovic@gmail.com>, 2008.
+# Milan Kostic <kosticmilan77@open.telekom.rs>, 2012.
+#
+# Translations from iso-codes:
+#   Aleksandar Jelenak <aleksandar.jelenak@gmail.com>, 2010.
+#   Copyright (C) 2003, 2004 Free Software Foundation, Inc.
+#   Danilo Segan <dsegan@gmx.net>, 2003, 2004, 2005.
+#   Milos Komarcevic <kmilos@gmail.com>, Caslav Ilic <caslav.ilic@gmx.net>, 2009.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2016-04-10 12:34+0100\n"
+"Last-Translator: Dragan Filipović <filipovic@tutanota.com>\n"
+"Language-Team: Serbian <debian-l10n-serbian@lists.debian.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "Конфигуриши мрежни уређај"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "Конфигурисање мреже:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "Тренутно је ${NUMBER} група повезано."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "Сервер мрежног уређаја:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "Унесите име хоста или IP адресу система на коме ради „nbd-server“."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "Назив за NBD извоз"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"Молим унесите  NBD  назив за приступ NBD серверу. Унети назив треба да се "
+"подудара за постојећим извезеним на сервер."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "Чвор мрежног уређаја:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"Изаберите чвор мрежног уређаја који желите да се повежете или да откачите."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "Неуспело конектовање на сервер мрежног уређаја"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"Повезивање на nbd-server није успело. Потврдите да су хост и порт или име "
+"које сте унели исправни, да nbd-server  ради на том хосту и посту (или "
+"користи то име), да је мрежа правилно конфигурисана и пробајте поново."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "Нема више слободних мрежних чворова"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"Или су сви доступни мрећни чворови у употреби или је нешто пошло наопако при "
+"детекцији чворова уређаја."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"Ниједан више чвор мрежног уређаја не може бити конфигурисан док се неки "
+"конфигурисан не искључи."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "Нису пронађени повезани чворови мрежног уређаја"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"Тренутно нема повезаних мрежних чворова ни за један сервер. Тако да не "
+"можете да искључите ни један од њих."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "Повежи мрежни уређај"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "Искључити мрежни уређај"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "Заврши и врати се на мени за партиционисање"

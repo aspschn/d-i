@@ -1,0 +1,178 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Turkish messages for debian-installer.
+# Copyright (C) 2003, 2004 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Recai Oktaş <roktas@omu.edu.tr>, 2004, 2005, 2008.
+# Osman Yüksel <yuxel@sonsuzdongu.com>, 2004.
+# Özgür Murat Homurlu <ozgurmurat@gmx.net>, 2004.
+# Halil Demirezen <halild@bilmuh.ege.edu.tr>, 2004.
+# Murat Demirten <murat@debian.org>, 2004.
+# Mert Dirik <mertdirik@gmail.com>, 2008-2012, 2014.
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@computer.org>, 2001.
+# (translations from drakfw)
+# Fatih Demir <kabalak@gmx.net>, 2000.
+# Free Software Foundation, Inc., 2000,2004
+# Kemal Yilmaz <kyilmaz@uekae.tubitak.gov.tr>, 2001.
+# Mert Dirik <mertdirik@gmail.com>, 2008, 2014.
+# Nilgün Belma Bugüner <nilgun@fide.org>, 2001.
+# Recai Oktaş <roktas@omu.edu.tr>, 2004.
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Ömer Fadıl USTA <omer_fad@hotmail.com>, 1999.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: s390-dasd@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-28 22:01+0000\n"
+"PO-Revision-Date: 2016-07-25 23:45+0300\n"
+"Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
+"Language-Team: Debian L10N Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: select
+#. Choices
+#. :sl5:
+#. TRANSLATORS, please translate "Finish" the same way you translate it in
+#. the 'Select "Finish" at the bottom of the list when you are done' string
+#: ../s390-dasd.templates:1001
+msgid "Finish"
+msgstr "Bitir"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Available devices:"
+msgstr "Mevcut aygıtlar:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid ""
+"The following direct access storage devices (DASD) are available. Please "
+"select each device you want to use one at a time."
+msgstr ""
+"Mevcut doğrudan erişim depolama aygıtları (DASD) aşağıda listelenmiştir. "
+"Lütfen bunlardan kullanmak istediklerinizi teker teker seçin."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Select \"Finish\" at the bottom of the list when you are done."
+msgstr "İşlem tamamlandığında listenin altındaki \"Bitti\"yi seçin."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid "Choose device:"
+msgstr "Aygıtı seçin:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid ""
+"Please choose a device. You have to specify the complete device number, "
+"including leading zeros."
+msgstr ""
+"Lütfen bir aygıt seçin. Aygıt numarasını baştaki sıfırlarla beraber tam "
+"olarak belirtmelisiniz."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "Invalid device"
+msgstr "Geçersiz aygıt"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "An invalid device number has been chosen."
+msgstr "Geçersiz bir aygıt numarası seçildi."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001 ../s390-dasd.templates:5001
+msgid "Format the device?"
+msgstr "Aygıt biçimlendirilsin mi?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid "The DASD ${device} is already low-level formatted."
+msgstr "DASD (${device}) hâlihazırda düşük seviyede biçimlendirilmiş."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid ""
+"Please choose whether you want to format again and remove any data on the "
+"DASD. Note that formatting a DASD might take a long time."
+msgstr ""
+"Lütfen DASD'yi tekrar biçimlendirerek üzerindeki tüm veriyi silip isteyip "
+"istemediğinizi seçin. DASD'leri biçimlendirmek uzun sürebilir."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:5001
+msgid ""
+"The DASD ${device} is not low-level formatted. DASD devices must be "
+"formatted before you can create partitions."
+msgstr ""
+"DASD (${device}) biçimlendirilmemiş durumda. DASD'lerde bölümler "
+"oluşturulmadan önce aygıtın biçimlendirilmesi gerekir."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid "The DASD ${device} is in use"
+msgstr "DASD (${device}) meşgul"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid ""
+"Could not low-level format the DASD ${device} because the DASD is in use.  "
+"For example, the DASD could be a member of a mapped device in an LVM volume "
+"group."
+msgstr ""
+"DASD (${device}) hâlen kullanılmakta olduğu için biçimlendirilemedi. "
+"Örneğin, DASD bir LVM cilt grubunun eşlenmiş bir üyesi olabilir."
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:7001
+msgid "Formatting ${device}..."
+msgstr "${device} biçimlendiriliyor..."
+
+#. Type: text
+#. Description
+#. Main menu item. Keep translations below 55 columns
+#. :sl5:
+#: ../s390-dasd.templates:8001
+msgid "Configure direct access storage devices (DASD)"
+msgstr "Doğrudan erişim depolama aygıtlarını (DASD) yapılandır"

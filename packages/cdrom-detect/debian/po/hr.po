@@ -1,0 +1,299 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Croatian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2001, 2004.
+#   Free Software Foundation, Inc., 2000,2004
+#   Josip Rodin, 2008
+#   Krunoslav Gernhard, 2004
+#   Vladimir Vuksan <vuksan@veus.hr>, 2000.
+#   Vlatko Kosturjak, 2001
+# Tomislav Krznar <tomislav.krznar@gmail.com>, 2012, 2013, 2014, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Debian-installer 1st-stage master file HR\n"
+"Report-Msgid-Bugs-To: cdrom-detect@packages.debian.org\n"
+"POT-Creation-Date: 2015-05-14 22:00+0000\n"
+"PO-Revision-Date: 2015-12-12 12:11+0100\n"
+"Last-Translator: Tomislav Krznar <tomislav.krznar@gmail.com>\n"
+"Language-Team: Croatian <lokalizacija@linux.hr>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:1001
+msgid "Load CD-ROM drivers from removable media?"
+msgstr "Učitaj CD-ROM upravljačke programe s izmjenjivih medija?"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:1001 ../cdrom-detect.templates:3001
+msgid "No common CD-ROM drive was detected."
+msgstr "Nije pronađen uobičajeni CD-ROM pogon."
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:1001
+msgid ""
+"You may need to load additional CD-ROM drivers from removable media, such as "
+"a driver floppy. If you have such media available now, insert it, and "
+"continue. Otherwise, you will be given the option to manually select CD-ROM "
+"modules."
+msgstr ""
+"Možda trebate učitati CD-ROM upravljačke programe s izmjenjivih medija, kao "
+"što je disketa. Ako imate takve medije, ubacite ih u pogon i nastavite. Ako "
+"ne, imat ćete mogućnost ručno izabrati module za CD-ROM."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../cdrom-detect.templates:2001
+msgid "Detecting hardware to find CD-ROM drives"
+msgstr "Pretražujem sklopovlje za CD-ROM pogonima"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:3001
+msgid "Manually select a CD-ROM module and device?"
+msgstr "Ručno izaberi CD-ROM modul i uređaj?"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:3001
+msgid ""
+"Your CD-ROM drive may be an old Mitsumi or another non-IDE, non-SCSI CD-ROM "
+"drive. In that case you should choose which module to load and the device to "
+"use. If you don't know which module and device are needed, look for some "
+"documentation or try a network installation instead of a CD-ROM installation."
+msgstr ""
+"Možda imate stari Mitsumi CD-ROM, ili koji drugi ne-IDE, ne-SCSI CD-ROM "
+"pogon. Ako je tako, trebate odlučiti koji ćete modul i uređaj koristiti. Ako "
+"to ne znate, pogledajte u dokumentaciju ili pokušajte instalaciju s mreže "
+"umjesto s CD-ROM-a."
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:4001
+msgid "Retry mounting the CD-ROM?"
+msgstr "Iznova pokušaj montirati CD-ROM?"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:4001
+msgid ""
+"Your installation CD-ROM couldn't be mounted. This probably means that the "
+"CD-ROM was not in the drive. If so you can insert it and try again."
+msgstr ""
+"Ne mogu montirati vaš instalacijski CD-ROM, vjerojatno zato što nije u "
+"pogonu. Ako je tako, ubacite ga i pokušajte iznova."
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:5001
+msgid "Module needed for accessing the CD-ROM:"
+msgstr "Modul potreban za pristup CD-ROM-u:"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:5001
+msgid ""
+"The automatic detection didn't find a CD-ROM drive. You can try to load a "
+"specific module if you have an unusual CD-ROM drive (that is neither IDE nor "
+"SCSI)."
+msgstr ""
+"Automatska pretraga nije pronašla CD-ROM pogon. Ako imate neuobičajen CD-ROM "
+"(niti IDE, niti SCSI), možete pokušati učitati odgovarajući modul."
+
+#. Type: string
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:6001
+msgid "Device file for accessing the CD-ROM:"
+msgstr "Datoteka uređaja za pristup CD-ROM-u:"
+
+#. Type: string
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:6001
+msgid ""
+"In order to access your CD-ROM drive, please enter the device file that "
+"should be used. Non-standard CD-ROM drives use non-standard device files "
+"(such as /dev/mcdx)."
+msgstr ""
+"Molim unesite datoteku uređaja koja će se koristiti za pristup vašem  CD-ROM-"
+"u. Neuobičajeni CD-ROM pogoni koriste neuobičajene datoteke uređaja (npr. /"
+"dev/mcdx)."
+
+#. Type: string
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:6001
+msgid ""
+"You may switch to the shell on the second terminal (ALT+F2) to check the "
+"available devices in /dev with \"ls /dev\". You can return to this screen by "
+"pressing ALT+F1."
+msgstr ""
+"Možete se prebaciti u ljusku na drugoj konzoli (Alt+F2) da provjerite koji "
+"su uređaji dostupni u /dev, pomoću \"ls /dev\". Vraćate se na ovaj zaslon "
+"pomoću Alt+F1."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../cdrom-detect.templates:10001
+msgid "Scanning CD-ROM"
+msgstr "Pretražujem CD-ROM"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../cdrom-detect.templates:11001
+msgid "Scanning ${DIR}..."
+msgstr "Pretražujem ${DIR}..."
+
+#. Type: note
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:12001
+msgid "CD-ROM detected"
+msgstr "Pronađen CD-ROM"
+
+#. Type: note
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:12001
+msgid ""
+"The CD-ROM autodetection was successful. A CD-ROM drive has been found and "
+"it currently contains the CD ${cdname}. The installation will now continue."
+msgstr ""
+"Automatsko traženje CD-ROM-a uspjelo. Pronađen je CD-ROM pogon koji sadrži "
+"CD ${cdname}. Instalacija će sada nastaviti."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-detect.templates:13001
+msgid "UNetbootin media detected"
+msgstr "Otkriven UNetbootin medij"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-detect.templates:13001
+msgid ""
+"It appears that your installation medium was generated using UNetbootin. "
+"UNetbootin is regularly linked with difficult or unreproducible problem "
+"reports from users; if you have problems using this installation medium, "
+"please try your installation again without using UNetbootin before reporting "
+"issues."
+msgstr ""
+"Čini se da je vaš instalacijski medij izrađen korištenjem UNetbootin. "
+"UNetbootin se često povezuje s kompliciranim ili neponovljivim izvještajima "
+"o problemima korisnika; ako imate probleme s korištenjem ovog instalacijskog "
+"medija, molim ponovo pokušajte instalaciju bez korištenja UNetbootin prije "
+"prijavljivanja problema."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-detect.templates:13001
+msgid ""
+"The installation guide contains more information on how to create a USB "
+"installation medium directly without UNetbootin."
+msgstr ""
+"Priručnik za instalaciju sadrži više informacija kako napraviti "
+"instalacijski USB medij direktno bez korištenja UNetbootin."
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:14001
+msgid "Incorrect CD-ROM detected"
+msgstr "Pronađen krivi CD-ROM"
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:14001
+msgid "The CD-ROM drive contains a CD which cannot be used for installation."
+msgstr "CD-ROM pogon sadrži CD koji se ne može koristiti za instalaciju."
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:14001
+msgid "Please insert a suitable CD to continue with the installation."
+msgstr "Molim ubacite prikladni CD da bi nastavili instalaciju."
+
+#. Type: error
+#. Description
+#. Translators: DO NOT TRANSLATE "Release". This is the name of a file.
+#. :sl2:
+#: ../cdrom-detect.templates:15001
+msgid "Error reading Release file"
+msgstr "Greška pri učitavanju 'Release' datoteke"
+
+#. Type: error
+#. Description
+#. Translators: DO NOT TRANSLATE "Release". This is the name of a file.
+#. :sl2:
+#: ../cdrom-detect.templates:15001
+msgid ""
+"The CD-ROM does not seem to contain a valid 'Release' file, or that file "
+"could not be read correctly."
+msgstr ""
+"Čini se da CD-ROM ne sadrži ispravnu 'Release' datoteku, ili se ta datoteka "
+"ne može ispravno učitati."
+
+#. Type: error
+#. Description
+#. Translators: DO NOT TRANSLATE "Release". This is the name of a file.
+#. :sl2:
+#: ../cdrom-detect.templates:15001
+msgid ""
+"You may try to repeat CD-ROM detection but, even if it does succeed the "
+"second time, you may experience problems later in the installation."
+msgstr ""
+"Možete pokušati ponoviti detekciju CD-ROM uređaja, ali čak ako to i uspije "
+"iz drugog pokušaja, mogli biste naići na probleme kasnije u instalaciji."
+
+#. Type: text
+#. Description
+#. finish-install progress bar item
+#. :sl1:
+#: ../cdrom-detect.templates:19001
+msgid "Unmounting and ejecting CD-ROM..."
+msgstr "Demontiram i izbacujem CD-ROM..."
+
+#. Type: text
+#. Description
+#. Item in the main menu to select this package
+#. :sl2:
+#: ../cdrom-detect.templates:20001
+msgid "Detect and mount CD-ROM"
+msgstr "Pronađi i montiraj CD-ROM"

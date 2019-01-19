@@ -1,0 +1,323 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Slovak messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Peter Mann <peter.mann@tuke.sk>
+# Ivan Masár <helix84@centrum.sk>, 2007, 2008, 2009, 2010, 2011, 2013, 2014, 2015, 2017.
+# Translations from iso-codes:
+# (translations from drakfw)
+# Alastair McKinstry <mckinstry@computer.org>, 2001, 2002.
+# Copyright (C) 2002 Free Software Foundation, Inc.
+# Free Software Foundation, Inc., 2004
+# Ivan Masár <helix84@centrum.sk>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017.
+# Translations taken from sk.wikipedia.org on 2008-06-17
+# Pavol Cvengros <orpheus@hq.alert.sk>, 2001.
+# Peter Mann <Peter.Mann@tuke.sk>, 2004, 2006.
+# bronto, 2007.
+# source:
+# http://www.geodesy.gov.sk
+# http://www.fao.org/ (historic names)
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2018-04-16 09:18+0200\n"
+"Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
+"Language-Team: x\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "Hľadanie inštalačných ISO súborov na pevných diskoch"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "Rozpoznáva sa hardvér aby sa našli pevné disky"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "Hľadajú sa inštalačné ISO súbory na diskoch"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "Pripája sa ${DRIVE}..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "Prehľadáva sa ${DRIVE} (v ${DIRECTORY})..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "Hľadať inštalačný ISO súbor na celom disku?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"Rýchle vyhľadávanie inštalačných ISO súborov, ktoré hľadá len na obvyklých "
+"miestach, nenašlo žiaden inštalačný ISO súbor. Je možné, že dôkladnejšie "
+"hľadanie nájde ISO súbor, ale bude to dlhšie trvať."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "Chyba pri hľadaní inštalačného ISO súboru"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"Neboli nájdené žiadne ISO súbory. Ak ste súbory stiahli z internetu, je "
+"možné, že nemajú správnu príponu (musia končiť na „.iso“), alebo sú uložené "
+"na súborovom systéme, ktorý nebol pripojený."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"Budete musieť použiť inú metódu inštalácie, vybrať iné zariadenie, kde sa "
+"bude hľadať obraz ISO alebo to skúsiť znova po tom ako opravíte ISO súbory."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"Hoci sa našlo jeden alebo viacero možných ISO súborov, nepodarilo sa ich "
+"pripojiť. Stiahnuté ISO súbory sú možno poškodené."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "Nenašiel sa žiaden inštalačný ISO súbor"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"Hoci sa našiel jeden alebo viacero možných ISO súborov, nezdá sa, že sú to "
+"správne inštalačné ISO obrazy."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "Inštalačný ISO súbor ${SUITE} bol úspešne pripojený"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"ISO súbor ${FILENAME} na ${DEVICE} (${SUITE}) sa použije ako inštalačný ISO "
+"obraz."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "Všetky zistené zariadenia"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "Zadať zariadenie manuálne"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "Zariadenie alebo oblasť, kde hľadať inštalačné obrazy ISO:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"Môžete zvoliť zariadenie, ručne uviesť nezistené zariadenie alebo znova "
+"nechať zistiť dostupné zariadenia (užitočné pri pomalých zariadeniach USB)."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "Názov zariadenia:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "Úplné hľadanie"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "Ktorý súbor ISO použiť:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"Na vybraných zariadeniach bol zistený jeden alebo viac súborov ISO. Prosím, "
+"zvoľte, ktorý chcete použiť alebo požiadajte o dôkladnejšie prehľadanie."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr "Je súbor ISO s názvom ${FILENAME} ten správny inštalačný obraz?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"ISO súbor ${FILENAME} na ${DEVICE} (${SUITE}, kód ${CODENAME}, popísaný ako "
+"„${DESCRIPTION}“) sa použije ako inštalačný ISO obraz."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"Ak na rovnakom inštalačnom disku existuje viacero súborov ISO, môžete si "
+"vybrať, ktorý chcete použiť."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr "Skopírovať obraz ISO do RAM pred jeho pripojením?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr "Systém má dostatok pamäte na skopírovanie obrazu ISO do RAM."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+"Ak zvolíte túto možnosť, umožní využiť disk obsahujúci obraz ISO. Ak je "
+"nezvolíte, disk sa bude aktívne využívať na prístup k obrazu ISO a "
+"inštalátor ho nebude môcť rozdeliť na oblasti."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+"Pamätajte však, že ak prepíšete disk obsahujúci obraz ISO, nemali by ste "
+"reštartovať systém pred dokončením inštalácie, pretože nebudete môcť znovu "
+"spustiť inštalátor, keďže obraz ISO už nebude prítomný na pevnom disku ani v "
+"pamäti."
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "Načítanie súčastí inštalačného programu z obrazu ISO"

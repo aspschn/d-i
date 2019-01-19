@@ -1,0 +1,22 @@
+#!/bin/sh
+
+. /lib/partman/lib/base.sh
+
+# Load modules, if that hasn't happened yet
+modprobe nbd >/dev/null 2>&1 || true
+# Figure out what devices are connected, and make sure they show up
+i=0
+while [ -d /sys/block/nbd$i ]
+do
+	mkdir -p $DEVICES/=dev=nbd$i
+	cd $DEVICES/=dev=nbd$i
+	if [ -f /sys/block/nbd$i/pid ]
+	then
+		# Device is connected
+		echo -n "/dev/nbd$i" > device
+		echo -n "Network Block Device" > model
+	else
+		touch skip
+	fi
+	i=$(( $i + 1 ))
+done

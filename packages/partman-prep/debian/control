@@ -1,0 +1,18 @@
+Source: partman-prep
+Section: debian-installer
+Priority: standard
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/partman-prep
+Vcs-Git: https://salsa.debian.org/installer-team/partman-prep.git
+
+Package: partman-prep
+Package-Type: udeb
+Architecture: powerpc ppc64 ppc64el
+XB-Subarchitecture: chrp_ibm chrp_rs6k prep
+Depends: ${misc:Depends}, partman-base (>= 114)
+Description: Add partman support for PPC PReP boot partitions
+ This package provides the 'prep' partition method. The yaboot
+ boot loader used on IBM pSeries systems requires a special
+ bootstrap partition, created by this method.

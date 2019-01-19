@@ -1,0 +1,340 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Spanish messages for debian-installer.
+# Copyright (C) 2003-2007 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Contributors to the translation of debian-installer:
+# Teófilo Ruiz Suárez <teo@debian.org>, 2003.
+# David Martínez Moreno <ender@debian.org>, 2003, 2005.
+# Carlos Alberto Martín Edo <carlos@dat.etsit.upm.es>, 2003
+# Carlos Valdivia Yagüe <valyag@dat.etsit.upm.es>, 2003
+# Rudy Godoy <rudy@kernel-panik.org>, 2003-2006
+# Steve Langasek <vorlon@debian.org>, 2004
+# Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2005
+# Rubén Porras Campo <nahoo@inicia.es>, 2005
+# Omar Campagne <ocampagne@gmail.com>, 2010
+# Javier Fernández-Sanguino <jfs@debian.org>, 2003-2012, 2014-2017
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+# - El proyecto de traducción de Debian al español
+#   http://www.debian.org/intl/spanish/
+#   especialmente las notas de traducción en
+#   http://www.debian.org/intl/spanish/notas
+#
+# - La guía de traducción de po's de debconf:
+#   /usr/share/doc/po-debconf/README-trans
+#   o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+# Si tiene dudas o consultas sobre esta traducción consulte con el último
+# traductor (campo Last-Translator) y ponga en copia a la lista de
+# traducción de Debian al español (debian-l10n-spanish@lists.debian.org)
+#
+# NOTAS: 
+#
+# - Se ha traducido en este fichero 'boot loader' de forma homogénea por
+# 'cargador de arranque' aunque en el manual se utiliza éste término y
+# también 'gestor de arranque'
+#
+# - 'array' no está traducido aún. La traducción como 'arreglo' suena
+# fatal (y es poco conocida)
+#
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   Free Software Foundation, Inc., 2001,2003,2004
+#   Javier Fernández-Sanguino <jfs@debian.org>, 2004-2008, 2010
+#   Juan Manuel García Molina <juanmagm@mail.com>, 2001.
+#   Ricardo Fernández Pascual <ric@users.sourceforge.net>, 2000, 2001.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: cdrom-detect@packages.debian.org\n"
+"POT-Creation-Date: 2015-05-14 22:00+0000\n"
+"PO-Revision-Date: 2017-01-27 00:21+0100\n"
+"Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
+"Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:1001
+msgid "Load CD-ROM drivers from removable media?"
+msgstr "¿Desea cargar los controladores del CD-ROM de un medio extraíble?"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:1001 ../cdrom-detect.templates:3001
+msgid "No common CD-ROM drive was detected."
+msgstr "No se ha detectado ningún lector de CD-ROM común."
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:1001
+msgid ""
+"You may need to load additional CD-ROM drivers from removable media, such as "
+"a driver floppy. If you have such media available now, insert it, and "
+"continue. Otherwise, you will be given the option to manually select CD-ROM "
+"modules."
+msgstr ""
+"Puede que necesite controladores de CD-ROM de un medio extraíble, como un "
+"disquete. Si dispone de ese medio, insértelo ahora y continúe. Si no es así, "
+"se le dará la opción de seleccionar los módulos de CD-ROM manualmente."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../cdrom-detect.templates:2001
+msgid "Detecting hardware to find CD-ROM drives"
+msgstr "Detectando el hardware para encontrar las unidades de CD-ROM"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:3001
+msgid "Manually select a CD-ROM module and device?"
+msgstr "¿Quiere seleccionar manualmente el módulo y el dispositivo del CD-ROM?"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:3001
+msgid ""
+"Your CD-ROM drive may be an old Mitsumi or another non-IDE, non-SCSI CD-ROM "
+"drive. In that case you should choose which module to load and the device to "
+"use. If you don't know which module and device are needed, look for some "
+"documentation or try a network installation instead of a CD-ROM installation."
+msgstr ""
+"El lector de CD-ROM puede ser un Mitsumi antiguo u otro lector de CD-ROM que "
+"no sea IDE ni SCSI. En ese caso, debería elegir qué módulo desea cargar y "
+"qué dispositivo utilizar. Busque documentación o intente una instalación en "
+"red en lugar de una instalación desde CD-ROM si no conoce qué módulo o qué "
+"dispositivo es necesario."
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:4001
+msgid "Retry mounting the CD-ROM?"
+msgstr "¿Intentar montar el CD-ROM de nuevo?"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:4001
+msgid ""
+"Your installation CD-ROM couldn't be mounted. This probably means that the "
+"CD-ROM was not in the drive. If so you can insert it and try again."
+msgstr ""
+"No se pudo montar el CD-ROM de instalación. Esto probablemente signifique "
+"que el CD-ROM no estaba en el lector. Si es así, puede insertarlo y probar "
+"de nuevo."
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:5001
+msgid "Module needed for accessing the CD-ROM:"
+msgstr "Módulos necesarios para acceder al CD-ROM:"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:5001
+msgid ""
+"The automatic detection didn't find a CD-ROM drive. You can try to load a "
+"specific module if you have an unusual CD-ROM drive (that is neither IDE nor "
+"SCSI)."
+msgstr ""
+"La detección automática no encontró ningún lector de CD-ROM. Puede intentar "
+"cargar un módulo específico si tiene un lector de CD-ROM poco habitual (es "
+"decir, que no sea ni IDE ni SCSI)."
+
+#. Type: string
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:6001
+msgid "Device file for accessing the CD-ROM:"
+msgstr "Fichero de dispositivo para acceder al CD-ROM:"
+
+#. Type: string
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:6001
+msgid ""
+"In order to access your CD-ROM drive, please enter the device file that "
+"should be used. Non-standard CD-ROM drives use non-standard device files "
+"(such as /dev/mcdx)."
+msgstr ""
+"Para acceder al lector de CD-ROM, por favor, teclee el fichero de "
+"dispositivo que se debería utilizar. Los lectores de CD-ROM no estándares "
+"emplean ficheros de dispositivos no estándares (como /dev/mcdx)."
+
+#. Type: string
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:6001
+msgid ""
+"You may switch to the shell on the second terminal (ALT+F2) to check the "
+"available devices in /dev with \"ls /dev\". You can return to this screen by "
+"pressing ALT+F1."
+msgstr ""
+"Puede cambiar a la consola del segundo terminal (ALT+F2) para comprobar los "
+"dispositivos disponibles en /dev con «ls /dev». Puede volver aquí con ALT+F1."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../cdrom-detect.templates:10001
+msgid "Scanning CD-ROM"
+msgstr "Analizando el CD-ROM"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../cdrom-detect.templates:11001
+msgid "Scanning ${DIR}..."
+msgstr "Analizando ${DIR}..."
+
+#. Type: note
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:12001
+msgid "CD-ROM detected"
+msgstr "Se ha detectado un CD-ROM"
+
+#. Type: note
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:12001
+msgid ""
+"The CD-ROM autodetection was successful. A CD-ROM drive has been found and "
+"it currently contains the CD ${cdname}. The installation will now continue."
+msgstr ""
+"La detección automática del CD-ROM ha funcionado. Se encontró un lector de "
+"CD-ROM con el siguiente CD insertado: ${cdname}. Puede continuar la "
+"instalación."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-detect.templates:13001
+msgid "UNetbootin media detected"
+msgstr "Detectado medio UNetbootin"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-detect.templates:13001
+msgid ""
+"It appears that your installation medium was generated using UNetbootin. "
+"UNetbootin is regularly linked with difficult or unreproducible problem "
+"reports from users; if you have problems using this installation medium, "
+"please try your installation again without using UNetbootin before reporting "
+"issues."
+msgstr ""
+"Parece que su medio de instalación se creó utilizando «UNetbootin». Se ha "
+"asociado «UNetbootin» reiteradamente a informes de problemas de distintos "
+"usuarios difíciles o no reproducibles. Si tiene problemas con este medio de "
+"instalación intente de nuevo la instalación sin utilizar «UNetbootin» antes "
+"de reportar el problemas."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-detect.templates:13001
+msgid ""
+"The installation guide contains more information on how to create a USB "
+"installation medium directly without UNetbootin."
+msgstr ""
+"Encontrará más información sobre cómo crear un medio de instalación USB "
+"directamente sin necesidad de utilizar «UNetbootin» en la guía de "
+"instalación."
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:14001
+msgid "Incorrect CD-ROM detected"
+msgstr "Se ha detectado un CD-ROM incorrecto"
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:14001
+msgid "The CD-ROM drive contains a CD which cannot be used for installation."
+msgstr ""
+"El lector de CD-ROM contiene un CD que no puede utilizarse para la "
+"instalación."
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../cdrom-detect.templates:14001
+msgid "Please insert a suitable CD to continue with the installation."
+msgstr "Por favor, inserte el CD apropiado para continuar con la instalación."
+
+#. Type: error
+#. Description
+#. Translators: DO NOT TRANSLATE "Release". This is the name of a file.
+#. :sl2:
+#: ../cdrom-detect.templates:15001
+msgid "Error reading Release file"
+msgstr "Se ha producido un error al leer el fichero «Release»"
+
+#. Type: error
+#. Description
+#. Translators: DO NOT TRANSLATE "Release". This is the name of a file.
+#. :sl2:
+#: ../cdrom-detect.templates:15001
+msgid ""
+"The CD-ROM does not seem to contain a valid 'Release' file, or that file "
+"could not be read correctly."
+msgstr ""
+"El CD-ROM no parece tener un fichero «Release» válido o no se pudo leer ese "
+"fichero correctamente."
+
+#. Type: error
+#. Description
+#. Translators: DO NOT TRANSLATE "Release". This is the name of a file.
+#. :sl2:
+#: ../cdrom-detect.templates:15001
+msgid ""
+"You may try to repeat CD-ROM detection but, even if it does succeed the "
+"second time, you may experience problems later in the installation."
+msgstr ""
+"Puede intentar la detección del CD-ROM pero, aún cuando funcione la segunda "
+"vez, es posible que tenga problemas más adelante en la instalación."
+
+#. Type: text
+#. Description
+#. finish-install progress bar item
+#. :sl1:
+#: ../cdrom-detect.templates:19001
+msgid "Unmounting and ejecting CD-ROM..."
+msgstr "Desmontando y expulsando el CD-ROM..."
+
+#. Type: text
+#. Description
+#. Item in the main menu to select this package
+#. :sl2:
+#: ../cdrom-detect.templates:20001
+msgid "Detect and mount CD-ROM"
+msgstr "Detectar y montar el CD-ROM"

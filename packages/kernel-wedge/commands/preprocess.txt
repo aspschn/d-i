@@ -1,0 +1,11 @@
+preprocess module-list module-dir
+
+Preprocesses the module-list, performing excludes and excludes, removing
+blank lines and comments, and expanding wildcards. Emits a list of
+modules to stdout.
+
+The supported wildcards are:
+
+?  Match a single character within a path component
+*  Match any number of characters within a path component
+** Match any number of characters including multiple path components

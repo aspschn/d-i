@@ -1,0 +1,48 @@
+
+             Preseeding and Automatic Installation
+            =======================================
+
+Preseeding [1][2] provides a way to set answers to questions asked
+during the installation process, without having to manually enter the
+answers while the installation is running.  This makes it possible to
+fully automate installations.
+
+To use preseeding with 'di-netboot-assistant', do the following:
+
+ • Provide a 'preseed.cfg' file.  An example is available:
+   '/usr/share/doc/di-netboot-assistant/examples/preseed.cfg'.
+   Copy it to the directory $TFTP_ROOT/d-i/<CODENAME>/ of the release
+   you want to install.  For example:
+
+   # mkdir -p /var/lib/tftpboot/d-i/stretch/
+   # cp /usr/share/doc/di-netboot-assistant/examples/preseed.cfg \
+                                       /var/lib/tftpboot/d-i/stretch/
+
+ • Modify it to fit your needs.  You might want to modify the
+   partitioning and provide another (or no) public key for ssh.  The
+   user's password provided should be changed after the installation.
+
+ • Enable the commented sections in:
+      '/etc/di-netboot-assistant/pxelinux.HEAD' and
+      '/etc/di-netboot-assistant/grub.cfg.HEAD'.
+   Run 'di-netboot-assistant rebuild-menu' to add the new boot entry
+   to the PXElinux and grub-efi menus.
+
+ • Make sure the TFTP server is resolved as 'installbox' (or modify
+   the boot parameter 'url=tftp://installbox' to fit your local
+   setup).
+
+ • Configure the DHCP server to provide a hostname for the client.
+   This hostname will be assigned to the host during installation.
+   If you use 'dnsmasq', the latter can be achieved by adding
+   corresponding lines in the host's '/etc/hosts' file.
+
+The provided example 'preseed.cfg' configures ssh login for the user
+'ansible' with public key authentication.  This allows further
+customization of the system after installation using ansible
+playbooks.  In addition, it shows how to apply a playbook already
+during installation with 'ansible-pull'.
+
+
+[1] <URL:https://wiki.debian.org/DebianInstaller/Preseed>
+[2] <URL:https://www.debian.org/releases/stable/amd64/apb.html.en>

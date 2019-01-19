@@ -1,0 +1,21 @@
+<!-- $Id$ -->
+<!-- original version: 68143 -->
+
+   <sect3 id="kbd-chooser">
+   <title>Výběr klávesnice</title>
+<para>
+
+Klávesnice bývají obvykle přizpůsobeny znakům používaným v daném jazyce.
+Vyberte klávesnici, která odpovídá vašemu národnímu rozložení, nebo je
+alespoň velmi podobná. Po skončení instalace si můžete vybrat vhodné
+klávesové rozložení z mnohem většího spektra (jako uživatel root
+spusťte příkaz <command>dpkg-reconfigure keyboard-configuration</command>).
+
+</para><para>
+
+Šipkami přesuňte kurzor na vybrané klávesové rozložení a stiskněte
+&enterkey;. (Šipky by měly být na všech klávesnicích na stejném
+místě, takže jsou nezávislé na zvoleném rozložení.)
+
+</para>
+   </sect3>

@@ -1,0 +1,13 @@
+lvcreate
+lvdisplay
+lvremove
+pvcreate
+pvdisplay
+pvscan
+vgchange
+vgcreate
+vgdisplay
+vgextend
+vgreduce
+vgremove
+vgscan

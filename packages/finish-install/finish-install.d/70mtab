@@ -1,0 +1,7 @@
+#! /bin/sh
+
+# some things inside d-i will make an /etc/mtab file, but it shouldn't
+# be there in the installed system. Systemd will be desperately unhappy.
+if [ -f /target/etc/mtab ]; then
+    ln -sf /proc/self/mounts /target/etc/mtab
+fi

@@ -1,0 +1,90 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+# Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2011-12-17 11:35+0530\n"
+"Last-Translator: Prabodh C P <prabodh@fsmk.org>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../download-installer.templates:1001
+msgid "Download installer components"
+msgstr "ಅನುಸ್ಥಾಪನ ಭಾಗಗಳನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿ"
+
+#. Type: select
+#. Choices
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#. :sl2:
+#: ../net-retriever.templates:1001
+msgid "Retry"
+msgstr "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು"
+
+#. Type: select
+#. Choices
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#. :sl2:
+#: ../net-retriever.templates:1001
+msgid "Change mirror"
+msgstr "ದರ್ಪಣವನ್ನು ಬದಲಾಯಿಸಿ."
+
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#. Type: select
+#. Choices
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#. :sl2:
+#: ../net-retriever.templates:1001
+msgid "Cancel"
+msgstr "ರದ್ದು ಮಾಡು"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../net-retriever.templates:1002
+msgid "Downloading a file failed:"
+msgstr "ಕಡತವನ್ನು ಡೌನ್ಲೋಡ್ ಮಡುವಲ್ಲಿ ವಿಫಲವಾಗಿದೆ:"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../net-retriever.templates:1002
+msgid ""
+"The installer failed to download a file from the mirror. This may be a "
+"problem with your network, or with the mirror. You can choose to retry the "
+"download, select a different mirror, or cancel and choose another "
+"installation method."
+msgstr ""
+"ಅನುಸ್ಥಾಪಕವು ದರ್ಪಣದಿಂದ ಕಡತವೊಂದನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡುವಲ್ಲಿ ವಿಫಲವಾಗಿದೆ. ನಿಮ್ಮ ಜಾಲಬಂಧದಿಂದಾಗಿ "
+"ಅಥವಾ ದರ್ಪಣದಿಂದಾಗಿ ಈ ತೊದರೆಯುಂಟಾಗಿರಬಹುದು. ನೀವು ಮತ್ತೊಮ್ಮೆ ಡೌನ್ಲೋಡ್ ಮಾಡಲು "
+"ಪ್ರಯತ್ನಿಸಬಹುದು, ಇಲ್ಲವೇ ಬೇರೊಂದು ದರ್ಪಣವನ್ನು ಆಯ್ಕೆಮಾಡಬಹುದು ಅಥವಾ ಇದನ್ನು ನಿಲ್ಲಿಸಿ ಬೇರೊಂದು "
+"ಅನುಸ್ಥಾಪನಾ ವಿಧಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು."

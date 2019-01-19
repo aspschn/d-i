@@ -1,0 +1,188 @@
+<!-- -*- DocBook -*- -->
+<!-- These entries should be language independent.  -->
+<!-- The *first* definition of an ENTITY wins.      -->
+
+<!-- current year (to be used for copyright declaration). -->
+<!-- When changing this, also change in "debian/copyright" file! -->
+<!ENTITY current-year "2017">
+
+<!-- short name to use for Debian -->
+<!ENTITY debian "Debian">
+
+<!-- proper (long) name to use for Debian -->
+<!ENTITY debian-gnu "&debian; GNU/&arch-kernel;">
+
+<!ENTITY d-i "<classname>debian-installer</classname>">
+
+<!ENTITY release     "10">
+<!ENTITY releasename "buster">
+<!ENTITY releasename-cap "Buster">
+<!ENTITY releasename-uc "BUSTER">
+
+<!ENTITY FIXME
+  "<emphasis>Documentation not complete, text missing.</emphasis>">
+
+<!-- proper nouns for architectures -->
+<!ENTITY arch-title
+  "<phrase arch='any-amd64'>64-bit PC</phrase>
+   <phrase arch='armel'>32-bit soft-float ARM</phrase>
+   <phrase arch='armhf'>32-bit hard-float ARMv7</phrase>
+   <phrase arch='arm64'>64-bit ARM</phrase>
+   <phrase arch='hppa'>PA-RISC</phrase>
+   <phrase arch='any-i386'>32-bit PC</phrase>
+   <phrase arch='ia64'>IA-64</phrase>
+   <phrase arch='mips'>32-bit MIPS (big-endian)</phrase>
+   <phrase arch='mips64el'>64-bit MIPS (little-endian)</phrase>
+   <phrase arch='mipsel'>32-bit MIPS (little-endian)</phrase>
+   <phrase arch='powerpc'>PowerPC</phrase>
+   <phrase arch='ppc64el'>64-bit PowerPC (little-endian)</phrase>
+   <phrase arch='sparc'>SPARC</phrase>
+   <phrase arch='s390'>S/390</phrase>">
+
+<!-- general things from installer -->
+<!ENTITY ekey "<keycap>e</keycap>">
+<!ENTITY downkey "<keycap>down arrow</keycap>">
+<!ENTITY endkey "<keycap>end</keycap>">
+<!ENTITY f10key "<keycap>F10</keycap>">
+<!ENTITY enterkey "<keycap>Enter</keycap>">
+<!ENTITY escapekey "<keycap>Esc</keycap>">
+<!ENTITY tabkey "<keycap>Tab</keycap>">
+<!ENTITY MSG-YES "<userinput>Yes</userinput>">
+<!ENTITY MSG-NO "<userinput>No</userinput>">
+<!ENTITY BTN-CONT "<guibutton>Continue</guibutton>">
+<!ENTITY BTN-CANCEL "<guibutton>Cancel</guibutton>">
+<!ENTITY BTN-GOBACK "<guibutton>Go Back</guibutton>">
+
+<!-- notation used for 'megabytes' -->
+<!ENTITY notation-megabytes "MB">
+
+<!-- minimum hard disk size for base system -->
+<!-- As measured just before reboot (i.e. before the cleanup script drops
+.debs), plus some margin. This is also approximately the used size after
+cleanup, plus minimal ~150MB work space included.
+Also update the value in debian-installer/build/boot/x86/f2.txt
+-->
+<!ENTITY minimum-fs-size "780&notation-megabytes;">
+
+<!--
+Size of install as used in appendix/files.xml; all values based on amd64.
+
+To determine the size of the base system and tasks, start with a default
+installation:
+- in English
+- with use of network mirror
+- without selecting _any_ tasks.
+After the reboot, the size for the minimal base system should be determined
+after running 'apt-get clean' using 'du -hsx /'. After that the "Standard
+system" task should be installed and the size of the standard system can be
+determined using the same method.
+
+Sizes of tasks should be determined by running tasksel with the "new-install"
+and "test" options on a system that been fully installed with only the
+standard task. By selecting a task, the corresponding apt-get line will be
+emitted. Copy/paste it without the -q -y options, apt-get will then show the
+sizes for the task. Cancel it, and repeat for other tasks. For instance:
+
+apt-get -o APT::Install-Recommends=true -o APT::Get::AutomaticRemove=true install task-desktop task-gnome-desktop
+
+To get the sizes for the alternative desktop environments you will need
+to first switch tasksel to that DE using the following command, e.g:
+   echo "tasksel tasksel/desktop string kde" | debconf-set-selections
+-->
+
+<!-- Size of the basic installation -->
+  <!ENTITY base-system-size   "613">
+  <!ENTITY std-system-size    "800">
+<!-- Desktop environment task - GNOME -->
+  <!ENTITY task-desktop-gnome-inst "3163">
+  <!ENTITY task-desktop-gnome-dl    "935">
+  <!ENTITY task-desktop-gnome-tot  "4098">
+<!-- Desktop environment task - KDE -->
+  <!ENTITY task-desktop-kde-inst   "3044">
+  <!ENTITY task-desktop-kde-dl      "911">
+  <!ENTITY task-desktop-kde-tot    "3955">
+<!-- Desktop environment task - Xfce -->
+  <!ENTITY task-desktop-xfce-inst  "2122">
+  <!ENTITY task-desktop-xfce-dl     "593">
+  <!ENTITY task-desktop-xfce-tot   "2715">
+<!-- Desktop environment task - LXDE -->
+  <!ENTITY task-desktop-lxde-inst  "2133">
+  <!ENTITY task-desktop-lxde-dl     "602">
+  <!ENTITY task-desktop-lxde-tot   "2735">
+<!-- Desktop environment task - MATE -->
+  <!ENTITY task-desktop-mate-inst  "2288">
+  <!ENTITY task-desktop-mate-dl     "644">
+  <!ENTITY task-desktop-mate-tot   "2932">
+<!-- Desktop environment task - Cinnamon -->
+  <!ENTITY task-desktop-cinnamon-inst  "2878">
+  <!ENTITY task-desktop-cinnamon-dl     "843">
+  <!ENTITY task-desktop-cinnamon-tot   "3721">
+<!-- Web server task -->
+  <!ENTITY task-web-inst       "40">
+  <!ENTITY task-web-dl          "9">
+  <!ENTITY task-web-tot        "49">
+<!-- Print server task -->
+  <!ENTITY task-print-inst    "407">
+  <!ENTITY task-print-dl       "95">
+  <!ENTITY task-print-tot     "502">
+<!-- SSH server task -->
+  <!ENTITY task-ssh-inst        "1">
+  <!ENTITY task-ssh-dl          "0">
+  <!ENTITY task-ssh-tot         "1">
+
+<!-- Size needed by base and gnome desktop task for / with separate /usr, /var, /boot, for amd64 -->
+  <!ENTITY root-system-size-min     "250">
+  <!ENTITY root-system-size-max     "350">
+
+<!-- number of packages, approx, in the main distribution -->
+<!-- use:
+     for i in binary-*; do echo -n "$i: "; zgrep '^Package:' ./binary-all/Packages.gz ./$i/Packages.gz | wc -l; done
+-->
+<!-- last updated: 2017-02-11 for Stretch (Samuel Thibault) -->
+<!ENTITY num-of-distrib-pkgs
+  "<phrase arch='amd64'>75746</phrase>
+   <phrase arch='arm64'>74365</phrase>
+   <phrase arch='armel'>74134</phrase>
+   <phrase arch='armhf'>74360</phrase>
+   <phrase arch='i386'>75573</phrase>
+   <phrase arch='mips'>73821</phrase>
+   <phrase arch='mips64el'>73793</phrase>
+   <phrase arch='mipsel'>74037</phrase>
+   <phrase arch='ppc64el'>74309</phrase>
+   <phrase arch='s390x'>73878</phrase>
+   ">
+
+<!-- Number of current Debian developers -->
+<!-- Can be found for example on the english version of vote.debian.org (use last vote) -->
+<!-- Update: let's use a roughly approximated value like "1000"; we're not forced to use the exact value here. -->
+<!ENTITY num-of-debian-developers "1000">
+
+<!-- Number of current Debian maillists (see
+     http://lists.debian.org/completeindex.html) -->
+<!ENTITY num-of-debian-maillists "283">
+
+<!-- version of X11 shipping with the current release, see version of the xorg package -->
+<!ENTITY x11ver "7.7">
+
+<!-- version of BRLTTY shipping with the current release, see version of the brltty package -->
+<!ENTITY brlttyver "5.4">
+
+<!-- version of Speakup shipping with the current release, see version of the speakup-doc package -->
+<!ENTITY speakupver "3.1.6">
+
+<!-- an example of adding another image to lilo.conf, cf
+     en/post-install.sgml etc. -->
+<!ENTITY additional-lilo-image
+'image=/boot/vmlinuz.new
+  label=new
+  append="mcd=0x320,11"
+  read-only'>
+
+<!-- CD directory containing the kernel binary and ramdisk image,
+     according to the architecture.  -->
+<!ENTITY x86-install-dir
+   "install.<filename arch='i386'>386</filename><filename arch='amd64'>amd</filename>">
+
+<!-- prefix for files that can be downloaded -->
+<!-- <![ %official-web-build; [ <!ENTITY downloadable-file "&url-boot-floppies;"> ]]> -->
+                          <!ENTITY downloadable-file "&url-debian-installer;">

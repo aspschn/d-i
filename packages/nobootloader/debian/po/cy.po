@@ -1,0 +1,180 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of Debian Installer templates to Welsh
+# Copyright (C) 2004-2008 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Jonathan Price <mynamesnotclive@notclive.co.uk>, 2008.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004.
+#   - translations from ICU-3.0
+#   Dafydd Harries <daf@muse.19inch.net>, 2002,2004,2006.
+#   Free Software Foundation, Inc., 2002,2004
+#   Alastair McKinstry <mckinstry@computer.org>, 2001
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: nobootloader@packages.debian.org\n"
+"POT-Creation-Date: 2009-05-29 22:50+0000\n"
+"PO-Revision-Date: 2012-06-14 09:46-0000\n"
+"Last-Translator: Dafydd Tomos <l10n@da.fydd.org>\n"
+"Language-Team: Welsh <>\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../nobootloader.templates:1001
+msgid "Continue without boot loader"
+msgstr "Parhau heb lwythwr ymgychwyn"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Failed to mount /target/proc"
+msgstr "Methwyd clymu /target/proc"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "Methwyd clymu'r system ffeiliau proc ar /target/proc."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr "Gwiriwch /var/log/syslog neu gwelwch consol rhithwir 4 am y manylion."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Warning: Your system may be unbootable!"
+msgstr "Rhybudd: Efallai ni fydd yn bosib cychwyn eich system!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "Gosod newidynnau cadarnwedd ar gyfer ymgychwyn awtomatig"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"Mae angen gosod rhai newidynnau yng nghadarnwedd Genesi er mwyn i'r system "
+"ymgychwyn yn awtomatig. Ar ddiwedd y sefydliad, mi fydd y system yn ail-"
+"gychwyn. Ar linell orchymyn y cadarnwedd, gosodwch y newidynnau cadarnwedd "
+"canlynol i alluogi awto-ymgychwyn:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"Dim ond un waith fydd rhaid i chi wneud hyn. Wedi hyn, rhowch y gorchymyn "
+"\"boot\" neu ailgychwynwch y system i barhau i'r system sydd newydd ei "
+"sefydlu."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"Fel arall, fell allwch chi ymgychwyn y cnewyllyn eich hunan drwy roi hyn yn "
+"llinell orchymyn y cadarnwedd:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"Rhaid gosod rhai newidynnau yn CFE er mwyn i'ch system i ymgychwyn yn "
+"awtomatig. Ar ddiwedd y sefydliad, fe fydd y system yn ail-gychwyn. Ar "
+"linell orchymyn y cadarnwedd, gosodwch y newidynnau canlynol i hwyluso "
+"ymgychwyn:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"Dim ond unwaith fydd rhaid i chi wneud hyn. Fe fydd hyn yn eich galluogi i "
+"roi'r gorchymyn \"boot_debian\" yn y linell CFE."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"Os hoffech chi awto-ymgychwyn bob tro mae'r system yn dechrau, fe allwch chi "
+"osod y newidyn canlynol yn ogystal a'r rhai uwchben:"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid "No boot loader installed"
+msgstr "Dim llwythydd cychwyn wedi ei sefydlu"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid ""
+"No boot loader has been installed, either because you chose not to or "
+"because your specific architecture doesn't support a boot loader yet."
+msgstr ""
+"Does dim llwythwr cychwyn wedi ei sefydlu, un ai oherwydd dewisoch chi "
+"beidio, neu oherwydd dyw eich pensaerniaeth penodol ddim yn cynnal llwythwr "
+"cychwyn eto."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid ""
+"You will need to boot manually with the ${KERNEL} kernel on partition "
+"${BOOT} and ${ROOT} passed as a kernel argument."
+msgstr ""
+"Fe fydd yn rhaid i chi gychwyn â llaw gyda cnewyllyn ${KERNEL} ar raniad "
+"${BOOT} gyda ${ROOT} wedi ei basio fel ymresymiad cnewyllyn."

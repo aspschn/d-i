@@ -1,0 +1,174 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Portuguese messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# Console-setup strings translations:
+# (identified by "./console-setup.templates")
+# Copyright (C) 2003-2016 Miguel Figueiredo <elmig@debianpt.org>
+# This file is distributed under the same license as debian-installer.
+#
+#
+# Translations from iso-codes:
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Free Software Foundation, Inc., 2001,2004
+#   Filipe Maia <fmaia@gmx.net>, 2001.
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   Miguel Figueiredo <elmig@debianpt.org>, 2005-2016
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: s390-dasd@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-28 22:01+0000\n"
+"PO-Revision-Date: 2016-02-29 20:16+0000\n"
+"Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
+"Language-Team:  Portuguese <traduz@debianpt.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: select
+#. Choices
+#. :sl5:
+#. TRANSLATORS, please translate "Finish" the same way you translate it in
+#. the 'Select "Finish" at the bottom of the list when you are done' string
+#: ../s390-dasd.templates:1001
+msgid "Finish"
+msgstr "Terminar"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Available devices:"
+msgstr "Dispositivos disponíveis:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid ""
+"The following direct access storage devices (DASD) are available. Please "
+"select each device you want to use one at a time."
+msgstr ""
+"Estão disponíveis os seguintes dispositivos de armazenamento de acesso "
+"directo (DASD). Por favor escolha cada dispositivo que quer utilizar, um de "
+"cada vez."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Select \"Finish\" at the bottom of the list when you are done."
+msgstr "Quando terminar escolha \"Terminar\" no fundo da lista."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid "Choose device:"
+msgstr "Escolha o dispositivo:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid ""
+"Please choose a device. You have to specify the complete device number, "
+"including leading zeros."
+msgstr ""
+"Por favor escolha um dispositivo. Terá de especificar o número do "
+"dispositivo completo incluíndo os zeros em prefixo."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "Invalid device"
+msgstr "Dispositivo inválido"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "An invalid device number has been chosen."
+msgstr "Foi escolhido um número de dispositivo inválido."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001 ../s390-dasd.templates:5001
+msgid "Format the device?"
+msgstr "Formatar o dispositivo?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid "The DASD ${device} is already low-level formatted."
+msgstr "O dispositivo DASD ${device} já tem formatação de baixo nível."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid ""
+"Please choose whether you want to format again and remove any data on the "
+"DASD. Note that formatting a DASD might take a long time."
+msgstr ""
+"Por favor escolha se quer formatar novamente e remover quaisquer dados no "
+"DASD. Note que formatar um DASD pode demorar bastante tempo."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:5001
+msgid ""
+"The DASD ${device} is not low-level formatted. DASD devices must be "
+"formatted before you can create partitions."
+msgstr ""
+"O DASD ${device} não foi formatado em baixo nível. Os dispositivos DASD têm "
+"de ser formatados antes de poder criar partições."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid "The DASD ${device} is in use"
+msgstr "O DASD ${device} está em uso"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid ""
+"Could not low-level format the DASD ${device} because the DASD is in use.  "
+"For example, the DASD could be a member of a mapped device in an LVM volume "
+"group."
+msgstr ""
+"Não pode formatar o DASD ${device} em baixo nível porque o DASD está em "
+"utilização. Por exemplo, o DASD pode ser membro de um dispositivo mapeado "
+"num grupo de volumes LVM."
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:7001
+msgid "Formatting ${device}..."
+msgstr "A formatar ${device}..."
+
+#. Type: text
+#. Description
+#. Main menu item. Keep translations below 55 columns
+#. :sl5:
+#: ../s390-dasd.templates:8001
+msgid "Configure direct access storage devices (DASD)"
+msgstr "Configurar os dispositivos de armazenamento de acesso directo (DASD)"

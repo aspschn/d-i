@@ -1,0 +1,73 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+# Translations from iso-codes:
+# Sahran <sahran.ug@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:33+0000\n"
+"PO-Revision-Date: 2011-09-16 10:36+0600\n"
+"Last-Translator: Sahran <sahran.ug@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-auto-raid.templates:1001
+msgid "Error while setting up RAID"
+msgstr "RAID تەڭشەشتە خاتالىق كۆرۈلدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-auto-raid.templates:1001
+msgid ""
+"An unexpected error occurred while setting up a preseeded RAID configuration."
+msgstr ""
+"ئالدىن تەڭشەلگەن ھۆججەتكە ئاساسەن RAID غا سەپلەش ئېلىپ بارغاندا "
+"ئويلىشىلمىغان خاتالىق كۆرۈلدى."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-auto-raid.templates:1001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"/var/log/syslog نى تەكشۈرۈڭ ياكى 4-مەۋھۇم كونترول سۇپىسىنى(console) كۆرۈپ "
+"تېخىمۇ كۆپ تەپسىلىي ئۇچۇرغا ئېرىشىڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-auto-raid.templates:4001
+msgid "Not enough RAID partitions specified"
+msgstr "بەلگىلەنگەن يېتەرلىك RAID رايونى يوق"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-auto-raid.templates:4001
+msgid ""
+"There are not enough RAID partitions specified for your preseeded "
+"configuration. You need at least 3 devices for a RAID5 array."
+msgstr ""
+"سىز يېتەرلىك ساندىكى RAID رايوننى بەلگىلەپ ئالدىن تەڭشەشنىڭ ئېتىياجىنى "
+"قاندۇرمىدىڭىز. RAID5 قاتارىدىن بىرنى قۇرۇشتا، سىز ئاز دېگەندە ئۈچ ئۈسكۈنىگە "
+"ئېھتىياجلىق."

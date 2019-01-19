@@ -1,0 +1,81 @@
+Template: partman-nbd/text/configure_nbd
+Type: text
+# :sl4:
+_Description: Configure the Network Block Device
+
+Template: partman-nbd/mainmenu
+Type: select
+Choices-C: connect, disconnect, finish
+Choices: ${CHOICES}
+# :sl4:
+_Description: NBD configuration action:
+ There are currently ${NUMBER} devices connected.
+
+Template: partman-nbd/server
+Type: string
+# :sl4:
+_Description: Network Block Device server:
+ Please enter the host name or the IP address of the system running
+ nbd-server.
+
+Template: partman-nbd/name
+Type: string
+# :sl4:
+_Description: Name for NBD export
+ Please enter the NBD export name needed to access nbd-server. The name
+ entered here should match an existing export on the server.
+
+Template: partman-nbd/device
+Type: select
+Choices: ${CHOICES}
+# :sl4:
+_Description: Network Block Device device node:
+ Please select the NBD device node that you wish to connect or
+ disconnect.
+
+Template: partman-nbd/error/noserver
+Type: error
+# :sl4:
+_Description: Failed to connect to the NBD server
+ Connecting to the nbd-server failed. Please ensure that the host and
+ the export name which you entered are correct, that the nbd-server
+ process is running on that host, that the network is configured
+ correctly, and retry.
+
+Template: partman-nbd/error/nodev
+Type: error
+# :sl4:
+_Description: No more Network Block Device nodes left
+ Either all available NBD device nodes are in use or something went
+ wrong with the detection of the device nodes.
+ .
+ No more NBD device nodes can be configured until a configured one is
+ disconnected.
+
+Template: partman-nbd/error/noconnected
+Type: error
+# :sl4:
+_Description: No connected Network Block Device nodes were found
+ There are currently no Network Block Device nodes connected to any
+ server. As such, you can't disconnect any of them.
+
+Template: partman-nbd/menu/connect
+Type: text
+# :sl4:
+# Menu entry
+# Use infinite form
+_Description: Connect a Network Block Device
+
+Template: partman-nbd/menu/disconnect
+Type: text
+# :sl4:
+# Menu entry
+# Use infinite form
+_Description: Disconnect a Network Block Device
+
+Template: partman-nbd/menu/finish
+Type: text
+# :sl4:
+# Menu entry
+# Use infinite form
+_Description: Finish and return to the partitioner

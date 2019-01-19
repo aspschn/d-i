@@ -1,0 +1,410 @@
+prep-installer (0.28) UNRELEASED; urgency=medium
+
+  * Update Vcs-{Browser,Git} to point to salsa (alioth's replacement).
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 27 Apr 2018 03:43:06 +0200
+
+prep-installer (0.27) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Greek (el.po) by Sotirios Vrachas
+  * Norwegian Nynorsk (nn.po) by Allan Nordhøy
+  * Swedish (sv.po) by Anders Jonsson
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 26 Nov 2017 20:54:10 +0100
+
+prep-installer (0.26) unstable; urgency=medium
+
+  [ Colin Watson ]
+  * Use HTTPS for Vcs-* URLs, and link to cgit rather than gitweb.
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 13 Feb 2016 19:17:37 +0100
+
+prep-installer (0.25) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 13 Jul 2015 12:27:16 +0200
+
+prep-installer (0.24) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Portuguese (Brazil) (pt_BR.po) by Adriano Rafael Gomes
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 21 May 2015 21:40:32 +0200
+
+prep-installer (0.23) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 14 Mar 2014 19:00:32 +0100
+
+prep-installer (0.22) unstable; urgency=low
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 08 Sep 2013 18:04:28 +0200
+
+prep-installer (0.21) unstable; urgency=low
+
+  [ Dmitrijs Ledkovs ]
+  * Set debian source format to '3.0 (native)'.
+  * Bump debhelper compat level to 9.
+  * Set Vcs-* to canonical format.
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 18 Jul 2013 18:38:47 +0200
+
+prep-installer (0.20) unstable; urgency=low
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 19 May 2013 18:22:01 +0200
+
+prep-installer (0.19) unstable; urgency=low
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 12 Dec 2012 21:50:15 +0100
+
+prep-installer (0.18) unstable; urgency=low
+
+  [ Updated translations ]
+  * Asturian (ast.po) by ivarela
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 16 Oct 2012 22:53:52 +0200
+
+prep-installer (0.17) unstable; urgency=low
+
+  [ Updated translations ]
+  * Lithuanian (lt.po) by Rimas Kudelis
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 23 Sep 2012 12:20:03 +0200
+
+prep-installer (0.16) unstable; urgency=low
+
+  * Add myself to Uploaders
+  * Change XC-Package-Type to Package-Type
+
+  [ Updated translations ]
+  * Galician (gl.po) by Jorge Barreiro
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 05 Aug 2012 11:13:15 +0200
+
+prep-installer (0.15) unstable; urgency=low
+
+  [ Updated translations ]
+  * Tibetan (bo.po) by Tennom
+  * Welsh (cy.po) by Dafydd Tomos
+  * Basque (eu.po) by Piarres Beobide
+  * Galician (gl.po) by Jorge Barreiro
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Latvian (lv.po) by Rūdolfs Mazurs
+  * Macedonian (mk.po) by Arangel Angov
+  * Panjabi (pa.po) by A S Alam
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 17 Jun 2012 17:24:08 +0200
+
+prep-installer (0.14) unstable; urgency=low
+
+  [ Updated translations ]
+  * Asturian (ast.po) by Mikel González
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+  * Esperanto (eo.po) by Felipe Castro
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Estonian (et.po) by Mattias Põldaru
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Indonesian (id.po) by Mahyuddin Susanto
+  * Icelandic (is.po) by Sveinn í Felli
+  * Italian (it.po) by Milo Casagrande
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Khmer (km.po) by Chan Sambathratanak
+  * Kannada (kn.po) by vignesh prabhu
+  * Korean (ko.po) by Changwoo Ryu
+  * Macedonian (mk.po) by Arangel Angov
+  * Nepali (ne.po)
+  * Polish (pl.po) by Marcin Owsiany
+  * Romanian (ro.po) by Ioan Eugen Stan
+  * Northern Sami (se.po) by Børre Gaup
+  * Sinhala (si.po)
+  * Slovak (sk.po) by Ivan Masár
+  * Swedish (sv.po) by Daniel Nylander
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Uyghur (ug.po) by Sahran
+  * Ukrainian (uk.po) by Borys Yanovych
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Otavio Salvador <otavio@debian.org>  Thu, 15 Mar 2012 15:20:44 -0300
+
+prep-installer (0.13) unstable; urgency=low
+
+  [ Updated translations ]
+  * Lao (lo.po) by Anousak Souphavanh
+  * Sinhala (si.po) by Danishka Navin
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 24 Dec 2010 20:52:19 -0200
+
+prep-installer (0.12) unstable; urgency=low
+
+  [ Updated translations ]
+  * Asturian (ast.po) by maacub
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bengali (bn.po) by Israt Jahan
+  * Bosnian (bs.po) by Armin Beširović
+  * Catalan (ca.po) by Jordi Mallach
+  * Danish (da.po) by Jacob Sparre Andersen
+  * Esperanto (eo.po) by Felipe Castro
+  * Icelandic (is.po) by Sveinn í Felli
+  * Telugu (te.po) by Arjuna Rao Chavala
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 12 Nov 2010 16:04:05 -0200
+
+prep-installer (0.11) unstable; urgency=low
+
+  [ Updated translations ]
+  * Asturian (ast.po) by astur
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Danish (da.po) by Jacob Sparre Andersen
+  * German (de.po) by Holger Wansing
+  * Persian (fa.po) by acathur
+  * French (fr.po) by Christian Perrier
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Central Khmer (km.po) by Khoem Sokhem
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Macedonian (mk.po) by Arangel Angov
+
+ -- Otavio Salvador <otavio@debian.org>  Sun, 11 Jul 2010 17:39:44 -0300
+
+prep-installer (0.10) unstable; urgency=low
+
+  [ Colin Watson ]
+  * Upgrade to debhelper v7.
+
+  [ Frans Pop ]
+  * Remove Standards-Version field.
+
+  [ Updated translations ]
+  * Asturian (ast.po) by Marcos Antonio Alvarez Costales
+  * Belarusian (be.po) by Pavel Piatruk
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+  * Hindi (hi.po)
+  * Italian (it.po) by Milo Casagrande
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 07 Mar 2010 22:43:17 +0000
+
+prep-installer (0.9) unstable; urgency=low
+
+  * Make findfs use the last of any mounts found, in case there's more than
+    one due to pilot error in the partitioner.
+
+  [ Updated translations ]
+  * Asturian (ast.po) by Marcos Alvarez Costales
+  * Bengali (bn.po) by Md. Rezwan Shahid
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Estonian (et.po) by Mattias Põldaru
+  * Basque (eu.po) by Piarres Beobide
+  * Galician (gl.po) by marce villarino
+  * Hindi (hi.po) by Kumar Appaiah
+  * Kazakh (kk.po) by daur88
+  * Malayalam (ml.po) by Praveen Arimbrathodiyil
+  * Marathi (mr.po) by Sampada
+  * Tagalog (tl.po) by Eric Pareja
+
+ -- Colin Watson <cjwatson@debian.org>  Sat, 13 Jun 2009 22:34:21 +0100
+
+prep-installer (0.8) unstable; urgency=low
+
+  [ Frans Pop ]
+  * Remove Sven Luther as Uploader with many thanks for his past
+    contributions. Add Colin Watson.
+
+  [ Updated translations ]
+  * Amharic (am.po) by tegegne tefera
+  * Belarusian (be.po) by Pavel Piatruk
+  * Bengali (bn.po) by Jamil Ahmed
+  * Bosnian (bs.po) by Armin Besirovic
+  * Welsh (cy.po) by Jonathan Price
+  * Danish (da.po)
+  * Esperanto (eo.po) by Felipe Castro
+  * Basque (eu.po) by Iñaki Larrañaga Murgoitio
+  * Finnish (fi.po) by Esko Arajärvi
+  * French (fr.po) by Christian Perrier
+  * Croatian (hr.po) by Josip Rodin
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Indonesian (id.po) by Arief S Fitrianto
+  * Italian (it.po) by Milo Casagrande
+  * Korean (ko.po) by Changwoo Ryu
+  * Kurdish (ku.po) by Amed Çeko Jiyan
+  * Latvian (lv.po) by Peteris Krisjanis
+  * Malayalam (ml.po) by Praveen|പ്രവീണ്‍ A|എ
+  * Marathi (mr.po) by Sampada
+  * Panjabi (pa.po) by Amanpreet Singh Alam
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Romanian (ro.po) by Eddy Petrișor
+  * Serbian (sr.po) by Veselin Mijušković
+  * Turkish (tr.po) by Recai Oktaş
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Jérémy Bobbio <lunar@debian.org>  Tue, 14 Oct 2008 01:10:50 +0200
+
+prep-installer (0.7) unstable; urgency=low
+
+  [ Joey Hess ]
+  * Multiply menu-item-numbers by 100
+
+  [ Updated translations ]
+  * Esperanto (eo.po) by Serge Leblanc
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 10 Apr 2007 23:42:36 +0100
+
+prep-installer (0.6) unstable; urgency=low
+
+  [ Updated translations ]
+  * Hebrew (he.po) by Lior Kaplan
+  * Malayalam (ml.po) by Praveen A
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 27 Feb 2007 22:51:06 +0000
+
+prep-installer (0.5) unstable; urgency=low
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Belarusian (be.po) by Pavel Piatruk
+  * Catalan (ca.po) by Jordi Mallach
+  * Danish (da.po) by Claus Hindsgaul
+  * Esperanto (eo.po) by Serge Leblanc
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Kurdish (ku.po) by rizoye-xerzi
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Malayalam (ml.po) by Praveen A
+  * Panjabi (pa.po) by A S Alam
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Romanian (ro.po) by Eddy Petrișor
+  * Slovenian (sl.po) by Matej Kovačič
+
+ -- Colin Watson <cjwatson@debian.org>  Thu,  1 Feb 2007 10:38:12 +0000
+
+prep-installer (0.4) unstable; urgency=low
+
+  * Build & upload to incorporate new translations
+  [ Updated translations ]
+  * Belarusian (be.po) by Andrei Darashenka
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Estonian (et.po) by Siim Põder
+  * Basque (eu.po) by Piarres Beobide
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Nishant Sharma
+  * Croatian (hr.po) by Josip Rodin
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Malayalam (ml.po) by Praveen A
+  * Punjabi (Gurmukhi) (pa.po) by A S Alam
+  * Romanian (ro.po) by Eddy Petrișor
+  * Tamil (ta.po) by Damodharan Rajalingam
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Wouter Verhelst <wouter@debian.org>  Wed, 25 Oct 2006 18:28:44 +0200
+
+prep-installer (0.3) unstable; urgency=low
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Bosnian (bs.po) by Safir Secerovic
+  * Catalan (ca.po) by Jordi Mallach
+  * Danish (da.po) by Claus Hindsgaul
+  * Dzongkha (dz.po)
+  * Esperanto (eo.po) by Serge Leblanc
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Estonian (et.po) by Siim Põder
+  * Basque (eu.po) by Piarres Beobide
+  * Irish (ga.po) by Kevin Patrick Scannell
+  * Hungarian (hu.po) by SZERVÑC Attila
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Khmer (km.po) by Leang Chumsoben
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Malagasy (mg.po) by Jaonary Rabarisoa
+  * Nepali (ne.po) by Shiva Pokharel
+  * Polish (pl.po) by Bartosz Fenski
+  * Northern Sami (se.po) by Børre Gaup
+  * Slovenian (sl.po) by Jure Čuhalev
+  * Swedish (sv.po) by Daniel Nylander
+  * Tamil (ta.po) by Damodharan Rajalingam
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Colin Watson <cjwatson@debian.org>  Thu, 13 Jul 2006 17:13:46 +0100
+
+prep-installer (0.2) unstable; urgency=low
+
+  [ Sven Luther ]
+  * Added chrp_ibm to chrp_rs6k, which will later go away.
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Bulgarian (bg.po) by Ognyan Kulev
+  * Bengali (bn.po) by Baishampayan Ghose
+  * Catalan (ca.po) by Jordi Mallach
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Greek, Modern (1453-) (el.po) by Konstantinos Margaritis
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Finnish (fi.po) by Tapio Lehtonen
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hebrew (he.po) by Lior Kaplan
+  * Icelandic (is.po) by David Steinn Geirsson
+  * Italian (it.po) by Giuseppe Sacco
+  * Japanese (ja.po) by Kenshi Muto
+  * Korean (ko.po) by Sunjae park
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Malagasy (mg.po) by Jaonary Rabarisoa
+  * Macedonian (mk.po) by Georgi Stanojevski
+  * Bokmål, Norwegian (nb.po) by Bjørn Steensrud
+  * Dutch (nl.po) by Bart Cornelis
+  * Norwegian Nynorsk (nn.po)
+  * Norwegian Nynorsk (pa_IN.po) by Amanpreet Singh Alam
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+  * Romanian (ro.po) by Eddy Petrişor
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Peter Mann
+  * Slovenian (sl.po) by Jure Čuhalev
+  * Albanian (sq.po) by Elian Myftiu
+  * Swedish (sv.po) by Daniel Nylander
+  * Tagalog (tl.po) by Eric Pareja
+  * Turkish (tr.po) by Recai Oktaş
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+  * Simplified Chinese (zh_CN.po) by Ming Hua
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 23 Jan 2006 11:45:24 +0000
+
+prep-installer (0.1) unstable; urgency=low
+
+  * Sven Luther
+    - Initial package creation.
+    - Disabled po translation for now, let's mature the package a bit first.
+  * Joey Hess
+    - Add missing depends on archdetect.
+    - Switch from using archdetect template to calling archdetect directly.
+
+ -- Sven Luther <luther@debian.org>  Thu,  1 Sep 2005 18:40:16 +0200
+

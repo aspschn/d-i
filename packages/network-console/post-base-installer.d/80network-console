@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+
+DIR=/etc/ssh/
+
+mkdir -p /target/$DIR
+cp $DIR/ssh_host_rsa_key* /target/$DIR

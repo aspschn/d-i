@@ -1,0 +1,646 @@
+partman-nbd (0.57) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Arabic (ar.po) by ButterflyOfFire
+  * Latvian (lv.po) by Tranzistors
+
+ -- Holger Wansing <hwansing@mailbox.org>  Wed, 31 Oct 2018 21:30:03 +0100
+
+partman-nbd (0.56) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Finnish (fi.po) by Juhani Numminen
+  * Galician (gl.po) by mantinan
+
+ -- Holger Wansing <hwansing@mailbox.org>  Thu, 27 Sep 2018 21:12:43 +0200
+
+partman-nbd (0.55) unstable; urgency=medium
+
+  * Team upload
+
+  [ Cyril Brulebois ]
+  * Update Vcs-{Browser,Git} to point to salsa (alioth's replacement).
+
+  [ Updated translations ]
+  * Finnish (fi.po) by Juhani Numminen
+  * Hebrew (he.po) by Yaron Shahrabani
+  * Swedish (sv.po) by Anders Jonsson
+  * Simplified Chinese (zh_CN.po) by Boyuan Yang
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 12 Aug 2018 21:35:52 +0200
+
+partman-nbd (0.54) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Welsh (cy.po) by Huw Waters
+  * Hebrew (he.po) by Yaron Shahrabani
+  * Indonesian (id.po) by Andika Triwidada
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 06 Apr 2018 20:02:49 +0200
+
+partman-nbd (0.53) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 23 Feb 2018 18:59:43 +0100
+
+partman-nbd (0.52) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Indonesian (id.po) by Al Qalit
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 24 Jan 2018 19:55:41 +0100
+
+partman-nbd (0.51) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Icelandic (is.po) by Sveinn í Felli
+  * Panjabi (pa.po) by Aman ALam
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 15 Jan 2018 06:47:23 +0100
+
+partman-nbd (0.50) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Esperanto (eo.po) by Felipe Castro
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 02 Jan 2018 07:31:49 +0100
+
+partman-nbd (0.49) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Hungarian (hu.po) by Dr. Nagy Elemér Károly
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Swedish (sv.po) by Anders Jonsson
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 03 Dec 2017 17:46:32 +0100
+
+partman-nbd (0.48) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Greek (el.po) by Sotirios Vrachas
+  * Estonian (et.po) by Kristjan Räts
+  * Norwegian Nynorsk (nn.po) by Allan Nordhøy
+  * Simplified Chinese (zh_CN.po) by Boyuan Yang
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 26 Nov 2017 19:11:44 +0100
+
+partman-nbd (0.47) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 18 Oct 2017 09:47:11 +0200
+
+partman-nbd (0.46) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Albanian (sq.po) by Silva Arapi
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 18 Sep 2017 21:31:06 +0200
+
+partman-nbd (0.45) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Galician (gl.po) by Jorge Barreiro
+  * Simplified Chinese (zh_CN.po) by Yangfl
+  * Traditional Chinese (zh_TW.po) by Yao Wei (魏銘廷)
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 29 Jun 2017 09:15:55 +0200
+
+partman-nbd (0.44) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Italian (it.po) by Milo Casagrande
+  * Korean (ko.po) by Changwoo Ryu
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 15 Feb 2017 06:58:58 +0100
+
+partman-nbd (0.43) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 01 Feb 2017 05:23:37 +0100
+
+partman-nbd (0.42) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 23 Nov 2016 07:16:07 +0100
+
+partman-nbd (0.41) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 13 Nov 2016 07:50:42 +0100
+
+partman-nbd (0.40) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Polish (pl.po) by Michał Kułach
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 12 Oct 2016 11:46:17 +0200
+
+partman-nbd (0.39) unstable; urgency=medium
+
+  [ Wouter Verhelst ]
+  * Generate nbdtab file rather than preseed file for nbd-client.
+
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 18 Sep 2016 18:33:22 +0200
+
+partman-nbd (0.38) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Ukrainian (uk.po) by Anton Gladky
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 19 Jul 2016 06:51:56 +0200
+
+partman-nbd (0.37) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Serbian (sr.po)
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 08 Jun 2016 22:22:19 +0200
+
+partman-nbd (0.36) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 15 Feb 2016 18:34:14 +0100
+
+partman-nbd (0.35) unstable; urgency=medium
+
+  [ Colin Watson ]
+  * Use HTTPS for Vcs-* URLs, and link to cgit rather than gitweb.
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 07 Feb 2016 18:27:58 +0100
+
+partman-nbd (0.34) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Swedish (sv.po) by Martin Bagge / brother
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 27 Jan 2016 13:39:16 +0100
+
+partman-nbd (0.33) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Japanese (ja.po) by Kenshi Muto
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 12 Jan 2016 06:53:13 +0100
+
+partman-nbd (0.32) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Viktar Siarheichyk
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 23 Dec 2015 08:26:30 +0100
+
+partman-nbd (0.31) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 15 Dec 2015 06:49:40 +0100
+
+partman-nbd (0.30) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * German (de.po) by Holger Wansing
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 26 Nov 2015 06:46:10 +0100
+
+partman-nbd (0.29) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Portuguese (Brazil) (pt_BR.po) by Adriano Rafael Gomes
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 15 Nov 2015 08:46:50 +0100
+
+partman-nbd (0.28) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Czech (cs.po) by Miroslav Kure
+  * Bokmål, Norwegian (nb.po) by Hans Fredrik Nordhaug
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Russian (ru.po) by Yuri Kozlov
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 05 Nov 2015 07:05:31 +0100
+
+partman-nbd (0.27) unstable; urgency=medium
+
+  [ Wouter Verhelst ]
+  * Remove support for port-based exports, since it is no longer supported by
+    nbd itself.
+
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+  * French (fr.po) by Christian Perrier
+  * Hebrew (he.po) by Lior Kaplan
+  * Polish (pl.po) by Michał Kułach
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Turkish (tr.po) by Mert Dirik
+  * Ukrainian (uk.po) by Anton Gladky
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 30 Oct 2015 07:18:10 +0100
+
+partman-nbd (0.26) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 12 Jul 2015 08:45:36 +0200
+
+partman-nbd (0.25) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Portuguese (Brazil) (pt_BR.po) by Adriano Rafael Gomes
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 20 May 2015 22:09:12 +0200
+
+partman-nbd (0.24) unstable; urgency=medium
+
+  [ Wouter Verhelst ]
+  * choose_partition/nbd/do_option:
+    - fix up several instances of incorrect debconf calls
+    - add a "sleep 1" call after connecting or disconnecting, so that
+      the PID file has a chance of showing up (or disappearing) before
+      the main menu tries to count things. Closes: #696460.
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 22 Mar 2014 18:50:57 +0100
+
+partman-nbd (0.23) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Dutch (nl.po) by Jeroen Schot
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 14 Mar 2014 18:41:49 +0100
+
+partman-nbd (0.22) unstable; urgency=medium
+
+  [ Wouter Verhelst ]
+  * resolv.c: fix IPv6 case and move to debian-installer-utils.
+  * Since resolv was our only compiled binary, revert to being an
+    Architecture: all package
+
+  [ Updated translations ]
+  * tg (tg.po) by Victor Ibragimov
+
+ -- Wouter Verhelst <wouter@debian.org>  Tue, 25 Feb 2014 00:09:08 +0100
+
+partman-nbd (0.21) unstable; urgency=low
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 08 Sep 2013 16:51:24 +0200
+
+partman-nbd (0.20) unstable; urgency=low
+
+  [ Dmitrijs Ledkovs ]
+  * Set debian source format to '3.0 (native)'.
+  * Bump debhelper compat level to 9.
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 13 Jul 2013 13:02:59 +0200
+
+partman-nbd (0.19) unstable; urgency=low
+
+  [ Wouter Verhelst ]
+  * Allow nbd-client connections to settle, so the partman-nbd main menu shows
+    the correct number of connected devices
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 12 May 2013 18:12:20 +0200
+
+partman-nbd (0.18) unstable; urgency=low
+
+  * Remove double debian/install file, append its contents to
+    debian/partman-nbd.install. This was causing failed installs...
+
+ -- Wouter Verhelst <wouter@debian.org>  Tue, 18 Dec 2012 09:12:05 +0100
+
+partman-nbd (0.17) unstable; urgency=low
+
+  [ Updated translations ]
+  * Malayalam (ml.po) by Hrishikesh K B
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 20 Oct 2012 19:43:03 +0200
+
+partman-nbd (0.16) unstable; urgency=low
+
+  [ Updated translations ]
+  * Asturian (ast.po) by ivarela
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 16 Oct 2012 13:10:14 +0200
+
+partman-nbd (0.15) unstable; urgency=low
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 18 Aug 2012 14:08:55 +0200
+
+partman-nbd (0.14) unstable; urgency=low
+
+  * Add myself to Uploaders
+
+  [ Updated translations ]
+  * Welsh (cy.po) by Dafydd Tomos
+  * Basque (eu.po) by Piarres Beobide
+  * Finnish (fi.po) by Timo Jyrinki
+  * Galician (gl.po) by Jorge Barreiro
+  * Croatian (hr.po) by Tomislav Krznar
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Latvian (lv.po) by Rūdolfs Mazurs
+  * Panjabi (pa.po) by A S Alam
+  * Romanian (ro.po) by Eddy Petrișor
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 04 Aug 2012 23:03:49 +0200
+
+partman-nbd (0.13) unstable; urgency=low
+
+  * Remove some leftover cruft from my working directory before uploading
+  * Commit change that was in 0.8 already: resolve correctly for both
+    IPv4 and IPv6.
+
+ -- Wouter Verhelst <wouter@debian.org>  Tue, 24 Apr 2012 19:31:43 +0200
+
+partman-nbd (0.12) unstable; urgency=low
+
+  * Team upload
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+  * Romanian (ro.po) by Eddy Petrișor
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 26 Jun 2012 09:13:53 +0200
+
+partman-nbd (0.11) unstable; urgency=low
+
+  * Team upload
+
+  [ Updated translations ]
+  * Galician (gl.po) by Jorge Barreiro
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 17 Jun 2012 12:53:44 +0200
+
+partman-nbd (0.10) unstable; urgency=low
+
+  * Team upload
+  * Replace XC-Package-Type by Package-Type
+  * Drop Standard-Versions, unneeded for packages with only udebs
+  * Use debhelper compatibility level 7 in debian/compat and change
+    Build-Depends accordingly
+
+  [ Updated translations ]
+  * Tibetan (bo.po) by Tennom
+  * Welsh (cy.po) by Dafydd Tomos
+  * Danish (da.po) by Joe Hansen
+  * Basque (eu.po) by Piarres Beobide
+  * Finnish (fi.po) by Timo Jyrinki
+  * Irish (ga.po) by Kevin Patrick Scannell
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Lao (lo.po) by Anousak Souphavanh
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Latvian (lv.po) by Rūdolfs Mazurs
+  * Macedonian (mk.po) by Arangel Angov
+  * Panjabi (pa.po) by A S Alam
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Vietnamese (vi.po) by Hai-Nam Nguyen
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 16 Jun 2012 07:49:42 +0200
+
+partman-nbd (0.9) unstable; urgency=low
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bengali (bn.po) by Ayesha Akhtar
+  * Danish (da.po) by Joe Hansen
+
+ -- Otavio Salvador <otavio@debian.org>  Thu, 15 Mar 2012 15:07:02 -0300
+
+partman-nbd (0.8) unstable; urgency=low
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama Khayat
+  * Asturian (ast.po) by Mikel González
+  * Catalan (ca.po) by Jordi Mallach
+  * Dzongkha (dz.po) by Christian Perrier
+  * Greek (el.po) by galaxico
+  * Estonian (et.po) by Mattias Põldaru
+  * Indonesian (id.po) by Mahyuddin Susanto
+  * Kannada (kn.po) by Prabodh C P
+  * Serbian (sr.po) by Karolina Kalic
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Wouter Verhelst <wouter@debian.org>  Thu, 23 Feb 2012 09:38:27 +0100
+
+partman-nbd (0.7) unstable; urgency=low
+
+  [ Wouter Verhelst ]
+  * Don't count the root device in the number of devices to configure,
+    otherwise the preseeding file will be broken.
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama Khayat
+  * Bosnian (bs.po) by Armin Besirovic
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Icelandic (is.po) by Sveinn í Felli
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Khmer (km.po) by Chan Sambathratanak
+  * Kannada (kn.po) by vignesh prabhu
+  * Marathi (mr.po) by sampada
+  * Norwegian Bokmal (nb.po) by Hans Fredrik Nordhaug
+  * Sinhala (si.po) by Danishka Navin
+  * Slovak (sk.po) by Ivan Masár
+  * Tamil (ta.po) by Dr.T.Vasudevan
+
+ -- Wouter Verhelst <wouter@debian.org>  Wed, 18 Jan 2012 10:51:20 +0100
+
+partman-nbd (0.6) unstable; urgency=low
+
+  [ Updated translations ]
+  * Dzongkha (dz.po) by Jurmey Rabgay
+  * Polish (pl.po) by Marcin Owsiany
+  * Telugu (te.po) by Arjuna Rao Chavala
+
+ -- Wouter Verhelst <wouter@debian.org>  Sun, 16 Oct 2011 12:51:03 +0200
+
+partman-nbd (0.5) unstable; urgency=low
+
+  [ Wouter Verhelst ]
+  * Fix Vcs-Git header, and add Vcs-Browser header too.
+  * Change 'Architecture: any' to 'Architecture: linux-any'. partman-nbd
+    makes no sense on anything but Linux.
+  * Count the number of connected NBD devices by checking for
+    /sys/block/nbdX/pid, and db_subst the result into the main menu.
+  * Add support for name-based exports.
+  * Add missing copyright file (whoops).
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bengali (bn.po) by Zenat Rahnuma
+  * Bosnian (bs.po) by Armin Besirovic
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+  * Esperanto (eo.po) by Felipe Castro
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Persian (fa.po) by Behrad Eslamifar
+  * French (fr.po) by Christian Perrier
+  * Hindi (hi.po) by Kumar Appaiah
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Italian (it.po) by Milo Casagrande
+  * Japanese (ja.po) by Kenshi Muto
+  * Korean (ko.po) by Changwoo Ryu
+  * Lao (lo.po) by Anousak Souphavanh
+  * Dutch (nl.po) by Jeroen Schot
+  * Punjabi (Gurmukhi) (pa.po) by A S Alam
+  * Polish (pl.po) by Marcin Owsiany
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by Ioan Eugen Stan
+  * Russian (ru.po) by Yuri Kozlov
+  * Sinhala (si.po)
+  * Tamil (ta.po) by Dr.T.Vasudevan
+  * Telugu (te.po) by Arjuna Rao Chavala
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Turkish (tr.po) by Mert Dirik
+  * Uyghur (ug.po) by Sahran
+  * Ukrainian (uk.po) by Borys Yanovych
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Wouter Verhelst <wouter@debian.org>  Sun, 02 Oct 2011 18:28:19 +0200
+
+partman-nbd (0.4) unstable; urgency=low
+
+  * Add resolv, to convert hostnames to IP addresses. This should
+    probably be put in something more generic, really, but what the
+    heck.
+  * Use the above to convert hostnames to IP addresses, if and when the
+    user puts / on NBD
+
+ -- Wouter Verhelst <wouter@debian.org>  Tue, 06 Sep 2011 16:21:56 +0200
+
+partman-nbd (0.3) unstable; urgency=low
+
+  [ Wouter Verhelst ]
+  * Add nbdroot= kernel boot parameter, if required.
+  * finish.d/partman-nbd: fix decision structure so it runs 'apt-install
+    nbd-client' when root-on-nbd (and nothing else) is chosen, too.
+  * Actually run debconf-set-selections on the debconf selections file
+    that we create
+  * Make sure to set nbd-client/killall to false in our debconf selections file
+    when doing root-on-NBD
+
+  [ Updated translations ]
+  * German (de.po) by Holger Wansing
+  * Italian (it.po) by Milo Casagrande
+  * Japanese (ja.po) by Kenshi Muto
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Wouter Verhelst <wouter@debian.org>  Thu, 01 Sep 2011 01:41:02 +0200
+
+partman-nbd (0.2) unstable; urgency=low
+
+  [ Wouter Verhelst ]
+  * Update standards-version to 3.9.2 (nothing relevant)
+
+  [ Updated translations ]
+  * Amharic (am.po) by ተገኝ ተፈራ
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Asturian (ast.po) by MAAC
+  * Belarusian (be.po) by Pavel Piatruk
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bengali (bn.po) by Israt Jahan
+  * Bosnian (bs.po) by Armin Beširović
+  * Catalan (ca.po) by Jordi Mallach
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Ask Hjorth Larsen
+  * German (de.po) by Holger Wansing
+  * Dzongkha (dz.po) by Jurmey Rabgay
+  * Greek (el.po) by Emmanuel Galatoulas
+  * Esperanto (eo.po) by Felipe Castro
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Estonian (et.po) by Mattias Põldaru
+  * Basque (eu.po)
+  * Persian (fa.po) by Behrad Eslamifar
+  * Finnish (fi.po) by Esko Arajärvi
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jorge Barreiro
+  * Gujarati (gu.po) by Kartik Mistry
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Croatian (hr.po) by Josip Rodin
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Indonesian (id.po) by Arief S Fitrianto
+  * Icelandic (is.po) by Sveinn í Felli
+  * Italian (it.po) by Milo Casagrande
+  * Japanese (ja.po) by Kenshi Muto
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Khmer (km.po) by Khoem Sokhem
+  * Korean (ko.po) by Changwoo Ryu
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Lao (lo.po) by Anousak Souphavanh
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Macedonian (mk.po) by Arangel Angov
+  * Malayalam (ml.po) by Praveen Arimbrathodiyil
+  * Marathi (mr.po) by sampada
+  * Norwegian Bokmal (nb.po) by Hans Fredrik Nordhaug
+  * Nepali (ne.po)
+  * Dutch (nl.po) by Eric Spreen
+  * Norwegian Nynorsk (nn.po) by Eirik U. Birkeland
+  * Punjabi (Gurmukhi) (pa.po) by A S Alam
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by Eddy Petrișor
+  * Russian (ru.po) by Yuri Kozlov
+  * Northern Sami (se.po) by Børre Gaup
+  * Sinhala (si.po) by Danishka Navin
+  * Slovak (sk.po) by Ivan Masár
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Albanian (sq.po) by Elian Myftiu
+  * Serbian (sr.po) by Janos Guljas
+  * Swedish (sv.po) by Daniel Nylander
+  * Tamil (ta.po) by Dr.T.Vasudevan
+  * Telugu (te.po) by Arjuna Rao Chavala
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Tagalog (tl.po) by Eric Pareja
+  * Turkish (tr.po) by Mert Dirik
+  * Uyghur (ug.po) by Sahran
+  * Ukrainian (uk.po) by Borys Yanovych
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+  * Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Wouter Verhelst <wouter@debian.org>  Sun, 07 Aug 2011 00:58:43 +0200
+
+partman-nbd (0.1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Wouter Verhelst <wouter@debian.org>  Fri, 28 Dec 2007 11:45:43 +0100

@@ -1,0 +1,5 @@
+debian/*.debhelper.log
+debian/*.debhelper
+debian/*substvars
+debian/partman-nbd
+debian/files

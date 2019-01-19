@@ -1,0 +1,135 @@
+#! /bin/sh
+set -e
+
+# Copyright (C) 2010, 2011 Canonical Ltd.
+# Author: Colin Watson <cjwatson@ubuntu.com>
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation; either version 2, or (at your option) any later
+# version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+# or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+# for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+
+# Make an EFI boot image.
+
+if [ -z "$1" ] || [ -z "$2" ]; then
+	echo "usage: $0 OUTPUT-DIRECTORY GRUB-PLATFORM EFI-NAME NETBOOT-PREFIX"
+	exit 1
+fi
+
+outdir="$1"
+platform="$2"
+efi_name="$3"
+netboot_prefix="$4"
+
+# Should we be using already-built and already-signed monolithic grub
+# and shim binaries? If not, fall back to old code and generate
+# non-signed grub here. So far, we only have shim-signed for amd64 so
+# that's the only architecture where we do things differently.
+signed=0
+if [ "$platform"x = "x86_64-efi"x ]; then
+	signed=1
+fi
+
+memdisk_img=
+workdir=
+
+cleanup () {
+	[ -z "$memdisk_img" ] || rm -f "$memdisk_img"
+	[ -z "$workdir" ] || rm -rf "$workdir"
+}
+trap cleanup EXIT HUP INT QUIT TERM
+
+rm -rf "$outdir"
+mkdir -p "$outdir"
+
+memdisk_img="$(mktemp efi-image.XXXXXX)"
+workdir="$(mktemp -d efi-image.XXXXXX)"
+
+# Skeleton configuration file which finds the real boot disk.
+mkdir -p "$workdir/boot/grub"
+cat >"$workdir/boot/grub/grub.cfg" <<EOF
+search --file --set=root /.disk/info
+set prefix=(\$root)/boot/grub
+source \$prefix/$platform/grub.cfg
+EOF
+
+mkdir -p "$outdir/boot/grub/$platform"
+(for i in /usr/lib/grub/$platform/part_*.mod; do
+    i=`echo $i | sed 's?^.*/??g;s?\.mod$??g;'`
+	echo "insmod $i"
+ done; \
+ echo "source /boot/grub/grub.cfg") >"$outdir/boot/grub/$platform/grub.cfg"
+
+if [ $signed = 1 ]; then
+	# Just copy existing binaries into place
+	# First, the binaries we use for disc or CD boot
+	echo "$0: Using pre-signed grub-efi binaries for $efi_name"
+	cp /usr/lib/grub/$platform-signed/grub$efi_name.efi.signed \
+		$workdir/grub$efi_name.efi
+	cp /usr/lib/shim/shim$efi_name.efi.signed \
+		$workdir/boot$efi_name.efi
+
+	# Now the binaries for netboot. These are *not* used to
+	# generate the image here, but will be picked up later on in
+	# the d-i build. Hence the different output directory.
+	cp /usr/lib/shim/shim$efi_name.efi.signed \
+		$outdir/bootnet$efi_name.efi
+	cp /usr/lib/grub/$platform-signed/grubnet$efi_name.efi.signed \
+		$outdir/grub$efi_name.efi
+else
+	# Build the core image for disc/CD boot
+	echo "$0: Building non-signed grub-efi binaries for $efi_name"
+	(cd "$workdir"; tar -cf - boot) >"$memdisk_img"
+	grub-mkimage -O "$platform" -m "$memdisk_img" \
+		-o "$workdir/boot$efi_name.efi" -p '(memdisk)/boot/grub' \
+		search iso9660 configfile normal memdisk tar part_msdos part_gpt fat
+
+	# Now the image for netboot. This is *not* used to generate
+	# the image here, but will be picked up later on in the d-i
+	# build. Hence the different output directory.
+	grub-mkimage -O "$platform" \
+		-o "$outdir/bootnet$efi_name.efi" -p "$netboot_prefix/grub" \
+		search configfile normal efinet tftp net
+fi
+
+# Stuff it into a FAT filesystem, making it as small as
+# possible. Count up the sizes of all the files we need to fit in there.
+#
+# 32KiB headroom seems to be enough; (x+31)/32*32 rounds up to multiple of 32.
+size=0
+for file in $(find $workdir -type f -name *.efi -o -name grub.cfg); do
+	this_size=$(( ($(stat -c %s $file) / 1024 + 1 + 32 + 31) / 32 * 32 ))
+	size=$(($size + $this_size))
+done
+mkfs.msdos -v -C "$outdir/efi.img" $size
+
+mmd -i "$outdir/efi.img" ::efi
+mmd -i "$outdir/efi.img" ::efi/boot
+mcopy -i "$outdir/efi.img" "$workdir/boot$efi_name.efi" \
+	"::efi/boot/boot$efi_name.efi"
+
+if [ $signed = 1 ]; then
+	# In this case, also add the grub binary
+	mcopy -i "$outdir/efi.img" "$workdir/grub$efi_name.efi" \
+		"::efi/boot/grub$efi_name.efi"
+
+	# And finally the skeleton grub.cfg - the signed grub binaries
+	# will have prefix set to "/EFI/debian", so put this there to
+	# redirect to the correct location.
+	mmd -i "$outdir/efi.img" ::efi/debian
+	mcopy -i "$outdir/efi.img" "$workdir/boot/grub/grub.cfg" \
+		"::efi/debian/grub.cfg"
+fi
+
+grub-cpmodules "$outdir" "$platform"
+
+exit 0

@@ -1,0 +1,320 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2018-02-08 14:24+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "Скан кардани дискҳои сахт барои тимсоли ISO-и насбкунанда"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "Муайянкунии сахтафзор барои ёфтани дискҳои сахт"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "Ҷустуҷӯи драйвҳо барои тимсоли ISO-и насбкунанда рафта истодааст"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "Васлкунии ${DRIVE}..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "Сканкунии ${DRIVE} (дар ${DIRECTORY}) рафта истодааст..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "Барои тимсоли ISO-и насбкунанда дар ҳамаи дискҳо ҷустуҷӯ мекунед?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"Сканкунии зудамали тасвирҳои ISO-и насбкунанда, ки танҳо дар ҷойҳои умумӣ "
+"ҷустуҷӯ мекунад, тимсоли ISO-и насбкунандаро пайдо накард. Эҳтимол аст, ки "
+"ҷустуҷӯи чуқуртар тимсоли ISO-ро пайдо мекунад, аммо ин метавонад вақти "
+"зиёдро гирад."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "Тимсоли ISO-и насбкунанда ёфт нашуд"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"Ягон тимсоли ISO-и насбкунанда ёфт нашуд. Агар шумо тимсоли ISO-ро боргирӣ "
+"карда бошед, эҳтимол аст, ки он номи файли нодуруст дорад (ки бо \".iso\" "
+"анҷом намеёбад), ё ки он метавонад дар низоми файлие бошад,  ки наметавонад "
+"васл карда шавад."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"Ба шумо лозим мешавад, ки усули иловагии насбкуниро истифода баред, дастгоҳи "
+"дигарро барои ёфтани тимсоли ISO интихоб намоед, ё ки баъд аз ислоҳ кардани "
+"он амалро такрор намоед."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"Гарчанде ки як ё зиёда тасвири эҳтимолии ISO пайдо карда шуд, онҳо васл "
+"карда нашуданд. Тимсоли ISO-и боргиришудаи шумо метавонад харобшуда бошад."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "Ягон тимсоли ISO-и насбкунӣ ёфт нашуд"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"Гарчанде ки як ё зиёда тимсоли ISO-и имконпазир ёфт шудааст, онҳо ба "
+"тасвирҳои боэътибори ISO-и насбкунанда монанд намебошанд."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "Тимсоли ISO-и насбкунандаи ${SUITE} бомуваффақият васл карда шудааст"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"Файли ISO-и ${FILENAME} дар ${DEVICE} (${SUITE}) ҳамчун тимсоли ISO-и "
+"насбкунӣ истифода мешавад."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "Ҳамаи дастгоҳҳои ташхисшуда"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "Дастгоҳро ба таври дастӣ ворид намоед"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "Дастгоҳ ё қисми диск барои ҷустуҷӯи файл(ҳо)и ISO-и насбкунӣ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"Шумо метавонед дастгоҳеро интихоб намоед, дастгоҳи интихобнашударо ба таври "
+"дастӣ муайян намоед, ё ки дастгоҳҳои дастрасро аз нав скан намоед (барои "
+"дастгоҳҳои сусти USB фоиданок аст)."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "Номи дастгоҳ:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "Ҷустуҷӯи пурра"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "Файли ISO барои истифода:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"Дар дастгоҳ(ҳо)-и интихобшуда як ё зиёда файлҳои ISO ёфт шуданд. Лутфан, "
+"интихоб намоед, ки кадомеро мехоҳед истифода баред, ё ки ҷустуҷӯи муфассалро "
+"иҷро намоед."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr "Оё файли ISO-и ${FILENAME} барои насбкунӣ тасвири дуруст мебошад?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"Файли ISO-и ${FILENAME} дар ${DEVICE} (${SUITE}, рамзи ${CODENAME}, таърифи "
+"махсус \"${DESCRIPTION}\"') ҳамчун тимсоли ISO-и насбкунӣ истифода мешавад."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"Агар якчанд файли ISO дар як драйви насбкунанда вуҷуд дошта бошанд, шумо "
+"метавонед интихоб намоед, ки кадоми онҳо истифода шавад."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr "Тимсоли ISO-ро пеш аз васлкунӣ ба RAM нусха мебардоред?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr ""
+"Барои имкони нусха бардоштани тимсоли ISO ба RAM ҳофизаи кофӣ дастрас аст."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+"Ба воситаи ин имкон, диск дорои тимсоли ISO метавонад аз нав истифода шавад. "
+"Агар ин имконро интихоб накунед, барои пайдо кардани дастрасӣ ба тимсоли ISO "
+"диск беист истифода мешавад ва аз тарафи насбкунанда қисмбандӣ карда "
+"намешавад."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+"Ба назар гиред, ки агар шумо дискро дорои тимсоли ISO рӯиҳамнависӣ кунед, "
+"шумо бояд то ба анҷом расонидани раванди насбкунӣ компютерро бозоғозӣ "
+"накунед, зеро ба сабаби пок шудани тимсоли ISO аз диски компютерӣ ва ҳофизаи "
+"компютер, насбкунанда аз нав оғоз намеёбад."
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "Бор кардани унсурҳои насбкунанда аз ISO-и насбкунанда"

@@ -1,0 +1,94 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Tibetan translation for Debian Installer.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: finish-install@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-18 22:02+0000\n"
+"PO-Revision-Date: 2012-04-14 22:12+0600\n"
+"Last-Translator: Tennom <tankola@ymail.com, tennomyathog@gmail.com>\n"
+"Language-Team: bo <translation-team-bo@lists.sourceforge.net>\n"
+"Language: bo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../finish-install.templates:1001
+msgid "Finish the installation"
+msgstr "སྒྲིག་འཇུག་དེ་མཇུག་རྫོགས"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:2001
+msgid "Finishing the installation"
+msgstr "སྒྲིག་འཇུག་དེ་མཇུག་རྫོགས་བཞིན་པ"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:3001
+msgid "Running ${SCRIPT}..."
+msgstr "${SCRIPT}འཁོར་སྐྱོད་བཞིན་པ་་་"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:4001
+msgid "Configuring network..."
+msgstr "དྲ་ལམ་སྒྲིག་འགོད་བྱེད་བཞིན་པ་་་"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:5001
+msgid "Setting up frame buffer..."
+msgstr "བརྙན་རིས་གྲ་སྒྲིག་སྒྲིག་འཛུགས་བཞིན་པ་་་"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:6001
+msgid "Unmounting file systems..."
+msgstr "ཡིག་ཆའི་མ་ལག་བཀར་བར་བཤིག་བཞིན་པ་་་"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:7001
+msgid "Rebooting into your new system..."
+msgstr "ཁྱོད་ཀྱི་མ་ལག་གསར་བའི་ནང་འགོ་འཛུགས་བཞིན་པ་་་"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../finish-install.templates:8001
+msgid "Installation complete"
+msgstr "སྒྲིག་འཇུག་ཆ་ཚང་མཇུག་རྫོགས"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../finish-install.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Installation is complete, so it is time to boot into your new system. "
+#| "Make sure to remove the installation media (CD-ROM, floppies), so that "
+#| "you boot into the new system rather than restarting the installation."
+msgid ""
+"Installation is complete, so it is time to boot into your new system. Make "
+"sure to remove the installation media, so that you boot into the new system "
+"rather than restarting the installation."
+msgstr ""
+"སྒྲིག་འཇུག་ཆ་ཚང་འཇུག་རྫོགས་ཚར་བས་ད་ལྟ་ཁྱོད་ཀྱི་མ་ལག་གསར་བའི་ནང་དུ་འཛུལ་རྒྱུ་ཡིན། སྒྲིག་འཇུག་གི་འཇུག་"
+"མཛོད་(འོད་སྡེར། མཉེན་སྡེར) ཕྱིར་བཏོན་ནས་མ་ལག་གསར་བའི་ནང་འཛུལ་བ་ལས་སྒྲིག་འཇུག་ཞིག་སླར་འགོ་འཛུགས་"
+"བྱེད་བཞིན་མེད་པར་དག་ཐེར་བྱེད་དགོས"

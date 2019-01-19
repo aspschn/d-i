@@ -1,0 +1,189 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of lv.po to Latvian
+# Latvian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Translations from iso-codes:
+# Copyright (C) Free Software Foundation, Inc., 2001,2003.
+# Translations from KDE:
+# Andris Maziks <andzha@latnet.lv>
+#
+# Aigars Mahinovs <aigarius@debian.org>, 2006, 2008.
+# Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008.
+# Aigars Mahinovs <aigarius@debian.org>, 2006.
+# Alastair McKinstry <mckinstry@computer.org>, 2001, 2002.
+# Free Software Foundation, Inc., 2002,2004.
+# Juris Kudiņš <cooker@inbox.lv>, 2001.
+# Rihards Priedītis <rprieditis@gmail.com>, 2009, 2010.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012.
+# Peteris Krisjanis <pecisk@gmail.com>, 2008, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lv\n"
+"Report-Msgid-Bugs-To: nobootloader@packages.debian.org\n"
+"POT-Creation-Date: 2009-05-29 22:50+0000\n"
+"PO-Revision-Date: 2012-05-27 12:29+0300\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latviešu <locale-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2)\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../nobootloader.templates:1001
+msgid "Continue without boot loader"
+msgstr "Turpināt bez palaidēja"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Failed to mount /target/proc"
+msgstr "Neizdevās piemontēt /target/proc"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "Neizdevās piemontēt proc datņu sistēmu uz /target/proc."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"Pārbaudiet /var/log/syslog vai skatieties sīkāk ceturtajā virtuālajā konsolē "
+"(ALT+F4)."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Warning: Your system may be unbootable!"
+msgstr "Uzmanību — jūsu sistēma varētu būt nepalaižama!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "Iestata aparātprogrammatūras mainīgos, lai automātiski palaistu"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"Lai jūsu sistēmu varētu palaist automātiski, Genesi aparātprogrammatūrai ir "
+"jānorāda daži mainīgie. Instalēšanas beigās sistēma tiks pārlaista. Lai "
+"aktivētu automātisko palaišanos, aparātprogrammatūras iestatījumu uzvednē "
+"iestatiet šādus aparātprogrammatūras mainīgos:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"To jums vajadzēs izdarīt tikai vienu reizi, vēlāk varēsiet vienkārši ievadīt "
+"\"boot\" komandu vai pārstartēt datoru, lai pārietu uz nākamo instalēšanas "
+"soli."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"Vai arī jūs varēsiet palaist sistēmas kodolu, ievadot sekojošu komandu "
+"aparātprogrammatūras konsolē:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"Lai sistēmu varētu palaist automātiski, CFE ir jānorāda daži mainīgie. Šīs "
+"instalācijas beigās sistēma pārstartēsies. Lai vienkāršotu palaišanu, "
+"aparātprogrammatūras uzvednē iestatiet sekojošus mainīgos:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"Tas būs jāveic tikai šoreiz. Tas nodrošinās iespēju vienkārši izsaukt "
+"komandu \"boot_debian\" CFE uzvednē."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"Ja jūs dodat priekšroku automātiskai palaišanai, jūs varat iestatīt "
+"sekojošos mainīgos papildus jau tiem, kas minēti augstāk:"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid "No boot loader installed"
+msgstr "Palaidējs nav uzinstalēts"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid ""
+"No boot loader has been installed, either because you chose not to or "
+"because your specific architecture doesn't support a boot loader yet."
+msgstr ""
+"Palaidējs nav uzinstalēts. Tas ir noticis vai nu tāpēc, ka jūs izvēlējāties "
+"to neinstalēt, vai arī jūsu datora arhitektūra pagaidām neatbalsta palaidēju."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid ""
+"You will need to boot manually with the ${KERNEL} kernel on partition "
+"${BOOT} and ${ROOT} passed as a kernel argument."
+msgstr ""
+"Jums būs jāpalaiž sistēma manuāli ar ${KERNEL} kodolu nodalījumā ${BOOT}, "
+"ievadot ${ROOT} kā kodola argumentu."

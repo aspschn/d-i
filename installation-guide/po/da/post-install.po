@@ -1,0 +1,1207 @@
+# Danish translation of d-i-manual-post-install.
+# Copyright (C) 2018 Free Software Foundation, Inc.
+# Joe Hansen <joedalton2@yahoo.dk>, 2014, 2015, 2016, 2017, 2018.
+#
+# 32-bit processorer (er anvendt selv om 32-bit-processorer er den korrekte brug)
+# howto -> manual
+# installer -> installationsprogram
+# language -> sprog
+# locale -> sted (lokalitet andet?)
+# locales -> steder (sprogområder)
+# scheme -> plan
+# stateful -> tilstandebærende
+# stateless -> tilstandsfri
+# volume -> diskenhed
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: d-i-manual_post-install\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2018-08-31 23:21+0000\n"
+"PO-Revision-Date: 2018-12-27 10:40+0100\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-xml2pot; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: post-install.xml:5
+#, no-c-format
+msgid "Next Steps and Where to Go From Here"
+msgstr "De næste trin og hvordan du kommer videre"
+
+#. Tag: title
+#: post-install.xml:13
+#, no-c-format
+msgid "Shutting down the system"
+msgstr "Nedlukning af systemet"
+
+#. Tag: para
+#: post-install.xml:15
+#, no-c-format
+msgid ""
+"To shut down a running &debian-gnu; system, you must not reboot with the "
+"reset switch on the front or back of your computer, or just turn off the "
+"computer. &debian-gnu; should be shut down in a controlled manner, otherwise "
+"files might get lost and/or disk damage might occur. If you run a desktop "
+"environment, there is usually an option to <quote>log out</quote> available "
+"from the application menu that allows you to shutdown (or reboot) the system."
+msgstr ""
+"For at lukke et kørende &debian-gnu;-system ned, så må du ikke genstarte med "
+"slukknappen på fronten eller bagsiden af din computer, eller bare slukke for "
+"strømmen til computeren. &debian-gnu; bør lukkes ned på en kontrolleret "
+"måde, ellers kan filer gå tabt og/eller der kan ske skade på harddisken. "
+"Hvis du afvikler et skrivebordsmiljø, så er der normalt en indstilling til "
+"at <quote>logge ud</quote> i programmenuen, som gør, at du kan lukke ned "
+"(eller genstarte) systemet."
+
+#. Tag: para
+#: post-install.xml:25
+#, no-c-format
+msgid ""
+"Alternatively you can press the key combination <keycombo> <keycap>Ctrl</"
+"keycap> <keycap>Alt</keycap> <keycap>Del</keycap> </keycombo> <phrase arch="
+"\"powerpc\"> or <keycombo> <keycap>Control</keycap> <keycap>Shift</keycap> "
+"<keycap>Power</keycap> </keycombo> on Macintosh systems</phrase>. If the key "
+"combinations do not work, a last option is to log in as root and type the "
+"necessary commands. Use <command>reboot</command> to reboot the system. Use "
+"<command>halt</command> to halt the system without powering it off "
+"<footnote> <para> Under the SysV init system <command>halt</command> had the "
+"same effect as <command>poweroff</command>, but with systemd as init system "
+"(the default since jessie) their effects are different. </para> </footnote>. "
+"To power off the machine, use <command>poweroff</command> or "
+"<command>shutdown -h now</command>. The systemd init system provides "
+"additional commands that perform the same functions; for example "
+"<command>systemctl reboot</command> or <command>systemctl poweroff</command>."
+msgstr ""
+"Alternativt kan du trykke på tastekombinationen <keycombo> <keycap>Ctrl</"
+"keycap> <keycap>Alt</keycap> <keycap>Slet</keycap> </keycombo> <phrase arch="
+"\"powerpc\"> eller <keycombo> <keycap>Control</keycap> <keycap>Skift</"
+"keycap> <keycap>Power</keycap> </keycombo> på Macintoshsystemer</phrase>. "
+"Hvis tastekombinationerne ikke fungerer, er en sidste mulighed at logge ind "
+"som root og taste de nødvendige kommandoer. Brug <command>reboot</command> "
+"til at genstarte systemet. Brug <command>halt</command> til at stoppe "
+"systemet uden at slukke for det <footnote> <para> Under SysV-"
+"opstartssystemet havde <command>halt</command> den samme effekt som "
+"<command>poweroff</command>, men med systemd som opstartssystem (standarden "
+"siden jessie) er deres effekt anderledes. </para> </footnote>. For at slukke "
+"for maskinen, så brug <command>poweroff</command> eller <command>shutdown -h "
+"now</command>. Systemd-opstartssystemet tilbyder yderligere kommandoer, som "
+"udfører de samme funktioner; for eksempel <command>systemctl reboot</"
+"command> eller <command>systemctl poweroff</command>."
+
+#. Tag: title
+#: post-install.xml:60
+#, no-c-format
+msgid "Orienting Yourself to &debian;"
+msgstr "Et kig mod &debian;"
+
+#. Tag: para
+#: post-install.xml:61
+#, no-c-format
+msgid ""
+"&debian; is a little different from other distributions. Even if you're "
+"familiar with Linux in other distributions, there are things you should know "
+"about &debian; to help you to keep your system in a good, clean state. This "
+"chapter contains material to help you get oriented; it is not intended to be "
+"a tutorial for how to use &debian;, but just a very brief glimpse of the "
+"system for the very rushed."
+msgstr ""
+"&debian; er en smule anderledes end andre distributioner. Selv om du kender "
+"til Linux fra andre distributioner, er der nogle ting, du skal vide om "
+"&debian; for at holde dit system i en god tilstand. Dette kapitel indeholder "
+"materiale, som kan hjælpe dig med at blive orienteret; det er ikke tænkt som "
+"en øvelse i hvordan &debian; skal anvendes, men er alene en kort oversigt "
+"over systemet."
+
+#. Tag: title
+#: post-install.xml:72
+#, no-c-format
+msgid "&debian; Packaging System"
+msgstr "&debian;-pakkesystemet"
+
+#. Tag: para
+#: post-install.xml:73
+#, no-c-format
+msgid ""
+"The most important concept to grasp is the &debian; packaging system. In "
+"essence, large parts of your system should be considered under the control "
+"of the packaging system. These include: <itemizedlist> <listitem><para> "
+"<filename>/usr</filename> (excluding <filename>/usr/local</filename>) </"
+"para></listitem> <listitem><para> <filename>/var</filename> (you could make "
+"<filename>/var/local</filename> and be safe in there) </para></listitem> "
+"<listitem><para> <filename>/bin</filename> </para></listitem> "
+"<listitem><para> <filename>/sbin</filename> </para></listitem> "
+"<listitem><para> <filename>/lib</filename> </para></listitem> </"
+"itemizedlist> For instance, if you replace <filename>/usr/bin/perl</"
+"filename>, that will work, but then if you upgrade your <classname>perl</"
+"classname> package, the file you put there will be replaced. Experts can get "
+"around this by putting packages on <quote>hold</quote> in <command>aptitude</"
+"command>."
+msgstr ""
+"Det vigtigste koncept er &debian;-pakkesystemet. Helt grundlæggende erstore "
+"dele af dit system under kontrol af pakkesystemet. Dette inkluderer: "
+"<itemizedlist> <listitem><para> <filename>/usr</filename> (eksklusive "
+"<filename>/usr/local</filename>) </para></listitem> <listitem><para> "
+"<filename>/var</filename> (du kan lave <filename>/var/local</filename> og "
+"være sikker der) </para></listitem> <listitem><para> <filename>/bin</"
+"filename> </para></listitem> <listitem><para> <filename>/sbin</filename> </"
+"para></listitem> <listitem><para> <filename>/lib</filename> </para></"
+"listitem> </itemizedlist> For eksempel, hvis du erstatter <filename>/usr/bin/"
+"perl</filename>, vil det fungere, men hvis du opgraderer din "
+"<classname>perl</classname>pakke, vil filen du placerer der blive erstattet. "
+"Eksperter kan omgå dette ved at placere pakke på <quote>hold</quote> i "
+"<command>aptitude</command>."
+
+#. Tag: para
+#: post-install.xml:114
+#, no-c-format
+msgid ""
+"One of the best installation methods is apt. You can use the command line "
+"version of <command>apt</command> as well as tools like "
+"<application>aptitude</application> or <application>synaptic</application> "
+"(which are just graphical frontends for <command>apt</command>). Note that "
+"apt will also let you merge main, contrib, and non-free so you can have "
+"restricted packages (strictly speaking not belonging to &debian;) as well as "
+"packages from &debian-gnu; at the same time."
+msgstr ""
+"En af de bedste installationsmetoder er apt. Du kan bruge versionen for "
+"kommandolinjen <command>apt</command> eller værktøjer såsom "
+"<application>aptitude</application> eller <application>synaptic</application> "
+"(som bare er grafiske brugerflader for <command>apt</command>). Bemærk at "
+"apt vil lade dig sammenføje main, contrib og non-free, så du kan have "
+"begrænsede pakker (strengt taget ikke tilhørende &debian;) samt pakker fra "
+"&debian-gnu; på samme tid."
+
+#. Tag: title
+#: post-install.xml:128
+#, no-c-format
+msgid "Additional Software Available for &debian;"
+msgstr "Yderligere programmer tilgængelige for &debian;"
+
+#. Tag: para
+#: post-install.xml:129
+#, no-c-format
+msgid ""
+"There are official and unofficial software repositories that are not enabled "
+"in the default &debian; install. These contain software which many find "
+"important and expect to have. Information on these additional repositories "
+"can be found on the &debian; Wiki page titled <ulink url=\"&url-debian-wiki-"
+"software;\">The Software Available for &debian;'s Stable Release</ulink>."
+msgstr ""
+"Der er officielle og uofficielle programarkvier, som ikke er aktiveret som "
+"standard i &debian;s installation. Disse indeholder programmer, som mange "
+"synes er vigtige og forventer at have installeret. Information om disse "
+"yderligere arkiver kan findes på wikisiden for &debian; under titlen <ulink "
+"url=\"&url-debian-wiki-software;\">The Software Available for &debian;'s "
+"Stable Release</ulink>."
+
+#. Tag: title
+#: post-install.xml:141
+#, no-c-format
+msgid "Application Version Management"
+msgstr "Håndtering af programversion"
+
+#. Tag: para
+#: post-install.xml:142
+#, no-c-format
+msgid ""
+"Alternative versions of applications are managed by update-alternatives. If "
+"you are maintaining multiple versions of your applications, read the update-"
+"alternatives man page."
+msgstr ""
+"Alternative versioner af programmerne håndteres af update-alternatives. Hvis "
+"du vedligeholder flere versioner af dine programmer, så læse manualsiden for "
+"update-alternatives."
+
+#. Tag: title
+#: post-install.xml:152
+#, no-c-format
+msgid "Cron Job Management"
+msgstr "Håndtering af cronjob"
+
+#. Tag: para
+#: post-install.xml:153
+#, no-c-format
+msgid ""
+"Any jobs under the purview of the system administrator should be in "
+"<filename>/etc</filename>, since they are configuration files. If you have a "
+"root cron job for daily, weekly, or monthly runs, put them in <filename>/etc/"
+"cron.{daily,weekly,monthly}</filename>. These are invoked from <filename>/"
+"etc/crontab</filename>, and will run in alphabetic order, which serializes "
+"them."
+msgstr ""
+"Alle job under systemadministratorens ansvar skal placeres i <filename>/etc</"
+"filename>, da de er konfigurationsfiler. Hvis du har et root-cronjob for "
+"daglig, ugentlig eller måndelige kørsler, så placer dem i <filename>/etc/"
+"cron.{daily,weekly,monthly}</filename>. disse startes fra <filename>/etc/"
+"crontab</filename>, og vil blive afviklet i alfabetisk rækkefølge, hvilket "
+"serialiserer dem."
+
+#. Tag: para
+#: post-install.xml:162
+#, no-c-format
+msgid ""
+"On the other hand, if you have a cron job that (a) needs to run as a special "
+"user, or (b) needs to run at a special time or frequency, you can use either "
+"<filename>/etc/crontab</filename>, or, better yet, <filename>/etc/cron.d/"
+"whatever</filename>. These particular files also have an extra field that "
+"allows you to stipulate the user account under which the cron job runs."
+msgstr ""
+"På den anden side, hvis du har et cronjob som (a) kræver at blive afviklet "
+"via en speciel bruger, eller (b) kræver at blive afviklet på et specielt "
+"tidspunkt eller frekvens, så kan du bruge enten <filename>/etc/crontab</"
+"filename>, eller, endnu bedre, <filename>/etc/cron.d/whatever</filename>. "
+"Disse bestemte filer har også et ekstra felt som giver mulighed for at "
+"fastsætte brugerkontoen hvorunder cornjobbet afvikles."
+
+#. Tag: para
+#: post-install.xml:171
+#, no-c-format
+msgid ""
+"In either case, you just edit the files and cron will notice them "
+"automatically. There is no need to run a special command. For more "
+"information see cron(8), crontab(5), and <filename>/usr/share/doc/cron/"
+"README.Debian</filename>."
+msgstr ""
+"I begge tilfælde kan du bare redigere filerne og cron vil automatisk bemærke "
+"dem. Der er ikke behov for at køre en speciel kommando. For yderligere "
+"information se cron(8), crontab(5) og <filename>/usr/share/doc/cron/README."
+"Debian</filename>."
+
+#. Tag: title
+#: post-install.xml:186
+#, no-c-format
+msgid "Further Reading and Information"
+msgstr "Yderligere læsning og information"
+
+#. Tag: para
+#: post-install.xml:187
+#, no-c-format
+msgid ""
+"The <ulink url=\"http://www.debian.org/\">Debian web site</ulink> contains a "
+"large quantity of documentation about &debian;. In particular, see the "
+"<ulink url=\"http://www.debian.org/doc/FAQ/\">Debian GNU/Linux FAQ</ulink> "
+"and the <ulink url=\"http://www.debian.org/doc/user-manuals#quick-reference"
+"\">Debian Reference</ulink>. An index of more &debian; documentation is "
+"available from the <ulink url=\"http://www.debian.org/doc/ddp\">Debian "
+"Documentation Project</ulink>. The &debian; community is self-supporting; to "
+"subscribe to one or more of the Debian mailing lists, see the <ulink url="
+"\"http://www.debian.org/MailingLists/subscribe\"> Mail List Subscription</"
+"ulink> page. Last, but not least, the <ulink url=\"http://lists.debian.org/"
+"\">Debian Mailing List Archives</ulink> contain a wealth of information on "
+"&debian;."
+msgstr ""
+"<ulink url=\"http://www.debian.org/\">Debians hjemmeside</ulink> indeholder "
+"en stor mængde dokumentation om &debian;. Vigtist er <ulink url=\"http://www."
+"debian.org/doc/FAQ/\">Debian GNU/Linux OSS</ulink> og <ulink url=\"http://"
+"www.debian.org/doc/user-manuals#quick-reference\">Debianreferencen</ulink>. "
+"Et indeks med yderligere &debian;-dokumentation er tilgængelig fra <ulink "
+"url=\"http://www.debian.org/doc/ddp\">Debians dokumentationsprojekt</ulink>. "
+"&debian;s fællesskab er selvunderstøttende; for at abonnere på en eller "
+"flere af Debians postlister, se siden for <ulink url=\"http://www.debian.org/"
+"MailingLists/subscribe\"> Postlisteabonnement</ulink>. Sidste, men ikke "
+"mindst, indeholder <ulink url=\"http://lists.debian.org/\">Debians "
+"postlistearkiv</ulink> en rigdom af information om &debian;."
+
+#. Tag: para
+#: post-install.xml:205
+#, no-c-format
+msgid ""
+"If you need information about a particular program, you should first try "
+"<userinput>man <replaceable>program</replaceable></userinput>, or "
+"<userinput>info <replaceable>program</replaceable></userinput>."
+msgstr ""
+"Hvis du har brug for information om et bestemt program, så skal du først "
+"prøve <userinput>man <replaceable>program</replaceable></userinput>, eller "
+"<userinput>info <replaceable>program</replaceable></userinput>."
+
+#. Tag: para
+#: post-install.xml:211
+#, no-c-format
+msgid ""
+"There is lots of useful documentation in <filename>/usr/share/doc</filename> "
+"as well. In particular, <filename>/usr/share/doc/HOWTO</filename> and "
+"<filename>/usr/share/doc/FAQ</filename> contain lots of interesting "
+"information. To submit bugs, look at <filename>/usr/share/doc/debian/bug*</"
+"filename>. To read about &debian;-specific issues for particular programs, "
+"look at <filename>/usr/share/doc/(package name)/README.Debian</filename>."
+msgstr ""
+"Der er også en masse nyttig dokumentation i <filename>/usr/share/doc</"
+"filename>. Specielt <filename>/usr/share/doc/HOWTO</filename> og <filename>/"
+"usr/share/doc/FAQ</filename> indeholder en masse interessant information. "
+"For at indsende fejlrapporter, tag et kig på <filename>/usr/share/doc/debian/"
+"bug*</filename>. For at læse om &debian;-specifikke probelmstillinger for "
+"bestemte programmer, så kig på <filename>/usr/share/doc/(pakkenavn)/README."
+"Debian</filename>."
+
+#. Tag: para
+#: post-install.xml:222
+#, no-c-format
+msgid ""
+"A general source of information on GNU/Linux is the <ulink url=\"http://www."
+"tldp.org/\">Linux Documentation Project</ulink>. There you will find the "
+"HOWTOs and pointers to other very valuable information on parts of a GNU/"
+"Linux system."
+msgstr ""
+"En generel kilde til information om GNU/Linux er <ulink url=\"http://www."
+"tldp.org/\">Dokumentationsprojektet for Linux</ulink>. Der kan du finde "
+"manualer og referencer til anden meget værdifuld information om dele af et "
+"GNU/Linux-system."
+
+#. Tag: para
+#: post-install.xml:229
+#, no-c-format
+msgid ""
+"Linux is an implementation of Unix. The <ulink url=\"&url-ldp;\">Linux "
+"Documentation Project (LDP)</ulink> collects a number of HOWTOs and online "
+"books relating to Linux."
+msgstr ""
+"Linux er en implementering af Unix. <ulink url=\"&url-ldp;\">Linux "
+"Documentation Project (LDP)</ulink> indsamler et antal manualer og "
+"internetbøger relaterende til Linux."
+
+#. Tag: para
+#: post-install.xml:236
+#, no-c-format
+msgid ""
+"If you are new to Unix, you probably should go out and buy some books and do "
+"some reading. This <ulink url=\"&url-unix-faq;\">list of Unix FAQs</ulink> "
+"contains a number of UseNet documents which provide a nice historical "
+"reference."
+msgstr ""
+"Hvis du er ny i brugen af Unix, så bør du gå ud og købe nogle bøger og læse "
+"lidt om det. Denne <ulink url=\"&url-unix-faq;\">liste over Unix OSS'er"
+"</ulink> indeholder et antal af UseNet-dokumenter, som tilbyder en god "
+"historisk reference."
+
+#. Tag: title
+#: post-install.xml:251
+#, no-c-format
+msgid "Setting Up Your System To Use E-Mail"
+msgstr "Opsætning af dit system så du kan bruge e-post"
+
+#. Tag: para
+#: post-install.xml:252
+#, no-c-format
+msgid ""
+"Today, email is an important part of many people's life. As there are many "
+"options as to how to set it up, and as having it set up correctly is "
+"important for some &debian; utilities, we will try to cover the basics in "
+"this section."
+msgstr ""
+"I dag er e-post en vigtig del af mangae folks liv. Da der er mange "
+"muligheder for opsætning, og da en korrekt opsætning er vigtig for mange af "
+"&debian;s redskaber, så vil vi prøve at dække det grundlæggende i dette "
+"afsnit."
+
+#. Tag: para
+#: post-install.xml:259
+#, no-c-format
+msgid ""
+"There are three main functions that make up an e-mail system. First there is "
+"the <firstterm>Mail User Agent</firstterm> (MUA) which is the program a user "
+"actually uses to compose and read mails. Then there is the <firstterm>Mail "
+"Transfer Agent</firstterm> (MTA) that takes care of transferring messages "
+"from one computer to another. And last there is the <firstterm>Mail Delivery "
+"Agent</firstterm> (MDA) that takes care of delivering incoming mail to the "
+"user's inbox."
+msgstr ""
+"Der er tre hovedfunktioner, som udgør et e-postsystem. Først er der "
+"<firstterm>Postbrugeragenten</firstterm> (MUA), som er programmet en bruger "
+"anvender til at lave og læse post. Så er der "
+"<firstterm>Postoverførselsagenten</firstterm> (MTA) som håndterer "
+"overførslen af beskeder fra en computer til den næste. Og sidst er der "
+"<firstterm>Postleveringsagenten</firstterm> (MDA), som håndterer leverancen "
+"af indgående post til brugerens indboks."
+
+#. Tag: para
+#: post-install.xml:269
+#, no-c-format
+msgid ""
+"These three functions can be performed by separate programs, but they can "
+"also be combined in one or two programs. It is also possible to have "
+"different programs handle these functions for different types of mail."
+msgstr ""
+"Disse tre funktioner kan udføres af separate programmer, men de kan også "
+"kombineres i et eller to programmer. Det er også muligt at have forskellige "
+"programmer til at håndtere disse funktioner for forskellige typer af post."
+
+#. Tag: para
+#: post-install.xml:275
+#, no-c-format
+msgid ""
+"On Linux and Unix systems <command>mutt</command> is historically a very "
+"popular MUA. Like most traditional Linux programs it is text based. It is "
+"often used in combination with <command>exim</command> or <command>sendmail</"
+"command> as MTA and <command>procmail</command> as MDA."
+msgstr ""
+"På Linux- og Unixsystemer er <command>mutt</command> historisk en meget "
+"populær MUA. Som de fleste traditionelle Linuxprogrammer er programmet "
+"tekstbaseret. Det bruges ofte i kombination med <command>exim</command> "
+"eller <command>sendmail</command> som MTA og <command>procmail</command> som "
+"MDA."
+
+#. Tag: para
+#: post-install.xml:282
+#, no-c-format
+msgid ""
+"With the increasing popularity of graphical desktop systems, the use of "
+"graphical e-mail programs like GNOME's <command>evolution</command>, KDE's "
+"<command>kmail</command> or Mozilla's <command>thunderbird</command> has "
+"becoming more popular. These programs combine the function of a MUA, MTA and "
+"MDA, but can &mdash; and often are &mdash; also be used in combination with "
+"the traditional Linux tools."
+msgstr ""
+"Med den stigende popularitet indenfor grafiske skrivebordssystemer er brugen "
+"af grafiske e-postprogrammer såsom GNOMEs <command>evolution</command>, KDE's "
+"<command>kmail</command> eller Mozillas <command>thunderbird</command> blevet "
+"mere populære. Disse programmer kombinerer funktionen hos en MUA, MTA og MDA, "
+"men kan &mdash; og er ofte &mdash; brugt i kombination med traditionelle "
+"Linuxværktøjer."
+
+#. Tag: title
+#: post-install.xml:294
+#, no-c-format
+msgid "Default E-Mail Configuration"
+msgstr "Standard e-postkonfiguration"
+
+#. Tag: para
+#: post-install.xml:295
+#, no-c-format
+msgid ""
+"Even if you are planning to use a graphical mail program, it is important "
+"that a traditional MTA/MDA is also installed and correctly set up on your "
+"&debian-gnu; system. Reason is that various utilities running on the "
+"system<footnote> <para> Examples are: <command>cron</command>, "
+"<command>quota</command>, <command>logcheck</command>, <command>aide</"
+"command>, &hellip; </para> </footnote> can send important notices by e-mail "
+"to inform the system administrator of (potential) problems or changes."
+msgstr ""
+"Selv om du planlægger at bruge et grafisk postprogram, er det vigtigt, at en "
+"traditionel MTA/MDA også er installeret og korrekt opsat på dit &debian-gnu;-"
+"system. Årsagen er at diverse redskaber der kører på systemet<footnote> "
+"<para> Eksempler er: <command>cron</command>, <command>quota</command>, "
+"<command>logcheck</command>, <command>aide</command>, &hellip; </para> </"
+"footnote> kan sende vigtige beskeder via e-post for at informere "
+"systemadministratoren om (potentielle) problemer eller ændringer."
+
+#. Tag: para
+#: post-install.xml:310
+#, no-c-format
+msgid ""
+"For this reason the packages <classname>exim4</classname> and "
+"<classname>mutt</classname> will be installed by default (provided you did "
+"not unselect the <quote>standard</quote> task during the installation). "
+"<classname>exim4</classname> is a combination MTA/MDA that is relatively "
+"small but very flexible. By default it will be configured to only handle e-"
+"mail local to the system itself and e-mails addressed to the system "
+"administrator (root account) will be delivered to the regular user account "
+"created during the installation<footnote> <para> The forwarding of mail for "
+"root to the regular user account is configured in <filename>/etc/aliases</"
+"filename>. If no regular user account was created, the mail will of course "
+"be delivered to the root account itself. </para> </footnote>."
+msgstr ""
+"Af denne årsag vil pakkerne <classname>exim4</classname> og <classname>mutt</"
+"classname> blive installeret som standard (såfremt du ikke fravalgte "
+"<quote>standard</quote>-opgaven under installationen). <classname>exim4</"
+"classname> er en kombineret MTA/MDA, som er relativ lille men meget "
+"fleksibel. Som standard vil programmet blive konfigureret til kun at "
+"håndtere e-post lokalt for selve systemet og e-post adresseret til "
+"systemadministratoren (root-konto) vil blive leveret til den normale "
+"brugerkonto oprettet under installationen<footnote> <para> Videresendelse af "
+"post for root til den normale brugerkonto konfigureres i <filename>/etc/"
+"aliases</filename>. Hvis ingen brugerkonto blev oprettet, så vil posten "
+"selvfølgelig blive leveret til root-kontoen. </para> </footnote>."
+
+#. Tag: para
+#: post-install.xml:329
+#, no-c-format
+msgid ""
+"When system e-mails are delivered they are added to a file in <filename>/var/"
+"mail/<replaceable>account_name</replaceable></filename>. The e-mails can be "
+"read using <command>mutt</command>."
+msgstr ""
+"Når system-e-post leveres tilføjes den til en fil i <filename>/var/mail/"
+"<replaceable>account_name</replaceable></filename>. Den leverde e-post kan "
+"læses via <command>mutt</command>."
+
+#. Tag: title
+#: post-install.xml:339
+#, no-c-format
+msgid "Sending E-Mails Outside The System"
+msgstr "Sende e-post udenfor systemet"
+
+#. Tag: para
+#: post-install.xml:340
+#, no-c-format
+msgid ""
+"As mentioned earlier, the installed &debian; system is only set up to handle "
+"e-mail local to the system, not for sending mail to others nor for receiving "
+"mail from others."
+msgstr ""
+"Som nævnt tidligere, så er det installerede &debian;-system kun opsat til at "
+"håndtere e-post lokalt for systemet, ikke til at sende post til andre eller "
+"modtage post fra andre."
+
+#. Tag: para
+#: post-install.xml:346
+#, no-c-format
+msgid ""
+"If you would like <classname>exim4</classname> to handle external e-mail, "
+"please refer to the next subsection for the basic available configuration "
+"options. Make sure to test that mail can be sent and received correctly."
+msgstr ""
+"Hvis du ønsker at <classname>exim4</classname> skal håndtere ekstern e-post, "
+"så kig i det næste underafsnit for de grundlæggende tilgængelige "
+"konfigurationsindstillinger. Sikr dig ved test at post kan sendes og "
+"modtages korrekt."
+
+#. Tag: para
+#: post-install.xml:352
+#, no-c-format
+msgid ""
+"If you intend to use a graphical mail program and use a mail server of your "
+"Internet Service Provider (ISP) or your company, there is not really any "
+"need to configure <classname>exim4</classname> for handling external e-mail. "
+"Just configure your favorite graphical mail program to use the correct "
+"servers to send and receive e-mail (how is outside the scope of this manual)."
+msgstr ""
+"Hvis du forventer at bruge et grafisk postprogram og en postserver fra din "
+"internetleverandør (ISP) eller dit firma, så er der reelt ingen grund til at "
+"konfigurere <classname>exim4</classname> til at håndtere ekstern e-post. "
+"Bare konfigurer dit grafiske favoritprogram til at bruge de korrekte servere "
+"til at sende og modtage e-post (hvordan er uden for denne manuals område)."
+
+#. Tag: para
+#: post-install.xml:361
+#, no-c-format
+msgid ""
+"However, in that case you may need to configure individual utilities to "
+"correctly send e-mails. One such utility is <command>reportbug</command>, a "
+"program that facilitates submitting bug reports against &debian; packages. "
+"By default it expects to be able to use <classname>exim4</classname> to "
+"submit bug reports."
+msgstr ""
+"I det tilfælde hvor du skal konfigurere individuelle redskaber til korrekt "
+"at sende e-post er et sådant redskab f.eks. <command>reportbug</command>, et "
+"program som  håndterer indsendelse af fejlrapporter omhandlende &debian;-"
+"pakker. Som standard forventer det at kunne bruge <classname>exim4</"
+"classname> til at indsende fejlrapporter."
+
+#. Tag: para
+#: post-install.xml:369
+#, no-c-format
+msgid ""
+"To correctly set up <command>reportbug</command> to use an external mail "
+"server, please run the command <command>reportbug --configure</command> and "
+"answer <quote>no</quote> to the question if an MTA is available. You will "
+"then be asked for the SMTP server to be used for submitting bug reports."
+msgstr ""
+"For at sætte <command>reportbug</command> korrekt op til at bruge en ekstern "
+"postserver, så kør venligst kommandoen <command>reportbug --configure</"
+"command> og svar <quote>no</quote> til spørgsmålet om en MTA er tilgængelig. "
+"Du vil så blive spurgt om SMTP-serveren, der skal bruges til at indsende "
+"fejlrapporter."
+
+#. Tag: title
+#: post-install.xml:380
+#, no-c-format
+msgid "Configuring the Exim4 Mail Transport Agent"
+msgstr "Konfiguration af Exim4-posttransportagenten"
+
+#. Tag: para
+#: post-install.xml:381
+#, no-c-format
+msgid ""
+"If you would like your system to also handle external e-mail, you will need "
+"to reconfigure the <classname>exim4</classname> package<footnote> <para> You "
+"can of course also remove <classname>exim4</classname> and replace it with "
+"an alternative MTA/MDA. </para> </footnote>:"
+msgstr ""
+"Hvis du ønsker, at dit system også skal håndtere ekstern e-post, så skal du "
+"konfigurere pakken <classname>exim4</classname> <footnote> <para> Du kan "
+"selvfølgelig også fjerne <classname>exim4</classname> og erstatte den med en "
+"alternativ MTA/MDA. </para> </footnote>:"
+
+#. Tag: screen
+#: post-install.xml:393
+#, no-c-format
+msgid "# dpkg-reconfigure exim4-config"
+msgstr "# dpkg-reconfigure exim4-config"
+
+#. Tag: para
+#: post-install.xml:395
+#, no-c-format
+msgid ""
+"After entering that command (as root), you will be asked if you want split "
+"the configuration into small files. If you are unsure, select the default "
+"option."
+msgstr ""
+"Efter indtastning af den kommando (som root), så vil du blive spurgt, om du "
+"ønsker at opdele konfigurationen i små filer. Hvis du er usikker, så vælg "
+"standardindstillingen."
+
+#. Tag: para
+#: post-install.xml:401
+#, no-c-format
+msgid ""
+"Next you will be presented with several common mail scenarios. Choose the "
+"one that most closely resembles your needs."
+msgstr ""
+"Herefter vil du blive præsenteret for flere gængse postscenarier. Vælg den "
+"som er tættest på dine behov."
+
+#. Tag: term
+#: post-install.xml:410
+#, no-c-format
+msgid "internet site"
+msgstr "internetside"
+
+#. Tag: para
+#: post-install.xml:411
+#, no-c-format
+msgid ""
+"Your system is connected to a network and your mail is sent and received "
+"directly using SMTP. On the following screens you will be asked a few basic "
+"questions, like your machine's mail name, or a list of domains for which you "
+"accept or relay mail."
+msgstr ""
+"Dit system er forbundet til et netværk og din post sendes og modtages "
+"direkte via SMTP. På de følgende skærmbilleder får du nogle får "
+"grundlæggende spørgsmål, såsom din maskines postnavn, eller en liste over "
+"domæner hvorfra du accepterer eller videresender post."
+
+#. Tag: term
+#: post-install.xml:422
+#, no-c-format
+msgid "mail sent by smarthost"
+msgstr "post sendt af smarthost"
+
+#. Tag: para
+#: post-install.xml:423
+#, no-c-format
+msgid ""
+"In this scenario your outgoing mail is forwarded to another machine, called "
+"a <quote>smarthost</quote>, which takes care of sending the message on to "
+"its destination. The smarthost also usually stores incoming mail addressed "
+"to your computer, so you don't need to be permanently online. That also "
+"means you have to download your mail from the smarthost via programs like "
+"fetchmail."
+msgstr ""
+"I dette scenarie sendes din udgående post til en anden maskine, kaldt "
+"<quote>smarthost</quote>, som håndterer afsendelsen af beskeden videre til "
+"sin destination. Smarthost'en lagrer normalt også indgående post adresseret "
+"til din computer, så du ikke skal være permanent på nettet. Det betyder så "
+"også, at du skal hente din post fra smarthost'en via programmer såsom "
+"fetchmail."
+
+#. Tag: para
+#: post-install.xml:433
+#, no-c-format
+msgid ""
+"In a lot of cases the smarthost will be your ISP's mail server, which makes "
+"this option very suitable for dial-up users. It can also be a company mail "
+"server, or even another system on your own network."
+msgstr ""
+"I mange tilfælde vil smarthost'en være din ISP's postserver, hvilket gør "
+"denne indstilling meget velegnet for opkaldsbrugere. Det kan også være et "
+"firmas server eller et andet sytsem på dit eget netværk."
+
+#. Tag: term
+#: post-install.xml:443
+#, no-c-format
+msgid "mail sent by smarthost; no local mail"
+msgstr "post sendt af smarthost; ingen lokal post"
+
+#. Tag: para
+#: post-install.xml:444
+#, no-c-format
+msgid ""
+"This option is basically the same as the previous one except that the system "
+"will not be set up to handle mail for a local e-mail domain. Mail on the "
+"system itself (e.g. for the system administrator) will still be handled."
+msgstr ""
+"Denne indstilling er grundlæggende den samme som den forrige, med undtagelse "
+"af, at systemet ikke vil blive opsat til at håndtere post for et lokalt e-"
+"postdomæne. Post på selve systemet (f.eks. for systemadministratoren) vil "
+"stadig blive håndteret."
+
+#. Tag: term
+#: post-install.xml:455
+#, no-c-format
+msgid "local delivery only"
+msgstr "kun lokal levering"
+
+#. Tag: para
+#: post-install.xml:456
+#, no-c-format
+msgid "This is the option your system is configured for by default."
+msgstr "Dette er valget dit system er konfigureret til som standard."
+
+#. Tag: term
+#: post-install.xml:464
+#, no-c-format
+msgid "no configuration at this time"
+msgstr "ingen konfiguration på dette tidspunkt"
+
+#. Tag: para
+#: post-install.xml:465
+#, no-c-format
+msgid ""
+"Choose this if you are absolutely convinced you know what you are doing. "
+"This will leave you with an unconfigured mail system &mdash; until you "
+"configure it, you won't be able to send or receive any mail and you may miss "
+"some important messages from your system utilities."
+msgstr ""
+"Vælg denne hvis du er absolut overbevist om, hvad du gør. Dette vil "
+"efterlade dig med et postsystem der ikke er konfigureret &mdash; indtil du "
+"konfigurerer det, vil du ikke kunne sende eller modtage post og du mister "
+"måske nogle vigtige beskeder fra dine systemredskaber."
+
+#. Tag: para
+#: post-install.xml:476
+#, no-c-format
+msgid ""
+"If none of these scenarios suits your needs, or if you need a finer grained "
+"setup, you will need to edit configuration files under the <filename>/etc/"
+"exim4</filename> directory after the installation is complete. More "
+"information about <classname>exim4</classname> may be found under <filename>/"
+"usr/share/doc/exim4</filename>; the file <filename>README.Debian.gz</"
+"filename> has further details about configuring <classname>exim4</classname> "
+"and explains where to find additional documentation."
+msgstr ""
+"Hvis ingen af disse scenarier passer til dine behov, eller hvis du skal "
+"bruge en mere detaljeret opsætning, så skal du redigere "
+"konfigurationsfilerne under mappen <filename>/etc/exim4</filename>, efter at "
+"installationen er færdig. Yderligere information om <classname>exim4</"
+"classname> kan findes under <filename>/usr/share/doc/exim4</filename>; filen "
+"<filename>README.Debian.gz</filename> har yderligere detaljer om "
+"konfiguration af <classname>exim4</classname> og forklarer hvor yderligere "
+"dokumentation kan findes."
+
+#. Tag: para
+#: post-install.xml:487
+#, no-c-format
+msgid ""
+"Note that sending mail directly to the Internet when you don't have an "
+"official domain name, can result in your mail being rejected because of anti-"
+"spam measures on receiving servers. Using your ISP's mail server is "
+"preferred. If you still do want to send out mail directly, you may want to "
+"use a different e-mail address than is generated by default. If you use "
+"<classname>exim4</classname> as your MTA, this is possible by adding an "
+"entry in <filename>/etc/email-addresses</filename>."
+msgstr ""
+"Bemærk at afsendelse af post direkte til internettet, når du ikke har et "
+"officielt domænenavn kan medføre, at din post bliver afvist på grund af "
+"metoder til at stoppe spam på de modtagende servere. Brug af din ISP's "
+"postserver foretrækkes. Hvis du stadig ikke ønsker at sende post direkte, "
+"kan du foretrække at bruge en anden e-postadresse som din MTA, dette er "
+"muligt ved at tilføje et punkt i <filename>/etc/email-addresses</filename>."
+
+#. Tag: title
+#: post-install.xml:505
+#, no-c-format
+msgid "Compiling a New Kernel"
+msgstr "Kompilering af en ny kerne"
+
+#. Tag: para
+#: post-install.xml:506
+#, no-c-format
+msgid ""
+"Why would someone want to compile a new kernel? It is most probably not "
+"necessary since the default kernel shipped with &debian; handles almost all "
+"configurations."
+msgstr ""
+"Hvorfor ønsker nogle at kompilere en ny kerne? Det er sandsynligvis ikke "
+"nødvendigt da standardkernen indeholdt med &debian; håndterer næsten alle "
+"konfigurationer."
+
+#. Tag: para
+#: post-install.xml:512
+#, no-c-format
+msgid ""
+"If you want to compile your own kernel nevertheless, this is of course "
+"possible and we recommend the use of the <quote>make deb-pkg</quote> target. "
+"For more information read the <ulink url=\"&url-kernel-handbook;\">Debian "
+"Linux Kernel Handbook</ulink>."
+msgstr ""
+"Hvis du alligevel ønsker at kompilere din egen kerne, så er dette "
+"selvfølgelig muligt og vi anbefaler brugen af målet <quote>make "
+"deb-pkg</quote>. For yderligere information så læs "
+"<ulink url=\"&url-kernel-handbook;\">Debian Linux Kernel Handbook</ulink>."
+
+#. Tag: title
+#: post-install.xml:527
+#, no-c-format
+msgid "Recovering a Broken System"
+msgstr "Gendannelse af et ødelagt system"
+
+#. Tag: para
+#: post-install.xml:528
+#, no-c-format
+msgid ""
+"Sometimes, things go wrong, and the system you've carefully installed is no "
+"longer bootable. Perhaps the boot loader configuration broke while trying "
+"out a change, or perhaps a new kernel you installed won't boot, or perhaps "
+"cosmic rays hit your disk and flipped a bit in <filename>/sbin/init</"
+"filename>. Regardless of the cause, you'll need to have a system to work "
+"from while you fix it, and rescue mode can be useful for this."
+msgstr ""
+"Nogle gange går det galt og systemet, du så omhyggeligt har installeret, kan "
+"ikke længere starte op. Måske gik opstartsindlæserens konfiguration i "
+"stykker under en ændring eller måske vil en ny installeret kerne ikke "
+"starte, eller måske har kosmiske stråler ramt din disk og rodet lidt rundt i "
+"<filename>/sbin/init</filename>. Uanset årsagen, så skal du bruge et system "
+"at arbejde fra, mens du retter, og en redningstilstand kan være nyttig til "
+"dette formål."
+
+#. Tag: para
+#: post-install.xml:538
+#, no-c-format
+msgid ""
+"To access rescue mode, select <userinput>rescue</userinput> from the boot "
+"menu, type <userinput>rescue</userinput> at the <prompt>boot:</prompt> "
+"prompt, or boot with the <userinput>rescue/enable=true</userinput> boot "
+"parameter. You'll be shown the first few screens of the installer, with a "
+"note in the corner of the display to indicate that this is rescue mode, not "
+"a full installation. Don't worry, your system is not about to be "
+"overwritten! Rescue mode simply takes advantage of the hardware detection "
+"facilities available in the installer to ensure that your disks, network "
+"devices, and so on are available to you while repairing your system."
+msgstr ""
+"For at tilgå redningstilstand så vælg <userinput>rescue</userinput> fra "
+"opstartsmenuen, tast <userinput>rescue</userinput> ved <prompt>boot:</"
+"prompt>-prompten, eller start med <userinput>rescue/enable=true</userinput>-"
+"opstartsparameteren. Du får vist de første få skærmbilleder af "
+"installationsprogrammet, med en bemærkning i hjørnet af skærmen, som "
+"indikerer at det er redningstilstand, ikke en fuld installation. Du skal "
+"ikke være nervøs, dit system er ikke ved at blive overskrevet! "
+"Redningstilstand bruger bare udstyrets registreringfunktioner, som er "
+"tilgængelige i installationsprogrammet for at sikre at dine diske, "
+"netværksenheder, og så videre er tilgængelige for dig, mens du reparerer dit "
+"system."
+
+#. Tag: para
+#: post-install.xml:555
+#, no-c-format
+msgid ""
+"Instead of the partitioning tool, you should now be presented with a list of "
+"the partitions on your system, and asked to select one of them. Normally, "
+"you should select the partition containing the root file system that you "
+"need to repair. You may select partitions on RAID and LVM devices as well as "
+"those created directly on disks."
+msgstr ""
+"I stedet for partitioneringsværktøjet bør du nu blive præsenteret for en "
+"liste med partitionerne på dit system, og bedt om at vælge en af dem. "
+"Normalt skal du vælge partitionen indeholdende root-filsystemet, som du skal "
+"reparere. Du kan vælge partitioner på RAID- og LVM-enheder samt dem oprettet "
+"direkte på diske."
+
+#. Tag: para
+#: post-install.xml:563
+#, no-c-format
+msgid ""
+"If possible, the installer will now present you with a shell prompt in the "
+"file system you selected, which you can use to perform any necessary "
+"repairs. <phrase arch=\"any-x86\"> For example, if you need to reinstall the "
+"GRUB boot loader into the master boot record of the first hard disk, you "
+"could enter the command <userinput>grub-install '(hd0)'</userinput> to do "
+"so. </phrase>"
+msgstr ""
+"Hvis muligt vil installationsprogrammet nu præsentere dig for en skalprompt "
+"i det valgte filsystem, som du kan bruge til at udføre nødvendige "
+"reparationer. <phrase arch=\"any-x86\"> for eksepel, hvis du skal "
+"geninstallere GRUB-opstartsindlæseren i master boot record for den første "
+"harddisk, kan du indtaste kommandoen <userinput>grub-install '(hd0)'</"
+"userinput>. </phrase>"
+
+#. Tag: para
+#: post-install.xml:575
+#, no-c-format
+msgid ""
+"If the installer cannot run a usable shell in the root file system you "
+"selected, perhaps because the file system is corrupt, then it will issue a "
+"warning and offer to give you a shell in the installer environment instead. "
+"You may not have as many tools available in this environment, but they will "
+"often be enough to repair your system anyway. The root file system you "
+"selected will be mounted on the <filename>/target</filename> directory."
+msgstr ""
+"Hvis installationsprogrammet ikke kan afvikle en brugbar skal i root-"
+"filsystemet, du valgte, på grund af at filsystemet er ødelagt, så vil det "
+"udstede en advarsel og tilbyde at give dig en skal i installationsmiljøet i "
+"stedet for. Du har måske ikke så mange værktøjer tilgængelige i dette miljø, "
+"men de vil ofte være nok til at reparere dit system alligevel. Root-"
+"filsystemet du valgte vil blive monteret på mappen <filename>/target</"
+"filename>."
+
+#. Tag: para
+#: post-install.xml:584
+#, no-c-format
+msgid "In either case, after you exit the shell, the system will reboot."
+msgstr "I begge tilfælde, efter du afslutter skallen, vil systemet genstarte."
+
+#. Tag: para
+#: post-install.xml:588
+#, no-c-format
+msgid ""
+"Finally, note that repairing broken systems can be difficult, and this "
+"manual does not attempt to go into all the things that might have gone wrong "
+"or how to fix them. If you have problems, consult an expert."
+msgstr ""
+"Endelig, bemærk at reparation af ødelagte systemer kan være svært, og denne "
+"manual forsøger ikke at dække alle de problemstillinger, der kan gå galt "
+"eller hvordan de skal rettes. Hvis du har problemer, så spørg en ekspert."
+
+#~ msgid "If You Are New to Unix"
+#~ msgstr "Hvis du er ny til Unix"
+
+#~ msgid ""
+#~ "Linux is an implementation of Unix. The <ulink url=\"&url-ldp;\">Linux "
+#~ "Documentation Project (LDP)</ulink> collects a number of HOWTOs and "
+#~ "online books relating to Linux. Most of these documents can be installed "
+#~ "locally; just install the <classname>doc-linux-html</classname> package "
+#~ "(HTML versions) or the <classname>doc-linux-text</classname> package "
+#~ "(ASCII versions), then look in <filename>/usr/share/doc/HOWTO</filename>. "
+#~ "International versions of the LDP HOWTOs are also available as &debian; "
+#~ "packages."
+#~ msgstr ""
+#~ "Linux er en implementering af Unix. <ulink url=\"&url-ldp;\">Linux "
+#~ "Documentation Project (LDP)</ulink> indsmaler et antal manualer og "
+#~ "internetbøger med relevans for Linux. De fleste af disse dokumenter kan "
+#~ "installeres lokalt; bare installer pakken <classname>doc-linux-html</"
+#~ "classname> (HTML-versioner) eller pakken <classname>doc-linux-text</"
+#~ "classname> (ASCII-versioner), og kig så i <filename>/usr/share/doc/HOWTO</"
+#~ "filename>. Internationale versioner af LDP-manualserne er også "
+#~ "tilgængelige som pakker i &debian;."
+
+#~ msgid ""
+#~ "Why would someone want to compile a new kernel? It is often not necessary "
+#~ "since the default kernel shipped with &debian; handles most "
+#~ "configurations. Also, &debian; often offers several alternative kernels. "
+#~ "So you may want to check first if there is an alternative kernel image "
+#~ "package that better corresponds to your hardware. However, it can be "
+#~ "useful to compile a new kernel in order to:"
+#~ msgstr ""
+#~ "Hvorfor ønsker nogle at kompilere en ny kerne? Det er ofte ikke "
+#~ "nødvendigt, da standardkernen leveret med &debian; håndterer de fleste "
+#~ "konfigurationer. &debian; tilbyder ofte også flere alternative kerner. Så "
+#~ "du kan først undersøge, om der er et alternativt kerneaftryk, som bedre "
+#~ "svarer til dit udstyr. Det kan dog være nyttigt at kompilere en ny kerne "
+#~ "for at:"
+
+#~ msgid ""
+#~ "handle special hardware needs, or hardware conflicts with the pre-"
+#~ "supplied kernels"
+#~ msgstr ""
+#~ "håndtere specielle udstyrsbehov eller udstyrskonflikter med de "
+#~ "præleverede kerner"
+
+#~ msgid ""
+#~ "use options of the kernel which are not supported in the pre-supplied "
+#~ "kernels (such as high memory support)"
+#~ msgstr ""
+#~ "brug indstillinger for kernen, som ikke er understøttet i de præleverede "
+#~ "kerner (såsom understøttelse af høj hukommelse)"
+
+#~ msgid ""
+#~ "optimize the kernel by removing useless drivers to speed up boot time"
+#~ msgstr ""
+#~ "optimer kernen ved at fjerne ubrugte drivere så opstartshastigheden øges"
+
+#~ msgid "create a monolithic instead of a modularized kernel"
+#~ msgstr "opret en monolitisk i stedet for en modulopbygget kerne"
+
+#~ msgid "run an updated or development kernel"
+#~ msgstr "kør en opdateret eller udviklingskerne"
+
+#~ msgid "learn more about linux kernels"
+#~ msgstr "lær mere om Linuxkerner"
+
+#~ msgid "Kernel Image Management"
+#~ msgstr "Håndtering af kerneaftryk"
+
+#~ msgid ""
+#~ "Don't be afraid to try compiling the kernel. It's fun and profitable."
+#~ msgstr ""
+#~ "Vær ikke bange for at prøve at kompilere kernen. Det er sjovt og giver "
+#~ "indsigt."
+
+#~ msgid ""
+#~ "To compile a kernel the &debian; way, you need some packages: "
+#~ "<classname>fakeroot</classname>, <classname>kernel-package</classname>, "
+#~ "<classname>linux-source-2.6</classname> and a few others which are "
+#~ "probably already installed (see <filename>/usr/share/doc/kernel-package/"
+#~ "README.gz</filename> for the complete list)."
+#~ msgstr ""
+#~ "For at kompilere en kerne på &debian;s måde, så skal du bruge nogle "
+#~ "pakker: <classname>fakeroot</classname>, <classname>kernel-package</"
+#~ "classname>, <classname>linux-source-2.6</classname> og nogle få andre, "
+#~ "som sandsynligvis allerede er installeret (se <filename>/usr/share/doc/"
+#~ "kernel-package/README.gz</filename> for den fulde liste)."
+
+#~ msgid ""
+#~ "This method will make a .deb of your kernel source, and, if you have non-"
+#~ "standard modules, make a synchronized dependent .deb of those too. It's a "
+#~ "better way to manage kernel images; <filename>/boot</filename> will hold "
+#~ "the kernel, the System.map, and a log of the active config file for the "
+#~ "build."
+#~ msgstr ""
+#~ "Denne metode vil lave en .deb af din kernekilde, og, hvis du har moduler "
+#~ "der ikke er standard, en synkroniseret afhængig .deb også for dem. Det er "
+#~ "en bedre måde at håndtere kerneaftryk; <filename>/boot</filename> vil "
+#~ "indeholde kernen, System.map og en log over den aktive konfigurationsfil "
+#~ "for kompileringen."
+
+#~ msgid ""
+#~ "Note that you don't <emphasis>have</emphasis> to compile your kernel the "
+#~ "<quote>&debian; way</quote>; but we find that using the packaging system "
+#~ "to manage your kernel is actually safer and easier. In fact, you can get "
+#~ "your kernel sources right from Linus instead of <classname>linux-"
+#~ "source-2.6</classname>, yet still use the <classname>kernel-package</"
+#~ "classname> compilation method."
+#~ msgstr ""
+#~ "Bemærk at du ikke <emphasis>skal</emphasis> kompilere din kerne på "
+#~ "<quote>&debian;s måde</quote>; men vi kan se at brug af pakkesystemet til "
+#~ "at håndtere din kerne er sikkert og nemt. Du kan få dine kernekilder "
+#~ "direkte fra Linus i stedet for <classname>linux-source-2.6</classname>, "
+#~ "men stadig bruge kompilationsmetoden fra <classname>kernel-package</"
+#~ "classname>."
+
+#~ msgid ""
+#~ "Note that you'll find complete documentation on using <classname>kernel-"
+#~ "package</classname> under <filename>/usr/share/doc/kernel-package</"
+#~ "filename>. This section just contains a brief tutorial."
+#~ msgstr ""
+#~ "Bemærk at du kan finde en fuldstændig dokumentation for brugen af "
+#~ "<classname>kernel-package</classname> under <filename>/usr/share/doc/"
+#~ "kernel-package</filename>. Dette afsnit indeholder kun en kort "
+#~ "introduktion."
+
+#~ msgid ""
+#~ "Hereafter, we'll assume you have free rein over your machine and will "
+#~ "extract your kernel source to somewhere in your home directory<footnote> "
+#~ "<para> There are other locations where you can extract kernel sources and "
+#~ "build your custom kernel, but this is easiest as it does not require "
+#~ "special permissions. </para> </footnote>. We'll also assume that your "
+#~ "kernel version is &kernelversion;. Make sure you are in the directory to "
+#~ "where you want to unpack the kernel sources, extract them using "
+#~ "<userinput>tar xf /usr/src/linux-source-&kernelversion;.tar.xz</"
+#~ "userinput> and change to the directory <filename>linux-source-"
+#~ "&kernelversion;</filename> that will have been created."
+#~ msgstr ""
+#~ "Herefter vil vi antage, at du har fri råderet over din maskine og vil "
+#~ "udtrække din kernekilde til et sted i din hjemmemappe<footnote> <para> "
+#~ "Der er andre placeringer, hvor du kan udtrække kernekilder og bygge din "
+#~ "tilpassede kerne, men dette er nemmest, da det ikke kræver specielle "
+#~ "tilladelser. </para> </footnote>. Vi antager også, at din kerneversion er "
+#~ "&kernelversion;. Sikr dig, at du er i mappen, hvor du ønsker at udpakke "
+#~ "kernekilderne, udtræk dem via <userinput>tar xf /usr/src/linux-source-"
+#~ "&kernelversion;.tar.xz</userinput> og gå til mappen <filename>linux-"
+#~ "source-&kernelversion;</filename>, som er blevet oprettet."
+
+#~ msgid ""
+#~ "Now, you can configure your kernel. Run <userinput>make xconfig</"
+#~ "userinput> if X11 is installed, configured and being run; run "
+#~ "<userinput>make menuconfig</userinput> otherwise (you'll need "
+#~ "<classname>libncurses5-dev</classname> installed). Take the time to read "
+#~ "the online help and choose carefully. When in doubt, it is typically "
+#~ "better to include the device driver (the software which manages hardware "
+#~ "peripherals, such as Ethernet cards, SCSI controllers, and so on) you are "
+#~ "unsure about. Be careful: other options, not related to a specific "
+#~ "hardware, should be left at the default value if you do not understand "
+#~ "them. Do not forget to select <quote>Kernel module loader</quote> in "
+#~ "<quote>Loadable module support</quote> (it is not selected by default). "
+#~ "If not included, your &debian; installation will experience problems."
+#~ msgstr ""
+#~ "Nu kan du konfigurere din kerne. Kør <userinput>make xconfig</userinput> "
+#~ "hvis X11 er installeret, konfigureret og afvikles; kør <userinput>make "
+#~ "menuconfig</userinput> ellers (du skal have<classname>libncurses5-dev</"
+#~ "classname> installeret). Tag dig tid til at læse hjælpen fra nettet og "
+#~ "vælg omhyggeligt. Hvis i tvivl, så er det typisk bedre at inkludere "
+#~ "enhedsdriveren (programmet som håndterer udstyrsenheder, såsom "
+#~ "Ethernetkort, SCSI-controllere og så videre), du er usikker på. Vær "
+#~ "omhyggelig: Andre indstillinger, ikke relateret til specifikt udstyr, "
+#~ "skal have standardværdien, hvis du ikke forstår dem. Glem ikke at vælge "
+#~ "<quote>Kernelmodulindlæseren</quote> i <quote>Understøttelse af "
+#~ "modulindlæsning</quote> (det valg er ikke standard). Hvis ikke "
+#~ "inkluderet, så vil din &debian;-installation opleve problemer."
+
+#~ msgid ""
+#~ "Clean the source tree and reset the <classname>kernel-package</classname> "
+#~ "parameters. To do that, do <userinput>make-kpkg clean</userinput>."
+#~ msgstr ""
+#~ "Ryd kildetræe og nulstil parametrene for <classname>kernel-package</"
+#~ "classname>. Det gøres ved at afvikle <userinput>make-kpkg clean</"
+#~ "userinput>."
+
+#~ msgid ""
+#~ "Now, compile the kernel: <userinput>fakeroot make-kpkg --initrd --"
+#~ "revision=1.0.custom kernel_image</userinput>. The version number of "
+#~ "<quote>1.0</quote> can be changed at will; this is just a version number "
+#~ "that you will use to track your kernel builds. Likewise, you can put any "
+#~ "word you like in place of <quote>custom</quote> (e.g., a host name). "
+#~ "Kernel compilation may take quite a while, depending on the power of your "
+#~ "machine."
+#~ msgstr ""
+#~ "Kompiler nu kernen: <userinput>fakeroot make-kpkg --initrd --revision=1.0."
+#~ "custom kernel_image</userinput>. Versionsnummeret for <quote>1.0</quote> "
+#~ "kan ændres; det er kun et versionsnummer, som du kan bruge til at "
+#~ "registrere dine kernebygninger. På samme måde kan du placere ethvert ord "
+#~ "i stedet for <quote>custom</quote> (f.eks. et værtsnavn). "
+#~ "Kernekompilering kan tage et stykke tid, afhængig af din maskine."
+
+#~ msgid ""
+#~ "Once the compilation is complete, you can install your custom kernel like "
+#~ "any package. As root, do <userinput>dpkg -i ../&kernelpackage;-"
+#~ "&kernelversion;-<replaceable>subarchitecture</replaceable>_1.0."
+#~ "custom_&architecture;.deb</userinput>. The <replaceable>subarchitecture</"
+#~ "replaceable> part is an optional sub-architecture, <phrase arch=\"i386\"> "
+#~ "such as <quote>686</quote>, </phrase> depending on what kernel options "
+#~ "you set. <userinput>dpkg -i</userinput> will install the kernel, along "
+#~ "with some other nice supporting files. For instance, the <filename>System."
+#~ "map</filename> will be properly installed (helpful for debugging kernel "
+#~ "problems), and <filename>/boot/config-&kernelversion;</filename> will be "
+#~ "installed, containing your current configuration set. Your new kernel "
+#~ "package is also clever enough to automatically update your boot loader to "
+#~ "use the new kernel. If you have created a modules package, you'll need to "
+#~ "install that package as well."
+#~ msgstr ""
+#~ "Når kompileringen er færdig, så kan du installere din tilpassede kerne "
+#~ "som enhver pakke. Som root, udfør <userinput>dpkg -i ../&kernelpackage;-"
+#~ "&kernelversion;-<replaceable>subarchitecture</replaceable>_1.0."
+#~ "custom_&architecture;.deb</userinput>. Delen "
+#~ "<replaceable>subarchitecture</replaceable> er en valgfri underarkitektur, "
+#~ "<phrase arch=\"i386\"> såsom <quote>686</quote>, </phrase> afhængig af "
+#~ "hvilke kerneindstillinger du angav. <userinput>dpkg -i</userinput> vil "
+#~ "installere kernen, sammen med nogle andre gode støttefiler. For eksempel "
+#~ "vil <filename>System.map</filename> blive korrekt installeret (nyttigt "
+#~ "til at fejlsøge kerneproblemer), og <filename>/boot/config-&kernelversion;"
+#~ "</filename> vil blive installeret, indeholdende dit nuværende "
+#~ "konfigurationssæt. Din nye kernepakke er også klog nok til automatisk at "
+#~ "opdatere din opstartsindlæser til at bruge den nye kerne. Hvis du har "
+#~ "oprettet en modulpakke, så skal du også installere den pakke."
+
+#~ msgid ""
+#~ "It is time to reboot the system: read carefully any warning that the "
+#~ "above step may have produced, then <userinput>shutdown -r now</userinput>."
+#~ msgstr ""
+#~ "Det er tid til at genstarte systemet: Læs omhyggeligt alle advarsler som "
+#~ "de ovenstående trin kan have medført, og så <userinput>shutdown -r now</"
+#~ "userinput>."
+
+#~ msgid ""
+#~ "For more information on &debian; kernels and kernel compilation, see the "
+#~ "<ulink url=\"&url-kernel-handbook;\">Debian Linux Kernel Handbook</"
+#~ "ulink>. For more information on <classname>kernel-package</classname>, "
+#~ "read the fine documentation in <filename>/usr/share/doc/kernel-package</"
+#~ "filename>."
+#~ msgstr ""
+#~ "For yderligere information om &debian;-kerner og kernekompilation, se "
+#~ "<ulink url=\"&url-kernel-handbook;\">Debian Linux Kernel Handbook</"
+#~ "ulink>. For yderligere information om <classname>kernel-package</"
+#~ "classname>, så læs den fine dokumentation i <filename>/usr/share/doc/"
+#~ "kernel-package</filename>."

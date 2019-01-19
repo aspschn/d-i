@@ -1,0 +1,784 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+# Translations from iso-codes:
+# Sahran <sahran.ug@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:33+0000\n"
+"PO-Revision-Date: 2011-09-16 10:36+0600\n"
+"Last-Translator: Sahran <sahran.ug@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../lvmcfg.templates:1001
+msgid "Configure the Logical Volume Manager"
+msgstr "«لوگىكىلىق دىسكا باشقۇرغۇچ» نى سەپلەش"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:1001
+msgid "Activate existing volume groups?"
+msgstr "نۆۋەتتىكى ئەن گۇرۇپپىسىنى ئاكتىپلامدۇ؟"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:1001
+msgid ""
+"${COUNT} existing volume groups have been found. Please indicate whether you "
+"want to activate them."
+msgstr ""
+"مەۋجۇد ئەن گۇرۇپپىسىدىن ${COUNT} سى بايقالدى. ئۇلارنى ئاكتىپلامسىز يوق "
+"تاللاڭ."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. LVM main menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:2001
+msgid "Modify volume groups (VG)"
+msgstr "ئەن گۇرۇپپىلىرى(VG)نى ئۆزگەرت"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. LVM main menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:2001
+msgid "Modify logical volumes (LV)"
+msgstr "لوگىكىلىق ئەن(LV)نى ئۆزگەرت"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. LVM main menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. Type: select
+#. Choices
+#. :sl3:
+#. Volume groups configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. Type: select
+#. Choices
+#. :sl3:
+#. Logical volumes configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:2001 ../lvmcfg-utils.templates:3001
+#: ../lvmcfg-utils.templates:4001
+msgid "Leave"
+msgstr "ئايرىل"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:2002
+msgid "LVM configuration action:"
+msgstr "LVM سەپلەش مەشغۇلاتى:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:2002
+msgid "This is the Logical Volume Manager configuration menu."
+msgstr "بۇ لوگىكىلىق ئەن باشقۇرۇشنى سەپلەش تىزىملىكى."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Volume groups configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:3001
+msgid "Create volume groups"
+msgstr "ئەن گۇرۇپپىلىرى قۇر"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Volume groups configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:3001
+msgid "Delete volume groups"
+msgstr "ئەن گۇرۇپپىلىرى ئۆچۈر"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Volume groups configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:3001
+msgid "Extend volume groups"
+msgstr "ئەن گۇرۇپپىسىنى كېڭەيت"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Volume groups configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:3001
+msgid "Reduce volume groups"
+msgstr "ئەن گۇرۇپپىسىنى كىچىكلەت"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:3002
+msgid "Volume groups configuration action:"
+msgstr "ئەن گۇرۇپپا سەپلىمە مەشغۇلاتى:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Logical volumes configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:4001
+msgid "Create logical volumes"
+msgstr "لوگىكىلىق ئەن قۇر"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Logical volumes configuration menu choices
+#. Translators : please use infinitive form or the equivalent
+#. in your language
+#. Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#: ../lvmcfg-utils.templates:4001
+msgid "Delete logical volumes"
+msgstr "لوگىكىلىق ئەننى ئۆچۈر"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:4002
+msgid "Logical volumes configuration action:"
+msgstr "لوگىكىلىق ئەن سەپلىمە مەشغۇلاتى:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:5001
+msgid "Devices for the new volume group:"
+msgstr "يېڭى دىسكا گۇرۇپپا ئۈسكۈنىسى:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:5001
+msgid "Please select the devices for the new volume group."
+msgstr "يېڭى دىسكا گۇرۇپپىسىغا ئۈسكۈنە تاللاڭ:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:5001 ../lvmcfg-utils.templates:17001
+msgid "You can select one or more devices."
+msgstr "بىر ياكى بىر قانچە ئۈسكۈنە تاللىيالايسىز."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:6001
+msgid "Volume group name:"
+msgstr "دىسكا گۇرۇپپا ئاتى:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:6001
+msgid "Please enter the name you would like to use for the new volume group."
+msgstr "يېڭى دىسكا گۇرۇپپا  ئاتىغا ئىشلىتىدىغان ئىسىمنى كىرگۈزۈڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:7001 ../lvmcfg-utils.templates:18001
+msgid "No physical volumes selected"
+msgstr "فىزىكىلىق دىسكا تاللانمىدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:7001
+msgid ""
+"No physical volumes were selected. The creation of a new volume group was "
+"aborted."
+msgstr ""
+"فىزىكىلىق ئەن تاللانمىدى. يېڭى ئەن گۇرۇپپىسى قۇرۇش مەشغۇلاتى توختىتىلدى."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:8001
+msgid "No volume group name entered"
+msgstr "دىسكا گۇرۇپپا ئاتى كىرگۈزۈلمىدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:8001
+msgid "No name for the volume group has been entered.  Please enter a name."
+msgstr ""
+"ئەن گۇرۇپپا ئاتىنى بېكىتمىدىڭىز، بۇ ئەن گۇرۇپپىسىغا ئىسىمدىن بىرنى كىرگۈزۈڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:9001
+msgid "Volume group name already in use"
+msgstr "دىسكا گۇرۇپپا ئاتى ئىشلىتىلىۋاتىدۇ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:9001
+msgid ""
+"The selected volume group name is already in use. Please choose another name."
+msgstr "تاللىغان دىسكا گۇرۇپپا ئاتى ئىشلىتىلىۋاتىدۇ، باشقا ئىسىمنى تاللاڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:10001
+msgid "Volume group name overlaps with device name"
+msgstr "دىسكا گۇرۇپپا ئاتى بىلەن ئۈسكۈنە ئاتى تەكرار"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:10001
+msgid ""
+"The selected volume group name overlaps with an existing device name. Please "
+"choose another name."
+msgstr ""
+"تاللانغان ئەن گۇرۇپپا ئاتى بىلەن نۆۋەتتىكى مەلۇم ئۈسكۈنە ئاتى ئوخشاش، باشقا "
+"بىر ئات تاللاڭ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:11001
+msgid "Volume group to delete:"
+msgstr "ئۆچۈرىدىغان دىسكا گۇرۇپپىسى:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:11001
+msgid "Please select the volume group you wish to delete."
+msgstr "ئۆچۈرىدىغان دىسكا گۇرۇپپىسىنى تاللاڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:12001 ../lvmcfg-utils.templates:15001
+#: ../lvmcfg-utils.templates:20001 ../lvmcfg-utils.templates:25001
+#: ../lvmcfg-utils.templates:26001 ../lvmcfg-utils.templates:33001
+msgid "No volume group found"
+msgstr "دىسكا گۇرۇپپىسىنى تاپالمىدى."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:12001 ../lvmcfg-utils.templates:15001
+#: ../lvmcfg-utils.templates:20001
+msgid "No volume group has been found."
+msgstr "دىسكا گۇرۇپپىسى تېپىلمىدى."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:12001
+msgid "The volume group may have already been deleted."
+msgstr "دىسكا گۇرۇپپىسى ئۆچۈرۈلگەن بولۇشى مۇمكىن."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:13001
+msgid "Really delete the volume group?"
+msgstr "راستىنىلا بۇ دىسكا گۇرۇپپىسىنى ئۆچۈرەمسىز؟"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:13001
+msgid "Please confirm the ${VG} volume group removal."
+msgstr "ئۆچۈرىدىغان دىسكا گۇرۇپپىسى ${VG} نى جەزملەڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:14001
+msgid "Error while deleting volume group"
+msgstr "دىسكا گۇرۇپپىسى ئۆچۈرۈشتە خاتالىق كۆرۈلدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:14001
+msgid ""
+"The selected volume group could not be deleted. One or more logical volumes "
+"may currently be in use."
+msgstr ""
+"تاللىغان دىسكا گۇرۇپپىسىنى ئۆچۈرەلمىدى. بىر ياكى بىر قانچە لوگىكىلىق دىسكا "
+"ئىشلىتىلىۋاتىدۇ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:15001
+msgid "No volume group can be deleted."
+msgstr "دىسكا گۇرۇپپىسىنى ئۆچۈرگىلى بولمايدۇ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:16001
+msgid "Volume group to extend:"
+msgstr "كېڭەيتىلىدىغان دىسكا گۇرۇپپىسى:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:16001
+msgid "Please select the volume group you wish to extend."
+msgstr "كېڭەيتىدىغان دىسكا گۇرۇپپىسىنى تاللاڭ."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:17001
+msgid "Devices to add to the volume group:"
+msgstr "دىسكا گۇرۇپپىسىغا قوشىدىغان ئۈسكۈنە:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:17001
+msgid "Please select the devices you wish to add to the volume group."
+msgstr "دىسكا گۇرۇپپىسىغا قوشىدىغان ئۈسكۈنىنى تاللاڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:18001
+msgid ""
+"No physical volumes were selected. Extension of the volume group was aborted."
+msgstr ""
+"سىز تېخى فىزىكىلىق ئەن تاللىمىدىڭىز. ئەن گۇرۇپپىسىنى چوڭايتىش مەشغۇلاتى "
+"توختىتىلدى."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:19001
+msgid "Error while extending volume group"
+msgstr "كېڭەيتىلگەن دىسكا گۇرۇپپىسىدا خاتالىق كۆرۈلدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:19001
+msgid ""
+"The physical volume ${PARTITION} could not be added to the selected volume "
+"group."
+msgstr ""
+"فىزىكىلىق دىسكا ${PARTITION} نى تاللىغان دىسكا گۇرۇپپىسىغا قوشقىلى بولمايدۇ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:20001
+msgid "No volume group can be reduced."
+msgstr "دىسكا گۇرۇپپىسىنى كىچىكلەتكىلى بولمايدۇ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:21001
+msgid "Volume group to reduce:"
+msgstr "كىچىكلىتىدىغان دىسكا گۇرۇپپىسى:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:21001
+msgid "Please select the volume group you wish to reduce."
+msgstr "كىچىكلىتىدىغان دىسكا گۇرۇپپىسىنى تاللاڭ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:22001
+msgid "Device to remove from volume group:"
+msgstr "ئەن گۇرۇپپىسىدىن چىقىرىۋېتىدىغان ئۈسكۈنە:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:22001
+msgid "Please select the device you wish to remove from the volume group."
+msgstr "ئەن گۇرۇپپىدىن چىقىرىۋېتىدىغان ئۈسكۈنىنى تاللاڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:23001 ../lvmcfg-utils.templates:24001
+msgid "Error while reducing volume group"
+msgstr "دىسكا گۇرۇپپىسىنى كىچىكلىتىشتە خاتالىق كۆرۈلدى."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:23001
+msgid ""
+"The selected volume group (${VG}) could not be reduced. There is only one "
+"physical volume attached. Please delete the volume group instead."
+msgstr ""
+"تاللانغان ئەن گۇرۇپپىسى (${VG})نى كىچىكلەتكىلى بولمايدۇ. ئۇنىڭدا پەقەت بىرلا "
+"فىزىكىلىق ئەن بار. پۈتكۈل ئەن گۇرۇپپىسىنى ئۆچۈرۈڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:24001
+msgid ""
+"The physical volume ${PARTITION} could not be removed from the selected "
+"volume group."
+msgstr ""
+"فىزىكىلىق دىسكا ${PARTITION} نى تاللىغان دىسكا گۇرۇپپىسىدىن چىقىرىۋەتكىلى "
+"بولمايدۇ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:24001 ../lvmcfg-utils.templates:32001
+#: ../lvmcfg-utils.templates:37001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"/var/log/syslog نى تەكشۈرۈڭ ياكى 4-مەۋھۇم كونترول سۇپىسىنى(console) كۆرۈپ "
+"تېخىمۇ كۆپ تەپسىلىي ئۇچۇرغا ئېرىشىڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:25001
+msgid ""
+"No volume groups were found for creating a new logical volume.  Please "
+"create more physical volumes and volume groups."
+msgstr ""
+"يېڭى لوگىكىلىق ئەن قۇرۇشقا لازىملىق ئەن گۇرۇپپىسى تېپىلمىدى. تېخىمۇ كۆپ "
+"فىزىكىلىق ئەن ۋە ئەن گۇرۇپپىسى قۇرۇڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:26001
+msgid ""
+"No free volume groups were found for creating a new logical volume. Please "
+"create more physical volumes and volume groups, or reduce an existing volume "
+"group."
+msgstr ""
+"يېڭى لوگىكىلىق دىسكا قۇرۇشقا لازىملىق بوش دىسكا گۇرۇپپىسى تېپىلمىدى. تېخىمۇ "
+"كۆپ فىزىكىلىق دىسكا ۋە دىسكا گۇرۇپپىسى قۇرۇڭ ياكى مەۋجۇت دىسكا گۇرۇپپىسىنى "
+"كىچىكلىتىڭ."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:27001
+msgid "Logical volume name:"
+msgstr "لوگىكىلىق دىسكا ئاتى:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:27001
+msgid "Please enter the name you would like to use for the new logical volume."
+msgstr "يېڭى دىسكا گۇرۇپپا ئاتىغا ئىشلىتىدىغان ئىسىمنى كىرگۈزۈڭ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:28001 ../lvmcfg-utils.templates:34001
+msgid "Volume group:"
+msgstr "دىسكا گۇرۇپپىسى:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:28001
+msgid ""
+"Please select the volume group where the new logical volume should be "
+"created."
+msgstr ""
+"يېڭى قۇرغان لوگىكىلىق دىسكا گۇرۇپپىسى تۇرۇشلۇق دىسكا گۇرۇپپىسىنى تاللاڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:29001
+msgid "No logical volume name entered"
+msgstr "لوگىكىلىق دىسكا ئاتى كىرگۈزۈلمىدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:29001
+msgid "No name for the logical volume has been entered.  Please enter a name."
+msgstr "لوگىكىلىق دىسكا گۇرۇپپا ئاتىنى بېكىتمىدىڭىز، ئىسىمدىن بىرنى كىرگۈزۈڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:30001 ../lvmcfg-utils.templates:32001
+msgid "Error while creating a new logical volume"
+msgstr "يېڭى لوگىكىلىق دىسكا قۇرۇشتا خاتالىق كۆرۈلدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:30001
+msgid ""
+"The name ${LV} is already in use by another logical volume on the same "
+"volume group (${VG})."
+msgstr ""
+"لوگىكىلىق دىسكا نامى ${LV} نى ئوخشاش بىر دىسكا گۇرۇپپا (${VG})دىكى باشقا بىر "
+"لوگىكىلىق دىسكا ئىشلەتكەن."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:31001
+msgid "Logical volume size:"
+msgstr "لوگىكىلىق دىسكا چوڭلۇقى:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:31001
+msgid ""
+"Please enter the size of the new logical volume. The size may be entered in "
+"the following formats: 10K (Kilobytes), 10M (Megabytes), 10G (Gigabytes), "
+"10T (Terabytes). The default unit is Megabytes."
+msgstr ""
+"يېڭى لوگىكىلىق دىسكا چوڭلۇقىنى كىرگۈزۈڭ. تۆۋەندىكىدەك كىرگۈزسىڭىز بولىدۇ: "
+"10K (كىلوبايت)، 10M (مېگابايت)، 10G (گېگابايت)، 10T (تېرابايت). كۆڭۈلدىكى "
+"بىرلىك مېگابايت."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:32001
+msgid ""
+"Unable to create a new logical volume (${LV}) on ${VG} with the new size "
+"${SIZE}."
+msgstr ""
+"${VG} دا چوڭلۇقى ${SIZE} بولغان يېڭى لوگىكىلىق دىسكا (${LV}) نى قۇرالمىدى."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:33001
+msgid "No volume group has been found for deleting a logical volume."
+msgstr "لوگىكىلىق ئەننى ئۆچۈرىدىغان ئەن گۇرۇپپىسىنى تاپالمىدى."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:34001
+msgid ""
+"Please select the volume group which contains the logical volume to be "
+"deleted."
+msgstr ""
+"ئۆچۈرىدىغان لوگىكىلىق ئەن گۇرۇپپىسىنى ئۆز ئىچىگە ئالغان ئەن گۇرۇپپىسىنى "
+"تاللاڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:35001
+msgid "No logical volume found"
+msgstr "لوگىكىلىق دىسكا تېپىلمىدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:35001
+msgid ""
+"No logical volume has been found.  Please create a logical volume first."
+msgstr ""
+"لوگىكىلىق دىسكا تېپىلمىدى. ئالدى بىلەن يېڭى لوگىكىلىق دىسكىدىن بىرنى قۇرۇڭ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:36001
+msgid "Logical volume:"
+msgstr "لوگىكىلىق دىسكا:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:36001
+msgid "Please select the logical volume to be deleted on ${VG}."
+msgstr "${VG} دىكى ئۆچۈرىدىغان لوگىكىلىق ئەننى تاللاڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:37001
+msgid "Error while deleting the logical volume"
+msgstr "لوگىكىلىق دىسكىنى ئۆچۈرۈشتە خاتالىق كۆرۈلدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:37001
+msgid "The logical volume (${LV}) on ${VG} could not be deleted."
+msgstr "${VG} دىكى لوگىكىلىق دىسكا (${LV}) نى ئۆچۈرەلمەيدۇ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:38001
+msgid "No usable physical volumes found"
+msgstr "ئىشلەتكىلى بولىدىغان فىزىكىلىق دىسكا تاپالمىدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:38001
+msgid ""
+"No physical volumes (i.e. partitions) were found in your system. All "
+"physical volumes may already be in use. You may also need to load some "
+"required kernel modules or re-partition the hard drives."
+msgstr ""
+"سىستېمىدىن فىزىكىلىق دىسكا(فىزىكىلىق رايون) تاپالمىدى. ھەممە فىزىكىلىق "
+"رايونلار ئىشلىتىلىۋاتقان بولۇشى مۇمكىن. سىز زۆرۈر بولغان بىر قىسىم يادرو "
+"بۆلەكلىرىنى يۈكلىسىڭىز بولىدىغان ئوخشايدۇ، ياكى دىسكىنى قايتىدىن رايونغا "
+"ئايرىڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:39001
+msgid "Logical Volume Manager not available"
+msgstr "لوگىكىلىق دىسكا باشقۇرغۇچنى ئىشلەتكىلى بولمايدۇ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lvmcfg-utils.templates:39001
+msgid ""
+"The current kernel doesn't support the Logical Volume Manager. You may need "
+"to load the lvm-mod module."
+msgstr ""
+"نۆۋەتتىكى يادرو لوگىكىلىق دىسكا باشقۇرغۇچنى قوللىمايدۇ. سىز lvm-mod بۆلىكىنى "
+"يۈكلىسىڭىز بولىدىغان ئوخشايدۇ."

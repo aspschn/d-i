@@ -1,0 +1,1127 @@
+# Dutch translation of d-i-manual_welcome.
+# Frans Spiesschaert <Frans.Spiesschaert@yucom.be>, 2017, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: d-i-manual_welcome\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2018-10-23 07:43+0000\n"
+"PO-Revision-Date: 2018-10-10 21:33+0200\n"
+"Last-Translator: Frans Spiesschaert <Frans.Spiesschaert@yucom.be>\n"
+"Language-Team: Debian Dutch l10n Team <debian-l10n-dutch@lists.debian.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#. Tag: title
+#: welcome.xml:4
+#, no-c-format
+msgid "Welcome to &debian;"
+msgstr "Welkom bij &debian;"
+
+#. Tag: para
+#: welcome.xml:5
+#, no-c-format
+msgid ""
+"This chapter provides an overview of the &debian; Project and &debian-gnu;. "
+"If you already know about the &debian; Project's history and the &debian-"
+"gnu; distribution, feel free to skip to the next chapter."
+msgstr ""
+"Dit hoofdstuk geeft een overzicht van het &debian;-project en van &debian-"
+"gnu;. Indien u reeds op de hoogte bent van de geschiedenis van het &debian;-"
+"project en de &debian-gnu;-distributie kent, kunt u meteen doorgaan naar het "
+"volgende hoofdstuk."
+
+#. Tag: title
+#: welcome.xml:19
+#, no-c-format
+msgid "What is Debian?"
+msgstr "Wat is Debian?"
+
+#. Tag: para
+#: welcome.xml:20
+#, no-c-format
+msgid ""
+"Debian is an all-volunteer organization dedicated to developing free "
+"software and promoting the ideals of the Free Software community. The Debian "
+"Project began in 1993, when Ian Murdock issued an open invitation to "
+"software developers to contribute to a complete and coherent software "
+"distribution based on the relatively new Linux kernel. That relatively small "
+"band of dedicated enthusiasts, originally funded by the <ulink url=\"&url-"
+"fsf;\">Free Software Foundation</ulink> and influenced by the <ulink url="
+"\"&url-gnu-intro;\">GNU</ulink> philosophy, has grown over the years into an "
+"organization of around &num-of-debian-developers; <firstterm>Debian "
+"Developers</firstterm>."
+msgstr ""
+"Debian is een volledig uit vrijwilligers bestaande organisatie die zich tot "
+"doel stelt vrije software te ontwikkelen en de idealen van de vrije-"
+"softwaregemeenschap te promoten. Het Debian-project ging van start in 1993 "
+"toen Ian Murdock een open uitnodiging verspreide onder softwareontwikkelaars "
+"om mee te werken aan een volledige en coherente softwaredistributie, "
+"gebaseerd op de relatief nieuwe Linux-kernel. Deze relatief kleine groep "
+"toegewijde enthousiastelingen, die initieel fondsen kreeg van de <ulink url="
+"\"&url-fsf;\">Free Software Foundation</ulink> en zich liet leiden door de "
+"<ulink url=\"&url-gnu-intro;\">GNU</ulink>-filosofie, is over de jaren heen "
+"uitgegroeid tot een organisatie van ongeveer &num-of-debian-developers; "
+"<firstterm>Debian-ontwikkelaars</firstterm>."
+
+#. Tag: para
+#: welcome.xml:35
+#, no-c-format
+msgid ""
+"Debian Developers are involved in a variety of activities, including <ulink "
+"url=\"&url-debian-home;\">Web</ulink> and <ulink url=\"&url-debian-ftp;"
+"\">FTP</ulink> site administration, graphic design, legal analysis of "
+"software licenses, writing documentation, and, of course, maintaining "
+"software packages."
+msgstr ""
+"Debian-ontwikkelaars zijn betrokken bij een verscheidenheid aan "
+"activiteiten, waaronder <ulink url=\"&url-debian-home;\">Web-</ulink> en "
+"<ulink url=\"&url-debian-ftp;\">FTP-</ulink>sitebeheer, grafische "
+"vormgeving, de juridische analyse van softwarelicenties, het schrijven van "
+"documentatie en natuurlijk ook het onderhouden van softwarepakketten."
+
+#. Tag: para
+#: welcome.xml:44
+#, no-c-format
+msgid ""
+"In the interest of communicating our philosophy and attracting developers "
+"who believe in the principles that Debian stands for, the Debian Project has "
+"published a number of documents that outline our values and serve as guides "
+"to what it means to be a Debian Developer:"
+msgstr ""
+"Om onze filosofie te kunnen verspreiden en ontwikkelaars te kunnen "
+"aantrekken die geloven in de principes waarvoor Debian staat, heeft het "
+"Debian-project een aantal documenten uitgegeven die onze waarden beschrijven "
+"en als richtlijnen gelden voor wat het betekent om een Debian-ontwikkelaar "
+"te zijn:"
+
+#. Tag: para
+#: welcome.xml:52
+#, no-c-format
+msgid ""
+"The <ulink url=\"&url-social-contract;\">Debian Social Contract</ulink> is a "
+"statement of Debian's commitments to the Free Software Community. Anyone who "
+"agrees to abide to the Social Contract may become a <ulink url=\"&url-new-"
+"maintainer;\">maintainer</ulink>. Any maintainer can introduce new software "
+"into Debian &mdash; provided that the software meets our criteria for being "
+"free, and the package follows our quality standards."
+msgstr ""
+"Het <ulink url=\"&url-social-contract;\">Debian Social Contract</ulink>, het "
+"Sociaal Contract van Debian, is een toelichting bij de engagementen van "
+"Debian tegenover de vrije-softwaregemeenschap. Iedereen die ermee akkoord "
+"gaat om zich te houden aan het Sociaal Contract kan een <ulink url=\"&url-"
+"new-maintainer;\">maintainer</ulink>, een onderhouder van Debian, worden. "
+"Elke onderhouder kan nieuwe software introduceren in Debian &mdash; mits de "
+"software beantwoordt aan onze criteria inzake vrije software en het pakket "
+"voldoet aan onze kwaliteitsstandaarden."
+
+#. Tag: para
+#: welcome.xml:64
+#, no-c-format
+msgid ""
+"The <ulink url=\"&url-dfsg;\">Debian Free Software Guidelines</ulink> are a "
+"clear and concise statement of Debian's criteria for free software. The DFSG "
+"is a very influential document in the Free Software Movement, and was the "
+"foundation of the <ulink url=\"&url-osd;\">The Open Source Definition</"
+"ulink>."
+msgstr ""
+"De <ulink url=\"&url-dfsg;\">Debian Free Software Guidelines</ulink>, de "
+"richtlijnen van Debian inzake vrije software, zijn een duidelijke en "
+"beknopte beschrijving van de criteria die Debian hanteert om te beslissen of "
+"software vrij is. De DFSG hebben een grote invloed binnen de beweging voor "
+"vrije software en ze hebben als basis gediend voor <ulink url=\"&url-osd;"
+"\">The Open Source Definition</ulink>, de definiëring van wat open broncode "
+"is."
+
+#. Tag: para
+#: welcome.xml:74
+#, no-c-format
+msgid ""
+"The <ulink url=\"&url-debian-policy;\">Debian Policy Manual</ulink> is an "
+"extensive specification of the Debian Project's standards of quality."
+msgstr ""
+"De <ulink url=\"&url-debian-policy;\">Debian Policy Manual</ulink>, het "
+"beleidshandboek van Debian, geeft een omstandige specificatie van de "
+"kwaliteitsstandaarden van het Debian-project."
+
+#. Tag: para
+#: welcome.xml:82
+#, no-c-format
+msgid ""
+"Debian developers are also involved in a number of other projects; some "
+"specific to Debian, others involving some or all of the Linux community. "
+"Some examples include:"
+msgstr ""
+"Ontwikkelaars van Debian zijn ook actief in een aantal andere projecten. "
+"Sommige daarvan zijn specifiek voor Debian, andere hebben betrekking op een "
+"onderdeel van of de gehele Linux-gemeenschap. Enkele voorbeelden zijn:"
+
+#. Tag: para
+#: welcome.xml:89
+#, no-c-format
+msgid ""
+"The <ulink url=\"&url-fhs-home;\">Filesystem Hierarchy Standard</ulink> "
+"(FHS) is an effort to standardize the layout of the Linux file system. The "
+"FHS will allow software developers to concentrate their efforts on designing "
+"programs, without having to worry about how the package will be installed in "
+"different GNU/Linux distributions."
+msgstr ""
+"De <ulink url=\"&url-fhs-home;\">Filesystem Hierarchy Standard</ulink> "
+"(FHS), een gestandaardiseerde bestandssysteemhiërarchie, is een poging om de "
+"inrichting van het Linux bestandssysteem te standaardiseren. De FHS moet "
+"softwareontwikkelaars toelaten om zich te concentreren op het ontwerpen van "
+"programma's zonder zich zorgen te moeten maken over hoe het pakket in de "
+"verschillende GNU/Linux-distributies geïnstalleerd zal worden."
+
+#. Tag: para
+#: welcome.xml:99
+#, no-c-format
+msgid ""
+"<ulink url=\"&url-debian-jr;\">Debian Jr.</ulink> is an internal project, "
+"aimed at making sure Debian has something to offer to our youngest users."
+msgstr ""
+"<ulink url=\"&url-debian-jr;\">Debian Jr.</ulink> is een intern project dat "
+"erop gericht is te garanderen dat Debian ook iets te bieden heeft voor de "
+"jongste gebruikers."
+
+#. Tag: para
+#: welcome.xml:108
+#, no-c-format
+msgid ""
+"For more general information about Debian, see the <ulink url=\"&url-debian-"
+"faq;\">Debian FAQ</ulink>."
+msgstr ""
+"Voor meer algemene informatie over Debian kunt u terecht bij de <ulink url="
+"\"&url-debian-faq;\">Debian FAQ</ulink>."
+
+#. Tag: title
+#: welcome.xml:123
+#, no-c-format
+msgid "What is GNU/Linux?"
+msgstr "Wat is GNU/Linux?"
+
+#. Tag: para
+#: welcome.xml:124
+#, no-c-format
+msgid ""
+"Linux is an operating system: a series of programs that let you interact "
+"with your computer and run other programs."
+msgstr ""
+"Linux is een besturingssysteem, een reeks programma's die u in staat stellen "
+"om te gaan met uw computer en er andere programma's op uit te voeren."
+
+#. Tag: para
+#: welcome.xml:129
+#, no-c-format
+msgid ""
+"An operating system consists of various fundamental programs which are "
+"needed by your computer so that it can communicate and receive instructions "
+"from users; read and write data to hard disks, tapes, and printers; control "
+"the use of memory; and run other software. The most important part of an "
+"operating system is the kernel. In a GNU/Linux system, Linux is the kernel "
+"component. The rest of the system consists of other programs, many of which "
+"were written by or for the GNU Project. Because the Linux kernel alone does "
+"not form a working operating system, we prefer to use the term <quote>GNU/"
+"Linux</quote> to refer to systems that many people casually refer to as "
+"<quote>Linux</quote>."
+msgstr ""
+"Een besturingssysteem bestaat uit verschillende fundamentele programma's die "
+"uw computer nodig heeft om te kunnen communiceren en instructies van "
+"gebruikers te kunnen ontvangen, om gegevens te lezen van en te schrijven "
+"naar harde schijven, magneetbanden en printers, om het geheugengebruik te "
+"regelen en om andere programma's uit te voeren. Het belangrijkste onderdeel "
+"van een besturingssysteem is de kernel. In een GNU/Linux-systeem is Linux de "
+"kernelcomponent. De rest van het systeem bestaat uit andere programma's, "
+"waarvan er veel geschreven werden door of voor het GNU-project. Omdat de "
+"Linuxkernel op zich geen werkzaam besturingssysteem oplevert, verkiezen we "
+"om de term <quote>GNU/Linux</quote> te gebruiken om te verwijzen naar "
+"systemen die veel mensen achteloos <quote>Linux</quote> noemen."
+
+#. Tag: para
+#: welcome.xml:143
+#, no-c-format
+msgid ""
+"Linux is modelled on the Unix operating system. From the start, Linux was "
+"designed to be a multi-tasking, multi-user system. These facts are enough to "
+"make Linux different from other well-known operating systems. However, Linux "
+"is even more different than you might imagine. In contrast to other "
+"operating systems, nobody owns Linux. Much of its development is done by "
+"unpaid volunteers."
+msgstr ""
+"Linux is gemaakt naar het model van het Unix-besturingssysteem. Vanaf het "
+"begin werd Linux ontworpen als een systeem voor multitasking en met meerdere "
+"gebruikers. Alleen al deze elementen maken Linux anders dan andere "
+"welbekende besturingssystemen. Linux verschilt zelfs nog meer dan u "
+"misschien wel denkt. In tegenstelling tot andere besturingssystemen is "
+"niemand eigenaar van Linux. Veel van zijn ontwikkeling gebeurt door "
+"onbetaalde vrijwilligers."
+
+#. Tag: para
+#: welcome.xml:152
+#, no-c-format
+msgid ""
+"Development of what later became GNU/Linux began in 1984, when the <ulink "
+"url=\"&url-fsf;\">Free Software Foundation</ulink> began development of a "
+"free Unix-like operating system called GNU."
+msgstr ""
+"Het ontwikkelen van wat later GNU/Linux werd, begon in 1984, toen de <ulink "
+"url=\"&url-fsf;\">Free Software Foundation</ulink> startte met de "
+"ontwikkeling van een vrij Unix-achtig besturingssysteem dat GNU genoemd werd."
+
+#. Tag: para
+#: welcome.xml:158
+#, no-c-format
+msgid ""
+"The <ulink url=\"&url-gnu;\">GNU Project</ulink> has developed a "
+"comprehensive set of free software tools for use with Unix&trade; and Unix-"
+"like operating systems such as Linux. These tools enable users to perform "
+"tasks ranging from the mundane (such as copying or removing files from the "
+"system) to the arcane (such as writing and compiling programs or doing "
+"sophisticated editing in a variety of document formats)."
+msgstr ""
+"Het <ulink url=\"&url-gnu;\">GNU-project</ulink> heeft een omvattend geheel "
+"van vrije-softwaregereedschappen ontwikkeld om te worden gebruikt met "
+"Unix&trade; en Unix-achtige besturingssystemen, zoals Linux. Deze "
+"gereedschappen laten gebruikers toe taken uit te voeren, gaande van "
+"eenvoudige taken (zoals bestanden kopiëren en van het systeem verwijderen) "
+"tot zeer complexe (zoals het schrijven en compileren van programma's of het "
+"uitvoeren van geavanceerde bewerkingen op documenten in uiteenlopende "
+"bestandsformaten)."
+
+#. Tag: para
+#: welcome.xml:168
+#, no-c-format
+msgid ""
+"While many groups and individuals have contributed to Linux, the largest "
+"single contributor is still the Free Software Foundation, which created not "
+"only most of the tools used in Linux, but also the philosophy and the "
+"community that made Linux possible."
+msgstr ""
+"Hoewel veel groepen en individuen bijgedragen hebben tot Linux, blijft de "
+"Free Software Foundation nog steeds de entiteit met de grootste inbreng, "
+"omdat ze niet enkel het grootste deel van de gereedschappen maakte die in "
+"Linux gebruikt worden, maar ook de filosofie en de gemeenschap creëerde die "
+"Linux mogelijk maakten."
+
+#. Tag: para
+#: welcome.xml:175
+#, no-c-format
+msgid ""
+"The <ulink url=\"&url-kernel-org;\">Linux kernel</ulink> first appeared in "
+"1991, when a Finnish computing science student named Linus Torvalds "
+"announced an early version of a replacement kernel for Minix to the Usenet "
+"newsgroup <userinput>comp.os.minix</userinput>. See Linux International's "
+"<ulink url=\"&url-linux-history;\">Linux History Page</ulink>."
+msgstr ""
+"De <ulink url=\"&url-kernel-org;\">Linuxkernel</ulink> verscheen voor het "
+"eerst op het toneel in 1991, toen Linus Torvalds, een Finse student in de "
+"computerwetenschappen, in de Usenet-nieuwsgroep <userinput>comp.os.minix</"
+"userinput> een preliminaire versie aankondigde van een alternatieve kernel "
+"voor Minix. Zie de pagina <ulink url=\"&url-linux-history;\">Linux History</"
+"ulink> (de geschiedenis van Linux) van Linux International."
+
+#. Tag: para
+#: welcome.xml:184
+#, no-c-format
+msgid ""
+"Linus Torvalds continues to coordinate the work of several hundred "
+"developers with the help of a number of subsystem maintainers. There is an "
+"<ulink url=\"&url-kernel-org;\">official website</ulink> for the Linux "
+"kernel. Information about the <userinput>linux-kernel</userinput> mailing "
+"list can be found on the <ulink url=\"&url-linux-kernel-list-faq;\">linux-"
+"kernel mailing list FAQ</ulink>."
+msgstr ""
+"Linus Torvalds blijft met de hulp van een aantal onderhouders van "
+"subsystemen het werk van honderden ontwikkelaars coördineren. Er bestaat "
+"voor de Linuxkernel een <ulink url=\"&url-kernel-org;\">officiële website</"
+"ulink>. Informatie over de mailinglijst over de <userinput>Linuxkernel</"
+"userinput> kunt u vinden in de <ulink url=\"&url-linux-kernel-list-faq;"
+"\">linux-kernel mailing list FAQ</ulink> (FAQ van de mailinglijst over de "
+"Linuxkernel)."
+
+#. Tag: para
+#: welcome.xml:194
+#, no-c-format
+msgid ""
+"Linux users have immense freedom of choice in their software. For example, "
+"Linux users can choose from a dozen different command line shells and "
+"several graphical desktops. This selection is often bewildering to users of "
+"other operating systems, who are not used to thinking of the command line or "
+"desktop as something that they can change."
+msgstr ""
+"Gebruikers van Linux hebben een immense keuzevrijheid wat software betreft. "
+"Linuxgebruikers hebben bijvoorbeeld de keuze uit een dozijn verschillende "
+"shells voor de commandoregel en verschillende grafische "
+"bureaubladomgevingen. Gebruikers van andere besturingssystemen zijn vaak "
+"verbijsterd over deze keuzemogelijkheid omdat het voor hen ongewoon is om te "
+"denken over de commandoregel of de bureaubladomgeving als iets dat door hen "
+"kan gewijzigd worden."
+
+#. Tag: para
+#: welcome.xml:203
+#, no-c-format
+msgid ""
+"Linux is also less likely to crash, better able to run more than one program "
+"at the same time, and more secure than many operating systems. With these "
+"advantages, Linux is the fastest growing operating system in the server "
+"market. More recently, Linux has begun to be popular among home and business "
+"users as well."
+msgstr ""
+"Linux is ook minder crashgevoelig, is beter in staat om tegelijk meer dan "
+"één programma uit te voeren en veiliger dan veel besturingssystemen. Omwille "
+"van deze voordelen is Linux het snelst groeiende besturingssysteem in het "
+"serversergment. En meer recent is Linux ook populairder geworden voor "
+"computergebruik thuis en op het werk."
+
+#. Tag: title
+#: welcome.xml:221
+#, no-c-format
+msgid "What is &debian; GNU/Linux?"
+msgstr "Wat is &debian; GNU/Linux?"
+
+#. Tag: para
+#: welcome.xml:222
+#, no-c-format
+msgid ""
+"The combination of &debian;'s philosophy and methodology and the GNU tools, "
+"the Linux kernel, and other important free software, form a unique software "
+"distribution called &debian; GNU/Linux. This distribution is made up of a "
+"large number of software <emphasis>packages</emphasis>. Each package in the "
+"distribution contains executables, scripts, documentation, and configuration "
+"information, and has a <emphasis>maintainer</emphasis> who is primarily "
+"responsible for keeping the package up-to-date, tracking bug reports, and "
+"communicating with the upstream author(s) of the packaged software. Our "
+"extremely large user base, combined with our bug tracking system ensures "
+"that problems are found and fixed quickly."
+msgstr ""
+"De filosofie en methodiek van &debian; in combinatie met het GNU-"
+"gereedschap, de Linuxkernel en andere belangrijke vrije software levert een "
+"unieke softwaredistributie op die de naam &debian; GNU/Linux draagt. Deze "
+"distributie bestaat uit een groot aantal <emphasis>softwarepakketten</"
+"emphasis>. Elk pakket uit de distributie bevat uitvoerbare bestanden, "
+"scripts, documentatie en configuratie-informatie en heeft een "
+"<emphasis>onderhouder</emphasis> (maintainer) die in de eerste plaats "
+"verantwoordelijk is om het pakket up-to-date te houden, bugrapporten op te "
+"volgen en de communicatie te onderhouden met de auteur(s) die de software "
+"die de onderhouder verpakt, aanlever(t/en). Ons extreem groot "
+"gebruikersaantal in combinatie met ons bugopvolgingssysteem zorgt ervoor dat "
+"problemen snel ontdekt en gerepareerd worden."
+
+#. Tag: para
+#: welcome.xml:236
+#, no-c-format
+msgid ""
+"&debian;'s attention to detail allows us to produce a high-quality, stable, "
+"and scalable distribution. Installations can be easily configured to serve "
+"many roles, from stripped-down firewalls to desktop scientific workstations "
+"to high-end network servers."
+msgstr ""
+"De aandacht voor detail in &debian; laat ons toe een hoogkwalitatieve, "
+"stabiele en schaalbare distributie te produceren. Installaties kunnen "
+"gemakkelijk geconfigureerd worden om uiteenlopende functies te vervullen, "
+"gaande van minimale firewalls over wetenschappelijke werkstations tot "
+"hoogwaardige netwerkservers."
+
+#. Tag: para
+#: welcome.xml:243
+#, no-c-format
+msgid ""
+"&debian; is especially popular among advanced users because of its technical "
+"excellence and its deep commitment to the needs and expectations of the "
+"Linux community. &debian; also introduced many features to Linux that are "
+"now commonplace."
+msgstr ""
+"&debian; is vooral populair bij geavanceerde gebruikers omwille van zijn "
+"technische uitmuntendheid en zijn vergaande betrokkenheid op de noden en "
+"verwachtingen van de Linuxgemeenschap. &debian; bracht ook heel wat nieuwe "
+"functionaliteit aan die nu gemeengoed is in Linux."
+
+#. Tag: para
+#: welcome.xml:250
+#, no-c-format
+msgid ""
+"For example, &debian; was the first Linux distribution to include a package "
+"management system for easy installation and removal of software. It was also "
+"the first Linux distribution that could be upgraded without requiring "
+"reinstallation."
+msgstr ""
+"&debian; was bijvoorbeeld de eerste Linuxdistributie die een systeem voor "
+"pakketbeheer toevoegde om het installeren en verwijderen van software "
+"eenvoudig te maken. Het was ook de eerste Linuxdistributie die opgewaardeerd "
+"kon worden zonder dat ze opnieuw geïnstalleerd moest worden."
+
+#. Tag: para
+#: welcome.xml:257
+#, no-c-format
+msgid ""
+"&debian; continues to be a leader in Linux development. Its development "
+"process is an example of just how well the Open Source development model can "
+"work &mdash; even for very complex tasks such as building and maintaining a "
+"complete operating system."
+msgstr ""
+"&debian; blijft een hoofdrolspeler in de verdere ontwikkeling van Linux. Het "
+"ontwikkelingsproces dat ze hanteert toont aan hoe goed een Open-Source- of "
+"Open-Bron-ontwikkelingsmodel kan werken &mdash; zelfs voor zeer complexe "
+"taken als het bouwen en onderhouden van een volledig besturingssysteem."
+
+#. Tag: para
+#: welcome.xml:264
+#, no-c-format
+msgid ""
+"The feature that most distinguishes &debian; from other Linux distributions "
+"is its package management system. These tools give the administrator of a "
+"&debian; system complete control over the packages installed on that system, "
+"including the ability to install a single package or automatically update "
+"the entire operating system. Individual packages can also be protected from "
+"being updated. You can even tell the package management system about "
+"software you have compiled yourself and what dependencies it fulfills."
+msgstr ""
+"Het element dat &debian; het meest onderscheidt van andere "
+"Linuxdistributies, is haar systeem voor pakketbeheer. Deze gereedschappen "
+"geven de beheerder van een &debian;-systeem de volledige controle over de "
+"pakketten die op dat systeem geïnstalleerd zijn, zoals de mogelijkheid om "
+"één enkel pakket te installeren of het volledige besturingssysteem "
+"automatisch op te waarderen. Individuele pakketten kunnen ook tegen "
+"opwaardering afgeschermd worden. U kunt het systeem voor pakketbeheer zelfs "
+"informeren over de software die u zelf gecompileerd hebt en over de "
+"vereisten die ze vervult / de afhankelijkheden waaraan ze tegemoetkomt."
+
+#. Tag: para
+#: welcome.xml:275
+#, no-c-format
+msgid ""
+"To protect your system against <quote>Trojan horses</quote> and other "
+"malevolent software, &debian;'s servers verify that uploaded packages come "
+"from their registered &debian; maintainers. &debian; packagers also take "
+"great care to configure their packages in a secure manner. When security "
+"problems in shipped packages do appear, fixes are usually available very "
+"quickly. With &debian;'s simple update options, security fixes can be "
+"downloaded and installed automatically across the Internet."
+msgstr ""
+"Om uw systeem te beschermen tegen <quote>Trojaanse paarden</quote> en andere "
+"kwaadwillende software, controleren de servers van &debian; of pakketten die "
+"geüpload worden, afkomstig zijn van hun bij &debian; geregistreerde "
+"onderhouders. Pakketonderhouders van &debian; besteden ook grote zorg aan "
+"een veilige configuratie van hun pakketten. Als er een veiligheidsprobleem "
+"vastgesteld wordt in een van de gedistribueerde pakketten, is een reparatie "
+"meestal zeer snel beschikbaar. Met de eenvoudige updatemogelijkheden die "
+"&debian; biedt, kunnen veiligheidsreparaties automatisch van het internet "
+"gedownload en geïnstalleerd worden."
+
+#. Tag: para
+#: welcome.xml:285
+#, no-c-format
+msgid ""
+"The primary, and best, method of getting support for your &debian; GNU/Linux "
+"system and communicating with &debian; Developers is through the many "
+"mailing lists maintained by the &debian; Project (there are more than &num-"
+"of-debian-maillists; at this writing). The easiest way to subscribe to one "
+"or more of these lists is visit <ulink url=\"&url-debian-lists-subscribe;\"> "
+"Debian's mailing list subscription page</ulink> and fill out the form you'll "
+"find there."
+msgstr ""
+"De belangrijkste en beste manier om ondersteuning voor uw &debian; GNU/Linux-"
+"systeem te bekomen en te communiceren met de ontwikkelaars van &debian; is "
+"via een van de vele mailinglijsten die door het &debian;-project onderhouden "
+"worden (meer dan &num-of-debian-maillists; op het tijdstip waarop dit "
+"document werd gemaakt). De makkelijkste manier om u te abonneren op een of "
+"meer van deze lijsten, is via het formulier dat u kunt vinden op de <ulink "
+"url=\"&url-debian-lists-subscribe;\"> Pagina voor het intekenen op "
+"mailinglijsten van Debian</ulink>."
+
+#. Tag: title
+#: welcome.xml:308
+#, no-c-format
+msgid "What is &debian; GNU/kFreeBSD?"
+msgstr "Wat is &debian; GNU/kFreeBSD?"
+
+#. Tag: para
+#: welcome.xml:310
+#, no-c-format
+msgid ""
+"&debian; GNU/kFreeBSD is a &debian; GNU system with the kFreeBSD kernel."
+msgstr ""
+"&debian; GNU/kFreeBSD is een &debian; GNU-systeem met de kFreeBSD-kernel."
+
+#. Tag: para
+#: welcome.xml:314
+#, no-c-format
+msgid ""
+"This port of &debian; is currently only being developed for the i386 and "
+"amd64 architectures, although ports to other architectures is possible."
+msgstr ""
+"Momenteel wordt deze specifieke uitgave van het &debian;-systeem enkel "
+"ontwikkeld voor de computerarchitecturen i386 en amd64, hoewel het geschikt "
+"maken ervan voor andere architecturen mogelijk is."
+
+#. Tag: para
+#: welcome.xml:319
+#, no-c-format
+msgid ""
+"Please note that &debian; GNU/kFreeBSD is not a Linux system, and thus some "
+"information on Linux system may not apply to it."
+msgstr ""
+"Merk op dat &debian; GNU/kFreeBSD geen Linuxsysteem is en dat dus bepaalde "
+"informatie over Linuxsystemen er niet op van toepassing kan zijn."
+
+#. Tag: para
+#: welcome.xml:324
+#, no-c-format
+msgid ""
+"For more information, see the <ulink url=\"http://www.debian.org/ports/"
+"kfreebsd-gnu/\"> &debian; GNU/kFreeBSD ports page</ulink> and the "
+"<email>debian-bsd@lists.debian.org</email> mailing list."
+msgstr ""
+"Raadpleeg voor meer informatie de internetpagina over <ulink url=\"http://"
+"www.debian.org/ports/kfreebsd-gnu/\"> &debian; GNU/kFreeBSD</ulink> en de "
+"mailinglijst <email>debian-bsd@lists.debian.org</email>."
+
+#. Tag: title
+#: welcome.xml:343
+#, no-c-format
+msgid "What is &debian; GNU/Hurd?"
+msgstr "Wat is &debian; GNU/Hurd?"
+
+#. Tag: para
+#: welcome.xml:345
+#, no-c-format
+msgid ""
+"&debian; GNU/Hurd is a &debian; GNU system with the GNU Hurd &mdash; a set "
+"of servers running on top of the GNU Mach microkernel."
+msgstr ""
+"&debian; GNU/Hurd is een &debian; GNU-systeem met de GNU Hurd &mdash; een "
+"geheel van servers die bovenop de GNU Mach microkernel functioneren."
+
+#. Tag: para
+#: welcome.xml:350
+#, no-c-format
+msgid ""
+"The Hurd is still unfinished, and is unsuitable for day-to-day use, but work "
+"is continuing. The Hurd is currently only being developed for the i386 "
+"architecture, although ports to other architectures will be made once the "
+"system becomes more stable."
+msgstr ""
+"De Hurd is nog niet afgewerkt en is dus niet geschikt voor dagelijks "
+"gebruik, maar er wordt nog steeds aan voortgewerkt. Momenteel wordt de Hurd "
+"enkel ontwikkeld voor de i386-architectuur, hoewel het systeem ook voor "
+"andere architecturen geschikt gemaakt zal worden, eens het meer stabiel "
+"geworden is."
+
+#. Tag: para
+#: welcome.xml:358
+#, no-c-format
+msgid ""
+"Please note that &debian; GNU/Hurd is not a Linux system, and thus some "
+"information on Linux system may not apply to it."
+msgstr ""
+"Merk op dat &debian; GNU/Hurd geen Linuxsysteem is en dat dus bepaalde "
+"informatie over Linuxsystemen er niet op van toepassing kan zijn."
+
+#. Tag: para
+#: welcome.xml:363
+#, no-c-format
+msgid ""
+"For more information, see the <ulink url=\"http://www.debian.org/ports/hurd/"
+"\"> &debian; GNU/Hurd ports page</ulink> and the <email>debian-hurd@lists."
+"debian.org</email> mailing list."
+msgstr ""
+"Raadpleeg voor meer informatie de internetpagina over <ulink url=\"http://"
+"www.debian.org/ports/hurd/\"> &debian; GNU/Hurd</ulink> en de mailinglijst "
+"<email>debian-hurd@lists.debian.org</email>."
+
+#. Tag: title
+#: welcome.xml:380
+#, no-c-format
+msgid "What is the Debian Installer?"
+msgstr "Wat is het installatiesysteem van Debian?"
+
+#. Tag: para
+#: welcome.xml:382
+#, no-c-format
+msgid ""
+"Debian Installer, also known as <quote>d-i</quote>, is the software system "
+"to install a basic working Debian system. A wide range of hardware such as "
+"embedded devices, laptops, desktops and server machines is supported and a "
+"large set of free software for many purposes is offered."
+msgstr ""
+"Het installatiesysteem van Debian, ook bekend als <quote>Debian Installer</"
+"quote> of <quote>d-i</quote>, is het softwaresysteem dat dient voor de "
+"installatie van een werkend basaal Debian-systeem. Een breed spectrum "
+"hardware, zoals ingebedde apparaten, laptops, desktops en servermachines "
+"wordt ondersteund en een uitgebreid gamma vrije software voor velerlei "
+"toepassingen wordt geboden."
+
+#. Tag: para
+#: welcome.xml:389
+#, no-c-format
+msgid ""
+"The installation is conducted by answering a basic set of questions. Also "
+"available are an expert mode that allows to control every aspect of the "
+"installation and an advanced feature to perform automated installations. The "
+"installed system can be used as is or further customized. The installation "
+"can be performed from a multitude of sources: USB, CD/DVD/Blu-Ray or the "
+"network. The installer supports localized installations in more than 80 "
+"languages."
+msgstr ""
+"De installatie wordt gestuurd door het beantwoorden van een aantal basale "
+"vragen. Ook een expertenmodus die toelaat elk aspect van de installatie te "
+"controleren, en een geavanceerd systeem om automatische installaties uit te "
+"voeren, zijn beschikbaar. Het geïnstalleerde systeem kan zonder verdere "
+"bewerking gebruikt worden of kan verder aangepast worden. De installatie kan "
+"vanaf verschillende bronnen uitgevoerd worden: USB, cd/dvd/blu-ray of het "
+"netwerk. Het installatiesysteem ondersteunt een gelokaliseerde installatie "
+"in meer dan 80 talen."
+
+#. Tag: para
+#: welcome.xml:399
+#, no-c-format
+msgid ""
+"The installer has its origin in the boot-floppies project, and it was <ulink "
+"url=\"http://lists.debian.org/debian-boot/2000/06/msg00279.html\">first "
+"mentioned</ulink> by Joey Hess in 2000. Since then the installation system "
+"has been continuously developed by volunteers improving and adding more "
+"features."
+msgstr ""
+"Het installatiesysteem vindt zijn oorsprong in het project voor "
+"opstartdiskettes en werd <ulink url=\"http://lists.debian.org/debian-"
+"boot/2000/06/msg00279.html\">voor het eerst vermeld</ulink> door Joey Hess "
+"in 2000. Sindsdien hebben vrijwilligers het installatiesysteem voortdurend "
+"verder ontwikkeld, verbeterd en er meer functies aan toegevoegd."
+
+#. Tag: para
+#: welcome.xml:407
+#, no-c-format
+msgid ""
+"More information can be found on the <ulink url=\"&url-d-i;\">Debian "
+"Installer page</ulink>, on the <ulink url=\"&url-d-i-wiki;\">Wiki</ulink> "
+"and on the <ulink url=\"&url-debian-boot-list;\">debian-boot mailing list</"
+"ulink>."
+msgstr ""
+"Meer informatie kunt u vinden op de <ulink url=\"&url-d-i;\">pagina van "
+"Debian Installer</ulink>, op de <ulink url=\"&url-d-i-wiki;\">Wiki</ulink> "
+"en op de <ulink url=\"&url-debian-boot-list;\">mailinglijst debian-boot</"
+"ulink>."
+
+#. Tag: title
+#: welcome.xml:422
+#, no-c-format
+msgid "Getting &debian;"
+msgstr "&debian; verkrijgen"
+
+#. Tag: para
+#: welcome.xml:424
+#, no-c-format
+msgid ""
+"For information on how to download &debian-gnu; from the Internet or from "
+"whom official &debian; CDs can be purchased, see the <ulink url=\"&url-"
+"debian-distrib;\">distribution web page</ulink>. The <ulink url=\"&url-"
+"debian-mirrors;\">list of &debian; mirrors</ulink> contains a full set of "
+"official &debian; mirrors, so you can easily find the nearest one."
+msgstr ""
+"Raadpleeg de <ulink url=\"&url-debian-distrib;\">webpagina over de "
+"distributie</ulink> voor meer informatie over de manier waarop u &debian-"
+"gnu; van het internet kunt downloaden of officiële CD's met &debian; kunt "
+"aankopen. De <ulink url=\"&url-debian-mirrors;\">lijst met &debian; "
+"spiegelservers</ulink> bevat een volledige lijst van officiële &debian; "
+"spiegelservers, zodat u gemakkelijk de dichtstbijzijnde kunt vinden."
+
+#. Tag: para
+#: welcome.xml:433
+#, no-c-format
+msgid ""
+"&debian; can be upgraded after installation very easily. The installation "
+"procedure will help set up the system so that you can make those upgrades "
+"once installation is complete, if need be."
+msgstr ""
+"Na installatie kan &debian; zeer gemakkelijk opgewaardeerd worden. De "
+"installatieprocedure helpt bij het instellen van het systeem, zodat u deze "
+"opwaarderingen, indien nodig, na het installeren van het systeem kunt "
+"uitvoeren."
+
+#. Tag: title
+#: welcome.xml:448
+#, no-c-format
+msgid "Getting the Newest Version of This Document"
+msgstr "De meest recente versie van dit document verkrijgen"
+
+#. Tag: para
+#: welcome.xml:450
+#, no-c-format
+msgid ""
+"This document is constantly being revised. Be sure to check the <ulink url="
+"\"&url-release-area;\"> Debian &release; pages</ulink> for any last-minute "
+"information about the &release; release of the &debian-gnu; system. Updated "
+"versions of this installation manual are also available from the <ulink url="
+"\"&url-install-manual;\">official Install Manual pages</ulink>."
+msgstr ""
+"Dit document wordt permanent bijgewerkt. Kijk dus zeker op de <ulink url="
+"\"&url-release-area;\"> pagina's over Debian &release;</ulink> voor "
+"eventuele informatie over release &release; van het &debian-gnu;-systeem die "
+"op het laatste moment beschikbaar geworden is. Een bijgewerkte versie van "
+"deze installatiehandleiding is ook te vinden op de <ulink url=\"&url-install-"
+"manual;\">officiële pagina van de Installatiehandleiding</ulink>."
+
+#. Tag: title
+#: welcome.xml:468
+#, no-c-format
+msgid "Organization of This Document"
+msgstr "De opbouw van dit document"
+
+#. Tag: para
+#: welcome.xml:470
+#, no-c-format
+msgid ""
+"This document is meant to serve as a manual for first-time &debian; users. "
+"It tries to make as few assumptions as possible about your level of "
+"expertise. However, we do assume that you have a general understanding of "
+"how the hardware in your computer works."
+msgstr ""
+"Dit document is opgevat als een handleiding voor wie &debian; voor het eerst "
+"gebruikt. Het probeert zo weinig mogelijk vooronderstellingen te maken over "
+"het niveau van uw expertise. Niettemin gaan we ervan uit dat u een algemeen "
+"begrip heeft over de wijze waarop de hardware in uw computer functioneert."
+
+#. Tag: para
+#: welcome.xml:477
+#, no-c-format
+msgid ""
+"Expert users may also find interesting reference information in this "
+"document, including minimum installation sizes, details about the hardware "
+"supported by the &debian; installation system, and so on. We encourage "
+"expert users to jump around in the document."
+msgstr ""
+"Ook ervaren gebruikers kunnen in dit document interessante referentie-"
+"informatie vinden, onder meer over de minimale grootte van een installatie, "
+"over de hardware die door het installatiesysteem van &debian; ondersteund "
+"wordt, enzovoort. We moedigen ervaren gebruikers aan om wat rond te neuzen "
+"in dit document."
+
+#. Tag: para
+#: welcome.xml:484
+#, no-c-format
+msgid ""
+"In general, this manual is arranged in a linear fashion, walking you through "
+"the installation process from start to finish. Here are the steps in "
+"installing &debian-gnu;, and the sections of this document which correlate "
+"with each step:"
+msgstr ""
+"Globaal genomen werd dit document lineair opgebouwd en neemt het u mee door "
+"het installatieproces vanaf het begin tot het einde. Dit zijn de "
+"verschillende stappen bij het installeren van &debian-gnu; en de "
+"overeenkomstige secties van dit document:"
+
+#. Tag: para
+#: welcome.xml:492
+#, no-c-format
+msgid ""
+"Determine whether your hardware meets the requirements for using the "
+"installation system, in <xref linkend=\"hardware-req\"/>."
+msgstr ""
+"Het vaststellen of uw hardware voldoet aan de vereisten om het "
+"installatiesysteem te kunnen gebruiken in <xref linkend=\"hardware-req\"/>."
+
+#. Tag: para
+#: welcome.xml:498
+#, no-c-format
+msgid ""
+"Backup your system, perform any necessary planning and hardware "
+"configuration prior to installing &debian;, in <xref linkend=\"preparing\"/"
+">. If you are preparing a multi-boot system, you may need to create "
+"partitionable space on your hard disk for &debian; to use."
+msgstr ""
+"Het maken van een back-up van uw systeem en het voorafgaand aan de "
+"installatie van &debian; uitvoeren van de nodige planning en hardware-"
+"configuratie in <xref linkend=\"preparing\"/>. Indien u een multi-boot-"
+"systeem, een systeem met verschillende besturingssystemen, voor ogen heeft, "
+"kan het zijn dat u op uw harde schijf ruimte die gepartitioneerd kan worden "
+"moet vrijmaken ten behoeve van &debian;."
+
+#. Tag: para
+#: welcome.xml:506
+#, no-c-format
+msgid ""
+"In <xref linkend=\"install-methods\"/>, you will obtain the necessary "
+"installation files for your method of installation."
+msgstr ""
+"In <xref linkend=\"install-methods\"/> verkrijgt u de installatiebestanden "
+"die u voor uw installatiemethode nodig heeft."
+
+#. Tag: para
+#: welcome.xml:512
+#, no-c-format
+msgid ""
+"The next <xref linkend=\"boot-installer\"/> describes booting into the "
+"installation system. This chapter also discusses troubleshooting procedures "
+"in case you have problems with this step."
+msgstr ""
+"Het volgende hoofdstuk <xref linkend=\"boot-installer\"/> beschrijft het "
+"opstarten van het installatiesysteem. Dit hoofdstuk gaat ook in op "
+"procedures voor het oplossen van problemen die zich bij deze stap zouden "
+"kunnen stellen."
+
+#. Tag: para
+#: welcome.xml:519
+#, no-c-format
+msgid ""
+"Perform the actual installation according to <xref linkend=\"d-i-intro\"/>. "
+"This involves choosing your language, configuring peripheral driver modules, "
+"configuring your network connection, so that remaining installation files "
+"can be obtained directly from a &debian; server (if you are not installing "
+"from a CD/DVD set), partitioning your hard drives and installation of a base "
+"system, then selection and installation of tasks. (Some background about "
+"setting up the partitions for your &debian; system is explained in <xref "
+"linkend=\"partitioning\"/>.)"
+msgstr ""
+"Het uitvoeren van de echte installatie volgens de informatie uit <xref "
+"linkend=\"d-i-intro\"/>. Dit houdt de keuze van een taal in, het "
+"configureren van stuurprogrammamodules voor randapparatuur, het configureren "
+"van uw netwerkverbinding zodat de overige installatiebestanden rechtstreeks "
+"van een &debian;-server opgehaald kunnen worden (in het geval u de "
+"installatie niet uitvoert aan de hand van een set CD's/DVD's), het "
+"partitioneren van de harde schijven en de installatie van het basissysteem "
+"en nadien het selecteren en installeren van taken. (Enige "
+"achtergrondinformatie over het instellen van de partities voor uw &debian;-"
+"systeem vindt u in <xref linkend=\"partitioning\"/>.)"
+
+#. Tag: para
+#: welcome.xml:532
+#, no-c-format
+msgid ""
+"Boot into your newly installed base system, from <xref linkend=\"boot-new\"/"
+">."
+msgstr ""
+"Het opstarten van uw pas geïnstalleerd basissysteem in <xref linkend=\"boot-"
+"new\"/>."
+
+#. Tag: para
+#: welcome.xml:540
+#, no-c-format
+msgid ""
+"Once you've got your system installed, you can read <xref linkend=\"post-"
+"install\"/>. That chapter explains where to look to find more information "
+"about Unix and &debian;, and how to replace your kernel."
+msgstr ""
+"Nadat u het systeem geïnstalleerd heeft, kunt u <xref linkend=\"post-install"
+"\"/> lezen. Dat hoofdstuk legt uit waar u bijkomende informatie over Unix en "
+"&debian; kunt vinden en hoe u een kernel kunt vervangen."
+
+#. Tag: para
+#: welcome.xml:550
+#, no-c-format
+msgid ""
+"Finally, information about this document and how to contribute to it may be "
+"found in <xref linkend=\"administrivia\"/>."
+msgstr ""
+"Tenslotte kunt u informatie over dit document en over hoe u er zelf aan kunt "
+"meehelpen, vinden in <xref linkend=\"administrivia\"/>."
+
+#. Tag: title
+#: welcome.xml:560
+#, no-c-format
+msgid "Your Documentation Help is Welcome"
+msgstr "Wij verwelkomen uw bijdrage aan documentatie"
+
+#. Tag: para
+#: welcome.xml:562
+#, no-c-format
+msgid ""
+"Any help, suggestions, and especially, patches, are greatly appreciated. "
+"Working versions of this document can be found at <ulink url=\"&url-d-i-"
+"dillon-manual;\"></ulink>. There you will find a list of all the different "
+"architectures and languages for which this document is available."
+msgstr ""
+"Eventuele hulp, suggesties en vooral patches worden zeer op prijs gesteld. "
+"Een werkexemplaar van dit document is te vinden op <ulink url=\"&url-d-i-"
+"dillon-manual;\"></ulink>. Daar vindt u ook een lijst van alle verschillende "
+"architecturen en talen waarvoor dit document beschikbaar is."
+
+#. Tag: para
+#: welcome.xml:569
+#, no-c-format
+msgid ""
+"Source is also available publicly; look in <xref linkend=\"administrivia\"/> "
+"for more information concerning how to contribute. We welcome suggestions, "
+"comments, patches, and bug reports (use the package <classname>installation-"
+"guide</classname> for bugs, but check first to see if the problem is already "
+"reported)."
+msgstr ""
+"Ook de broncode is publiekelijk beschikbaar. Kijk bij <xref linkend="
+"\"administrivia\"/> voor meer informatie over de manier waarop u kunt "
+"bijdragen. Wij verwelkomen suggesties, commentaar, patches en bugrapporten "
+"(gebruik het pakket <classname>installation-guide</classname> voor bugs, "
+"maar kijk vooraf na of het probleem niet reeds gemeld werd)."
+
+#. Tag: title
+#: welcome.xml:585
+#, no-c-format
+msgid "About Copyrights and Software Licenses"
+msgstr "Over copyright en softwarelicenties"
+
+#. Tag: para
+#: welcome.xml:588
+#, no-c-format
+msgid ""
+"We're sure that you've read some of the licenses that come with most "
+"commercial software &mdash; they usually say that you can only use one copy "
+"of the software on a single computer. This system's license isn't like that "
+"at all. We encourage you to put a copy of &debian-gnu; on every computer in "
+"your school or place of business. Lend your installation media to your "
+"friends and help them install it on their computers! You can even make "
+"thousands of copies and <emphasis>sell</emphasis> them &mdash; albeit with a "
+"few restrictions. Your freedom to install and use the system comes directly "
+"from &debian; being based on <emphasis>free software</emphasis>."
+msgstr ""
+"We zijn zeker dat u al sommige van de licenties die aan de meeste "
+"commerciële software gekoppeld zijn, gelezen heeft &mdash; meestal vermelden "
+"ze dat u slechts één kopie van de software op één enkele computer mag "
+"gebruiken. De licentie van dit systeem is helemaal anders. We moedigen u aan "
+"om op elke computer op uw school of op uw werkplek een kopie van &debian-"
+"gnu; te plaatsen. Leen uw installatiemedia uit aan uw vrienden en help hen "
+"om het systeem op hun computer te installeren! U mag er zelfs duizenden "
+"kopieën van maken en die <emphasis>verkopen</emphasis> &mdash; weliswaar met "
+"enkele restricties. Het recht om het systeem te installeren en te gebruiken "
+"wordt u rechtstreeks toegekend door &debian; en heeft te maken met het feit "
+"dat het <emphasis>vrije software</emphasis> is."
+
+#. Tag: para
+#: welcome.xml:601
+#, no-c-format
+msgid ""
+"Calling software <emphasis>free</emphasis> doesn't mean that the software "
+"isn't copyrighted, and it doesn't mean that CDs/DVDs containing that "
+"software must be distributed at no charge. Free software, in part, means "
+"that the licenses of individual programs do not require you to pay for the "
+"privilege of distributing or using those programs. Free software also means "
+"that not only may anyone extend, adapt, and modify the software, but that "
+"they may distribute the results of their work as well."
+msgstr ""
+"Het als <emphasis>vrij</emphasis> bestempelen van software, houdt niet in "
+"dat er geen copyright aan verbonden is en betekent niet dat CD's/DVD's met "
+"die software kosteloos moeten verspreid worden. Vrije software wil onder "
+"meer zeggen dat de licenties van de afzonderlijke programma's niet vereisen "
+"dat u moet betalen voor het recht om deze programma's te verdelen of te "
+"gebruiken. Vrije software wil ook zeggen dat om het even wie die software "
+"mag uitbreiden, aanpassen en wijzigen en het resultaat van zijn werk ook mag "
+"verspreiden."
+
+#. Tag: para
+#: welcome.xml:612
+#, no-c-format
+msgid ""
+"The &debian; project, as a pragmatic concession to its users, does make some "
+"packages available that do not meet our criteria for being free. These "
+"packages are not part of the official distribution, however, and are only "
+"available from the <userinput>contrib</userinput> or <userinput>non-free</"
+"userinput> areas of &debian; mirrors or on third-party CD/DVD-ROMs; see the "
+"<ulink url=\"&url-debian-faq;\">Debian FAQ</ulink>, under <quote>The Debian "
+"FTP archives</quote>, for more information about the layout and contents of "
+"the archives."
+msgstr ""
+"Ten behoeve van zijn gebruikers doet het &debian;-project een pragmatische "
+"toegeving en stelt enkele pakketten ter beschikking die niet beantwoorden "
+"aan onze criteria inzake vrijheid. Deze pakketten maken echter geen deel uit "
+"van de officiële distributie en zijn enkel beschikbaar via de gebieden "
+"<userinput>contrib</userinput> en <userinput>non-free</userinput> van de "
+"spiegelservers van &debian; of op de CD's/DVD's van externe leveranciers. "
+"Zie de <ulink url=\"&url-debian-faq;\">Debian FAQ</ulink> onder <quote>De "
+"Debian FTP-archieven</quote> voor bijkomende informatie over de indeling en "
+"de inhoud van de archieven."
+
+#. Tag: para
+#: welcome.xml:626
+#, no-c-format
+msgid ""
+"Many of the programs in the system are licensed under the <emphasis>GNU</"
+"emphasis> <emphasis>General Public License</emphasis>, often simply referred "
+"to as <quote>the GPL</quote>. The GPL requires you to make the "
+"<emphasis>source code</emphasis> of the programs available whenever you "
+"distribute a binary copy of the program; that provision of the license "
+"ensures that any user will be able to modify the software. Because of this "
+"provision, the source code<footnote> <para> For information on how to "
+"locate, unpack, and build binaries from &debian; source packages, see the "
+"<ulink url=\"&url-debian-faq;\">Debian FAQ</ulink>, under <quote>Basics of "
+"the Debian Package Management System</quote>. </para> </footnote> for all "
+"such programs is available in the &debian; system."
+msgstr ""
+"Veel van de programma's in het systeem hebben als licentie de <emphasis>GNU</"
+"emphasis> <emphasis>General Public License</emphasis> die vaak eenvoudigweg "
+"<quote>de GPL</quote> genoemd wordt. De GPL eist dat u de "
+"<emphasis>broncode</emphasis> van een programma ter beschikking stelt "
+"telkens u er een kopie in binaire vorm van verspreidt. Deze bepaling in de "
+"licentie garandeert dat elke gebruiker in staat gesteld wordt de software te "
+"wijzigen. Omwille van deze bepaling is de broncode van al die programma's "
+"beschikbaar in het systeem van &debian;.<footnote> <para> Raadpleeg voor "
+"informatie over hoe u &debian; broncodepakketten kunt vinden, ze kunt "
+"uitpakken en er binaire bestanden uit kunt bouwen de <ulink url=\"&url-"
+"debian-faq;\">Debian FAQ</ulink> onder <quote>Basisbeginselen van het "
+"pakketbeheersysteem van Debian</quote>. </para> </footnote>"
+
+#. Tag: para
+#: welcome.xml:645
+#, no-c-format
+msgid ""
+"There are several other forms of copyright statements and software licenses "
+"used on the programs in &debian;. You can find the copyrights and licenses "
+"for every package installed on your system by looking in the file <filename>/"
+"usr/share/doc/<replaceable>package-name</replaceable>/copyright </filename> "
+"once you've installed a package on your system."
+msgstr ""
+"Er bestaan verschillende andere vormen van copyrightvermeldingen en "
+"softwarelicenties die voor programma's in &debian; gebruikt worden. Voor elk "
+"op uw systeem geïnstalleerd pakket vindt u informatie over copyright en "
+"licentie door te kijken in het bestand <filename>/usr/share/doc/"
+"<replaceable>pakket-naam</replaceable>/copyright </filename> na de "
+"installatie van het pakket."
+
+#. Tag: para
+#: welcome.xml:655
+#, no-c-format
+msgid ""
+"For more information about licenses and how &debian; determines whether "
+"software is free enough to be included in the main distribution, see the "
+"<ulink url=\"&url-dfsg;\">Debian Free Software Guidelines</ulink>."
+msgstr ""
+"Voor bijkomende informatie over licenties en hoe &debian; beoordeelt of "
+"software voldoende vrij is om opgenomen te kunnen worden in de "
+"hoofddistributie, kunt u de <ulink url=\"&url-dfsg;\">Richtlijnen van Debian "
+"inzake vrije software</ulink>, de Debian Free Software Guidelines, "
+"raadplegen."
+
+#. Tag: para
+#: welcome.xml:661
+#, no-c-format
+msgid ""
+"The most important legal notice is that this software comes with "
+"<emphasis>no warranties</emphasis>. The programmers who have created this "
+"software have done so for the benefit of the community. No guarantee is made "
+"as to the suitability of the software for any given purpose. However, since "
+"the software is free, you are empowered to modify that software to suit your "
+"needs &mdash; and to enjoy the benefits of the changes made by others who "
+"have extended the software in this way."
+msgstr ""
+"De belangrijkste juridische bepaling is dat deze software geleverd wordt "
+"<emphasis>zonder enige garantie</emphasis>. De programmeurs die deze "
+"software ontwikkelden, deden dit ten behoeve van de gemeenschap. Er wordt "
+"geen garantie gegeven inzake de bruikbaarheid van de software voor om het "
+"even welk specifiek doel. Maar vermits de software vrij is, heeft u het "
+"recht om die software aan te passen aan uw behoeften &mdash; en mee te "
+"genieten van de voordelen van op die manier door anderen aan de software "
+"aangebrachte wijzigingen en toevoegingen."
+
+#~ msgid ""
+#~ "The <ulink url=\"&url-lsb-org;\">Linux Standard Base</ulink> (LSB) is a "
+#~ "project aimed at standardizing the basic GNU/Linux system, which will "
+#~ "enable third-party software and hardware developers to easily design "
+#~ "programs and device drivers for Linux-in-general, rather than for a "
+#~ "specific GNU/Linux distribution."
+#~ msgstr ""
+#~ "De <ulink url=\"&url-lsb-org;\">Linux Standard Base</ulink> (LSB) is een "
+#~ "project dat erop gericht is het basissysteem van GNU/Linux te "
+#~ "standaardiseren, wat het voor externe software- en hardware-ontwikkelaars "
+#~ "makkelijker zal maken om programma's en stuurprogramma's voor apparaten "
+#~ "te ontwerpen voor Linux-in-zijn-geheel, in plaats van voor een specifieke "
+#~ "GNU/Linux-distributie."

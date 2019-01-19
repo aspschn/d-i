@@ -1,0 +1,23 @@
+# cherry-picked from upstream
+cherry-pick.1_27_0-148-gb920a38dc.tar-postpone-creation-of-symlinks-with-suspicious-targets.patch
+cherry-pick.1_27_0-438-g0402cb32d.bunzip2-fix-runcnt-overflow-from-bug-10431.patch
+cherry-pick.1_27_0-439-g9ac42c500.unlzma-fix-segv-closes-10436.patch
+cherry-pick.1_27_0-456-gc3797d40a.lineedit-do-not-tab-complete-any-strings-which-have-control-characters.patch
+cherry-pick.1_27_0-221-g4dc86699b.microcom-require-exactly-one-non-option.patch
+
+# The following patches will likely be merged soon
+u-mount-FreeBSD-support.patch
+swaponoff-FreeBSD-support.patch
+
+# other patches
+
+shell-ash-export-HOME.patch
+version.patch
+init-console.patch
+stop-checking-ancient-kernel-version.patch
+temp-deb-installer-hack.patch
+install-readlink-in-bin.patch
+stop-overriding-stack-alignment-on-i386.patch
+wget-more-thorough-sanitization-of-other-side-s-data.patch
+wget-check-chunk-length-for-overflowing-off_t.patch
+wget-handle-urls-with-or-hash-differently.patch

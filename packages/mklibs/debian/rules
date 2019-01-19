@@ -1,0 +1,11 @@
+#! /usr/bin/make -f
+%:
+	dh $@ --builddirectory=build-deb --with=autoreconf,python2
+
+# debhelper defaults to using multiarch paths at compat level 9, which is a
+# reasonable choice in general but unnecessary here.
+override_dh_auto_configure:
+	dh_auto_configure -- --libdir=\$${prefix}/lib
+
+override_dh_python2:
+	dh_python2 /usr/lib/mklibs/python

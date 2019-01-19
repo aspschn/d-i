@@ -1,0 +1,175 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of debian-installer_packages_po_sublevel1_he.po to Hebrew
+# Hebrew messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Translations from iso-codes:
+# Translations taken from ICU SVN on 2007-09-09
+# Translations taken from KDE:
+# Amit Dovev <debian.translator@gmail.com>, 2007.
+# Meital Bourvine <meitalbourvine@gmail.com>, 2007.
+# Omer Zak <w1@zak.co.il>, 2008, 2010, 2012, 2013.
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Free Software Foundation, Inc., 2002,2004.
+# Alastair McKinstry <mckinstry@computer.org>, 2002.
+# Meni Livne <livne@kde.org>, 2000.
+# Free Software Foundation, Inc., 2002,2003.
+# Meni Livne <livne@kde.org>, 2000.
+# Meital Bourvine <meitalbourvine@gmail.com>, 2007.
+# Lior Kaplan <kaplan@debian.org>, 2004-2007, 2008, 2010, 2011, 2015, 2017.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: s390-dasd@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-28 22:01+0000\n"
+"PO-Revision-Date: 2018-06-14 08:38+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew (https://www.transifex.com/yaron/teams/79473/he/)\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: select
+#. Choices
+#. :sl5:
+#. TRANSLATORS, please translate "Finish" the same way you translate it in
+#. the 'Select "Finish" at the bottom of the list when you are done' string
+#: ../s390-dasd.templates:1001
+msgid "Finish"
+msgstr "סיום"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Available devices:"
+msgstr "רכיבים זמינים:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid ""
+"The following direct access storage devices (DASD) are available. Please "
+"select each device you want to use one at a time."
+msgstr ""
+"התקני ה־DASD‏ (disk access storage devices) הבאים זמינים. נא לבחור בכל רכיב "
+"בו ברצונך להשתמש, אחד בכל פעם."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Select \"Finish\" at the bottom of the list when you are done."
+msgstr "נא לבחור ב„סיום” בתחתית הרשימה כשסיימת."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid "Choose device:"
+msgstr "נא לבחור רכיב:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid ""
+"Please choose a device. You have to specify the complete device number, "
+"including leading zeros."
+msgstr "נא לבחור רכיב. יש לציין את כתובת הרכיב המלאה, כולל אפסים מובילים."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "Invalid device"
+msgstr "רכיב לא חוקי"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "An invalid device number has been chosen."
+msgstr "נבחר מספר רכיב לא חוקי."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001 ../s390-dasd.templates:5001
+msgid "Format the device?"
+msgstr "לפרמט את הרכיב?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid "The DASD ${device} is already low-level formatted."
+msgstr "ה־DASD‏ ${device} כבר פורמט ברמה עמוקה."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid ""
+"Please choose whether you want to format again and remove any data on the "
+"DASD. Note that formatting a DASD might take a long time."
+msgstr ""
+"נא לבחור האם לפרמט שוב ולהסיר כל מידע שהוא מה־DASD. לתשומת לבך, פרמוט ה־DASD "
+"עשוי לארוך זמן רב."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:5001
+msgid ""
+"The DASD ${device} is not low-level formatted. DASD devices must be "
+"formatted before you can create partitions."
+msgstr ""
+"ה־DASD‏ ${device} טרם פורמט ברמה עמוקה. חובה לפרמט התקני DASD כדי ליצור "
+"מחיצות."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid "The DASD ${device} is in use"
+msgstr "ה־DASD ${device} נמצא בשימוש"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid ""
+"Could not low-level format the DASD ${device} because the DASD is in use.  "
+"For example, the DASD could be a member of a mapped device in an LVM volume "
+"group."
+msgstr ""
+"אי אפשר לפרמט בצורה עמוקה את ה־DASD‏ ${device} כיוון שה־DASD בשימוש. לדוגמה, "
+"ה־DASD עשוי להיות חבר בהתקן ממופה של קבוצת כרכי LVM."
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:7001
+msgid "Formatting ${device}..."
+msgstr "${device} מפורמט…"
+
+#. Type: text
+#. Description
+#. Main menu item. Keep translations below 55 columns
+#. :sl5:
+#: ../s390-dasd.templates:8001
+msgid "Configure direct access storage devices (DASD)"
+msgstr "הגדרת התקני אחסון לגישה ישירה (DASD)"

@@ -1,0 +1,198 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2018-02-07 12:45+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:1001
+msgid "Check CD-ROM integrity?"
+msgstr "Яклухтии CD-ROM-ро месанҷед?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:1001
+msgid "Warning: this check depends on your hardware and may take some time."
+msgstr ""
+"Огоҳӣ: ин санҷиш аз сахтафзори шумо вобаста аст ва метавонад якчанд вақтро "
+"гирад."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:2001
+msgid "Insert a Debian CD-ROM"
+msgstr "Диски CD-ROM-и Debian-ро дарҷ намоед"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:2001
+msgid ""
+"Please insert one of the official Debian CD-ROMs into the drive before "
+"continuing."
+msgstr ""
+"Лутфан, пеш аз идома додан, диски CD-ROM-и расмии Debian-ро ба драйв дарҷ "
+"намоед."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:3001
+msgid "Failed to mount CD-ROM"
+msgstr "CD-ROM васл карда нашуд"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:3001
+msgid ""
+"The CD-ROM ${CDROM} could not be mounted correctly. Please check the media "
+"and cables, and try it again."
+msgstr ""
+"CD-ROM-и ${CDROM} наметавонад ба таври дуруст васл карда шавад. Лутфан, "
+"захирагоҳҳо ва симҳоро санҷед ва амалро такрор намоед."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:4001
+msgid "No valid Debian CD-ROM"
+msgstr "Диски боэътибори CD-ROM-и Debian нест"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:4001
+msgid ""
+"The CD-ROM you have inserted is not a valid Debian CD-ROM. Please change the "
+"disk."
+msgstr ""
+"Диски CD-ROM-и Debian-е, ки шумо дарҷ кардед беэътибор аст. Лутфан, диски "
+"дигареро дарҷ намоед."
+
+#. Type: error
+#. Description
+#. TRANSLATORS: MD5 is a file name, don't translate it.
+#. :sl3:
+#: ../cdrom-checker.templates:5001
+msgid "Failed to open checksum file"
+msgstr "Файли натиҷаи муқобила кушода нашуд"
+
+#. Type: error
+#. Description
+#. TRANSLATORS: MD5 is a file name, don't translate it.
+#. :sl3:
+#: ../cdrom-checker.templates:5001
+msgid ""
+"Opening the MD5 file on the CD-ROM failed. This file contains the checksums "
+"of the files located on the CD-ROM."
+msgstr ""
+"Кушодани файли MD5 дар CD-ROM бо нокомиҳо дучор шудааст. Ин файл дорои "
+"натиҷаҳои муқобилаи файлҳои дар CD-ROM мавҷудбуда мебошад."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:6001
+msgid "Integrity test successful"
+msgstr "Санҷиши яклухтӣ бомуваффақият ба анҷом нарасид"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:6001
+msgid "The CD-ROM integrity test was successful. The CD-ROM is valid."
+msgstr ""
+"Санҷиши яклухтии CD-ROM бомуваффақият ба анҷом расид. CD-ROM боэътибор "
+"мебошад."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:7001
+msgid "Integrity test failed"
+msgstr "Санҷиши яклухтӣ ба анҷом нарасид"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:7001
+msgid ""
+"The ${FILE} file failed the MD5 checksum verification. Your CD-ROM or this "
+"file may have been corrupted."
+msgstr ""
+"Тафтиши натиҷаи муқобилаи MD5-и файли ${FILE} ба анҷом нарасид. Эҳтимол аст, "
+"ки CD-ROM-и шумо, ё ки ин файл харобшуда мебошад."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:8001
+msgid "Check the integrity of another CD-ROM?"
+msgstr "Яклухтии CD-ROM-и дигарро месанҷед?"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:9001
+msgid "Insert Debian boot CD-ROM"
+msgstr "Диски роҳандозии CD-ROM-и Debian-ро дарҷ намоед"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:9001
+msgid ""
+"Please make sure you have inserted the Debian boot CD-ROM  to continue with "
+"the installation."
+msgstr ""
+"Лутфан, мутмаин шавед, ки шумо барои идома додани насбкунӣ диски роҳандозии "
+"CD-ROM-и Debian-ро дарҷ кардед."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:10001
+msgid "Checking CD-ROM integrity"
+msgstr "Санҷиши яклухтии CD-ROM"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:11001
+msgid "Checking file: ${FILE}"
+msgstr "Санҷиши файл: ${FILE}"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. Translators: keep it under 65 columns
+#. :sl2:
+#: ../cdrom-checker.templates:12001
+msgid "Check the CD-ROM(s) integrity"
+msgstr "Санҷиши яклухтии CD-ROM(ҳо)"

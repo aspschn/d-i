@@ -1,0 +1,141 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-07-10 22:49+0000\n"
+"PO-Revision-Date: 2018-02-08 14:24+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../media-retriever.templates:1001
+msgid "Scanning removable media"
+msgstr "Сканкунии расонаи ҷудошаванда"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../media-retriever.templates:2001
+msgid "Cannot read removable media, or no drivers found."
+msgstr "Расонаи ҷудошаванда хонда намешавад, ё ягон драйвер ёфт нашуд."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../media-retriever.templates:2001
+msgid ""
+"There was a problem reading data from the removable media. Please make sure "
+"that the right media is present. If you continue to have trouble, your "
+"removable media might be bad."
+msgstr ""
+"Ҳангоми хониши маълумоти расонаи ҷудошаванда мушкилӣ ба вуҷуд омад. Лутфан, "
+"мутмаин шавед, ки расонаи дуруст истифода шудааст. Агар ин мушкилӣ такроран "
+"пайдо шавад, мумкин аст, ки расонаи шумо дорои нуқсон мебошад."
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:1001
+msgid "Load drivers from removable media now?"
+msgstr "Драйверҳоро аз расонаи ҷудошаванда ҳозир бор мекунед?"
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:1001
+msgid ""
+"You probably need to load drivers from removable media before continuing "
+"with the installation. If you know that the install will work without extra "
+"drivers, you can skip this step."
+msgstr ""
+"Эҳтимол аст, ки шумо бояд пеш аз идома додани насб драйверҳоро аз расонаи "
+"ҷудошаванда бор намоед. Агар шумо донед, ки насб бе драйверҳои иловагӣ ба "
+"анҷом мерасад, метавонед ин қадамро иҷро накарда гузаронед."
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:1001
+msgid ""
+"If you do need to load drivers, insert the appropriate removable media, such "
+"as a driver floppy or USB stick before continuing."
+msgstr ""
+"Агар шумо бояд драйверҳоро бор намоед, пеш аз идома додан расонаи "
+"ҷудошавандаи мувофиқро монанди драйви флоппи ё флешкаи USB дарҷ намоед."
+
+#. Type: text
+#. Description
+#. main-menu
+#: ../load-media.templates:2001
+msgid "Load drivers from removable media"
+msgstr "Бор кардани драйверҳо аз расонаи ҷудошаванда"
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:3001
+msgid "Unknown removable media. Try to load anyway?"
+msgstr "Расонаи ҷудошаванда номаълум аст. Ба ҳар ҳол бор мекунед?"
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:3001
+msgid ""
+"Detected removable media that is not a known driver media. Please make sure "
+"that the correct media is inserted. You can still continue if you have an "
+"unofficial removable media you want to use."
+msgstr ""
+"Расонаи ҷудошавандаи номаълуме, ки дорои драйверҳо намебошад, муайян карда "
+"шудааст. Лутфан, мутмаин шавед, ки расонаи дуруст дарҷ карда шудааст. Агар "
+"шумо расонаи ҷудошавандаи ғайрирасмӣ дошта бошед, метавонед онро барои идома "
+"истифода баред."
+
+#. Type: text
+#. Description
+#: ../load-media.templates:4001
+msgid "Please insert ${DISK_LABEL} ('${DISK_NAME}') first."
+msgstr "Лутфан, аввал диски ${DISK_LABEL} ('${DISK_NAME}')-ро дарҷ намоед."
+
+#. Type: text
+#. Description
+#: ../load-media.templates:4001
+msgid ""
+"Due to dependencies between packages, drivers must be loaded in the correct "
+"order."
+msgstr ""
+"Ба сабаби доштани вобастагӣ байни бастаҳо, драйверҳо бояд бо тартиби лозимӣ "
+"бор карда шаванд."
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:5001
+msgid "Load drivers from another removable media?"
+msgstr "Драйверҳоро аз расонаи ҷудошавандаи дигар бор мекунед?"
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:5001
+msgid ""
+"To load additional drivers from another removable media, please insert the "
+"appropriate removable media, such as a driver floppy or USB stick before "
+"continuing."
+msgstr ""
+"Барои бор кардани драйверҳои иловагӣ аз расонаи ҷудошавандаи дигар, лутфан, "
+"пеш аз идома додан расонаи ҷудошавандаи мувофиқро монанди драйви флоппи ё "
+"флешкаи USB дарҷ намоед."

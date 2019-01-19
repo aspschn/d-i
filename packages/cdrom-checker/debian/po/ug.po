@@ -1,0 +1,197 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2011-03-24 09:40+0600\n"
+"Last-Translator: Sahran <sahran.ug@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:1001
+msgid "Check CD-ROM integrity?"
+msgstr "CD-ROM نىڭ مۇكەممەللىكىنى تەكشۈرەمسىز؟"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:1001
+msgid "Warning: this check depends on your hardware and may take some time."
+msgstr ""
+"ئاگاھلاندۇرۇش: تەكشۈرۈش قاتتىق دېتال ئىقتىدارى بىلەن مۇناسىۋەتلىك، ئۇزاقراق "
+"ۋاقىت كېتىشى مۇمكىن."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:2001
+msgid "Insert a Debian CD-ROM"
+msgstr "Debian نۇر دىسكىسىنى قىستۇرۇڭ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:2001
+msgid ""
+"Please insert one of the official Debian CD-ROMs into the drive before "
+"continuing."
+msgstr ""
+"ئورنىتىشنى داۋاملاشتۇرۇشتىن ئىلگىرى Debian نۇر دىسكىسىنى قوزغاتقۇچقا "
+"قىستۇرۇڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:3001
+msgid "Failed to mount CD-ROM"
+msgstr "CD-ROM نى ئېگەرلەش مەغلۇپ بولدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:3001
+msgid ""
+"The CD-ROM ${CDROM} could not be mounted correctly. Please check the media "
+"and cables, and try it again."
+msgstr ""
+"${CDROM} CD-ROM نى توغرا ئېگەرلىيەلمىدى. ۋاسىتە ۋە كابېلنى تەكشۈرۈپ قايتا "
+"سىناڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:4001
+msgid "No valid Debian CD-ROM"
+msgstr "ئىناۋەتسىز Debian نۇر دىسكىسى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:4001
+msgid ""
+"The CD-ROM you have inserted is not a valid Debian CD-ROM. Please change the "
+"disk."
+msgstr ""
+"قىستۇرغان نۇر دىسكا Debian نىڭ ئىناۋەتلىك دىسكىسى ئەمەس، دىسكىنى ئالماشتۇرۇڭ."
+
+#. Type: error
+#. Description
+#. TRANSLATORS: MD5 is a file name, don't translate it.
+#. :sl3:
+#: ../cdrom-checker.templates:5001
+msgid "Failed to open checksum file"
+msgstr "تەكشۈرۈش يىغىندا ھۆججىتى(checksum file)نى ئېچىش مەغلۇپ بولدى"
+
+#. Type: error
+#. Description
+#. TRANSLATORS: MD5 is a file name, don't translate it.
+#. :sl3:
+#: ../cdrom-checker.templates:5001
+msgid ""
+"Opening the MD5 file on the CD-ROM failed. This file contains the checksums "
+"of the files located on the CD-ROM."
+msgstr ""
+"CD-ROM دىكى MD5 ھۆججەتنى ئېچىش مەغلۇپ بولدى. بۇ ھۆججەت CD-ROM دىكى بارلىق "
+"ھۆججەتلەرنىڭ تەكشۈرۈش يىغىندىسىنى ئۆز ئىچىگە ئالغان."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:6001
+msgid "Integrity test successful"
+msgstr "مۇكەممەللىكنى تەكشۈرۈش مۇۋەپپەقىيەتلىك بولدى"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:6001
+msgid "The CD-ROM integrity test was successful. The CD-ROM is valid."
+msgstr ""
+"CD-ROM مۇكەممەللىكىنى تەكشۈرۈش مۇۋەپپەقىيەتلىك تاماملاندى. بۇ CD-ROM "
+"ئىناۋەتلىك."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:7001
+msgid "Integrity test failed"
+msgstr "مۇكەممەللىكىنى تەكشۈرۈش مەغلۇپ بولدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:7001
+msgid ""
+"The ${FILE} file failed the MD5 checksum verification. Your CD-ROM or this "
+"file may have been corrupted."
+msgstr ""
+"${FILE} ھۆججەتنىڭ MD5 تەكشۈرۈش يىغىندىسىنى دەلىللەش مەغلۇپ بولدى. CD-ROM "
+"ئىڭىز ياكى بۇ ھۆججەت بۇزۇلغان بولۇشى مۇمكىن."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:8001
+msgid "Check the integrity of another CD-ROM?"
+msgstr "باشقا بىر CD-ROM نىڭ مۇكەممەللىكىنى تەكشۈرەمسىز؟"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:9001
+msgid "Insert Debian boot CD-ROM"
+msgstr "Debian نىڭ قوزغىتىش نۇر دىسكىسىنى قىستۇرۇڭ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:9001
+msgid ""
+"Please make sure you have inserted the Debian boot CD-ROM  to continue with "
+"the installation."
+msgstr ""
+"قىستۇرغىنىڭىزنىڭ Debian قوزغىتىش دىسكىسى ئىكەنلىكىنى جەزملەپ ئاندىن "
+"ئورنىتىشنى داۋاملاشتۇرۇڭ."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:10001
+msgid "Checking CD-ROM integrity"
+msgstr "CD-ROM نىڭ مۇكەممەللىكىنى تەكشۈرۈۋاتىدۇ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:11001
+msgid "Checking file: ${FILE}"
+msgstr "ھۆججەت تەكشۈرۈۋاتىدۇ:${FILE}"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. Translators: keep it under 65 columns
+#. :sl2:
+#: ../cdrom-checker.templates:12001
+msgid "Check the CD-ROM(s) integrity"
+msgstr "CD-ROM نىڭ مۇكەممەللىكىنى تەكشۈر"

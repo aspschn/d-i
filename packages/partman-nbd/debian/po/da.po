@@ -1,0 +1,215 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of debian-installer_packages_po_sublevel1_da.po to
+# Danish messages for debian-installer.
+# This file is distributed under the same license as debian-installer.
+# Joe Hansen <joedalton2@yahoo.dk>, 2011, 2012, 2013, 2014, 2015, 2016, 2017.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2010.
+# Mads Bille Lundby <lundbymads@gmail.com, 2009.
+# Henrik Christian Grove <debian@3001.dk>, 2008.
+# Jesper Dahl Nyerup <debian@jespernyerup.dk>, 2008.
+# Jacob Sparre Andersen <jacob@jacob-sparre.dk>, 2008, 2010.
+# Claus Hindsgaul <claus.hindsgaul@gmail.com>, 2004-2007.
+# Reviewed 2007 by Niels Rasmussen
+#
+# Volume er oversat til diskenhed. Ret hvis Dansk-gruppen finder en anbefaling.
+#
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@computer.org>, 2001.
+# Claus Hindsgaul <claus.hindsgaul@gmail.com>, 2006.
+# Claus Hindsgaul <claus_h@image.dk>, 2004, 2005, 2006.
+# Computeroversættelse Tobias Toedter <t.toedter@gmx.net>, 2007.
+# Copyright (C) Free Software Foundation, Inc., 2006.
+# Frederik 'Freso' S. Olesen <freso.dk@gmail.com>, 2008.
+# Free Software Foundation, Inc., 2000, 2004, 2005.
+# Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010, 2011.
+# Keld Simonsen <keld@dkuug.dk>, 2000, 2001.
+# Kenneth Christiansen <kenneth@gnu.org>, 2000.
+# Ole Laursen <olau@hardworking.dk>, 2001.
+#
+# vedrørende russisk:
+# (bogstavet й bliver normalt til j på dansk og y på engelsk.  Der er
+# også nogle forskelle med de mange s/sh-agtige lyde)
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer_packages_po_sublevel1_da\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2018-12-28 22:08+0000\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "Opsæt Network Block Device (netværksblokenheden)"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD-opsætningshandling:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "Der er aktuelt ${NUMBER} enheder forbundet."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "Network Block Device-server:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"Angiv venligst værtsnavn eller IP-adresse for systemet der kører nbd-server."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "Navn for NBD-eksport"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"Indtast venligst NBD-eksportnavnet krævet for at tilgå ndb-server. Navnet "
+"indtastet her skal matche en eksisterende eksport på serveren."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "Network Block Device-enhedsknude:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"Vælg venligst NBD-enhedsknuden som du ønsker at forbinde eller afbryde."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "Kunne ikke forbinde til NBD-serveren"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"Forbindelse til nbd-server mislykkedes. Sikr dig venligst at værten og "
+"eksportnavnet du indtastede er korrekt, at processen for nbd-server kører på "
+"den pågældende vært, at netværket er korrekt opsat, og prøv så igen."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "Ikke flere Network Block Device-knuder tilbage"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"Enten er alle tilgængelige NBD-enhedsknuder i brug eller noget gik galt med "
+"detekteringen af enhedsknuder."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"Ingen yderligere NDB-enhedsknuder kan opsættes før en allerede opsat "
+"afbrydes."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "Ingen tilsluttede Network Block Device-knuder blev fundet"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"Der er aktuelt ingen Network Block Device-knuder forbundet med en server. Så "
+"du kan ikke afbryde en af disse."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "Tilslut en Network Block Device"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "Afbryd en Network Block Device"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "Afslut og returner til partitioneringsmenuen"

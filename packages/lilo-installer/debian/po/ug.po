@@ -1,0 +1,283 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+#
+# Debian Installer master translation for Uyghur
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+# Translations from iso-codes:
+# Sahran <sahran.ug@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: lilo-installer@packages.debian.org\n"
+"POT-Creation-Date: 2009-12-18 22:47+0000\n"
+"PO-Revision-Date: 2014-03-03 14:41+0600\n"
+"Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001
+msgid "${disc}: Master Boot Record"
+msgstr "${disc}: ئاساسىي يېتەكلەش خاتىرىسى"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001
+msgid "${part}: new Debian partition"
+msgstr "${part}: يېڭى Debian رايونى"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001 ../lilo-installer.templates:2001
+msgid "Other choice (Advanced)"
+msgstr "باشقا تاللاش (ئالىي)"
+
+#. Type: select
+#. Description
+#. :sl3:
+#. Type: select
+#. Description
+#. :sl3:
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002 ../lilo-installer.templates:2002
+#: ../lilo-installer.templates:3001
+msgid "LILO installation target:"
+msgstr "LILO ئورنىتىش نىشانى:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002
+msgid ""
+"The LILO program needs to be installed to make your new system bootable. By "
+"installing it onto your disk's Master Boot Record, LILO will take complete "
+"control of the boot process, but if you want to use a different boot "
+"manager, just install LILO on the new Debian partition instead."
+msgstr ""
+"يېڭى سىستېمىنىڭ قوزغىلىشى ئۈچۈن LILO پروگراممىسى ئورنىتىشىڭىز لازىم. ئەگەر "
+"LILO پروگراممىسىنى قاتتىق دىسكىنىڭ ئاساسىي يېتەكلەش خاتىرىسىگە ئورناتسىڭىز، "
+"ئۇ قوزغىلىش جەريانىنى تولۇق كونترول قىلىدۇ، LILO پروگراممىسىنى يېڭى Debian "
+"رايونىغا ئورنىتىڭ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002
+msgid "If unsure, install LILO into the Master Boot Record."
+msgstr ""
+"ئەگەر تېخى جەزملىيەلمىسىڭىز، LILO نى ئاساسىي يېتەكلەش خاتىرىسىگە ئورنىتىڭ."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:2001
+msgid "${disc}: software RAID array"
+msgstr "${disc}: يۇمشاق دېتاللىق RAID تىزىقى"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:2002
+msgid ""
+"The LILO program needs to be installed to make your new system bootable. You "
+"may choose to install it onto a software RAID array or another device."
+msgstr ""
+"يېڭى سىستېمىنىڭ قوزغىلىشى ئۈچۈن LILO پروگراممىسى ئورنىتىشىڭىز لازىم. سىز "
+"ئۇنى يۇمشاق دېتاللىق RAID تىزىقى ياكى باشقا ئۈسكۈنىگە  ئورناتسىڭىز بولىدۇ."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:3001
+msgid ""
+"Please enter the device name of the partition or disk onto which LILO should "
+"be installed, such as /dev/hda or /dev/sda1."
+msgstr ""
+"يۇقىرىدا LILO ئورنىتىدىغان دىسكا ياكى رايوننىڭ ئۈسكۈنە نامىنى كىرگۈزۈڭ، "
+"مەسىلەن،/dev/hda or /dev/sda1."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:4001
+msgid "Invalid partition name"
+msgstr "ئىناۋەتسىز رايون ئاتى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:4001
+msgid ""
+"The path ${path} does not represent a partition or hard disk device. Please "
+"try again."
+msgstr "${path} يول مەلۇم رايون ياكى دىسكىنى كۆرسەتمىگەن. قايتا سىناڭ."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:5001
+msgid "Installing LILO..."
+msgstr "LILO ئورنىتىۋاتىدۇ…"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:6001
+msgid "Activating partition ${bootdev}"
+msgstr "${bootdev} رايوننى ئاكتىپلاۋاتىدۇ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:7001
+msgid "Creating lilo.conf"
+msgstr "lilo.conf قۇرۇۋاتىدۇ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:8001
+msgid "Installing the LILO package"
+msgstr "LILO يۇمشاق دېتال بوغچىسى ئورنىتىۋاتىدۇ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:9001
+msgid "Running LILO for ${bootdev}"
+msgstr "${bootdev} غا LILO ئىجرا قىلىۋاتىدۇ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:10001
+msgid "LILO configured to use a serial console"
+msgstr "LILO ئارقىمۇئارقا كونترول سۇپىسى ئىشلىتىشكە سەپلەندى"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:10001
+msgid ""
+"LILO is configured to use serial port ${PORT} as the console. ${PORT_SPEED}"
+msgstr ""
+"LILO ئارقىمۇئارقا ئېغىز ${PORT} كونترول سۇپىسى ئىشلىتىشكە سەپلەندى. "
+"ئارقىمۇئارقا ئېغىز سۈرئىتى ${SPEED} قىلىپ تەڭشەلدى."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:11001
+msgid "The serial port speed is set to ${SPEED}."
+msgstr "ئارقىمۇئارقا ئېغىز سۈرئىتى ${SPEED} غا تەڭشەلدى."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid "Would you like to make this partition active?"
+msgstr "بۇ رايوننى ئاكتىپ رايون قىلىپ تەڭشەمسىز؟"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid ""
+"You have chosen to install LILO on a partition that is not the active one. "
+"If this partition is not marked active, then LILO will not be loaded by the "
+"boot loader. This may cause you to be unable to boot into the system that is "
+"being installed."
+msgstr ""
+"سىز LILO نى ئاكتىپ بولمىغان رايونغا ئورنىتىشنى تاللىدىڭىز. ئەگەر رايونغا "
+"ئاكتىپ بەلگىسى قويۇلمىسا LILO يېتەكلەش پروگراممىسىنى يۈكلىيەلمەيدۇ. بۇنداق "
+"بولغاندا ئورنىتىلىپ بولغان سىستېمىغا كىرەلمەيسىز."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid ""
+"You should make this partition active unless you have another boot loader "
+"that will allow you to access your new Linux installation."
+msgstr ""
+"باشقا يېتەكلەش باشقۇرغۇچنى ئىشلەتمىسىڭىزلا سىز بۇ رايوننى ئاكتىپ رايون قىلىپ "
+"بەلگە سېلىشىڭىز لازىم. ئۇنىڭ ئۈستىگە ئۇ يېڭى ئورناتقان Linux سىستېمىسىنى "
+"يېتەكلەيدۇ."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:13001
+msgid "LILO installation failed. Continue anyway?"
+msgstr "LILO ئورنىتىش مەغلۇپ بولدى. يەنىلا داۋاملاشتۇرامسىز؟"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:13001
+msgid ""
+"The lilo package failed to install into /target/. Installing LILO as a boot "
+"loader is a required step. The install problem might however be unrelated to "
+"LILO, so continuing the installation may be possible."
+msgstr ""
+"LILO يۇمشاق دېتال بوغچىسىنى /target/ قا ئورنىتالمىدى. بۇ LILO نى قوزغىتىش "
+"يېتەكلىگۈچ قىلىپ ئورنىتىشنىڭ زۆرۈر قەدىمى. بۇ ئورنىتىش مەسىلىسى LILO بىلەن "
+"مۇناسىۋەتسىز بولۇشى مۇمكىن، شۇڭلاشقا داۋاملىق ئورنىتىشقا بولۇۋېرىدۇ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:14001
+msgid "LILO installation failed"
+msgstr "LILO نى ئورنىتالمىدى"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:14001
+msgid "Running \"/sbin/lilo\" failed with error code \"${ERRCODE}\"."
+msgstr "\"/sbin/lilo\" ئىجرا قىلىش مەغلۇپ بولدى، خاتالىق كودى \"${ERRCODE}\"."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl3:
+#: ../lilo-installer.templates:15001
+msgid "Install the LILO boot loader on a hard disk"
+msgstr "LILO قوزغىتىش يېتەكلىگۈچنى قاتتىق دىسكىغا ئورنات"

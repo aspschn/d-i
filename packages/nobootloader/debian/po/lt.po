@@ -1,0 +1,185 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Lithuanian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Marius Gedminas <mgedmin@b4net.lt>, 2004.
+# Darius Skilinskas <darius10@takas.lt>, 2005.
+# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004...2010.
+# Translations from iso-codes:
+# Gintautas Miliauskas <gintas@akl.lt>, 2008.
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Translations from KDE:
+# - Ričardas Čepas <rch@richard.eu.org>
+# Free Software Foundation, Inc., 2000-2001, 2004
+# Gediminas Paulauskas <menesis@delfi.lt>, 2000-2001.
+# Alastair McKinstry <mckinstry@computer.org>, 2001,2002.
+# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004, 2006, 2008, 2009, 2010.
+# Rimas Kudelis <rq@akl.lt>, 2012, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: nobootloader@packages.debian.org\n"
+"POT-Creation-Date: 2009-05-29 22:50+0000\n"
+"PO-Revision-Date: 2017-11-26 20:23+0000\n"
+"Last-Translator: Rimas Kudelis <rq@akl.lt>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../nobootloader.templates:1001
+msgid "Continue without boot loader"
+msgstr "Tęsti be paleidyklės"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Failed to mount /target/proc"
+msgstr "Nepavyko prijungti „/target/proc“"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "Nepavyko prijungti „proc“ failų sistemos prie „/target/proc“."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"Detaliau žiūrėkite į /var/log/syslog arba ketvirtojoje virtualioje konsolėje."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001
+msgid "Warning: Your system may be unbootable!"
+msgstr "Dėmesio: šio kompiuterio gali nebepavykti paleisti!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "Nustatomi mikroprogramos (firmware) kintamieji automatiniam paleidimui"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"Kad sistemą būtų galima automatiškai paleisti, turi būti nustatyta keletas "
+"„Genesi“ mikroprogramos kintamųjų. Įdiegimo pabaigoje sistema bus perleista. "
+"Kad įgalintumėte automatinį paleidimą, pamatę mikroprogramos raginimą, "
+"nustatykite šiuos mikroprogramos kintamuosius:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"Tai atlikti turėsite tik kartą. Baigę, įveskite komandą „boot“ arba "
+"perleiskite kompiuterį, ir galėsite mėgautis naujai įdiegta sistema."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"Jeigu norite branduolį kaskart įkelti rankiniu būdu, tai galite atlikti, "
+"mikroprogramos raginimo ekrane įvesdami štai ką:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"Kad sistemą būtų galima automatiškai paleisti, turi būti nustatyta keletas "
+"CFE kintamųjų. Įdiegimo pabaigoje sistema bus perleista. Kad "
+"supaprastintumėte sistemos paleidimą, pamatę mikroprogramos raginimą, "
+"nustatykite šiuos mikroprogramos kintamuosius:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"Tai atlikti turėsite tik kartą. Tai suteiks galimybę CFE raginimo ekrane "
+"tiesiog įvesti komandą „boot_debian“."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"Jei pageidaujate automatinio sistemos paleidimo kaskart įjungus kompiuterį, "
+"šalia anksčiau paminėtų kintamųjų papildomai nustatykite ir šį:"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid "No boot loader installed"
+msgstr "Paleidyklė neįdiegta"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid ""
+"No boot loader has been installed, either because you chose not to or "
+"because your specific architecture doesn't support a boot loader yet."
+msgstr ""
+"Paleidyklė neįdiegta, nes arba taip nusprendėte, arba Jūsų kompiuterio "
+"architektūrai dar nėra paleidyklės."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../nobootloader.templates:5001
+msgid ""
+"You will need to boot manually with the ${KERNEL} kernel on partition "
+"${BOOT} and ${ROOT} passed as a kernel argument."
+msgstr ""
+"Jums teks atlikti įkeltį rankiniu būdu, naudojant branduolį ${KERNEL}, "
+"esantį disko skaidinyje ${BOOT}, ir perduodant jam parametrą ${ROOT}."

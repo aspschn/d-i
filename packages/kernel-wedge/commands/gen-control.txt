@@ -1,0 +1,46 @@
+gen-control
+
+Generate a debian/control from the control stub, the kernel-versions
+files, and the package-list files.
+
+For each kernel version and flavour, and for each module list defined
+for that flavour, gen-control will create a binary package control
+paragraph.  This is normally based on a template in the package-list
+in the default-configuration directory.
+
+Templates are processed as follows:
+
+1. For each standard control field <name>, copy the template control
+   field <name>_<flavour>, <name>_<arch>_<flavour>, <name>_<arch>,
+   or <name> (in descending order of priority).
+2. Append the kernel version and flavour to package names in the
+   Package and Depends fields.
+3. Stop processing the package if it has been excluded.
+4. Set the Architecture, Package-Type, Kernel-Version, and Section
+   fields automatically.
+5. Remove any package that is not going to be built from the Depends
+   field.  This can be overridden by adding a "!" to the dependency
+   name.
+6. Add the original (unsuffixed) package name to the Provides field.
+7. Emit the processed control paragraph.
+
+The package-list in the configuration directory may add new package
+templates or override template field values.  For example:
+
+    # This file is used to build up the control file. The kernel version and
+    # "-di" are appended to the package names. Section can be left out. So can
+    # architecture, which is derived from the files in the modules directory.
+    # It overwrites specifications from /usr/share/kernel-wedge/package-list.
+    Package: fat-modules
+    Priority: standard
+
+    Package: nic-modules
+    Depends: kernel-image, nic-shared-modules, core-modules, firewire-core-modules
+
+    Package: other-modules
+    Depends: kernel-image
+    Description: some other modules I like to have in the installer
+
+The configuration directory may have an exclude-packages file that
+lists any udebs (by full package name) that would normally be built,
+but should be excluded from the control file.

@@ -1,0 +1,45 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: cdebconf-terminal@packages.debian.org\n"
+"POT-Creation-Date: 2008-07-31 13:04+0200\n"
+"PO-Revision-Date: 2011-11-01 23:07+0530\n"
+"Last-Translator: vignesh prabhu <stove311987@gmail.com>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#: ../cdebconf-gtk-terminal.templates:1001
+msgid "Resume installation"
+msgstr "ಅನುಸ್ಥಾಪನೆಯ ಮುನ್ನಡೆ"
+
+#. Type: text
+#. Description
+#: ../cdebconf-gtk-terminal.templates:2001
+msgid ""
+"Choose \"Continue\" to really exit the shell and resume the installation; "
+"any processes still running in the shell will be aborted."
+msgstr ""
+"\"ಮುಂದುವರಿಸು\" ಆಯ್ಕೆ ಮಾಡಿದಲ್ಲಿ ಶೆಲ್ಲಿನಿಂದ ನಿಜವಾಗಿಯೂ ಹೊರಬಂದು ಅನುಸ್ಥಾಪನೆ ಪುನಃ "
+"ಪ್ರಾರಂಭವಾಗುತ್ತದೆ. ಶೆಲ್ಲಿನಲ್ಲಿ ನಡೆಯುತ್ತಿರುವ ಎಲ್ಲ ಪ್ರಕ್ರಿಯೆಗಳು ನಿಂತುಹೋಗುತ್ತವೆ "

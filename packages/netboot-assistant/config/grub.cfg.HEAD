@@ -1,0 +1,36 @@
+## Run "di-netboot-assistant rebuild-menu" when you modify
+## this file.
+##
+
+if loadfont $prefix/font.pf2 ; then
+  set gfxmode=800x600
+  insmod efi_gop
+  insmod efi_uga
+  insmod video_bochs
+  insmod video_cirrus
+  insmod gfxterm
+  terminal_output gfxterm
+fi
+
+insmod play
+play 960 440 1 0 4 440 1
+
+set default='Boot from local disk..'
+#set timeout=10
+
+# ########################################################################
+#
+# Install stable automatically.
+# For details consult '/usr/share/doc/di-netboot-assistant/README.preseed'. 
+#
+#menuentry 'Debian stable (amd64) + preseed' {
+#   linux   /d-i/n-a/stable/amd64/linux --- auto=true priority=critical url=tftp://installbox
+#   initrd  /d-i/n-a/stable/amd64/initrd.gz
+#}
+#
+# ########################################################################
+
+menuentry 'Boot from local disk..' {
+    exit
+}
+

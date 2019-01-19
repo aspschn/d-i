@@ -1,0 +1,206 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Bangla translation of Debian-Installer.
+# Copyright (C) 2005, 2006, Debian Foundation.
+# This file is distributed under the same license as the Debian-Installer package.
+# Anubadok, the en2bn auto-translator by Golam Mortuza Hossain <golam@imsc.res.in>, 2005.
+# Baishampayan Ghose <b.ghose@gnu.org.in>, 2005-2006.
+# Quazi Ashfaq-ur Rahman <quazi.ashfaq@gmail.com>, 2005.
+# Khandakar Mujahidul Islam <suzan@bengalinux.org>, 2005, 2006.
+# Progga <progga@BengaLinux.Org>, 2005, 2006.
+# Jamil Ahmed <jamil@bengalinux.org>, 2006-2007.
+# Mahay Alam Khan (মাহে আলম খান) <makl10n@yahoo.com>, 2007.
+# Tisa Nafisa <tisa_nafisa@yahoo.com>, 2007.
+# Md. Rezwan Shahid <rezwan@ankur.org.bd>, 2009.
+# Ayesha Akhtar <ayesha@ankur.org.bd>, 2010.
+# Israt Jahan <israt@ankur.org.bd>, 2010.
+# Zenat Rahnuma <zenat@ankur.org.bd>, 2011.
+#
+# Translations from iso-codes:
+#   Debian Foundation, 2005.
+#   Progga <progga@BengaLinux.Org>, 2005.
+#   Jamil Ahmed <jamil@bengalinux.org>, 2006.
+#   Md. Rezwan Shahid <rezwan@ankur.org.bd>, 2009.
+#   Israt Jahan <israt@ankur.org.bd>, 2010.
+#   Ayesha Akhtar <ayesha@ankur.org.bd>, 2012.
+#   Robin Mehdee (রবিন মেহদী) <robin@ankur.org.bd>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: bn\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2012-03-13 19:06+0600\n"
+"Last-Translator: Robin Mehdee (রবিন মেহদী) <robin@ankur.org.bd>\n"
+"Language-Team: Bengali \n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "নেটওয়ার্ক ব্লক ডিভাইস কনফিগার করুন"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD কনফিগার করার ক্রিয়া:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "বর্তমানে ${NUMBER} ডিভাইস সংযুক্ত।"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "নেটওয়ার্ক ব্লক ডিভাইস সার্ভার:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "অনুগ্রহ করে nbd-সার্ভারে চলমান সিস্টেমের হোস্টনাম অথবা IP ঠিকানা দিন।"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "নেটওয়ার্ক ব্লক ডিভাইস ডিভাইস নোড:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"অনুগ্রহ করে NBD ডিভাইস নোড যা আপনি সংযুক্ত অথবা বিচ্ছিন্ন করতে চান নির্বাচন করুন"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD সার্ভারে সংযুক্ত করতে ব্যর্থ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd-সার্ভারে সংযুক্ত করতে ব্যর্থ। অনুগ্রহ করে নিশ্চিত করুন হোস্ট এবং পোর্ট অথবা নাম যা "
+"আপনি দিয়েছেন সঠিক, যা nbd-সার্ভারের প্রক্রিয়া ঐ হোস্ট এবং পোর্টে (অথবা ঐ নাম "
+"ব্যবহার করে) চলমান, যা সঠিকভাবে নেটওয়ার্ক কনফিগার, এবং পুনরায় চেষ্টা করা হয়।"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "আর কোনো নেটওয়ার্ক ব্লক ডিভাইস নেই"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"হয়তো সব বিদ্যমান NBD ডিভাইস নোড ব্যবহার করা হয় অথবা ডিভাইস নোডের সনাক্তকরণের "
+"মাধ্যমে কিছু ভুল হয়েছে।"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"কোন NBD ডিভাইস নোড কনফিগার করা যাবেনা যতক্ষণ না কনফিগার করা একটি বিচ্ছিন্ন করা "
+"যাবে।"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "কোনো সংযুক্ত নেটওয়ার্ক ব্লক ডিভাইস নোড খুঁজে পাওয়া যায়নি"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"বর্তমানে কোনো সার্ভারে নেটওয়ার্ক ব্লক ডিভাইস নোড সংযুক্ত নেই। যেমন, আপনি তাদের "
+"কোনোটির সাথে সংযোগ বিচ্ছিন্ন করতে পারেননা।"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "নেটওয়ার্কের ব্লক ডিভাইসে সংযুক্ত হোন"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "নেটওয়ার্কের ব্লক ডিভাইসে সংযোগ বিচ্ছিন্ন করুন"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "বিভাজকে ফিরে আসুন এবং সমাপ্ত করুন"

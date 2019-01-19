@@ -1,0 +1,6 @@
+copy-modules version flavour installedname
+
+Copy modules into the right directories in preparation for building udebs.
+
+Return 1 if a required module is missing, unless $KW_CHECK_NONFATAL is
+non-empty.

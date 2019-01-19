@@ -1,0 +1,135 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use File::Find ();
+
+my $defconfigdir = $ENV{KW_DEFCONFIG_DIR};
+if (!defined($defconfigdir)) {
+	die "Required environment variable \$KW_DEFCONFIG_DIR is not defined";
+}
+my $sysdir="$defconfigdir/modules/";
+
+my %modules;
+my %loaded;
+
+sub expandwildcards {
+	my ($moddir, $line) = @_;
+	my ($pattern, $checkdir);
+
+	if ($line =~ /^(.*) [-?]$/) {
+		($pattern, $checkdir) = ($1, 0);
+	} else {
+		($pattern, $checkdir) = ($line, 1);
+	}
+
+	# If pattern doesn't include a wildcard, return it unchanged, including
+	# an optional-include suffix (but not an exclude suffix)
+	if ($pattern !~ /[?*]/) {
+		return $pattern . ($line =~ / \?$/ ? ' ?' : '');
+	}
+
+	# Find directory to start search at, and full pattern
+	my ($searchdir, $fullpattern);
+	if ($pattern =~ m|^([^?*]*)/(.*)|) {
+		my $subdir = $1;
+		if (! -d "$moddir/$subdir") {
+			if (-d "$moddir/kernel/$subdir") {
+				$subdir = "kernel/$subdir";
+			} elsif ($checkdir) {
+				die "pattern $pattern refers to nonexistent subdirectory";
+			} else {
+				return ();
+			}
+		}
+		$searchdir = "$moddir/$subdir";
+		$fullpattern = "$searchdir/$2";
+	} else {
+		$searchdir = $moddir;
+		$fullpattern = $pattern;
+	}
+
+	# Convert to regexp syntax.  We handle '**' as a recursive
+	# match-all.  We don't bother to handle '\' or '[...]'.
+	my %glob_re = ('?'  => '[^/]',
+		       '*'  => '[^/]*',
+		       '**' => '.*',
+		       ''   => '');
+	$fullpattern =~ s/(.*?)(\*\*|[?*]|)/quotemeta($1) . $glob_re{$2}/eg;
+
+	# Add module suffix; anchor at start and end of string
+	$fullpattern = '^' . $fullpattern . '\.(?:ko|o)$';
+
+	# We need to recurse only if the pattern contains '**' or a
+	# directory separator after any wildcard.  We could optimise
+	# this further, but it doesn't seem worthwhile.
+	my $recurse = ($pattern =~ /\*\*/ || $pattern =~ m|[?*].*/|);
+
+	my @modules;
+	File::Find::find(
+		sub {
+			if (-d) {
+				$File::Find::prune =
+					($File::Find::name ne $searchdir &&
+					 !$recurse);
+			} elsif ($File::Find::name =~ /$fullpattern/) {
+				# We yield just the basename, as usual
+				s/\.(?:ko|o)$//;
+				push @modules, $_;
+			}
+		},
+		$searchdir);
+	return @modules;
+}
+
+sub loadlist {
+	my ($list, $moddir) = @_;
+	
+	if ($loaded{$list}) {
+		die "include loop detected loading $list\n";
+	}
+	$loaded{$list}=1;
+	
+	my $fh;
+	open ($fh, $list) || die "cannot read $list\n";
+	while (<$fh>) {
+		s/^\s*//;
+		s/\s*$//;
+		if (/^#include\s+<(.*)>$/) {
+			my $basename=$1;
+			loadlist($sysdir.$basename, $moddir);
+		}
+		elsif (/^#include\s+"(.*)"$/) {
+			my $include=$1;
+			my ($dirname)=$list=~m!(.*/).*!;
+			loadlist($dirname.$include, $moddir);
+		}
+		elsif (/^$/) {
+			next;
+		}
+		elsif (/^#/) {
+			next;
+		}
+		elsif (/ -$/) {
+			for (expandwildcards($moddir, $_)) {
+				delete $modules{$_};
+				delete $modules{"$_ ?"};
+			}
+		}
+		else {
+			# Support dash prefixing for backwards compatibility.
+			s/^-(.*)/$1 ?/;
+
+			for (expandwildcards($moddir, $_)) {
+				$modules{$_}=1;
+			}
+		}
+	}
+	close $fh;
+}
+
+my $file=shift || die "no input file given";
+my $moddir=shift || die "no module directory specified";
+loadlist($file, $moddir);
+foreach my $m (sort keys %modules) {
+	print "$m\n";
+}

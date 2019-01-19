@@ -1,0 +1,512 @@
+# translation of debian-installer_packages_po_sublevel5 to Hindi
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+# Nishant Sharma <me@nishants.net>, 2005, 2006.
+# Kumar Appaiah <akumar@ee.iitm.ac.in>, 2008.
+# Kumar Appaiah <a.kumar@alumni.iitm.ac.in>, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer_packages_po_sublevel5_hi\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2018-10-06 15:28+0000\n"
+"Last-Translator: Kumar Appaiah\n"
+"Language-Team: \n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.2\n"
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../partman-base.templates:60001
+#, no-c-format
+msgid "ZFS pool %s, volume %s"
+msgstr "ZFS पूल %s, वॉल्यूम %s"
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../partman-base.templates:62001
+#, no-c-format
+msgid "DASD %s (%s)"
+msgstr "डीएएसडी %s (%s)"
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../partman-base.templates:63001
+#, no-c-format
+msgid "DASD %s (%s), partition #%s"
+msgstr "डीएएसडी %s (%s), पार्टीशन #%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl5:
+#. Setting to reserve a small part of the disk for use by BIOS-based bootloaders
+#. such as GRUB.
+#: ../partman-partitioning.templates:32001
+msgid "Reserved BIOS boot area"
+msgstr "सुरक्षित बायोस बूट क्षेत्र"
+
+#. Type: text
+#. Description
+#. :sl5:
+#. short variant of 'Reserved BIOS boot area'
+#. Up to 10 character positions
+#: ../partman-partitioning.templates:33001
+msgid "biosgrub"
+msgstr "बायोसग्रब"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../partman-basicfilesystems.templates:60001
+#, fuzzy
+#| msgid ""
+#| "Your boot partition has not been configured with the ext2 or ext3 file "
+#| "system. This is needed by your machine in order to boot. Please go back "
+#| "and use either the ext2 or ext3 file system."
+msgid ""
+"Your boot partition has not been configured with the ext2 file system. This "
+"is needed by your machine in order to boot. Please go back and use the ext2 "
+"file system."
+msgstr ""
+"आपका बूट पार्टिशन ईएक्सटी२ या ईएक्सटी३ फाइलसिस्टम में नहीं बना है. आपके यंत्र को बूट करने "
+"के लिए यह आवश्यक है. कृपया वापस जा कर ईएक्सटी२ या ईएक्सटी३ फाइलसिस्टम चुनिए."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../partman-basicfilesystems.templates:61001
+#, fuzzy
+#| msgid ""
+#| "Your boot partition is not located on the first primary partition of your "
+#| "hard disk. This is needed by your machine in order to boot.  Please go "
+#| "back and use your first primary partition as a boot partition."
+msgid ""
+"Your boot partition is not located on the first partition of your hard disk. "
+"This is needed by your machine in order to boot.  Please go back and use "
+"your first partition as a boot partition."
+msgstr ""
+"आपका बूट पार्टिशन आपके हार्ड डिस्क के प्राथमिक पार्टिशन पर स्थित नहीं है. यह आपके तंत्र को "
+"बूट करने के लिए आवश्यक है. कृपया वापस जा कर अपने प्राथमिक पार्टिशन को बूट पार्टिशन के रूप "
+"में उपयोग करें."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "ctc: Channel to Channel (CTC) or ESCON connection"
+msgstr "ctc: चैनल टू चैनल (CTC) या ESCON संबंध"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "qeth: OSA-Express in QDIO mode / HiperSockets"
+msgstr "qeth: OSA-एक्सप्रेस QDIO मोड में/HiperSockets"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "iucv: Inter-User Communication Vehicle - available for VM guests only"
+msgstr "iucv: इंटर-यूज़र कम्यूनिकेशन वेहिकल - केवल वीएम गेस्ट्स के लिए उपलब्ध"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "virtio: KVM VirtIO"
+msgstr "वर्टआईओ (virtio): के वि एम् वर्टआईओ"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:1002
+msgid "Network device type:"
+msgstr "नेटवर्क उपकरण प्रकार:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:1002
+msgid ""
+"Please choose the type of your primary network interface that you will need "
+"for installing the Debian system (via NFS or HTTP). Only the listed devices "
+"are supported."
+msgstr ""
+"डेबियन प्रणाली के संस्थापन (NFS या HTTP द्वारा) के लिए वांछित प्राथमिक नेटवर्क उपकरण का "
+"प्रकार चुनें. केवल निम्न सूचित उपकरण ही समर्थित हैं."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:2001
+msgid "CTC read device:"
+msgstr "सीटीसी पढ़ने का उपकरण:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:2001 ../s390-netdevice.templates:3001
+msgid "The following device numbers might belong to CTC or ESCON connections."
+msgstr "निम्नलिखित उपकरण क्रमांक सीटीसी या एस्कॉन संबंधों से संबद्ध हो सकते हैं।"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:3001
+msgid "CTC write device:"
+msgstr "सीटीसी लेखन उपकरण:"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:4001 ../s390-netdevice.templates:8001
+#: ../s390-netdevice.templates:12001
+msgid "Do you accept this configuration?"
+msgstr "आपको यह कॉनफिगरेशन स्वीकार्य है?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:4001
+msgid ""
+"The configured parameters are:\n"
+" read channel  = ${device_read}\n"
+" write channel = ${device_write}\n"
+" protocol      = ${protocol}"
+msgstr ""
+"कॉन्फ़िगर्ड प्राचल हैं:\n"
+" रीड चैनल  = ${device_read}\n"
+" राइट चैनल = ${device_write}\n"
+" प्रोटोकॉल   = ${protocol}"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:5001
+msgid "No CTC or ESCON connections"
+msgstr "कोई CTC या ESCON संबंध नहीं"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:5001
+msgid "Please make sure that you have set them up correctly."
+msgstr "कृपया सुनिश्चित करें कि आपने उन्हें ठीक प्रकार से व्यवस्थित किया है।"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:6001
+msgid "Protocol for this connection:"
+msgstr "इस संबंध के लिए प्रोटोकॉल:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:7001
+msgid "Device:"
+msgstr "उपकरण:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:7001
+msgid "Please select the OSA-Express QDIO / HiperSockets device."
+msgstr "कृपया ओएसए-एक्सप्रेस क्यूडीआईओ / हाईपरसॉकेट्स उपकरण चुनें।"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:8001
+msgid ""
+"The configured parameters are:\n"
+" channels = ${device0}, ${device1}, ${device2}\n"
+" port     = ${port}\n"
+" layer2   = ${layer2}"
+msgstr ""
+"कॉनफ़गर किये गये प्राचल हैं:\n"
+" चैनल =${device0}, ${device1}, ${device2}\n"
+" पोर्ट      = ${port}\n"
+" लेयर२   = ${layer2}"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:9001
+msgid "No OSA-Express QDIO cards / HiperSockets"
+msgstr "कोई ओएसए-एक्सप्रेस क्यूडीआईओ कार्ड्स / हाईपरसॉकेट्स नहीं"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:9001
+msgid ""
+"No OSA-Express QDIO cards / HiperSockets were detected. If you are running "
+"VM please make sure that your card is attached to this guest."
+msgstr ""
+"कोई भी ओएसए-एक्सप्रेस क्यूडीआईओ कार्ड्स / हाईपरसॉकेट्स नहीं पाए गये. यदि आप वीएम चला रहें "
+"तो कृपया सुनिश्चित करें कि आपका कार्ड इस अतिथि से जुड़ा हुआ है."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:10001
+msgid "Port:"
+msgstr "पोर्ट:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:10001
+msgid "Please enter a relative port for this connection."
+msgstr "इस कनेक्शन हेतु कृपया सापेक्ष पोर्ट भरें."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:11001
+msgid "Use this device in layer2 mode?"
+msgstr "इस उपकरण का उपयोग लेयर-२ मोड में करें?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:11001
+msgid ""
+"By default OSA-Express cards use layer3 mode. In that mode LLC headers are "
+"removed from incoming IPv4 packets. Using the card in layer2 mode will make "
+"it keep the MAC addresses of IPv4 packets."
+msgstr ""
+"सेटिंग को बदले बिना ओ.एस.ए.-एक्सप्रेस कार्ड लेयर-३ मोड का उपयोग करते हैं. इस मोड में एल."
+"एल.सी. हेडरआनेवाली आई.पी.वी.-४ पैकेट से निकाली जाती है. कार्ड का उपयोग लेयर-२ मोड में "
+"करने सेआनेवाली आई.पी.वी.-४ पैकेट की मैक अड्रैस कायम रखी जाती है."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:12001
+msgid ""
+"The configured parameter is:\n"
+" peer  = ${peer}"
+msgstr ""
+"कॉन्फ़िगर किया गया प्राचल है: \n"
+" पीयर = ${peer}"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid "VM peer:"
+msgstr "वीएम पीअर:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid "Please enter the name of the VM peer you want to connect to."
+msgstr "कृपया उस वीएम पीयर का नाम प्रविष्ट करें जिससे आप संपर्क स्थापित करना चाहते हैं."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid ""
+"If you want to connect to multiple peers, separate the names by colons, e."
+"g.  tcpip:linux1."
+msgstr ""
+"यदि आप अनेक पीयर्स से संपर्क करना चाहते हैं तो उनके नामों को विसर्ग से पृथक करें, उदाहरणार्थ "
+"tcpip:linux1."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid ""
+"The standard TCP/IP server name on VM is TCPIP; on VIF it's $TCPIP. Note: "
+"IUCV must be enabled in the VM user directory for this driver to work and it "
+"must be set up on both ends of the communication."
+msgstr ""
+"वीएम पर टीसीपी/आईपी सर्वर का मानक नाम है TCPIP; वीआईएफ पर यह $TCPIP है. नोट: इस "
+"ड्राइवर के कार्य करने के लिए वीएम प्रयोक्ता डायरेक्ट्री में IUCV को सक्रिय होना चाहिए और "
+"इसे संचार के दोनों छोरों पर व्यवस्थित करना ही होगा."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl5:
+#: ../s390-netdevice.templates:14001
+msgid "Configure the network device"
+msgstr "नेटवर्क उपकरण कॉन्फ़िगर करें"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Available devices:"
+msgstr "उपलब्ध उपकरण:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid ""
+"The following direct access storage devices (DASD) are available. Please "
+"select each device you want to use one at a time."
+msgstr ""
+"निम्न डिरेक्ट ऐक्सेस स्टोरेज डिवासेज़ (DASD) उपलब्ध हैं। वह प्रत्येक उपकरण एक बार में एक चुनें,"
+"जोकि आप प्रयोग करना चाहते हैं।"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Select \"Finish\" at the bottom of the list when you are done."
+msgstr "जब आप तैयार हो जाएँ तो सूची के अन्त में लिखा हुआ \"Finish\" चुनें."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid "Choose device:"
+msgstr "उपकरण चुनें:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid ""
+"Please choose a device. You have to specify the complete device number, "
+"including leading zeros."
+msgstr ""
+"कृपया एक उपकरण चुनें. आपको अंक के प्रारंभ के शून्यों के साथ संपूर्ण उपकरण क्रमांक लिखना है."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "Invalid device"
+msgstr "अवैध उपकरण"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "An invalid device number has been chosen."
+msgstr "कोई अवैध डिवाइस क्रमांक चुना गया है."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001 ../s390-dasd.templates:5001
+msgid "Format the device?"
+msgstr "उपकरण को फ़ॉर्मेट करें?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid "The DASD ${device} is already low-level formatted."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid ""
+"Please choose whether you want to format again and remove any data on the "
+"DASD. Note that formatting a DASD might take a long time."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:5001
+#, fuzzy
+#| msgid ""
+#| "The installer is unable to detect if the device ${device} has already "
+#| "been formatted or not. Devices need to be formatted before you can create "
+#| "partitions."
+msgid ""
+"The DASD ${device} is not low-level formatted. DASD devices must be "
+"formatted before you can create partitions."
+msgstr ""
+"संस्थापक यह ज्ञात करने में असफल रहा कि उपकरण ${device} पहले से ही फॉर्मेट है या नहीं."
+"पार्टिशन बनाने से पहले उपकरणों को फॉर्मेट करना आवश्यक है."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+#, fuzzy
+#| msgid "Device in use"
+msgid "The DASD ${device} is in use"
+msgstr "उपकरण प्रयोग में"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid ""
+"Could not low-level format the DASD ${device} because the DASD is in use.  "
+"For example, the DASD could be a member of a mapped device in an LVM volume "
+"group."
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:7001
+msgid "Formatting ${device}..."
+msgstr "${device} को फॉर्मेट किया जा रहा है..."
+
+#. Type: text
+#. Description
+#. Main menu item. Keep translations below 55 columns
+#. :sl5:
+#: ../s390-dasd.templates:8001
+msgid "Configure direct access storage devices (DASD)"
+msgstr "डिरेक्ट एक्सेस स्टोरेज डिवाइसेज़ व्यवस्थित करें (डीएएसडी)"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl5:
+#: ../zipl-installer.templates:1001
+msgid "Install the ZIPL boot loader on a hard disk"
+msgstr "ZIPL बूटलोडर हार्ड डिस्क पर संस्थापित करें"

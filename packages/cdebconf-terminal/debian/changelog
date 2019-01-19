@@ -1,0 +1,430 @@
+cdebconf-terminal (0.35) unstable; urgency=medium
+
+  * Team upload
+
+  [ Colin Watson ]
+  * Change priority to optional, since "Priority: extra" is now deprecated.
+
+  [ Updated translations ]
+  * Marathi (mr.po) by Nayan Nakhare
+
+ -- Holger Wansing <hwansing@mailbox.org>  Wed, 31 Oct 2018 20:13:08 +0100
+
+cdebconf-terminal (0.34) unstable; urgency=medium
+
+  * Team upload
+
+  [ Cyril Brulebois ]
+  * Update Vcs-{Browser,Git} to point to salsa (alioth's replacement).
+
+  [ Updated translations ]
+  * Telugu (te.po) by Praveen Illa
+
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 14 Aug 2018 12:53:49 +0200
+
+cdebconf-terminal (0.33) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 21 Feb 2018 07:56:27 +0100
+
+cdebconf-terminal (0.32) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 06 Feb 2018 09:45:35 +0100
+
+cdebconf-terminal (0.31) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Panjabi (pa.po) by Aman ALam
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 12 Jan 2018 06:52:18 +0100
+
+cdebconf-terminal (0.30) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Norwegian Nynorsk (nn.po) by Allan Nordhøy
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 10 Dec 2017 16:07:03 +0100
+
+cdebconf-terminal (0.29) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Simplified Chinese (zh_CN.po) by Yangfl
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 21 Jun 2017 16:41:00 +0200
+
+cdebconf-terminal (0.28) unstable; urgency=medium
+
+  * dependency ttf-dejavu-mono-udeb has been renamed to fonts-dejavu-mono-udeb
+
+ -- Philip Hands <phil@hands.com>  Wed, 21 Dec 2016 10:45:02 +0100
+
+cdebconf-terminal (0.27) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 30 Jul 2016 13:50:48 +0200
+
+cdebconf-terminal (0.26) unstable; urgency=medium
+
+  [ Colin Watson ]
+  * Use HTTPS for Vcs-* URLs, and link to cgit rather than gitweb.
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 04 Feb 2016 19:10:41 +0100
+
+cdebconf-terminal (0.25) unstable; urgency=medium
+
+  [ Regis Boudin ]
+  * GTK+ : Update code to trop using deprecated symbols, This allows to compile
+    for GTK+3.
+  * Makefile.in : Temporarily disable -Werror to be abe to compile for GTK+3
+    with deprecated symbols, and apply CPPFLAGS when compiling objects.
+  * Remove conditional code for pre-oldstable versions of VTE. Bump
+    Build-Depends as well. Instead, add conditional code to build for a version
+    of VTE compatible with GTK+3.
+  * Regroup the libvte pkgconfig checks with the gtk+ one. This merges the
+    CFLAGS and LIBS of both libraries under GTK_FLAGS and GTK_LIBS. Drop use of
+    VTE_CFLAGS and manual -lvte from Makefile.in.
+  * Rework configure.ac and Makefile.in to check for the presence of libnewt
+    and use its declared CFLAGS and LIBS. Add a --with-gtk-version parameter
+    allowing to build for either GTK+2 or GTK+3.
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 28 Jan 2016 11:20:30 +0100
+
+cdebconf-terminal (0.23) unstable; urgency=low
+
+  [ Updated translations ]
+  * Bosnian (bs.po) by Amila Valjevčić
+  * Hungarian (hu.po) by Judit Gyimesi
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 14 Dec 2013 21:53:34 +0100
+
+cdebconf-terminal (0.22) unstable; urgency=low
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 06 Sep 2013 07:05:12 +0200
+
+cdebconf-terminal (0.21) unstable; urgency=low
+
+  [ Dmitrijs Ledkovs ]
+  * Set debian source format to '3.0 (native)'.
+  * Set Vcs-* to canonical format.
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 13 Jul 2013 14:06:47 +0200
+
+cdebconf-terminal (0.20) unstable; urgency=low
+
+  [ Colin Watson ]
+  * Ignore some automake-related configure options, silencing warnings from
+    dh_auto_configure.
+  * Switch to debhelper 9, thereby making use of dpkg-buildflags.
+  * Link with -Wl,--as-needed, avoiding overlinking against indirect
+    dependencies of GTK+.
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 17 May 2013 12:35:10 +0200
+
+cdebconf-terminal (0.19) unstable; urgency=low
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 14 May 2013 16:29:20 +0200
+
+cdebconf-terminal (0.18) unstable; urgency=low
+
+  [ Colin Watson ]
+  * Use dh-autoreconf to avoid huge diffs when the autotools are updated.
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 09 Dec 2012 14:31:05 +0100
+
+cdebconf-terminal (0.17) unstable; urgency=low
+
+  * Team upload
+  * Add the epoch on the build dependency on libvte-dev
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 06 Jul 2012 01:51:06 +0200
+
+cdebconf-terminal (0.16) unstable; urgency=low
+
+  * Team upload
+  * Turn XC-package-Type into Package-Type
+
+  [ Updated translations ]
+  * Asturian (ast.po) by Mikel González
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Tibetan (bo.po) by Tennom
+  * Welsh (cy.po) by Dafydd Tomos
+  * German (de.po) by Holger Wansing
+  * Estonian (et.po) by Mattias Põldaru
+  * Galician (gl.po) by Jorge Barreiro
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Indonesian (id.po) by Mahyuddin Susanto
+  * Icelandic (is.po) by Sveinn í Felli
+  * Italian (it.po) by Milo Casagrande
+  * Kannada (kn.po) by vignesh prabhu
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Latvian (lv.po) by Rūdolfs Mazurs
+  * Macedonian (mk.po) by Arangel Angov
+  * Panjabi (pa.po) by A S Alam
+  * Polish (pl.po) by Marcin Owsiany
+  * Romanian (ro.po) by Ioan Eugen Stan
+  * Sinhala (si.po)
+  * Ukrainian (uk.po) by Borys Yanovych
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+  * Traditional Chinese (zh_TW.po) by Yao Wei (魏銘廷)
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 15 Jun 2012 18:25:57 +0200
+
+cdebconf-terminal (0.15) unstable; urgency=low
+
+  * Drop -Wl,-z,syms; it doesn't work with gold, and the replacement
+    (-Wl,-z,defs) also fails because some symbols from the plugin will be
+    resolved by loading it into cdebconf.
+  * Fix newt-plugin-entropy link order to be friendly to 'ld --as-needed'.
+
+  [ Updated translations ]
+  * Hebrew (he.po) by Lior Kaplan
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 24 Jul 2011 14:21:28 +0100
+
+cdebconf-terminal (0.14) unstable; urgency=low
+
+  * Team upload
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Czech (cs.po) by Miroslav Kure
+  * Esperanto (eo.po) by Felipe Castro
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Korean (ko.po) by Changwoo Ryu
+  * Romanian (ro.po) by Eddy Petrișor
+  * Slovak (sk.po) by Ivan Masár
+  * Swedish (sv.po) by Daniel Nylander
+  * Telugu (te.po) by Arjuna Rao Chavala
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Uyghur (ug.po) by Sahran
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 24 Apr 2011 14:11:57 +0200
+
+cdebconf-terminal (0.13) unstable; urgency=low
+
+  * Fix FTBFS avoiding the requirement of build-depends on autotools.
+
+ -- Otavio Salvador <otavio@debian.org>  Mon, 03 Jan 2011 22:49:32 -0200
+
+cdebconf-terminal (0.12) unstable; urgency=low
+
+  [ Updated translations ]
+  * Lao (lo.po) by Anousak Souphavanh
+  * Northern Sami (se.po) by Børre Gaup
+  * Sinhala (si.po) by Danishka Navin
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 24 Dec 2010 19:49:43 -0200
+
+cdebconf-terminal (0.11) unstable; urgency=low
+
+  * debian/control: build-depends on autoconf and autotools-dev. Closes:
+    #603317.
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 12 Nov 2010 20:40:32 -0200
+
+cdebconf-terminal (0.10) unstable; urgency=low
+
+  [ Colin Watson ]
+  * Remove duplicate Section fields from binary control stanzas.
+
+  [ Updated translations ]
+  * Bengali (bn.po) by Israt Jahan
+  * Catalan (ca.po) by Jordi Mallach
+  * Icelandic (is.po) by Sveinn í Felli
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 12 Nov 2010 17:48:05 -0200
+
+cdebconf-terminal (0.9) unstable; urgency=low
+
+  * Support building with vte 0.26, based on patches from Loïc Minier
+    (closes: #598281) and Marcin Juszkiewicz (LP: #649810).
+
+  [ Updated translations ]
+  * Asturian (ast.po) by maacub
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bosnian (bs.po) by Armin Beširović
+  * Danish (da.po) by Jacob Sparre Andersen
+  * Persian (fa.po) by Ebrahim Byagowi
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Telugu (te.po) by Arjuna Rao Chavala
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 01 Oct 2010 12:40:08 +0100
+
+cdebconf-terminal (0.8) unstable; urgency=low
+
+  [ Otavio Salvador/Christian Perrier ]
+  * Generate the configure script at build time, if it is missing.
+
+  [ Updated translations ]
+  * Asturian (ast.po) by astur
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Persian (fa.po) by acathur
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Central Khmer (km.po) by Khoem Sokhem
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Macedonian (mk.po) by Arangel Angov
+  * Norwegian Nynorsk (nn.po) by Eirik U. Birkeland
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 11 Jul 2010 10:29:39 +0200
+
+cdebconf-terminal (0.7) unstable; urgency=low
+
+  [ Frans Pop ]
+  * Remove Standards-Version field.
+
+  [ Cyril Brulebois ]
+  * Switch udeb from DirectFB to Xlib to prepare the move to an X11-based
+    graphical installer (closes: #574287):
+    - Get rid of libgtk-directfb-2.0-dev in Build-Depends.
+    - Bump the Build-Depends on libgtk2.0-dev to ensure the new udeb gets
+      a dependency on libgtk-x11-udeb.
+    - Replace gtk+-directfb-2.0 with gtk+-x11-2.0 in configure.ac to use
+      the shared/x11 flavour (which is the one used for the udeb).
+
+  [ Updated translations ]
+  * German (de.po) by Holger Wansing
+  * French (fr.po) by Christian Perrier
+  * Hebrew (he.po) by Omer Zak
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Frans Pop <fjp@debian.org>  Wed, 24 Mar 2010 02:11:57 +0100
+
+cdebconf-terminal (0.6) unstable; urgency=low
+
+  [ Colin Watson ]
+  * Handle new progress_start and progress_info frontend API in cdebconf
+    0.146.
+  * Upgrade to debhelper v7.
+
+  [ Updated translations ]
+  * Amharic (am.po) by Tegegne Tefera
+  * Asturian (ast.po) by astur
+  * Belarusian (be.po) by Pavel Piatruk
+  * Czech (cs.po) by Miroslav Kure
+  * Galician (gl.po) by Marce Villarino
+  * Hindi (hi.po)
+  * Italian (it.po) by Milo Casagrande
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Frans Pop <fjp@debian.org>  Wed, 23 Dec 2009 00:50:34 +0100
+
+cdebconf-terminal (0.5) unstable; urgency=low
+
+  [ Christian Perrier ]
+  * Bump debhelper compatibility level to 6
+  * Update Standards to 3.8.1 (no change)
+  * Properly Build-Depend on po-debconf and Depend on ${misc:Depends} to
+    have a correct dependency on debconf
+  * Set myself as Uploader
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 14 Jun 2009 17:11:11 +0200
+
+cdebconf-terminal (0.4) unstable; urgency=low
+
+  * Build-depend on libdebian-installer4-dev, needed by the newt plugin.
+  * #include <stdio.h> and <sys/wait.h> in newt-plugin-terminal.c.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 16 Feb 2009 12:11:42 +0000
+
+cdebconf-terminal (0.3) unstable; urgency=low
+
+  * cdebconf-gtk-terminal Provides: cdebconf-terminal, not cdebconf-entropy.
+  * Add a new cdebconf-newt-terminal that deals with all the things you need
+    to do if you want to display something completely different on top of
+    the usual debconf frontend. This should cover rescue mode (cf. bug
+    #412168) as well as permitting manual package selection in tasksel using
+    aptitude. Requires libdebconfclient0-dev (>= 0.139).
+  * Add myself to Uploaders.
+
+  [ Updated translations ]
+  * Basque (eu.po) by Piarres Beobide
+  * Galician (gl.po) by Marce Villarino
+  * Kazakh (kk.po) by daur88
+  * Malayalam (ml.po) by Praveen Arimbrathodiyil
+  * Marathi (mr.po) by Sampada
+  * Tagalog (tl.po) by Eric Pareja
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 15 Feb 2009 21:43:52 +0000
+
+cdebconf-terminal (0.2) unstable; urgency=low
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Belarusian (be.po) by Pavel Piatruk
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bengali (bn.po) by Mahay Alam Khan (মাহে আলম খান)
+  * Bosnian (bs.po) by Armin Besirovic
+  * Catalan (ca.po) by Jordi Mallach
+  * Czech (cs.po) by Miroslav Kure
+  * Welsh (cy.po) by Jonathan Price
+  * Danish (da.po)
+  * Dzongkha (dz.po) by Jurmey Rabgay
+  * Greek, Modern (1453-) (el.po) by quad-nrg.net
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * Finnish (fi.po) by Esko Arajärvi
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hebrew (he.po) by Omer Zak
+  * Hindi (hi.po) by Kumar Appaiah
+  * Croatian (hr.po) by Josip Rodin
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Indonesian (id.po) by Arief S Fitrianto
+  * Italian (it.po) by Milo Casagrande
+  * Japanese (ja.po) by Kenshi Muto
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Central Khmer (km.po) by KHOEM Sokhem
+  * Korean (ko.po) by Changwoo Ryu
+  * Kurdish (ku.po) by Amed Çeko Jiyan
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Macedonian (mk.po) by Arangel Angov
+  * Malayalam (ml.po) by പ്രവീണണ്‍ അരിമ്പ്രത്തൊടിയിലല്‍
+  * Marathi (mr.po) by Sampada
+  * Bokmål, Norwegian (nb.po) by Hans Fredrik Nordhaug
+  * Nepali (ne.po) by Shiva Prasad Pokharel
+  * Dutch (nl.po) by Frans Pop
+  * Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+  * Panjabi (pa.po) by Amanpreet Singh Alam
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Romanian (ro.po) by Eddy Petrișor
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Ivan Masár
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Albanian (sq.po) by Elian Myftiu
+  * Serbian (sr.po) by Veselin Mijušković
+  * Swedish (sv.po) by Daniel Nylander
+  * Tamil (ta.po) by Dr.T.Vasudevan
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Turkish (tr.po) by Mert Dirik
+  * Ukrainian (uk.po) by Borys Yanovych
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+  * Simplified Chinese (zh_CN.po) by Deng Xiyue
+
+ -- Otavio Salvador <otavio@debian.org>  Sun, 21 Sep 2008 18:47:43 -0300
+
+cdebconf-terminal (0.1) unstable; urgency=low
+
+  [ Jérémy Bobbio ]
+  * Initial release.  (Closes: #339855)
+
+ -- Jérémy Bobbio <lunar@debian.org>  Sun, 10 Aug 2008 06:52:39 +0000

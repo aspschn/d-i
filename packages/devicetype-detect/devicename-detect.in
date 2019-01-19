@@ -1,0 +1,106 @@
+#! /bin/sh
+# 
+# Copyright 2010 Emmet Hikory <persia@ubuntu.com>
+#
+# With thanks to Evan Dandrea for pointing the way
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+usage () {
+    echo "Usage: $0 [-h|--help|-v|--verbose|-V|--version]"
+    echo ""
+    echo "  -h | --help      print this help"
+    echo "  -V | --version   print version information"
+}
+
+if [ "$1" != "" ]; then
+    case "$1" in
+        "-h" | "--help")
+            usage
+            exit 1
+            ;;
+        "-V" | "--version")
+            echo "Version: @VERSION@"
+            exit 1
+            ;;
+        --debug)
+            set -x
+            ;;
+    esac
+fi
+
+amd64name() {
+    # Some things are the same
+    i386name
+}
+
+armelname() {
+    # The contents vary wildly, but the location is always the same
+    NAME=$(grep Hardware /proc/cpuinfo | cut -d: -f2) 
+}
+
+i386name() {
+    # The logic here comes mostly from ubiquity
+    MANUFACTURER=""
+    if [ -x "/usr/sbin/dmidecode" ]; then
+        MANUFACTURER=$(/usr/sbin/dmidecode --string system-manufacturer | tr [A-Z] [a-z])
+    fi
+    if [ -z "$MANUFACTURER" ] || \
+       echo "$MANUFACTURER" | grep -q "to be filled"; then
+       NAME=""
+    elif echo "$MANUFACTURER" | grep -q "bochs" ||
+            echo "$MANUFACTURER" | grep -q "vmware"; then
+        NAME="virtual machine"
+    else
+        KEY="system-product-name"
+        echo "$MANUFACTURER" | grep -q "lenovo" && KEY="system-version"
+        echo "$MANUFACTURER" | grep -q "ibm" && KEY="system-version"
+        NAME=$(dmidecode --string "$KEY" )
+        echo "$MANUFACTURER" | grep -q "apple" && \
+            NAME=$(echo $NAME | sed 's/[,d]*$//')
+    fi
+}
+
+powerpcname() {
+    # Some machines have proper kernel detection
+    NAME=$(grep ^detected /proc/cpuinfo | cut -d: -f2 | \
+               sed 's/.*(\(.*\))/\1/' )
+    # Others store the information in the "machine" field
+    if [ -z "$NAME" ]; then
+        NAME=$(grep ^machine /proc/cpuinfo | cut -d: -f2 | tr [A-Z] [a-z] )
+        grep -q Power "$NAME" && NAME=$(cat "$NAME" | sed s/[,\d]*$//)
+        grep -q '(' "$NAME" && NAME=$(cat "$NAME" | sed 's/.*(\(.*\))/\1/')
+    fi
+    # Sony is special
+    if [ -z "$NAME" ]; then
+        NAME=$(grep ^model /proc/cpuinfo | cut -d: -f2 | tr [A-Z] [a-z])
+    fi
+}
+
+# Get the base name in an architecture-dependent way
+NAME=""
+FUNCTION=$(dpkg --print-architecture)name
+if type $FUNCTION > /dev/null; then
+    $FUNCTION
+else
+    echo "Not ported yet" 1>&2
+fi
+
+# Either clean it up, or try with devicetype-detect
+if [ ! -z "$NAME" ]; then
+    NAME=$(echo $NAME | sed -e 's/^[\ -]*//' -e 's/[\ -]*$//' -e 's/\ /-/g')
+else
+    NAME=$(devicetype-detect)
+fi
+
+echo "$NAME"

@@ -1,0 +1,145 @@
+Template: debian-installer/iso-scan/title
+Type: text
+#  Main menu item
+# :sl1:
+_Description: Scan hard drives for an installer ISO image
+
+Template: cdrom/suite
+Type: select
+Choices: stable, testing, unstable
+Description: for internal use only
+ Suite to install
+
+Template: cdrom/codename
+Type: string
+Description: for internal use only
+ Codename for the selected suite
+
+Template: iso-scan/detect_progress_title
+Type: text
+# :sl3:
+_Description: Detecting hardware to find hard drives
+
+Template: iso-scan/progress_title
+Type: text
+# :sl3:
+_Description: Searching drives for an installer ISO image
+
+Template: iso-scan/progress_mount
+Type: text
+# :sl3:
+_Description: Mounting ${DRIVE}...
+
+Template: iso-scan/progress_scan
+Type: text
+# :sl3:
+_Description: Scanning ${DRIVE} (in ${DIRECTORY})...
+
+Template: iso-scan/ask_second_pass
+Type: boolean
+Default: false
+# :sl3:
+_Description: Do full disk search for installer ISO image?
+ The quick scan for installer ISO images, which looks only in common
+ places, did not find an installer ISO image. It's possible that a
+ more thorough search will find the ISO image, but it may take a long
+ time.
+
+Template: iso-scan/no-isos
+Type: error
+# :sl3:
+_Description: Failed to find an installer ISO image
+ No installer ISO images were found. If you downloaded the ISO image,
+ it may have a bad filename (not ending in ".iso"), or it may be on a
+ file system that could not be mounted.
+ .
+ You'll have to use an alternative installation method, select another device
+ to look for ISO image, or try again after you've fixed it.
+
+Template: iso-scan/bad-isos
+Type: error
+# :sl3:
+_Description: Failed to find an installer ISO image
+ While one or more possible ISO images were found, they could not be mounted.
+ The ISO image you downloaded may be corrupt.
+ .
+ You'll have to use an alternative installation method, select another device
+ to look for ISO image, or try again after you've fixed it.
+
+Template: iso-scan/other-isos
+Type: error
+# :sl3:
+_Description: No installer ISO image found
+ While one or more possible ISO images were found, they did not look like
+ valid installer ISO images.
+ .
+ You'll have to use an alternative installation method, select another device
+ to look for ISO image, or try again after you've fixed it.
+
+Template: iso-scan/success
+Type: note
+# :sl3:
+_Description: Successfully mounted ${SUITE} installer ISO image
+ The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the
+ installation ISO image.
+
+Template: iso-scan/filename
+Type: text
+Description: for internal use only
+ For use by other parts of d-i, such as base-installer
+
+Template: shared/ask_device
+Type: select
+Choices-C: all, ${DEVICES_LIST}, manual
+# :sl3:
+#flag:translate!:2
+__Choices: All detected devices, ${DEVICES_LIST}, Enter device manually
+Default: all
+# :sl3:
+_Description: Device or partition to search for installation ISO(s):
+ You can select a device, manually specify a non-detected device, or
+ rescan available devices (useful for slow USB devices).
+
+Template: shared/enter_device
+Type: string
+# :sl3:
+_Description: Device name:
+
+Template: iso-scan/ask_which_iso
+Type: select
+# :sl3:
+#flag:translate:2
+__Choices: ${ISOS_LIST}, Full search
+# :sl3:
+_Description: ISO file to use:
+ One or multiple ISO files have been detected on the selected device(s).
+ Please choose which one you want to use, or ask for a more thorough search.
+
+Template: iso-scan/ask_right_iso
+Type: boolean
+Default: true
+# :sl3:
+_Description: Is ISO file ${FILENAME} the correct image for installation?
+ The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME},
+ self-described as '${DESCRIPTION}') will be used as the
+ installation ISO image.
+ .
+ If multiple ISO files exist on the same installer drive,
+ you may select which one you want to use.
+
+Template: iso-scan/copy_iso_to_ram
+Type: boolean
+Default: false
+# :sl3:
+_Description: Copy the ISO image into RAM before mounting it?
+ There is enough available memory to be able to copy the ISO image into
+ RAM.
+ .
+ Choosing this option allows reusing the disk hosting the ISO image. If you
+ don't do it, the disk will be actively used to access the ISO image and
+ it can't be partitioned by the installer.
+ .
+ Note however that if you overwrite the disk containing the ISO image, you
+ should not reboot before the end of the installation as you will not be
+ able to restart the installer since the ISO image will be gone from the
+ hard disk and memory.

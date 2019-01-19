@@ -1,0 +1,21 @@
+#! /bin/sh
+#
+# Umount all mounted file systems
+
+set -e
+
+# stop the udev daemon before /dev/ is unmounted
+if PID=$(pidof udevd); then
+       kill -15 $PID
+fi
+
+# Clean up the contents of /run to avoid cruft in the target system.  (The
+# alternative would be mounting a tmpfs on /run in debootstrap; this
+# interacts in difficult ways with using debootstrap outside d-i.  Cleaning
+# things up at the end of the installation is less elegant but more robust.)
+# Explicitly unmount /target/run before this just in case there's a
+# bind-mount left over there from earlier.
+umount /target/run 2>/dev/null || true
+rm -rf /target/run/*
+
+umount -a || true

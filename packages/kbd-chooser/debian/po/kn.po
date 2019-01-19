@@ -1,0 +1,143 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+# Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: kbd-chooser@packages.debian.org\n"
+"POT-Creation-Date: 2016-05-19 10:50+0200\n"
+"PO-Revision-Date: 2011-12-17 11:35+0530\n"
+"Last-Translator: Prabodh C P <prabodh@fsmk.org>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item. Please keep below 55 columns
+#. :sl1:
+#: ../kbd-chooser.templates-in:1001
+msgid "Select a keyboard layout"
+msgstr "ಕೀಲಿಮಣೆಯ ವಿನ್ಯಾಸವನ್ನು ಸೂಚಿಸು"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../kbd-chooser.templates-in:2001
+msgid "Type of keyboard:"
+msgstr "ಕೀಲಿಮಣೆಯ ಬಗೆ:"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../kbd-chooser.templates-in:2001
+msgid "Please choose the type of keyboard to configure."
+msgstr "ಸಂರಚನಾ ಪ್ರಕ್ರಿಯೆಗಾಗಿ, ನಿಮ್ಮ ಕೀಲಿಮಣೆಯ ಮಾದರಿಯನ್ನು ಸೂಚಿಸು"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#: ../kbd-chooser.templates-in:6001
+msgid "No keyboard to configure"
+msgstr "ಸಂರಚಿಸಲು ಯಾವುದೇ ಕೀಲಿಮಣೆ ಇಲ್ಲ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#: ../kbd-chooser.templates-in:7001
+msgid "Do not configure keyboard; keep kernel keymap"
+msgstr "ಕೀಲಿಮಣೆಯನ್ನು ಸಂರಚಿಸಬೇಡಿ; ಕರ್ನಲ್ ಕೀಲಿನಕ್ಷೆಯನ್ನು ಹಾಗೆ ಉಳಿಸಿಕೊಳ್ಳಿ "
+
+#. Type: text
+#. Description
+#. :sl1:
+#. base-installer progress bar item
+#: ../kbd-chooser.templates-in:8001
+msgid "Configuring keyboard..."
+msgstr "ಕೀಲಿಮಣೆಯನ್ನು ಸಂರಚಿಸಲಾಗುತ್ತಿದೆ ..."
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-at.templates:1001
+msgid "PC-style (AT or PS-2 connector) keyboard"
+msgstr "PC-style (AT or PS-2 connector) ಕೀಲಿಮಣೆ"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-atari.templates:1001
+msgid "Atari keyboard"
+msgstr "ಅಟಾರಿ ಕೀಲಿಮಣೆ"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-amiga.templates:1001
+msgid "Amiga keyboard"
+msgstr "ಅಮಿಗಾ ಕೀಲಿಮಣೆ"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-acorn.templates:1001
+msgid "Acorn keyboard"
+msgstr "ಏಕೊರ್ನ್ ಕೀಲಿಮಣೆ"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-mac.templates:1001
+msgid "Mac keyboard"
+msgstr "ಮ್ಯಾಕ್ ಕೀಲಿಮಣೆ"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-sparc.templates:1001
+msgid "Sun keyboard"
+msgstr "ಸನ್ ಕೀಲಿಮಣೆ"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-usb.templates:1001
+msgid "USB keyboard"
+msgstr "ಯು.ಎಸ್.ಬಿ ಕೀಲಿಮಣೆ"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-hil.templates:1001
+msgid "HP HIL keyboard"
+msgstr "HP HIL ಕೀಲಮಣೆ"
+
+#~ msgid "DEC keyboard"
+#~ msgstr "DEC ಕೀಲಿಮಣೆ"

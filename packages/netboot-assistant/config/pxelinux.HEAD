@@ -1,0 +1,29 @@
+## Run "di-netboot-assistant rebuild-menu" when you modify this file.
+##
+#
+# Note: All TFTP filenames must be prefixed with "::/". see README file.
+
+#KBDMAP ::/d-i/n-a/pxelinux.cfg/french.kbd
+
+UI ::/d-i/n-a/pxelinux.cfg/menu.c32
+MENU TITLE Debian-Installer Netboot Menu
+DEFAULT bootlocal
+
+# TIMEOUT 100
+#
+# ########################################################################
+#
+# Install stable automatically.
+# For details consult '/usr/share/doc/di-netboot-assistant/README.preseed'.
+#
+#LABEL autoinstall
+#   MENU LABEL Debian stable (amd64) + preseed
+#   kernel ::/d-i/n-a/stable/amd64/linux
+#   append initrd=::/d-i/n-a/stable/amd64/initrd.gz --- auto=true priority=critical url=tftp://installbox
+#
+# ########################################################################
+
+LABEL bootlocal
+        MENU LABEL ^Boot from local disk..
+        LOCALBOOT 0
+

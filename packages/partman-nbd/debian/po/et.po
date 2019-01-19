@@ -1,0 +1,209 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Estonian translation of Debian-installer
+#
+# This translation is released under the same licence as the debian-installer.
+#
+# Siim Põder <siim@p6drad-teel.net>, 2007.
+# Kristjan Räts <kristjanrats@gmail.com>, 2017.
+#
+# Thanks to following Ubuntu Translators for review and fixes:
+#     Laur Mõtus
+#     Heiki Nooremäe
+#     tabbernuk
+#
+#
+# Translations from iso-codes:
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Alastair McKinstry <mckinstry@computer.org>, 2001,2002.
+#   Free Software Foundation, Inc., 2000, 2004, 2006
+#   Hasso Tepper <hasso@estpak.ee>, 2006.
+#   Margus Väli <mvali@hot.ee>, 2000.
+#   Siim Põder <windo@p6drad-teel.net>, 2006.
+#   Tõivo Leedjärv <leedjarv@interest.ee>, 2000, 2001, 2008.
+#   Mattias Põldaru <mahfiaz@gmail.com>, 2009-2012, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2017-11-19 13:25+0000\n"
+"Last-Translator: Kristjan Räts <kristjanrats@gmail.com>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "Võrgu blokkseadme seadistamine"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD seadistamise tegevus:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "Praegu on ühendatud ${NUMBER} seadet."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "Võrgu blokkseadme (NBD) server:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"Palun sisesta selle arvuti hostinimi või IP-aadress, kus töötab nbd-server."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "NBD ekspordi nimi"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"Palun sisesta NBD ekspordi nimi, et nbd serverit kasutada. Siia sisestatud "
+"nimi peaks vastama serveri olemasolevale ekspordile."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "Võrgu blokkseadme sõlm (node):"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"Palun vali võrgu blokkseadme (NBD) sõlm, mida soovid ühendada või mille "
+"ühendust katkestada."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD serveriga ühendumine nurjus"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd-server'iga ühendumine nurjus. Veendu, et sisestatud host ja ekspori nimi "
+"on õiged, et nbd-serveri protsess töötab selles hostis, et võrk on õigesti "
+"seadistatud ja seejärel proovi uuesti."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "Pole rohkem võrgu blokkseadme (NBD) sõlmi"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"Kas kõik NBD seadme sõlmed on kasutusel või läks midagi valesti seadme "
+"sõlmede tuvastamisel."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"Rohkem NBD seadme sõlmi pole võimalik seadistada kuni seadistatud sõlmedega "
+"ühendus katkestatakse."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "Ühtegi ühendatud võrgu blokkseadme (NBD) sõlme ei leitud"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"Praegu pole ühtegi võrgu blokkseadme (NBD) sõlme ühendatud ühegi serveriga. "
+"Seetõttu pole ühtegi võimalik ühtegi sellist ühendust ka katkestada."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "Võrgu blokkseadme ühendamine"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "Katkesta ühendus võrgu blokkseadmega"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "Lõpeta ja naase partitsioneerimise juurde"

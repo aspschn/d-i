@@ -1,0 +1,38 @@
+<!-- $Id$ -->
+<!-- original version: 68523 -->
+
+  <sect2 arch="powerpc"><title>Rozdělení disku z Mac OS X</title>
+
+<para>
+
+Aplikaci <application>Disk Utility</application> můžete najít v
+instalátoru Mac OS X v menu <filename>Utilities</filename>. Tato aplikace
+bohužel neumožňuje upravit stávající oblasti. To znamená, že musíte
+disk rozdělit najednou.
+
+</para><para>
+
+Oblast pro GNU/Linux byste měli vytvořit na začátku disku. Na jejím
+typu nezáleží, protože ho instalační program &debian;u přepíše.
+
+</para><para>
+
+Nástroje pro dělení disků dostupné v &d-i;u jsou kompatibilní s OS X,
+ale ne s MacOS 9. Pokud plánujete instalaci MacOS 9 i OS X, je lepší
+nainstalovat OS X a &debian; na jeden disk a MacOS 9 na druhý.
+Jestliže totiž během startu počítače stisknete klávesu
+<keycap>option</keycap>, uvidíte pro každý systém vlastní položku
+a také pak můžete v zavaděči <application>yaboot</application> použít
+pro různé systémy různé parametry.
+
+</para><para>
+
+GNU/Linux neumí přistupovat k souborům na oblastech UFS, ale podporuje
+HFS+ (alias MacOS Extended). Zatímco OS X jednu z nich vyžaduje pro
+zavádění, MacOS 9 může být nainstalován buď na HFS (alias MacOS
+Standard) nebo na HFS+. Ke sdílení informací mezi MacOS a GNU/Linuxem
+je vhodné použít <quote>výměnnou</quote> oblast se souborovým systémem
+HFS, HFS+ nebo MS-DOS FAT, které rozumí MacOS 9, Max OS X i GNU/Linux.
+
+</para>
+  </sect2>

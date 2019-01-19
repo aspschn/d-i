@@ -1,0 +1,192 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Thai translation of debian-installer.
+# Copyright (C) 2006-2015 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Theppitak Karoonboonyanan <theppitak@gmail.com>, 2006-2015.
+#
+#
+# Translations from iso-codes:
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Free Software Foundation, Inc., 2002,2003,2004
+#   Alastair McKinstry <mckinstry@computer.org>, 2002, 2004
+# Translations from KDE:
+#   Thanomsub Noppaburana <donga@midaassets.com>
+# Theppitak Karoonboonyanan <theppitak@gmail.com>, 2005-2015
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2015-10-30 09:19+0700\n"
+"Last-Translator: Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "ตั้งค่าอุปกรณ์แบบบล็อคในเครือข่าย"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "การดำเนินการตั้งค่า NBD:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "ขณะนี้มีอุปกรณ์ ${NUMBER} ชิ้นเชื่อมต่ออยู่"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "เซิร์ฟเวอร์อุปกรณ์แบบบล็อคในเครือข่าย:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "กรุณาป้อนชื่อโฮสต์หรือที่อยู่ไอพีของระบบที่ให้บริการ nbd-server"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "ชื่อ export ของ NBD"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"กรุณาป้อนชื่อ export ของ NBD ที่ใช้ในการเข้าถึง nbd-server  ชื่อที่ป้อนนี้ควรตรงกับชื่อ export "
+"ที่มีอยู่ที่เซิร์ฟเวอร์"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "โหนดของอุปกรณ์แบบบล็อคในเครือข่าย::"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "กรุณาเลือกโหนดของอุปกรณ์ NBD ที่คุณต้องการเชื่อมต่อหรือตัดการเชื่อมต่อ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "เชื่อมต่อไปยังเซิร์ฟเวอร์ NBD ไม่สำเร็จ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"เชื่อมต่อไปยัง nbd-server ไม่สำเร็จ กรุณาตรวจสอบให้แน่ใจว่าโฮสต์และชื่อ export "
+"ที่คุณป้อนนั้นถูกต้อง, โพรเซส nbd-server กำลังทำงานอยู่ที่โฮสต์นั้น, "
+"และเครือข่ายมีการตั้งค่าอย่างถูกต้อง แล้วลองใหม่"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ไม่มีโหนดของอุปกรณ์แบบบล็อคในเครือข่ายเหลืออีกแล้ว"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"โหนดอุปกรณ์ NBD อาจถูกใช้งานอยู่จนครบทุกโหนด หรืออาจมีอะไรผิดพลาดในการตรวจหาโหนดอุปกรณ์"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr "ไม่สามารถตั้งค่าโหนดอุปกรณ์ NBD ใดได้อีก จนกว่าจะตัดการเชื่อมต่อกับโหนดที่ตั้งค่าแล้ว"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "ไม่พบโหนดอุปกรณ์แบบบล็อคในเครือข่ายเชื่อมต่ออยู่"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"ไม่มีโหนดอุปกรณ์แบบบล็อคในเครือข่ายเชื่อมต่อกับเซิร์ฟเวอร์ใดอยู่ คุณจึงไม่สามารถตัดการเชื่อมต่อใดได้"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "เชื่อมต่ออุปกรณ์แบบบล็อคในเครือข่าย"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "ตัดการเชื่อมต่อกับอุปกรณ์แบบบล็อคในเครือข่าย"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "จบการทำงานและกลับไปยังเมนูแบ่งพาร์ทิชัน"

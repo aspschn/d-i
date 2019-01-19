@@ -1,0 +1,6 @@
+files
+network-console
+network-console-config
+*.debhelper
+*.substvars
+

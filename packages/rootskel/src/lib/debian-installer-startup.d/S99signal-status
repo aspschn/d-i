@@ -1,0 +1,18 @@
+# Signal the status of d-i (using LEDs)
+
+# HP Media Vault mv2120
+if [ -e /sys/class/leds/mv2120:blue:health/trigger ]; then
+	echo timer > /sys/class/leds/mv2120:blue:health/trigger
+	echo 500 > /sys/class/leds/mv2120:blue:health/delay_on
+	echo 500 > /sys/class/leds/mv2120:blue:health/delay_off
+fi
+
+# Seagate Personal Cloud (Cumulus)
+if [ -e /sys/devices/platform/gpio-leds/leds/cumulus:red:sata0/brightness ]; then
+	echo 255 > /sys/devices/platform/gpio-leds/leds/cumulus:red:sata0/brightness
+fi
+
+# Seagate NAS (Dart)
+if [ -e /sys/devices/platform/gpio-leds/leds/dart:red:power/brightness ]; then
+	echo 255 > /sys/devices/platform/gpio-leds/leds/dart:red:power/brightness
+fi

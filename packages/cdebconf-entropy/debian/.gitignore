@@ -1,0 +1,8 @@
+tmp
+files
+cdebconf-gtk-entropy
+cdebconf-newt-entropy
+cdebconf-text-entropy
+*.substvars
+*.debhelper*
+

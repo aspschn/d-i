@@ -1,0 +1,319 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of Debian Installer templates to Esperanto.
+# Copyright (C) 2005-2013 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Samuel Gimeno <sgimeno@gmail.com>, 2005.
+# Serge Leblanc <serge.leblanc@wanadoo.fr>, 2005, 2006, 2007.
+# Felipe Castro <fefcas@gmail.com>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2017.
+#
+# Translations from iso-codes:
+# Alastair McKInstry <mckinstry@computer.org>, 2001,2002.
+# Copyright (C) 2001,2002,2003,2004 Free Software Foundation, Inc.
+# D. Dale Gulledge <dsplat@rochester.rr.com> (translations from drakfw), 2001.
+# Edmund GRIMLEY EVANS <edmundo@rano.org>, 2004-2011
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2017-12-13 15:46+0000\n"
+"Last-Translator: Felipe Castro <fefcas@gmail.com>\n"
+"Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "Skani fiksitan diskon por trovi instalilan 'ISO'-bildon"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "Detektado de aparataro por trovi diskaparatojn"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "Serĉado de diskoj por instalila ISO-bildo"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "Muntado de ${DRIVE}..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "Skanado de ${DRIVE} (en ${DIRECTORY})..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "Ĉu serĉi la tutan diskon por instalila ISO-bildo?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"Rapida serĉado de instalilaj ISO-bildoj, trairante nur ordinarajn lokojn, ne "
+"trovis instalilan ISO-bildon. Eble pli profunda serĉado trovos ĝin, tamen "
+"tio povos longe daŭri."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "Serĉado de instalila ISO-bildo malsukcesis"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"Neniu instalila ISO-bildo estas trovita. Se vi elŝutis la ISO-bildon, ĝi "
+"eble misnomiĝas (sen sufikso \".iso\"), aŭ eble ĝi restas en nemuntita "
+"dosiersistemo."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"Vi devas uzi alternativan instaladan metodon, elekti alian aparaton por "
+"serĉi ISO-bildon, aŭ reprovi post kiam vi riparis ĝin."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"Almenaŭ unu ISO-bildo estas trovita, tamen neniu muntebla. Eble la elŝutita "
+"ISO-bildo estas difektita."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "Neniu instalila ISO-bildo trovita"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"Almenaŭ unu 'ISO'-bildo estas trovita, tamen neniu ŝajnas valida instalila "
+"ISO-bildo."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "Plensukcese muntite la instalila ISO-bildo ${SUITE}"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"La ISO-dosiero ${FILENAME} en ${DEVICE} (${SUITE}) estos uzata kiel "
+"instalila ISO-bildo."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "Ĉiuj detektitaj aparatoj"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "Mem tajpi la aparaton"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "Aparato aŭ diskparto por serĉi instalilan ISO(j):"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"Vi povas elekti aparaton, mem indiki ne-detektitan aparaton, aŭ reskani "
+"disponeblajn aparatojn (utile por malrapidaj aparotoj USB)."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "Aparat-nomo:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "Kompleta serĉo"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "Uzota ISO-dosiero:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"Unu aŭ pluraj ISO-dosieroj estis detektataj en la elektita(j) aparato(j). "
+"Bonvole elektu kiun el ili vi volas uzi, aŭ petu pli detalan serĉon."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr "Ĉu la ISO-dosiero ${FILENAME} estas la ĝusta bildo por instalado?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"La ISO-dosiero ${FILENAME} en ${DEVICE} (${SUITE}, kodo ${CODENAME}, sin "
+"priskribinta kiel '${DESCRIPTION}') estos uzata kiel instalila ISO-bildo."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"Se pluraj ISO-dosieroj ekzistas en sama instalada medio, vi devas elekti "
+"kiun el ili vi volas uzi."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr "Ĉu kopii ISO-bildon en RAM antaŭ ol munti ĝin?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr "Estas sufiĉe da memoro por ebligi kopion de ISO-bildo en RAM."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+"Elekto de tiu ĉi opcio ebligas reuzon de la disko kiu gastigas la ISO-"
+"bildon. Se vi ne faras tion, la disko estos aktive uzata por aliri la ISO-"
+"bildon kaj ĝi ne povos estis diskpartigita de la instalilo."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+"Tamen rimarku ke se vi surskribas la diskon enhavantan la ISO-bildon, vi ne "
+"devos reekŝargi antaŭ ol fini la instaladon ĉar vi ne povos relanĉi la "
+"instalilon, ĉar la ISO-bildo estos forviŝita kaj de la diskaparato kaj de la "
+"memoro."
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "Ŝargi je instalilaj elementoj el instalada 'ISO'-bildo"

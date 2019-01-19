@@ -1,0 +1,72 @@
+#!/bin/sh
+set -e
+
+ANON_BASE_URL=https://salsa.debian.org/installer-team/
+AUTH_BASE_URL=git@salsa.debian.org:installer-team/
+COMMON_URL_REGEXP='salsa\.debian\.org.installer-team\/'
+
+runshow () {
+	echo "$@"
+	eval "$@"
+}
+
+config_git_anon () {
+	# never use ssh
+	runshow git config --global "url.$ANON_BASE_URL.insteadOf" "$AUTH_BASE_URL"
+	runshow git config --global --unset "url.$AUTH_BASE_URL.pushInsteadOf"
+}
+
+config_git_auth () {
+	# use ssh for pushes
+	runshow git config --global "url.$ANON_BASE_URL.insteadOf" "$AUTH_BASE_URL"
+	runshow git config --global "url.$AUTH_BASE_URL.pushInsteadOf" "$ANON_BASE_URL"
+}
+
+config_auto () {
+    if [ -d .svn ]; then
+	URL=$(LANG=C svn info| grep '^URL' | awk '{print $2}')
+    elif [ -d .git ]; then
+	URL=$({ git config --local --get-regexp '^remote\..*\.pushUrl$' || true; git config --local --get-regexp '^remote\..*\.url$'; } | awk '/'"$COMMON_URL_REGEXP"'/ { print $2; exit }')
+    else
+	echo "Can't work out what VCS you're using. Abort." >&2
+	exit 1
+    fi
+    case "$URL" in
+	*ssh*|git@salsa*)
+	    echo "Your working copy is using $URL, so setting up git with auth"
+	    config_git_auth
+	    ;;
+	svn*|http*)
+	    echo "Your working copy is using $URL, so setting up git anon"
+	    config_git_anon
+	    ;;
+	*)
+	    echo "unknown VCS url: $URL" >&2
+	    exit 1
+	    ;;
+    esac
+}
+
+case "${1:-}" in
+    anon*)
+	config_git_anon
+	;;
+
+    auth*)
+	config_git_auth
+	;;
+
+    '')
+	config_auto
+	;;
+
+    *)
+	echo >&2 "Usage: $0 [anon | auth]"
+	exit 2
+	;;
+esac
+
+echo ""
+echo "Your git is now configured to checkout d-i optimally."
+echo "Now run 'mr checkout'"
+

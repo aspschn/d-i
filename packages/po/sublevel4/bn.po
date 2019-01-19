@@ -1,0 +1,732 @@
+# Bangla translation of Debian-Installer.
+# Copyright (C) 2005, 2006, Debian Foundation.
+# This file is distributed under the same license as the Debian-Installer package.
+# Anubadok, the en2bn auto-translator by Golam Mortuza Hossain <golam@imsc.res.in>, 2005.
+# Baishampayan Ghose <b.ghose@gnu.org.in>, 2005-2006.
+# Quazi Ashfaq-ur Rahman <quazi.ashfaq@gmail.com>, 2005.
+# Khandakar Mujahidul Islam <suzan@bengalinux.org>, 2005, 2006.
+# Progga <progga@BengaLinux.Org>, 2005, 2006.
+# Jamil Ahmed <jamil@bengalinux.org>, 2006-2007.
+# Mahay Alam Khan (মাহে আলম খান) <makl10n@yahoo.com>, 2007.
+# Tisa Nafisa <tisa_nafisa@yahoo.com>, 2007.
+# Khandakar Mujahidul Islam <suzan229@gmail.com>, 2008.
+# Md. Rezwan Shahid <rezwan@ankur.org.bd>, 2009.
+# Ayesha Akhtar <ayesha@ankur.org.bd>, 2010.
+# Israt Jahan <israt@ankur.org.bd>, 2010.
+# Ayesha Akhtar <ayesha@ankur.org.bd>, 2012.
+# Robin Mehdee (রবিন মেহদী) <robin@ankur.org.bd>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: bn\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-03-08 11:10+0600\n"
+"Last-Translator: Robin Mehdee (রবিন মেহদী) <robin@ankur.org.bd>\n"
+"Language-Team: Bengali \n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WordForge 0.5-beta1\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "ভার্চুয়াল ডিস্ক %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "ভার্চুয়াল ডিস্ক %s, পার্টিশন #%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - POSIX সমর্থন। 1e এক্সেস কন্ট্রোলের তালিকা"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr "সংক্ষিপ্ত নাম - শুধুমাত্র পুরোনো MS-DOS ৮.৩ শৈলীর ফাইলের নাম ব্যবহার"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"আপনার নতুন সিস্টেমকে চালু করার জন্য একটি বুট লোডার ব্যবহৃত হয়। একে একটি বুট পার্টিশনে "
+"ইনস্টল করা হয়। আপনাকে অবশ্যই এই পার্টিশনের বুটযোগ্য ফ্ল্যাগ সক্রিয় করতে হবে। এরকম "
+"একটি পার্টিশন মূল পার্টিশনকারী মেনুতে \"${BOOTABLE}\" দ্বারা চিহ্নিত থাকে।"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! সমস্যা হয়েছে: %s"
+
+# FIXME
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "KEYSTROKES:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "'%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "এই সাহায্য বার্তাটি প্রদর্শন করুন"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "পূর্বের প্রশ্নে ফিরে যাওয়া হবে"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "ফাঁকা ভুক্তি নির্বাচন করুন"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "প্রম্পট: সাহায্যের জন্য '%c', ডিফল্ট=%d> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "প্রম্পট: সাহায্যের জন্য '%c'> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "প্রম্পট: সাহায্যের জন্য '%c', ডিফল্ট=%s> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[এগিয়ে যাওয়ার জন্য এন্টার চাপুন]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "যে ইন্টারফেস ব্যবহার করা হবে:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"যে সকল প্যাকেজ কনফিগারেশনের জন্য debconf ব্যবহার করে তারা একই রকম চেহারা ধারন "
+"করে। তারা কি ধরনের ব্যবহারকারী ইন্টারফেস ব্যবহার করবে তা আপনি নির্বাচন করে দিতে "
+"পারেন।"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "কোনটি না"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "'কোনটি না' আপনাকে কোনো প্রশ্ন জিজ্ঞাসা করবেনা।"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "টেক্সট"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "'টেক্সট' একটি সনাতন সরল টেক্সট ইন্টারফেস।"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "Newt"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "'Newt' একটি পূর্ণ-পর্দা, অক্ষর ভিত্তিক ইন্টারফেস।"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "GTK"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr ""
+"'GTK' একটি গ্রাফিকাল ইন্টারফেস যা যে কোনো গ্রাফিকাল এনভায়রনমেন্টে ব্যবহৃত হতে পারে।"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "/target/proc মাউন্ট করার যায় নি"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "proc ফাইল সিস্টেমকে /target/proc-এ মাউন্ট করা যায় নি।"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "সতর্কবাণী: আপনার সিস্টেমটি হয়তো বুট করা যাবে না!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "স্বয়ংক্রিয় বুট-এর জন্য ফার্মওয়্যারের চলকের মান নির্ধারণ করছি"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"আপনার সিস্টেমটি যেন স্বয়ংক্রিয়ভাবে লিনাক্সকে বুট করে, সেজন্য জেনেসি ফার্মওয়্যারের "
+"কিছু চলকের মান ক্রমানুসারে নির্ধারণ করা প্রয়োজন। ইনস্টলেশন শেষ হওয়ার পর সিস্টেমটি "
+"রিবুট হবে। স্বয়ংক্রিয়ভাবে বুট করার প্রক্রিয়া সচল করার জন্য ফার্মওয়্যার প্রম্পটে পরবর্তী "
+"চলকগুলোকে সক্রিয় করুন:"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"আপনাকে এটি কেবল একবারই করতে হবে। এরপর, \"boot\" কমান্ড লিখুন অথবা আপনার নতুন "
+"ইনস্টল করা সিস্টেমে জন্য রিবুট করুন।"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"বিকল্প ব্যবস্থা হিসেবে, আপনি ফার্মওয়্যার প্রম্পটে লিখে, কার্নেলকে বুট করতে পারবেন:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"আপনার সিস্টেমটি যেন স্বয়ংক্রিয়ভাবে লিনাক্সকে বুট করে, সেজন্য CFE তে কিছু চলকের মান "
+"ক্রমানুসারে নির্ধারণ করা প্রয়োজন। ইনস্টলেশন শেষ হওয়ার পর সিস্টেমটি রিবুট হবে। "
+"স্বয়ংক্রিয়ভাবে বুট করার প্রক্রিয়া সচল করার জন্য ফার্মওয়্যার প্রম্পটে পরবর্তী চলকগুলোকে "
+"সক্রিয় করুন:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"আপনাকে এটি মাত্র একবার করতে হবে। এটি আপনাকে CFE প্রম্টে \"boot_debian\" কমান্ডটি "
+"ব্যবহার করতে সক্রিয় করবে।"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"আপনি প্রতিবার বুটের সময় স্বয়ংক্রিয় চালনা পছন্দ করেন, আপনি নিম্নলিখিত চলকটি উপরের "
+"যেকোন একটির মত সেট করে দিতে পারেন:"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "GRUB ইনস্টল করা হবে কি?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB 2 হল GNU GRUB এর পরবর্তী সংস্করণ, এটি একটি বুট লোডার যা i386/amd64 পিসিতে "
+"সবসময় ব্যবহার করা হত। এটি এখন ${ARCH} তেও আছে।"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"কিছু চমৎকার নতুন নতুন বৈশিষ্ঠ্য থাকলেও এ আর্কিটেকচারের জন্য এটি একটি পরীক্ষামূলক "
+"সফ্টওয়্যার। আপনি যদি এটা ইনস্টল করার জন্য বাছাই করেন তবে আপনাকে অবশ্যই ব্রেকেজ এর "
+"জন্য তৈরি থাকতে হবে এবং সিস্টেমটি আনবুটেবল হয়ে গেলে সেটা কিভাবে পুনরূদ্ধার করতে "
+"হবে তা সম্পর্কে ধারণা থাকতে হবে। উৎপাদন সম্পর্কিত কোনো কাজে এটা ব্যবহার না করার "
+"জন্য পরামর্শ দেয়া হচ্ছে।"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "একটি হার্ড ডিস্কে Arcboot বুট লোডার ইনস্টল করো"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "যে ডিস্কে বুট লোডার ইনস্টল করা হবে:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"Arcboot অবশ্যই SGI লেবেলকৃত একটি ডিস্কের ভলিউম হেডার এ ইনস্টল হবে। সাধারণত /dev/"
+"sda এর ভলিউম হেডার ব্যবহার হয়। অনুগ্রহপূর্বক যেই ডিস্কে arcboot ইনস্টল করতে চান তার "
+"ডিভাইস নাম দিন।"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "Arcboot-কে সিরিয়াল কনসোল ব্যবহার করার জন্য কনফিগার করা হয়েছে"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"Arcboot-কে এমনভাবে কনফিগার করা হয়েছে যেন কনসোল হিসেবে তা সিরিয়াল পোর্ট "
+"${PORT}-কে ব্যবহার করা। সিরিয়াল পোর্টের গতি নির্ধারণ করা হয়েছে ${SPEED}।"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "Arcboot ইনস্টলেশন ব্যর্থ হল। তবুও চালিয়ে যাব কি?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"arcboot প্যাকেজকে /target/-এ ইনস্টল করা যায় নি। Arcboot-কে বুট লোডার হিসেবে "
+"ইনস্টল করা একটি প্রয়োজনীয় ধাপ। তবে ইনস্টলেশনের সমস্যাটি হয়তো Arcboot-এর সাথে "
+"সম্পর্কিত নয়। সুতরাং এ অবস্থাতেও হয়তো ইনস্টলেশন চালিয়ে যাওয়া সম্ভব।"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "Arcboot এর জন্য PROM চলকসমূহের মান নির্ধারণ করুন"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"এই কম্পিউটারে যদি এবারই প্রথম লিনাক্স ইনস্টল করা হয়, অথবা হার্ড ড্রাইভকে যদি পুনরায় "
+"পার্টিশন করা হয়ে থাকে, তবে সিস্টেমটি যেন স্বাভাবিকভাবে বুট হয় তা নিশ্চিত করার জন্য "
+"PROM-এর কিছু চলকের মান নির্ধারণ করতে হবে।"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"ইনস্টলেশনের এই ধাপটি শেষ হওয়ার পর সিস্টেমটি রিবুট হবে। এরপর \"রক্ষণাবেক্ষণের জন্য "
+"থামো\" অপশন থেকে কমান্ড মনিটরে ঢুকুন, ও এই কমান্ডগুলো লিখুন:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "নেটওয়ার্ক ব্লক ডিভাইস কনফিগার করুন"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD কনফিগার করার ক্রিয়া:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "বর্তমানে ${NUMBER} ডিভাইস সংযুক্ত।"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "নেটওয়ার্ক ব্লক ডিভাইস সার্ভার:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "অনুগ্রহ করে nbd-সার্ভারে চলমান সিস্টেমের হোস্টনাম অথবা IP ঠিকানা দিন।"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "নেটওয়ার্ক ব্লক ডিভাইস ডিভাইস নোড:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"অনুগ্রহ করে NBD ডিভাইস নোড যা আপনি সংযুক্ত অথবা বিচ্ছিন্ন করতে চান নির্বাচন করুন"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD সার্ভারে সংযুক্ত করতে ব্যর্থ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+#| msgid ""
+#| "Connecting to the nbd-server failed. Please ensure that the host and the "
+#| "port or the name which you entered are correct, that the nbd-server "
+#| "process is running on that host and port (or using that name), that the "
+#| "network is configured correctly, and retry."
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd-সার্ভারে সংযুক্ত করতে ব্যর্থ। অনুগ্রহ করে নিশ্চিত করুন হোস্ট এবং পোর্ট অথবা নাম যা "
+"আপনি দিয়েছেন সঠিক, যা nbd-সার্ভারের প্রক্রিয়া ঐ হোস্ট এবং পোর্টে (অথবা ঐ নাম "
+"ব্যবহার করে) চলমান, যা সঠিকভাবে নেটওয়ার্ক কনফিগার, এবং পুনরায় চেষ্টা করা হয়।"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "আর কোনো নেটওয়ার্ক ব্লক ডিভাইস নেই"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"হয়তো সব বিদ্যমান NBD ডিভাইস নোড ব্যবহার করা হয় অথবা ডিভাইস নোডের সনাক্তকরণের "
+"মাধ্যমে কিছু ভুল হয়েছে।"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"কোন NBD ডিভাইস নোড কনফিগার করা যাবেনা যতক্ষণ না কনফিগার করা একটি বিচ্ছিন্ন করা "
+"যাবে।"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "কোনো সংযুক্ত নেটওয়ার্ক ব্লক ডিভাইস নোড খুঁজে পাওয়া যায়নি"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"বর্তমানে কোনো সার্ভারে নেটওয়ার্ক ব্লক ডিভাইস নোড সংযুক্ত নেই। যেমন, আপনি তাদের "
+"কোনোটির সাথে সংযোগ বিচ্ছিন্ন করতে পারেননা।"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "নেটওয়ার্কের ব্লক ডিভাইসে সংযুক্ত হোন"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "নেটওয়ার্কের ব্লক ডিভাইসে সংযোগ বিচ্ছিন্ন করুন"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "বিভাজকে ফিরে আসুন এবং সমাপ্ত করুন"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "সিস্টেম বুট করার জন্য ফ্লাশ মেমরী কনফিগার করা হচ্ছে"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "সিস্টেম বুটেবল করা হচ্ছে"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "সিস্টেম প্রস্তুত করা হচ্ছে..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "ফ্লাশ মেমরীতে কারনেল লেখা (write) হচ্ছে..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "ডিস্কে বুট ইমেজ তৈরি করা হচ্ছে..."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "সিস্টেম বুটেবল করো"

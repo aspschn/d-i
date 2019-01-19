@@ -1,0 +1,302 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+# Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: s390-netdevice@packages.debian.org\n"
+"POT-Creation-Date: 2016-01-29 22:01+0000\n"
+"PO-Revision-Date: 2018-04-02 06:37+0000\n"
+"Last-Translator: Yogesh <yogesh@kalike.org>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "ctc: Channel to Channel (CTC) or ESCON connection"
+msgstr "ctc: ಚಾನಲ್ ನಿಂದ ಚಾನಲ್ ಗೆ (CTC) ಅಥವಾ ESCON ಸಂಪರ್ಕ"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "qeth: OSA-Express in QDIO mode / HiperSockets"
+msgstr "qeth: QDIO ಮೋಡಿನಲ್ಲಿ OSA -ಎಕ್ಸಪ್ರೆಸ್/ ಹೈಪರ್ ಸಾಕೆಟ್ "
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "iucv: Inter-User Communication Vehicle - available for VM guests only"
+msgstr "iucv: ಅಂತರ-ಬಳಕೆದಾರ ಸಂಪರ್ಕ ವಾಹಕ - ಕೇವಲ VM ಅತಿಥಿಗಳಿಗೆ ಮಾತ್ರ ಲಭ್ಯ"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "virtio: KVM VirtIO"
+msgstr "virtio: KVM ನ VirtIO "
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:1002
+msgid "Network device type:"
+msgstr "ಸಂಪರ್ಕಜಾಲದ ಡಿವೈಸಿನ ಮಾದರಿ:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:1002
+msgid ""
+"Please choose the type of your primary network interface that you will need "
+"for installing the Debian system (via NFS or HTTP). Only the listed devices "
+"are supported."
+msgstr ""
+"ದಯವಿಟ್ಟು ಡೆಬಿಯನ್ ವ್ಯವಸ್ಥೆಯನ್ನು ಸ್ಥಾಪಿಸಲು ಅಗತ್ಯವಿರುವ ಪ್ರಾಥಮಿಕ ಸಂಪರ್ಕಜಾಲದ ಮಾದರಿಯನ್ನು  "
+"(NFS ಅಥವಾ HTTP ಮುಖಾಂತರ) ಆಯ್ಕೆಮಾಡಿರಿ . ಕೇವಲ ಪಟ್ಟಿಯಲ್ಲಿರುವ ದಿವೈಸುಗಳನ್ನು "
+"ಬೆಂಬಲಿಸಲಾಗಿದೆ."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:2001
+msgid "CTC read device:"
+msgstr "CTC ಓದುವ ಡಿವೈಸ್:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:2001 ../s390-netdevice.templates:3001
+msgid "The following device numbers might belong to CTC or ESCON connections."
+msgstr "ಕೆಳಕಂಡ ಡಿವೈಸ್ ಸಂಖ್ಯೆಗಳು CTC or ESCON ಕನೆಕ್ಷನ್ನಿಗೆ ಸೇರಿರಬಹುದು."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:3001
+msgid "CTC write device:"
+msgstr "CTC ಬರೆವ ಡಿವೈಸ್:"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:4001 ../s390-netdevice.templates:8001
+#: ../s390-netdevice.templates:12001
+msgid "Do you accept this configuration?"
+msgstr "ನೀವು ಈ ಕಾನ್ಫಿಗರೆಶನ್ನನ್ನು ಒಪ್ಪಿಕೊಳ್ಳುತ್ತೀರಾ?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:4001
+msgid ""
+"The configured parameters are:\n"
+" read channel  = ${device_read}\n"
+" write channel = ${device_write}\n"
+" protocol      = ${protocol}"
+msgstr ""
+"ಕಾನ್ಫಿಗರ್ ಮಾಡಲ್ಪಟ್ಟ ಪ್ಯಾರಾಮೀಟರುಗಳು:\n"
+"ಓದುವ ಚಾನೆಲ್ = ${device_read}\n"
+"ಬರೆಯುವ ಚಾನೆಲ್ = ${device_write}\n"
+"ಪ್ರೋಟೋಕಾಲ್ = ${protocol}"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:5001
+msgid "No CTC or ESCON connections"
+msgstr "ಯಾವುದೇ CTC ಅಥವಾ (ESCON)ಇಸ್ಕಾನ್ ಕನೆಕ್ಷನ್ ಇಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:5001
+msgid "Please make sure that you have set them up correctly."
+msgstr "ದಯವಿಟ್ಟು ಅವುಗಳನ್ನು ಸರಿಯಾಗಿ ಸೆಟ್ ಅಪ್ ಮಾಡಿದ್ದೀರಾ ಎಂಬುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:6001
+msgid "Protocol for this connection:"
+msgstr "ಈ ಸಂಪರ್ಕದ ಪ್ರೋಟೋಕಾಲ್:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:7001
+msgid "Device:"
+msgstr "ಡಿವೈಸ್:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:7001
+msgid "Please select the OSA-Express QDIO / HiperSockets device."
+msgstr "ದಯವಿಟ್ಟು ಯಾವುದಾದರೂ OSA ಎಕ್ಸಪ್ರೆಸ್ QDIO ಕಾರ್ಡ್/ ಹೈಪರ್ ಡಿವೈಸನ್ನು ಸೆಲೆಕ್ಟ್ ಮಾಡಿ."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:8001
+msgid ""
+"The configured parameters are:\n"
+" channels = ${device0}, ${device1}, ${device2}\n"
+" port     = ${port}\n"
+" layer2   = ${layer2}"
+msgstr ""
+"ಕಾನ್ಫಿಗರ್ ಮಾಡಲ್ಪಟ್ಟ ಪ್ಯಾರಾಮೀಟರುಗಳು:\n"
+" ಚಾನೆಲ್ = ${device0}, ${device1}, ${device2}\n"
+" ಪೋರ್ಟ್ = ${port}\n"
+" ಲೇಯರ್೨ = ${layer2}"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:9001
+msgid "No OSA-Express QDIO cards / HiperSockets"
+msgstr "ಯಾವುದೇ OSA ಎಕ್ಸಪ್ರೆಸ್ QDIO ಕಾರ್ಡ್/ ಹೈಪರ್ ಸಾಕೆಟ್ ಇಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:9001
+msgid ""
+"No OSA-Express QDIO cards / HiperSockets were detected. If you are running "
+"VM please make sure that your card is attached to this guest."
+msgstr ""
+"ಯಾವುದೇ OSA ಎಕ್ಸಪ್ರೆಸ್ ಕಾರ್ಡ್/ ಹೈಪರ್ ಸಾಕೆಟ್ ಕಂಡು ಬಂದಿಲ್ಲ. ನೀವು VM ಬಳಸುತ್ತಿದ್ದರೆ "
+"ದಯವಿಟ್ಟು , ಈ ಅತಿಥಿಗೆ ನಿಮ್ಮ ಕಾರ್ಡ್ ಜೋಡಿಸಲ್ಪಟ್ಟಿದೆಯೇ ಎಂಬುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:10001
+msgid "Port:"
+msgstr "ಪೋರ್ಟ್:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:10001
+msgid "Please enter a relative port for this connection."
+msgstr "ದಯವಿಟ್ಟು ಈ ಸಂಪರ್ಕಕ್ಕೆ ಒಂದು ಸಾಪೇಕ್ಷ ಪೋರ್ಟನ್ನು ಎಂಟರ್ ಮಾಡಿ."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:11001
+msgid "Use this device in layer2 mode?"
+msgstr "ಈ ಡಿವೈಸನ್ನು ಲೇಯರ್೨ ಮೋಡಿನಲ್ಲಿ ಬಳಸಬೇಕೆ?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:11001
+msgid ""
+"By default OSA-Express cards use layer3 mode. In that mode LLC headers are "
+"removed from incoming IPv4 packets. Using the card in layer2 mode will make "
+"it keep the MAC addresses of IPv4 packets."
+msgstr ""
+"ಓ.ಎಸ್.ಎ ಎಕ್ಸಪ್ರೆಸ್ ಕಾರ್ಡುಗಳು ಡೀಫಾಲ್ಟ್ ಆಗಿ ಲೇಯರ್೩ ನೋಡುಗಳನ್ನು ಬಳಸುತ್ತವೆ. ಆ ಮೋಡಿನಲ್ಲಿ , "
+"ಒಳಬರುವ  IPv4 ಪ್ಯಾಕೆಟ್ಟುಗಳಿಂದ LLC ಹೆಡ್ದರುಗಳು ತೆಗೆದು ಹಾಕಲ್ಪಡುತ್ತವೆ.  ಕಾರ್ಡನ್ನು "
+"ಲೇಯರ್೩ಮೋಡಿನಲ್ಲಿ ಬಳಸುವುದರಿಂದ, ಕಾರ್ಡು  IPv4ಪ್ಯಾಕೆಟ್ಟಿನ ಮ್ಯಾಕ್ ವಿಳಾಸಗಳನ್ನು "
+"ಉಳಿಸಿಕೊಳ್ಳುತ್ತದೆ."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:12001
+msgid ""
+"The configured parameter is:\n"
+" peer  = ${peer}"
+msgstr "ಕಾನ್ಫಿಗರ್ ಮಾಡಲ್ಪಟ್ಟ ಪ್ಯಾರಾಮೀಟರುಗಳು:ಪೀರ್ = ${peer}"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid "VM peer:"
+msgstr "ವಿ.ಎಂ ಪೀರ್ :"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid "Please enter the name of the VM peer you want to connect to."
+msgstr "ದಯವಿಟ್ಟು ನೀವು ಕನೆಕ್ಟ್ ಆಗಬಯಸುವ ವಿ.ಎಂ ಪೀರ್ ನ ಹೆಸರನ್ನು ಎಂಟರ್ ಮಾಡಿ."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid ""
+"If you want to connect to multiple peers, separate the names by colons, e."
+"g.  tcpip:linux1."
+msgstr ""
+"ನೀವು ಅನೇಕ ಪೀರ್ ಗಳೊಂದಿಗೆ ಸಂಪರ್ಕ ಸಾಧಿಸಬೇಕೆನ್ದಿದ್ದರೆ, ಹೆಸರುಗಳನ್ನು ':' ಚಿನ್ಹೆಯಿಂದ "
+"ಪ್ರತ್ಯೇಕಿಸಿ, ಉದಾ. tcpip:linux1."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid ""
+"The standard TCP/IP server name on VM is TCPIP; on VIF it's $TCPIP. Note: "
+"IUCV must be enabled in the VM user directory for this driver to work and it "
+"must be set up on both ends of the communication."
+msgstr ""
+"ನ ಮೇಲೆ ಸ್ಟಾಂಡರ್ಡ್ TCP/IP ಸರ್ವರ್ ನ ಹೆಸರು TCPIP . VIF ನಲ್ಲಿ ಇದು $TCPIP . ಗಮನಿಸಿ: ಈ "
+"ಡ್ರೈವರ್ ಕಾರ್ಯನಿರ್ವಹಿಸಬೇಕಾದರೆ VM ಬಳಕೆದಾರ ಡೈರೆಕ್ಟರಿಯಲ್ಲಿ IUCV ಚಾಲೂ ಇರಬೇಕು ಹಾಗೂ ಅದು "
+"ಸಂಪರ್ಕದ ಎರಡೂ ಬದಿಯಲ್ಲಿ ಸೆಟ್ ಅಪ್ಆಗಿರಬೇಕು."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl5:
+#: ../s390-netdevice.templates:14001
+msgid "Configure the network device"
+msgstr "ನೆಟ್ವರ್ಕ್ ಡಿವೈಸುಗಳನ್ನು ಕಾನ್ಫಿಗರ್  ಮಾಡು."

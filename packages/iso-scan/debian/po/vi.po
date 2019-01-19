@@ -1,0 +1,312 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Vietnamese translation for Debian Installer Level 1.
+# Copyright © 2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Jean Christophe André <progfou@gmail.com>
+# Vũ Quang Trung <vu.quang.trung@auf.org>
+# Trịnh Minh Thành <tmthanh@yahoo.com>
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2010
+# Hai-Nam Nguyen <hainam@jcisio.com>, 2012
+#
+# Translations from iso-codes:
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
+# Copyright © 2009 Free Software Foundation, Inc.
+# Nguyễn Hùng Vũ <vuhung16@bigfoot.com>, 2001.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer Level 1\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2012-04-11 00:58+0100\n"
+"Last-Translator: Hai-Nam Nguyen <hainam@jcisio.com>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "Quét các đĩa cứng tìm ảnh ISO kiểu cài đặt"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "Đang phát hiện phần cứng để tìm đĩa cứng"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "Đang tìm kiếm các ổ đĩa tìm ảnh ISO kiểu cài đặt"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "Đang lắp ${DRIVE}..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "Đang quét ${DRIVE} (trong ${DIRECTORY})..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "Chạy việc tìm kiếm đĩa đầy đủ tìm ảnh ISO kiểu cài đặt không?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"Việc quét nhanh tìm ảnh ISO cài đặt, mà chỉ tìm trong những nơi thường, chưa "
+"tìm thấy ảnh ISO cài đặt. Có thể việc tìm kiếm toàn diện hơn sẽ tìm được ảnh "
+"ISO đó, nhưng có thể mất nhiều thời gian."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "Không tìm thấy ảnh ISO kiểu cài đặt"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"Không tìm thấy ảnh ISO cài đặt nào. Nếu bạn đã tải vệ ảnh ISO, nó có thể "
+"mang tên tập tin sai (không kết thúc bằng « .iso »), hoặc nó có thể nằm trên "
+"hệ thống tập tin không thể gắn kết được."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"Bạn cần phải sử dụng một phương pháp cài đặt khác, hãy chọn thiết bị khác để "
+"tìm tập tin ảnh ISO, hoặc thử lại lần nữa sau khi bạn giải quyết xong sự cố."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"Mặc dù tìm thấy một hay nhiều ảnh ISO có thể, không thể lắp chúng. Ảnh ISO "
+"đã tải về có thể bị hỏng."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "Không tìm thấy ảnh ISO cài đặt"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"Mặc dù tìm thấy một hay nhiều ảnh ISO có thể, chúng không hình như ảnh ISO "
+"cài đặt hợp lệ."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "Ảnh ISO cài đặt ${SUITE} đã được cài đặt"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"Tập tin ISO ${FILENAME} trên ${DEVICE} (${SUITE}) sẽ được dùng là ảnh ISO "
+"cài đặt."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "Các thiết bị nhận diện được"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "Nhập thiết bị thủ công"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "Thiết bị hoặc phân vùng để tìm tập tin ISO cài đặt:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"Bạn có thể chọn thiết bị, chọn thủ công một thiết bị không được phát hiện "
+"hoặc quét lại các thiết bị có sẵn (hữu ích đối với các thiết bị USB chậm)."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "Tên thiết bị:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "Tìm kiếm toàn bộ"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "Tập tin ISO sẽ dùng:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"Một hoặc nhiều tập tin ISO được phát hiện trên (các) thiết bị được chọn. Vui "
+"lòng chọn tập tin bạn muốn dùng, hoặc yêu cầu tìm kiếm tỉ mỉ hơn."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr "Tập tin ISO ${FILENAME} có đúng là ảnh dùng để cài đặt?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"Tập tin ISO ${FILENAME} trên ${DEVICE} (${SUITE}, mã ${CODENAME}, tự mô tả "
+"là '${DESCRIPTION}') sẽ được dùng làm ảnh ISO cài đặt."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"Nếu có nhiều tập tin ISO tồn tại trong cùng ổ cài đặt, bạn có thể chọn tập "
+"tin muốn dùng."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "Nạp các thành phần cài đặt từ ảnh ISO cài đặt"

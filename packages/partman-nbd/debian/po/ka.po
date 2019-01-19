@@ -1,0 +1,197 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Georgian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Aiet Kolkhi <aietkolkhi@gmail.com>, 2005, 2006, 2007, 2008.
+#
+# This file is maintained by Aiet Kolkhi <aietkolkhi@gmail.com>
+#
+# Includes contributions by Malkhaz Barkalaza <malxaz@gmail.com>,
+# Alexander Didebulidze <didebuli@in.tum.de>, Vladimer Sichinava <vlsichinava@gmail.com>
+# Taya Kharitonashvili <taya13@gmail.com>, Gia Shervashidze - www.gia.ge
+#
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004.
+#   Aiet Kolkhi <aietkolkhi@gmail.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer.2006071\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2011-03-01 12:49+0400\n"
+"Last-Translator: Aiet Kolkhi <aietkolkhi@gmail.com>\n"
+"Language-Team: Georgian\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+#, fuzzy
+msgid "Configure the Network Block Device"
+msgstr "ქსელის მოწყობილობის კონფიგურაცია"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+#, fuzzy
+msgid "NBD configuration action:"
+msgstr "LVM კონფიგურაციის ქმედება:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+#, fuzzy
+msgid "Network Block Device server:"
+msgstr "ქსელის მოწყობილობის ტიპი:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+#, fuzzy
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "გთხოვთ შეიყვანოთ კომპიუტერის სახელი."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+#, fuzzy
+msgid "Network Block Device device node:"
+msgstr "ქსელის მოწყობილობის ტიპი:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+#, fuzzy
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "აირჩიეთ მოწყობილობები, რომლებიც გინდათ დაამატოთ ტომთა ჯგუფს."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+msgid "Failed to connect to the NBD server"
+msgstr "პროგრამული RAID მოწყობილობა ვერ წაიშალა"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+#, fuzzy
+msgid "Connect a Network Block Device"
+msgstr "ქსელის მოწყობილობის კონფიგურაცია"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+#, fuzzy
+msgid "Finish and return to the partitioner"
+msgstr "დავბრუნდეთ დაყოფის მენიუში?"

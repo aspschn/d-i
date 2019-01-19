@@ -1,0 +1,106 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Japanese messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2001, 2002.
+#   Free Software Foundation, Inc., 2000, 2001, 2004, 2005, 2006
+#   IIDA Yosiaki <iida@gnu.org>, 2004, 2005, 2006.
+#   Kenshi Muto <kmuto@debian.org>, 2006-2007
+#   Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2001.
+#   Takuro Ashie <ashie@homa.ne.jp>, 2001.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Translations from KDE: 
+#   - Taiki Komoda <kom@kde.gr.jp>
+#   Yasuaki Taniguchi <yasuakit@gmail.com>, 2010, 2011.
+#   Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: finish-install@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-18 22:02+0000\n"
+"PO-Revision-Date: 2016-03-03 18:16+0900\n"
+"Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
+"Language-Team: Debian L10n Japanese <debian-japanese@lists.debian.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../finish-install.templates:1001
+msgid "Finish the installation"
+msgstr "インストールの完了"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:2001
+msgid "Finishing the installation"
+msgstr "インストールを終了しています"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:3001
+msgid "Running ${SCRIPT}..."
+msgstr "${SCRIPT} を実行しています..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:4001
+msgid "Configuring network..."
+msgstr "ネットワークを設定しています..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:5001
+msgid "Setting up frame buffer..."
+msgstr "フレームバッファを設定しています..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:6001
+msgid "Unmounting file systems..."
+msgstr "ファイルシステムをアンマウントしています..."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../finish-install.templates:7001
+msgid "Rebooting into your new system..."
+msgstr "あなたの新しいシステムへと再起動しています..."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../finish-install.templates:8001
+msgid "Installation complete"
+msgstr "インストール完了"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../finish-install.templates:8001
+msgid ""
+"Installation is complete, so it is time to boot into your new system. Make "
+"sure to remove the installation media, so that you boot into the new system "
+"rather than restarting the installation."
+msgstr ""
+"インストールは完了し、新しいシステムを起動する時となりました。あなたのシステ"
+"ムが新しいシステムをインストールしたディスクから起動するよう、インストールメ"
+"ディアが取り除かれていることを確認してください。"

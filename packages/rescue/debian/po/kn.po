@@ -1,0 +1,395 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+# Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: rescue@packages.debian.org\n"
+"POT-Creation-Date: 2016-07-01 22:00+0000\n"
+"PO-Revision-Date: 2013-09-30 16:17+0530\n"
+"Last-Translator: Prabodh C P (FSMK Localisation Team) <prabodh@fsmk.org>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: title
+#. Description
+#. Info message displayed when running in rescue mode
+#. :sl2:
+#: ../rescue-check.templates:2001
+msgid "Rescue mode"
+msgstr "ರಕ್ಷಣಾ ಕಾರ್ಯ ವಿಧಾನ"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../rescue-mode.templates:1001
+msgid "Enter rescue mode"
+msgstr "ರಕ್ಷಣ ವಿಧಾನಕ್ಕೆ  ಪ್ರವೇಶಿಸಿ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:2001
+msgid "No partitions found"
+msgstr "ಯಾವುದೆ ವಿಭಜನೆ ಕಂಡುಬಂದಿಲ್ಲ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:2001
+msgid ""
+"The installer could not find any partitions, so you will not be able to "
+"mount a root file system. This may be caused by the kernel failing to detect "
+"your hard disk drive or failing to read the partition table, or the disk may "
+"be unpartitioned. If you wish, you may investigate this from a shell in the "
+"installer environment."
+msgstr ""
+"ಅನುಸ್ಥಾಪಕವು ಯಾವುದೇ ವಿಭಜನೆಗಳನ್ನು ಪತ್ತೆಮಾಡಲಾಗಿಲ್ಲ ಆದ್ದರಿಂದ ನೀವು ಮೂಲ ಕಡತ ವ್ಯವಸ್ಥೆಯನ್ನು "
+"ಏರಿಸಲಾಗುವುದಿಲ್ಲ. ಇದು ಬಹುಶಃ ಕರ್ನಲ್ ನಿಮ್ಮ ಹಾರ್ಡ್ ಡಿಸ್ಕನ್ನು ಪತ್ತೆ ಮಾಡುವಲ್ಲಿ "
+"ವಿಫಲವಾಗಿರುವುದರಿಂದ ಅಥವಾ ವಿಭಜನಾ ಕೋಷ್ಟಕವನ್ನು ಓದುವಲ್ಲಿ ವಿಫಲವಾಗಿರುವುದರಿಂದ ಅಥವಾ ಡಿಸ್ಕ್ "
+"ಆವಿಭಜಿತವಾಗಿರುವುದರಿಂದ ಉಂಟಾಗಿರಬಹುದು. ನೀವು ಬಯಸಿದ್ದಲ್ಲಿ ಅನುಸ್ಥಾಪಕ ಪರಿಸರದಲ್ಲಿನ "
+"ಶೆಲ್ಲನ್ನು ಬಳಸಿ ಪರೀಕ್ಷಿಸಬಹುದು."
+
+#. Type: select
+#. Choices
+#: ../rescue-mode.templates:3001
+msgid "Assemble RAID array"
+msgstr "RAID ಸಾಲನ್ನು ಒಟ್ಟುಗೂಡಿಸು"
+
+#. Type: select
+#. Choices
+#: ../rescue-mode.templates:3001
+msgid "Do not use a root file system"
+msgstr "'ರೂಟ್' ಕಡತ ರಚನೆಯನ್ನು ಬಳಸಬೇಡಿ "
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:3002
+msgid "Device to use as root file system:"
+msgstr "ಮೂಲ ಕಡತ ವ್ಯವಸ್ಥೆಯಾಗಿ ಬಳಸಬೇಕಾದ ಸಾಧನ:"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:3002
+msgid ""
+"Enter a device you wish to use as your root file system. You will be able to "
+"choose among various rescue operations to perform on this file system."
+msgstr ""
+"ಮೂಲ ಕಡತ ವ್ಯವಸ್ಥೆಯಾಗಿ ಬಳಸಲು ನೀವು ಆಯ್ಕೆಮಾಡಿದ ಉಪಕರಣವನ್ನು ದಾಖಲಿಸಿ. ಇದರಿಂದಾಗಿ ನೀವು "
+"ಅನೇಕ ರಕ್ಷಣಾ ಕಾರ್ಯಾಚರಣೆಗಳನ್ನು ನಿಮ್ಮ ಈ ಕಡತ ವ್ಯವಸ್ಥೆಯ ಮೇಲೆ ಮಾಡಲು ಅಯ್ಕೆ ಮಾಡಬಹುದು."
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:3002
+msgid ""
+"If you choose not to use a root file system, you will be given a reduced "
+"choice of operations that can be performed without one. This may be useful "
+"if you need to correct a partitioning problem."
+msgstr ""
+"ನೀವು ಮೂಲ ಕಡತ ವ್ಯವಸ್ಥೆಯನ್ನು ಬಳಸದಂತೆ ಆಯ್ಕೆ ಮಾಡಿದ್ದಲ್ಲಿ ನಿಮಗೆ ಅದಿಲ್ಲದೆ ಕೇವಲ ಮಿತವಾದ "
+"ಕಾರ್ಯಾಚರಣೆಗಳ ಆಯ್ಕೆ ನೀಡಲಾಗುತ್ತದೆ. ನೀವು ವಿಭಜನಾ ತೊಂದರೆಯನ್ನು ಸರಿಮಾಡಬೇಕಾದಲ್ಲಿ ಇದು "
+"ಉಪಯೋಗಕ್ಕೆ ಬರಬಹುದು."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:4001
+msgid "No such device"
+msgstr "ಸೂಚಿಸಿದ ಸಾಧನವು ಕಂಡು ಬಂದಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:4001
+msgid ""
+"The device you entered for your root file system (${DEVICE}) does not exist. "
+"Please try again."
+msgstr ""
+"ನಿಮ್ಮ ಮೂಲ ಕಡತ ವ್ಯವಸ್ಥೆಗೆ ದಾಖಲಿಸಿದ ಸಾಧನ (${DEVICE}) ಅಸ್ತಿತ್ವದಲಿಲ್ಲ. ದಯಮಾಡಿ ಮತ್ತೆ "
+"ಪ್ರಯತ್ನಿಸಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:5001
+msgid "Mount failed"
+msgstr "ಆರೋಹಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ:"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:5001
+msgid ""
+"An error occurred while mounting the device you entered for your root file "
+"system (${DEVICE}) on /target."
+msgstr ""
+"ನಿಮ್ಮ ಮೂಲ ಕಡತ ವ್ಯವಸ್ಥೆ (${DEVICE})ಗೆ ನೀವು ದಾಖಲಿಸಿದ ಉಪಕರಣವನ್ನು /targetನ ಮೇಲೆ "
+"ಆರೋಹಿಸುವಾಗ ದೋಷವೊಂಟಾಗಿದೆ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:5001
+msgid "Please check the syslog for more information."
+msgstr "ದಯಮಾಡಿ ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ syslog ಅನ್ನು ಪರೀಕ್ಷಿಸಿ."
+
+#. Type: select
+#. Description
+#: ../rescue-mode.templates:6001
+msgid "Rescue operations"
+msgstr "ಉಳಿಸುವ  ಕಾರ್ಯಗಳು"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:7001
+msgid "Rescue operation failed"
+msgstr " ನೆರವಿನ ಕಾರ್ಯಚರಣೆ ವಿಫಲಗೊಂಡಿದೆ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:7001
+msgid "The rescue operation '${OPERATION}' failed with exit code ${CODE}."
+msgstr "'${OPERATION}' ರಕ್ಷಣಾ ಕಾರ್ಯಾಚರಣೆ ${CODE} ನಿರ್ಗಮನ ಸಂಕೇತದೊಂದಿಗೆ ವಿಫಲವಾಗಿದೆ."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:8001
+msgid "Execute a shell in ${DEVICE}"
+msgstr "${DEVICE}ನಲ್ಲಿ ಒಂದು ಶೆಲನ್ನು ಚಲಾಯಿಸಿ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:9001
+msgid "Execute a shell in the installer environment"
+msgstr "ಅನುಸ್ಥಾಪನ ಪರಿಸರದಲ್ಲಿ ಒಂದು ಶೆಲನ್ನು ಚಲಾಯಿಸಿ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:10001
+msgid "Choose a different root file system"
+msgstr "ಬೇರೊಂದು ಮೂಲ ಕಡತ ವ್ಯವಸ್ಥೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:11001
+msgid "Reboot the system"
+msgstr "ಗಣಕವನ್ನು ಪುನರಾರಂಭಿಸಿ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. Type: text
+#. Description
+#. :sl2:
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:12001 ../rescue-mode.templates:16001
+#: ../rescue-mode.templates:17001
+msgid "Executing a shell"
+msgstr "ಶೆಲನ್ನು ಚಲಾಯಿಸಲಾಗುತ್ತಿದೆ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:12001
+msgid ""
+"After this message, you will be given a shell with ${DEVICE} mounted on \"/"
+"\". If you need any other file systems (such as a separate \"/usr\"), you "
+"will have to mount those yourself."
+msgstr ""
+"ಈ ಸಂದೇಶದ ನಂತರ ನಿಮಗೊಂದು ಶೆಲನ್ನು ನೀಡಲಾಗುವುದು ಜೊತೆಗೆ \"/\"ನ ಮೇಲೆ ${DEVICE} ಅನ್ನು "
+"ಏರಿಸಿಕೊಡಲಾಗುವುದು. ನಿಮಗೆ ಬೇರಾವುದೇ ಕಡತ ವ್ಯವಸ್ಥೆಗಳು ಬೇಕಾದಲ್ಲಿ ( ಉದಾಹರಣೆಗೆ "
+"ಪ್ರತ್ಯೇಕವಾದ \"/usr\") ಅವುಗಳನ್ನು ನೀವೆ ಸ್ವತಃ ಏರಿಸಿಕೊಳ್ಳಬೇಕು."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:13001
+msgid "Error running shell in /target"
+msgstr "/target ನಲ್ಲಿ ಶೆಲ್ ಚಲಾಯಿಸುವಾಗ ದೋಷ "
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:13001
+msgid ""
+"A shell (${SHELL}) was found on your root file system (${DEVICE}), but an "
+"error occurred while running it."
+msgstr ""
+"(${SHELL}) ಎಂಬ ಶೆಲ್ ನಿಮ್ಮ ಮೂಲ ಕಡತ ವ್ಯವಸ್ಥೆ (${DEVICE})ನಲ್ಲಿ ಪತ್ತೆಯಾಗಿದೆ, ಆದರೆ "
+"ಅದನ್ನು ಚಲಾಯಿಸುವಾಗ ಒಂದು ದೋಷವೊಂಟಾಗಿದೆ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:14001
+msgid "No shell found in /target"
+msgstr "/target ನಲ್ಲಿ ಯಾವುದೇ  ಶೆಲ್ ಕಂಡುಬಂದಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:14001
+msgid "No usable shell was found on your root file system (${DEVICE})."
+msgstr ""
+"ಯಾವುದೇ ಬಳಸಬಹುದಾದಂತಹ ಶೆಲ್ ನಿಮ್ಮ ಮೂಲ ಕಡತ ವ್ಯವಸ್ಥೆ (${DEVICE})ನಲ್ಲಿ ಪತ್ತೆಯಾಗಿಲ್ಲ."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:15001
+msgid "Interactive shell on ${DEVICE}"
+msgstr "${DEVICE} ಮೇಲಿನ ಸಕ್ರಿಯವಾದ ಶೆಲ್"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:16001
+msgid ""
+"After this message, you will be given a shell with ${DEVICE} mounted on \"/"
+"target\". You may work on it using the tools available in the installer "
+"environment. If you want to make it your root file system temporarily, run "
+"\"chroot /target\". If you need any other file systems (such as a separate "
+"\"/usr\"), you will have to mount those yourself."
+msgstr ""
+"ಈ ಸಂದೇಶದ ನಂತರ ನಿಮಗೊಂದು ಶೆಲನ್ನು ನೀಡಲಾಗುವುದು ಜೊತೆಗೆ \"/target\"ನ ಮೇಲೆ ${DEVICE} "
+"ಅನ್ನು ಏರಿಸಿಕೊಡಲಾಗುವುದು. ನೀವು ಅನುಸ್ಥಾಪನಾ ಪರಿಸರದಲ್ಲಿ ಲಭ್ಯವಿರುವ ಸಲಕರಣೆಗಳನ್ನು "
+"ಬಳಸಿಕೊಂಡು ಅದರ ಮೇಲೆ ಕೆಲಸ ಮಾಡಬಹುದು. ನೀವು ಅದನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ಮೂಲ ಕಡತ "
+"ವ್ಯವಸ್ಥೆಯನ್ನಾಗಿ ಮಾಡಬೇಕೆಂದರೆ, \"chroot /target\" ಆಜ್ಞೆಯನ್ನು ಉಪಯೋಗಿಸಿ. ನಿಮಗೆ "
+"ಬೇರಾವುದೇ ಕಡತ ವ್ಯವಸ್ಥೆಗಳು ಬೇಕಾದಲ್ಲಿ ( ಉದಾಹರಣೆಗೆ ಪ್ರತ್ಯೇಕವಾದ \"/usr\") ಅವುಗಳನ್ನು "
+"ನೀವೆ ಸ್ವತಃ ಏರಿಸಿಕೊಳ್ಳಬೇಕು."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:17001
+msgid ""
+"After this message, you will be given a shell in the installer environment. "
+"No file systems have been mounted."
+msgstr ""
+"ಈ ಸಂದೇಶದ ನಂತರ ನಿಮಗೆ ಶೆಲ್ ಒಂದನ್ನು ಅನುಸ್ಥಾಪಕ ಪರಿಸರದಲ್ಲಿ ನೀಡಲಾಗುವುದು. ಯಾವುದೇ ಕಡತ "
+"ವ್ಯವಸ್ಥೆಗಳನ್ನು ಏರಿಸಲಾಗಿಲ್ಲ."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:18001
+msgid "Interactive shell in the installer environment"
+msgstr "ಅನುಸ್ಥಾಪನ ಪರಿಸರದಲ್ಲಿ ಸಕ್ರಿಅವಾದ ಶೆಲ್"
+
+#. Type: password
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:19001
+msgid "Passphrase for ${DEVICE}:"
+msgstr "ಗುಪ್ತ ವಾಕ್ಯ ${DEVICE}ಗೆ:"
+
+#. Type: password
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:19001
+msgid "Please enter the passphrase for the encrypted volume ${DEVICE}."
+msgstr "ದಯಮಾಡಿ ಗೂಢಲಿಪೀಕರಿಸಿದ ${DEVICE} ವಿಭಾಗಕ್ಕೆ ಬೇಕಾದ ಗುಪ್ತವಾಕ್ಯವನ್ನು ದಾಖಲಿಸಿ."
+
+#. Type: password
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:19001
+msgid ""
+"If you don't enter anything, the volume will not be available during rescue "
+"operations."
+msgstr ""
+"ನೀವೀಗ ಏನನ್ನೂ ದಾಖಲಿಸದಿದ್ದರೆ, ಈ ವಿಭಾಗವು ರಕ್ಷಣಾ ಕಾರ್ಯಾಚರಣೆಯ ವೇಳೆ ಲಭ್ಯವಿರುವುದಿಲ್ಲ."
+
+#. Type: multiselect
+#. Choices
+#: ../rescue-mode.templates:20001
+msgid "Automatic"
+msgstr "ಸ್ವಯಂಚಾಲಿತ"
+
+#. Type: multiselect
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:20002
+msgid "Partitions to assemble:"
+msgstr "ಒಟ್ಟುಗೂಡಿಸಬೇಕಾದ ವಿಭಜನೆಗಳು:"
+
+#. Type: multiselect
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:20002
+msgid ""
+"Select the partitions to assemble into a RAID array. If you select "
+"\"Automatic\", then all devices containing RAID physical volumes will be "
+"scanned and assembled."
+msgstr ""
+"ವಿಭಜನೆಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿ RAID ಸಾಲನ್ನು ಸ್ಥಾಪಿಸಲು ವಿಭಜನೆಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ. ನೀವು "
+"\"Automatic\" ಆಯ್ಕೆ ಮಾಡಿದರೆ, ಆಗ RAID ಭೌತಿಕ ವಿಭಾಗಗಳನ್ನು ಹೊಂದಿರುವ ಎಲ್ಲ ಉಪಕರಣಗಳನ್ನು "
+"ಶೋಧಿಸಿ ಒಟ್ಟುಗೂಡಿಸಲಾಗುತ್ತದೆ."
+
+#. Type: multiselect
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:20002
+msgid ""
+"Note that a RAID partition at the end of a disk may sometimes cause that "
+"disk to be mistakenly detected as containing a RAID physical volume. In that "
+"case, you should select the appropriate partitions individually."
+msgstr ""
+"ಗಮನಿಸಿ ಡಿಸ್ಕಿನ ಅಂತ್ಯದಲ್ಲಿ RAID ವಿಭಜನೆಯಿರುವುದರಿಂದ ಕೆಲವೊಮ್ಮೆ ಅಚಾತುರ್ಯದಿಂದ ಆ ಡಿಸ್ಕ್ "
+"RAID ಭೌತಿಕ ವಿಭಾಗವುಳ್ಳದ್ದಾಗಿ ಪತ್ತೆಯಾಗಬಹುದು. ಹಾಗಾದಲ್ಲಿ ನೀವೆ ಸರಿಯಾದ ವಿಭಜನೆಗಳನ್ನು "
+"ಒಂದೊಂದಾಗಿ ಆಯ್ಕೆ ಮಾಡಿಕೊಳ್ಳಿ."
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:21001
+#, fuzzy
+msgid "Mount separate ${FILESYSTEM} partition?"
+msgstr "/home ವಿಭಜನೆಯನ್ನು ಬೇರ್ಪಡಿಸಿ"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:21001
+#, fuzzy
+msgid "The installed system appears to use a separate ${FILESYSTEM} partition."
+msgstr "PReP ಬೂಟ್  ವಿಭಜನೆಯಲ್ಲಿ  ಕರ್ನಲ್  ಇನ್ಸ್ಟಾಲ್ ಮಾಡಿ "
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:21001
+msgid ""
+"It is normally a good idea to mount it as it will allow operations such as "
+"reinstalling the boot loader. However, if the file system on ${FILESYSTEM} "
+"is corrupt then you may want to avoid mounting it."
+msgstr ""

@@ -1,0 +1,1533 @@
+# Danish translation of d-i-manual-partitioning.
+# Copyright (C) 2016 Free Software Foundation, Inc.
+# Joe Hansen <joedalton2@yahoo.dk>, 2014, 2015, 2016.
+#
+# 32-bit processorer (er anvendt selv om 32-bit-processorer er den korrekte brug)
+# cipher -> krypteringsalgoritme
+# howto -> manual
+# installer -> installationsprogram
+# language -> sprog
+# locale -> sted (lokalitet andet?)
+# locales -> steder (sprogområder)
+# preseeding -> forhåndskonfiguration
+# scheme -> plan
+# stateful -> tilstandebærende
+# stateless -> tilstandsfri
+# volume -> diskenhed
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: d-i-manual_partitioning\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2015-04-15 20:29+0000\n"
+"PO-Revision-Date: 2016-11-27 12:41+0100\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-xml2pot; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: partitioning.xml:5
+#, no-c-format
+msgid "Partitioning for &debian;"
+msgstr "Partitionering for &debian;"
+
+#. Tag: title
+#: partitioning.xml:13
+#, no-c-format
+msgid "Deciding on &debian; Partitions and Sizes"
+msgstr "Opsætning af partitioner og størrelser for &debian;"
+
+#. Tag: para
+#: partitioning.xml:14
+#, no-c-format
+msgid ""
+"At a bare minimum, GNU/&arch-kernel; needs one partition for itself. You can "
+"have a single partition containing the entire operating system, "
+"applications, and your personal files. Most people feel that a separate swap "
+"partition is also a necessity, although it's not strictly true. <quote>Swap</"
+"quote> is scratch space for an operating system, which allows the system to "
+"use disk storage as <quote>virtual memory</quote>. By putting swap on a "
+"separate partition, &arch-kernel; can make much more efficient use of it. It "
+"is possible to force &arch-kernel; to use a regular file as swap, but it is "
+"not recommended."
+msgstr ""
+"Som minimum kræver GNU/&arch-kernel; en partition for sig selv. Du kan have "
+"en enkel partition, der indeholder hele operativsystemet, programmer og dine "
+"personlige filer. Manage mener også at en separat swap-partition er "
+"nødvendig, selvom det ikke helt er korrekt. <quote>Swap</quote> er "
+"midlertidig plads for et operativsystem, hvor systemet kan bruge disklageret "
+"som <quote>virtuel hukommelse</quote>. Ved at placere swap på en separat "
+"partition kan &arch-kernel; gøre mere effektiv brug af den. Det er mulgit at "
+"tvinge &arch-kernel; til at bruge en normal fil som swap, men det anbefales "
+"ikke."
+
+#. Tag: para
+#: partitioning.xml:26
+#, no-c-format
+msgid ""
+"Most people choose to give GNU/&arch-kernel; more than the minimum number of "
+"partitions, however. There are two reasons you might want to break up the "
+"file system into a number of smaller partitions. The first is for safety. If "
+"something happens to corrupt the file system, generally only one partition "
+"is affected. Thus, you only have to replace (from the backups you've been "
+"carefully keeping) a portion of your system. At a bare minimum, you should "
+"consider creating what is commonly called a <quote>root partition</quote>. "
+"This contains the most essential components of the system. If any other "
+"partitions get corrupted, you can still boot into GNU/&arch-kernel; to fix "
+"the system. This can save you the trouble of having to reinstall the system "
+"from scratch."
+msgstr ""
+"De fleste vælger dog at give GNU/&arch-kernel; mere end det minimale antal "
+"partitioner. Der er to årsager til at du måske ønsker at bryde filsystemet "
+"op i et antal mindre partitioner. Den første er sikkerhed. Hvis der sker "
+"noget, der ødelægger filsystemet, så bliver kun en partition påvirket. Du "
+"kan derfor erstattte (fra sikkerhedskopier som du omhyggeligt har opbevaret) "
+"en del af dit system. Som minimum bør du overveje at oprette hvad der kaldes "
+"for en <quote>rodpartition</quote>. Denne indeholder de væsentligste "
+"komponenter for dit system. Hvis andre partitioner bliver ødelagt, så kan du "
+"stadig starte op i GNU/&arch-kernel; for at rette systemet. Dette kan spare "
+"dig for problemerne ved at skulle geninstallere systemet fra bunden af."
+
+#. Tag: para
+#: partitioning.xml:40
+#, no-c-format
+msgid ""
+"The second reason is generally more important in a business setting, but it "
+"really depends on your use of the machine. For example, a mail server "
+"getting spammed with e-mail can easily fill a partition. If you made "
+"<filename>/var/mail</filename> a separate partition on the mail server, most "
+"of the system will remain working even if you get spammed."
+msgstr ""
+"Den anden årsag er generelt mere vigtigt i en forretningsmæssig opsætning, "
+"men afhænger reelt af din brug af maskinen. For eksempel, kan en postserver "
+"der spammes med e-post nemt fylde en partition op. Hvis du har gjort "
+"<filename>/var/mail</filename> til en separat partition på postserveren, så "
+"vil de meste af systemet stadig fungere, selv om du bliver spammet."
+
+#. Tag: para
+#: partitioning.xml:48
+#, no-c-format
+msgid ""
+"The only real drawback to using more partitions is that it is often "
+"difficult to know in advance what your needs will be. If you make a "
+"partition too small then you will either have to reinstall the system or you "
+"will be constantly moving things around to make room in the undersized "
+"partition. On the other hand, if you make the partition too big, you will be "
+"wasting space that could be used elsewhere. Disk space is cheap nowadays, "
+"but why throw your money away?"
+msgstr ""
+"Den eneste ulempe ved at bruge flere partitioner er, at det ofte er svært at "
+"vide på forhånd, hvad dine behov bliver. Hvis du laver en partiion for "
+"lille, så skal du enten geninstallere systemet eller du må konstant flytte "
+"rundt på filer for at gøre plads ledig på den for lille partition. På den "
+"anden side, hvis du gør partitionen for stor, så spilder du plads, som kunne "
+"bruges andre steder. Diskplads er billig nu om dage, men hvorfor spilde sine "
+"penge?"
+
+#. Tag: title
+#: partitioning.xml:67
+#, no-c-format
+msgid "The Directory Tree"
+msgstr "Mappetræet"
+
+#. Tag: para
+#: partitioning.xml:68
+#, no-c-format
+msgid ""
+"&debian-gnu; adheres to the <ulink url=\"&url-fhs-home;\">Filesystem "
+"Hierarchy Standard</ulink> for directory and file naming. This standard "
+"allows users and software programs to predict the location of files and "
+"directories. The root level directory is represented simply by the slash "
+"<filename>/</filename>. At the root level, all &debian; systems include "
+"these directories:"
+msgstr ""
+"&debian-gnu; overholder <ulink url=\"&url-fhs-home;\">Filesystem Hierarchy "
+"Standard</ulink> for mappe- og filnavngivning. Denne standard giver brugere "
+"og programmer mulighed for at forudsige placeringen af filer og mapper. "
+"Rodniveaumappen er repræsenteret af skråstreg <filename>/</filename>. På "
+"rodniveau inkluderer alle &debian;-systemer disse mapper:"
+
+#. Tag: entry
+#: partitioning.xml:82
+#, no-c-format
+msgid "Directory"
+msgstr "Mappe"
+
+#. Tag: entry
+#: partitioning.xml:82
+#, no-c-format
+msgid "Content"
+msgstr "Indhold"
+
+#. Tag: filename
+#: partitioning.xml:88
+#, no-c-format
+msgid "<filename>bin</filename>"
+msgstr "<filename>bin</filename>"
+
+#. Tag: entry
+#: partitioning.xml:89
+#, no-c-format
+msgid "Essential command binaries"
+msgstr "Essentielle binære filer for kommandoer"
+
+#. Tag: filename
+#: partitioning.xml:91
+#, no-c-format
+msgid "boot"
+msgstr "boot"
+
+#. Tag: entry
+#: partitioning.xml:92
+#, no-c-format
+msgid "Static files of the boot loader"
+msgstr "Statiske filer for opstartsindlæseren"
+
+#. Tag: filename
+#: partitioning.xml:94
+#, no-c-format
+msgid "<filename>dev</filename>"
+msgstr "<filename>dev</filename>"
+
+#. Tag: entry
+#: partitioning.xml:95
+#, no-c-format
+msgid "Device files"
+msgstr "Enhedsfiler"
+
+#. Tag: filename
+#: partitioning.xml:97
+#, no-c-format
+msgid "<filename>etc</filename>"
+msgstr "<filename>etc</filename>"
+
+#. Tag: entry
+#: partitioning.xml:98
+#, no-c-format
+msgid "Host-specific system configuration"
+msgstr "Værtsspecifik systemkonfiguration"
+
+#. Tag: filename
+#: partitioning.xml:100
+#, no-c-format
+msgid "home"
+msgstr "home"
+
+#. Tag: entry
+#: partitioning.xml:101
+#, no-c-format
+msgid "User home directories"
+msgstr "Brugerens hjemmemapper"
+
+#. Tag: filename
+#: partitioning.xml:103
+#, no-c-format
+msgid "<filename>lib</filename>"
+msgstr "<filename>lib</filename>"
+
+#. Tag: entry
+#: partitioning.xml:104
+#, no-c-format
+msgid "Essential shared libraries and kernel modules"
+msgstr "Essentielle delte biblioteker og kernemoduler"
+
+#. Tag: filename
+#: partitioning.xml:106
+#, no-c-format
+msgid "media"
+msgstr "media"
+
+#. Tag: entry
+#: partitioning.xml:107
+#, no-c-format
+msgid "Contains mount points for replaceable media"
+msgstr "Indeholder monteringspunkter for udskiftelige medier"
+
+#. Tag: filename
+#: partitioning.xml:109
+#, no-c-format
+msgid "<filename>mnt</filename>"
+msgstr "<filename>mnt</filename>"
+
+#. Tag: entry
+#: partitioning.xml:110
+#, no-c-format
+msgid "Mount point for mounting a file system temporarily"
+msgstr "Monteringspunkt for monterin et filsytem midlertidigt"
+
+#. Tag: filename
+#: partitioning.xml:112
+#, no-c-format
+msgid "proc"
+msgstr "proc"
+
+#. Tag: entry
+#: partitioning.xml:113 partitioning.xml:125
+#, no-c-format
+msgid "Virtual directory for system information"
+msgstr "Virtuel mappe for systeminformation"
+
+#. Tag: filename
+#: partitioning.xml:115
+#, no-c-format
+msgid "root"
+msgstr "root"
+
+#. Tag: entry
+#: partitioning.xml:116
+#, no-c-format
+msgid "Home directory for the root user"
+msgstr "Hjemmemappe for root-brugeren"
+
+#. Tag: filename
+#: partitioning.xml:118
+#, no-c-format
+msgid "<filename>run</filename>"
+msgstr "<filename>run</filename>"
+
+#. Tag: entry
+#: partitioning.xml:119
+#, no-c-format
+msgid "Run-time variable data"
+msgstr "Variable data for kørselstid"
+
+#. Tag: filename
+#: partitioning.xml:121
+#, no-c-format
+msgid "sbin"
+msgstr "sbin"
+
+#. Tag: entry
+#: partitioning.xml:122
+#, no-c-format
+msgid "Essential system binaries"
+msgstr "Essentielle binære filer for systemet"
+
+#. Tag: filename
+#: partitioning.xml:124
+#, no-c-format
+msgid "<filename>sys</filename>"
+msgstr "<filename>sys</filename>"
+
+#. Tag: filename
+#: partitioning.xml:127
+#, no-c-format
+msgid "<filename>tmp</filename>"
+msgstr "<filename>tmp</filename>"
+
+#. Tag: entry
+#: partitioning.xml:128
+#, no-c-format
+msgid "Temporary files"
+msgstr "Midlertidige filer"
+
+#. Tag: filename
+#: partitioning.xml:130
+#, no-c-format
+msgid "<filename>usr</filename>"
+msgstr "<filename>usr</filename>"
+
+#. Tag: entry
+#: partitioning.xml:131
+#, no-c-format
+msgid "Secondary hierarchy"
+msgstr "Sekundært hierarki"
+
+#. Tag: filename
+#: partitioning.xml:133
+#, no-c-format
+msgid "<filename>var</filename>"
+msgstr "<filename>var</filename>"
+
+#. Tag: entry
+#: partitioning.xml:134
+#, no-c-format
+msgid "Variable data"
+msgstr "Variable data"
+
+#. Tag: filename
+#: partitioning.xml:136
+#, no-c-format
+msgid "<filename>srv</filename>"
+msgstr "<filename>srv</filename>"
+
+#. Tag: entry
+#: partitioning.xml:137
+#, no-c-format
+msgid "Data for services provided by the system"
+msgstr "Data for tjenester tilbudt af systemet"
+
+#. Tag: filename
+#: partitioning.xml:139
+#, no-c-format
+msgid "<filename>opt</filename>"
+msgstr "<filename>opt</filename>"
+
+#. Tag: entry
+#: partitioning.xml:140
+#, no-c-format
+msgid "Add-on application software packages"
+msgstr "Udvidelsesprogrampakker"
+
+#. Tag: para
+#: partitioning.xml:145
+#, no-c-format
+msgid ""
+"The following is a list of important considerations regarding directories "
+"and partitions. Note that disk usage varies widely given system "
+"configuration and specific usage patterns. The recommendations here are "
+"general guidelines and provide a starting point for partitioning."
+msgstr ""
+"Det følgende er en list over vigtigte overvejesler jævnfør mapper og "
+"partitioner. Bemærk at diskforbruget varierer meget med systemkonfiguration "
+"og specifikke brugsmønstre. Anbefalingerne her er generelle vejledninger og "
+"tilbyder et udgangspunkt for partitionering."
+
+#. Tag: para
+#: partitioning.xml:155
+#, no-c-format
+msgid ""
+"The root partition <filename>/</filename> must always physically contain "
+"<filename>/etc</filename>, <filename>/bin</filename>, <filename>/sbin</"
+"filename>, <filename>/lib</filename> and <filename>/dev</filename>, "
+"otherwise you won't be able to boot. Typically &root-system-size-min;&ndash;&root-system-size-max;MB is needed for "
+"the root partition."
+msgstr ""
+"Rodpartitionen <filename>/</filename> skal altid fysisk indeholde <filename>/"
+"etc</filename>, <filename>/bin</filename>, <filename>/sbin</filename>, "
+"<filename>/lib</filename> og <filename>/dev</filename>, ellers vil du ikke "
+"kunne starte op. Typiske er &root-system-size-min;&ndash;&root-system-size-max; MB krævet for rodpartitionen."
+
+#. Tag: para
+#: partitioning.xml:164
+#, no-c-format
+msgid ""
+"<filename>/usr</filename>: contains all user programs (<filename>/usr/bin</"
+"filename>), libraries (<filename>/usr/lib</filename>), documentation "
+"(<filename>/usr/share/doc</filename>), etc. This is the part of the file "
+"system that generally takes up most space. You should provide at least 500MB "
+"of disk space. This amount should be increased depending on the number and "
+"type of packages you plan to install. A generous workstation or server "
+"installation should allow 4&ndash;6GB."
+msgstr ""
+"<filename>/usr</filename>: indeholder alle brugerprogrammer (<filename>/usr/"
+"bin</filename>), biblioteker (<filename>/usr/lib</filename>), dokumentation "
+"(<filename>/usr/share/doc</filename>), etc. Dette er den del af filsystemet "
+"som generelt bruger mest plads. Du bør tildele mindst 500 MB i diskplads. "
+"Denne mængde bør øges afhængig af antallet og akketyperne du planlægger at "
+"installere. En generøs arbejdsstation eller serverinstallation bør "
+"indeholder 4&ndash;6 GB."
+
+#. Tag: para
+#: partitioning.xml:177
+#, no-c-format
+msgid ""
+"It is now recommended to have <filename>/usr</filename> on the root "
+"partition <filename>/</filename>, otherwise it could cause some trouble at "
+"boot time. This means that you should provide at least 600&ndash;750MB of "
+"disk space for the root partition including <filename>/usr</filename>, or "
+"5&ndash;6GB for a workstation or a server installation."
+msgstr ""
+"Det anbefales nu at have <filename>/usr</filename> på root-partitionen "
+"<filename>/</filename>, ellers kan det medføre problemer på "
+"opstartstidspunktet. Det betyder, at du skal have mindst 600&ndash;750 MB "
+"diskplads for rodpartitionen inklusive <filename>/usr</filename>, eller "
+"5&ndash;6 GB for en arbejdsstation eller en serverinstallation."
+
+#. Tag: para
+#: partitioning.xml:187
+#, no-c-format
+msgid ""
+"<filename>/var</filename>: variable data like news articles, e-mails, web "
+"sites, databases, the packaging system cache, etc. will be placed under this "
+"directory. The size of this directory depends greatly on the usage of your "
+"system, but for most people will be dictated by the package management "
+"tool's overhead. If you are going to do a full installation of just about "
+"everything &debian; has to offer, all in one session, setting aside 2 or 3 "
+"GB of space for <filename>/var</filename> should be sufficient. If you are "
+"going to install in pieces (that is to say, install services and utilities, "
+"followed by text stuff, then X, ...), you can get away with 300&ndash;500 "
+"MB. If hard drive space is at a premium and you don't plan on doing major "
+"system updates, you can get by with as little as 30 or 40 MB."
+msgstr ""
+"<filename>/var</filename>: variable data såsom nyhedsartikler, e-post, "
+"netsider, databaser, pakkesystemets mellemlager etc. vil blive placeret "
+"under denne mappe. Størrelsen af denne mappe afhænger i høj grad på brugen "
+"af dit system, men for de fleste være dikteret af pakkehåndteringens ekstra "
+"forbrug. Hvis du udfører en fuld installation af så godt som alt &debian; "
+"kan tilbyde, i en session, bør 2-3 GB plads for <filename>/var</filename> "
+"være tilstrækkelig. Hvis du installerer stykvist (det vil sige, installere "
+"tjenester og redskaber efterfulgt tekststumper, så X, ...), så kan du nøjes "
+"med 300&ndash;500 MB. Hvis harddiskplads er dyrt og du planlægger at udføre "
+"væsentlige systemopdateringer, så kan du nøjes med så lidst som 30 eller 40 "
+"MB."
+
+#. Tag: para
+#: partitioning.xml:203
+#, no-c-format
+msgid ""
+"<filename>/tmp</filename>: temporary data created by programs will most "
+"likely go in this directory. 40&ndash;100MB should usually be enough. Some "
+"applications &mdash; including archive manipulators, CD/DVD authoring tools, "
+"and multimedia software &mdash; may use <filename>/tmp</filename> to "
+"temporarily store image files. If you plan to use such applications, you "
+"should adjust the space available in <filename>/tmp</filename> accordingly."
+msgstr ""
+"<filename>/tmp</filename>: midlertidige data oprettet af programmer vil "
+"højst sandsynlig blive placeret i denne mappe. 40&ndash;100 MB bør normalt "
+"være nok. Nogle programmer &mdash; inkluderer arkivmanipulatorer, cd/dvd-"
+"værktøjer og multimedieprogrammer &mdash; kan bruge <filename>/tmp</"
+"filename> til at lagre store billedfiler. Hvis du planlægger at bruge "
+"sådanne programmer, så skal du justere den tilgængelige plads i <filename>/"
+"tmp</filename> jævnfør dette."
+
+#. Tag: para
+#: partitioning.xml:214
+#, no-c-format
+msgid ""
+"<filename>/home</filename>: every user will put his personal data into a "
+"subdirectory of this directory. Its size depends on how many users will be "
+"using the system and what files are to be stored in their directories. "
+"Depending on your planned usage you should reserve about 100MB for each "
+"user, but adapt this value to your needs. Reserve a lot more space if you "
+"plan to save a lot of multimedia files (pictures, MP3, movies) in your home "
+"directory."
+msgstr ""
+"<filename>/home</filename>: Hver bruger vil placere sine personlige data i "
+"en undermappe i denne mappe. Dens størrelse afhænger af hvor mange brugere "
+"som skal bruge systemet og hvilke filer deres lagres i deres mapper. "
+"Afhængig af din planlagte brug, skal du reservere omkring 100 MB for hver "
+"bruger, men tilpas denne værdi til dine behov. Reserver en masse plads, hvis "
+"du planlægger at gemme en masse multimediefiler (billeder, mp3, film) i din "
+"hjemmemappe."
+
+#. Tag: title
+#: partitioning.xml:235
+#, no-c-format
+msgid "Recommended Partitioning Scheme"
+msgstr "Anbefalet partitioneringsskema"
+
+#. Tag: para
+#: partitioning.xml:236
+#, no-c-format
+msgid ""
+"For new users, personal &debian; boxes, home systems, and other single-user "
+"setups, a single <filename>/</filename> partition (plus swap) is probably "
+"the easiest, simplest way to go. However, if your partition is larger than "
+"around 6GB, choose ext3 as your partition type. Ext2 partitions need "
+"periodic file system integrity checking, and this can cause delays during "
+"booting when the partition is large."
+msgstr ""
+"For nye brugere, personlige &debian;-bokse, hjemmesystemer og andre enkel "
+"bruger-systemer, er en enkel <filename>/</filename>-partition (plus swap) "
+"sandsynligvis den simpleste måde at gå i gang. Hvis din partition er større "
+"end omkring 6 GB, så vælg ext3 som din partitionstype. Ext2-partitioner "
+"kræver periodisk integritetskontrol af filsystemet, og dette kan medføre "
+"forsinkelser under opstart, når partitionen er stor."
+
+#. Tag: para
+#: partitioning.xml:245
+#, no-c-format
+msgid ""
+"For multi-user systems or systems with lots of disk space, it's best to put "
+"<filename>/var</filename>, <filename>/tmp</filename>, and <filename>/home</"
+"filename> each on their own partitions separate from the <filename>/</"
+"filename> partition."
+msgstr ""
+"For systemer med flere brugere eller systemer med en masse displads, er det "
+"bedst at placere <filename>/var</filename>, <filename>/tmp</filename>, og "
+"<filename>/home</filename> på hver deres partition adskilt fra partitionen "
+"<filename>/</filename> partition."
+
+#. Tag: para
+#: partitioning.xml:253
+#, no-c-format
+msgid ""
+"You might need a separate <filename>/usr/local</filename> partition if you "
+"plan to install many programs that are not part of the &debian; "
+"distribution. If your machine will be a mail server, you might need to make "
+"<filename>/var/mail</filename> a separate partition. Often, putting "
+"<filename>/tmp</filename> on its own partition, for instance 20&ndash;50MB, "
+"is a good idea. If you are setting up a server with lots of user accounts, "
+"it's generally good to have a separate, large <filename>/home</filename> "
+"partition. In general, the partitioning situation varies from computer to "
+"computer depending on its uses."
+msgstr ""
+"Du skal måske bruge en separat partition <filename>/usr/local</filename>, "
+"hvis du planlægger at installere mange programmer, som ikke er en del af "
+"&debian;-distributionen. Hvis din maskine skal være en postserver, så kan "
+"det være en god ide at gøre <filename>/var/mail</filename> til en separat "
+"partition, for eksempel er 20&ndash;50 MB, en god ide. Hvis du opsætter en "
+"server med en masse brugerkonti, er det generelt en god ide at have en "
+"adskilt, stor partition for <filename>/home</filename>. Generelt er den "
+"ideelle partitionering forskellig fra computer til computer afhængig af "
+"computerens brug."
+
+#. Tag: para
+#: partitioning.xml:265
+#, no-c-format
+msgid ""
+"For very complex systems, you should see the <ulink url=\"&url-multidisk-"
+"howto;\"> Multi Disk HOWTO</ulink>. This contains in-depth information, "
+"mostly of interest to ISPs and people setting up servers."
+msgstr ""
+"For meget komplekse systemer, bør du se <ulink url=\"&url-multidisk-howto;"
+"\"> Multi Disk-manualen</ulink>. Denne indeholder dybdegående information, "
+"hovedsagelig af interesse for ISP'er og folk som opsætter servere."
+
+#. Tag: para
+#: partitioning.xml:272
+#, no-c-format
+msgid ""
+"With respect to the issue of swap partition size, there are many views. One "
+"rule of thumb which works well is to use as much swap as you have system "
+"memory. It also shouldn't be smaller than 16MB, in most cases. Of course, "
+"there are exceptions to these rules. If you are trying to solve 10000 "
+"simultaneous equations on a machine with 256MB of memory, you may need a "
+"gigabyte (or more) of swap."
+msgstr ""
+"Med respekt for problemstillingen for swappartitionens størrelse, så er der "
+"mange meninger. En tommelfingerregel som fungerer godt er at bruge så meget "
+"swap som du har systemhukommelse. Den bør, i de fleste tilfælde, ikke være "
+"mindre end 16 MB. Selvfølgelig er der undtagelser til denne regel. Hvis du "
+"forsøger at løse 10.000 samtidige ligninger på en maskine med 256 MB "
+"hukommelse, så skal du sandsynligvis bruge en gigabyte (eller mere) swap."
+
+#. Tag: para
+#: partitioning.xml:281
+#, no-c-format
+msgid ""
+"On some 32-bit architectures (m68k and PowerPC), the maximum size of a swap "
+"partition is 2GB. That should be enough for nearly any installation. "
+"However, if your swap requirements are this high, you should probably try to "
+"spread the swap across different disks (also called <quote>spindles</quote>) "
+"and, if possible, different SCSI or IDE channels. The kernel will balance "
+"swap usage between multiple swap partitions, giving better performance."
+msgstr ""
+"På nogle 32-bit arkitekturer (m68k og PowerPC), er den maksimale størrelse "
+"for en swappartition 2 GB. Det bør være nok for næsten alle installationer. "
+"Hvis dit swapkrav er meget højt, så bør du eventuelt prøve at sprede swappen "
+"over forskellige diske (også kaldt for <quote>spindles</quote>) og, hvis "
+"muligt, forskellige SCSI- eler IDE-kanaler. Kernen vil balancere swapbrug "
+"mellem flere swappartitioner, hvilket giver bedre ydelse."
+
+#. Tag: para
+#: partitioning.xml:291
+#, no-c-format
+msgid ""
+"As an example, an older home machine might have 32MB of RAM and a 1.7GB IDE "
+"drive on <filename>/dev/sda</filename>. There might be a 500MB partition for "
+"another operating system on <filename>/dev/sda1</filename>, a 32MB swap "
+"partition on <filename>/dev/sda3</filename> and about 1.2GB on <filename>/"
+"dev/sda2</filename> as the Linux partition."
+msgstr ""
+"Som et eksempel, kan en gammel maskine have 32 MB ram og et 1,7 GB IDE-drev "
+"på <filename>/dev/sda</filename>. Der er måske en 500 MB partition for et "
+"andet operativsystem på <filename>/dev/sda1</filename>, en 32 MB "
+"swappartition på <filename>/dev/sda3</filename> og omkring 1,2 GB på "
+"<filename>/dev/sda2</filename> som Linuxpartitionen."
+
+#. Tag: para
+#: partitioning.xml:300
+#, no-c-format
+msgid ""
+"For an idea of the space taken by tasks you might be interested in adding "
+"after your system installation is complete, check <xref linkend=\"tasksel-"
+"size-list\"/>."
+msgstr ""
+"For en cirka estimering af den forbrugte plads, efter at din "
+"systeminstallation er færdig, for opgaver du er interesseret i, så se <xref "
+"linkend=\"tasksel-size-list\"/>."
+
+#. Tag: title
+#: partitioning.xml:316
+#, no-c-format
+msgid "Device Names in Linux"
+msgstr "Enhedsnavne i Linux"
+
+#. Tag: para
+#: partitioning.xml:317
+#, no-c-format
+msgid ""
+"Linux disks and partition names may be different from other operating "
+"systems. You need to know the names that Linux uses when you create and "
+"mount partitions. Here's the basic naming scheme:"
+msgstr ""
+"Linuxdiske og partitionsnavne kan være forskellige fra andre "
+"operativsystemer. Du skal kende navnene som Linux bruger, når du opretter og "
+"monterer partitioner. Her er det grundlæggende navneskema:"
+
+#. Tag: para
+#: partitioning.xml:325
+#, no-c-format
+msgid "The first floppy drive is named <filename>/dev/fd0</filename>."
+msgstr "Det første diskettedrev er navngivet <filename>/dev/fd0</filename>."
+
+#. Tag: para
+#: partitioning.xml:330
+#, no-c-format
+msgid "The second floppy drive is named <filename>/dev/fd1</filename>."
+msgstr "Det andet diskettedrev er navngivet <filename>/dev/fd1</filename>."
+
+#. Tag: para
+#: partitioning.xml:335
+#, no-c-format
+msgid "The first hard disk detected is named <filename>/dev/sda</filename>."
+msgstr "Den første harddisk registreret er navngivet <filename>/dev/sda</filename>."
+
+#. Tag: para
+#: partitioning.xml:340
+#, no-c-format
+msgid ""
+"The second hard disk detected is named <filename>/dev/sdb</filename>, and so "
+"on."
+msgstr ""
+"Den anden harddisk er navngivet <filename>/dev/sdb</filename>, og så "
+"videre."
+
+#. Tag: para
+#: partitioning.xml:346
+#, no-c-format
+msgid ""
+"The first SCSI CD-ROM is named <filename>/dev/scd0</filename>, also known as "
+"<filename>/dev/sr0</filename>."
+msgstr ""
+"Den første SCSI-cd-rom er navngivet <filename>/dev/scd0</filename>, også "
+"kendt som <filename>/dev/sr0</filename>."
+
+#. Tag: para
+#: partitioning.xml:355
+#, no-c-format
+msgid "The first DASD device is named <filename>/dev/dasda</filename>."
+msgstr "Den første DASD-enhed er navngivet <filename>/dev/dasda</filename>."
+
+#. Tag: para
+#: partitioning.xml:361
+#, no-c-format
+msgid ""
+"The second DASD device is named <filename>/dev/dasdb</filename>, and so on."
+msgstr ""
+"Den anden DASD-enhed er navngivet <filename>/dev/dasdb</filename>, og så "
+"videre."
+
+#. Tag: para
+#: partitioning.xml:369
+#, no-c-format
+msgid ""
+"The partitions on each disk are represented by appending a decimal number to "
+"the disk name: <filename>sda1</filename> and <filename>sda2</filename> "
+"represent the first and second partitions of the first SCSI disk drive in "
+"your system."
+msgstr ""
+"Partitionerne på hver disk er repræsenteret ved at tilføje et decimaltal til "
+"disknavnet: <filename>sda1</filename> og <filename>sda2</filename> "
+"repræsenterer de første og anden partitioner for det første SCSI-diskdrev i "
+"dit system."
+
+#. Tag: para
+#: partitioning.xml:376
+#, no-c-format
+msgid ""
+"Here is a real-life example. Let's assume you have a system with 2 SCSI "
+"disks, one at SCSI address 2 and the other at SCSI address 4. The first disk "
+"(at address 2) is then named <filename>sda</filename>, and the second "
+"<filename>sdb</filename>. If the <filename>sda</filename> drive has 3 "
+"partitions on it, these will be named <filename>sda1</filename>, "
+"<filename>sda2</filename>, and <filename>sda3</filename>. The same applies "
+"to the <filename>sdb</filename> disk and its partitions."
+msgstr ""
+"Her er et eksempel fra det virkelige liv. Lad os antage, at du har et system "
+"med 2 SCSI-diske, en på SCSI-adresse 2 og den anden på SCSI-adresse 4. Den "
+"første disk (på adresse 2) er så navngivet <filename>sda</filename>, og den "
+"anden <filename>sdb</filename>. Hvis drevet <filename>sda</filename> har 3 "
+"partitioner, så vil de blive navngivet <filename>sda1</filename>, "
+"<filename>sda2</filename> og <filename>sda3</filename>. Det samme gælder for "
+"disken <filename>sdb</filename> og dens partitioner."
+
+#. Tag: para
+#: partitioning.xml:387
+#, no-c-format
+msgid ""
+"Note that if you have two SCSI host bus adapters (i.e., controllers), the "
+"order of the drives can get confusing. The best solution in this case is to "
+"watch the boot messages, assuming you know the drive models and/or "
+"capacities."
+msgstr ""
+"Bemærk, at hvis du har to SCSI-værtsbusadaptere (dvs. controllere), så kan "
+"rækkefølgen for drevene blive forstyrret. Den bedste løsning i dette "
+"tilfælde er at kigge på opstartsbeskederen, hvis vi antager, at du kender "
+"drevmodellerne og/eller kapaciteten."
+
+#. Tag: para
+#: partitioning.xml:394
+#, no-c-format
+msgid ""
+"Linux represents the primary partitions as the drive name, plus the numbers "
+"1 through 4. For example, the first primary partition on the first drive is "
+"<filename>/dev/sda1</filename>. The logical partitions are numbered starting "
+"at 5, so the first logical partition on that same drive is <filename>/dev/"
+"sda5</filename>. Remember that the extended partition, that is, the primary "
+"partition holding the logical partitions, is not usable by itself."
+msgstr ""
+"Linux repræsenterer de primære partitioner som drevnavn, plus tallene 1 til "
+"4. For eksempel, er den første primære partition på det første drev "
+"<filename>/dev/sda1</filename>. De logiske partitioner er nummereret "
+"startende med 5, så den første logiske partition på det samme drev er "
+"<filename>/dev/sda5</filename>. Husk at den udvidede partition, det vil sige "
+"den primære partition som indeholder de logiske partitioner, ikke kan bruges "
+"for sig selv."
+
+#. Tag: para
+#: partitioning.xml:404
+#, no-c-format
+msgid ""
+"Sun disk partitions allow for 8 separate partitions (or slices). The third "
+"partition is usually (and is preferred to have) the <quote>Whole Disk</"
+"quote> partition. This partition references all of the sectors of the disk, "
+"and is used by the boot loader (either SILO, or Sun's)."
+msgstr ""
+"Sun-diskpartitioner tillader 8 separate partitioner (eller dele). Den tredje "
+"partition er normalt (og den foretrækkes at have) partitionen <quote>Whole "
+"Disk</quote>. Denne partition har reference til alle sektorerne for disken, "
+"og bruges af opstartsindlæseren (enten SILO, eller Suns)."
+
+#. Tag: para
+#: partitioning.xml:411
+#, no-c-format
+msgid ""
+"The partitions on each disk are represented by appending a decimal number to "
+"the disk name: <filename>dasda1</filename> and <filename>dasda2</filename> "
+"represent the first and second partitions of the first DASD device in your "
+"system."
+msgstr ""
+"Partitionen på hver disk er repræsenteret ved at tilføje et decimaltal til "
+"disknavnet: <filename>dasda1</filename> og <filename>dasda2</filename> "
+"repræsenterer den første og anden partition for den første DASD-enhed i dit "
+"system."
+
+#. Tag: title
+#: partitioning.xml:426
+#, no-c-format
+msgid "&debian; Partitioning Programs"
+msgstr "&debian; - partitioneringsprogrammer"
+
+#. Tag: para
+#: partitioning.xml:427
+#, no-c-format
+msgid ""
+"Several varieties of partitioning programs have been adapted by &debian; "
+"developers to work on various types of hard disks and computer "
+"architectures. Following is a list of the program(s) applicable for your "
+"architecture."
+msgstr ""
+"Flere variationer af partitioneringsprogrammer er blevet tilpasset af "
+"&debian;-udviklere til at fungere på forskellige typer af harddiske og "
+"computerarkitekturer. Her følger en liste over programmer, som er egnede for "
+"din arkitektur."
+
+# hvad betyder speak her?
+#. Tag: para
+#: partitioning.xml:440
+#, no-c-format
+msgid ""
+"Recommended partitioning tool in &debian;. This Swiss army knife can also "
+"resize partitions, create filesystems <phrase arch=\"any-x86\"> "
+"(<quote>format</quote> in Windows speak)</phrase> and assign them to the "
+"mountpoints."
+msgstr ""
+"Anbefalet partitioneringsværktøj i &debian;. Denne schweitzerkniv kan også "
+"ændre størrelse på partitioner, oprette filsystemer <phrase arch=\"any-"
+"x86\"> (<quote>formatere</quote> i Windows speak)</phrase> og tildele dem "
+"til monteringspunkter."
+
+#. Tag: para
+#: partitioning.xml:452
+#, no-c-format
+msgid "The original Linux disk partitioner, good for gurus."
+msgstr "Det originale Linux-diskpartitioneringsprogram, godt for guruer."
+
+#. Tag: para
+#: partitioning.xml:456
+#, no-c-format
+msgid ""
+"Be careful if you have existing FreeBSD partitions on your machine. The "
+"installation kernels include support for these partitions, but the way that "
+"<command>fdisk</command> represents them (or not) can make the device names "
+"differ. See the <ulink url=\"&url-linux-freebsd;\">Linux+FreeBSD HOWTO</"
+"ulink>."
+msgstr ""
+"Vær forsigtig hvis du har eksisterende FreeBSD-partitioner på din maskine. "
+"Installationskernerne inkluderer understøttelse for disse partitioner, "
+"men den måde som <command>fdisk</command> repræsenterer dem (eller ej) kan "
+"gøre at enhedsnavnene er forskellige. Se <ulink url=\"&url-linux-freebsd;\">"
+"Linux+FreeBSD HOWTO</ulink>."
+
+#. Tag: para
+#: partitioning.xml:469
+#, no-c-format
+msgid "A simple-to-use, full-screen disk partitioner for the rest of us."
+msgstr "Et simpelt fuldskærms diskpartitioneringsprogram for resten af os."
+
+#. Tag: para
+#: partitioning.xml:473
+#, no-c-format
+msgid ""
+"Note that <command>cfdisk</command> doesn't understand FreeBSD partitions at "
+"all, and, again, device names may differ as a result."
+msgstr ""
+"Bemærk at <command>cfdisk</command> overhovedet ikke forstår FreeBSD-"
+"partitioner, og, igen, enhedsnavne kan være forskellige som et resultat "
+"heraf."
+
+#. Tag: para
+#: partitioning.xml:483
+#, no-c-format
+msgid "Atari-aware version of <command>fdisk</command>."
+msgstr "Atari-egnet version af <command>fdisk</command>."
+
+#. Tag: para
+#: partitioning.xml:492
+#, no-c-format
+msgid "Amiga-aware version of <command>fdisk</command>."
+msgstr "Amiga-opmærksom version af <command>fdisk</command>."
+
+#. Tag: para
+#: partitioning.xml:501
+#, no-c-format
+msgid "Mac-aware version of <command>fdisk</command>."
+msgstr "Mac-opmærksom version af <command>fdisk</command>."
+
+#. Tag: para
+#: partitioning.xml:510
+#, no-c-format
+msgid ""
+"PowerMac-aware version of <command>fdisk</command>, also used by BVM and "
+"Motorola VMEbus systems."
+msgstr ""
+"PowerMac-egnet version af  <command>fdisk</command>, også brugt af BVM og "
+"Motorola VMEbus-systemer."
+
+#. Tag: para
+#: partitioning.xml:520
+#, no-c-format
+msgid ""
+"&arch-title; version of <command>fdisk</command>; Please read the fdasd "
+"manual page or chapter 13 in <ulink url=\"http://oss.software.ibm.com/"
+"developerworks/opensource/linux390/docu/l390dd08.pdf\"> Device Drivers and "
+"Installation Commands</ulink> for details."
+msgstr ""
+"&arch-title; version af <command>fdisk</command>; Læs venligst manualsiden "
+"fdasd eller kapitel 13 i <ulink url=\"http://oss.software.ibm.com/"
+"developerworks/opensource/linux390/docu/l390dd08.pdf\"> Enhedsdrivere og "
+"installationskommandoer</ulink> for detaljer."
+
+#. Tag: para
+#: partitioning.xml:531
+#, no-c-format
+msgid ""
+"One of these programs will be run by default when you select "
+"<guimenuitem>Partition disks</guimenuitem> (or similar). It may be possible "
+"to use a different partitioning tool from the command line on VT2, but this "
+"is not recommended."
+msgstr ""
+"Et af disse programmer vil blive kørt som standard når du vælger "
+"<guimenuitem>Partitionsdiske</guimenuitem> (eller lignende). Det kan være "
+"muligt at bruge et andet partitioneringsværktøj fra kommandolinjen på VT2, "
+"men dette anbefales ikke."
+
+#. Tag: para
+#: partitioning.xml:538
+#, no-c-format
+msgid "Remember to mark your boot partition as <quote>Bootable</quote>."
+msgstr "Husk at markere din opstartspartition som <quote>Bootable</quote>."
+
+#. Tag: para
+#: partitioning.xml:541
+#, no-c-format
+msgid ""
+"One key point when partitioning for Mac type disks is that the swap "
+"partition is identified by its name; it must be named <quote>swap</quote>. "
+"All Mac linux partitions are the same partition type, Apple_UNIX_SRV2. "
+"Please read the fine manual. We also suggest reading the <ulink url=\"&url-"
+"mac-fdisk-tutorial;\">mac-fdisk Tutorial</ulink>, which includes steps you "
+"should take if you are sharing your disk with MacOS."
+msgstr ""
+"Et vigtigt område når der partitioneres for Mac-typediske er, at "
+"swappartitionen identificeres efter sit navn; den skal navngives "
+"<quote>swap</quote>. Alle Mac Linux-partitioner er den samme "
+"partitionstype, Apple_UNIX_SRV2. Læs den flotte manual. Vi anbefaler "
+"også at læse <ulink url=\"&url-mac-fdisk-tutorial;\">mac-fdisk Tutorial"
+"</ulink>, som inkluderer trin du bør foretage hvis du deler din disk "
+"med MacOS."
+
+#. Tag: title
+#: partitioning.xml:557 partitioning.xml:581 partitioning.xml:677
+#: partitioning.xml:791 partitioning.xml:868
+#, no-c-format
+msgid "Partitioning for &arch-title;"
+msgstr "Partitionering for &arch-title;"
+
+#. Tag: para
+#: partitioning.xml:558
+#, no-c-format
+msgid ""
+"PALO, the HPPA boot loader, requires a partition of type <quote>F0</quote> "
+"somewhere in the first 2GB. This is where the boot loader and an optional "
+"kernel and RAMdisk will be stored, so make it big enough for that &mdash; at "
+"least 4Mb (I like 8&ndash;16MB). An additional requirement of the firmware "
+"is that the Linux kernel must reside within the first 2GB of the disk. This "
+"is typically achieved by making the root ext2 partition fit entirely within "
+"the first 2GB of the disk. Alternatively you can create a small ext2 "
+"partition near the start of the disk and mount that on <filename>/boot</"
+"filename>, since that is the directory where the Linux kernel(s) will be "
+"stored. <filename>/boot</filename> needs to be big enough to hold whatever "
+"kernels (and backups) you might wish to load; 25&ndash;50MB is generally "
+"sufficient."
+msgstr ""
+"PALO, HPPA-opstartsindlæseren, kræver en partition af typen <quote>F0</quote> "
+"et sted i de første 2 GB. Dette er stedet hvor opstartsindlæseren og en "
+"valgfri kerne og RAMdisk vil blive gemt, så gør den stor nok til det formål "
+"&mdash; mindst 4 Mb (jeg foretrækker 8&ndash;16 MB). Et yderligere krav "
+"for firmwaren is at Linuxkernen skal befinde sig i på de første 2 GB af disken. "
+"Dette opnås typisk ved at lade root ext2-partitionen passe helt ind i de "
+"første 2 GB af disken. Alternativt kan du opretten en lille ext2-partition "
+"nær begyndelsen af disken og montere den på <filename>/boot</filename>, da "
+"det er mappen hvor Linuxkernen vil blive lagret. <filename>/boot</filename> "
+"skal være stor nok til at indeholder alle kerner (inklusive sikkerhedskopier), "
+"du ønsker at indlæse; 25&ndash;50 MB er normalt tilstrækkeligt."
+
+#. Tag: para
+#: partitioning.xml:582
+#, no-c-format
+msgid ""
+"If you have an existing other operating system such as DOS or Windows and "
+"you want to preserve that operating system while installing &debian;, you "
+"may need to resize its partition to free up space for the &debian; "
+"installation. The installer supports resizing of both FAT and NTFS "
+"filesystems; when you get to the installer's partitioning step, select the "
+"option <guimenuitem>Manual</guimenuitem> and then simply select an existing "
+"partition and change its size."
+msgstr ""
+"Hvis du har et andet eksisterende operativsystem såsom DOS eller Windows "
+"og ønsker at bevare det operativsystem under installationen af &debian;, "
+"så skal du måske ændre dine partitioner for at frigive plads for &debian;-"
+"installationen. Installationsprogrammet understøtter ændring af størrelsen "
+"for både FAT- og NTFS-filsystemer; når du når til installationsprogrammets "
+"partitioneringstrin, så vælg indstillingen <guimenuitem>Manuelt</guimenuitem> "
+"og vælg så en eksisterende partition og ændr dens størrelse."
+
+#. Tag: para
+#: partitioning.xml:592
+#, no-c-format
+msgid ""
+"The PC BIOS generally adds additional constraints for disk partitioning. "
+"There is a limit to how many <quote>primary</quote> and <quote>logical</"
+"quote> partitions a drive can contain. Additionally, with pre 1994&ndash;98 "
+"BIOSes, there are limits to where on the drive the BIOS can boot from. More "
+"information can be found in the <ulink url=\"&url-partition-howto;\">Linux "
+"Partition HOWTO</ulink>, but this section will include a brief overview to "
+"help you plan most situations."
+msgstr ""
+"PC BIOS'en tilføjer generelt yderligere begrænsninger for diskpartitionering. "
+"Der er en grænse for hvor mange <quote>primære</quote> og <quote>logiske</"
+"quote> partitioner et drev kan indeholde. Derudover er der med BIOS'er fra "
+"før 1994&ndash;98 begrænsninger på hvor på drevet BIOS'en kan starte op fra. "
+"Yderligere information kan findes i <ulink url=\"&url-partition-howto;\">Linux "
+"Partition HOWTO</ulink>, men dette afsnit vil inkludere et kort overblik "
+"for at hjælpe dig med at planlægge de fleste situationer."
+
+#. Tag: para
+#: partitioning.xml:602
+#, no-c-format
+msgid ""
+"<quote>Primary</quote> partitions are the original partitioning scheme for "
+"PC disks. However, there can only be four of them. To get past this "
+"limitation, <quote>extended</quote> and <quote>logical</quote> partitions "
+"were invented. By setting one of your primary partitions as an extended "
+"partition, you can subdivide all the space allocated to that partition into "
+"logical partitions. You can create up to 60 logical partitions per extended "
+"partition; however, you can only have one extended partition per drive."
+msgstr ""
+"<quote>Primære</quote> partitioner er det originale partitioneringsskema "
+"for pc-diske. Der kan dog kun være fire af dem. For at omgå denne begrænsning, "
+"blev <quote>udvidede</quote> og <quote>logiske</quote> partitioner opfundet. "
+"Ved at angive en af de primære partitioner som en udvidet partition, så kan "
+"du underopdele al pladsen allokeret til den partiion i logiske partitioner. "
+"Du kan oprette op til 60 logiske partitioner per udvidet partition; "
+"du har dog kun en udvidet partition per drev."
+
+#. Tag: para
+#: partitioning.xml:613
+#, no-c-format
+msgid ""
+"Linux limits the partitions per drive to 255 partitions for SCSI disks (3 "
+"usable primary partitions, 252 logical partitions), and 63 partitions on an "
+"IDE drive (3 usable primary partitions, 60 logical partitions). However the "
+"normal &debian-gnu; system provides only 20 devices for partitions, so you "
+"may not install on partitions higher than 20 unless you first manually "
+"create devices for those partitions."
+msgstr ""
+"Linux begræner partitionerne per drev til 255 partitioner for SCSI-diske "
+"(3 brugbare primære partitioner, 252 logiske partitioner) og 63 partitioner "
+"på et IDE-drev (3 brugbare primære partitioner, 60 logiske partitioner). "
+"Et normalt &debian-gnu;-system tilbyder dog kun 20 enheder for partitionerne, "
+"så du kan ikke intallere på partitioner højere end 20 med mindre du først "
+"manulet opretter enheder for disse partitioner."
+
+#. Tag: para
+#: partitioning.xml:623
+#, no-c-format
+msgid ""
+"If you have a large IDE disk, and are using neither LBA addressing, nor "
+"overlay drivers (sometimes provided by hard disk manufacturers), then the "
+"boot partition (the partition containing your kernel image) must be placed "
+"within the first 1024 cylinders of your hard drive (usually around 524 "
+"megabytes, without BIOS translation)."
+msgstr ""
+"Hvis du har en stor IDE-disk, og hverken bruger LBA-adressering, eller "
+"overlay-drivere (undertiden tilbudt af harddiskproducenter), så skal "
+"opstartspartitionen (boot; partitionen der indeholder dit kerneaftryk) "
+"placeres på de første 1024 cylindere af din harddisk (normalt omkring "
+"524 megabyte, uden BIOS-oversættelse)."
+
+#. Tag: para
+#: partitioning.xml:631
+#, no-c-format
+msgid ""
+"This restriction doesn't apply if you have a BIOS newer than around "
+"1995&ndash;98 (depending on the manufacturer) that supports the "
+"<quote>Enhanced Disk Drive Support Specification</quote>. Both Lilo, the "
+"Linux loader, and &debian;'s alternative <command>mbr</command> must use the "
+"BIOS to read the kernel from the disk into RAM. If the BIOS int 0x13 large "
+"disk access extensions are found to be present, they will be utilized. "
+"Otherwise, the legacy disk access interface is used as a fall-back, and it "
+"cannot be used to address any location on the disk higher than the 1023rd "
+"cylinder. Once &arch-kernel; is booted, no matter what BIOS your computer "
+"has, these restrictions no longer apply, since &arch-kernel; does not use "
+"the BIOS for disk access."
+msgstr ""
+"Denne begrænsning gælder ikke hvis du har en BIOS nyere end omkring "
+"1995&ndash;98 (afhængig af producenten) som understøtter "
+"<quote>Enhanced Disk Drive Support Specification</quote>. Både Lilo, "
+"Linuxindlæseren, og &debian;s alternative <command>mbr</command> skal "
+"bruge BIOS'en til at læse kernen fra disken ind i RAM. Hvis udvidelserne "
+"BIOS int 0x13 stor diskadgang findes, så vil de blive udnyttet. Ellers "
+"bruges den forældede diskadgangsgrænseflade som reserve, og den kan ikke "
+"bruges til at adressere en placering på disken højere end 1.023 cylindere. "
+"Når &arch-kernel; er startet op, uanset hvilken BIOS din computer har, "
+"så gælder disse begrænsinger ikke længere, da &arch-kernel; ikke bruger "
+"BIOS'en til diskadgang."
+
+#. Tag: para
+#: partitioning.xml:645
+#, no-c-format
+msgid ""
+"If you have a large disk, you might have to use cylinder translation "
+"techniques, which you can set from your BIOS setup program, such as LBA "
+"(Logical Block Addressing) or CHS translation mode (<quote>Large</quote>). "
+"More information about issues with large disks can be found in the <ulink "
+"url=\"&url-large-disk-howto;\">Large Disk HOWTO</ulink>. If you are using a "
+"cylinder translation scheme, and the BIOS does not support the large disk "
+"access extensions, then your boot partition has to fit within the "
+"<emphasis>translated</emphasis> representation of the 1024th cylinder."
+msgstr ""
+"Hvis du har en stor disk, så skal du måske bruge oversættelsesteknikker "
+"for cylindere, som du kan angive fra dit BIOS-opsætningsprogram, såsom "
+"LBA (Logical Block Addressing) eller CHS-oversættelsestilstand "
+"(<quote>Large</quote>). Yderligere information om problemstillinger med "
+"store diske kan findes i <ulink url=\"&url-large-disk-howto;\">Large "
+"Disk HOWTO</ulink>. Hvis du bruger et oversættelsesskema for cylindere, "
+"så skal din opstartspartition (boot) passe ind i den "
+"<emphasis>oversatte</emphasis> repræsentation af den 1.024 cylinder."
+
+#. Tag: para
+#: partitioning.xml:657
+#, no-c-format
+msgid ""
+"The recommended way of accomplishing this is to create a small "
+"(25&ndash;50MB should suffice) partition at the beginning of the disk to be "
+"used as the boot partition, and then create whatever other partitions you "
+"wish to have, in the remaining area. This boot partition <emphasis>must</"
+"emphasis> be mounted on <filename>/boot</filename>, since that is the "
+"directory where the &arch-kernel; kernel(s) will be stored. This "
+"configuration will work on any system, regardless of whether LBA or large "
+"disk CHS translation is used, and regardless of whether your BIOS supports "
+"the large disk access extensions."
+msgstr ""
+"Den anbefalede måde at opnå dette er at oprette en lille partition "
+"(25&ndash;50 MB bør være nok) i begyndelsen af disken til brug som "
+"opstartspartition og så oprette andre partitioner, du ønsker, i det "
+"tilbageværende område. Denne opstartspartition <emphasis>skal</"
+"emphasis> monteres på <filename>/boot</filename>, da dette er mappen "
+"hvor &arch-kernel;-kernerne vil blive lagret. Denne konfiguration "
+"vil fungere på ethvert system, uanset om LBA eller large disk "
+"CHS-oversættelse anvendes, og uanset om din BIOS understøtter "
+"large disk-adgangsudvidelser."
+
+#. Tag: para
+#: partitioning.xml:678
+#, no-c-format
+msgid ""
+"The <command>partman</command> disk partitioner is the default partitioning "
+"tool for the installer. It manages the set of partitions and their mount "
+"points to ensure that the disks and filesystems are properly configured for "
+"a successful installation. It actually uses <command>parted</command> to do "
+"the on-disk partitioning."
+msgstr ""
+"Diskpartitioneringsprogrammet <command>partman</command> er standardværktøjet "
+"til partitionering for installationsprogrammet. Det håndterer partitionssættet "
+"og deres monteringspunkter for at sikre, at disken og filsystemerne er korrekt "
+"konfigureret for en succesfuld installation. Bruger <command>parted</command> "
+"til at udføre selve partitioneringen på disken."
+
+#. Tag: title
+#: partitioning.xml:690
+#, no-c-format
+msgid "EFI Recognized Formats"
+msgstr "EFI-genkendte formater"
+
+#. Tag: para
+#: partitioning.xml:691
+#, no-c-format
+msgid ""
+"The IA-64 EFI firmware supports two partition table (or disk label) formats, "
+"GPT and MS-DOS. MS-DOS, the format typically used on i386 PCs, is no longer "
+"recommended for IA-64 systems. Although the installer also provides "
+"<command>cfdisk</command>, you should only use <ulink url=\"parted.txt\"> "
+"<command>parted</command></ulink> because only it can manage both GPT and MS-"
+"DOS tables correctly."
+msgstr ""
+"IA-64 EFI-firmwaren understøtter to partitionstabelformater (eller "
+"disketiket), GPT og MS-DOS. MS-DOS, formatet typisk brugt på i386 pc'er, "
+"anbefales ikke lænere for IA-64-systemer. Selvom installationsprogrammet også "
+"tilbyder <command>cfdisk</command>, så bør du kun bruge <ulink url=\"parted.txt\"> "
+"<command>parted</command></ulink> da det program kan håndtere både GPT- og MS-"
+"DOS-tabeller korrekt."
+
+#. Tag: para
+#: partitioning.xml:703
+#, no-c-format
+msgid ""
+"The automatic partitioning recipes for <command>partman</command> allocate "
+"an EFI partition as the first partition on the disk. You can also set up the "
+"partition under the <guimenuitem>Guided partitioning</guimenuitem> from the "
+"main menu in a manner similar to setting up a <emphasis>swap</emphasis> "
+"partition."
+msgstr ""
+"Den automatiske partitioneringsopskrift for <command>partman</command> "
+"allokerer en EFI-partition som den første partiion på disken. Du kan også "
+"opsætte partitionen under <guimenuitem>Vejledt partitionering</guimenuitem> "
+"fra hovedmenuen på en måde svarende til at opsætte en "
+"<emphasis>swap</emphasis>-partition."
+
+#. Tag: para
+#: partitioning.xml:711
+#, no-c-format
+msgid ""
+"The <command>partman</command> partitioner will handle most disk layouts. "
+"For those rare cases where it is necessary to manually set up a disk, you "
+"can use the shell as described above and run the <command>parted</command> "
+"utility directly using its command line interface. Assuming that you want to "
+"erase your whole disk and create a GPT table and some partitions, then "
+"something similar to the following command sequence could be used: "
+"<informalexample><screen>\n"
+"      mklabel gpt\n"
+"      mkpartfs primary fat 0 50\n"
+"      mkpartfs primary linux-swap 51 1000\n"
+"      mkpartfs primary ext2 1001 3000\n"
+"      set 1 boot on\n"
+"      print\n"
+"      quit\n"
+"</screen></informalexample> This creates a new partition table, and three "
+"partitions to be used as an EFI boot partition, swap space, and a root file "
+"system. Finally it sets the boot flag on the EFI partition. Partitions are "
+"specified in Megabytes, with start and end offsets from the beginning of the "
+"disk. So, for example, above we created a 1999MB ext2 file system starting "
+"at offset 1001MB from the start of the disk. Note that formatting swap space "
+"with <command>parted</command> can take a few minutes to complete, as it "
+"scans the partition for bad blocks."
+msgstr ""
+"Partioneringsprogrammet <command>partman</command> vil håndtere de fleste "
+"disklayout. I sjældne tilfælde er det nødvendigt manuelt at opsætte en "
+"disk, du kan bruge skallen som beskrevet ovenfor til at køre redskabet "
+"<command>parted</command> via dets grænseflade for kommandolinjen. Under "
+"antagelse af at du ønsker at slette hele disken og oprette en GPT-abel og "
+"nogle partitioner, så kan noget lignende den følgende kommandosekvens "
+"bruges:"
+"<informalexample><screen>\n"
+"      mklabel gpt\n"
+"      mkpartfs primary fat 0 50\n"
+"      mkpartfs primary linux-swap 51 1000\n"
+"      mkpartfs primary ext2 1001 3000\n"
+"      set 1 boot on\n"
+"      print\n"
+"      quit\n"
+"</screen></informalexample> Dette opretter en ny partitionstabel, og tre "
+"partitioner som kan bruges som en EFI-opstartspartition, swappladse og et "
+"rootfilsystem. Til sidste angives opstartsflaget på EFI-partitionen. "
+"Partitioner er angivet i Megabyte, som starter og slutter forskudt fra "
+"begyndelsen af disken. Så, for eksempel, oprettede vi ovenfor et 1.999 MB "
+"ext2-filsystem startende ved forskydning 1.001 MB fra begyndelsen af "
+"disken. Bemærk at formatering af swapplads med <command>parted</command> "
+"kan tage nogle få minutter at fuldføre, da partitionen skannes for "
+"ødelagte blokke."
+
+#. Tag: title
+#: partitioning.xml:736
+#, no-c-format
+msgid "Boot Loader Partition Requirements"
+msgstr "Partitionskrav for opstartsindlæseren"
+
+#. Tag: para
+#: partitioning.xml:737
+#, no-c-format
+msgid ""
+"ELILO, the IA-64 boot loader, requires a partition containing a FAT file "
+"system with the <userinput>boot</userinput> flag set. The partition must be "
+"big enough to hold the boot loader and any kernels or RAMdisks you may wish "
+"to boot. A minimum size would be about 20MB, but if you expect to run with "
+"multiple kernels, then 128MB might be a better size."
+msgstr ""
+"ELILO, IA-64-opstartsindlæseren, kræver en partition indeholdende et "
+"FAT-filsystem med flaget <userinput>boot</userinput> sat. Partitionen "
+"skal være stor nok til at indeholder opstartsindlæseren og eventuelle "
+"kerner eller RAMdiske du ønsker at startet op. En minimumstørrelse vil "
+"være på omkring 20 MB, men hvis du forventer at køre med flere kerner, "
+"så er 128 MB en bedre størrelse."
+
+#. Tag: para
+#: partitioning.xml:746
+#, no-c-format
+msgid ""
+"The EFI Boot Manager and the EFI Shell fully support the GPT table so the "
+"boot partition does not necessarily have to be the first partition or even "
+"on the same disk. This is convenient if you should forget to allocate the "
+"partition and only find out after you have formatted the other partitions on "
+"your disk(s). The <command>partman</command> partitioner checks for an EFI "
+"partition at the same time it checks for a properly set up <emphasis>root</"
+"emphasis> partition. This gives you an opportunity to correct the disk "
+"layout before the package install begins. The easiest way to correct this "
+"omission is to shrink the last partition of the disk to make enough free "
+"space for adding an EFI partition."
+msgstr ""
+"EFI Boot Manager og EFI Shell understøtter fuldt ud GPT-tabellen, så "
+"opstartspartitionen skal ikke nødvendigvis være den første partition eller "
+"på den samme disk. Dette er godt hvis du skulle glemme at allokere "
+"partitionen og først opdager det når du har formateret de andre partitioner "
+"på dine diske. Partitioneringsprogrammet <command>partman</command> "
+"kontrollerer for en EFI-partition på samme tidspunkt som det kontrollerer "
+"for en korrekt opsætning af partitionen <emphasis>root</emphasis>. Dette "
+"giver dig en mulighed for at rette disklayouttet før pakkeninstallationen "
+"begynder. Den nemmeste måde at rette denne udeladelse er at formindske "
+"den sidste partition på disken så der frigive nok plads for tilføjelse af "
+"en EFI-partition."
+
+#. Tag: para
+#: partitioning.xml:761
+#, no-c-format
+msgid ""
+"It is strongly recommended that you allocate the EFI boot partition on the "
+"same disk as the <emphasis>root</emphasis> filesystem."
+msgstr ""
+"Det anbefales kraftigt at du allokerer EFI-opstartspartitionen på den samme "
+"disk som <emphasis>root</emphasis>-filsystemet."
+
+#. Tag: title
+#: partitioning.xml:769
+#, no-c-format
+msgid "EFI Diagnostic Partitions"
+msgstr "EFI-diagnostikpartitioner"
+
+#. Tag: para
+#: partitioning.xml:770
+#, no-c-format
+msgid ""
+"The EFI firmware is significantly more sophisticated than the usual BIOS "
+"seen on most x86 PCs. Some system vendors take advantage of the ability of "
+"the EFI to access files and run programs from a hard disk filesystem to "
+"store diagnostics and EFI based system management utilities on the hard "
+"disk. This is a separate FAT format filesystem on the system disk. Consult "
+"the system documentation and accessories that come with the system for "
+"details. The easiest time to set up a diagnostics partition is at the same "
+"time you set up the EFI boot partition."
+msgstr ""
+"EFI-firmwaren er signifikant mere sofistikeret end den normale BIOS set "
+"på de fleste X86-pc'er. Nogle systemleverandører udnytter muligheden hos "
+"EFI til at tilgå filer og køre programmer fra en harddisks filsystem til "
+"at lagre diagnostik og EFI-baserede redskaber til systemhåndtering på "
+"harddisken. Dette er et separat FAT-formateret filsystem på systemdisken. "
+"Konsulter systemdokumentationen og tilbehør som følger med systemet for "
+"detaljer. Den nemmeste måde at opsætte en diagnostikpartition er at på "
+"samme tidspunkt at opsætte EFI-opstartspartitionen."
+
+#. Tag: para
+#: partitioning.xml:792
+#, no-c-format
+msgid ""
+"SGI machines require an SGI disk label in order to make the system bootable "
+"from hard disk. It can be created in the fdisk expert menu. The thereby "
+"created volume header (partition number 9) should be at least 3MB large. If "
+"the volume header created is too small, you can simply delete partition "
+"number 9 and re-add it with a different size. Note that the volume header "
+"must start at sector 0."
+msgstr ""
+"SGI-maskiner kræver en SGI-disketiket for at systemet kan startes op fra "
+"harddisk. Den kan oprettes i ekspertmenuen for fdisk. Det dermed oprettede "
+"diskenhedshoved (partition nummer 9) skal være på mindst 3 MB. Hvis "
+"diskenhedshovedet er for lille, så kan du bare slette partition nummer "
+"9 og tilføje den igen med en anden størrelse. Bemærk at diskenhedshovedet "
+"skal starte i sektor 0."
+
+#. Tag: title
+#: partitioning.xml:809
+#, no-c-format
+msgid "Partitioning Newer PowerMacs"
+msgstr "Partitionering af nyere PowerMacs"
+
+#. Tag: para
+#: partitioning.xml:810
+#, no-c-format
+msgid ""
+"If you are installing onto a NewWorld PowerMac you must create a special "
+"bootstrap partition to hold the boot loader. The size of this partition must "
+"have at least 819200 bytes and its partition type must be "
+"<emphasis>Apple_Bootstrap</emphasis>. If the bootstrap partition is not "
+"created with the <emphasis>Apple_Bootstrap</emphasis> type your machine "
+"cannot be made bootable from the hard disk. This partition can easily be "
+"created by creating a new partition in <command>partman</command> and "
+"telling it to use it as a <quote>NewWorld boot partition</quote>, or in "
+"<command>mac-fdisk</command> using the <userinput>b</userinput> command."
+msgstr ""
+"Hvis du installerer på en NewWorld PowerMac skal du oprette en speciel "
+"bootstrap-partition til opstartsindlæseren. Størrelsen på partitionen "
+"skal være på mindst 819.200 byte og partitionstypen skal være "
+"<emphasis>Apple_Bootstrap</emphasis>. Hvis bootstrap-partitionen ikke "
+"oprettes med typen <emphasis>Apple_Bootstrap</emphasis> kan din maskine "
+"ikke gøres opstartsparat fra harddisken. Denne partition kan nemt oprettes "
+"ved at oprette en ny partition i <command>partman</command> og bede "
+"den om at bruge den som en <quote>NewWorld-opstartspartition</quote>, "
+"eller i <command>mac-fdisk</command> via kommandoen <userinput>b</userinput>."
+
+#. Tag: para
+#: partitioning.xml:823
+#, no-c-format
+msgid ""
+"The special partition type Apple_Bootstrap is required to prevent MacOS from "
+"mounting and damaging the bootstrap partition, as there are special "
+"modifications made to it in order for OpenFirmware to boot it automatically."
+msgstr ""
+"Den specielle partitionstype Apple_Bootstrap er krævet for at forhindre "
+"MacOS i at montere og skade bootstrappartitionen, da der laves specielle "
+"ændringer til den for, at OpenFirmware kan starte den op automatisk."
+
+#. Tag: para
+#: partitioning.xml:830
+#, no-c-format
+msgid ""
+"Note that the bootstrap partition is only meant to hold 3 very small files: "
+"the <command>yaboot</command> binary, its configuration <filename>yaboot."
+"conf</filename>, and a first stage OpenFirmware loader <command>ofboot.b</"
+"command>. It need not and must not be mounted on your file system nor have "
+"kernels or anything else copied to it. The <command>ybin</command> and "
+"<command>mkofboot</command> utilities are used to manipulate this partition."
+msgstr ""
+"Bemærk at bootstrap-partitionen kun skal indeholde tre meget små filer: "
+"den binære fil <command>yaboot</command>, dens konfiguration <filename>yaboot."
+"conf</filename> og en OpenFirmware-opstartsindlæser på første trin "
+"<command>ofboot.b</command>. Den skal ikke og må ikke monteres på dit "
+"filsystem eller have kerner eller noget andet kopieret over på den. "
+"Redskaberne <command>ybin</command> og <command>mkofboot</command> "
+"bruges til at manipulere denne partition."
+
+#. Tag: para
+#: partitioning.xml:840
+#, no-c-format
+msgid ""
+"In order for OpenFirmware to automatically boot &debian-gnu; the bootstrap "
+"partition should appear before other boot partitions on the disk, especially "
+"MacOS boot partitions. The bootstrap partition should be the first one you "
+"create. However, if you add a bootstrap partition later, you can use "
+"<command>mac-fdisk</command>'s <userinput>r</userinput> command to reorder "
+"the partition map so the bootstrap partition comes right after the map "
+"(which is always partition 1). It's the logical map order, not the physical "
+"address order, that counts."
+msgstr ""
+"For at OpenFirmware automatisk starter &debian-gnu; op skal bootstrap-"
+"partitionen fremgå før andre opstartspartitioner på disken, specielt "
+"MacOS-opstartspartitioner. Bootstrap-partitionen skal være på den første "
+"du opretter. Hvis du tilføjer en bootstrap-partition senere, så kan du "
+"bruge <command>mac-fdisk</command>'s <userinput>r</userinput>-kommando "
+"til at ændre partitionskortet så bootstrap-partitionen kommer lige efter "
+"kortet (som altid er partition 1). Den er den logiske kortrækkefølge, "
+"ikke den fysiske adresserækkefølge, som tæller."
+
+#. Tag: para
+#: partitioning.xml:852
+#, no-c-format
+msgid ""
+"Apple disks normally have several small driver partitions. If you intend to "
+"dual boot your machine with MacOSX, you should retain these partitions and a "
+"small HFS partition (800k is the minimum size). That is because MacOSX, on "
+"every boot, offers to initialize any disks which do not have active MacOS "
+"partitions and driver partitions."
+msgstr ""
+"Applediske har normalt flere små driverpartitioner. Hvis du forventer at "
+"skulle dual-opstarte din maskine med MacOSX, så skal du bevare disse "
+"partitioner og en lille HFS-partition (800k er minimumstørrelsen). Dette "
+"skyldes at MacOSX, ved hver opstart, tilbyder at initialisere eventuelle "
+"diske, som ikke har aktive MacOS-partitioner og driverpartitioner."
+
+#. Tag: para
+#: partitioning.xml:869
+#, no-c-format
+msgid ""
+"Make sure you create a <quote>Sun disk label</quote> on your boot disk. This "
+"is the only kind of partition scheme that the OpenBoot PROM understands, and "
+"so it's the only scheme from which you can boot. The <keycap>s</keycap> key "
+"is used in <command>fdisk</command> to create Sun disk labels."
+msgstr ""
+"Sikr dig at du opretter en <quote>Sun-disketiket</quote> på din "
+"opstartsdisk. Dette er den eneste slags partitionsplan som OpenBoot PROM "
+"forstår, og dermed den eneste plan hvorfra du kan starte op. Tasten "
+"<keycap>s</keycap> bruges i <command>fdisk</command> til at oprette Sun-"
+"disketiketter."
+
+#. Tag: para
+#: partitioning.xml:877
+#, no-c-format
+msgid ""
+"Furthermore, on &arch-title; disks, make sure your first partition on your "
+"boot disk starts at cylinder 0. While this is required, it also means that "
+"the first partition will contain the partition table and the boot block, "
+"which are the first two sectors of the disk. You must <emphasis>not</"
+"emphasis> put swap on the first partition of the boot drive, since swap "
+"partitions do not preserve the first few sectors of the partition. You can "
+"put Ext2 or UFS partitions there; these will leave the partition table and "
+"the boot block alone."
+msgstr ""
+"Derudover skal du på &arch-title;-diske sikre dig at den første "
+"partition på din opstartsdisk starter på cylinder 0. Dette er et krav og "
+"betyder også at den første partition vil indeholder partitionstabellen og "
+"opstartsblokken, som er de første to sektorer for disken. Du må "
+"<emphasis>ikke</emphasis> placere swap på den første partition af "
+"opstartsdrevet, da swappartitioner ikke bevarer de første få sektorer af "
+"partitionen. Du kan placere Ext2- eller UFS-partitionerne der; de vil "
+"ikke påvirke partitionstabellen og opstartsblokken."
+
+#. Tag: para
+#: partitioning.xml:888
+#, no-c-format
+msgid ""
+"It is also advised that the third partition should be of type <quote>Whole "
+"disk</quote> (type 5), and contain the entire disk (from the first cylinder "
+"to the last). This is simply a convention of Sun disk labels, and helps the "
+"<command>SILO</command> boot loader keep its bearings."
+msgstr ""
+"Det tilrådes at den tredje partition er af typen <quote>Whole "
+"disk</quote> (type 5), og indeholder hele disken (fra den første cylinder "
+"til den sidste). Dette er alene en konvention for Sun-disketiketter og hjælper "
+"<command>SILO</command>-opstartsindlæseren med at bevare sit leje."
+

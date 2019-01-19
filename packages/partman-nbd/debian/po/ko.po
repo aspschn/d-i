@@ -1,0 +1,201 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Korean messages for debian-installer.
+# Copyright (C) 2003,2004,2005,2008 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Changwoo Ryu <cwryu@debian.org>, 2010-2012, 2014-2015, 2017.
+#
+# Translations from iso-codes:
+# Copyright (C)
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   Changwoo Ryu <cwryu@debian.org>, 2004, 2008, 2009, 2010, 2011.
+#   Copyright (C) 2000 Free Software Foundation, Inc.
+#   Eungkyu Song <eungkyu@sparcs.org>, 2001.
+#   Free Software Foundation, Inc., 2001,2003
+#   Jaegeum Choe <baedaron@hananet.net>, 2001.
+#   (translations from drakfw)
+#   Kang, JeongHee <Keizi@mail.co.kr>, 2000.
+#   Sunjae Park <darehanl@gmail.com>, 2006-2007.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2017-02-11 12:13+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "네트워크 블록 장치 설정"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NMB 설정 작업:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "현재 장치가 ${NUMBER}개 연결되어 있습니다."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "네트워크 블록 장치 서버:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"nbd-server가 동작하고 있는 시스템의 호스트 이름이나 IP 주소를 입력하십시오."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "NBD 익스포트에 대한 이름"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"nbd-server에 접근하는데 필요한 NBD 익스포트 이름을 입력하십시오. 여기 입력한 "
+"이름이 서버의 기존 익스포트와 일치해야 합니다."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "네트워크 블록 장치 노드:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "연결하려는 또는 연결을 해제하려는 NBD 장치 노드를 선택하십시오."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD 서버에 연결하는데 실패했습니다"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd-server 연결에 실패했습니다. 입력한 호스트와 익스포트 이름이 올바른지, 그 "
+"호스트에 nbd-server 프로세스가 동작하고 있는지, 네트워크가 제대로 설정되어 있"
+"는지 확인하시고 다시 시도해 보십시오."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "네트워크 블록 장치 노드가 남아 있지 않습니다"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"NBD 장치 노드가 모두 사용 중이거나 장치 노드 검색에 문제가 발생했습니다."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"이미 설정된 NBD 장치의 연결을 끊지 않으면 NBD 장치 노드를 더 이상 설정할 수 "
+"없습니다."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "연결된 네트워크 블록 장치 노드가 없습니다."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"서버에 연결된 네트워크 블록 장치 노드가 없습니다. 그러므로 노드의 연결을 끊"
+"을 수 없습니다."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "네트워크 블록 장치 연결"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "네트워크 블록 장치 연결 해제"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "마치고 파티션 메뉴로 돌아가시겠습니까?"

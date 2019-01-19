@@ -1,0 +1,81 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of lv.po to Latvian
+# Latvian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Translations from iso-codes:
+# Copyright (C) Free Software Foundation, Inc., 2001,2003.
+# Translations from KDE:
+# Andris Maziks <andzha@latnet.lv>
+#
+#
+# Aigars Mahinovs <aigarius@debian.org>, 2006, 2008.
+# Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008.
+# Aigars Mahinovs <aigarius@debian.org>, 2006.
+# Alastair McKinstry <mckinstry@computer.org>, 2001, 2002.
+# Free Software Foundation, Inc., 2002,2004.
+# Juris Kudiņš <cooker@inbox.lv>, 2001.
+# Rihards Priedītis <rprieditis@gmail.com>, 2009, 2010.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013, 2017.
+# Peteris Krisjanis <pecisk@gmail.com>, 2008, 2012.
+# Tranzistors <rudolfs.mazurs@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: lv\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:33+0000\n"
+"PO-Revision-Date: 2018-10-17 19:33+0000\n"
+"Last-Translator: Tranzistors <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-auto-raid.templates:1001
+msgid "Error while setting up RAID"
+msgstr "Kļūda, iestatot RAID"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-auto-raid.templates:1001
+msgid ""
+"An unexpected error occurred while setting up a preseeded RAID configuration."
+msgstr "Negaidīta kļūda, iestatot iepriekšdotu RAID konfigurāciju."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-auto-raid.templates:1001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"Pārbaudiet /var/log/syslog vai skatieties sīkāk ceturtajā virtuālajā konsolē "
+"(ALT+F4)."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-auto-raid.templates:4001
+msgid "Not enough RAID partitions specified"
+msgstr "Norādīts nepietiekošs RAID nodalījumu daudzums"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-auto-raid.templates:4001
+msgid ""
+"There are not enough RAID partitions specified for your preseeded "
+"configuration. You need at least 3 devices for a RAID5 array."
+msgstr ""
+"Jūsu iepriekšdotajai konfigurācijai nav pieejams pietiekošs daudzums brīvu "
+"RAID nodalījumu. RAID5 masīvam ir vajadzīgas vismaz 3 ierīces."

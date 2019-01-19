@@ -1,0 +1,238 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Spanish messages for debian-installer.
+# Copyright (C) 2003-2007 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Contributors to the translation of debian-installer:
+# Teófilo Ruiz Suárez <teo@debian.org>, 2003.
+# David Martínez Moreno <ender@debian.org>, 2003, 2005.
+# Carlos Alberto Martín Edo <carlos@dat.etsit.upm.es>, 2003
+# Carlos Valdivia Yagüe <valyag@dat.etsit.upm.es>, 2003
+# Rudy Godoy <rudy@kernel-panik.org>, 2003-2006
+# Steve Langasek <vorlon@debian.org>, 2004
+# Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2005
+# Rubén Porras Campo <nahoo@inicia.es>, 2005
+# Omar Campagne <ocampagne@gmail.com>, 2010
+# Javier Fernández-Sanguino <jfs@debian.org>, 2003-2012, 2014-2017
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+# - El proyecto de traducción de Debian al español
+#   http://www.debian.org/intl/spanish/
+#   especialmente las notas de traducción en
+#   http://www.debian.org/intl/spanish/notas
+#
+# - La guía de traducción de po's de debconf:
+#   /usr/share/doc/po-debconf/README-trans
+#   o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+# Si tiene dudas o consultas sobre esta traducción consulte con el último
+# traductor (campo Last-Translator) y ponga en copia a la lista de
+# traducción de Debian al español (debian-l10n-spanish@lists.debian.org)
+#
+# NOTAS: 
+#
+# - Se ha traducido en este fichero 'boot loader' de forma homogénea por
+# 'cargador de arranque' aunque en el manual se utiliza éste término y
+# también 'gestor de arranque'
+#
+# - 'array' no está traducido aún. La traducción como 'arreglo' suena
+# fatal (y es poco conocida)
+#
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   Free Software Foundation, Inc., 2001,2003,2004
+#   Javier Fernández-Sanguino <jfs@debian.org>, 2004-2008, 2010
+#   Juan Manuel García Molina <juanmagm@mail.com>, 2001.
+#   Ricardo Fernández Pascual <ric@users.sourceforge.net>, 2000, 2001.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2017-01-27 00:21+0100\n"
+"Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
+"Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "Configure el Dispositivo de Bloques de Red"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "Acción para configurar NBD:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "Actualmente hay ${NUMBER} dispositivos conectados."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "Servidor del Dispositivo de Bloques de Red"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"Introduzca el nombre de la máquina o la dirección IP del sistema que ejecuta "
+"«nbd-server»."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "Nombre para el área compartida NBD"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"Introduzca el nombre del área compartida NBD necesario para acceder a «nbd-"
+"server». El nombre que introduzca aquí tiene que coincidir con la definición "
+"en el servidor."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "Nodo del dispositivo de Dispositivo de Bloque de Red:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "Seleccione el dispositivo NBD que desea conectar o desconectar."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "No se pudo borrar conectar al servidor NBD"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"No se ha podido conectar con el servidor nbd. Asegúrese de que ha "
+"introducido correctamente el nombre del equipo y del área compartida, que se "
+"esté ejecutando el proceso nbd-server en ese equipo, y que la red esté "
+"configurada correctamente. A continuación vuelva a intentarlo."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr ""
+"No quedan más nodos del Dispositivo de Bloques de Red («Network Block "
+"Device», N. del T.)."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"Es posible que se estén utilizando todos los nodos de dispositivo NBD o bien "
+"se haya producido algún error al detectar los nodos del dispositivo."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"No se pueden configurar más nodos de dispositivo NBD hasta que se desconecte "
+"alguno de los que están configurados."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "No se han encontrado nodos NBD conectados"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"No hay nodos «Network Block Device» conectados a ningún servidor por lo que "
+"no puede desconectar ninguno de ellos."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "Conectar a un Dispositivo de Bloques de Red"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "Desconectarse de un Dispositivo de Bloques de Red"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "Terminar y volver al menú de particionado"

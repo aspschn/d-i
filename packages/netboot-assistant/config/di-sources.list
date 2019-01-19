@@ -1,0 +1,169 @@
+#di-netboot-assistant v0.3 sources file
+#
+#Format: Each must contain four fields, separated by single tabulation.
+# 1st field: An arbitrary repository name (must match "[[:alnum:]_\.-]+")
+# 2nd field: The architecture (debian's architecture name)
+# 3rd field: The base URL to download files from (it should contain
+#            a debian-installer folder)
+#            (If you want to use a mirror, have a look at MIRROR_REGEXPS in
+#            the file di-netboot-assistant.conf to rewrite the URL)
+# 4th field: That path to the actual netboot archive (or .img) file.
+#            (relative to the "base URL" above).
+# Lines _starting_ with a "#" are considered as comments and are ignored.
+# Empty lines are ignored too.
+
+## Debian/Stable (( https://www.debian.org/distrib/netinst#netboot ))
+stable	amd64	https://deb.debian.org/debian/dists/stable/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+stable	i386	https://deb.debian.org/debian/dists/stable/main/installer-i386/current/images/	netboot/netboot.tar.gz
+stable	armhf	https://deb.debian.org/debian/dists/stable/main/installer-armhf/current/images/	netboot/netboot.tar.gz
+# Graphical Installer (GTK)
+stable-gtk	amd64	https://deb.debian.org/debian/dists/stable/main/installer-amd64/current/images/	netboot/gtk/netboot.tar.gz
+stable-gtk	i386	https://deb.debian.org/debian/dists/stable/main/installer-i386/current/images/	netboot/gtk/netboot.tar.gz
+
+## Debian/OldStable (( https://www.debian.org/distrib/netinst#netboot ))
+oldstable	amd64	https://deb.debian.org/debian/dists/oldstable/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+oldstable	i386	https://deb.debian.org/debian/dists/oldstable/main/installer-i386/current/images/	netboot/netboot.tar.gz
+oldstable	ia64	https://deb.debian.org/debian/dists/oldstable/main/installer-ia64/current/images/	netboot/netboot.tar.gz
+oldstable	sparc	https://deb.debian.org/debian/dists/oldstable/main/installer-sparc/current/images/	netboot/boot.img
+# Graphical Installer (GTK)
+oldstable-gtk	amd64	https://deb.debian.org/debian/dists/oldstable/main/installer-amd64/current/images/	netboot/gtk/netboot.tar.gz
+oldstable-gtk	i386	https://deb.debian.org/debian/dists/oldstable/main/installer-i386/current/images/	netboot/gtk/netboot.tar.gz
+
+### Releases by name:
+## Debian Wheezy
+wheezy	amd64	https://deb.debian.org/debian/dists/wheezy/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+wheezy	i386	https://deb.debian.org/debian/dists/wheezy/main/installer-i386/current/images/	netboot/netboot.tar.gz
+wheezy	ia64	https://deb.debian.org/debian/dists/wheezy/main/installer-ia64/current/images/	netboot/netboot.tar.gz
+wheezy	sparc	https://deb.debian.org/debian/dists/wheezy/main/installer-sparc/current/images/	netboot/boot.img
+# Graphical Installer (GTK)
+wheezy-gtk	amd64	https://deb.debian.org/debian/dists/wheezy/main/installer-amd64/current/images/	netboot/gtk/netboot.tar.gz
+wheezy-gtk	i386	https://deb.debian.org/debian/dists/wheezy/main/installer-i386/current/images/	netboot/gtk/netboot.tar.gz
+
+## Debian Jessie
+jessie	amd64	https://deb.debian.org/debian/dists/jessie/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+jessie	i386	https://deb.debian.org/debian/dists/jessie/main/installer-i386/current/images/	netboot/netboot.tar.gz
+# Graphical Installer (GTK)
+jessie-gtk	amd64	https://deb.debian.org/debian/dists/jessie/main/installer-amd64/current/images/	netboot/gtk/netboot.tar.gz
+jessie-gtk	i386	https://deb.debian.org/debian/dists/jessie/main/installer-i386/current/images/	netboot/gtk/netboot.tar.gz
+
+## Debian Stretch
+stretch	amd64	https://deb.debian.org/debian/dists/stretch/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+stretch	i386	https://deb.debian.org/debian/dists/stretch/main/installer-i386/current/images/	netboot/netboot.tar.gz
+stretch	armhf	https://deb.debian.org/debian/dists/stretch/main/installer-armhf/current/images/	netboot/netboot.tar.gz
+# Graphical Installer (GTK)
+stretch-gtk	amd64	https://deb.debian.org/debian/dists/stretch/main/installer-amd64/current/images/	netboot/gtk/netboot.tar.gz
+stretch-gtk	i386	https://deb.debian.org/debian/dists/stretch/main/installer-i386/current/images/	netboot/gtk/netboot.tar.gz
+
+## Debian Buster
+buster	amd64	https://deb.debian.org/debian/dists/buster/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+buster	i386	https://deb.debian.org/debian/dists/buster/main/installer-i386/current/images/	netboot/netboot.tar.gz
+buster	armhf	https://deb.debian.org/debian/dists/buster/main/installer-armhf/current/images/	netboot/netboot.tar.gz
+# Graphical Installer (GTK)
+buster-gtk	amd64	https://deb.debian.org/debian/dists/buster/main/installer-amd64/current/images/	netboot/gtk/netboot.tar.gz
+buster-gtk	i386	https://deb.debian.org/debian/dists/buster/main/installer-i386/current/images/	netboot/gtk/netboot.tar.gz
+
+## Debian Bullseye
+bullseye	amd64	https://deb.debian.org/debian/dists/bullseye/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+bullseye	i386	https://deb.debian.org/debian/dists/bullseye/main/installer-i386/current/images/	netboot/netboot.tar.gz
+bullseye	armhf	https://deb.debian.org/debian/dists/bullseye/main/installer-armhf/current/images/	netboot/netboot.tar.gz
+# Graphical Installer (GTK)
+bullseye-gtk	amd64	https://deb.debian.org/debian/dists/bullseye/main/installer-amd64/current/images/	netboot/gtk/netboot.tar.gz
+bullseye-gtk	i386	https://deb.debian.org/debian/dists/bullseye/main/installer-i386/current/images/	netboot/gtk/netboot.tar.gz
+
+## DEVELOPMENT (( https://www.debian.org/devel/debian-installer/ ))
+# beta1 or beta2 or beta3 or rc1 or rc2
+testing	amd64	https://deb.debian.org/debian/dists/testing/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+testing	i386	https://deb.debian.org/debian/dists/testing/main/installer-i386/current/images/	netboot/netboot.tar.gz
+testing	armhf	https://deb.debian.org/debian/dists/testing/main/installer-armhf/current/images/	netboot/netboot.tar.gz
+#Graphical Installer (GTK)
+testing-gtk	amd64	https://deb.debian.org/debian/dists/testing/main/installer-amd64/current/images/	netboot/gtk/netboot.tar.gz
+testing-gtk	i386	https://deb.debian.org/debian/dists/testing/main/installer-i386/current/images/	netboot/gtk/netboot.tar.gz
+
+## Daily netboot DI images
+# As of today, 20180318, these images are not signed.
+# Consider using '--ignore-sig' if run non-interactively with these images.
+# https://d-i.debian.org/daily-images/daily-build-overview.html
+daily	amd64	https://d-i.debian.org/daily-images/amd64/daily/	netboot/netboot.tar.gz
+daily	i386	https://d-i.debian.org/daily-images/i386/daily/	netboot/netboot.tar.gz
+daily	armhf	https://d-i.debian.org/daily-images/armhf/daily/	netboot/netboot.tar.gz
+# Graphical Installer (GTK)
+daily-gtk	amd64	https://d-i.debian.org/daily-images/amd64/daily/	netboot/gtk/netboot.tar.gz
+daily-gtk	i386	https://d-i.debian.org/daily-images/i386/daily/	netboot/gtk/netboot.tar.gz
+
+## Experimental stuff
+## kfreebsd-amd64/i386 path is non-standard, no default
+## mips/mipsel have different variants, no default
+## powerpc path is non-standard, no default
+daily	ppc64el	https://d-i.debian.org/daily-images/ppc64el/daily/	netboot/netboot.tar.gz
+## s390 has no netboot
+daily	sparc	https://d-i.debian.org/daily-images/sparc/daily/	netboot/boot.img
+##
+daily	hurd-i386	https://d-i.debian.org/daily-images/hurd-i386/daily/	netboot/netboot.tar.gz
+
+############# Some Debian Derivatives ################
+## Ubuntu LTS Releases
+# Xenial Xerus 16.04
+xenial	i386	http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-i386/current/images/	netboot/netboot.tar.gz
+xenial	amd64	http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+
+# Trusty Tahr 14.04
+trusty	i386	http://archive.ubuntu.com/ubuntu/dists/trusty/main/installer-i386/current/images/	netboot/netboot.tar.gz
+trusty	amd64	http://archive.ubuntu.com/ubuntu/dists/trusty/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+
+# Precise Pangolin 12.04
+precise	i386	http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/images/	netboot/netboot.tar.gz
+precise	amd64	http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+
+## Ubuntu Normal Releases
+# Zesty Zapus 17.04
+zesty	i386	http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-i386/current/images/	netboot/netboot.tar.gz
+zesty	amd64	http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+
+# Yakkety Yak 16.10
+yakkety	i386	http://archive.ubuntu.com/ubuntu/dists/yakkety/main/installer-i386/current/images/	netboot/netboot.tar.gz
+yakkety	amd64	http://archive.ubuntu.com/ubuntu/dists/yakkety/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+
+# Wily Werewolf 15.10
+wily	i386	http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-i386/current/images/	netboot/netboot.tar.gz
+wily	amd64	http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+
+# Vivid Vervet 15.04
+vivid	i386	http://archive.ubuntu.com/ubuntu/dists/vivid/main/installer-i386/current/images/	netboot/netboot.tar.gz
+vivid	amd64	http://archive.ubuntu.com/ubuntu/dists/vivid/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+
+############# Obsolete distributions (unsupported) ############
+### Old (discontinued) distributions may work with di-netboot-assistant, or not!
+### Debian Squeeze
+#squeeze	amd64	http://archive.debian.org/debian/dists/squeeze/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+#squeeze	i386	http://archive.debian.org/debian/dists/squeeze/main/installer-i386/current/images/	netboot/netboot.tar.gz
+#squeeze	ia64	http://archive.debian.org/debian/dists/squeeze/main/installer-ia64/current/images/	netboot/netboot.tar.gz
+#squeeze	sparc	http://archive.debian.org/debian/dists/squeeze/main/installer-sparc/current/images/	netboot/boot.img
+## Graphical Installer (GTK)
+#squeeze-gtk	amd64	http://archive.debian.org/debian/dists/squeeze/main/installer-amd64/current/images/	netboot/gtk/netboot.tar.gz
+#squeeze-gtk	i386	http://archive.debian.org/debian/dists/squeeze/main/installer-i386/current/images/	netboot/gtk/netboot.tar.gz
+#
+### Debian/Lenny
+#lenny	alpha	http://archive.debian.org/debian/dists/lenny/main/installer-alpha/current/images/	netboot/boot.img
+#lenny	amd64	http://archive.debian.org/debian/dists/lenny/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+#lenny	hppa	http://archive.debian.org/debian/dists/lenny/main/installer-hppa/current/images/	netboot/2.6/boot.img
+#lenny	i386	http://archive.debian.org/debian/dists/lenny/main/installer-i386/current/images/	netboot/netboot.tar.gz
+#lenny	ia64	http://archive.debian.org/debian/dists/lenny/main/installer-ia64/current/images/	netboot/netboot.tar.gz
+#lenny	sparc	http://archive.debian.org/debian/dists/lenny/main/installer-sparc/current/images/	netboot/boot.img
+## Graphical Installer (GTK)
+#lenny-gtk	amd64	http://archive.debian.org/debian/dists/lenny/main/installer-amd64/current/images/	netboot/gtk/netboot.tar.gz
+#lenny-gtk	i386	http://archive.debian.org/debian/dists/lenny/main/installer-i386/current/images/	netboot/gtk/netboot.tar.gz
+
+### Outdated Ubuntu releases:
+## Lucid Lynx 10.04
+#lucid	i386	http://archive.ubuntu.com/ubuntu/dists/lucid/main/installer-i386/current/images/	netboot/netboot.tar.gz
+#lucid	amd64	http://archive.ubuntu.com/ubuntu/dists/lucid/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+#
+## Utopic Unicorn 14.10
+#utopic	i386	http://archive.ubuntu.com/ubuntu/dists/utopic/main/installer-i386/current/images/	netboot/netboot.tar.gz
+#utopic	amd64	http://archive.ubuntu.com/ubuntu/dists/utopic/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+#
+## Saucy Salamander 13.10
+#saucy	i386	http://archive.ubuntu.com/ubuntu/dists/saucy/main/installer-i386/current/images/	netboot/netboot.tar.gz
+#saucy	amd64	http://archive.ubuntu.com/ubuntu/dists/saucy/main/installer-amd64/current/images/	netboot/netboot.tar.gz
+
+# vim: ft=disources

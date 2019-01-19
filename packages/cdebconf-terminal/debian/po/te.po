@@ -1,0 +1,47 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of te.po to Telugu
+# Telugu translation for debian-installer
+# This file is distributed under the same license as the debian-installer package.
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
+#
+# Translations from iso-codes:
+# వీవెన్ (Veeven) <launchpad.net>, 2007.
+# Y Giridhar Appaji Nag <giridhar@appaji.net>, 2008.
+# Arjuna Rao Chavala <arjunaraoc@gmail.com>,2010.
+# Y Giridhar Appaji Nag <appaji@debian.org>, 2008, 2009.
+# Krishna Babu K <kkrothap@redhat.com>, 2009.
+# Arjuna Rao Chavala <arjunaraoc@googlemail.com>, 2011, 2012.
+# Praveen Illa <mail2ipn@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: te\n"
+"Report-Msgid-Bugs-To: cdebconf-terminal@packages.debian.org\n"
+"POT-Creation-Date: 2008-07-31 13:04+0200\n"
+"PO-Revision-Date: 2018-07-23 06:44+0000\n"
+"Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
+"Language-Team: d-i <kde-i18n-doc@kde.org>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: text
+#. Description
+#: ../cdebconf-gtk-terminal.templates:1001
+msgid "Resume installation"
+msgstr "స్థాపనను కొనసాగించు"
+
+#. Type: text
+#. Description
+#: ../cdebconf-gtk-terminal.templates:2001
+msgid ""
+"Choose \"Continue\" to really exit the shell and resume the installation; "
+"any processes still running in the shell will be aborted."
+msgstr ""
+"షెల్ నుండి నిష్క్రమించి, స్థాపనను తిరిగి ప్రారంభంచటానికి \"కొనసాగించు \" ఎంచుకో;ఏమైనా ప్రాసెస్లు  షెల్ లో "
+"నడుస్తున్నట్లయితే అవి నిలిపివేయబడతాయి."

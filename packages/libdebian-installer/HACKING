@@ -1,0 +1,7 @@
+If you use the git version, you need to have automake and libtool installed.
+To get compilable source, run:
+
+  autoreconf -i -v
+
+This is not needed, and should be avoided, when building Debian packages
+since the autoreconf dh sequence already takes care of everything.

@@ -1,0 +1,82 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2018-02-07 12:45+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../download-installer.templates:1001
+msgid "Download installer components"
+msgstr "Боргирӣ кардани унсурҳои насбкунанда"
+
+#. Type: select
+#. Choices
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#. :sl2:
+#: ../net-retriever.templates:1001
+msgid "Retry"
+msgstr "Такрор кардан"
+
+#. Type: select
+#. Choices
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#. :sl2:
+#: ../net-retriever.templates:1001
+msgid "Change mirror"
+msgstr "Тағйир додани оина"
+
+#. Type: select
+#. Choices
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#. :sl2:
+#: ../net-retriever.templates:1001
+msgid "Cancel"
+msgstr "Бекор кардан"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../net-retriever.templates:1002
+msgid "Downloading a file failed:"
+msgstr "Боргирии файл қатъ шудааст:"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../net-retriever.templates:1002
+msgid ""
+"The installer failed to download a file from the mirror. This may be a "
+"problem with your network, or with the mirror. You can choose to retry the "
+"download, select a different mirror, or cancel and choose another "
+"installation method."
+msgstr ""
+"Насбкунанда боргирии файлро аз оина қатъ кардааст. Эҳтимол аст, ки мушкилии "
+"шабака ё оина ба вуҷуд омад. Шумо метавонед боргириро аз нав кӯшиш намоед, "
+"оинаи дигареро интихоб намоед ё раванди ҷориро бекор намоед ва тарзи насби "
+"дигареро интихоб намоед."

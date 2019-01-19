@@ -1,0 +1,20 @@
+<!-- retain these comments for translator revision tracking -->
+<!-- $Id$ -->
+
+<para>
+
+Booting from the network requires that you have a network
+connection and a TFTP network boot server (and probably also a
+DHCP, RARP, or BOOTP server for automatic network configuration).
+
+</para><para arch="hppa">
+
+Older systems such as the 715 might require the use of an RBOOT server
+instead of a BOOTP server.
+
+</para><para>
+
+The server-side setup to support network booting is described in <xref
+linkend="install-tftp"/>.
+
+</para>

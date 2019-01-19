@@ -1,0 +1,3122 @@
+# KURASAWA Nozomu <nabetaro@debian.or.jp>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2018-10-25 23:05+0000\n"
+"PO-Revision-Date: 2016-11-26 04:03+0900\n"
+"Last-Translator: KURASAWA Nozomu (nabetaro) <nabetaro@debian.or.jp>\n"
+"Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. Tag: title
+#: preparing.xml:5
+#, no-c-format
+msgid "Before Installing &debian-gnu;"
+msgstr "&debian-gnu; のインストール前に"
+
+#. Tag: para
+#: preparing.xml:6
+#, no-c-format
+msgid ""
+"This chapter deals with the preparation for installing &debian; before you "
+"even boot the installer. This includes backing up your data, gathering "
+"information about your hardware, and locating any necessary information."
+msgstr ""
+"本章は、インストーラを起動する前の、&debian; をインストールする準備について扱"
+"います。ここでは、データのバックアップ、ハードウェアに関する情報収集、必要な"
+"情報の特定といったことを含みます。"
+
+#. Tag: title
+#: preparing.xml:19
+#, no-c-format
+msgid "Overview of the Installation Process"
+msgstr "インストールプロセスの概要"
+
+#. Tag: para
+#: preparing.xml:20
+#, no-c-format
+msgid ""
+"First, just a note about re-installations. With &debian;, a circumstance "
+"that will require a complete re-installation of your system is very rare; "
+"perhaps mechanical failure of the hard disk would be the most common case."
+msgstr ""
+"はじめに、再インストールについて述べておきます。&debian; で、システムの完全な"
+"再インストールが必要になる状況は、非常にまれです。おそらく、もっともありそう"
+"なケースはハードディスクの機械的な故障でしょう。"
+
+#. Tag: para
+#: preparing.xml:27
+#, no-c-format
+msgid ""
+"Many common operating systems may require a complete installation to be "
+"performed when critical failures take place or for upgrades to new OS "
+"versions. Even if a completely new installation isn't required, often the "
+"programs you use must be re-installed to operate properly in the new OS."
+msgstr ""
+"多くの普通のオペレーティングシステムが、重大な故障が起きたり、OS の新バージョ"
+"ンへのアップグレードの際に、完全インストールを要求するかもしれません。完全な"
+"新インストールを要求しなくても、使用するプログラムを新 OS で適切に動かすため"
+"に再インストールしなければなりません。"
+
+#. Tag: para
+#: preparing.xml:35
+#, no-c-format
+msgid ""
+"Under &debian-gnu;, it is much more likely that your OS can be repaired "
+"rather than replaced if things go wrong. Upgrades never require a wholesale "
+"installation; you can always upgrade in-place. And the programs are almost "
+"always compatible with successive OS releases. If a new program version "
+"requires newer supporting software, the &debian; packaging system ensures "
+"that all the necessary software is automatically identified and installed. "
+"The point is, much effort has been put into avoiding the need for re-"
+"installation, so think of it as your very last option. The installer is "
+"<emphasis>not</emphasis> designed to re-install over an existing system."
+msgstr ""
+"&debian-gnu; では、うまく行かない場合、OS を取り替えるのではなく修理できる"
+"ケースの方がはるかに多いでしょう。アップグレードでは大量のインストールは必要"
+"ありませんし、常にその場でアップグレードできます。また OS のリリースが続いて"
+"も、プログラムにはほとんど常に互換性があります。プログラムの新バージョンが、"
+"より新しい依存するソフトウェアを要求する場合、&debian; パッケージングシステム"
+"は、必要なソフトウェアをすべて自動的に識別し、確実にインストールします。再イ"
+"ンストールが必要ないように力を尽くしてきており、再インストールをしなくてはな"
+"らないというのは、最後の手段であるというのがポイントです。インストーラは、既"
+"に存在するシステムに対して、再インストールするように設計されていません。"
+
+#. Tag: para
+#: preparing.xml:48
+#, no-c-format
+msgid ""
+"Here's a road map for the steps you will take during the installation "
+"process."
+msgstr ""
+"ここでは、インストールプロセスの中で行う処理を一段階ずつまとめておきましょ"
+"う。"
+
+#. Tag: para
+#: preparing.xml:56
+#, no-c-format
+msgid ""
+"Back up any existing data or documents on the hard disk where you plan to "
+"install."
+msgstr ""
+"インストールするハードディスクにある、既存のデータや文書のバックアップ。"
+
+#. Tag: para
+#: preparing.xml:62
+#, no-c-format
+msgid ""
+"Gather information about your computer and any needed documentation, before "
+"starting the installation."
+msgstr "インストールを始める前に、コンピュータの情報と必要な文書を集める。"
+
+#. Tag: para
+#: preparing.xml:68
+#, no-c-format
+msgid "Create partitionable space for &debian; on your hard disk."
+msgstr "ハードディスクに &debian; のパーティションに使える領域を確保する。"
+
+#. Tag: para
+#: preparing.xml:73
+#, no-c-format
+msgid ""
+"Locate and/or download the installer software and any specialized driver or "
+"firmware files your machine requires."
+msgstr ""
+"インストーラソフトウェアと、そのマシンで必要になる、特殊なドライバファイルや"
+"ファームウェアファイルについて、場所の確認・ダウンロード。"
+
+#. Tag: para
+#: preparing.xml:79
+#, no-c-format
+msgid ""
+"Set up boot media such as CDs/DVDs/USB sticks or provide a network boot "
+"infrastructure from which the installer can be booted."
+msgstr ""
+"CD・DVD・USB メモリといったブートメディアをセットアップや、インストーラを起動"
+"できるネットワークブートインフラの準備。"
+
+#. Tag: para
+#: preparing.xml:85
+#, no-c-format
+msgid "Boot the installation system."
+msgstr "インストールシステムを起動する。"
+
+#. Tag: para
+#: preparing.xml:90
+#, no-c-format
+msgid "Select the installation language."
+msgstr "インストールする言語を選択する。"
+
+#. Tag: para
+#: preparing.xml:95
+#, no-c-format
+msgid "Activate the ethernet network connection, if available."
+msgstr "可能なら、イーサネットネットワーク接続を有効にする。"
+
+#. Tag: para
+#: preparing.xml:101
+#, no-c-format
+msgid "Configure one network interface."
+msgstr "ネットワークインターフェースをどれかひとつ設定する。"
+
+#. Tag: para
+#: preparing.xml:106
+#, no-c-format
+msgid "Open an ssh connection to the new system."
+msgstr "新しいシステムに ssh 接続する。"
+
+#. Tag: para
+#: preparing.xml:111
+#, no-c-format
+msgid "Attach one or more DASDs (Direct Access Storage Device)."
+msgstr "ひとつ以上の DASD (Direct Access Storage Device) にアタッチする。"
+
+#. Tag: para
+#: preparing.xml:117
+#, no-c-format
+msgid ""
+"If necessary, resize existing partitions on your target harddisk to make "
+"space for the installation."
+msgstr ""
+"必要なら、インストールする領域を確保するため、ターゲットハードディスクにあ"
+"る、既存パーティションのリサイズ。"
+
+#. Tag: para
+#: preparing.xml:122
+#, no-c-format
+msgid "Create and mount the partitions on which &debian; will be installed."
+msgstr "&debian; をインストールするパーティションを作成し、マウントする。"
+
+#. Tag: para
+#: preparing.xml:127
+#, no-c-format
+msgid ""
+"Watch the automatic download/install/setup of the <firstterm>base system</"
+"firstterm>."
+msgstr ""
+"自動で行われる <firstterm>基本システム</firstterm> のダウンロード・インストー"
+"ル・セットアップを監視する。"
+
+#. Tag: para
+#: preparing.xml:133
+#, no-c-format
+msgid "Select and install <firstterm>additional software</firstterm>."
+msgstr ""
+
+#. Tag: para
+#: preparing.xml:138
+#, no-c-format
+msgid ""
+"Install a <firstterm>boot loader</firstterm> which can start up &debian-gnu; "
+"and/or your existing system."
+msgstr ""
+"&debian-gnu; と既存システムを起動する<firstterm>ブートローダ</firstterm>をイ"
+"ンストールする。"
+
+#. Tag: para
+#: preparing.xml:144
+#, no-c-format
+msgid "Load the newly installed system for the first time."
+msgstr "新しいシステムを初めて起動する。"
+
+#. Tag: para
+#: preparing.xml:151
+#, no-c-format
+msgid ""
+"For &arch-title; you have the option of using <phrase arch=\"any-x86\">a</"
+"phrase> <phrase arch=\"powerpc\">an experimental</phrase> graphical version "
+"of the installation system. For more information about this graphical "
+"installer, see <xref linkend=\"graphical\"/>."
+msgstr ""
+"&arch-title; では、<phrase arch=\"powerpc\">実験的な</phrase>グラフィカル版イ"
+"ンストールシステムを使用するという選択肢があります。グラフィカルインストーラ"
+"については、<xref linkend=\"graphical\"/> をご覧ください。"
+
+#. Tag: para
+#: preparing.xml:159
+#, no-c-format
+msgid ""
+"If you have problems during the installation, it helps to know which "
+"packages are involved in which steps. Introducing the leading software "
+"actors in this installation drama:"
+msgstr ""
+"インストール中に問題があったら、どのステップのどのパッケージでつまずいたかを"
+"知るお手伝いをします。このインストール劇の、そんな主演ソフトウェア俳優をご紹"
+"介します。"
+
+#. Tag: para
+#: preparing.xml:165
+#, no-c-format
+msgid ""
+"The installer software, <classname>debian-installer</classname>, is the "
+"primary concern of this manual. It detects hardware and loads appropriate "
+"drivers, uses <classname>dhcp-client</classname> to set up the network "
+"connection, runs <classname>debootstrap</classname> to install the base "
+"system packages, and runs <classname>tasksel</classname> to allow you to "
+"install certain additional software. Many more actors play smaller parts in "
+"this process, but <classname>debian-installer</classname> has completed its "
+"task when you load the new system for the first time."
+msgstr ""
+"インストーラの <classname>debian-installer</classname> は、このマニュアルの主"
+"役です。ハードウェアを検出して適切なドライバをロードし、<classname>dhcp-"
+"client</classname> を使用してネットワーク接続を設定し、基本システムパッケージ"
+"をインストールするのに <classname>debootstrap</classname> を実行し、さらに追"
+"加ソフトウェアをインストールする <classname>tasksel</classname> を実行しま"
+"す。このプロセスで多くの俳優が、より小さな役を演じますが、初めて新しいシステ"
+"ムを起動する時に、<classname>debian-installer</classname> はそのタスクを終え"
+"ることになります。"
+
+#. Tag: para
+#: preparing.xml:177
+#, no-c-format
+msgid ""
+"To tune the system to your needs, <classname>tasksel</classname> allows you "
+"to choose to install various predefined bundles of software like a Web "
+"server or a Desktop environment."
+msgstr ""
+"システムをお好みに調整するには、<classname>tasksel</classname> を使用して "
+"Web サーバやデスクトップ環境といった、様々なソフトウェアの定義済みセットを選"
+"択・インストールできます。"
+
+#. Tag: para
+#: preparing.xml:183
+#, no-c-format
+msgid ""
+"One important option during the installation is whether or not to install a "
+"graphical desktop environment, consisting of the X Window System and one of "
+"the available graphical desktop environments. If you choose not to select "
+"the <quote>Desktop environment</quote> task, you will only have a relatively "
+"basic, command line driven system. Installing the Desktop environment task "
+"is optional because in relation to a text-mode-only system it requires a "
+"comparatively large amount of disk space and because many &debian-gnu; "
+"systems are servers which don't really have any need for a graphical user "
+"interface to do their job."
+msgstr ""
+"インストール時の重要な選択肢に、X Window System とグラフィカルデスクトップ環"
+"境の 1 つからなる、グラフィカルデスクトップ環境をインストールするかどうかがあ"
+"ります。<quote>デスクトップ環境</quote> タスクを選択しない場合、比較的基本的"
+"な、コマンドライン駆動システムになります。デスクトップ環境は、テキストモード"
+"のみのシステムと比べて、かなり大きなディスク領域を必要とし、また、多くの "
+"&debian-gnu; システムは、グラフィカルユーザインターフェースを特に必要としない"
+"サーバであるため、デスクトップ環境タスクはオプションとなっています。"
+
+#. Tag: para
+#: preparing.xml:196
+#, no-c-format
+msgid ""
+"Just be aware that the X Window System is completely separate from "
+"<classname>debian-installer</classname>, and in fact is much more "
+"complicated. Troubleshooting of the X Window System is not within the scope "
+"of this manual."
+msgstr ""
+"X Window System は、<classname>debian-installer</classname> とは完全に分かれ"
+"ていて、実際には非常に複雑なことに注意してください。X Window System のトラブ"
+"ルシュートは、このマニュアルでは扱いません。"
+
+#. Tag: title
+#: preparing.xml:211
+#, no-c-format
+msgid "Back Up Your Existing Data!"
+msgstr "既存データをバックアップしてください!"
+
+#. Tag: para
+#: preparing.xml:212
+#, fuzzy, no-c-format
+#| msgid ""
+#| "Before you start, make sure to back up every file that is now on your "
+#| "system. If this is the first time a non-native operating system is going "
+#| "to be installed on your computer, it is quite likely you will need to re-"
+#| "partition your disk to make room for &debian-gnu;. Anytime you partition "
+#| "your disk, you run a risk of losing everything on the disk, no matter "
+#| "what program you use to do it. The programs used in the installation are "
+#| "quite reliable and most have seen years of use; but they are also quite "
+#| "powerful and a false move can cost you. Even after backing up, be careful "
+#| "and think about your answers and actions. Two minutes of thinking can "
+#| "save hours of unnecessary work."
+msgid ""
+"Before you start, make sure to back up every file that is now on your "
+"system. If this is the first time a non-native operating system is going to "
+"be installed on your computer, it is quite likely you will need to re-"
+"partition your disk to make room for &debian-gnu;. Anytime you partition "
+"your disk, you run a risk of losing everything on the disk, no matter what "
+"program you use to do it. The programs used in the installation of &debian-"
+"gnu; are quite reliable and most have seen years of use; but they are also "
+"quite powerful and a false move can cost you. Even after backing up, be "
+"careful and think about your answers and actions. Two minutes of thinking "
+"can save hours of unnecessary work."
+msgstr ""
+"インストールを始める前に、現在使用しているシステムのすべてのファイルをバック"
+"アップしてください。今回初めて、最初から入っていたもの以外の OS をインストー"
+"ルするのでしたら、おそらくディスクのパーティション分割をやり直して &debian-"
+"gnu; 用の領域を作る必要があるでしょう。ディスクのパーティション分割作業では、"
+"どんなプログラムを使ったとしても、ディスク上のすべてのデータを消してしまう危"
+"険があります。インストールに用いられるプログラム群は、極めて信頼性が高く、何"
+"年も使用されてきたものです。しかし、これらは強力な機能を持つことになるので、"
+"誤動作が起こったときの被害も大きくなります。バックアップを取った後でも、質問"
+"に答える前に充分注意し、よく考えて行動に移してください。ほんの数分間程余計に"
+"配慮することで、何時間もの不要な作業を避けることができるかもしれません。"
+
+#. Tag: para
+#: preparing.xml:225
+#, no-c-format
+msgid ""
+"If you are creating a multi-boot system, make sure that you have the "
+"distribution media of any other present operating systems on hand. Even "
+"though this is normally not necessary, there might be situations in which "
+"you could be required to reinstall your operating system's boot loader to "
+"make the system boot or in a worst case even have to reinstall the complete "
+"operating system and restore your previously made backup."
+msgstr ""
+"また、システムをマルチブートシステムにする (複数のオペレーティングシステムを"
+"共存させる) 場合には、既にインストールされているオペレーティングシステムの配"
+"布メディアが手元にあることを確かめてください。通常は必要ないとはいえ、システ"
+"ムをブートするために、OS のブートローダを再インストールする必要があったり、最"
+"悪の場合、完全に OS をインストールし、以前のバックアップをリストアする必要が"
+"ある可能性もあります。"
+
+#. Tag: title
+#: preparing.xml:244
+#, no-c-format
+msgid "Information You Will Need"
+msgstr "必要な情報"
+
+#. Tag: title
+#: preparing.xml:247
+#, no-c-format
+msgid "Documentation"
+msgstr "ドキュメント"
+
+#. Tag: title
+#: preparing.xml:250
+#, no-c-format
+msgid "Installation Manual"
+msgstr "インストールマニュアル"
+
+#. Tag: para
+#: preparing.xml:252
+#, no-c-format
+msgid "This document you are now reading, in plain ASCII, HTML or PDF format."
+msgstr ""
+"現在ご覧になっている文書です。それぞれプレーンテキスト、HTML、PDF 形式です。"
+
+#. Tag: itemizedlist
+#: preparing.xml:258
+#, no-c-format
+msgid "&list-install-manual-files;"
+msgstr "&list-install-manual-files;"
+
+#. Tag: para
+#: preparing.xml:264
+#, no-c-format
+msgid ""
+"The document you are now reading, which is the official version of the "
+"Installation Guide for the &releasename; release of &debian;; available in "
+"<ulink url=\"&url-release-area;/installmanual\">various formats and "
+"translations</ulink>."
+msgstr ""
+"現在ご覧になっている文書は、&debian; の &releasename; リリース用公式インス"
+"トールガイドです。これは<ulink url=\"&url-release-area;/installmanual\">さま"
+"ざまな形式や言語</ulink>で利用できます。"
+
+#. Tag: para
+#: preparing.xml:273
+#, no-c-format
+msgid ""
+"The document you are now reading, which is a development version of the "
+"Installation Guide for the next release of &debian;; available in <ulink url="
+"\"&url-d-i-dillon-manual;\">various formats and translations</ulink>."
+msgstr ""
+"現在ご覧になっている文書は、&debian; の次期リリース用インストールガイドの開発"
+"版です。これは <ulink url=\"&url-d-i-dillon-manual;\">様々な形式と様々な言語"
+"</ulink> で利用できます。"
+
+#. Tag: title
+#: preparing.xml:285
+#, no-c-format
+msgid "Hardware documentation"
+msgstr "ハードウェアの文書"
+
+#. Tag: para
+#: preparing.xml:286
+#, no-c-format
+msgid ""
+"Often contains useful information on configuring or using your hardware."
+msgstr "しばしば、ハードウェアの設定や使用についての有用な情報を含んでいます。"
+
+#. Tag: ulink
+#: preparing.xml:297
+#, no-c-format
+msgid "The Debian Wiki hardware page"
+msgstr "Debian Wiki ハードウェアページ"
+
+#. Tag: ulink
+#: preparing.xml:303
+#, no-c-format
+msgid "Linux for SPARC Processors FAQ"
+msgstr "SPARC プロセッサ用 Linux FAQ"
+
+#. Tag: ulink
+#: preparing.xml:309
+#, no-c-format
+msgid "Linux/MIPS website"
+msgstr "Linux/MIPS ウェブサイト"
+
+#. Tag: title
+#: preparing.xml:318
+#, no-c-format
+msgid "&arch-title; Hardware References"
+msgstr "&arch-title; ハードウェアリファレンス"
+
+#. Tag: para
+#: preparing.xml:319
+#, no-c-format
+msgid ""
+"Documentation of &arch-title;-specific boot sequence, commands and device "
+"drivers (e.g. DASD, XPRAM, Console, OSA, HiperSockets and z/VM interaction)"
+msgstr ""
+"&arch-title; 特有のブートシーケンス、コマンド、デバイスドライバの文書 (例: "
+"DASD, XPRAM, コンソール, OSA, ハイパーソケット, z/VM インタラクション)"
+
+#. Tag: ulink
+#: preparing.xml:330
+#, no-c-format
+msgid "Device Drivers, Features, and Commands (Linux Kernel 3.2)"
+msgstr "デバイスドライバ、機能、コマンド (Linux カーネル 3.2)"
+
+#. Tag: para
+#: preparing.xml:335
+#, no-c-format
+msgid ""
+"IBM Redbook describing how Linux can be combined with z/VM on zSeries and "
+"&arch-title; hardware."
+msgstr ""
+"zSeries と &arch-title; ハードウェアの z/VM への Linux の組み込み方を説明し"
+"た IBM の仕様書です。"
+
+#. Tag: ulink
+#: preparing.xml:345
+#, no-c-format
+msgid "Linux for &arch-title;"
+msgstr "Linux for &arch-title;"
+
+#. Tag: para
+#: preparing.xml:351
+#, no-c-format
+msgid ""
+"IBM Redbook describing the Linux distributions available for the mainframe. "
+"It has no chapter about &debian; but the basic installation concepts are the "
+"same across all &arch-title; distributions."
+msgstr ""
+"メインフレームで使える Linux ディストリビューションについて説明した IBM の仕"
+"様書です。&debian; に関する章はありませんが、基本的なインストールの考え方はす"
+"べての &arch-title; ディストリビューションで同じです。"
+
+#. Tag: ulink
+#: preparing.xml:362
+#, no-c-format
+msgid "Linux for IBM eServer zSeries and &arch-title;: Distributions"
+msgstr "Linux for IBM eServer zSeries and &arch-title;: Distributions"
+
+#. Tag: title
+#: preparing.xml:372
+#, no-c-format
+msgid "Finding Sources of Hardware Information"
+msgstr "ハードウェア情報の取得先"
+
+#. Tag: para
+#: preparing.xml:373
+#, no-c-format
+msgid ""
+"In many cases, the installer will be able to automatically detect your "
+"hardware. But to be prepared, we do recommend familiarizing yourself with "
+"your hardware before the install."
+msgstr ""
+"多くの場合、インストーラはハードウェアを自動的に検出することができます。しか"
+"し、準備としてインストール前にハードウェアに習熟することをお勧めします。"
+
+#. Tag: para
+#: preparing.xml:379
+#, no-c-format
+msgid "Hardware information can be gathered from:"
+msgstr "ハードウェアの情報は次のようなところから集められます。"
+
+#. Tag: para
+#: preparing.xml:386
+#, no-c-format
+msgid "The manuals that come with each piece of hardware."
+msgstr "各ハードウェアに付属してきたマニュアル。"
+
+#. Tag: para
+#: preparing.xml:391
+#, no-c-format
+msgid ""
+"The BIOS setup screens of your computer. You can view these screens when you "
+"start your computer by pressing a combination of keys. Check your manual for "
+"the combination. Often, it is the <keycap>Delete</keycap> or the <keycap>F2</"
+"keycap> key, but some manufacturers use other keys or key combinations. "
+"Usually upon starting the computer there will be a message stating which key "
+"to press to enter the setup screen."
+msgstr ""
+"コンピュータの BIOS 設定画面。この画面を表示させるには、コンピュータの起動時"
+"に何らかのキーの組合せを押します。この組合せについてはマニュアルを見てくださ"
+"い。<keycap>Delete</keycap> キーや <keycap>F2</keycap> キーの場合が多いようで"
+"すが、いくつかのメーカーは、別のキーを使用することもあります。大抵、コン"
+"ピュータの起動時に、設定画面に入るキーを表示します。"
+
+#. Tag: para
+#: preparing.xml:401
+#, no-c-format
+msgid "The cases and boxes for each piece of hardware."
+msgstr "各ハードウェアのケースや箱。"
+
+#. Tag: para
+#: preparing.xml:407
+#, no-c-format
+msgid "The System window in the Windows Control Panel."
+msgstr "Windows のコントロールパネルの「システム」ウィンドウ。"
+
+#. Tag: para
+#: preparing.xml:413
+#, no-c-format
+msgid ""
+"System commands or tools in another operating system, including file manager "
+"displays. This source is especially useful for information about RAM and "
+"hard drive memory."
+msgstr ""
+"他の OS のシステムコマンドやシステムツール、ファイルマネージャの表示など。こ"
+"ちらからは、RAM やハードドライブのメモリに関する情報が得られることが多いで"
+"す。"
+
+#. Tag: para
+#: preparing.xml:420
+#, no-c-format
+msgid ""
+"Your system administrator or Internet Service Provider. These sources can "
+"tell you the settings you need to set up your networking and e-mail."
+msgstr ""
+"あなたの部門のシステム管理者や、インターネットサービスプロバイダ。こちらから"
+"は、ネットワークや電子メールに関する設定情報が得られます。"
+
+#. Tag: title
+#: preparing.xml:432
+#, no-c-format
+msgid "Hardware Information Helpful for an Install"
+msgstr "インストールに役立つハードウェア情報"
+
+#. Tag: entry
+#: preparing.xml:436
+#, no-c-format
+msgid "Hardware"
+msgstr "ハードウェア"
+
+#. Tag: entry
+#: preparing.xml:436
+#, no-c-format
+msgid "Information You Might Need"
+msgstr "必要な情報"
+
+#. Tag: entry
+#: preparing.xml:442
+#, no-c-format
+msgid "Hard Drives"
+msgstr "ハードディスク"
+
+#. Tag: entry
+#: preparing.xml:443
+#, no-c-format
+msgid "How many you have."
+msgstr "ドライブの台数"
+
+#. Tag: entry
+#: preparing.xml:445
+#, no-c-format
+msgid "Their order on the system."
+msgstr "システムでの接続順序"
+
+#. Tag: entry
+#: preparing.xml:447
+#, no-c-format
+msgid "Whether IDE (also known as PATA), SATA or SCSI."
+msgstr "IDE (PATA としても知られる)、SATA、SCSI のどれか"
+
+#. Tag: entry
+#: preparing.xml:449 preparing.xml:498
+#, no-c-format
+msgid "Available free space."
+msgstr "利用できる空き領域"
+
+#. Tag: entry
+#: preparing.xml:450
+#, no-c-format
+msgid "Partitions."
+msgstr "パーティション"
+
+#. Tag: entry
+#: preparing.xml:452
+#, no-c-format
+msgid "Partitions where other operating systems are installed."
+msgstr "他の OS がインストールされているパーティション"
+
+#. Tag: entry
+#: preparing.xml:480
+#, no-c-format
+msgid "Network interfaces"
+msgstr "ネットワークインターフェース"
+
+#. Tag: entry
+#: preparing.xml:481
+#, no-c-format
+msgid "Type/model of available network interfaces."
+msgstr "利用可能なネットワークインターフェースのタイプ/モデル"
+
+#. Tag: entry
+#: preparing.xml:485
+#, no-c-format
+msgid "Printer"
+msgstr "プリンタ"
+
+#. Tag: entry
+#: preparing.xml:486
+#, no-c-format
+msgid "Model and manufacturer."
+msgstr "メーカーと型番"
+
+#. Tag: entry
+#: preparing.xml:490
+#, no-c-format
+msgid "Video Card"
+msgstr "ビデオカード"
+
+#. Tag: entry
+#: preparing.xml:491
+#, no-c-format
+msgid "Type/model and manufacturer."
+msgstr "タイプ/モデルとメーカー"
+
+#. Tag: entry
+#: preparing.xml:495
+#, no-c-format
+msgid "DASD"
+msgstr "DASD"
+
+#. Tag: entry
+#: preparing.xml:496
+#, no-c-format
+msgid "Device number(s)."
+msgstr "デバイス番号"
+
+#. Tag: entry
+#: preparing.xml:501
+#, no-c-format
+msgid "Network"
+msgstr "ネットワーク"
+
+#. Tag: entry
+#: preparing.xml:502
+#, no-c-format
+msgid "Type of adapter."
+msgstr "アダプタの形式"
+
+#. Tag: entry
+#: preparing.xml:504
+#, no-c-format
+msgid "Device numbers."
+msgstr "デバイス番号"
+
+#. Tag: entry
+#: preparing.xml:505
+#, no-c-format
+msgid "Relative adapter number for OSA cards."
+msgstr "OSA カードの相対アダプタ番号"
+
+#. Tag: title
+#: preparing.xml:513
+#, no-c-format
+msgid "Hardware Compatibility"
+msgstr "ハードウェア互換性"
+
+#. Tag: para
+#: preparing.xml:515
+#, no-c-format
+msgid ""
+"Many products work without trouble on &arch-kernel;. Moreover, hardware "
+"support in &arch-kernel; is improving daily. However, &arch-kernel; still "
+"does not run as many different types of hardware as some operating systems."
+msgstr ""
+"製品の多くは、問題なく &arch-kernel; で動作します。また &arch-kernel; でサ"
+"ポートするハードウェアも日々進歩しています。しかし、それでもまだ &arch-"
+"kernel; は、ある種の OS ほどには多種多様なハードウェアに対応していません。"
+
+#. Tag: para
+#: preparing.xml:521
+#, no-c-format
+msgid ""
+"Drivers in &arch-kernel; in most cases are not written for a certain "
+"<quote>product</quote> or <quote>brand</quote> from a specific manufacturer, "
+"but for a certain hardware/chipset. Many seemingly different products/brands "
+"are based on the same hardware design; it is not uncommon that chip "
+"manufacturers provide so-called <quote>reference designs</quote> for "
+"products based on their chips which are then used by several different "
+"device manufacturers and sold under lots of different product or brand names."
+msgstr ""
+"&arch-kernel; に収録されているドライバはほとんどの場合特定の製造者の一部の"
+"<quote>製品</quote>や<quote>商標</quote>向けではなく、あるハードウェア/チップ"
+"セット向けに書かれています。一見異なるように見える製品/商標が同一のハードウェ"
+"ア設計を基にしています。チップ製造者が自社チップを基に<quote>リファレンス設計"
+"</quote>と呼ばれる製品を提供し、それが複数の異なるデバイス製造者により利用さ"
+"れ、多くの異なる製品や商標名で売られることは珍しくありません。"
+
+#. Tag: para
+#: preparing.xml:532
+#, no-c-format
+msgid ""
+"This has advantages and disadvantages. An advantage is that a driver for one "
+"chipset works with lots of different products from different manufacturers, "
+"as long as their product is based on the same chipset. The disadvantage is "
+"that it is not always easy to see which actual chipset is used in a certain "
+"product/brand. Unfortunately sometimes device manufacturers change the "
+"hardware base of their product without changing the product name or at least "
+"the product version number, so that when having two items of the same brand/"
+"product name bought at different times, they can sometimes be based on two "
+"different chipsets and therefore use two different drivers or there might be "
+"no driver at all for one of them."
+msgstr ""
+"これには利点と欠点があります。利点は、製品が同一チップセットを基にしている限"
+"りは製品や製造者が異なっていても、一つのチップセットに一つのドライバで動作す"
+"ることです。欠点はある製品/商標で実際にはどのチップセットが使われているのか判"
+"定するのが常に簡単だとは限らないことです。残念なことに、デバイス製造者は製品"
+"のベースとなるハードウェアを変更してもその製品名や製品のバージョン番号すら変"
+"えないことが時々あり、そのために別々に買った商標/製品名が同一の製品が二つある"
+"場合、異なる二種のチップセットを基にしているため異なるドライバを使う必要が"
+"あったり、一方には使えるドライバが何もないということもあります。"
+
+#. Tag: para
+#: preparing.xml:545
+#, no-c-format
+msgid ""
+"For USB and PCI/PCI-Express/ExpressCard devices, a good way to find out on "
+"which chipset they are based is to look at their device IDs. All USB/PCI/PCI-"
+"Express/ExpressCard devices have so called <quote>vendor</quote> and "
+"<quote>product</quote> IDs, and the combination of these two is usually the "
+"same for any product based on the same chipset."
+msgstr ""
+"USB や PCI/PCI-Express/ExpressCard 用のデバイスが基にしているチップセットを調"
+"べるにはデバイス ID を確認するのが良い方法です。USB/PCI/PCI-Express/"
+"ExpressCard デバイスには全て、<quote>ベンダー</quote>および<quote>製品</"
+"quote> ID というものがあり、同一チップセットを基にしている製品であればこれは"
+"通常同じ組み合わせになります。"
+
+#. Tag: para
+#: preparing.xml:553
+#, no-c-format
+msgid ""
+"On Linux systems, these IDs can be read with the <command>lsusb</command> "
+"command for USB devices and with the <command>lspci -nn</command> command "
+"for PCI/PCI-Express/ExpressCard devices. The vendor and product IDs are "
+"usually given in the form of two hexadecimal numbers, seperated by a colon, "
+"such as <quote>1d6b:0001</quote>."
+msgstr ""
+"Linux システムでは、この ID は USB デバイスでは <command>lsusb</command> コマ"
+"ンド、PCI/PCI-Express/ExpressCard デバイスでは <command>lspci -nn</command> "
+"コマンドで読み取ることができます。ベンダーおよび製品 ID は通常 "
+"<quote>1d6b:0001</quote> のように二つの 16 進数をコロンで区切った形式になって"
+"います。"
+
+#. Tag: para
+#: preparing.xml:561
+#, no-c-format
+msgid ""
+"An example for the output of <command>lsusb</command>: <quote>Bus 001 Device "
+"001: ID 1d6b:0002 Linux Foundation 2.0 root hub</quote>, whereby 1d6b is the "
+"vendor ID and 0002 is the product ID."
+msgstr ""
+"<command>lsusb</command> の出力例: <quote>Bus 001 Device 001: ID 1d6b:0002 "
+"Linux Foundation 2.0 root hub</quote> の場合、1d6b がベンダー ID で 0002 が製"
+"品 ID です。"
+
+#. Tag: para
+#: preparing.xml:567
+#, no-c-format
+msgid ""
+"An example for the output of <command>lspci -nn</command> for an Ethernet "
+"card: <quote>03:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., "
+"Ltd. RTL8111/8168B PCI Express Gigabit Ethernet controller [10ec:8168] (rev "
+"06)</quote>. The IDs are given inside the rightmost square brackets, i.e. "
+"here 10ec is the vendor- and 8168 is the product ID."
+msgstr ""
+"イーサネットカードに対する <command>lspci -nn</command> の出力例: "
+"<quote>03:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. "
+"RTL8111/8168B PCI Express Gigabit Ethernet controller [10ec:8168] (rev 06)</"
+"quote>。ID は最も右側の [] 内にあります。つまりこの場合 10ec がベンダー、"
+"8168 が製品の ID です。"
+
+#. Tag: para
+#: preparing.xml:575
+#, no-c-format
+msgid ""
+"As another example, a graphics card could give the following output: "
+"<quote>04:00.0 VGA compatible controller [0300]: Advanced Micro Devices "
+"[AMD] nee ATI RV710 [Radeon HD 4350] [1002:954f]</quote>."
+msgstr ""
+"また別の例として、あるグラフィックスカードでは次のような出力になります: "
+"<quote>04:00.0 VGA compatible controller [0300]: Advanced Micro Devices "
+"[AMD] nee ATI RV710 [Radeon HD 4350] [1002:954f]</quote>。"
+
+#. Tag: para
+#: preparing.xml:581
+#, no-c-format
+msgid ""
+"On Windows systems, the IDs for a device can be found in the Windows device "
+"manager on the tab <quote>details</quote>, where the vendor ID is prefixed "
+"with VEN_ and the product ID is prefixed with DEV_. On Windows 7 systems, "
+"you have to select the property <quote>Hardware IDs</quote> in the device "
+"manager's details tab to actually see the IDs, as they are not displayed by "
+"default."
+msgstr ""
+"Windows システムでは、デバイスの ID は Windows デバイスマネージャの<quote>詳"
+"細</quote>タブで確認できます。ベンダー ID には先頭に VEN_、製品 ID には先頭"
+"に DEV_ が付けられます。Windows 7 システムではデフォルトでは表示されていない"
+"ため、実際に ID を確認するにはデバイスマネージャの詳細タブのプロパティから"
+"<quote>ハードウェア ID</quote> を選択する必要があります。"
+
+#. Tag: para
+#: preparing.xml:591
+#, no-c-format
+msgid ""
+"Searching on the internet with the vendor/product ID, <quote>&arch-kernel;</"
+"quote> and <quote>driver</quote> as the search terms often results in "
+"information regarding the driver support status for a certain chipset. If a "
+"search for the vendor/product ID does not yield usable results, a search for "
+"the chip code names, which are also often provided by lsusb and lspci "
+"(<quote>RTL8111</quote>/<quote>RTL8168B</quote> in the network card example "
+"and <quote>RV710</quote> in the graphics card example), can help."
+msgstr ""
+"ベンダー/製品 ID、<quote>&arch-kernel;</quote>、<quote>ドライバ</quote>を検索"
+"語としてインターネットで検索すると多くの場合そのチップセット向けドライバの対"
+"応状態に関する情報が得られるでしょう。ベンダー/製品 ID を検索してあまり有効な"
+"検索結果が得られなかった場合は、多くの場合 lsusb や lspci でも提供されるチッ"
+"プのコード名 (ネットワークカードの例では <quote>RTL8111</quote>/"
+"<quote>RTL8168B</quote>、グラフィックスカードの例では <quote>RV710</quote>) "
+"を検索することで手がかりが得られるかもしれません。"
+
+#. Tag: title
+#: preparing.xml:604
+#, no-c-format
+msgid "Testing hardware compatibility with a Live-System"
+msgstr "ライブシステムを使用したハードウェア互換性テスト"
+
+#. Tag: para
+#: preparing.xml:606
+#, no-c-format
+msgid ""
+"&debian-gnu; is also available as a so-called <quote>live system</quote> for "
+"certain architectures. A live system is a preconfigured ready-to-use system "
+"in a compressed format that can be booted and used from a read-only medium "
+"like a CD or DVD. Using it by default does not create any permanent changes "
+"on your computer. You can change user settings and install additional "
+"programs from within the live system, but all this only happens in the "
+"computer's RAM, i.e. if you turn off the computer and boot the live system "
+"again, everything is reset to its defaults. If you want to see whether your "
+"hardware is supported by &debian-gnu;, the easiest way is to run a &debian; "
+"live system on it and try it out."
+msgstr ""
+"&debian-gnu; は一部のアーキテクチャで<quote>ライブシステム</quote>というもの"
+"も利用できます。ライブシステムは設定済みですぐに使える圧縮形式のシステムで、"
+"CD や DVD のような読み込み専用メディアから起動して使えます。デフォルトでの使"
+"用では、コンピュータ上への恒久的な変更は一切行いません。ライブシステム内で"
+"ユーザ設定を変更したりプログラムを追加でインストールすることはできますが、全"
+"てコンピュータの RAM 上でのみ発生します。つまり、コンピュータの電源を落として"
+"ライブシステムを起動し直すと、全てがデフォルトにリセットされます。手持ちの"
+"ハードウェアが &debian-gnu; でサポートされているか確認する最も簡単な方法は "
+"&debian; ライブシステムを使って試してみることです。"
+
+#. Tag: para
+#: preparing.xml:619
+#, no-c-format
+msgid ""
+"There are a few limitations in using a live system. The first is that as all "
+"changes you do within the live system must be held in your computer's RAM, "
+"this only works on systems with enough RAM to do that, so installing "
+"additional large software packages may fail due to memory constraints. "
+"Another limitation with regards to hardware compatibility testing is that "
+"the official &debian-gnu; live system contains only free components, i.e. "
+"there are no non-free firmware files included in it. Such non-free packages "
+"can of course be installed manually within the system, but there is no "
+"automatic detection of required firmware files like in the &d-i;, so "
+"installation of non-free components must be done manually if needed."
+msgstr ""
+"ライブシステムの使用にはいくつか制限があります。まず、ライブシステム内での変"
+"更は全てコンピュータの RAM に保持する必要があることで、そのため十分な RAM の"
+"あるシステムでないと機能しません。巨大なソフトウェアパッケージを追加でインス"
+"トールすることはメモリの制約のために失敗するかもしれません。もう一つの制限は"
+"ハードウェア互換性テストに関するもので、公式の &debian-gnu; ライブシステムに"
+"はフリーなものしか含まれません。つまり、フリーでないファームウェアファイルは"
+"一切含まれません。そういったフリーでないパッケージを手作業でシステムにインス"
+"トールすることはもちろんできますが、&d-i; のように必要なファームウェアファイ"
+"ルを自動的に検出するようなものは一切ないため、フリーでないものが必要であれば"
+"全て手作業によってインストールしなければなりません。"
+
+#. Tag: para
+#: preparing.xml:632
+#, no-c-format
+msgid ""
+"Information about the available variants of the &debian; live images can be "
+"found at the <ulink url=\"&url-debian-live-cd;\">Debian Live Images website</"
+"ulink>."
+msgstr ""
+"利用可能な &debian; ライブイメージの種類についての情報は <ulink url=\"&url-"
+"debian-live-cd;\">Debian ライブイメージのウェブサイト</ulink>にあります。"
+
+#. Tag: title
+#: preparing.xml:646
+#, no-c-format
+msgid "Network Settings"
+msgstr "ネットワークの設定"
+
+#. Tag: para
+#: preparing.xml:648
+#, no-c-format
+msgid ""
+"If your computer is connected to a fixed network (i.e. an Ethernet or "
+"equivalent connection &mdash; not a dialup/PPP connection) which is "
+"administered by somebody else, you should ask your network's system "
+"administrator for this information:"
+msgstr ""
+"コンピュータが固定ネットワークに接続されているならば (つまり、PPP 接続ではな"
+"く Ethernet やそれと同等な接続の場合)、ネットワーク管理者に以下の情報を確認し"
+"ておいてください。"
+
+#. Tag: para
+#: preparing.xml:656
+#, no-c-format
+msgid "Your host name (you may be able to decide this on your own)."
+msgstr "ホスト名 (自分で決められるかもしれません)"
+
+#. Tag: para
+#: preparing.xml:661
+#, no-c-format
+msgid "Your domain name."
+msgstr "ドメイン名"
+
+#. Tag: para
+#: preparing.xml:666
+#, no-c-format
+msgid "Your computer's IP address."
+msgstr "コンピュータの IP アドレス"
+
+#. Tag: para
+#: preparing.xml:671
+#, no-c-format
+msgid "The netmask to use with your network."
+msgstr "ネットワークのネットマスク"
+
+#. Tag: para
+#: preparing.xml:676
+#, no-c-format
+msgid ""
+"The IP address of the default gateway system you should route to, if your "
+"network <emphasis>has</emphasis> a gateway."
+msgstr ""
+"ネットワークにゲートウェイが<emphasis>ある</emphasis>場合は、経路を向けるデ"
+"フォルトゲートウェイシステムの IP アドレス"
+
+#. Tag: para
+#: preparing.xml:682
+#, no-c-format
+msgid ""
+"The system on your network that you should use as a DNS (Domain Name "
+"Service) server."
+msgstr "DNS (Domain Name Service) サーバとして使用するネットワーク上のホスト"
+
+#. Tag: para
+#: preparing.xml:690
+#, no-c-format
+msgid ""
+"If the network you are connected to uses DHCP (Dynamic Host Configuration "
+"Protocol) for configuring network settings, you don't need this information "
+"because the DHCP server will provide it directly to your computer during the "
+"installation process."
+msgstr ""
+"接続するネットワークを、DHCP (Dynamic Host Configuration Protocol) を用いて設"
+"定する場合、DHCP サーバがインストールプロセスの間、コンピュータに直接提供する"
+"ので、この情報は必要ありません。"
+
+#. Tag: para
+#: preparing.xml:697
+#, no-c-format
+msgid ""
+"If you have internet access via DSL or cable modem (i.e. over a cable tv "
+"network) and have a router (often provided preconfigured by your phone or "
+"catv provider) which handles your network connectivity, DHCP is usually "
+"available by default."
+msgstr ""
+"DSL やケーブルモデム (つまりケーブルテレビネットワーク) を経由したインター"
+"ネット接続とルータ (設定済みのものが電話や CATV の提供業者により提供されるこ"
+"とがよくあります) があって、それがネットワーク接続を処理している場合、通常 "
+"DHCP がデフォルトで使えるようになっています。"
+
+#. Tag: para
+#: preparing.xml:705
+#, no-c-format
+msgid ""
+"As a rule of thumb: if you run a Windows system in your home network and did "
+"not have to manually perform any network settings there to achieve Internet "
+"access, network connectivity in &debian-gnu; will also be configured "
+"automatically."
+msgstr ""
+"これは経験則ですが、ホームネットワークで Windows システムを使っていて特に手で"
+"ネットワーク設定をせずにインターネットにアクセスできている場合、&debian-gnu; "
+"でのネットワーク接続も自動で設定されるでしょう。"
+
+#. Tag: para
+#: preparing.xml:712
+#, no-c-format
+msgid "If you use a WLAN/WiFi network, you should find out:"
+msgstr "WLAN/WiFi ネットワークを使用するなら、以下の情報も探さねばなりません。"
+
+#. Tag: para
+#: preparing.xml:717
+#, no-c-format
+msgid "The ESSID (<quote>network name</quote>) of your wireless network."
+msgstr "ワイヤレスネットワークの ESSID (<quote>ネットワーク名</quote>)。"
+
+#. Tag: para
+#: preparing.xml:722
+#, no-c-format
+msgid "The WEP or WPA/WPA2 security key to access the network (if applicable)."
+msgstr ""
+"(適用できる場合) ネットワークにアクセスする WEP や WPA/WPA2 のセキュリティ"
+"キー。"
+
+#. Tag: title
+#: preparing.xml:739
+#, no-c-format
+msgid "Meeting Minimum Hardware Requirements"
+msgstr "必要な最低限のハードウェア"
+
+#. Tag: para
+#: preparing.xml:740
+#, no-c-format
+msgid ""
+"Once you have gathered information about your computer's hardware, check "
+"that your hardware will let you do the type of installation that you want to "
+"do."
+msgstr ""
+"コンピュータのハードウェアに関する情報が集まったら、そのハードウェアが今から"
+"行おうとしているインストールの条件に足るものであるかどうかをチェックしましょ"
+"う。"
+
+#. Tag: para
+#: preparing.xml:746
+#, no-c-format
+msgid ""
+"Depending on your needs, you might manage with less than some of the "
+"recommended hardware listed in the table below. However, most users risk "
+"being frustrated if they ignore these suggestions."
+msgstr ""
+"やむを得ない場合は、以下に載っているリストよりは性能の劣るハードウェアでなん"
+"とかしなければならないこともあるでしょう。しかし、これらのお勧めを無視した場"
+"合は、結局不満を感じる可能性が高くなってしまうと思います。"
+
+#. Tag: para
+#: preparing.xml:752
+#, no-c-format
+msgid ""
+"A Pentium 4, 1GHz system is the minimum recommended for a desktop system."
+msgstr "デスクトップシステムには最低 Pentium 4, 1GHz をお勧めします。"
+
+#. Tag: para
+#: preparing.xml:757
+#, no-c-format
+msgid "Any OldWorld or NewWorld PowerPC can serve well as a desktop system."
+msgstr ""
+"デスクトップシステムには OldWorld PowerPC, NewWorld PowerPC のいずれのモデル"
+"でも充分でしょう。"
+
+#. Tag: title
+#: preparing.xml:764
+#, no-c-format
+msgid "Recommended Minimum System Requirements"
+msgstr "最低限必要なシステム (推奨値)"
+
+#. Tag: entry
+#: preparing.xml:768
+#, no-c-format
+msgid "Install Type"
+msgstr "インストールタイプ"
+
+#. Tag: entry
+#: preparing.xml:769
+#, no-c-format
+msgid "RAM (minimum)"
+msgstr "RAM (最小)"
+
+#. Tag: entry
+#: preparing.xml:770
+#, no-c-format
+msgid "RAM (recommended)"
+msgstr "RAM (推奨)"
+
+#. Tag: entry
+#: preparing.xml:771
+#, no-c-format
+msgid "Hard Drive"
+msgstr "ハードディスク"
+
+#. Tag: entry
+#: preparing.xml:777
+#, no-c-format
+msgid "No desktop"
+msgstr "デスクトップなし"
+
+#. Tag: entry
+#: preparing.xml:778
+#, no-c-format
+msgid "128 megabytes"
+msgstr "128 メガバイト"
+
+#. Tag: entry
+#: preparing.xml:779
+#, no-c-format
+msgid "512 megabytes"
+msgstr "512 メガバイト"
+
+#. Tag: entry
+#: preparing.xml:780
+#, no-c-format
+msgid "2 gigabytes"
+msgstr "2 ギガバイト"
+
+#. Tag: entry
+#: preparing.xml:782
+#, no-c-format
+msgid "With Desktop"
+msgstr "デスクトップあり"
+
+#. Tag: entry
+#: preparing.xml:783
+#, no-c-format
+msgid "256 megabytes"
+msgstr "256 メガバイト"
+
+#. Tag: entry
+#: preparing.xml:784
+#, no-c-format
+msgid "1 gigabyte"
+msgstr "1 ギガバイト"
+
+#. Tag: entry
+#: preparing.xml:785
+#, no-c-format
+msgid "10 gigabytes"
+msgstr "10 ギガバイト"
+
+#. Tag: para
+#: preparing.xml:790
+#, no-c-format
+msgid ""
+"The actual minimum memory requirements are a lot less than the numbers "
+"listed in this table. Depending on the architecture, it is possible to "
+"install &debian; with as little as 60MB (for amd64). The same goes for the "
+"disk space requirements, especially if you pick and choose which "
+"applications to install; see <xref linkend=\"tasksel-size-list\"/> for "
+"additional information on disk space requirements."
+msgstr ""
+"実際に必要な最小メモリはこの表に挙げた物よりも少なくなります。アーキテクチャ"
+"に依存しますが、最小 60MB (amd64) で &debian; をインストールできます。必要な"
+"ディスクスペースにも同じことが言え、特にインストールするアプリケーションを選"
+"択する場合に必要なディスクスペースについての追加情報は、<xref linkend="
+"\"tasksel-size-list\"/> をご覧ください。"
+
+#. Tag: para
+#: preparing.xml:800
+#, no-c-format
+msgid ""
+"It is possible to run a graphical desktop environment on older or low-end "
+"systems, but in that case it is recommended to install a window manager that "
+"is less resource-hungry than those of the GNOME or KDE Plasma desktop "
+"environments; alternatives include <classname>xfce4</classname>, "
+"<classname>icewm</classname> and <classname>wmaker</classname>, but there "
+"are others to choose from."
+msgstr ""
+"旧式ないしローエンドシステムでも、グラフィカルデスクトップ環境を実行できます"
+"が、GNOME や KDE Plasma といったデスクトップ環境よりも、リソースを消費しない"
+"ウィンドウマネージャをインストールするのをお勧めします。代替品には、"
+"<classname>xfce4</classname>, <classname>icewm</classname>, "
+"<classname>wmaker</classname> が含まれますが、他にも選択できます。"
+
+#. Tag: para
+#: preparing.xml:809
+#, no-c-format
+msgid ""
+"It is practically impossible to give general memory or disk space "
+"requirements for server installations as those very much depend on what the "
+"server is to be used for."
+msgstr ""
+"インストール時に必要なメモリやディスクの量は、どのようなサーバとして使用する"
+"かによって異なるため、一般的な量の提示は事実上不可能です。"
+
+#. Tag: para
+#: preparing.xml:815
+#, no-c-format
+msgid ""
+"Remember that these sizes don't include all the other materials which are "
+"usually to be found, such as user files, mail, and data. It is always best "
+"to be generous when considering the space for your own files and data."
+msgstr ""
+"これらのサイズには、通常存在するユーザファイル、メール、データなどは含まれて"
+"いないことにご注意ください。自分のファイルやデータに必要な容量は、気前良く確"
+"保しておくに越したことはありません。"
+
+#. Tag: para
+#: preparing.xml:822
+#, no-c-format
+msgid ""
+"Disk space required for the smooth operation of the &debian-gnu; system "
+"itself is taken into account in these recommended system requirements. "
+"Notably, the <filename>/var</filename> partition contains a lot of state "
+"information specific to &debian; in addition to its regular contents, like "
+"logfiles. The <command>dpkg</command> files (with information on all "
+"installed packages) can easily consume 40MB. Also, <command>apt</command> "
+"puts downloaded packages here before they are installed. You should usually "
+"allocate at least 200MB for <filename>/var</filename>, and a lot more if you "
+"install a graphical desktop environment."
+msgstr ""
+"&debian-gnu; システムを円滑に操作するのに必要なディスクスペースについては、お"
+"勧めするシステム要件で考慮されています。特に、<filename>/var</filename> パー"
+"ティションには、ログファイルのような一般的な内容に加え、&debian; 特有の状態情"
+"報が多く置かれます。<command>dpkg</command> のファイル (インストールされた"
+"パッケージすべてに関する情報) は、簡単に 40MB を消費します。また "
+"<command>apt</command> は、インストールする前にダウンロードしたパッケージをこ"
+"こに置きます。<filename>/var</filename> には最低 200MB は割り当てておくべきで"
+"すし、グラフィカルデスクトップ環境をインストールする場合には、もっと割り当て"
+"るべきでしょう。"
+
+#. Tag: title
+#: preparing.xml:846
+#, no-c-format
+msgid "Pre-Partitioning for Multi-Boot Systems"
+msgstr "マルチブートシステムでの事前パーティション分割"
+
+#. Tag: para
+#: preparing.xml:847
+#, no-c-format
+msgid ""
+"Partitioning your disk simply refers to the act of breaking up your disk "
+"into sections. Each section is then independent of the others. It's roughly "
+"equivalent to putting up walls inside a house; if you add furniture to one "
+"room it doesn't affect any other room."
+msgstr ""
+"「ディスクのパーティション分割」とは、ディスクをセクションに分けることです。"
+"各セクションは他のセクションから独立しています。この作業は要するに、家の中に"
+"壁を作るようなものです。ある部屋に家具を入れても、それは他の部屋には影響しな"
+"いというわけです。"
+
+#. Tag: para
+#: preparing.xml:854
+#, no-c-format
+msgid ""
+"Whenever this section talks about <quote>disks</quote> you should translate "
+"this into a DASD or VM minidisk in the &arch-title; world. Also a machine "
+"means an LPAR or VM guest in this case."
+msgstr ""
+"このセクションで <quote>ディスク</quote> という言葉が出てきた場合、&arch-"
+"title; の世界ではこれを DASD や VM ミニディスクと置き換えてください。またこの"
+"場合 <quote>マシン</quote> は LPAR や VM ゲストと置き換えてください。"
+
+#. Tag: para
+#: preparing.xml:860
+#, no-c-format
+msgid ""
+"If you already have an operating system on your system <phrase arch=\"any-"
+"x86\"> (Windows 9x, Windows NT/2000/XP/2003/Vista/7, OS/2, MacOS, Solaris, "
+"FreeBSD, &hellip;) </phrase> <phrase arch=\"s390\"> (VM, z/OS, OS/390, "
+"&hellip;) </phrase> which uses the whole disk and you want to stick &debian; "
+"on the same disk, you will need to repartition it. &debian; requires its own "
+"hard disk partitions. It cannot be installed on Windows or Mac OS X "
+"partitions. It may be able to share some partitions with other Unix systems, "
+"but that's not covered here. At the very least you will need a dedicated "
+"partition for the &debian; root filesystem."
+msgstr ""
+"システム上に既にオペレーティングシステム <phrase arch=\"any-x86\"> (Windows "
+"9x、Windows NT/2000/XP/2003/Vista/7、OS/2、MacOS、Solaris、FreeBSD、"
+"&hellip;) </phrase> <phrase arch=\"s390\"> (VM、z/OS、OS/390、&hellip;) </"
+"phrase> が入っていてディスク全体を使っているときに同じディスクに &debian; も"
+"入れたい場合には、ディスクのパーティション分割をやり直す必要があります。"
+"&debian; は Windows や MacOS のパーティションにはインストールできません。他"
+"の Unix システムとはパーティションを共有することも可能かもしれませんが、ここ"
+"ではそれは取り扱いません。少なくとも、&debian; の root ファイルシステムには専"
+"用のパーティションが必要となります。"
+
+#. Tag: para
+#: preparing.xml:879
+#, no-c-format
+msgid ""
+"You can find information about your current partition setup by using a "
+"partitioning tool for your current operating system<phrase arch=\"any-"
+"x86\">, such as the integrated Disk Manager in Windows or fdisk in DOS</"
+"phrase><phrase arch=\"powerpc\">, such as Disk Utility, Drive Setup, HD "
+"Toolkit, or MacTools</phrase><phrase arch=\"s390\">, such as the VM diskmap</"
+"phrase>. Partitioning tools always provide a way to show existing partitions "
+"without making changes."
+msgstr ""
+"現在のパーティションの設定は、<phrase arch=\"any-x86\">Windows の統合ディスク"
+"マネージャや DOS の fdisk</phrase><phrase arch=\"powerpc\">Disk Utility や "
+"Drive Setup、HD Toolkit、MacTools</phrase><phrase arch=\"s390\">VM diskmap</"
+"phrase>のような、現在の OS に対応したパーティション分割ツールを使えばわかりま"
+"す。パーティション分割ツールには、必ず既存のパーティションを (変更せずに) 表"
+"示する機能が付いています。"
+
+#. Tag: para
+#: preparing.xml:889
+#, no-c-format
+msgid ""
+"In general, changing a partition with a file system already on it will "
+"destroy any information there. Thus you should always make backups before "
+"doing any repartitioning. Using the analogy of the house, you would probably "
+"want to move all the furniture out of the way before moving a wall or you "
+"risk destroying it."
+msgstr ""
+"一般に、既にファイルシステムの入っているパーティションを変更すると、中の情報"
+"はすべて破壊されてしまいます。そのため、パーティション分割をやり直す前には、"
+"必ずバックアップを取っておいてください。家の例でいうと、壁を動かす前には、家"
+"具が壊れないよう、あらかじめどかしておきます。"
+
+#. Tag: para
+#: preparing.xml:897
+#, no-c-format
+msgid ""
+"Several modern operating systems offer the ability to move and resize "
+"certain existing partitions without destroying their contents. This allows "
+"making space for additional partitions without losing existing data. Even "
+"though this works quite well in most cases, making changes to the "
+"partitioning of a disk is an inherently dangerous action and should only be "
+"done after having made a full backup of all data. <phrase arch=\"any-"
+"x86\">For FAT/FAT32 and NTFS partitions as used by DOS and Windows systems, "
+"the ability to move and resize them losslessly is provided both by &d-i; as "
+"well as by the integrated Disk Manager of Windows 7. </phrase>"
+msgstr ""
+"今の OS の中には、既存のパーティションをその内容を壊さずに移動、サイズ変更で"
+"きる機能を提供しているものがあります。この機能を使うと既存データを失うことな"
+"くスペースを作ることができます。これはほとんどの場合問題なく成功しますが、"
+"ディスクのパーティションを変更することは本質的に危険な操作であり、全データを"
+"完全にバックアップした上で行うべきものです。<phrase arch=\"any-x86\">DOS や "
+"Windows システムで利用される FAT/FAT32 や NTFS パーティションについては、損失"
+"なく移動、サイズ変更する機能は Windows 7 の統合ディスクマネージャと同様に &d-"
+"i; でも提供されています。</phrase>"
+
+#. Tag: para
+#: preparing.xml:912
+#, no-c-format
+msgid ""
+"To losslessly resize an existing FAT or NTFS partition from within &d-i;, go "
+"to the partitioning step, select the option for manual partitioning, select "
+"the partition to resize, and simply specify its new size."
+msgstr ""
+"既存の FAT や NTFS パーティションを &d-i; から損失無く移動、サイズ変更するに"
+"は、パーティション作業に進んで手作業でのパーティション作業を選択し、サイズ変"
+"更するパーティションを選択し、単純に変更後のサイズを指定します。"
+
+#. Tag: emphasis
+#: preparing.xml:920
+#, no-c-format
+msgid "FIXME: write about HP-UX disks?"
+msgstr "FIXME: HP-UX のディスクについては?"
+
+#. Tag: para
+#: preparing.xml:922
+#, no-c-format
+msgid ""
+"Creating and deleting partitions can be done from within &d-i; as well as "
+"from an existing operating system. As a rule of thumb, partitions should be "
+"created by the system for which they are to be used, i.e. partitions to be "
+"used by &debian-gnu; should be created from within &d-i; and partitions to "
+"be used from another operating system should be created from there. &d-i; is "
+"capable of creating non-&arch-kernel; partitions, and partitions created "
+"this way usually work without problems when used in other operating systems, "
+"but there are a few rare corner cases in which this could cause problems, so "
+"if you want to be sure, use the native partitioning tools to create "
+"partitions for use by other operating systems."
+msgstr ""
+"パーティションの作成や削除は既存の OS からと同じように &d-i; からもできます。"
+"経験則ですが、パーティションはそれを使うシステムから作成すべきです。つまり、"
+"&debian-gnu; により使われるパーティションは &d-i; から作成すべきで、他の OS "
+"から利用するパーティションはそちらから作成すべきです。&d-i; には &arch-"
+"kernel; 以外のパーティションを作成する機能があり、そうやって作成したパーティ"
+"ションは他の OS から通常問題なく使えますが、ごくレアな状況でこれが問題となる"
+"可能性があります。そのため、確実を期するのであれば、他の OS で利用するパー"
+"ティションの作成にはネイティブのパーティション用ツールを使ってください。"
+
+#. Tag: para
+#: preparing.xml:935
+#, no-c-format
+msgid ""
+"If you are going to install more than one operating system on the same "
+"machine, you should install all other system(s) before proceeding with the "
+"&debian; installation. Windows and other OS installations may destroy your "
+"ability to start &debian;, or encourage you to reformat non-native "
+"partitions."
+msgstr ""
+"同じマシンに複数の OS をインストールするつもりでしたら、&debian; をインストー"
+"ルする前に、他の OS を全部先にインストールしておきましょう。Windows などの他"
+"の OS をインストールすると、&debian; を起動する機能が破壊されてしまったり、あ"
+"るいはその OS のものでないパーティションをフォーマットし直すよう促されたりす"
+"るからです。"
+
+#. Tag: para
+#: preparing.xml:943
+#, no-c-format
+msgid ""
+"You can recover from these actions or avoid them, but installing the native "
+"system first saves you trouble."
+msgstr ""
+"このような動作から復旧したり、そのような提案を断ったりすることはできますが、"
+"先にそちらのシステムをインストールしておけば、最初からトラブルを避けることが"
+"できます。"
+
+#. Tag: para
+#: preparing.xml:948
+#, no-c-format
+msgid ""
+"In order for OpenFirmware to automatically boot &debian-gnu; the &arch-"
+"parttype; partitions should appear before all other partitions on the disk, "
+"especially Mac OS X boot partitions. This should be kept in mind when pre-"
+"partitioning; you should create a &arch-parttype; placeholder partition to "
+"come <emphasis>before</emphasis> the other bootable partitions on the disk. "
+"(The small partitions dedicated to Apple disk drivers are not bootable.) You "
+"can delete the placeholder with the &debian; partition tools later during "
+"the actual install, and replace it with &arch-parttype; partitions."
+msgstr ""
+"OpenFirmware に &debian-gnu; を自動的に起動させるには、&arch-parttype; パー"
+"ティションを他の OS のパーティション (特に Mac OS X のブートパーティション) "
+"よりディスクの先頭近くに置かなければなりません。事前パーティション分割を行う"
+"ときにはこのことを心に留めておきましょう。&arch-parttype; 用に使う場所を埋め"
+"ておくパーティションを、他の起動可能なパーティションよりもディスクの "
+"<emphasis>前の方</emphasis> に作らなければなりません (Apple ディスクドライバ"
+"用の小さなパーティションは起動可能ではありません)。この場所埋めのパーティショ"
+"ンは、実際にインストールする際に、&debian; パーティションツールで削除し、実際"
+"の &arch-parttype; パーティションと置き換えることができます。"
+
+#. Tag: title
+#: preparing.xml:1024
+#, no-c-format
+msgid "Partitioning from SunOS"
+msgstr "SunOS からのパーティション分割"
+
+#. Tag: para
+#: preparing.xml:1026
+#, no-c-format
+msgid ""
+"It's perfectly fine to partition from SunOS; in fact, if you intend to run "
+"both SunOS and &debian; on the same machine, it is recommended that you "
+"partition using SunOS prior to installing &debian;. The Linux kernel "
+"understands Sun disk labels, so there are no problems there. SILO supports "
+"booting Linux and SunOS from any of EXT2 (Linux), UFS (SunOS), romfs or "
+"iso9660 (CDROM) partitions."
+msgstr ""
+"SunOS で行えば、パーティション作成はまったく問題なく行えます。同一のマシン上"
+"で SunOS と &debian; を運用する場合は、&debian; をインストールする前に、"
+"SunOS を用いてパーティションを作成しておくことをお勧めします。Linux カーネル"
+"は Sun のディスクラベルを認識できますので、この方法で問題ありません。SILO "
+"は、EXT2 (Linux), UFS (SunOS), romfs, iso9660 (CDROM) のいずれかのパーティ"
+"ションから Linux および SunOS を起動できます。"
+
+#. Tag: title
+#: preparing.xml:1038
+#, no-c-format
+msgid "Partitioning from Linux or another OS"
+msgstr "Linux や他の OS からのパーティション分割"
+
+#. Tag: para
+#: preparing.xml:1040
+#, no-c-format
+msgid ""
+"Whatever system you are using to partition, make sure you create a "
+"<quote>Sun disk label</quote> on your boot disk. This is the only kind of "
+"partition scheme that the OpenBoot PROM understands, and so it's the only "
+"scheme from which you can boot. In <command>fdisk</command>, the <keycap>s</"
+"keycap> key is used to create Sun disk labels. You only need to do this on "
+"drives that do not already have a Sun disk label. If you are using a drive "
+"that was previously formatted using a PC (or other architecture) you must "
+"create a new disk label, or problems with the disk geometry will most likely "
+"occur."
+msgstr ""
+"パーティション分割にどんなシステムを用いるにせよ、<quote>Sun disk label</"
+"quote> をブートディスクに作るのは忘れないようにしてください。これは OpenBoot "
+"PROM が認識する唯一のパーティション形式であり、すなわち起動可能な唯一の形式で"
+"もあります。<command>fdisk</command> を利用する場合は、<keycap>s</keycap> "
+"キーを使うと Sun disk label が作成できます。以前に PC (やその他のアーキテク"
+"チャ) でフォーマットされたドライブを使う場合は、新しいディスクラベルを作る必"
+"要があります。さもないと、まず間違いなくディスクジオメトリに関する問題が生じ"
+"るでしょう。"
+
+#. Tag: para
+#: preparing.xml:1052
+#, no-c-format
+msgid ""
+"You will probably be using <command>SILO</command> as your boot loader (the "
+"small program which runs the operating system kernel). <command>SILO</"
+"command> has certain requirements for partition sizes and location; see "
+"<xref linkend=\"partitioning\"/>."
+msgstr ""
+"おそらくブートローダ (オペレーティングシステムカーネルを起動するための小さな"
+"プログラム) には <command>SILO</command> を使うことになるでしょう。"
+"<command>SILO</command> にはパーティションサイズや格納位置に制限があります。"
+"<xref linkend=\"partitioning\"/> をご覧ください。"
+
+#. Tag: title
+#: preparing.xml:1067
+#, no-c-format
+msgid "Mac OS X Partitioning"
+msgstr "Mac OS X のパーティション分割"
+
+#. Tag: para
+#: preparing.xml:1069
+#, no-c-format
+msgid ""
+"The <application>Disk Utility</application> application can be found under "
+"the <filename>Utilities</filename> menu in Mac OS X Installer. It will not "
+"adjust existing partitions; it is limited to partitioning the entire disk at "
+"once."
+msgstr ""
+"Mac OS X インストーラの <filename>Utilities</filename> メニューに "
+"<application>Disk Utility</application> アプリケーションが入っているはずで"
+"す。これは既存のパーティションの調整は行いません。ディスク全体を一括でパー"
+"ティション処理することに限られます。"
+
+#. Tag: para
+#: preparing.xml:1075
+#, no-c-format
+msgid ""
+"Remember to create a placeholder partition for GNU/Linux, preferably "
+"positioned first in the disk layout. it doesn't matter what type it is, it "
+"will be deleted and replaced later inside the &debian-gnu; installer."
+msgstr ""
+"GNU/Linux で用いるところに、場所埋め用パーティションを作るのを忘れないでくだ"
+"さい。できればディスクの先頭に置きましょう。後で &debian-gnu; のインストーラ"
+"から、一度消して置き換えることになりますので、タイプは何でも構いません。"
+
+#. Tag: para
+#: preparing.xml:1081
+#, no-c-format
+msgid ""
+"&debian; installer partition table editing tools are compatible with OS X, "
+"but not with MacOS 9. If you are planning to use both MacOS 9 and OS X, it "
+"is best to install OS X and &debian; on one hard drive, and put MacOS 9 on a "
+"separate hard drive. Separate options for OS 9 and OS X will appear when "
+"holding the <keycap>option</keycap> key at boot time, and separate options "
+"can be installed in the <application>yaboot</application> boot menu as well."
+msgstr ""
+"&debian; インストーラのパーティションテーブル編集ツールは OS X とは互換性があ"
+"りますが MacOS 9 との互換性はありません。MacOS 9 と OS X の両方を使うつもりで"
+"あれば、OS X と &debian; を同じハードドライブにインストールし、MacOS 9 は別の"
+"ハードドライブにインストールするのが最善です。分離オプションは OS 9 と OS X "
+"では起動時に <keycap>option</keycap> キーを押していると現れます。分離オプショ"
+"ンのインストールは同様に <application>yaboot</application> ブートメニューでイ"
+"ンストールできます。"
+
+#. Tag: para
+#: preparing.xml:1091
+#, no-c-format
+msgid ""
+"GNU/Linux is unable to access information on UFS partitions, but can access "
+"HFS+ (aka MacOS Extended) partitions. OS X requires one of these two types "
+"for its boot partition. MacOS 9 can be installed on either HFS (aka MacOS "
+"Standard) or HFS+. To share information between the Mac OS X and GNU/Linux "
+"systems, an exchange partition is handy. HFS, HFS+ and MS-DOS FAT file "
+"systems are supported by MacOS 9, Mac OS X and GNU/Linux."
+msgstr ""
+"GNU/Linux は UFS パーティションの情報にはアクセスできませんが、HFS+ パーティ"
+"ション (MacOS 拡張パーティション) にはアクセスできます。OS X は、この 2 つの"
+"いずれかをブートパーティションに必要とします。MacOS 9 は HFS パーティション "
+"(MacOS 標準パーティション) か HFS+ にインストールできます。Mac OS X と GNU/"
+"Linux システムで情報を共有するには、情報交換用のパーティションを作るのが手軽"
+"です。HFS、HFS+、MS-DOS FAT ファイルシステムが MacOS 9、Mac OS X、Linux でサ"
+"ポートされています。"
+
+#. Tag: title
+#: preparing.xml:1111
+#, no-c-format
+msgid "Pre-Installation Hardware and Operating System Setup"
+msgstr "インストール前に行うハードウェア・OS の設定"
+
+#. Tag: para
+#: preparing.xml:1112
+#, no-c-format
+msgid ""
+"This section will walk you through pre-installation hardware setup, if any, "
+"that you will need to do prior to installing &debian;. Generally, this "
+"involves checking and possibly changing BIOS/system firmware settings for "
+"your system. The <quote>BIOS</quote> or <quote>system firmware</quote> is "
+"the core software used by the hardware; it is most critically invoked during "
+"the bootstrap process (after power-up)."
+msgstr ""
+"この節では、&debian; のインストールに先立って必要となるハードウェアの設定につ"
+"いて見ていきます。通常この作業では、システムの BIOS/システム用ファームウェア"
+"の設定をチェックし、場合によってはその設定を変更することになります。"
+"<quote>BIOS</quote> や<quote>システムファームウェア</quote>は、ハードウェアが"
+"利用する中核的なソフトウェアで、電源投入後のブートプロセスの間に起動される、"
+"最も重要なものです。"
+
+#. Tag: title
+#: preparing.xml:1127
+#, no-c-format
+msgid "Invoking the BIOS Set-Up Menu"
+msgstr "BIOS 設定メニューの起動"
+
+#. Tag: para
+#: preparing.xml:1129
+#, no-c-format
+msgid ""
+"The BIOS provides the basic functions needed to boot your machine and to "
+"allow your operating system to access your hardware. Your system provides a "
+"BIOS setup menu, which is used to configure the BIOS. To enter the BIOS "
+"setup menu you have to press a key or key combination after turning on the "
+"computer. Often it is the <keycap>Delete</keycap> or the <keycap>F2</keycap> "
+"key, but some manufacturers use other keys. Usually upon starting the "
+"computer there will be a message stating which key to press to enter the "
+"setup screen."
+msgstr ""
+"BIOS はマシンのブートに必要となる基本的機能を提供し、OS がハードウェアにアク"
+"セスできるようにするものです。これからインストールしようとしているマシンで"
+"も、BIOS を設定できるようなメニューがついていると思います。BIOS 設定メニュー"
+"に入るには、コンピュータの電源を入れてからキーを (一つまたは組み合わせて) 押"
+"しておく必要があります。多いのは <keycap>Delete</keycap> や <keycap>F2</"
+"keycap> キーですが、製造者によっては別のキーを使うこともあります。通常はコン"
+"ピュータの起動時にどのキーを押して設定画面に入るのか指示するメッセージが表示"
+"されるでしょう。"
+
+#. Tag: title
+#: preparing.xml:1143 preparing.xml:1487 preparing.xml:1663
+#, no-c-format
+msgid "Boot Device Selection"
+msgstr "ブートデバイスの選択"
+
+#. Tag: para
+#: preparing.xml:1145
+#, no-c-format
+msgid ""
+"Within the BIOS setup menu, you can select which devices shall be checked in "
+"which sequence for a bootable operating system. Possible choices usually "
+"include the internal harddisks, the CD/DVD-ROM drive and USB mass storage "
+"devices such as USB sticks or external USB harddisks. On modern systems "
+"there is also often a possibility to enable network booting via PXE."
+msgstr ""
+"BIOS 設定メニューで起動可能な OS をどのデバイスから順に探すのか選択できるよう"
+"になっています。通常、内蔵ハードドライブや CD/DVD-ROM ドライブ、USB メモリや"
+"外付け USB ハードディスクのような USB 大容量デバイスが選択できるでしょう。い"
+"まのシステムでは PXE 経由でネットワークからの起動ができるようになっているもの"
+"もよくあります。"
+
+#. Tag: para
+#: preparing.xml:1153
+#, no-c-format
+msgid ""
+"Depending on the installation media (CD/DVD ROM, USB stick, network boot) "
+"you have chosen you should enable the appropriate boot devices if they are "
+"not already enabled."
+msgstr ""
+"選択したインストール用メディア (CD/DVD ROM、USB メモリ、ネットワーク経由) に"
+"よりますが、適切な起動デバイスが有効になっていなければここで有効化してくださ"
+"い。"
+
+#. Tag: para
+#: preparing.xml:1159
+#, no-c-format
+msgid ""
+"Most BIOS versions allow you to call up a boot menu on system startup in "
+"which you select from which device the computer should start for the current "
+"session. If this option is available, the BIOS usually displays a short "
+"message like <quote>press <keycap>F12</keycap> for boot menu</quote> on "
+"system startup. The actual key used to select this menu varies from system "
+"to system; commonly used keys are <keycap>F12</keycap>, <keycap>F11</keycap> "
+"and <keycap>F8</keycap>. Choosing a device from this menu does not change "
+"the default boot order of the BIOS, i.e. you can start once from a USB stick "
+"while having configured the internal harddisk as the normal primary boot "
+"device."
+msgstr ""
+"ほとんどの BIOS で、システム起動時に起動メニューを呼び出してコンピュータがそ"
+"のセッションでどのデバイスから起動するか選べるようになっています。これが可能"
+"な場合は、通常システム起動時に <quote>press <keycap>F12</keycap> for boot "
+"menu</quote> のような短いメッセージを BIOS が表示します。実際にこのメニューに"
+"入るために使うキーはシステムにより様々ですが、よく使われるキーは "
+"<keycap>F12</keycap> や <keycap>F11</keycap>、<keycap>F8</keycap> がありま"
+"す。このメニューからデバイスを選択した場合は BIOS のデフォルトの順は変更され"
+"ません。つまり、内蔵ハードディスクを通常第一の起動デバイスに設定している状態"
+"で USB メモリから一度だけ起動することができます。"
+
+#. Tag: para
+#: preparing.xml:1173
+#, no-c-format
+msgid ""
+"If your BIOS does not provide you with a boot menu to do ad-hoc choices of "
+"the current boot device, you will have to change your BIOS setup to make the "
+"device from which the &d-i; shall be booted the primary boot device."
+msgstr ""
+"BIOS がその時限りの起動デバイス選択メニューを提供していない場合は、BIOS の設"
+"定を変更して &d-i; を起動するデバイスを第一の起動デバイスにする必要がありま"
+"す。"
+
+#. Tag: para
+#: preparing.xml:1179
+#, fuzzy, no-c-format
+#| msgid ""
+#| "Unfortunately some computers contain buggy BIOS versions. Booting &d-i; "
+#| "from a USB stick might not work even if there is an appropriate option in "
+#| "the BIOS setup menu and the stick is selected as the primary boot device. "
+#| "On some of these systems using a USB stick as boot medium is impossible; "
+#| "others can be tricked into booting from the stick by changing the device "
+#| "type in the BIOS setup from the default <quote>USB harddisk</quote> or "
+#| "<quote>USB stick</quote> to <quote>USB ZIP</quote> or <quote>USB CDROM</"
+#| "quote>. <phrase condition=\"isohybrid-supported\"> In particular if you "
+#| "use an isohybrid CD/DVD image on a USB stick (see <xref linkend=\"usb-"
+#| "copy-isohybrid\"/>), changing the device type to <quote>USB CDROM</quote> "
+#| "helps on some BIOSes which will not boot from a USB stick in USB harddisk "
+#| "mode.</phrase>"
+msgid ""
+"Unfortunately some computers contain buggy BIOS versions. Booting &d-i; from "
+"a USB stick might not work even if there is an appropriate option in the "
+"BIOS setup menu and the stick is selected as the primary boot device. On "
+"some of these systems using a USB stick as boot medium is impossible; others "
+"can be tricked into booting from the stick by changing the device type in "
+"the BIOS setup from the default <quote>USB harddisk</quote> or <quote>USB "
+"stick</quote> to <quote>USB ZIP</quote> or <quote>USB CDROM</quote>. <phrase "
+"condition=\"isohybrid-supported\"> In particular if you use an isohybrid CD/"
+"DVD image on a USB stick (see <xref linkend=\"usb-copy-isohybrid\"/>), "
+"changing the device type to <quote>USB CDROM</quote> helps on some BIOSes "
+"which will not boot from a USB stick in USB harddisk mode.</phrase> You may "
+"need to configure your BIOS to enable <quote>USB legacy support</quote>."
+msgstr ""
+"残念ながら一部のコンピュータには BIOS の動作がおかしいものがあります。BIOS 設"
+"定メニューにしかるべきオプションがあって USB メモリが第一の起動デバイスに選択"
+"されていても USB メモリからの &d-i; の起動ができないかもしれません。こういっ"
+"たシステムの一部では USB メモリを起動メディアとして使うことができません。"
+"BIOS 設定のデバイスタイプをデフォルトの <quote>USB ハードディスク</quote>や "
+"<quote>USB メモリ</quote> から <quote>USB ZIP</quote> や <quote>USB CDROM</"
+"quote> に変更することにより BIOS を騙して USB メモリから起動することができる"
+"ものもあります。<phrase condition=\"isohybrid-supported\">特に isohybrid CD/"
+"DVD イメージを USB メモリで使う場合 (<xref linkend=\"usb-copy-isohybrid\"/> "
+"参照)、USB ハードディスクモードで USB メモリから起動しない BIOS では、デバイ"
+"スタイプを <quote>USB CDROM</quote> に変更すると起動できることがあります。</"
+"phrase>"
+
+#. Tag: para
+#: preparing.xml:1195
+#, no-c-format
+msgid ""
+"If you cannot manipulate the BIOS to boot directly from a USB stick you "
+"still have the option of using an ISO copied to the stick. Boot &d-i; using "
+"<xref linkend=\"boot-drive-files\"/> and, after scanning the hard drives for "
+"an installer ISO image, select the USB device and choose an installation "
+"image."
+msgstr ""
+"BIOS を操作して USB メモリから直接起動することができない場合でも、まだ USB メ"
+"モリにコピーした ISO を使うという選択があります。<xref linkend=\"boot-drive-"
+"files\"/> を使って &d-i; を起動し、インストーラの ISO イメージを探してハード"
+"ドライブを走査した後で USB デバイスを選択し、インストール用イメージを選びま"
+"す。"
+
+#. Tag: title
+#: preparing.xml:1213
+#, no-c-format
+msgid "Invoking OpenFirmware"
+msgstr "OpenFirmware の起動"
+
+#. Tag: para
+#: preparing.xml:1214
+#, no-c-format
+msgid ""
+"There is normally no need to set up the BIOS (called OpenFirmware) on &arch-"
+"title; systems. PReP and CHRP are equipped with OpenFirmware, but "
+"unfortunately, the means you use to invoke it vary from manufacturer to "
+"manufacturer. You'll have to consult the hardware documentation which came "
+"with your machine."
+msgstr ""
+"普通 &arch-title; システムでは BIOS (OpenFirmware と呼ばれます) の設定をする"
+"必要はありません。OpenFirmware は PReP と CHRP を備えていますが、残念ながらこ"
+"の起動方法はメーカーによって千差万別です。マシンに付属の、ハードウェアの文書"
+"にあたる必要があるでしょう。"
+
+#. Tag: para
+#: preparing.xml:1222
+#, no-c-format
+msgid ""
+"On &arch-title; Macintoshes, you invoke OpenFirmware with "
+"<keycombo><keycap>Command (cloverleaf/Apple)</keycap><keycap>Option</"
+"keycap><keycap>o</keycap><keycap>f</keycap></keycombo> while booting. "
+"Generally it will check for these keystrokes after the chime, but the exact "
+"timing varies from model to model. See <ulink url=\"&url-netbsd-powerpc-faq;"
+"\"></ulink> for more hints."
+msgstr ""
+"&arch-title; の Macintosh では、OpenFirmware はブート時に "
+"<keycombo><keycap>Command (cloverleaf/Apple)</keycap> <keycap>Option </"
+"keycap> <keycap>o</keycap> <keycap>f</keycap></keycombo> で起動できます。通常"
+"はチャイムの後でこのキー入力がされているかを調べますが、正確なタイミングはモ"
+"デルによって様々です。より詳しいヒントは <ulink url=\"&url-netbsd-powerpc-"
+"faq;\"></ulink> をご覧ください。"
+
+#. Tag: para
+#: preparing.xml:1230
+#, no-c-format
+msgid ""
+"The OpenFirmware prompt looks like this: <informalexample><screen>\n"
+"ok\n"
+"0 &gt;\n"
+"</screen></informalexample> Note that on older model &arch-title; Macs, the "
+"default and sometimes hardwired I/O for OpenFirmware user interaction is "
+"through the serial (modem) port. If you invoke OpenFirmware on one of these "
+"machines, you will just see a black screen. In that case, a terminal program "
+"running on another computer, connected to the modem port, is needed to "
+"interact with OpenFirmware."
+msgstr ""
+"OpenFirmware のプロンプトは次のようになります。<informalexample><screen>\n"
+"ok\n"
+"0 &gt;\n"
+"</screen></informalexample> &arch-title; Mac の古いモデルでは、OpenFirmware "
+"とユーザとの通信は、デフォルトでシリアル (モデム) ポート経由になっていること"
+"があります (場合によっては変更できないこともあります)。このようなマシンで "
+"OpenFirmware を起動すると、単に真っ黒な画面が表示されることになります。この場"
+"合 OpenFirmware と通信するには、別のコンピュータで端末プログラムを動かして、"
+"それをモデムポートにつなぐ必要があります。"
+
+#. Tag: para
+#: preparing.xml:1243
+#, no-c-format
+msgid ""
+"The OpenFirmware on OldWorld Beige G3 machines, OF versions 2.0f1 and 2.4, "
+"is broken. These machines will most likely not be able to boot from the hard "
+"drive unless the firmware is patched. A firmware patch is included in the "
+"<application>System Disk 2.3.1</application> utility, available from Apple "
+"at <ulink url=\"ftp://ftp.apple.com/developer/macosxserver/utilities/"
+"SystemDisk2.3.1.smi.bin\"></ulink>. After unpacking the utility in MacOS, "
+"and launching it, select the <guibutton>Save</guibutton> button to have the "
+"firmware patches installed to nvram."
+msgstr ""
+"OldWorld Beige G3 マシンでは、OpenFirmware の 2.0f1 と 2.4 は使い物になりませ"
+"ん。ファームウェアにパッチを当てないと、このようなマシンではまずハードディス"
+"クからのブートはできません。ファームウェアのパッチは <application>System "
+"Disk 2.3.1</application> ユーティリティに含まれており、Apple の <ulink url="
+"\"ftp://ftp.apple.com/developer/macosxserver/utilities/SystemDisk2.3.1.smi."
+"bin\"></ulink> から入手できます。このユーティリティを MacOS から展開し、実行"
+"して <guibutton>Save</guibutton> ボタンを押すと、ファームウェアのパッチが "
+"nvram にインストールされます。"
+
+#. Tag: title
+#: preparing.xml:1259
+#, no-c-format
+msgid "How to update bare metal ppc64el firmware"
+msgstr "ベアメタル ppc64el ファームウェアの更新方法"
+
+#. Tag: para
+#: preparing.xml:1260
+#, no-c-format
+msgid ""
+"This is an excerpt from <ulink url=\"&url-ibm-powerkvm;\">IBM PowerKVM on "
+"IBM POWER8</ulink>."
+msgstr ""
+"これは <ulink url=\"&url-ibm-powerkvm;\">IBM PowerKVM on IBM POWER8</ulink> "
+"からの抜粋です。"
+
+#. Tag: para
+#: preparing.xml:1265
+#, no-c-format
+msgid ""
+"Open Power Abstraction Layer (OPAL) is the system firmware in the stack of "
+"POWER processor-based server."
+msgstr ""
+"Open Power Abstraction Layer (OPAL) は POWER プロセッサベースのサーバ向けのシ"
+"ステムファームウェアです。"
+
+#. Tag: para
+#: preparing.xml:1270
+#, no-c-format
+msgid ""
+"There may be instances when the user might have to upgrade the Power Systems "
+"firmware to a more recent level to acquire new features or additional "
+"support for devices."
+msgstr ""
+"新しい機能やデバイスの追加サポートを得るためにユーザが Power Systems のファー"
+"ムウェアをもっと新しいものにアップグレードしないといけないような状況があるか"
+"もしれません。"
+
+#. Tag: para
+#: preparing.xml:1276
+#, no-c-format
+msgid "Make sure that the following requirements are met:"
+msgstr "以下の要件を満たすことを確認してください:"
+
+#. Tag: para
+#: preparing.xml:1281
+#, no-c-format
+msgid "an OS to be running on the system;"
+msgstr "システムで実行するOS"
+
+#. Tag: para
+#: preparing.xml:1283
+#, no-c-format
+msgid "the .img file of the OPAL level that the user needs to update to;"
+msgstr "ユーザが更新を必要としている OPAL レベルの .img ファイル"
+
+#. Tag: para
+#: preparing.xml:1285
+#, no-c-format
+msgid "the machine isn't under HMC control."
+msgstr "マシンが HMC の制御下にない"
+
+#. Tag: para
+#: preparing.xml:1289
+#, no-c-format
+msgid ""
+"Power Systems has two sides of flash to boot firmware from, namely permanent "
+"and temporary. This provides a way to test firmware updates on the temporary "
+"side of the flash before committing the tested changes to the permanent "
+"side, thereby committing the new updates."
+msgstr ""
+"Power システムにはファームウェアをブートするフラッシュが恒久的と一時的の2種類"
+"あります。これにより、新しい更新を一時的な側のフラッシュに一旦送ることで、変"
+"更を恒久的な側のフラッシュに送る前にファームウェアの更新をテストできる方法を"
+"提供します。"
+
+#. Tag: para
+#: preparing.xml:1296
+#, no-c-format
+msgid "Perform the following steps for the update:"
+msgstr "更新には以下の手順を実行します:"
+
+#. Tag: para
+#: preparing.xml:1301
+#, no-c-format
+msgid ""
+"Save the level of the existing firmware before really updating. In ASM, in "
+"the system menu, click <command>Service Aids -&gt; Service Processor Command "
+"Line</command>, and run the following command:"
+msgstr ""
+"実際に更新する前に既存レベルのファームウェアを保存します。ASM のシステムメ"
+"ニューから <command>Service Aids -&gt; Service Processor Command Line</"
+"command> をクリックし、以下のコマンドを実行します:"
+
+#. Tag: screen
+#: preparing.xml:1305
+#, no-c-format
+msgid "cupdcmd -f"
+msgstr "cupdcmd -f"
+
+#. Tag: para
+#: preparing.xml:1306
+#, no-c-format
+msgid ""
+"Download the .img file of the level of firmware to be updated to a location "
+"in the host filesystem. Refer to <ulink url=\"&url-ibm-fixcentral;\">IBM Fix "
+"Central</ulink> for downloading the image file."
+msgstr ""
+"更新するファームウェアレベルの .img ファイルをホストのファイルシステム上にダ"
+"ウンロードします。イメージファイルのダウンロードについては <ulink url=\"&url-"
+"ibm-fixcentral;\">IBM Fix Central</ulink> を参照してください。"
+
+#. Tag: para
+#: preparing.xml:1311
+#, no-c-format
+msgid ""
+"Verify the image downloaded by running the following command and save the "
+"output."
+msgstr ""
+"以下のコマンドを実行して出力を保存し、ダウンロードしたイメージを検証します。"
+
+#. Tag: screen
+#: preparing.xml:1314
+#, no-c-format
+msgid "$update_flash -v -f &lt;file_name.img&gt;"
+msgstr "$update_flash -v -f &lt;ファイル名.img&gt;"
+
+#. Tag: para
+#: preparing.xml:1316
+#, no-c-format
+msgid "Update the firmware by running the following command."
+msgstr "以下のコマンドを実行してファームウェアを更新します。"
+
+#. Tag: screen
+#: preparing.xml:1318
+#, no-c-format
+msgid "$update_flash -f &lt;file_name.img&gt;"
+msgstr "$update_flash -f &lt;ファイル名.img&gt;"
+
+#. Tag: para
+#: preparing.xml:1324
+#, no-c-format
+msgid ""
+"The command reboots the system and therefore, sessions if any, would be lost."
+msgstr ""
+"このコマンドはシステムを再起動するため、セッションがある場合には失われます。"
+
+#. Tag: para
+#: preparing.xml:1327
+#, no-c-format
+msgid "Do not reboot or switch off the system until it is back."
+msgstr ""
+"システムが戻ってくるまで再起動や電源を落とすことのないようにしてください。"
+
+#. Tag: para
+#: preparing.xml:1334
+#, no-c-format
+msgid ""
+"Verify the updated firmware level of the temporary side of the flash as in "
+"step 1."
+msgstr ""
+"手順1のようにして一時的な側のフラッシュの更新されたファームウェアレベルを検証"
+"します。"
+
+#. Tag: para
+#: preparing.xml:1337
+#, no-c-format
+msgid ""
+"In case the update has to be reverted, the user can do so by running this "
+"command: <informalexample><screen>\n"
+"    $update_flash -r\n"
+"</screen></informalexample> Rejection would reject only the temporary side "
+"of the flash. Therefore, the new level should be committed to the permanent "
+"side only after thorough testing of the new firmware."
+msgstr ""
+"更新を差し戻さないといけない場合はユーザが: <informalexample><screen>\n"
+"    $update_flash -r\n"
+"</screen></informalexample> を実行することで戻せます。この差し戻しで戻るのは"
+"一時的な側のフラッシュだけです。したがって、新しいレベルのファームウェアを恒"
+"久的な側に送るのは新しいファームウェアについて徹底したテストを行った後にのみ"
+"にすべきです。"
+
+#. Tag: para
+#: preparing.xml:1344
+#, no-c-format
+msgid ""
+"The new updated level can be committed to the permanent side of the flash by "
+"running the following command."
+msgstr ""
+"以下のコマンドを実行することで、更新された新しいレベルのファームウェアを恒久"
+"的な側のフラッシュに送れます。"
+
+#. Tag: screen
+#: preparing.xml:1347
+#, no-c-format
+msgid "$update_flash -c"
+msgstr "$update_flash -c"
+
+#. Tag: title
+#: preparing.xml:1355
+#, no-c-format
+msgid "Updating KVM guest firmware (SLOF)"
+msgstr "KVM ゲストファームウェア (SLOF) の更新"
+
+#. Tag: para
+#: preparing.xml:1356
+#, no-c-format
+msgid ""
+"Slimline Open Firmware (SLOF) is an implementation of the IEEE 1275 "
+"standard. It can be used as partition firmware for pSeries machines running "
+"on QEMU or KVM."
+msgstr ""
+"Slimline Open Firmware (SLOF) は IEEE 1275 標準の実装です。QEMU または KVM を"
+"実行している pSeries マシンのパーティションファームウェアとして利用できます。"
+
+#. Tag: para
+#: preparing.xml:1363
+#, no-c-format
+msgid ""
+"The package qemu-slof is, in fact, a dependency of package qemu-system-ppc "
+"(which also provides the virtual package qemu-system-ppc64), and can be "
+"installed or updated via <command>apt</command> tool on Debian-based "
+"distros. Like so: <informalexample><screen>\n"
+"# apt install qemu-slof\n"
+"</screen></informalexample> SLOF can also be installed into rpm-based "
+"distribution systems, given the proper repository or rpm package. "
+"Additionally, the upstream source code is available at <ulink url=\"http://"
+"github.com/leilihh/SLOF\"></ulink>."
+msgstr ""
+"パッケージ qemu-slof は実際、パッケージ qemu-system-ppc (これは仮想パッケー"
+"ジ qemu-system-ppc64 も提供しています) が依存しているパッケージで、Debian "
+"ベースのディストリビューションでは <command>apt</command> ツールで "
+"<informalexample><screen>\n"
+"# apt install qemu-slof\n"
+"</screen></informalexample> のようにしてインストール、あるいは更新できます。"
+"適切なリポジトリや rpm パッケージがあれば rpm ベースのディストリビューション"
+"を採用したシステムにも SLOF をインストールできます。また、上流ソースコードは "
+"<ulink url=\"http://github.com/leilihh/SLOF\"></ulink> から利用できるように"
+"なっています。"
+
+#. Tag: para
+#: preparing.xml:1378
+#, no-c-format
+msgid ""
+"Thus, one can use a different SLOF file rather than the default, when "
+"running <command>qemu-system</command>, by adding the command line argument "
+"<userinput>-bios &lt;slof_file&gt; </userinput> when starting qemu."
+msgstr ""
+"そのためデフォルトとは異なる SLOF ファイルを使えます。<command>qemu-system</"
+"command> を実行している場合は QEMU 起動時にコマンドライン引数 <userinput>-"
+"bios &lt;SLOFファイル&gt; </userinput> を追加します。"
+
+#. Tag: title
+#: preparing.xml:1388
+#, no-c-format
+msgid "Updating PowerKVM hypervisor"
+msgstr "PowerKVM ハイパーバイザの更新"
+
+#. Tag: title
+#: preparing.xml:1389
+#, no-c-format
+msgid "Instructions for Netboot installation"
+msgstr "Netboot インストールについての指示"
+
+#. Tag: para
+#: preparing.xml:1390
+#, no-c-format
+msgid ""
+"You will need a DHCP/TFTP (BOOTP) server, as well as a web server. After "
+"downloading ibm-powerkvm-*-ppc64-service-*.iso, mount loop it and unpack it "
+"into some directory within your HTTP server www root structure (say "
+"wwwroot): <informalexample><screen>\n"
+"# cd &lt;directory-where-the-iso-is&gt;\n"
+"# mkdir ./iso\n"
+"# sudo mount -o loop ibm-powerkvm-*-ppc64-service-*.iso ./iso\n"
+"# cp -a ./iso/* &lt;path-to-wwwroot&gt;\n"
+"</screen></informalexample> Create the petitboot.conf file in a directory "
+"under your tftproot, say /tftproot/powerkvm, with the following contents: "
+"<informalexample><screen>\n"
+"label PowerKVM Automated Install\n"
+"kernel http://YOUR-SERVER-IP/SOME-PATH-TO-wwwroot/ppc/ppc64/vmlinuz\n"
+"initrd http://YOUR-SERVER-IP/SOME-PATH-TO-wwwroot/ppc/ppc64/initrd.img\n"
+"append root=live:http://YOUR-SERVER-IP/SOME-PATH-TO-wwwroot/LiveOS/squashfs."
+"img repo=http://YOUR-SERVER-IP/SOME-PATH-TO-wwwroot/packages rd.dm=0 rd.md=0 "
+"console=hvc0 console=tty0\n"
+"</screen></informalexample> Editing your dhcpd.conf, set this directive at "
+"the beginning: <informalexample><screen>\n"
+"option conf-file code 209 = text;\n"
+"</screen></informalexample> Add the system directive: "
+"<informalexample><screen>\n"
+"host &lt;your-system&gt; {\n"
+"    hardware ethernet &lt;system macaddr&gt;\n"
+"    fixed-address &lt;system ip&gt;;\n"
+"    option host-name \"&lt;system hostname&gt;\";\n"
+"    option conf-file \"&lt;powerkvm/petitboot.conf&gt;\";\n"
+" }\n"
+"</screen></informalexample> Reboot the dhcp server."
+msgstr ""
+"DHCP/TFTP (BOOTP) サーバとウェブサーバが必要です。ibm-powerkvm-*-ppc64-"
+"service-*.iso をダウンロードし、ループデバイスとしてマウント、それから HTTP "
+"サーバの www root 構造 (wwwroot としましょう) 中のディレクトリに展開します: "
+"<informalexample><screen>\n"
+"# cd &lt;ISOのあるディレクトリ&gt;\n"
+"# mkdir ./iso\n"
+"# sudo mount -o loop ibm-powerkvm-*-ppc64-service-*.iso ./iso\n"
+"# cp -a ./iso/* &lt;wwwrootのパス&gt;\n"
+"</screen></informalexample> tftproot 以下のディレクトリ、例えば /tftproot/"
+"powerkvm に petitboot.conf ファイルを以下の内容で作成します: "
+"<informalexample><screen>\n"
+"label PowerKVM Automated Install\n"
+"kernel http://サーバのIPアドレス/wwwrootからのパス/ppc/ppc64/vmlinuz\n"
+"initrd http://サーバのIPアドレス/wwwrootからのパス/ppc/ppc64/initrd.img\n"
+"append root=live:http://サーバのIPアドレス/wwwrootからのパス/LiveOS/squashfs."
+"img repo=http://サーバのIPアドレス/wwwrootからのパス/packages rd.dm=0 rd."
+"md=0 console=hvc0 console=tty0\n"
+"</screen></informalexample> dhcpd.conf を編集して冒頭にこのディレクティブを追"
+"加します: <informalexample><screen>\n"
+"option conf-file code 209 = text;\n"
+"</screen></informalexample> システムのディレクティブを追加します: "
+"<informalexample><screen>\n"
+"host &lt;システム名&gt; {\n"
+"    hardware ethernet &lt;システムのMACアドレス&gt;\n"
+"    fixed-address &lt;システムのIPアドレス&gt;;\n"
+"    option host-name \"&lt;システムのホスト名&gt;\";\n"
+"    option conf-file \"&lt;powerkvm/petitboot.conf&gt;\";\n"
+" }\n"
+"</screen></informalexample> dhcp サーバを再起動します。"
+
+#. Tag: para
+#: preparing.xml:1414
+#, no-c-format
+msgid "Boot your PowerLinux machine."
+msgstr "PowerLinux マシンをブートします。"
+
+#. Tag: para
+#: preparing.xml:1418
+#, no-c-format
+msgid ""
+"There should be the following option at petitboot (select it): "
+"<informalexample><screen>\n"
+"\"Power KVM Automated Install\" \n"
+"</screen></informalexample> The installer menu should appear automatically."
+msgstr ""
+"petitboot には以下のオプションがあるはずです (選択してください): "
+"<informalexample><screen>\n"
+"\"Power KVM Automated Install\" \n"
+"</screen></informalexample> インストーラメニューが自動的に表示されるはずで"
+"す。"
+
+#. Tag: title
+#: preparing.xml:1429
+#, no-c-format
+msgid "Instructions for DVD"
+msgstr "DVDについての指示"
+
+#. Tag: para
+#: preparing.xml:1430
+#, no-c-format
+msgid ""
+"Boot the ISO ibm-powerkvm-*-ppc64-service-*.iso (either burn a DVD or make "
+"it virtual if using QEMU) and simply wait for the boot."
+msgstr ""
+"ISO ibm-powerkvm-*-ppc64-service-*.iso をブート (DVD に書き込むか、QEMU を"
+"使っている場合は仮想化) してブートを待ちます"
+
+#. Tag: para
+#: preparing.xml:1433
+#, no-c-format
+msgid ""
+"There should be the following option at petitboot (select it): "
+"<informalexample><screen>\n"
+"\"POWERKVM_LIVECD\" \n"
+"</screen></informalexample> The installer menu should appear automatically."
+msgstr ""
+"petitboot には以下のオプションがあるはずです (選択してください): "
+"<informalexample><screen>\n"
+"\"POWERKVM_LIVECD\" \n"
+"</screen></informalexample> インストーラメニューが自動的に表示されるはずで"
+"す。"
+
+#. Tag: title
+#: preparing.xml:1454
+#, no-c-format
+msgid "Invoking OpenBoot"
+msgstr "OpenBoot の起動"
+
+#. Tag: para
+#: preparing.xml:1456
+#, no-c-format
+msgid ""
+"OpenBoot provides the basic functions needed to boot the &arch-title; "
+"architecture. This is rather similar in function to the BIOS in the x86 "
+"architecture, although much nicer. The Sun boot PROMs have a built-in forth "
+"interpreter which lets you do quite a number of things with your machine, "
+"such as diagnostics and simple scripts."
+msgstr ""
+"OpenBoot は、&arch-title; アーキテクチャのブートに必要となる基本的な機能を提"
+"供するものです。これは x86 アーキテクチャに置ける BIOS と機能的には似ています"
+"が、ずっと優れています。Sun のブート PROM には Forth のインタープリタが組み込"
+"まれており、これを使うと診断や簡単なスクリプトの実行など、コンピュータに対し"
+"て様々なことが行えます。"
+
+#. Tag: para
+#: preparing.xml:1464
+#, no-c-format
+msgid ""
+"To get to the boot prompt you need to hold down the <keycap>Stop</keycap> "
+"key (on older type 4 keyboards, use the <keycap>L1</keycap> key, if you have "
+"a PC keyboard adapter, use the <keycap>Break</keycap> key) and press the "
+"<keycap>A</keycap> key. The boot PROM will give you a prompt, either "
+"<userinput>ok</userinput> or <userinput>&gt;</userinput>. It is preferred to "
+"have the <userinput>ok</userinput> prompt. So if you get the old style "
+"prompt, hit the <keycap>n</keycap> key to get the new style prompt."
+msgstr ""
+"ブートプロンプトを呼び出すには、<keycap>Stop</keycap> キー (Type 4 キーボード"
+"より古いものでは <keycap>L1</keycap> キー、また PC キーボードアダプタを持って"
+"いるなら <keycap>Break</keycap> キー) を押しながら <keycap>A</keycap> キーを"
+"押してください。ブート PROM は <userinput>ok</userinput> あるいは "
+"<userinput>&gt;</userinput> というプロンプトを表示します。<userinput>ok</"
+"userinput> というプロンプトの方を好まれる方が多いようです。古い方のプロンプト"
+"が表示された場合は、<keycap>n</keycap> キーを押すと新しい方のプロンプトになり"
+"ます。"
+
+#. Tag: para
+#: preparing.xml:1476
+#, no-c-format
+msgid ""
+"If you are using a serial console, send a break to the machine. With "
+"Minicom, use <keycap>Ctrl-A F</keycap>, with cu, hit <keycap>Enter</keycap>, "
+"then type <userinput>%~break</userinput>. Consult the documentation of your "
+"terminal emulator if you are using a different program."
+msgstr ""
+"シリアルコンソールを使用している場合、マシンに break を送信してください。"
+"Minicom では <keycap>Ctrl-A F</keycap> を使用します。cu では <keycap>Enter</"
+"keycap> を押して、<userinput>%~break</userinput> と入力してください。その他の"
+"プログラムを使用している場合は、その端末エミュレータの文書を参照してくださ"
+"い。"
+
+#. Tag: para
+#: preparing.xml:1489
+#, no-c-format
+msgid ""
+"You can use OpenBoot to boot from specific devices, and also to change your "
+"default boot device. However, you need to know some details about how "
+"OpenBoot names devices; it's considerably different from Linux device "
+"naming, described in <xref linkend=\"device-names\"/>. Also, the command "
+"will vary a bit, depending on what version of OpenBoot you have. More "
+"information about OpenBoot can be found in the <ulink url=\"&url-openboot;"
+"\">Sun OpenBoot Reference</ulink>."
+msgstr ""
+"OpenBoot を使うと、特定のデバイスから起動したり、デフォルトのブートデバイスを"
+"変更したりできます。しかしこのためには、OpenBoot におけるデバイスの呼び方につ"
+"いて、ある程度詳しく知っておく必要があります。これは、<xref linkend=\"device-"
+"names\"/> で説明した Linux におけるデバイスの命名法とはかなり異なっています。"
+"またコマンドも OpenBoot のバージョンによって少々異なります。OpenBoot に関する"
+"より詳細な情報は、<ulink url=\"&url-openboot;\">Sun OpenBoot Reference</"
+"ulink> にあります。"
+
+#. Tag: para
+#: preparing.xml:1499
+#, no-c-format
+msgid ""
+"Typically, with newer revisions, you can use OpenBoot devices such as "
+"<quote>floppy</quote>, <quote>cdrom</quote>, <quote>net</quote>, "
+"<quote>disk</quote>, or <quote>disk2</quote>. These have the obvious "
+"meanings; the <quote>net</quote> device is for booting from the network. "
+"Additionally, the device name can specify a particular partition of a disk, "
+"such as <quote>disk2:a</quote> to boot disk2, first partition. Full OpenBoot "
+"device names have the form: <informalexample> <screen>\n"
+"<replaceable>driver-name</replaceable>@\n"
+"<replaceable>unit-address</replaceable>:\n"
+"<replaceable>device-arguments</replaceable>\n"
+"</screen></informalexample> In older revisions of OpenBoot, device naming is "
+"a bit different: the floppy device is called <quote>/fd</quote>, and SCSI "
+"disk devices are of the form <quote>sd(<replaceable>controller</"
+"replaceable>, <replaceable>disk-target-id</replaceable>, <replaceable>disk-"
+"lun</replaceable>)</quote>. The command <userinput>show-devs</userinput> in "
+"newer OpenBoot revisions is useful for viewing the currently configured "
+"devices. For full information, whatever your revision, see the <ulink url="
+"\"&url-openboot;\">Sun OpenBoot Reference</ulink>."
+msgstr ""
+"新しい版では、たいていの場合 <quote>floppy</quote>, <quote>cdrom</quote>, "
+"<quote>net</quote>, <quote>disk</quote>, <quote>disk2</quote> などの "
+"OpenBoot デバイスが使えます。それぞれ文字通りの意味です。例えば <quote>net</"
+"quote> デバイスはネットワークからの起動用です。さらに、デバイス名では特定の"
+"ディスク・特定のパーティションを指定することもできます。例えば第 2 ディスクの"
+"第 1 パーティションから起動するには <quote>disk2:a</quote> のように指定しま"
+"す。OpenBoot の完全なデバイス名は以下のようになります。<informalexample> "
+"<screen>\n"
+"<replaceable>driver-name</replaceable>@\n"
+"<replaceable>unit-address</replaceable>:\n"
+"<replaceable>device-arguments</replaceable>\n"
+"</screen></informalexample> OpenBoot の古い版では、デバイス名の付け方が若干異"
+"なります。フロッピーデバイスは <quote>/fd</quote> となり、SCSI ディスクデバイ"
+"スの形式は <quote>sd(<replaceable>controller</replaceable>, "
+"<replaceable>disk-target-id</replaceable>, <replaceable>disk-lun</"
+"replaceable>)</quote> となります。新しい版の OpenBoot には <userinput>show-"
+"devs</userinput> というコマンドがあり、これは現在設定されているデバイスを見る"
+"のに便利です。どの版を使うにせよ、完全な情報は <ulink url=\"&url-openboot;"
+"\">Sun OpenBoot Reference</ulink> をご覧ください。"
+
+#. Tag: para
+#: preparing.xml:1522
+#, no-c-format
+msgid ""
+"To boot from a specific device, use the command <userinput>boot "
+"<replaceable>device</replaceable></userinput>. You can set this behavior as "
+"the default using the <userinput>setenv</userinput> command. However, the "
+"name of the variable to set changed between OpenBoot revisions. In OpenBoot "
+"1.x, use the command <userinput>setenv boot-from <replaceable>device</"
+"replaceable></userinput>. In later revisions of OpenBoot, use the command "
+"<userinput>setenv boot-device <replaceable>device</replaceable></userinput>. "
+"Note, this is also configurable using the <command>eeprom</command> command "
+"on Solaris, or modifying the appropriate files in <filename>/proc/openprom/"
+"options/</filename>, for example under Linux: <informalexample><screen>\n"
+"# echo disk1:1 &gt; /proc/openprom/options/boot-device\n"
+"</screen></informalexample> and under Solaris:"
+msgstr ""
+"特定のデバイスから起動するには、<userinput>boot<replaceable>デバイス名</"
+"replaceable></userinput> というコマンドを使ってください。<userinput>setenv</"
+"userinput> コマンドを使えば、その動作をデフォルトに設定することができます。し"
+"かし設定する変数名は OpenBoot のリビジョンによって異なります。OpenBoot 1.x で"
+"は、<userinput>setenv boot-from<replaceable>デバイス名</replaceable></"
+"userinput> というコマンドを使います。それ以降の版の OpenBoot では "
+"<userinput>setenv boot-device<replaceable>デバイス名</replaceable></"
+"userinput> というコマンドを使います。なおこの設定は、Solaris の "
+"<command>eeprom</command> コマンドを使ったり、<filename>/proc/openprom/"
+"options/</filename> の適当なファイルを変更して行います。例として Linux からな"
+"ら <informalexample><screen>\n"
+"# echo disk1:1 &gt; /proc/openprom/options/boot-device\n"
+"</screen></informalexample> Solaris では以下のようにしてください。"
+
+#. Tag: screen
+#: preparing.xml:1541
+#, no-c-format
+msgid "eeprom boot-device=disk1:1"
+msgstr "eeprom boot-device=disk1:1"
+
+#. Tag: title
+#: preparing.xml:1551
+#, no-c-format
+msgid "BIOS Setup"
+msgstr "BIOS 設定"
+
+#. Tag: para
+#: preparing.xml:1552
+#, no-c-format
+msgid ""
+"In order to install &debian-gnu; on a &arch-title; or zSeries machine you "
+"have first boot a kernel into the system. The boot mechanism of this "
+"platform is inherently different to other ones, especially from PC-like "
+"systems: there are no floppy devices available at all. You will notice "
+"another big difference while you work with this platform: most (if not all) "
+"of the time you will work remote, with the help of some client session "
+"software like telnet, or a browser. This is due to that special system "
+"architecture where the 3215/3270 console is line-based instead of character-"
+"based."
+msgstr ""
+"&debian-gnu; を S/390 や zSeries マシンにインストールするには、まずカーネルを"
+"これらのシステムで起動しなければなりません。これらのプラットフォームにおける"
+"起動メカニズムは、そもそもの成り立ちから他のプラットフォーム (特に PC 系のシ"
+"ステム) とは異なっています。フロッピーデバイスは全く使えません。このプラット"
+"フォームで作業をしている間には、他にも大きな違いに気付くことになります。(すべ"
+"てではないにせよ) ほとんどの作業を、telnet やブラウザのようなクライアントセッ"
+"ションソフトウェアを用いて、リモートで行うことになるのです。これは 3215/3270 "
+"コンソールがキャラクタベースではなくラインベースであるという、特殊なシステム"
+"アーキテクチャだからです。"
+
+#. Tag: para
+#: preparing.xml:1564
+#, no-c-format
+msgid ""
+"Linux on this platform runs either natively on the bare machine, in a so-"
+"called LPAR (Logical Partition) or in a virtual machine supplied by the VM "
+"system. Boot media differs depending on the runtime mode. For example, you "
+"can use the virtual card reader of a virtual machine, or boot from the HMC "
+"(Hardware Management Console) of an LPAR if the HMC and this option is "
+"available for you."
+msgstr ""
+"このプラットフォームでの Linux は、マシン本体そのもので、LPAR (Logical "
+"Partition) と呼ばれるものの上、あるいは VM システムから与えられた仮想マシン上"
+"で動作させることが可能です。ブートメディアはランタイムモードにより異なりま"
+"す。例えば仮想マシンでは仮想カードリーダーが使えますし、LPAR では HMC "
+"(Hardware Management Console) から起動できることもあります。"
+
+#. Tag: para
+#: preparing.xml:1573
+#, no-c-format
+msgid ""
+"Before you actually perform an installation, you have to go over some design "
+"and preparation steps. IBM has made documentation available about the whole "
+"process, e.g. how to prepare an installation medium and how actually to boot "
+"from that medium. Duplicating that information here is neither possible nor "
+"necessary. However, we will describe here which kind of &debian;-specific "
+"data is needed and where to find it. Using both sources of information, you "
+"have to prepare your machine and the installation medium before you can "
+"perform a boot from it. When you see the welcome message in your client "
+"session, return to this document to go through the &debian;-specific "
+"installation steps."
+msgstr ""
+"実際にインストールを行うまえに、設計したり準備したりする段階をいくつか踏まな"
+"ければなりません。全体の手順、例えばインストールメディアの準備や、そのメディ"
+"アからの実際の起動などは、IBM からの文書で説明されています。ここでその情報を"
+"繰り返すのは不可能ですし、不必要でしょう。しかし、必要となる &debian; 特有の"
+"情報や、その取得先については、ここで述べたいと思います。両方の情報源を元に、"
+"マシンと起動用インストールメディアを起動前に準備してください。クライアント"
+"セッションで welcome メッセージを見たら、またこの文書に戻り、&debian; のイン"
+"ストール手順を行っていってください。"
+
+#. Tag: title
+#: preparing.xml:1590
+#, no-c-format
+msgid "Native and LPAR installations"
+msgstr "ネイティブな LPAR へのインストール"
+
+#. Tag: para
+#: preparing.xml:1591
+#, no-c-format
+msgid ""
+"Please refer to chapter 5 of the <ulink url=\"http://www.redbooks.ibm.com/"
+"pubs/pdfs/redbooks/sg244987.pdf\"> Linux for &arch-title;</ulink> Redbook "
+"and chapter 3.2 of the <ulink url=\"http://www.redbooks.ibm.com/pubs/pdfs/"
+"redbooks/sg246264.pdf\"> Linux for IBM eServer zSeries and &arch-title;: "
+"Distributions</ulink> Redbook on how to set up an LPAR for Linux."
+msgstr ""
+"LPAR を Linux 向けに設定するには、<ulink url=\"http://www.redbooks.ibm.com/"
+"pubs/pdfs/redbooks/sg244987.pdf\"> Linux for &arch-title;</ulink> Redbook の "
+"5 章と <ulink url=\"http://www.redbooks.ibm.com/pubs/pdfs/redbooks/sg246264."
+"pdf\"> Linux for IBM eServer zSeries and &arch-title;: Distributions</ulink> "
+"Redbook の 3.2 章をご覧ください。"
+
+#. Tag: title
+#: preparing.xml:1605
+#, no-c-format
+msgid "Installation as a VM guest"
+msgstr "VM ゲストとしてのインストール"
+
+#. Tag: para
+#: preparing.xml:1607
+#, no-c-format
+msgid ""
+"Please refer to chapter 6 of the <ulink url=\"http://www.redbooks.ibm.com/"
+"pubs/pdfs/redbooks/sg244987.pdf\"> Linux for &arch-title;</ulink> Redbook "
+"and chapter 3.1 of the <ulink url=\"http://www.redbooks.ibm.com/pubs/pdfs/"
+"redbooks/sg246264.pdf\"> Linux for IBM eServer zSeries and &arch-title;: "
+"Distributions</ulink> Redbook on how to set up a VM guest for running Linux."
+msgstr ""
+"Linux を動作させる VM ゲストの設定については、<ulink url=\"http://www."
+"redbooks.ibm.com/pubs/pdfs/redbooks/sg244987.pdf\">Linux for &arch-title;</"
+"ulink> Redbook の 6 章と、<ulink url=\"http://www.redbooks.ibm.com/pubs/pdfs/"
+"redbooks/sg246264.pdf\">Linux for IBM eServer zSeries and &arch-title;: "
+"Distributions</ulink> Redbook の 3.1 章をご覧ください。"
+
+#. Tag: para
+#: preparing.xml:1617
+#, no-c-format
+msgid ""
+"You need to copy all the files from the <filename>generic</filename> sub-"
+"directory to your CMS disk. Be sure to transfer <filename>kernel.debian</"
+"filename> and <filename>initrd.debian</filename> in binary mode with a fixed "
+"record length of 80 characters (by specifying <userinput>BINARY</userinput> "
+"and <userinput>LOCSITE FIX 80</userinput> in your FTP client). "
+"<filename>parmfile.debian</filename> can be in either ASCII or EBCDIC "
+"format. A sample <filename>debian.exec</filename> script, which will punch "
+"the files in the proper order, is included with the images."
+msgstr ""
+"すべてのファイルを <filename>generic</filename> サブディレクトリから CMS ディ"
+"スクにコピーする必要があります。<filename>kernel.debian</filename> と "
+"<filename>initrd.debian</filename> は、必ず 80 文字の固定レコード長としたバイ"
+"ナリモードで転送してください (FTP クライアントに <userinput>BINARY</"
+"userinput> と <userinput>LOCSITE FIX 80</userinput> を指定)。"
+"<filename>parmfile.debian</filename> は ASCII 形式か EBCDIC 形式でかまいませ"
+"ん。ファイルを適切な順番にパンチする、<filename>debian.exec</filename> サンプ"
+"ルスクリプトには、イメージを含んでいます。"
+
+#. Tag: title
+#: preparing.xml:1634
+#, no-c-format
+msgid "Setting up an installation server"
+msgstr "インストールサーバの設定"
+
+#. Tag: para
+#: preparing.xml:1636
+#, no-c-format
+msgid ""
+"If you don't have a connection to the Internet (either directly or via a web "
+"proxy) you need to create a local installation server that can be accessed "
+"from your S/390. This server keeps all the packages you want to install and "
+"must make them available using NFS, HTTP or FTP."
+msgstr ""
+"(直接にせよ web プロキシ越しにせよ) インターネットに接続していなければ、イン"
+"ストールしようとしている S/390 からアクセスできる場所にローカルなインストール"
+"サーバが必要です。このサーバは、インストールを行いたいすべてのパッケージを、"
+"NFS, HTTP, FTP のいずれかで提供できなければなりません。"
+
+#. Tag: para
+#: preparing.xml:1644
+#, no-c-format
+msgid ""
+"The installation server needs to copy the exact directory structure from any "
+"&debian-gnu; mirror, but only the S/390 and architecture-independent files "
+"are required. You can also copy the contents of all installation CDs into "
+"such a directory tree."
+msgstr ""
+"インストールサーバには、&debian-gnu; ミラーのいずれかから、ディレクトリ構造を"
+"そのままコピーしてこなければなりません。ただし必要なのは S/390 とアーキテク"
+"チャに依存しないファイルだけです。あるいは、インストール CD の内容をこのディ"
+"レクトリツリーにコピーしたのでも構いません。"
+
+#. Tag: emphasis
+#: preparing.xml:1653
+#, no-c-format
+msgid "FIXME: more information needed &mdash; from a Redbook?"
+msgstr "FIXME: more information needed &mdash; from a Redbook?"
+
+#. Tag: title
+#: preparing.xml:1670
+#, no-c-format
+msgid "ARM firmware"
+msgstr "ARM ファームウェア"
+
+#. Tag: para
+#: preparing.xml:1672
+#, no-c-format
+msgid ""
+"As already mentioned before, there is unfortunately no standard for system "
+"firmware on ARM systems. Even the behaviour of different systems which use "
+"nominally the same firmware can be quite different. This results from the "
+"fact that a large part of the devices using the ARM architecture are "
+"embedded systems, for which the manufacturers usually build heavily "
+"customized firmware versions and include device-specific patches. "
+"Unfortunately the manufacturers often do not submit their changes and "
+"extensions back to the mainline firmware developers, so their changes are "
+"not integrated into newer versions of the original firmware."
+msgstr ""
+"既に触れたように、残念ながら ARM システムのシステムファームウェアには標準とな"
+"るものがありません。名義上同一のファームウェアを利用していても、システムが異"
+"なれば挙動はかなり異なることがあります。これは ARM アーキテクチャを採用してい"
+"る機器の大半が組み込みシステムであり、製造者は通常独自の変更を相当に加えた"
+"バージョンのファームウェアをビルドし、機器特有のパッチを収録しているという事"
+"実に起因します。残念ながら製造者が変更や拡張を主流側のファームウェア開発者に"
+"送らないことが多く、そのため製造者による変更が元のファームウェアの新しいバー"
+"ジョンにはなかなか取り入れられません。"
+
+#. Tag: para
+#: preparing.xml:1684
+#, no-c-format
+msgid ""
+"As a result even newly sold systems often use a firmware that is based on a "
+"years-old manufacturer-modified version of a firmware whose mainline "
+"codebase has evolved a lot further in the meantime and offers additional "
+"features or shows different behaviour in certain aspects. In addition to "
+"that, the naming of onboard devices is not consistent between different "
+"manufacturer-modified versions of the same firmware, therefore it is nearly "
+"impossible to provide usable product-independend instructions for ARM-based "
+"systems."
+msgstr ""
+"結果として新しく販売されているシステムであっても、製造者により改変された1年以"
+"上古いバージョンのファームウェアを基にしたファームウェアを使っていることが多"
+"く、一方で主流側のコードはその間に大きく進化して追加の機能を提供していたり、"
+"ある面で異なる挙動を取るということがあります。それに加え、オンボードデバイス"
+"の命名方法は異なる製造者が改変したバージョン間では同一のファームウェアであっ"
+"ても一貫性がなく、そのためARMベースのシステムで製品に依存せずに利用できる命令"
+"を提供するのはほぼ不可能です。"
+
+#. Tag: title
+#: preparing.xml:1697
+#, no-c-format
+msgid "Debian-provided U-Boot (system firmware) images"
+msgstr "Debian から提供されている U-Boot (システムファームウェア) イメージ"
+
+#. Tag: para
+#: preparing.xml:1698
+#, no-c-format
+msgid ""
+"Debian provides U-Boot images for various armhf systems that can load their "
+"U-Boot from an SD card at &armmp-uboot-img;. The U-Boot builds are offered "
+"in two formats: raw U-Boot components and a ready-made card image that can "
+"easily be written onto an SD card. The raw U-Boot components are provided "
+"for advanced users; the generally recommended way is to use one of the ready-"
+"made SD card images. They are named &lt;system-type&gt;.sdcard.img.gz and "
+"can be written to a card e.g. with <informalexample><screen>zcat &lt;system-"
+"type&gt;.sdcard.img.gz &gt; /dev/SD_CARD_DEVICE</screen></informalexample> "
+"As with all images, please be aware that writing the image to an SD card "
+"wipes all previous contents of the card!"
+msgstr ""
+"Debian は &armmp-uboot-img; で SDカードから U-Boot を読み込める 様々な armhf "
+"システム向けの U-Boot イメージを提供しています。U-Boot ビルドは2つの形式を提"
+"供しています: U-Boot の構成要素をそのまま収録したものと簡単にSDカードに書き込"
+"める既製のカードイメージです。U-Boot の構成要素をそのまま提供しているのは上級"
+"ユーザ向けです。通常は既製のSDカードイメージのどれかの利用を勧めています。こ"
+"れは &lt;システム種類&gt;.sdcard.img.gz といった名前で、例えば "
+"<informalexample><screen>zcat &lt;システム種類&gt;.sdcard.img.gz &gt; /dev/SD"
+"カードのデバイス</screen></informalexample> のようにしてカードに書き込めま"
+"す。どのイメージでも同じですが、イメージをSDカードに書き込むとそのカードに"
+"あった内容は消えてしまうことに留意してください!"
+
+#. Tag: para
+#: preparing.xml:1713
+#, no-c-format
+msgid ""
+"If Debian provides a U-Boot image for your system, it is recommended that "
+"you use this image instead of the vendor-provided U-Boot, as the version in "
+"Debian is usually newer and has more features."
+msgstr ""
+"当該システム用の U-Boot イメージが Debian から提供されている場合はベンダーか"
+"ら提供された U-Boot よりもそのイメージの使用を勧めます。通常 Debian 版の方が"
+"新しく多機能なためです。"
+
+#. Tag: title
+#: preparing.xml:1721
+#, no-c-format
+msgid "Setting the ethernet MAC address in U-Boot"
+msgstr "U-Boot でのイーサネット MAC アドレスの設定"
+
+#. Tag: para
+#: preparing.xml:1722
+#, no-c-format
+msgid ""
+"The MAC address of every ethernet interface should normally be globally "
+"unique, and it technically has to be unique within its ethernet broadcast "
+"domain. To achieve this, the manufacturer usually allocates a block of MAC "
+"addresses from a centrally-administered pool (for which a fee has to be "
+"paid) and preconfigures one of these addresses on each item sold."
+msgstr ""
+"通常、全イーサネットインターフェイスのMACアドレスが全体で一意であるべきで、技"
+"術的にはイーサネットブロードキャストドメイン内で一意でないといけません。それ"
+"を実現するために製造者は通常、中央管理されている (対価を払う必要のある) MAC "
+"アドレスブロックを割り当てられ、そのアドレスの中から1つを、販売する各製品に事"
+"前設定します。"
+
+#. Tag: para
+#: preparing.xml:1730
+#, no-c-format
+msgid ""
+"In the case of development boards, sometimes the manufacturer wants to avoid "
+"paying these fees and therefore provides no globally unique addresses. In "
+"these cases the users themselves have to define MAC addresses for their "
+"systems. When no MAC address is defined for an ethernet interface, some "
+"network drivers generate a random MAC address that can change on every boot, "
+"and if this happens, network access would be possible even when the user has "
+"not manually set an address, but e.g. assigning semi-static IP addresses by "
+"DHCP based on the MAC address of the requesting client would obviously not "
+"work reliably."
+msgstr ""
+"開発用ボードの場合、製造者が対価の支払いを避けたいために全体で一意なアドレス"
+"が提供されないこともあります。その場合はユーザ自身でシステムの MAC アドレスを"
+"決めないといけません。イーサネットインターフェイスの MAC アドレスが決められて"
+"いない場合、ネットワークドライバによっては MAC アドレスを無作為に生成します。"
+"そうして生成された MAC アドレスはブートのたびに変わる可能性があり、変更が発生"
+"した場合、ユーザが手作業によりアドレスをセットしなくてもネットワークアクセス"
+"は可能でしょうが、例えばリクエストしたクライアントの MAC アドレスを基にして "
+"DHCP により半固定の IP アドレスを割り当てるような場合の動作に信頼性が失われる"
+"のは明らかです。"
+
+#. Tag: para
+#: preparing.xml:1741
+#, no-c-format
+msgid ""
+"To avoid conflicts with existing officially-assigned MAC addresses, there is "
+"an address pool which is reserved for so-called <quote>locally administered</"
+"quote> addresses. It is defined by the value of two specific bits in the "
+"first byte of the address (the article <quote>MAC address</quote> in the "
+"English language Wikipedia gives a good explanation). In practice this means "
+"that e.g. any address starting with hexadecimal ca (such as ca:ff:"
+"ee:12:34:56) can be used as a locally administered address."
+msgstr ""
+"公式に割り当てられている既存の MAC アドレスとの競合を回避するため、いわゆる"
+"<quote>ローカル管理用</quote>アドレスとして予約されているアドレス領域がありま"
+"す。アドレスの第1バイトの特定の2ビットの値が決められています (英語版 "
+"Wikipedia の記事<quote>MAC_address</quote>に良い説明があります)。事実上これは"
+"例えば 16 進数 ca から始まる任意のアドレス (ca:ff:ee:12:34:56 等) をローカル"
+"管理用アドレスとして利用できるということになります。"
+
+#. Tag: para
+#: preparing.xml:1751
+#, no-c-format
+msgid ""
+"On systems using U-Boot as system firmware, the ethernet MAC address is "
+"placed in the <quote>ethaddr</quote> environment variable. It can be checked "
+"at the U-Boot command prompt with the command <quote>printenv ethaddr</"
+"quote> and can be set with the command <quote>setenv ethaddr ca:ff:"
+"ee:12:34:56</quote>. After setting the value, the command <quote>saveenv</"
+"quote> makes the assignment permanent."
+msgstr ""
+"システムのファームウェアとして U-Boot を使っているシステムでは、イーサネット "
+"MAC アドレスは<quote>ethaddr</quote>環境変数にセットされています。U-Boot のコ"
+"マンドプロンプトでコマンド<quote>printenv ethaddr</quote>により確認、コマンド"
+"<quote>setenv ethaddr ca:ff:ee:12:34:56</quote>によりセットできます。値の設定"
+"後にコマンド<quote>saveenv</quote>を実行するとその割り当てが恒久的になりま"
+"す。"
+
+#. Tag: title
+#: preparing.xml:1762
+#, no-c-format
+msgid "Kernel/Initrd/Device-Tree relocation issues in U-Boot"
+msgstr "U-Boot でのカーネル/initrd/デバイスツリーの再配置問題"
+
+#. Tag: para
+#: preparing.xml:1763
+#, no-c-format
+msgid ""
+"On some systems with older U-Boot versions there can be problems with "
+"properly relocating the Linux kernel, the initial ramdisk and the device-"
+"tree blob in memory during the boot process. In this case, U-Boot shows the "
+"message <quote>Starting kernel ...</quote>, but the system freezes "
+"afterwards without further output. These issues have been solved with newer "
+"U-Boot versions from v2014.07 onwards."
+msgstr ""
+"以前のバージョンの U-Boot を利用しているシステムの一部ではブートの過程で "
+"Linux カーネルや初期 RAM ディスク、デバイスツリー blob のメモリへの再配置に不"
+"具合がある可能性があります。その場合 U-Boot は<quote>Starting kernel ...</"
+"quote>というメッセージを表示しますがシステムはそれ以上出力することなくフリー"
+"ズします。この問題は v2014.07 以降の新しいバージョンの U-Boot では解決されて"
+"います。"
+
+#. Tag: para
+#: preparing.xml:1772
+#, no-c-format
+msgid ""
+"If the system has originally used a U-Boot version older than v2014.07 and "
+"has been upgraded to a newer version later, the problem might still occur "
+"even after upgrading U-Boot. Upgrading U-Boot usually does not modify the "
+"existing U-Boot environment variables and the fix requires an additional "
+"environment variable (bootm_size) to be set, which U-Boot does automatically "
+"only on fresh installations without existing environment data. It is "
+"possible to manually set bootm_size to the new U-Boot's default value by "
+"running the command <quote>env default bootm_size; saveenv</quote> at the U-"
+"Boot prompt."
+msgstr ""
+"システムが元々 v2014.07 よりも古いバージョンの U-Boot を利用していたもので後"
+"から新しいバージョンにアップグレードした場合、U-Boot のアップグレード後でも問"
+"題が引き続き発生するかもしれません。U-Boot のアップグレードでは通常既存の U-"
+"Boot 環境変数を変更せず、この問題の修正には追加の環境変数 (bootm_size) をセッ"
+"トする必要があり、既存の環境データの存在しない新規インストール処理でのみ U-"
+"Boot は自動的にそれをセットします。コマンド<quote>env default bootm_size; "
+"saveenv</quote>を U-Boot のプロンプトで手作業により実行することで U-Boot の新"
+"しいデフォルト値に bootm_size をセットできます。"
+
+#. Tag: para
+#: preparing.xml:1783
+#, no-c-format
+msgid ""
+"Another possibility to circumvent relocation-related problems is to run the "
+"command <quote>setenv fdt_high ffffffff; setenv initrd_high 0xffffffff; "
+"saveenv</quote> at the U-Boot prompt to completely disable the relocation of "
+"the initial ramdisk and the device-tree blob."
+msgstr ""
+"再配置関連の問題を回避する別の策として、コマンド<quote>setenv fdt_high "
+"ffffffff; setenv initrd_high 0xffffffff; saveenv</quote>を U-Boot プロンプト"
+"で実行して初期 RAM ディスク、デバイスツリー blob の再配置を完全に無効化する方"
+"法があります。"
+
+#. Tag: title
+#: preparing.xml:1793
+#, no-c-format
+msgid "Systems with UEFI firmware"
+msgstr "UEFI ファームウェアを利用しているシステム"
+
+#. Tag: para
+#: preparing.xml:1794
+#, no-c-format
+msgid ""
+"UEFI (<quote>Unified Extensible Firmware Interface</quote>) is a new kind of "
+"system firmware that is used on many modern systems and is - among other "
+"uses - intended to replace the classic PC BIOS."
+msgstr ""
+"UEFI (<quote>Unified Extensible Firmware Interface</quote>) は新しい種類のシ"
+"ステムファームウェアで、現代的なシステムの多くで採用され、- 他の用途もありま"
+"すが - 伝統的な PC BIOS の置き換えを意図しています。"
+
+#. Tag: para
+#: preparing.xml:1800
+#, no-c-format
+msgid ""
+"Currently most PC systems that use UEFI also have a so-called "
+"<quote>Compatibility Support Module</quote> (CSM) in the firmware, which "
+"provides exactly the same interfaces to an operating system as a classic PC "
+"BIOS, so that software written for the classic PC BIOS can be used "
+"unchanged. Nonetheless UEFI is intended to one day completely replace the "
+"old PC BIOS without being fully backwards-compatible and there are already a "
+"lot of systems with UEFI but without CSM."
+msgstr ""
+"現在 UEFI を採用しているほとんどの PC システムでファームウェアのいわゆる"
+"<quote>互換性サポートモジュール</quote> (CSM、Compatibility Support Module) "
+"を備えています。これは伝統的な PC BIOS として全く同一のインターフェイスをオペ"
+"レーティングシステムに提供するため、伝統的な PC BIOS 向けに書かれたソフトウェ"
+"アを変更せずそのまま使えます。UEFI は完全な後方互換性を維持せず古い PC BIOS "
+"をいつか完全に置き換えることを意図していますが、UEFI を採用していながら CSM "
+"を備えていないシステムも既に多数存在します。"
+
+#. Tag: para
+#: preparing.xml:1810
+#, no-c-format
+msgid ""
+"On systems with UEFI there are a few things to take into consideration when "
+"installing an operating system. The way the firmware loads an operating "
+"system is fundamentally different between the classic BIOS (or UEFI in CSM "
+"mode) and native UEFI. One major difference is the way the harddisk "
+"partitions are recorded on the harddisk. While the classic BIOS and UEFI in "
+"CSM mode use a DOS partition table, native UEFI uses a different "
+"partitioning scheme called <quote>GUID Partition Table</quote> (GPT). On a "
+"single disk, for all practical purposes only one of the two can be used and "
+"in case of a multi-boot setup with different operating systems on one disk, "
+"all of them must therefore use the same type of partition table. Booting "
+"from a disk with GPT is only possible in native UEFI mode, but using GPT "
+"becomes more and more common as hard disk sizes grow, because the classic "
+"DOS partition table cannot address disks larger than about 2 Terabytes while "
+"GPT allows for far larger disks. The other major difference between BIOS (or "
+"UEFI in CSM mode) and native UEFI is the location where boot code is stored "
+"and in which format it has to be. This means that different bootloaders are "
+"needed for each system."
+msgstr ""
+"UEFI を備えたシステムでオペレーティングシステムをインストールする際に留意して"
+"おくべきことがいくつかあります。ファームウェアがオペレーティングシステムを読"
+"み込む方法が BIOS (や UEFI の CSM モード) とネイティブ UEFI とでは根本的に異"
+"なります。第一に大きな違いはハードディスクのパーティションをハードディスクに"
+"記録する方法です。伝統的な BIOS と UEFI の CSM モードでは DOS パーティション"
+"テーブルを利用しますがネイティブ UEFI では<quote>GUID パーティションテーブル"
+"</quote> (GPT、GUID Partition Table) と呼ばれる、異なるパーティション方式を採"
+"用しています。1つのディスクで現実的な目的に利用できるのは2つのうちの1つだけで"
+"あり、そのため1つのディスクで異なるオペレーティングシステムのマルチブートを用"
+"意する場合は同じ種類のパーティションテーブルをその全オペレーティングシステム"
+"で使わないといけません。GPT を採用したディスクからのブートはネイティブ UEFI "
+"モードでのみ可能ですが、ハードディスク容量増大により GPT の採用がますます一般"
+"的になっています。これは伝統的な DOS パーティションテーブルでは容量が約2テラ"
+"バイト以上のディスクには対応できないのに対して GPT では圧倒的に大容量のディス"
+"クに対応できるからです。BIOS (や UEFI の CSM モード) とネイティブ UEFI との他"
+"の大きな違いとしてブートコードを保存する位置とそのコードの形式があり、そのた"
+"め異なるシステムでは異なるブートローダが必要です。"
+
+#. Tag: para
+#: preparing.xml:1830
+#, no-c-format
+msgid ""
+"The latter becomes important when booting &d-i; on a UEFI system with CSM "
+"because &d-i; checks whether it was started on a BIOS- or on a native UEFI "
+"system and installs the corresponding bootloader. Normally this simply works "
+"but there can be a problem in multi-boot environments. On some UEFI systems "
+"with CSM the default boot mode for removable devices can be different from "
+"what is actually used when booting from hard disk, so when booting the "
+"installer from a USB stick in a different mode from what is used when "
+"booting another already installed operating system from the hard disk, the "
+"wrong bootloader might be installed and the system might be unbootable after "
+"finishing the installation. When choosing the boot device from a firmware "
+"boot menu, some systems offer two seperate choices for each device, so that "
+"the user can select whether booting shall happen in CSM or in native UEFI "
+"mode."
+msgstr ""
+"UEFI システムの CSM で &d-i; をブートする場合には後者が重要になります。これ"
+"は &d-i; が BIOS から起動されたのかネイティブ UEFI システムから起動されたのか"
+"確認して対応するブートローダをインストールするためです。通常これは単純にうま"
+"く機能しますが、マルチブート環境では問題が起きる可能性があります。一部の "
+"UEFI システムで CSM を利用した場合、脱着可能機器のデフォルトのブートモード"
+"が、ハードディスクからブートしたときに実際に利用されるものとは異なる可能性が"
+"あるためです。そのため、別のインストール済みオペレーティングシステムをハード"
+"ディスクからブートする際に利用するモードとは異なるモードでインストーラを USB "
+"メモリからブートした場合、適切でないブートローダがインストールされ、インス"
+"トール完了後にシステムがブート不可能になるかもしれません。システムによっては"
+"ブートデバイスをファームウェアのブートメニューから選択する際に各デバイスにつ"
+"いて別個の選択を提示し、CSM からブートするのかネイティブ UEFI モードからブー"
+"トするのかユーザが選択できるようにしています。"
+
+#. Tag: para
+#: preparing.xml:1846
+#, no-c-format
+msgid ""
+"Another UEFI-related topic is the so-called <quote>secure boot</quote> "
+"mechanism. Secure boot means a function of UEFI implementations that allows "
+"the firmware to only load and execute code that is cryptographically signed "
+"with certain keys and thereby blocking any (potentially malicious) boot code "
+"that is unsigned or signed with unknown keys. In practice the only key "
+"accepted by default on most UEFI systems with secure boot is a key from "
+"Microsoft used for signing the Windows bootloader. As the boot code used by "
+"&d-i; is not signed by Microsoft, booting the installer requires prior "
+"deactivation of secure boot in case it is enabled. Secure boot is often "
+"enabled by default on systems that come preinstalled with a 64-bit version "
+"of Windows 8 and there is unfortunately no standard way to disable it in the "
+"UEFI setup. On some systems, the option to disable secure boot is only made "
+"visible when a BIOS password has been set by the user, so if you have a "
+"system with secure boot enabled, but cannot find an option to disable it, "
+"try setting a BIOS password, powercycle the machine and look again for an "
+"appropriate option."
+msgstr ""
+"UEFI に関連する他の話題としてはいわゆる <quote>セキュアブート</quote>機構があ"
+"ります。セキュアブートというのは UEFI 実装の機能で、暗号的に特定の鍵により署"
+"名済みのコードの読み込み、実行だけをファームウェアに許可します。結果として "
+"(潜在的に悪意のある) 署名されていないあるいは未知の鍵により署名されたブート"
+"コードを全て阻止します。現実的にはセキュアブートを採用しているほとんどの "
+"UEFI システムでデフォルトで受け付ける鍵は Windows ブートローダの署名に利用さ"
+"れている Microsoft の鍵だけです。&d-i; により利用されるブートコードは "
+"Microsoft により署名されていないため、インストーラのブートにはセキュアブート"
+"が有効になっている場合には事前に無効化する必要があります。64ビット版の "
+"Windows 8 がプレインストールされているシステムではセキュアブートがデフォルト"
+"で有効化されていることが多く、UEFI の設定からそれを無効化する手順には残念なが"
+"ら標準的なものがありません。一部のシステムではセキュアブートを無効化するオプ"
+"ションが、BIOS パスワードがユーザによりセットされている場合にのみ見えるように"
+"なるものもあります。そのため、セキュアブートが有効化されているシステムで無効"
+"化するオプションを見つけられない場合は一旦 BIOS パスワードを設定してマシンの"
+"電源を入れ直し、再びそれらしいオプションがないか探してみてください。"
+
+#. Tag: title
+#: preparing.xml:1868
+#, no-c-format
+msgid "Disabling the Windows 8 <quote>fast boot</quote> feature"
+msgstr "Windows 8 の<quote>高速スタートアップ</quote>機能の無効化"
+
+#. Tag: para
+#: preparing.xml:1869
+#, no-c-format
+msgid ""
+"Windows 8 offers a feature called <quote>fast boot</quote> to cut down "
+"system startup time. Technically, when this feature is enabled, Windows 8 "
+"does not do a real shutdown and a real cold boot afterwards when ordered to "
+"shut down, but instead does something resembling a partial suspend to disk "
+"to reduce the <quote>boot</quote> time. As long as Windows 8 is the only "
+"operating system on the machine, this is unproblematic, but it can result in "
+"problems and data loss when you have a dual boot setup in which another "
+"operating system accesses the same filesystems as Windows 8 does. In that "
+"case the real state of the filesystem can be different from what Windows 8 "
+"believes it to be after the <quote>boot</quote> and this could cause "
+"filesystem corruption upon further write accesses to the filesystem. "
+"Therefore in a dual boot setup, to avoid filesystem corruption the "
+"<quote>fast boot</quote> feature has to be disabled within Windows."
+msgstr ""
+"Windows 8 では<quote>高速スタートアップ</quote>と呼ばれる、システム起動にかか"
+"る時間を短縮する機能を提供しています。技術的には、この機能を有効化すると "
+"Windows 8 はシャットダウンを指示したときに実際のシャットダウンやその後の実際"
+"のコールドブートを行わず、代わりにディスクへの部分サスペンドのようなことを行"
+"い<quote>ブート</quote>時間を短縮します。Windows 8 がそのマシンの唯一のオペ"
+"レーティングシステムである限りこれは問題にはなりませんが、Windows 8 と同一の"
+"ファイルシステムに別のオペレーティングシステムがアクセスするデュアルブート環"
+"境では問題となりデータ消失の可能性があります。その場合、<quote>ブート</quote>"
+"後にはファイルシステムの実際の状態が  Windows 8 がそうであると信じている状態"
+"とは異なる可能性があり、そのファイルシステムへの書き込みアクセスがさらに起き"
+"るとファイルシステムの破損を引き起こす可能性があります。したがって、デュアル"
+"ブート環境でファイルシステムの破損を避けるためには<quote>高速スタートアップ</"
+"quote>機能を Windows 内で無効化する必要があります。"
+
+#. Tag: para
+#: preparing.xml:1885
+#, no-c-format
+msgid ""
+"It may also be necessary to disable <quote>fast boot</quote> to even allow "
+"access to UEFI setup to choose to boot another operating system or &d-i;. On "
+"some UEFI systems, the firmware will reduce <quote>boot</quote> time by not "
+"initialising the keyboard controller or USB hardware; in these cases, it is "
+"necessary to boot into Windows and disable this feature to allow for a "
+"change of boot order."
+msgstr ""
+"別のオペレーティングシステムや &d-i; のブートを選択するための UEFI 設定へのア"
+"クセスが許可されていても<quote>高速スタートアップ</quote>を無効化する必要があ"
+"るかもしれません。一部の UEFI システムにはキーボードコントローラーやUSBハード"
+"ウェアを初期化しないことによって<quote>ブート</quote>時間を短縮しているファー"
+"ムウェアがあります。その場合は Windows をブートしてこの機能を無効化し、ブート"
+"順を変更できるようにする必要があります。"
+
+#. Tag: title
+#: preparing.xml:1897
+#, no-c-format
+msgid "Hardware Issues to Watch Out For"
+msgstr "気をつけるべきハードウェアの問題"
+
+#. Tag: title
+#: preparing.xml:1900
+#, no-c-format
+msgid "USB BIOS support and keyboards"
+msgstr "USB BIOS サポートとキーボード"
+
+#. Tag: para
+#: preparing.xml:1901
+#, no-c-format
+msgid ""
+"If you have no PS/2-style keyboard, but only a USB model, on some very old "
+"PCs you may need to enable legacy keyboard emulation in your BIOS setup to "
+"be able to use your keyboard in the bootloader menu, but this is not an "
+"issue for modern systems. If your keyboard does not work in the bootloader "
+"menu, consult your mainboard manual and look in the BIOS for <quote>Legacy "
+"keyboard emulation</quote> or <quote>USB keyboard support</quote> options."
+msgstr ""
+"PS/2 形式のキーボードがなく、USB のものだけ場合、ある種の非常に古い PC では、"
+"ブートローダーメニューでキーボードを使用するため、BIOS 設定で legacy "
+"keyboard emulation を有効にする必要があります。が、今日のシステムでは問題にな"
+"りません。ブートローダーメニューでキーボードが使用できない場合、マザーボード"
+"のマニュアルを調べて、<quote>Legacy keyboard emulation</quote> や <quote>USB "
+"keyboard support</quote> といった BIOS 設定に入ってください。"
+
+#. Tag: title
+#: preparing.xml:1914
+#, no-c-format
+msgid "Display-visibility on OldWorld Powermacs"
+msgstr "OldWorld PowerMAC でのディスプレイ表示"
+
+#. Tag: para
+#: preparing.xml:1916
+#, no-c-format
+msgid ""
+"Some OldWorld Powermacs, most notably those with the <quote>control</quote> "
+"display driver, may not reliably produce a colormap under Linux when the "
+"display is configured for more than 256 colors. If you are experiencing such "
+"issues with your display after rebooting (you can sometimes see data on the "
+"monitor, but on other occasions cannot see anything) or, if the screen turns "
+"black after booting the installer instead of showing you the user interface, "
+"try changing your display settings under MacOS to use 256 colors instead of "
+"<quote>thousands</quote> or <quote>millions</quote>."
+msgstr ""
+"ディスプレイドライバを <quote>制御</quote> する OldWorld PowerMAC では、表示"
+"を 256 色より大きく設定している場合、Linux 上で出力するのに適切なカラーマップ"
+"を生成しない可能性があります。再起動後にそのような状態になった (モニタに表示"
+"されることもありますが、そうでなければ何も見えません) 場合や、インストーラの"
+"起動後に、ユーザインターフェースを表示せず画面が黒くなってしまった場合は、"
+"MacOS 上で、<quote>数千</quote>、<quote>数百万</quote> と設定せずに、256 色と"
+"してみてください。"

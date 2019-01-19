@@ -1,0 +1,259 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+# Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: network-console@packages.debian.org\n"
+"POT-Creation-Date: 2012-10-01 22:05+0000\n"
+"PO-Revision-Date: 2013-09-30 16:17+0530\n"
+"Last-Translator: Prabodh C P (FSMK Localisation Team) <prabodh@fsmk.org>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:1001
+msgid "Continue installation remotely using SSH"
+msgstr "ಪರೋಕ್ಷವಾಗಿ ಅನುಸ್ಥಾಪನೆಯನ್ನು ಮುಂದುವರೆಸಲು ಎಸ್ ಎಸ್ ಎಚ್ ಬಳಸಿ "
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start installer"
+msgstr "ವ್ಯವಸ್ಥಾಪಕವನ್ನು ಶುರು ಮಾಡಿ"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start installer (expert mode)"
+msgstr "ವ್ಯವಸ್ಥಾಪಕವನ್ನು ಶುರು ಮಾಡಿ (ನುರಿತ ವಿಧಾನ)"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start shell"
+msgstr "ಶೆಲ್ ಶುರು ಮಾಡಿ"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid "Network console option:"
+msgstr "ಜಾಲಬಂಧ ಆಜ್ಞಾಫಲಕ ಆಯ್ಕೆ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid ""
+"This is the network console for the Debian installer. From here, you may "
+"start the Debian installer, or execute an interactive shell."
+msgstr ""
+"ಇದು ಡೆಬಿಯನ್ ಅನುಸ್ಥಾಪಕದ ಜಾಲಬಂಧ ಟರ್ಮಿನಲ್. ಇಲ್ಲಿಂದ ನೀವು ಡೆಬಿಯನ್ ಅನುಸ್ಥಾಪಕವನ್ನು ಶುರು "
+"ಮಾಡಬಹುದು ಅಥವ ಸಂವಹನಾ ಷೆಲ್ ಒಂದನ್ನು ಚಾಲ್ತಿ ಮಾಡಿ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid "To return to this menu, you will need to log in again."
+msgstr "ಈ ಮೆನುಗೆ ಹಿಂದಿರುಗಬೇಕಾದರೆ ನೀವು ಮತ್ತೆ ಲಾಗಿನ್ ಮಾಡಬೇಕು."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:3001
+msgid "Generating SSH host key"
+msgstr "ಎಸ್ ಎಸ್ ಎಚ್ ಅತಿಥೇಯ ಕೀಲಿಯನ್ನು ಉತ್ಪಾದಿಸಲಾಗುತ್ತಿದೆ"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid "Remote installation password:"
+msgstr "ದೂರದ ಅನುಸ್ಥಾಪನೆ ಗುಪ್ತ ಪದ:"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid ""
+"You need to set a password for remote access to the Debian installer. A "
+"malicious or unqualified user with access to the installer can have "
+"disastrous results, so you should take care to choose a password that is not "
+"easy to guess. It should not be a word found in the dictionary, or a word "
+"that could be easily associated with you, like your middle name."
+msgstr ""
+"ನೀವು ಡೆಬಿಯನ್ ಅನುಸ್ಥಾಪಕವನ್ನು ಪರೋಕ್ಷವಾಗಿ ಬಳಸಲು ಗುಪ್ತಪದವನ್ನು ಇಡಬೇಕಾಗುತ್ತದೆ. "
+"ಅನುಸ್ಥಾಪಕಕ್ಕೆ ದುರುದ್ದೇಶವುಳ್ಳ ಅಥವಾ ಅಯೋಗ್ಯ್ ಬಳಕೆದಾರನಿಗೆ ಪ್ರವೇಶಾವಕಾಶ ದೊರೆತೆರೆ ಹಾನಿಕರ "
+"ಪರಿಣಾಮಗಳುಂಟಾಗಬಹುದು, ಆದ್ದರಿಂದ ನೀವು ಎಚ್ಚರಿಕೆಯಿಂದ ಸುಲಭವಾಗಿ ಊಹಿಸಲಾಗದ ಗುಪ್ತಪದವನ್ನು "
+"ಆಯ್ಕೆಮಾಡಿ. ಈ ಪದವು ಶಬ್ಧಕೋಶದಲ್ಲಿರುವ ಪದವಾಗಿರಬಾರದು ಅಥವಾ ಈ ಪದವು ನಿಮ್ಮೊಂದಿಗೆ ಸುಲಭವಾಗಿ "
+"ಸಂಬಂಧಿಸುವಂತಾಗಿರಬಾರದು ಉದಾಹರಣೆಗೆ ನಿಮ್ಮ್ ಹೆಸರು."
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid ""
+"This password is used only by the Debian installer, and will be discarded "
+"once you finish the installation."
+msgstr ""
+"ಈ ಗುಪ್ತ ಪದವನ್ನು ಡೆಬಿಯನ್ ಅನುಸ್ಥಾಪಕ ಮಾತ್ರ ಉಪಯೊಗಿಸ್ತದೆ, ಅನುಸ್ಥಾಪನ ತದನಂತರ ಅದು "
+"ತೆಗೆದುಹಾಕಲಗತದೆ "
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+msgid "Re-enter password to verify:"
+msgstr "ದಯವಿಟ್ಟು ಇನ್ನೊಮ್ಮೆ ಗುಪ್ತಪದವನ್ನು ಪರಿಶೀಲಿಸಲು ನಮೂದಿಸಿ:"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+msgid ""
+"Please enter the same remote installation password again to verify that you "
+"have typed it correctly."
+msgstr ""
+"ನೀವು ಕೊಟ್ಟಿರುವ ದೂರದ ಅನುಸ್ಥಾಪನೆ ಗುಪ್ತ ಪದ ಸರಿಯಿಲ್ಲ, ದಯವಿಟ್ಟೂ ಅದನ್ನು ಪರೀಕ್ಷಿಸಲು ಮತ್ತೆ "
+"ಪ್ರವೇಶಿಸಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid "Empty password"
+msgstr "ಖಾಲಿ ಗುಪ್ತಪದ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid ""
+"You entered an empty password, which is not allowed. Please choose a non-"
+"empty password."
+msgstr ""
+"ನೀವು ಗುಪ್ತಪದವನ್ನು ಖಾಲಿ ಬಿಟ್ಟಿದ್ದೀರಿ, ಇದನ್ನು ಗಣಕವು ಸಮ್ಮತಿಸುವುದಿಲ್ಲ. ದಯಮಾಡಿ ಖಾಲಿಯಲ್ಲದ "
+"ಗುಪ್ತಪದವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+msgid "Password mismatch"
+msgstr "ಸಂಕೇತ ಪದಗಳು ಹೊಂದುತ್ತಿಲ್ಲ "
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+msgid ""
+"The two passwords you entered were not the same. Please enter a password "
+"again."
+msgstr ""
+"ನೀವು ಕೊಟ್ಟಿರುವ ಯೆರಡು ಗುಪ್ತ ಪದ ಗಳು ಸರಿ ಇಲ್ಲ. ದಯಮಾಡಿ ಮತ್ತೆ ಇನೊಂಮ್ಮೆ ಪ್ರವೆಶಿಸಿ ."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "Start SSH"
+msgstr "ಎಸ್ ಎಸ್ ಹೆಚ್ ಪ್ರಾರಂಭಿಸಿ "
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+#, fuzzy
+msgid ""
+"To continue the installation, please use an SSH client to connect to the IP "
+"address ${ips} and log in as the \"installer\" user. For example:"
+msgstr ""
+"ಅನುಸ್ಥಾಪನೆಯನ್ನು ಮುಂದುವರಿಸಲು ಐ ಪಿ ವಿಳಾಸ ${ip}ಯೊಂದಿಗೆ ಸಂಪರ್ಕ ಸಾಧಿಸಿಲು \"installer"
+"\" ಬಳಕೆದಾರನಾಗಿ ಪ್ರವೇಶಿಸಿಸಲು ಎಸ್ ಎಸ್ ಹೆಚ್ ಉಪಯುಕ್ತವನ್ನು ಬಳಸಿ. ಉದಾಹರಣೆಗೆ:"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "The fingerprint of this SSH server's host key is: ${fingerprint}"
+msgstr "ಎಸ್ ಎಸ್ ಹೆಚ್ ಸರ್ವರ್ ಅತಿಥೇಯ ಕೀಲಿಕೈ ನ ಫಿಂಗರ್ ಪ್ರಿಂಟ್: ${fingerprint}"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid ""
+"Please check this carefully against the fingerprint reported by your SSH "
+"client."
+msgstr ""
+"ನಿಮ್ಮ ಸ್ ಸ್ ಹೆಚ್ ಉಪಯುಕ್ತ ಉಪಕರಣ ವರ್ದಿ ಕೊಟ್ಟಿದಂನ್ತೆ ಫಿಂಗರ್ ಪ್ರಿಂಟ್ ಜೊತೆ ಇದ್ದನ್ನು ಸುಕ್ಷಮ ವಾಗಿ "
+"ಪರೀಕ್ಷಿಸಿ "
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Could not fetch SSH authorized keys"
+msgstr "SSH ಅನುಮತಿ ಕೀಲಿಗಳನ್ನು  ಪಡೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Translators: do NOT translate the "LOCATION" variable name
+#: ../network-console.templates:10001
+msgid "An error occurred while fetching SSH authorized keys from ${LOCATION}."
+msgstr "${LOCATION}ನಿಂದ SSH ಅನುಮತಿ ಕೀಲಿಗಳನ್ನು  ಪಡೆಯುವಾಗ ದೋಷವುಂಟಾಗಿದೆ."
+
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"/var/log/syslogನಲ್ಲಿ ಅಥವಾ ಅವಾಸ್ತವಿಕ ಆಜ್ಞಾಫಲಕ ೪ ರಲ್ಲಿ ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಪರೀಕ್ಷಿಸಿ."

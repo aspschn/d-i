@@ -1,0 +1,17 @@
+Source: zipl-installer
+Section: debian-installer
+Priority: standard
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Bastian Blank <waldi@debian.org>, Philipp Kern <pkern@debian.org>, Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9)
+Vcs-Browser: https://salsa.debian.org/installer-team/zipl-installer
+Vcs-Git: https://salsa.debian.org/installer-team/zipl-installer.git
+
+Package: zipl-installer
+Package-Type: udeb
+Architecture: s390 s390x
+Provides: bootable-system
+Depends: ${misc:Depends}, installed-base
+XB-Installer-Menu-Item: 7300
+Description: Make DASD bootable
+ This udeb will call zipl to make the DASD bootable.

@@ -1,0 +1,505 @@
+# translation of lo.po to Lao
+# Translation of lo.po to Lao
+# Lao translation of debian-installer.
+# Copyright (C) 2006-2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Anousak Souphavanh <anousak@gmail.com>, 2010, 1980.
+msgid ""
+msgstr ""
+"Project-Id-Version: lo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-04-25 08:55+0700\n"
+"Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
+"Language-Team: Lao \n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Lao\n"
+"X-Poedit-Country: LAO PEOPLE'S DEMOCRATIC REPUBLIC\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../partman-base.templates:60001
+#, no-c-format
+msgid "ZFS pool %s, volume %s"
+msgstr "ZFS ອ່າງ %s, ລະດັບ %s"
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../partman-base.templates:62001
+#, no-c-format
+msgid "DASD %s (%s)"
+msgstr "DASD %s (%s)"
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../partman-base.templates:63001
+#, no-c-format
+msgid "DASD %s (%s), partition #%s"
+msgstr "DASD %s (%s), ພາທີເຊິນ #%s"
+
+#. Type: text
+#. Description
+#. :sl5:
+#. Setting to reserve a small part of the disk for use by BIOS-based bootloaders
+#. such as GRUB.
+#: ../partman-partitioning.templates:32001
+msgid "Reserved BIOS boot area"
+msgstr "ພື້ນທີ່ບູດຂອງ BIOS ທີ່ສຳຮອງ:"
+
+#. Type: text
+#. Description
+#. :sl5:
+#. short variant of 'Reserved BIOS boot area'
+#. Up to 10 character positions
+#: ../partman-partitioning.templates:33001
+msgid "biosgrub"
+msgstr "biosgrub"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../partman-basicfilesystems.templates:60001
+#, fuzzy
+#| msgid ""
+#| "Your boot partition has not been configured with the ext2 or ext3 file "
+#| "system. This is needed by your machine in order to boot. Please go back "
+#| "and use either the ext2 or ext3 file system."
+msgid ""
+"Your boot partition has not been configured with the ext2 file system. This "
+"is needed by your machine in order to boot. Please go back and use the ext2 "
+"file system."
+msgstr ""
+"ພາທິຊັນບູດຂອງເຈົ້າບໍ່ໄດ້ກຳນົດໄວ້ໃຫ້ເປັນລະບົບແຟັມ ext2ຫຼື ext3ຊື່ງຈຳເປັນສຳລັບການບູດເຄື່ອງຂອງ  "
+"ກະລຸນາຍອ້ນກັບໄປກຳນົດພາທິຊັນບູດໃຫ້ເປັນລະບົບແຟັມ  ext2 ຫຼື ext3"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../partman-basicfilesystems.templates:61001
+#, fuzzy
+#| msgid ""
+#| "Your boot partition is not located on the first primary partition of your "
+#| "hard disk. This is needed by your machine in order to boot.  Please go "
+#| "back and use your first primary partition as a boot partition."
+msgid ""
+"Your boot partition is not located on the first partition of your hard disk. "
+"This is needed by your machine in order to boot.  Please go back and use "
+"your first partition as a boot partition."
+msgstr "ພາທິຊັນມາລີອັນແລກໃຫ້ເປັນພາທິຊັນບູດ"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "ctc: Channel to Channel (CTC) or ESCON connection"
+msgstr "ctc: ການເຊື່ອມຕໍ່ແບບ Channel to Channel (CTC) ຫຼື ESCON"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "qeth: OSA-Express in QDIO mode / HiperSockets"
+msgstr "qeth: OSA-Express ໃນໝົດ QDIO / HiperSockets"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "iucv: Inter-User Communication Vehicle - available for VM guests only"
+msgstr "iucv: Inter-User Communication Vehicle - ສຳລັບ VM guest ເທົ່ານັ້ນ"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages) including the initial path
+#. :sl5:
+#: ../s390-netdevice.templates:1001
+msgid "virtio: KVM VirtIO"
+msgstr "virtio: KVM VirtIO"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:1002
+msgid "Network device type:"
+msgstr "ຊະນິດຂອງອຸປະກອນເຄືອຂ່າຍ:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:1002
+msgid ""
+"Please choose the type of your primary network interface that you will need "
+"for installing the Debian system (via NFS or HTTP). Only the listed devices "
+"are supported."
+msgstr ""
+"ກະລຸນາເລືອກຊະນິດຂອງອິນເທີເຟຊເຄືອຂ່າຍຫຼັກທີ່ທ່ານຕ້ອງໃຊ້ໃນການຕິດຕັ້ງເດບຽນ (ຜ່ານ NFS ຫຼື HTTP) "
+"ໂປຼແກມຕິດຕັ້ງຮອງຮັບສະເພາະອຸປະກອນໃນລາຍການເທົ່ານັ້ນ"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:2001
+msgid "CTC read device:"
+msgstr "ອຸປະກອນອ່ານ CTC:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:2001 ../s390-netdevice.templates:3001
+msgid "The following device numbers might belong to CTC or ESCON connections."
+msgstr "ອຸປະກອນໝາຍເລກຕໍ່ໄປນີ້ ອາດໃຊ້ສຳລັບການເຊື່ອມຕໍ່ແບບ CTC ຫຼື ESCON"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:3001
+msgid "CTC write device:"
+msgstr "ອຸປະກອນຂຽນ CTC:"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:4001 ../s390-netdevice.templates:8001
+#: ../s390-netdevice.templates:12001
+msgid "Do you accept this configuration?"
+msgstr "ທ່ານຍອມຮັບຄ່າຕັ້ງນີ້ ຫຼື ບໍ?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:4001
+msgid ""
+"The configured parameters are:\n"
+" read channel  = ${device_read}\n"
+" write channel = ${device_write}\n"
+" protocol      = ${protocol}"
+msgstr ""
+"ຄ່າຕັ້ງໃວ້ຄື:\n"
+"ຊ່ອງອ່ານ = ${device_read}\n"
+"ຊ່ອງຂຽນ  = ${device_write}\n"
+"ໂພໂຕຄຼໍ = ${protocol}"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:5001
+msgid "No CTC or ESCON connections"
+msgstr "ບໍ່ພົບການເຊື່ອມຕໍ່ແບບ CTC ຫຼື ESCON"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:5001
+msgid "Please make sure that you have set them up correctly."
+msgstr "ກະລຸນາກວດສອບໃຫ້ແນ່ໃຈ ວ່າທ່ານໄດ້ຕັ້ງຄ່າຢ່າງຖືກຕ້ອງ"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:6001
+msgid "Protocol for this connection:"
+msgstr "ໂພໂຕຄຼໍສຳລັບການເຊື່ອມຕໍ່ນີ້:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:7001
+msgid "Device:"
+msgstr "ອຸປະກອນ:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:7001
+msgid "Please select the OSA-Express QDIO / HiperSockets device."
+msgstr "ກະລຸນາເລືອກອຸປະກອນ OSA-Express QDIO / HiperSockets"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:8001
+msgid ""
+"The configured parameters are:\n"
+" channels = ${device0}, ${device1}, ${device2}\n"
+" port     = ${port}\n"
+" layer2   = ${layer2}"
+msgstr ""
+"ຄ່າທີ່ຕັ້ງໃວ້ຄື:\n"
+"ຊ່ອງ    = ${device0}, ${device1}, ${device2}\n"
+"ພອດທ໌     = ${port}\n"
+"layer2   = ${layer2}"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:9001
+msgid "No OSA-Express QDIO cards / HiperSockets"
+msgstr "ບໍ່ພົບຄາດ OSA-Express QDIO / HiperSockets"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:9001
+msgid ""
+"No OSA-Express QDIO cards / HiperSockets were detected. If you are running "
+"VM please make sure that your card is attached to this guest."
+msgstr ""
+"ກວດບໍ່ພົບກາດ OSA-Express QDIO / HiperSockets  ຖ້າທ່ານກຳລັງໃຊ້ງານ VM "
+"ກະລຸນາກວດສອບໃຫ້ແນ່ໃຈວ່າກາດຂອງທ່ານເຊື່ອມຕໍ່ກັບ guest ນີ້"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:10001
+msgid "Port:"
+msgstr "ພອດທ໌:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:10001
+msgid "Please enter a relative port for this connection."
+msgstr "ກະລຸນາປ້ອນພອດສຳພັນສຳລັບການເຊື່ອມຕໍ່ນີ້"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:11001
+msgid "Use this device in layer2 mode?"
+msgstr "ໃຊ້ອຸປະກອນນີ້ໃນໂໝດ layer2 ຫຼື ບໍ?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:11001
+msgid ""
+"By default OSA-Express cards use layer3 mode. In that mode LLC headers are "
+"removed from incoming IPv4 packets. Using the card in layer2 mode will make "
+"it keep the MAC addresses of IPv4 packets."
+msgstr ""
+"ໂດຍປົກະຕິແລ້ວ ຄາດ OSA-Express ຈະໃຊ້ໂໝດ layer3 ຊຶ່ງໃນໂໝດດັ່ງກ່າວ ຂໍ້ມູນສ່ວນຫົວ LLC "
+"ຈະຖືກຕັດອອກຈາກແພັກເກັດ IPv4 ຂາເຂົ້າ ການເຂົ້າຄາດນີ້ໃນໂໝດ layer2 ຈະເຮັດໃຫ້ທີ່ຢູ່ MAC "
+"ຖືກຄົງໃວ້ໃນແພັກເກັດ IPv4"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:12001
+msgid ""
+"The configured parameter is:\n"
+" peer  = ${peer}"
+msgstr ""
+"ຄ່າທີ່ຕັ້ງໃວ້ຄື:\n"
+" peer  = ${peer}"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid "VM peer:"
+msgstr "VM peer:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid "Please enter the name of the VM peer you want to connect to."
+msgstr "ກະລຸນາປ້ອນຊື່ຂອງ VM peer ທີ່ທ່ານຕ້ອງການເຊື່ອມຕໍ່ດ້ວຍ"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid ""
+"If you want to connect to multiple peers, separate the names by colons, e."
+"g.  tcpip:linux1."
+msgstr ""
+"ຖ້າທ່ານຕ້ອງການເຊື່ອມຕໍ່ໄປຍັງ peer ຫຼາຍ peer  ໃຫ້ຄັ່ນຊື່ຕ່າງໆດ້ວຍທະວີພາກ ເຊັ່ນ tcpip:linux1"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-netdevice.templates:13001
+msgid ""
+"The standard TCP/IP server name on VM is TCPIP; on VIF it's $TCPIP. Note: "
+"IUCV must be enabled in the VM user directory for this driver to work and it "
+"must be set up on both ends of the communication."
+msgstr ""
+"ຊື່ເຊີບເວີ TCP/IP ມາດຕະຖານໃນ VM ຄື TCPIP ແລະ ໃນ VIF ຄື $TCPIP  ຂໍ້ສັງເກດ: ຕ້ອງເປີດ IUCV "
+"ໃວ້ໃນໄດເຮດທໍລີ້ຂອງຜູ້ໃຊ້ ເພື່ອໃຫ້ໄດເວີນີ້ທຳງານໄດ້ ແລະ ຕ້ອງຄ່າໄວ້ທີ່ທັງສອງຝັ່ງຂອງການຊື່ສານນີ້"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl5:
+#: ../s390-netdevice.templates:14001
+msgid "Configure the network device"
+msgstr "ຕັ້ງຄ່າອຸປະກອນເຄືອຂ່າຍ"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Available devices:"
+msgstr "ອຸປະກອນທີ່ມີ:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid ""
+"The following direct access storage devices (DASD) are available. Please "
+"select each device you want to use one at a time."
+msgstr ""
+"direct access storage device (DASD) ຕໍ່ໄປນີ້ ສາມາດໃຊ້ງານໄດ້  "
+"ກະລຸນາເລືອກອຸປະກອນທີ່ທ່ານຕ້ອງການໃຊ້ເທື່ອໃຊ້ລະຂັ້ນ"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Select \"Finish\" at the bottom of the list when you are done."
+msgstr "ເລືອກ \"ສີ້ນສຸດ\" ທີ່ທ້າຍລາຍການເມື່ອທ່ານເລືອກສຳເລັດແລ້ວ"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid "Choose device:"
+msgstr "ເລືອກອຸປະກອນ:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid ""
+"Please choose a device. You have to specify the complete device number, "
+"including leading zeros."
+msgstr "ກະລຸນາເລືອກອຸປະກອນ ທ່ານຕ້ອງລະບຸໝາຍເລກອຸປະກອນເຕັມ ລວມທັງເລກສູນທີ່ນຳໜ້າດ້ວຍ"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "Invalid device"
+msgstr "ອຸປະກອນບໍ່ຖືກຕ້ອງ"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "An invalid device number has been chosen."
+msgstr "ທ່ານໄດ້ເລືອກໝາຍເລກອຸປະກອນທີ່ບໍ່ຖືກຕ້ອງ"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001 ../s390-dasd.templates:5001
+msgid "Format the device?"
+msgstr "ຈະຟໍແມັດອຸປະກອນ ຫຼື ບໍ?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid "The DASD ${device} is already low-level formatted."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid ""
+"Please choose whether you want to format again and remove any data on the "
+"DASD. Note that formatting a DASD might take a long time."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:5001
+#, fuzzy
+#| msgid ""
+#| "The installer is unable to detect if the device ${device} has already "
+#| "been formatted or not. Devices need to be formatted before you can create "
+#| "partitions."
+msgid ""
+"The DASD ${device} is not low-level formatted. DASD devices must be "
+"formatted before you can create partitions."
+msgstr ""
+"ໂປຼແກມຕິດຕັ້ງບໍ່ສາມາດກວດສອບອຸປະກອນ ${device} ໄດ້ ວ່າໄດ້ຟໍແມັດໃວ້ແລ້ວ ຫຼື ຍັງ "
+"ທ່ານຕ້ອງຟໍແມັດອຸປະກອນເສຍກ່ອນ ກ່ອນທີ່ຈະສາມາດສ້າງພາທິຊັ້ນໄດ້"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+#, fuzzy
+#| msgid "Device in use"
+msgid "The DASD ${device} is in use"
+msgstr "ອຸປະກອບກຳລັງໃຊ້ງານຢູ່"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid ""
+"Could not low-level format the DASD ${device} because the DASD is in use.  "
+"For example, the DASD could be a member of a mapped device in an LVM volume "
+"group."
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:7001
+msgid "Formatting ${device}..."
+msgstr "ກຳລັງຟໍແມັດ ${device}..."
+
+#. Type: text
+#. Description
+#. Main menu item. Keep translations below 55 columns
+#. :sl5:
+#: ../s390-dasd.templates:8001
+msgid "Configure direct access storage devices (DASD)"
+msgstr "ຕັ້ງຄ່າ direct access storage device (DASD)"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl5:
+#: ../zipl-installer.templates:1001
+msgid "Install the ZIPL boot loader on a hard disk"
+msgstr "ຕິດຕັງບູດໂຫຼດເດີ ZIPL ລົງໃນຮາດດິດສ໌"

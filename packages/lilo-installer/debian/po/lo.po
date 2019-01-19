@@ -1,0 +1,269 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of lo.po to Lao
+# Lao translation of debian-installer.
+# Copyright (C) 2006-2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Anousak Souphavanh <anousak@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: lo\n"
+"Report-Msgid-Bugs-To: lilo-installer@packages.debian.org\n"
+"POT-Creation-Date: 2009-12-18 22:47+0000\n"
+"PO-Revision-Date: 2010-11-26 09:11+0700\n"
+"Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
+"Language-Team: Lao <lo@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001
+msgid "${disc}: Master Boot Record"
+msgstr "${disc}: ມາດເຕີເຮຄຮ໋ອດ"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001
+msgid "${part}: new Debian partition"
+msgstr "${part}: ພາທິຊັນເດບຽນທີ່ລົງໃໝ່"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001 ../lilo-installer.templates:2001
+msgid "Other choice (Advanced)"
+msgstr "ຕົວເລືອກອື່ນ (ຊັ້ນສູງ)"
+
+#. Type: select
+#. Description
+#. :sl3:
+#. Type: select
+#. Description
+#. :sl3:
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002 ../lilo-installer.templates:2002
+#: ../lilo-installer.templates:3001
+msgid "LILO installation target:"
+msgstr "ຕໍ່າແໜ່ງທີ່ຈະຕິດຕັ້ງ LILO:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002
+msgid ""
+"The LILO program needs to be installed to make your new system bootable. By "
+"installing it onto your disk's Master Boot Record, LILO will take complete "
+"control of the boot process, but if you want to use a different boot "
+"manager, just install LILO on the new Debian partition instead."
+msgstr ""
+"ທ່ານຈຳເປັນຕ້ອງຕິດຕັ້ງ LILO ເພື່ອໃຫ້ລະບົບທີ່ຕິດຕັ້ງໃໝ່ສາມາດບຣູດໄດ້ການຕິດຕັ້ງ LILO "
+"ລົງໃນມາດເຕີເຮຄຣ໋ອດຂອງຮາດດິກທີ່ ຈະເຮັດໃໝ່LILO "
+"ເຂົ້າຄວບຄຸມຂະບວນການບຣູດທັງໝົດແຕ່ຖ້າທ່ານໃຊ້ໂປແກຣມການຈັດການບຣູດຕົວອື່ນ ກໍ່ພຽງແຕ່ຕິດຕັ້ງ LILO "
+"ໃນພາທີຊັນເດບຽນທີ່ຕິດຕັ້ງໃໝ່ເທົ່ານັ້ນ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002
+msgid "If unsure, install LILO into the Master Boot Record."
+msgstr "ຖ້ບໍ່ໝັ້ນໃຈໃຫ້ຕິດຕັ້ງ LILO ລົງໃນມາດເຕີບຣູດເຮຄຣ໋ອດ"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:2001
+msgid "${disc}: software RAID array"
+msgstr "${disc}: software RAID array"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:2002
+msgid ""
+"The LILO program needs to be installed to make your new system bootable. You "
+"may choose to install it onto a software RAID array or another device."
+msgstr ""
+"ທ່ານຈຳເປັນຕ້ອງຕິດຕັ້ງ LILO ເພື່ອໃຫ້ລະບົບທີ່ຕິດຕັ້ງໃໝ່ສາມາດບຣູດໄດ້ທ່ານອາດເລືອກທີ່ຈະຕິດຕັ້ງລົງໃນຊອບແວຣ໌ "
+"software RAID arrayຫຼື ເລືອກຕົວເລືອກກໍ່ໄດ້"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:3001
+msgid ""
+"Please enter the device name of the partition or disk onto which LILO should "
+"be installed, such as /dev/hda or /dev/sda1."
+msgstr "ກາລຸນາປ້ອນຊື່ຂອງອຸປະກອນພາທີຊັນຫຼືດິກທີ່ຈະຕິດຕັ້ງ LILO ເຊັ່ນ /dev/hda ຫຼື /dev/sda1"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:4001
+msgid "Invalid partition name"
+msgstr "ຊື່ພາທີຊັນບໍ່ຖຶກຕ້ອງ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:4001
+msgid ""
+"The path ${path} does not represent a partition or hard disk device. Please "
+"try again."
+msgstr "ຊື່ພຣາບ ${path} ບໍ່ແມ່ນຊື່ທີ່ແທນພາທີຊັນ ຫຼື ອຸປະກອນຮາດດິກກາລຸນາລອງໃໝ່"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:5001
+msgid "Installing LILO..."
+msgstr "ກຳລັງຕິດຕັ້ງ LILO..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:6001
+msgid "Activating partition ${bootdev}"
+msgstr "ກຳລັງກຳນົດພາທີຊັນ ${bootdev} ໃຫ້ແອມຟິຮບ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:7001
+msgid "Creating lilo.conf"
+msgstr "ກຳລັງສ້າງ lilo.conf"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:8001
+msgid "Installing the LILO package"
+msgstr "ກຳລັງຕິດຕັ້ງແພັກເກັດ LILO"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:9001
+msgid "Running LILO for ${bootdev}"
+msgstr "ກຳລັງທຳງານ LILO ສຳລັບ ${bootdev}"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:10001
+msgid "LILO configured to use a serial console"
+msgstr "ຕັ້ງຄ່າ LILO ໃຫ້ໃຊ້ຄອນໂທແບບອານຸພາກ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:10001
+msgid ""
+"LILO is configured to use serial port ${PORT} as the console. ${PORT_SPEED}"
+msgstr "LILO ຖືກຕັ້ງຄ່າໄວ້ໃຫ້ໃຊ້ພຣ໋ອດນຸກົມ ${PORT} ເປັນຄອນໂຊ ${PORT_SPEED}"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:11001
+msgid "The serial port speed is set to ${SPEED}."
+msgstr "ຄວາມໄວພຣ໊ອດອານຸກົມຖຶກກຳນົດເປັນ ${SPEED}"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid "Would you like to make this partition active?"
+msgstr "ຕ້ອງການກຳນົດໃຫ້ພາທີຊັນນີ້ແອັກທີບ ຫຼື ບໍ່ ?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid ""
+"You have chosen to install LILO on a partition that is not the active one. "
+"If this partition is not marked active, then LILO will not be loaded by the "
+"boot loader. This may cause you to be unable to boot into the system that is "
+"being installed."
+msgstr ""
+" ເຈົ້າໄດ້ເລືອກຕິດຕັ້ງ LILO ລົງໃນພາທີຊັນທີ່ບໍ່ແອັກຖີບ ຖ້າພາທີ່ຊັນບໍ່ຖຶກກຳນົດໃຫ້ແອັກຖີບບຣູດໂຫຼດເດີກໍ່ຈະບໍ່ໂຫຼດ "
+"LILO ຊື່ງອາດເຮັດໃຫ້ເຈົ້າບໍ່ສາມາດເຂົ້າລະບົບທີ່ກຳລັງຕິດຕັ້ງນີ້ໄດ້"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid ""
+"You should make this partition active unless you have another boot loader "
+"that will allow you to access your new Linux installation."
+msgstr ""
+"ທ່ານຄວນກຳນົດໃຫ້ພາທີຊັນນີ້ແອັກຖີບ ນອກຈາກວ່າທ່ານມີບຣູດໂຫຼດເດີຕົວອື່ນທີ່ສາມາດເຂົ້າເຖີງລີນຸກທີ່ຕິດຕັ້ງໃໝ່ນີ້ໄດ້"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:13001
+msgid "LILO installation failed. Continue anyway?"
+msgstr "ຕິດຕັ້ງ LILO ບໍ່ສຳເລັດຈະດຳເນີນການຕໍ່ໄປ ຫຼື ບໍ່ ?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:13001
+msgid ""
+"The lilo package failed to install into /target/. Installing LILO as a boot "
+"loader is a required step. The install problem might however be unrelated to "
+"LILO, so continuing the installation may be possible."
+msgstr ""
+"ຕິດຕັ້ງແພັກເກັດ lilo ລົງໃນ /target/ ບໍ່ສຳເລັດການຕິດຕັ້ງ LILO ເປັນບຣູດໂຫຼດເດີ ເປັນຂັ້ນຕອນທີ່ຈຳເປັນ "
+"ແຕ່ປັນຫາຂອງການຕິດຕັ້ງອາດບໍ່ກ່ຽວກັນ LILO ກໍ່ໄດ້ດັ່ງນັ້ນ ການດຳເນີນການຕິດຕັ້ງຕໍ່ໄປກໍ່ອາດຈະເຮັດໄດ້"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:14001
+msgid "LILO installation failed"
+msgstr "ຕິດຕັ້ງ LILO ບໍ່ສຳເລັດ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:14001
+msgid "Running \"/sbin/lilo\" failed with error code \"${ERRCODE}\"."
+msgstr "ການທຳງານຕາມຄຳສັ່ງ\"/sbin/lilo\"ບໍ່ສຳເລັບໂດຍມີລະຫັດຂໍ້ຜິດພາດ\"${ERRCODE}\""
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl3:
+#: ../lilo-installer.templates:15001
+msgid "Install the LILO boot loader on a hard disk"
+msgstr "ຕິດຕັ້ງບຣູດໂຫຼດເດີ LILO ລົງໃນຮາດດິກ"

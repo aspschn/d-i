@@ -1,0 +1,117 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Lithuanian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Marius Gedminas <mgedmin@b4net.lt>, 2004.
+# Darius Skilinskas <darius10@takas.lt>, 2005.
+# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004...2010.
+# Translations from iso-codes:
+# Gintautas Miliauskas <gintas@akl.lt>, 2008.
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Translations from KDE:
+# - Ričardas Čepas <rch@richard.eu.org>
+# Free Software Foundation, Inc., 2000-2001, 2004
+# Gediminas Paulauskas <menesis@delfi.lt>, 2000-2001.
+# Alastair McKinstry <mckinstry@computer.org>, 2001,2002.
+# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004, 2006, 2008, 2009, 2010.
+# Rimas Kudelis <rq@akl.lt>, 2012, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2017-11-26 20:23+0000\n"
+"Last-Translator: Rimas Kudelis <rq@akl.lt>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+
+#. Type: select
+#. Description
+#: ../elilo-installer.templates:1001
+msgid "Partition for boot loader installation:"
+msgstr "Disko skaidinys paleidyklės diegimui:"
+
+#. Type: select
+#. Description
+#: ../elilo-installer.templates:1001
+msgid ""
+"Partitions currently available in your system are listed. Please choose the "
+"one you want elilo to use to boot your new system."
+msgstr ""
+"Sąraše pateikti sistemoje esami disko skaidiniai. Pasirinkite tą, kurį "
+"„elilo“ turėtų naudoti naujosios sistemos paleidimui."
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:2001
+msgid "No boot partitions detected"
+msgstr "Neaptikta paleidimo skaidinių"
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:2001
+msgid ""
+"There were no suitable partitions found for elilo to use.  Elilo needs a "
+"partition with a FAT file system, and the boot flag set."
+msgstr ""
+"Nerastas paleidyklei „elilo“ tinkamas disko skaidinys. „Elilo“ reikalingas "
+"skaidinys su FAT failų sistema ir nustatyta paleidimo žyme."
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../elilo-installer.templates:3001
+msgid "Install the elilo boot loader on a hard disk"
+msgstr "Paleidyklės „elilo“ diegimas į standųjį diską"
+
+#. Type: text
+#. Description
+#: ../elilo-installer.templates:4001
+msgid "Installing the ELILO package"
+msgstr "Diegiamas paketas „ELILO“"
+
+#. Type: text
+#. Description
+#: ../elilo-installer.templates:5001
+msgid "Running ELILO for ${bootdev}"
+msgstr "„ELILO“ įdiegimas į ${bootdev}"
+
+#. Type: boolean
+#. Description
+#: ../elilo-installer.templates:6001
+msgid "ELILO installation failed.  Continue anyway?"
+msgstr "Nepavyko įdiegti „ELILO“. Ar vis tiek tęsti?"
+
+#. Type: boolean
+#. Description
+#: ../elilo-installer.templates:6001
+msgid ""
+"The elilo package failed to install into /target/.  Installing ELILO as a "
+"boot loader is a required step.  The install problem might however be "
+"unrelated to ELILO, so continuing the installation may be possible."
+msgstr ""
+"Nepavyko įdiegti „elilo“ paketo į /target/. Paleidyklės „ELILO“ įdiegimas "
+"yra būtinas žingsnis, tačiau diegimo problema gali būti nesusijusi su "
+"„ELILO“, tad įdiegimą galbūt galima tęsti."
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:7001
+msgid "ELILO installation failed"
+msgstr "„ELILO“ įdiegti nepavyko"
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:7001
+msgid "Running \"/usr/sbin/elilo\" failed with error code \"${ERRCODE}\"."
+msgstr "„/usr/sbin/elilo“ įvykdyti nepavyko. Gauta klaida „${ERRCODE}“."

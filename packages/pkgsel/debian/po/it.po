@@ -1,0 +1,160 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Italian messages for debian-installer.
+# Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017 Software in the Public Interest, Inc.
+# Copyright (C) 2018 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# The translation team (for all four levels):
+# Cristian Rigamonti <cri@linux.it>
+# Danilo Piazzalunga <danilopiazza@libero.it>
+# Davide Meloni <davide_meloni@fastwebnet.it>
+# Davide Viti <zinosat@tiscali.it>
+# Filippo Giunchedi <filippo@esaurito.net>
+# Giuseppe Sacco <eppesuig@debian.org>
+# Lorenzo 'Maxxer' Milesi
+# Renato Gini
+# Ruggero Tonelli
+# Samuele Giovanni Tonon <samu@linuxasylum.net>
+# Stefano Canepa <sc@linux.it>
+# Stefano Melchior <stefano.melchior@openlabs.it>
+#
+#
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@computer.org>, 2001
+# Alessio Frusciante <algol@firenze.linux.it>, 2001
+# Andrea Scialpi <solopec@tiscalinet.it>, 2001
+# (translations from drakfw)
+# Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
+# Danilo Piazzalunga <danilopiazza@libero.it>, 2004
+# Davide Viti <zinosat@tiscali.it>, 2006
+# Marcello Raffa <mrooth@tiscalinet.it>, 2001
+# Tobias Toedter <t.toedter@gmx.net>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Milo Casagrande <milo@milo.name>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: pkgsel@packages.debian.org\n"
+"POT-Creation-Date: 2018-06-27 14:00+0200\n"
+"PO-Revision-Date: 2018-08-27 10:27+0200\n"
+"Last-Translator: Milo Casagrande <milo@milo.name>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. should not be more than 55 columns
+#. pkgsel is the module that installs packages by running tasksel to
+#. select "tasks". Please use "install *software*" and not
+#. "install *packages*" which is less adapted for non technical users
+#: ../pkgsel.templates:1001
+msgid "Select and install software"
+msgstr "Selezione e installazione del software"
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when pkgsel is launched, before it installs packages
+#: ../pkgsel.templates:2001
+msgid "Setting up..."
+msgstr "Configurazione..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when upgrading already installed packages.
+#: ../pkgsel.templates:4001
+msgid "Upgrading software..."
+msgstr "Aggiornamento software..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when running tasksel to allow selecting packages
+#. Tasksel will then display its own screens
+#: ../pkgsel.templates:5001
+msgid "Running tasksel..."
+msgstr "Esecuzione di tasksel..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used at the end of the installation phase while
+#. cleaning up pkgsel's stuff
+#: ../pkgsel.templates:6001
+msgid "Cleaning up..."
+msgstr "Pulizia..."
+
+#. Type: text
+#. Description
+#: ../pkgsel.templates:8001
+msgid "Running ${SCRIPT}..."
+msgstr "Esecuzione di ${SCRIPT}..."
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "No automatic updates"
+msgstr "Nessun aggiornamento automatico"
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "Install security updates automatically"
+msgstr "Installa automaticamente gli aggiornamenti di sicurezza"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid "Updates management on this system:"
+msgstr "Gestione degli aggiornamenti su questo sistema:"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Applying updates on a frequent basis is an important part of keeping the "
+"system secure."
+msgstr ""
+"L'installazione frequente degli aggiornamenti è un aspetto importante per "
+"tenere il sistema sicuro."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"By default, security updates are not automatically installed, as security "
+"advisories should be reviewed before manual installation of the updates "
+"using standard package management tools."
+msgstr ""
+"Per impostazione predefinita, gli aggiornamenti di sicurezza non vengono "
+"installati automaticamente. Gli annunci di sicurezza dovrebbero essere letti "
+"prima dell'installazione manuale degli aggiornamenti utilizzando gli "
+"strumenti di gestione dei pacchetti standard."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Alternatively the unattended-upgrades package can be installed, which will "
+"install security updates automatically. Note however that automatic "
+"installation of updates may occasionally cause unexpected downtime of "
+"services provided by this machine in the rare cases where the update is not "
+"fully backward-compatible, or where the security advisory requires the "
+"administrator to perform some other manual operation."
+msgstr ""
+"In alternativa è possibile installare il pacchetto «unattended-upgrades» per "
+"abilitare l'installazione automatica degli aggiornamenti di sicurezza. In "
+"alcuni casi, l'applicazione automatica degli aggiornamenti potrebbe causare "
+"il non funzionamento dei servizi forniti da questo computer nei rari casi in "
+"cui l'aggiornamento non sia compatibile con la versione installata o se gli "
+"aggiornamenti di sicurezza richiedano di eseguire delle operazioni manuali."

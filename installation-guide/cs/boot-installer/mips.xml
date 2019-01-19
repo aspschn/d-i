@@ -1,0 +1,8 @@
+<!-- $Id$ -->
+<!-- original version: 70879 -->
+
+  <sect2 arch="mips;mips64el;mipsel" id="boot-tftp-mips"><title>Zavedení z TFTP</title>
+
+&boot-installer-intro-net.xml;
+ 
+   </sect2>

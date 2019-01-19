@@ -1,0 +1,404 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: rescue@packages.debian.org\n"
+"POT-Creation-Date: 2016-07-01 22:00+0000\n"
+"PO-Revision-Date: 2018-02-08 14:24+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#. Type: title
+#. Description
+#. Info message displayed when running in rescue mode
+#. :sl2:
+#: ../rescue-check.templates:2001
+msgid "Rescue mode"
+msgstr "Ҳолати наҷотдиҳӣ"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../rescue-mode.templates:1001
+msgid "Enter rescue mode"
+msgstr "Гузаштан ба реҷаи наҷотдиҳӣ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:2001
+msgid "No partitions found"
+msgstr "Ягон қисми диск ёфт нашудааст"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:2001
+msgid ""
+"The installer could not find any partitions, so you will not be able to "
+"mount a root file system. This may be caused by the kernel failing to detect "
+"your hard disk drive or failing to read the partition table, or the disk may "
+"be unpartitioned. If you wish, you may investigate this from a shell in the "
+"installer environment."
+msgstr ""
+"Насбкунанда натавонист ягон қисми дискро пайдо намояд, барои ҳамин шумо "
+"наметавонед низоми файлии root-ро васл намоед. Ин метавонад аз он сабаб ба "
+"вуҷуд ояд, ки ҳаста драйви диски сахти шуморо пайдо карда натавонист, ё ки "
+"ҷадвали қисмбандиро хонда натавонист, ё ки диск қисмбандӣ нашудааст. Агар "
+"шумо хоҳед, шумо метавонед инро аз восити муҳити насбкунанда таҳқиқ намоед."
+
+#. Type: select
+#. Choices
+#: ../rescue-mode.templates:3001
+msgid "Assemble RAID array"
+msgstr "Ҷамъ кардани қатори RAID"
+
+#. Type: select
+#. Choices
+#: ../rescue-mode.templates:3001
+msgid "Do not use a root file system"
+msgstr "Истифода накардани низоми файлии root"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:3002
+msgid "Device to use as root file system:"
+msgstr "Дастгоҳ барои истифода ҳамчун низоми файлии root:"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:3002
+msgid ""
+"Enter a device you wish to use as your root file system. You will be able to "
+"choose among various rescue operations to perform on this file system."
+msgstr ""
+"Дастгоҳеро ворид намоед, ки бояд ҳамчун низоми решагии шумо истифода шавад. "
+"Шумо метавонед дар байни амалиётҳои гуногуни барқароркунӣ, ки дар ин низоми "
+"файлӣ иҷро мешаванд, интихоб намоед."
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:3002
+msgid ""
+"If you choose not to use a root file system, you will be given a reduced "
+"choice of operations that can be performed without one. This may be useful "
+"if you need to correct a partitioning problem."
+msgstr ""
+"Агар шумо интихоб намоед, ки низоми файлии решагиро истифода набаред, ба "
+"шумо интихоби камтари амалиётҳо дода мешавад, ки метавонанд бе низоми файлии "
+"решагӣ иҷро шаванд. Ин метавонад он гоҳ фоиданок бошад, ки агар ба шумо "
+"лозим шавад, ки мушкилии қисмбандиро ислоҳ намоед."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:4001
+msgid "No such device"
+msgstr "Чунин дастгоҳ мавҷуд нест"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:4001
+msgid ""
+"The device you entered for your root file system (${DEVICE}) does not exist. "
+"Please try again."
+msgstr ""
+"Дастгоҳе, ки шумо барои низоми файлии роҳандозии худ (${DEVICE}) ворид "
+"кардед, вуҷуд надорад. Лутфан, амалро такрор намоед."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:5001
+msgid "Mount failed"
+msgstr "Васлкунӣ қатъ шудааст"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:5001
+msgid ""
+"An error occurred while mounting the device you entered for your root file "
+"system (${DEVICE}) on /target."
+msgstr ""
+"Ҳангоми васлкунии дастгоҳи воридшудаи шумо барои низоми файлии решагии "
+"(${DEVICE}) дар /target хато ба вуҷуд омадааст."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:5001
+msgid "Please check the syslog for more information."
+msgstr "Барои маълумоти бештар, лутфан, syslog-ро санҷед."
+
+#. Type: select
+#. Description
+#: ../rescue-mode.templates:6001
+msgid "Rescue operations"
+msgstr "Амалҳои наҷотдиҳӣ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:7001
+msgid "Rescue operation failed"
+msgstr "Амали наҷотдиҳӣ қатъ шуд"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:7001
+msgid "The rescue operation '${OPERATION}' failed with exit code ${CODE}."
+msgstr ""
+"Амалиёти барқароршавии \"${OPERATION}\" бо рамзи хатои ${CODE} бо нокомӣ "
+"дучор шуд."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:8001
+msgid "Execute a shell in ${DEVICE}"
+msgstr "Иҷро кардани восит дар ${DEVICE}"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:9001
+msgid "Execute a shell in the installer environment"
+msgstr "Иҷро кардани восит дар муҳити насбкунанда"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:10001
+msgid "Choose a different root file system"
+msgstr "Интихоби низоми файлии дигари root"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:11001
+msgid "Reboot the system"
+msgstr "Низомро бозоғозӣ намоед"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. Type: text
+#. Description
+#. :sl2:
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:12001 ../rescue-mode.templates:16001
+#: ../rescue-mode.templates:17001
+msgid "Executing a shell"
+msgstr "Иҷрокунии восит"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:12001
+msgid ""
+"After this message, you will be given a shell with ${DEVICE} mounted on \"/"
+"\". If you need any other file systems (such as a separate \"/usr\"), you "
+"will have to mount those yourself."
+msgstr ""
+"Баъд аз ин паём, ба шумо восит бо ${DEVICE}, ки дар \"/\" васл шудааст, дода "
+"мешавад. Агар ба шумо ягон низомҳои файлии дигар лозим бошанд (ба мисли \"/"
+"usr\"-и алоҳида), шумо бояд онҳоро мустақилона васл намоед."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:13001
+msgid "Error running shell in /target"
+msgstr "Ҳангоми иҷрокунии восит дар /target хато ба вуҷуд омад"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:13001
+msgid ""
+"A shell (${SHELL}) was found on your root file system (${DEVICE}), but an "
+"error occurred while running it."
+msgstr ""
+"Дар низоми решагии файлии шумо (${DEVICE}) восити (${SHELL}) ёфт шуд, аммо "
+"ҳангоми иҷрокунии он хато ба вуҷуд омад."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:14001
+msgid "No shell found in /target"
+msgstr "Ягон восит дар /target ёфт нашуд"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:14001
+msgid "No usable shell was found on your root file system (${DEVICE})."
+msgstr ""
+"Ягон восити истифодашаванда дар низоми файлии решагии (${DEVICE})-и шумо ёфт "
+"нашуд."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:15001
+msgid "Interactive shell on ${DEVICE}"
+msgstr "Восити интерактивӣ дар ${DEVICE}"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:16001
+msgid ""
+"After this message, you will be given a shell with ${DEVICE} mounted on \"/"
+"target\". You may work on it using the tools available in the installer "
+"environment. If you want to make it your root file system temporarily, run "
+"\"chroot /target\". If you need any other file systems (such as a separate "
+"\"/usr\"), you will have to mount those yourself."
+msgstr ""
+"Баъд аз ин паём, ба шумо восит бо ${DEVICE}, ки дар \"/target\" васл "
+"шудааст, дода мешавад. Шумо метавонед тавассути абзорҳое, ки дар муҳити "
+"насбкунанда дастрас мебошанд, бо он кор намоед. Агар шумо хоҳед, ки онро "
+"муваққатан ҳамчун низоми файлии решагии худ истифода баред, фармони "
+"\"chroot /target\"-ро иҷро намоед. Агар ба шумо ягон низомҳои файлии дигар "
+"лозим бошанд (ба мисли \"/usr\"-и алоҳида), шумо бояд онҳоро мустақилона "
+"васл намоед."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:17001
+msgid ""
+"After this message, you will be given a shell in the installer environment. "
+"No file systems have been mounted."
+msgstr ""
+"Баъд аз ин паём, ба шумо восит дар муҳити насбкунанда дода мешавад. Ягон "
+"низоми файлӣ васл карда нашуд."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:18001
+msgid "Interactive shell in the installer environment"
+msgstr "Восити интерактивӣ дар муҳити насбкунанда"
+
+#. Type: password
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:19001
+msgid "Passphrase for ${DEVICE}:"
+msgstr "Калидвожа барои ${DEVICE}:"
+
+#. Type: password
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:19001
+msgid "Please enter the passphrase for the encrypted volume ${DEVICE}."
+msgstr ""
+"Лутфан, калидвожаро барои ҳаҷми рамзгузоришудаи ${DEVICE} ворид намоед."
+
+#. Type: password
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:19001
+msgid ""
+"If you don't enter anything, the volume will not be available during rescue "
+"operations."
+msgstr ""
+"Агар шумо ягон чизро ворид накунед, ҳаҷм ҳангоми амалиётҳои барқарорсозӣ "
+"дастрас намешавад."
+
+#. Type: multiselect
+#. Choices
+#: ../rescue-mode.templates:20001
+msgid "Automatic"
+msgstr "Худкор"
+
+#. Type: multiselect
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:20002
+msgid "Partitions to assemble:"
+msgstr "Қисмҳои диск барои эҷодкунӣ:"
+
+#. Type: multiselect
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:20002
+msgid ""
+"Select the partitions to assemble into a RAID array. If you select "
+"\"Automatic\", then all devices containing RAID physical volumes will be "
+"scanned and assembled."
+msgstr ""
+"Қисмҳои дискро интихоб намоед, ки бояд ба қатори RAID эҷод карда шаванд. "
+"Агар шумо \"Худкор\"-ро интихоб намоед, он гоҳ ҳамаи дастгоҳҳое, ки дорои "
+"ҳаҷмҳои физикии RAID мебошанд, скан ва эҷод карда мешаванд."
+
+#. Type: multiselect
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:20002
+msgid ""
+"Note that a RAID partition at the end of a disk may sometimes cause that "
+"disk to be mistakenly detected as containing a RAID physical volume. In that "
+"case, you should select the appropriate partitions individually."
+msgstr ""
+"Ба қайд гиред, ки қисми диски RAID дар охири диск метавонад баъзан сабаби он "
+"гардад, ки диск ҳамчун диски дорои ҳаҷми физикии RAID ташхис карда мешавад. "
+"Дар ин ҳолат, шумо бояд қисмҳои диски мувофиқро ба таври мушаххас интихоб "
+"намоед."
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:21001
+msgid "Mount separate ${FILESYSTEM} partition?"
+msgstr "Қисми диски алоҳидаи ${FILESYSTEM}-ро васл мекунед?"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:21001
+msgid "The installed system appears to use a separate ${FILESYSTEM} partition."
+msgstr ""
+"Чунин менамояд, ки низоми насбшуда қисми диски алоҳидаи ${FILESYSTEM}-ро "
+"истифода мебарад."
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:21001
+msgid ""
+"It is normally a good idea to mount it as it will allow operations such as "
+"reinstalling the boot loader. However, if the file system on ${FILESYSTEM} "
+"is corrupt then you may want to avoid mounting it."
+msgstr ""
+"Фикри хуб аст, ки агар шумо онро васл намоед, зеро ки он барои амалҳо "
+"монанди насбкунии дубораи боркунандаи роҳандозӣ иҷозат медиҳад. Лекин, агар "
+"низоми файлӣ дар ${FILESYSTEM} вайрон шавад, он вақт шумо метавонед "
+"васлкунии онро рад намоед."

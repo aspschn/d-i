@@ -1,0 +1,804 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of debian-installer_packages_po_sublevel1_he.po to Hebrew
+# Hebrew messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Translations from iso-codes:
+# Translations taken from ICU SVN on 2007-09-09
+# Translations taken from KDE:
+# Amit Dovev <debian.translator@gmail.com>, 2007.
+# Meital Bourvine <meitalbourvine@gmail.com>, 2007.
+# Omer Zak <w1@zak.co.il>, 2008, 2010, 2012, 2013.
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Free Software Foundation, Inc., 2002,2004.
+# Alastair McKinstry <mckinstry@computer.org>, 2002.
+# Meni Livne <livne@kde.org>, 2000.
+# Free Software Foundation, Inc., 2002,2003.
+# Meni Livne <livne@kde.org>, 2000.
+# Meital Bourvine <meitalbourvine@gmail.com>, 2007.
+# Lior Kaplan <kaplan@debian.org>, 2004-2007, 2008, 2010, 2011, 2015, 2017.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
+"POT-Creation-Date: 2017-10-23 22:02+0000\n"
+"PO-Revision-Date: 2018-06-14 08:38+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew (https://www.transifex.com/yaron/teams/79473/he/)\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. MUST be kept below 55 characters/columns
+#. :sl1:
+#: ../apt-setup-udeb.templates:1001
+msgid "Configure the package manager"
+msgstr "הגדרת מנהל החבילות"
+
+#. Type: text
+#. Description
+#. Translators, "apt" is the program name
+#. so please do NOT translate it
+#. :sl1:
+#: ../apt-setup-udeb.templates:2001
+msgid "Configuring apt"
+msgstr "apt מוגדר"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:3001
+msgid "Running ${SCRIPT}..."
+msgstr "מתבצעת הרצה של ${SCRIPT}…"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:4001
+msgid "Scanning local repositories..."
+msgstr "סריקת מאגרים מקומיים..."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:5001
+msgid "Scanning the security updates repository..."
+msgstr "סורק את מאגר עדכוני האבטחה..."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:6001
+msgid "Scanning the release updates repository..."
+msgstr "סורק את מאגר העדכונים לגרסה..."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:7001
+msgid "Scanning the backports repository..."
+msgstr "סורק את מאגר ההתאמות לסביבה ישנה..."
+
+#. Type: select
+#. Choices
+#. :sl2:
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+msgid "Retry"
+msgstr "נסה שנית"
+
+#. Type: select
+#. Choices
+#. :sl2:
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+msgid "Ignore"
+msgstr "התעלם"
+
+#. Type: select
+#. Description
+#: ../apt-setup-udeb.templates:8002
+msgid "Downloading local repository key failed:"
+msgstr "הורדת מפתח למאגר מקומי נכשלה:"
+
+#. Type: select
+#. Description
+#. You should end this with a colon. A non-translatable variable
+#. follows with the mirror URL
+#: ../apt-setup-udeb.templates:8002
+msgid ""
+"The installer failed to download the public key used to sign the local "
+"repository at ${MIRROR}:"
+msgstr ""
+"תכנית ההתקנה נכשלה בהורדת המפתח הציבורי שאיתו נחתם המאגר המקורי מתוך "
+"${MIRROR}:"
+
+#. Type: select
+#. Description
+#: ../apt-setup-udeb.templates:8002
+msgid ""
+"This may be a problem with your network, or with the server hosting this "
+"key. You can choose to retry the download, or ignore the problem and "
+"continue without all the packages from this repository."
+msgstr ""
+"יתכן כי זאת בעיה ברשת שלך או עם השרת שמארח את המפתח הזה. ניתן לבחור לנסות "
+"להוריד שוב או להתעלם מהבעיה ולהמשיך ללא החבילות שמציע המאגר הזה כלל."
+
+#  Type: note
+#  Description
+#  Type: note
+#  Description
+#. Type: error
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:10001
+msgid "Cannot access repository"
+msgstr "לא מצליח לגשת למאגר"
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:10001
+msgid ""
+"The repository on ${HOST} couldn't be accessed, so its updates will not be "
+"made available to you at this time. You should investigate this later."
+msgstr ""
+"המאגר על ${HOST} אינו נגיש, ולכן העדכונים שלו לא יהיו זמינים בשבילך כרגע. "
+"כדאי שתבדוק זאת אחר כך."
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../apt-setup-udeb.templates:10001
+msgid ""
+"Commented out entries for ${HOST} have been added to the /etc/apt/sources."
+"list file."
+msgstr "כניסות עבור ${HOST} נוספו כהערות לקובץ /etc/apt/sources.list file."
+
+#. Type: multiselect
+#. Choices
+#. SEC_HOST is a host name (e.g. security.debian.org)
+#. Translators: the *entire* string should be under 55 columns
+#. including host name. In short, KEEP THIS SHORT and, yes, that's tricky
+#. :sl1:
+#: ../apt-setup-udeb.templates:11001
+msgid "security updates (from ${SEC_HOST})"
+msgstr "עדכוני אבטחה (מהשרת ${SEC_HOST})"
+
+#. Type: multiselect
+#. Choices
+#. SEC_HOST is a host name (e.g. security.debian.org)
+#. Translators: the *entire* string should be under 55 columns
+#. including host name. In short, KEEP THIS SHORT and, yes, that's tricky
+#. :sl1:
+#: ../apt-setup-udeb.templates:11001
+msgid "release updates"
+msgstr "עדכוני גרסה"
+
+#. Type: multiselect
+#. Choices
+#. SEC_HOST is a host name (e.g. security.debian.org)
+#. Translators: the *entire* string should be under 55 columns
+#. including host name. In short, KEEP THIS SHORT and, yes, that's tricky
+#. :sl1:
+#: ../apt-setup-udeb.templates:11001
+msgid "backported software"
+msgstr "תכניות שהותאמו לסביבה ישנה"
+
+#. Type: multiselect
+#. Description
+#. :sl1:
+#: ../apt-setup-udeb.templates:11002
+msgid "Services to use:"
+msgstr "שירותים לשימוש:"
+
+#. Type: multiselect
+#. Description
+#. :sl1:
+#: ../apt-setup-udeb.templates:11002
+msgid ""
+"Debian has two services that provide updates to releases: security and "
+"release updates."
+msgstr "לדביאן ישנם שני שירותי עדכון: עדכוני אבטחה ועדכוני גרסה."
+
+#. Type: multiselect
+#. Description
+#. :sl1:
+#: ../apt-setup-udeb.templates:11002
+msgid ""
+"Security updates help to keep your system secured against attacks. Enabling "
+"this service is strongly recommended."
+msgstr ""
+"עדכוני אבטחה מסייעים לך בהגנה על המערכת שלך מפני תקיפות. הפעלת שירות זה "
+"מומלצת בחום."
+
+#. Type: multiselect
+#. Description
+#. :sl1:
+#: ../apt-setup-udeb.templates:11002
+msgid ""
+"Release updates provide more current versions for software that changes "
+"relatively frequently and where not having the latest version could reduce "
+"the usability of the software. It also provides regression fixes. This "
+"service is only available for stable and oldstable releases."
+msgstr ""
+"עדכוני גרסה מספקים גרסאות עדכניות יותר לתכניות שמשתנות בתדירות גבוהה שבהן "
+"שימוש בגרסה מיושנת עשוי להגביל את תכונות התכנית. העדכונים גם מספקים תיקונים "
+"לתקלות חוזרות. שירות זה זמין רק לגרסה היציבה (stable) ולגרסה היציבה המיושנת "
+"(oldstable)."
+
+#. Type: multiselect
+#. Description
+#. :sl1:
+#: ../apt-setup-udeb.templates:11002
+msgid ""
+"Backported software are adapted from the development version to work with "
+"this release. Although this software has not gone through such complete "
+"testing as that contained in the release, it includes newer versions of some "
+"applications which may provide useful features. Enabling backports here does "
+"not cause any of them to be installed by default; it only allows you to "
+"manually select backports to use."
+msgstr ""
+"תכניות שהוסבו לגרסאות מיושנות עוברות אימוץ מגרסת הפיתוח כדי שיעבדו עם הגרסה "
+"הזאת. למרות שהתכנית הזאת לא עברה מסלול בדיקות שלם כמו זה שחל על התכנית "
+"שנכללה בגרסה, המאגר כולל גרסאות חדשות יותר של יישומים כלשהם שעשויים לספק "
+"תכונות שימושיות. הפעלת מאגר התכניות שהוסבו לגרסאות ישנות (backports) דרך כאן "
+"לא גורר התקנה של תכנית כלשהי כבררת מחדל, ההפעלה רק מאפשר לבחור באיזו גרסה "
+"מהמאגר להשתמש."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../apt-setup-udeb.templates:12001
+msgid "Enable source repositories in APT?"
+msgstr "להפעיל מאגרי מקור ב־APT?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../apt-setup-udeb.templates:12001
+msgid ""
+"By default source repositories are listed in /etc/apt/sources.list (with "
+"appropriate \"deb-src\" lines) so that \"apt-get source\" works. However, if "
+"you don't need this feature, you can disable those entries and save some "
+"bandwidth during \"apt-get update\" operations."
+msgstr ""
+"כבררת מחדל מאגרי מקור מופיעים תחת ‎/etc/apt/sources.list (עם שורות „deb-src” "
+"תואמות) כדי שהפקודה „apt-get source” תעבוד כראוי. עם זאת, אם אין לך צורך "
+"בתכונה זו, ניתן להשבית את הרשומות האלו ולחסוך בתעבורה במהלך פעולות „apt-get "
+"update”."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:1001
+msgid "Scanning the CD-ROM..."
+msgstr "התקליטור נסרק…"
+
+#  Type: title
+#  Description
+#. Type: error
+#. Description
+#. :sl2:
+#: ../apt-cdrom-setup.templates:2001
+msgid "apt configuration problem"
+msgstr "בעיה בהגדרות apt"
+
+#. Type: error
+#. Description
+#. :sl2:
+#: ../apt-cdrom-setup.templates:2001
+msgid ""
+"An attempt to configure apt to install additional packages from the CD "
+"failed."
+msgstr "נכשל הניסיון להגדיר את apt כך שיתקין חבילות נוספות מהתקליטור."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
+#: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
+msgid "Scan another CD or DVD?"
+msgstr "לסרוק CD או DVD נוסף?"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:3001
+msgid "Your installation CD or DVD has been scanned; its label is:"
+msgstr "ה־CD או ה־DVD ההתקנה נסרק. התווית שלו היא:"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:3001
+msgid ""
+"You now have the option to scan additional CDs or DVDs for use by the "
+"package manager (apt). Normally these should be from the same set as the "
+"installation CD/DVD. If you do not have any additional CDs or DVDs "
+"available, this step can just be skipped."
+msgstr ""
+"ניתן כעת לסרוק תקליטורי CD ו־DVD נוספים לשימוש מנהל החבילות (apt). בדרך כלל "
+"אלו אמורים להיות חלק מערכת התקליטורים שממנה מגיע תקליטור התקנה זה. אם אין "
+"תקליטורים נוספים, ניתן פשוט לדלג על שלב זה."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
+msgid "If you wish to scan another CD or DVD, please insert it now."
+msgstr "כדי לסרוק CD או DVD נוסף, נא להכניס אותו כעת."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:4001
+msgid "The CD or DVD with the following label has been scanned:"
+msgstr "ה־CD או ה־DVD עם התווית הבאה נסרק:"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:5001
+msgid "The CD or DVD with the following label has already been scanned:"
+msgstr "ה־CD או ה־DVD עם התווית הבאה כבר נסרק:"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:5001
+msgid "Please replace it now if you wish to scan another CD or DVD."
+msgstr "נא להחליף אותו כעת אם ברצונך לסרוק עוד CD או DVD."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:6001
+msgid ""
+"An attempt to configure apt to install additional packages from the CD/DVD "
+"failed."
+msgstr "הניסיון להגדיר את apt לטובת התקנה של חבילות נוספות מה־CD/DVD נכשל."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:6001
+msgid "Please check that the CD/DVD has been inserted correctly."
+msgstr "נא לבדוק שה־CD/DVD הוכנס בצורה תקינה."
+
+#. Type: text
+#. Description
+#. :sl1:
+#. This template uses the same text as used in the package apt for apt-cdrom
+#. Do not translate "/cdrom/" (the mount point)
+#: ../apt-cdrom-setup.templates:7001
+msgid "Media change"
+msgstr "החלפת מדיה"
+
+#. Type: text
+#. Description
+#. :sl1:
+#. This template uses the same text as used in the package apt for apt-cdrom
+#. Do not translate "/cdrom/" (the mount point)
+#: ../apt-cdrom-setup.templates:7001
+msgid ""
+"/cdrom/:Please insert the disc labeled: '${LABEL}' in the drive '/cdrom/' "
+"and press enter."
+msgstr ""
+"/cdrom/: נא להכניס את התקליטור עם התווית: ‚${LABEL}’ לכונן ‚/cdrom/’ וללחוץ "
+"על enter."
+
+#. Type: text
+#. Description
+#. :sl1:
+#. finish-install progress bar item
+#: ../apt-cdrom-setup.templates:8001
+msgid "Disabling netinst CD in sources.list..."
+msgstr "תקליטור ההתקנה מהרשת מושבת ברשימת המקורות…"
+
+#. Type: text
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
+msgid ""
+"If you are installing from a netinst CD and choose not to use a mirror, you "
+"will end up with only a very minimal base system."
+msgstr ""
+"אם ההתקנה מתבצעת מתקליטור התקנה מהרשת (netinst CD) ובחירתך היא שלא להשתמש "
+"באתר מראה, המערכת שתתקבל בסיום ההתקנה תהיה מערכת בסיסית מזערית מאוד."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:10001
+msgid ""
+"You are installing from a netinst CD, which by itself only allows "
+"installation of a very minimal base system. Use a mirror to install a more "
+"complete system."
+msgstr ""
+"התקנה זו מתבצעת באמצעות תקליטור התקנה מהרשת (netinst CD) שכיחידה עצמאית מציע "
+"רק התקנה של מערכת בסיסית מזערית מאוד. כדאי להשתמש באתר מראה כדי להתקין מערכת "
+"יותר מלאה."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:11001
+msgid ""
+"You are installing from a CD, which contains a limited selection of packages."
+msgstr "התקנה זו מתבצעת מתקליטור שמכיל מבחר מצומצם של חבילות."
+
+#. Type: text
+#. Description
+#. :sl1:
+#. The value of %i can be 2 or 3
+#: ../apt-cdrom-setup.templates:12001
+#, no-c-format
+msgid ""
+"You have scanned %i CDs. Even though these contain a fair selection of "
+"packages, some may be missing (notably some packages needed to support "
+"languages other than English)."
+msgstr ""
+"%i תקליטורים נסרקו. למרות שהם מכילים מבחר הוגן של חבילות, חלק מהחבילות חסרות "
+"(בעיקר כאלה הנדרשות לתמיכה בשפות שאינן אנגלית)."
+
+#. Type: text
+#. Description
+#. :sl1:
+#. The value of %i can be from 4 to 8
+#: ../apt-cdrom-setup.templates:13001
+#, no-c-format
+msgid ""
+"You have scanned %i CDs. Even though these contain a large selection of "
+"packages, some may be missing."
+msgstr ""
+"%i תקליטורים נסרקו. על אף שהם מכילים כמות נרחבת של חבילות, יתכן שחלק מהן "
+"תהיינה חסרות."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:14001
+msgid ""
+"Note that using a mirror can result in a large amount of data being "
+"downloaded during the next step of the installation."
+msgstr ""
+"לתשומת לבך: השימוש באתר מראה עשוי להוביל להורדה של כמויות אדירות של נתונים "
+"במהלך השלב הבא בהתקנה."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:15001
+msgid ""
+"You are installing from a DVD. Even though the DVD contains a large "
+"selection of packages, some may be missing."
+msgstr ""
+"התקנה זו מתבצעת מ־DVD. על אף שה־DVD מכיל מבחר רחב של חבילות, יתכן שחלק מהן "
+"תהיינה חסרות."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:16001
+msgid ""
+"Unless you don't have a good Internet connection, use of a mirror is "
+"recommended, especially if you plan to install a graphical desktop "
+"environment."
+msgstr ""
+"השימוש באתרי מראה מומלץ למעט מקרים בהם חיבור האינטרנט לקוי, במיוחד אם "
+"בכוונתך להתקין סביבת שולחן עבודה גרפית."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-cdrom-setup.templates:17001
+msgid ""
+"If you have a reasonably good Internet connection, use of a mirror is "
+"suggested if you plan to install a graphical desktop environment."
+msgstr ""
+"אם החיבור שלך לאינטרנט מהיר ויציב, כדאי להשתמש באתר מראה מוצע אם בכוונתך "
+"להתקין סביבת שולחן עבודה גרפית."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:1001
+msgid "Scanning the mirror..."
+msgstr "אתר המראה נסרק…"
+
+#  Type: boolean
+#  Description
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:2001
+msgid "Use non-free software?"
+msgstr "להשתמש בתכנה לא חופשית?"
+
+#  Type: boolean
+#  Description
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Some non-free software has been made to work with Debian. Though this "
+"software is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This software has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"ישנם רכיבי תכנה בלתי חופשיים שהוסבו לצורך עבודה עם דביאן. למרות שתכניות אלה "
+"אינן חלק מדביאן, ניתן להשתמש בכלים התקניים של דביאן כדי להתקין אותן. לתכניות "
+"אלה תנאי רישוי מגוונים שעשויים למנוע ממך להשתמש בהן, לשנות אותן או לשתף אותן."
+
+#  Type: boolean
+#  Description
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr "נא לבחור האם התכנית תהיה זמינה בכל מקרה."
+
+#  Type: boolean
+#  Description
+#  Type: boolean
+#  Description
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
+msgid "Use contrib software?"
+msgstr "להשתמש בתכנה מסוג contrib?"
+
+#  Type: boolean
+#  Description
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
+msgid ""
+"Some additional software has been made to work with Debian. Though this "
+"software is free, it depends on non-free software for its operation. This "
+"software is not a part of Debian, but standard Debian tools can be used to "
+"install it."
+msgstr ""
+"ישנם רכיבי תכנה שהוסבו לצורך עבודה עם דביאן. למרות שמדובר בתכנה חופשית היא "
+"תלויה בתכנה בלתי חופשית כדי לפעול. תכניות שכאלה אינן חלק מדביאן אך ניתן "
+"להשתמש בכלים התקניים של דביאן כדי להתקין אותן."
+
+#  Type: boolean
+#  Description
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates-ubuntu:3001
+#: ../apt-mirror-setup.templates-ubuntu:4001
+#: ../apt-mirror-setup.templates-ubuntu:5001
+msgid ""
+"Please choose whether you want this software to be made available to you."
+msgstr "נא לבחור האם להנגיש לך תכנה מסוג זה."
+
+#. Type: select
+#. Choices
+#. :sl2:
+#. These are choices of actions so this is, at least in English,
+#. an infinitive form
+#: ../apt-mirror-setup.templates:4001
+msgid "Change mirror"
+msgstr "שנה אתר מראה"
+
+#. Type: select
+#. Description
+#: ../apt-mirror-setup.templates:4002
+msgid "Downloading a file failed:"
+msgstr "הורדת קובץ נכשלה:"
+
+#. Type: select
+#. Description
+#: ../apt-mirror-setup.templates:4002
+msgid ""
+"The installer failed to access the mirror. This may be a problem with your "
+"network, or with the mirror. You can choose to retry the download, select a "
+"different mirror, or ignore the problem and continue without all the "
+"packages from this mirror."
+msgstr ""
+"תוכנית ההתקנה נכשלה בגישה לאתר המראה. זאת יכולה להיות בעיה ברשת שלך, או עם "
+"אתר המראה. ניתן לבחור לנסות שוב את ההורדה, לבחור אתר מראה אחר או להתעלם "
+"ולהמשיך ללא חבילות מאתר מראה זה."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:5001
+msgid "Use a network mirror?"
+msgstr "להשתמש באתר מראה מקוון?"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:5001
+msgid ""
+"A network mirror can be used to supplement the software that is included on "
+"the CD-ROM. This may also make newer versions of software available."
+msgstr ""
+"ניתן להשתמש באתר מראה כדי להשלים מעבר לתכניות שכלולות בתקליטור. הגדרה זאת "
+"תנגיש לך גרסאות חדשות יותר של תכניות."
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../apt-mirror-setup.templates:6001
+msgid "Continue without a network mirror?"
+msgstr "להמשיך בלי אתר מראה?"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../apt-mirror-setup.templates:6001
+msgid "No network mirror was selected."
+msgstr "לא נבחר אתר מראה."
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Use restricted software?"
+msgstr "להשתמש בתוכנה מוגבלת ?"
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid ""
+"Some non-free software is available in packaged form. Though this software "
+"is not a part of the main distribution, standard package management tools "
+"can be used to install it. This software has varying licenses which may "
+"prevent you from using, modifying, or sharing it."
+msgstr ""
+"מספר תוכנות לא חופשיות זמינות בצורת חבילות. למרות שתוכנה זאת אינה חלק מההפצה "
+"הראשית, ניתן להשתמש בכלים לניהול חבילות כדי להתקין אותה. לתוכנות אלה יש "
+"רישיונות שונים, שעלולים למנוע ממך להשתמש, לשנות או לחלוק אותן."
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:2001
+msgid "Use software from the \"universe\" component?"
+msgstr "להשתמש בתוכנה מרכיב \"universe\" ?"
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:2001
+msgid ""
+"Some additional software is available in packaged form. This software is "
+"free and, though it is not a part of the main distribution, standard package "
+"management tools can be used to install it."
+msgstr ""
+"מספר תכניות נוספות זמינות בצורתן הארוזה. תכניות אלה הן חופשיות ולמרות שאינן "
+"חלק מההפצה הראשית, ניתן להשתמש בכלי ניהול חבילות תקניים כדי להתקין אותן."
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:3001
+msgid "Use software from the \"multiverse\" component?"
+msgstr "להשתמש בתוכנה מרכיב \"multiverse\" ?"
+
+#  Type: boolean
+#  Description
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:3001
+msgid ""
+"Some non-free software is available in packaged form. Though this software "
+"is not a part of the main distribution, standard package management tools "
+"can be used to install it. This software has varying licenses and (in some "
+"cases) patent restrictions which may prevent you from using, modifying, or "
+"sharing it."
+msgstr ""
+"מספר תוכנות לא חופשיות זמינות בצורת חבילות. למרות שתוכנה זאת אינה חלק מההפצה "
+"הראשית, ניתן להשתמש בכלים לניהול חבילות כדי להתקין אותה. לתוכנות אלה יש "
+"רישיונות שונים והגבלות פטנטים, שעלולים למנוע ממך להשתמש, לשנות או לחלוק אותן."
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:4001
+msgid "Use software from the \"partner\" repository?"
+msgstr "להשתמש בתוכנה ממאגר \"partner\"?"
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:4001
+msgid ""
+"Some additional software is available from Canonical's \"partner\" "
+"repository. This software is not part of Ubuntu, but is offered by Canonical "
+"and the respective vendors as a service to Ubuntu users."
+msgstr ""
+"תוכנה נוספת זמינה ממאגר \"partner\" של חב' קנוניקל.  תוכנה זו אינה חלק מ-"
+"Ubuntu, אבל מוצעת על ידי קנוניקל והספקים בתור שרות למשתמשי Ubuntu."
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:5001
+msgid "Use backported software?"
+msgstr "להשתמש בתוכנות שהותאמו אחורה?"
+
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates-ubuntu:5001
+msgid ""
+"Some software has been backported from the development tree to work with "
+"this release. Although this software has not gone through such complete "
+"testing as that contained in the release, it includes newer versions of some "
+"applications which may provide useful features."
+msgstr ""
+"מספר תוכנות נוספות הוסבו לאחור מעץ הפיתוח כדי לעבור עם הגרסה הנוכחית. למרות "
+"שתוכנות אלה לא עברו בדיקות מקיפות כמו התוכנות בגרסה הנוכחית, הן מכילות "
+"גרסאות חדשות של חלק מהתוכנות ואולי מציגות יכולות חדשות."

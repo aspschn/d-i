@@ -1,0 +1,701 @@
+# Thai translation of debian-installer.
+# Copyright (C) 2006-2016 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Theppitak Karoonboonyanan <theppitak@gmail.com>, 2006-2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2016-02-21 11:19+0700\n"
+"Last-Translator: Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "ดิสก์เสมือน %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "ดิสก์เสมือน %s, พาร์ทิชัน #%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - รองรับ Access Control List ตาม POSIX.1e"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr "shortnames - ใช้ชื่อแฟ้มในแบบ 7.3 แบบเก่าของ MS-DOS เท่านั้น"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"การเริ่มต้นทำงานของระบบเมื่อเปิดเครื่อง จะอาศัยสิ่งที่เรียกว่าบูตโหลดเดอร์ "
+"บูตโหลดเดอร์จะถูกติดตั้งไว้ในพาร์ทิชันสำหรับบูต คุณต้องกำหนดแฟล็ก bootable "
+"ให้กับพาร์ทิชันดังกล่าวด้วย และพาร์ทิชันดังกล่าว จะถูกทำเครื่องหมายด้วย \"${BOOTABLE}\" "
+"ในเมนูหลักสำหรับแบ่งพาร์ทิช้น"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! ผิดพลาด: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "ปุ่มกด:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "'%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "แสดงข้อความช่วยเหลือนี้"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "กลับไปที่คำถามก่อน"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "เลือกรายการว่างเปล่า"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr "กด '%c' และ '%c' เพื่อดูตัวเลือกอื่นๆ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr "กด '%c' เพื่อดูตัวเลือกก่อนๆ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr "กด '%c' เพื่อดูตัวเลือกถัดๆ ไป"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "คำสั่ง: '%c' ดูวิธีใช้, ค่าปริยาย=%d>"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "คำสั่ง: '%c' ดูวิธีใช้>"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "คำสั่ง: '%c' ดูวิธีใช้, ค่าปริยาย=%s>"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[กด enter เพื่อดำเนินการต่อ]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "อินเทอร์เฟซที่จะใช้:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"แพกเกจต่างๆ ที่ใช้ debconf ในการตั้งค่า จะมีรูปลักษณ์และการใช้งานเหมือนๆ กัน "
+"คุณสามารถเลือกชนิดของการติดต่อผู้ใช้ที่จะใช้ได้"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "ไม่ใช้"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "ตัวเลือก 'ไม่ใช้' จะไม่ถามคำถามใดๆ เลย"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "ข้อความ"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "ตัวเลือก 'ข้อความ' คืออินเทอร์เฟซแบบข้อความล้วนแบบเก่า"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "Newt"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "ตัวเลือก 'Newt' คืออินเทอร์เฟซแบบเต็มจอในโหมดอักษร"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "GTK"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr "ตัวเลือก 'GTK' คืออินเทอร์เฟซแบบกราฟิกที่สามารถใช้ได้ในสภาพแวดล้อมกราฟิกแบบไหนก็ได้"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "ไม่สามารถเมานท์ /target/proc"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "เมานท์ระบบแฟ้ม proc บน /target/proc ไม่สำเร็จ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "คำเตือน: ระบบของคุณอาจไม่สามารถบูตได้!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "การตั้งค่าตัวแปรเฟิร์มแวร์สำหรับการบูตอัตโนมัติ"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"คุณจำเป็นต้องตั้งค่าตัวแปรบางตัวในเฟิร์มแวร์ Genesi เพื่อให้ระบบของคุณสามารถบูตได้โดยอัตโนมัติ "
+"เมื่อเสร็จสิ้นกระบวนการติดตั้งแล้ว ระบบจะเริ่มบูตใหม่ ที่บรรทัดคำสั่งของเฟิร์มแวร์ "
+"ให้ตั้งค่าของเฟิร์มแวร์ต่อไปนี้ เพื่อที่จะสามารถบูตได้โดยอัตโนมัติ:"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"การสั่งดังกล่าวเพียงครั้งเดียวก็เพียงพอ ในครั้งต่อไป เพียงป้อนคำสั่ง \"boot\" "
+"หรือบูตเครื่องใหม่เพื่อเข้าสู่ระบบที่ติดตั้งใหม่นี้"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr "หรือมิฉะนั้น คุณก็ยังสามารถสั่งบูตเคอร์เนลเองโดยป้อนคำสั่งที่บรรทัดคำสั่งของเฟิร์มแวร์:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"คุณจำเป็นต้องตั้งค่าตัวแปรบางตัวใน CFE เพื่อให้ระบบของคุณสามารถบูตได้โดยอัตโนมัติ "
+"เมื่อเสร็จสิ้นกระบวนการติดตั้งแล้ว ระบบจะเริ่มบูตใหม่ ที่บรรทัดคำสั่งของเฟิร์มแวร์ "
+"ให้ตั้งค่าตัวแปรต่อไปนี้ เพื่อให้บูตได้ง่ายเข้า:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"คุณจะต้องทำอย่างนี้เพียงครั้งเดียวเท่านั้น เพื่อให้คุณสามารถสั่งคำสั่ง \"boot_debian\" "
+"ที่บรรทัดคำสั่ง CFE ได้"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"ถ้าคุณอยากให้บูตอัตโนมัติทุกครั้งที่เปิดเครื่อง "
+"คุณก็สามารถกำหนดตัวแปรต่อไปนี้เพิ่มเติมจากตัวแปรข้างต้นได้:"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "จะติดตั้ง GRUB หรือไม่?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB 2 เป็นรุ่นใหม่ของ GNU GRUB ซึ่งเป็นบูตโหลดเดอร์ที่ใช้กันทั่วไปในเครื่องพีซี i386/amd64 "
+"และขณะนี้สามารถใช้กับ ${ARCH} ได้แล้ว"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"GRUB 2 มีความสามารถใหม่ๆ ที่น่าสนใจ แต่ยังอยู่ในขั้นทดสอบเท่านั้นสำหรับสถาปัตยกรรมนี้ "
+"ถ้าคุณเลือกที่จะติดตั้ง คุณควรเตรียมพร้อมรับมือกับการพังไว้ก่อน "
+"และควรรู้ช่องทางที่จะกู้ระบบของคุณกลับคืนถ้าเครื่องบูตไม่ขึ้น "
+"ขอแนะนำว่าอย่าลองกับสภาพแวดล้อมที่ให้บริการสำคัญ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "ติดตั้งบูตโหลดเดอร์ Arcboot ลงในฮาร์ดดิสก์"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "ดิสก์สำหรับติดตั้งบูตโหลดเดอร์"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"arcboot จะต้องติดตั้งลงในส่วนต้นของดิสก์ที่มีป้ายชื่อดิสก์แบบ SGI ซึ่งโดยปกติแล้ว จะใช้ส่วนต้นของ /"
+"dev/sda กรุณาระบุชื่ออุปกรณ์ของดิสก์ที่จะติดตั้ง arcboot"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "arcboot ถูกตั้งค่าไว้ให้ใช้คอนโซลอนุกรม"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"arcboot ถูกตั้งค่าไว้ให้ใช้พอร์ตอนุกรม ${PORT} เป็นคอนโซล "
+"ความเร็วของพอร์ตอนุกรมถูกกำหนดไว้เป็น ${SPEED}"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "ติดตั้ง arcboot ไม่สำเร็จ จะดำเนินการต่อไปหรือไม่?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"ติดตั้งแพกเกจ arcboot ลงใน /target/ ไม่สำเร็จ การติดตั้ง Arcboot เป็นบูตโหลดเดอร์ "
+"เป็นขั้นตอนที่จำเป็น แต่ปัญหาของการติดตั้งอาจไม่เกี่ยวกับ Arcboot ก็ได้ ดังนั้น "
+"การดำเนินการติดตั้งต่อไปก็อาจทำได้"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "กำลังกำหนดค่า PROM สำหรับ Arcboot"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"ถ้านี่เป็นการติดตั้งลินุกซ์ครั้งแรกในเครื่องนี้ หรือมีการแบ่งพาร์ทิชันในฮาร์ดดิสก์ใหม่ ค่าบางค่าใน PROM "
+"จะต้องถูกกำหนดใหม่ เพื่อให้ระบบสามารถบูตได้ตามปกติ"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"เมื่อจบขั้นตอนการติดตั้งนี้ ระบบจะบูตใหม่ หลังจากนั้น ให้คุณเข้าสู่หน้าจอคำสั่งจากตัวเลือก \"Stop "
+"for Maintenance\" แล้วป้อนคำสั่งต่อไปนี้:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "ตั้งค่าอุปกรณ์แบบบล็อคในเครือข่าย"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "การดำเนินการตั้งค่า NBD:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "ขณะนี้มีอุปกรณ์ ${NUMBER} ชิ้นเชื่อมต่ออยู่"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "เซิร์ฟเวอร์อุปกรณ์แบบบล็อคในเครือข่าย:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "กรุณาป้อนชื่อโฮสต์หรือที่อยู่ไอพีของระบบที่ให้บริการ nbd-server"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "ชื่อ export ของ NBD"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"กรุณาป้อนชื่อ export ของ NBD ที่ใช้ในการเข้าถึง nbd-server  ชื่อที่ป้อนนี้ควรตรงกับชื่อ export "
+"ที่มีอยู่ที่เซิร์ฟเวอร์"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "โหนดของอุปกรณ์แบบบล็อคในเครือข่าย::"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "กรุณาเลือกโหนดของอุปกรณ์ NBD ที่คุณต้องการเชื่อมต่อหรือตัดการเชื่อมต่อ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "เชื่อมต่อไปยังเซิร์ฟเวอร์ NBD ไม่สำเร็จ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"เชื่อมต่อไปยัง nbd-server ไม่สำเร็จ กรุณาตรวจสอบให้แน่ใจว่าโฮสต์และชื่อ export "
+"ที่คุณป้อนนั้นถูกต้อง, โพรเซส nbd-server กำลังทำงานอยู่ที่โฮสต์นั้น, "
+"และเครือข่ายมีการตั้งค่าอย่างถูกต้อง แล้วลองใหม่"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ไม่มีโหนดของอุปกรณ์แบบบล็อคในเครือข่ายเหลืออีกแล้ว"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"โหนดอุปกรณ์ NBD อาจถูกใช้งานอยู่จนครบทุกโหนด หรืออาจมีอะไรผิดพลาดในการตรวจหาโหนดอุปกรณ์"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr "ไม่สามารถตั้งค่าโหนดอุปกรณ์ NBD ใดได้อีก จนกว่าจะตัดการเชื่อมต่อกับโหนดที่ตั้งค่าแล้ว"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "ไม่พบโหนดอุปกรณ์แบบบล็อคในเครือข่ายเชื่อมต่ออยู่"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"ไม่มีโหนดอุปกรณ์แบบบล็อคในเครือข่ายเชื่อมต่อกับเซิร์ฟเวอร์ใดอยู่ คุณจึงไม่สามารถตัดการเชื่อมต่อใดได้"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "เชื่อมต่ออุปกรณ์แบบบล็อคในเครือข่าย"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "ตัดการเชื่อมต่อกับอุปกรณ์แบบบล็อคในเครือข่าย"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "จบการทำงานและกลับไปยังเมนูแบ่งพาร์ทิชัน"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "กำลังตั้งค่าหน่วยความจำแฟลชให้บูตระบบ"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "กำลังทำให้ระบบบูตได้"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "กำลังเตรียมพร้อมระบบ..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "กำลังเขียนเคอร์เนลลงในหน่วยความจำแฟลช..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "กำลังสร้างอิมเมจสำหรับบูตในดิสก์..."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "ทำให้ระบบบูตได้"

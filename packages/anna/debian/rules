@@ -1,0 +1,30 @@
+#! /usr/bin/make -f
+
+export DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+export DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+
+ifeq ($(DEB_BUILD_GNU_TYPE),$(DEB_HOST_GNU_TYPE))
+CC := gcc
+STRIP := strip
+else
+CC := $(DEB_HOST_GNU_TYPE)-gcc
+STRIP := $(DEB_HOST_GNU_TYPE)-strip
+endif
+
+export DEB_CPPFLAGS_MAINT_APPEND := -D_GNU_SOURCE
+export DEB_CFLAGS_MAINT_APPEND := -Wall -W -ggdb
+
+CFLAGS := $(shell dpkg-buildflags --get CPPFLAGS; dpkg-buildflags --get CFLAGS)
+LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
+
+%:
+	dh $@
+
+override_dh_auto_build:
+# Make small unless we are building a debug package.
+ifeq (,$(findstring debug,$(DEB_BUILD_OPTIONS)))
+	$(MAKE) small CC=$(CC) STRIP=$(STRIP) \
+		CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)"
+else
+	$(MAKE) DEBUG=1 CC=$(CC) CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)"
+endif

@@ -1,0 +1,142 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of debian-installer_packages_po_sublevel1_is.po to Icelandic
+# Icelandic messages for debian-installer.
+# This file is distributed under the same license as debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+#
+# Copyright (C) 2010 Free Software Foundation
+# Sveinn í Felli <sv1@fellsnet.is>, 2018.
+#
+# Translations from iso-codes:
+# Copyright (C) 2002,2003, 2010, 2011, 2012 Free Software Foundation, Inc.
+# Translations from KDE:
+# Þórarinn Rúnar Einarsson <thori@mindspring.com>
+# zorglubb <debian-user-icelandic@lists.debian.org>, 2008.
+# Sveinn í Felli <sveinki@nett.is>, 2010.
+# Alastair McKinstry, <mckinstry@computer.org>, 2002.
+# Sveinn í Felli <sveinki@nett.is>, 2010, 2011, 2012, 2013.
+# Alastair McKinstry <mckinstry@computer.org>, 2002.
+msgid ""
+msgstr ""
+"Project-Id-Version: Icelandic (Debian Installer)\n"
+"Report-Msgid-Bugs-To: pkgsel@packages.debian.org\n"
+"POT-Creation-Date: 2018-06-27 14:00+0200\n"
+"PO-Revision-Date: 2018-10-02 13:28+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. should not be more than 55 columns
+#. pkgsel is the module that installs packages by running tasksel to
+#. select "tasks". Please use "install *software*" and not
+#. "install *packages*" which is less adapted for non technical users
+#: ../pkgsel.templates:1001
+msgid "Select and install software"
+msgstr "Velja og setja upp hugbúnað"
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when pkgsel is launched, before it installs packages
+#: ../pkgsel.templates:2001
+msgid "Setting up..."
+msgstr "Set upp..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when upgrading already installed packages.
+#: ../pkgsel.templates:4001
+msgid "Upgrading software..."
+msgstr "Uppfæri hugbúnað..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when running tasksel to allow selecting packages
+#. Tasksel will then display its own screens
+#: ../pkgsel.templates:5001
+msgid "Running tasksel..."
+msgstr "Keyri valin verk..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used at the end of the installation phase while
+#. cleaning up pkgsel's stuff
+#: ../pkgsel.templates:6001
+msgid "Cleaning up..."
+msgstr "Hreinsa til..."
+
+#. Type: text
+#. Description
+#: ../pkgsel.templates:8001
+msgid "Running ${SCRIPT}..."
+msgstr "Keyri ${SCRIPT}..."
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "No automatic updates"
+msgstr "Engar sjálfvirkar uppfærslur"
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "Install security updates automatically"
+msgstr "Setja öryggisuppfærslur sjálfkrafa inn"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid "Updates management on this system:"
+msgstr "Uppfærslustýring á þessu kerfi:"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Applying updates on a frequent basis is an important part of keeping the "
+"system secure."
+msgstr "Það að uppfæra kerfið reglulega er grundvöllur fyrir öruggu kerfi."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"By default, security updates are not automatically installed, as security "
+"advisories should be reviewed before manual installation of the updates "
+"using standard package management tools."
+msgstr ""
+"Sjálfgefið eru öryggisuppfærslur ekki settar sjálfkrafa inn, því lesa ætti "
+"yfir meðfylgjandi öryggisábendingar áður en öryggisuppfærslur eru settar upp "
+"handvirkt með stöðluðum pakkastjórnunartólum."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Alternatively the unattended-upgrades package can be installed, which will "
+"install security updates automatically. Note however that automatic "
+"installation of updates may occasionally cause unexpected downtime of "
+"services provided by this machine in the rare cases where the update is not "
+"fully backward-compatible, or where the security advisory requires the "
+"administrator to perform some other manual operation."
+msgstr ""
+"Hægt er að setja upp 'unattended-upgrades' pakkann sem setur "
+"öryggisuppfærslur upp sjálfvirkt. Athugaðu samt að sjálfvirk uppsetning á "
+"uppfærslum getur stundum valdið óvæntum truflunum á þeim þjónustum sem þessi "
+"vél veitir í þeim einstaka tilfellum þar sem uppfærslan er ekki að fullu "
+"samhæfð afturvirkt, eða þar sem öryggisráðgjafinn krefst þess að "
+"kerfisstjórinn framkvæmi einhverjar handvirkar aðgerðir."

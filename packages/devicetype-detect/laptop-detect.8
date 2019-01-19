@@ -1,0 +1,52 @@
+.\" '\" t
+.\" ** The above line should force tbl to be a preprocessor **
+.\" Man page for man
+.\" 
+.\" Copyright (C), 2006, Franklin PIAT
+.\" 
+.\" This manpage is licensed under the BSD license. For further 
+.\" information see the copying that comes with the laptop-detect
+.\" distribution.
+.\" 
+.\" 
+.\" Wed Nov  1 16:43:02 CET 2006  Franklin PIAT (fpiat@bigfoot.com)
+.\" 
+.\" .pc
+.TH "laptop-detect" "8" "0.12" "Franklin PIAT" "System administration commands"
+.SH "NAME"
+.LP 
+laptop\-detect \- attempt to detect a laptop
+.SH "SYNOPSIS"
+.LP 
+laptop\-detect [\fI\-h\fR|\fI\-\-help\fR|\fI\-v\fR|\fI\-\-verbose\fR|\fI\-V\fR|\fI\-\-version\fR]
+.SH "DESCRIPTION"
+.LP 
+Laptop\-detect attempts to determine whether it is being run on a laptop or a desktop and appraises its caller of this.
+.SH "OPTIONS"
+.LP 
+.TP 
+\fB\-h\fR \fB\-\-help\fR
+Output help information and exit.
+.TP 
+\fB\-v\fR \fB\-\-verbose\fR
+be verbose (messages go to STDOUT)
+.TP 
+\fB\-V\fR \fB\-\-version\fR
+Output version information and exit.
+.SH "EXIT STATUS"
+.br 
+.nf 
+\fB0\fR	most likely running on a laptop
+\fB1\fR	most likely NOT running on a laptop
+\fB2\fR	usage error (arguments supplied)
+.SH "FILES"
+.LP 
+\fI/proc/acpi/battery\fP 
+.br 
+\fI/proc/pmu/info\fP 
+.SH "AUTHORS"
+.LP 
+Franklin PIAT <fpiat@bigfoot.com>
+.SH "SEE ALSO"
+.LP 
+dmidecode(8)

@@ -1,0 +1,7 @@
+*.debhelper*
+*.substvars
+lvmcfg
+lvmcfg.postinst
+files
+lvmcfg-utils
+

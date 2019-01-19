@@ -1,0 +1,75 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Croatian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2001, 2004.
+#   Free Software Foundation, Inc., 2000,2004
+#   Josip Rodin, 2008
+#   Krunoslav Gernhard, 2004
+#   Vladimir Vuksan <vuksan@veus.hr>, 2000.
+#   Vlatko Kosturjak, 2001
+# Tomislav Krznar <tomislav.krznar@gmail.com>, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Debian-installer 1st-stage master file HR\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2013-04-17 18:08+0200\n"
+"Last-Translator: Tomislav Krznar <tomislav.krznar@gmail.com>\n"
+"Language-Team: Croatian <lokalizacija@linux.hr>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. A bit of context for translators :
+#. PReP stands for PowerPC Reference Platform, is an acronym, and should not be
+#. translated. The PReP boot partition is a partition of type 0x41, which is
+#. used by PReP boxes and IBM CHRP boxes to boot yaboot or the kernel from.
+#: ../partman-prep.templates:1001
+msgid "Use the partition as a PowerPC PReP boot partition"
+msgstr "Koristi particiju kao PowerPC PReP boot particiju"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-prep.templates:2001
+msgid "PowerPC PReP boot partition"
+msgstr "PowerPC PReP boot particija"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-prep.templates:3001 ../partman-prep.templates:4001
+msgid "Go back to the menu and resume partitioning?"
+msgstr "Vrati se u izbornik i nastavi particioniranje?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-prep.templates:3001
+msgid "No PowerPC PReP boot partition is found."
+msgstr "Nije pronađena PowerPC PReP boot particija."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-prep.templates:4001
+msgid "The PowerPC PReP boot partition must be in the first 8MB."
+msgstr "'PowerPC PReP' particija mora biti unutar prvih 8 MB."

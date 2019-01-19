@@ -1,0 +1,32 @@
+Subject: Lineedit: do not tab-complete any strings which have control characters
+ID: CVE-2017-16544
+Origin: 1_27_0-456-gc3797d40a
+Upstream-Author: Denys Vlasenko <vda.linux@googlemail.com>
+Date: Tue Nov 7 18:09:29 2017 +0100
+
+    function                                             old     new   delta
+    add_match                                             41      68     +27
+    
+    Signed-off-by: Denys Vlasenko <vda.linux@googlemail.com>
+
+--- a/libbb/lineedit.c
++++ b/libbb/lineedit.c
+@@ -633,6 +633,18 @@
+ 
+ static void add_match(char *matched)
+ {
++	unsigned char *p = (unsigned char*)matched;
++	while (*p) {
++		/* ESC attack fix: drop any string with control chars */
++		if (*p < ' '
++		 || (!ENABLE_UNICODE_SUPPORT && *p >= 0x7f)
++		 || (ENABLE_UNICODE_SUPPORT && *p == 0x7f)
++		) {
++			free(matched);
++			return;
++		}
++		p++;
++	}
+ 	matches = xrealloc_vector(matches, 4, num_matches);
+ 	matches[num_matches] = matched;
+ 	num_matches++;

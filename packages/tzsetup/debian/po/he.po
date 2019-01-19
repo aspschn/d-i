@@ -1,0 +1,950 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of debian-installer_packages_po_sublevel1_he.po to Hebrew
+# Hebrew messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Translations from iso-codes:
+# Translations taken from ICU SVN on 2007-09-09
+# Translations taken from KDE:
+# Amit Dovev <debian.translator@gmail.com>, 2007.
+# Meital Bourvine <meitalbourvine@gmail.com>, 2007.
+# Omer Zak <w1@zak.co.il>, 2008, 2010, 2012, 2013.
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Free Software Foundation, Inc., 2002,2004.
+# Alastair McKinstry <mckinstry@computer.org>, 2002.
+# Meni Livne <livne@kde.org>, 2000.
+# Free Software Foundation, Inc., 2002,2003.
+# Meni Livne <livne@kde.org>, 2000.
+# Meital Bourvine <meitalbourvine@gmail.com>, 2007.
+# Lior Kaplan <kaplan@debian.org>, 2004-2007, 2008, 2010, 2011, 2015, 2017.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: tzsetup@packages.debian.org\n"
+"POT-Creation-Date: 2017-12-15 06:51+0000\n"
+"PO-Revision-Date: 2018-07-22 13:38+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew (https://www.transifex.com/yaron/teams/79473/he/)\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../common.templates.in:1001
+msgid ""
+"If the desired time zone is not listed, then please go back to the step "
+"\"Choose language\" and select a country that uses the desired time zone "
+"(the country where you live or are located)."
+msgstr ""
+"אם אזור הזמן המבוקש אינו מופיע ברשימה, נא לחזור לשלב „בחירת שפה” ולבחור בארץ "
+"שמשתמשת באזור הזמן המבוקש (ארץ מגוריך או מיקומך)."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../common.templates.in:2001
+msgid "Coordinated Universal Time (UTC)"
+msgstr "זמן אוניברסלי מתואם (UTC)"
+
+#  Type: select
+#  Description
+#. Type: text
+#. Description
+#. :sl3:
+#: ../common.templates.in:3001
+msgid "Select your time zone:"
+msgstr "נא לבחור את אזור הזמן שלך:"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../common.templates.in:4001
+msgid "Select a location in your time zone:"
+msgstr "נא לבחור מיקום באזור הזמן שלך:"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../common.templates.in:5001
+msgid "Select a city in your time zone:"
+msgstr "נא לבחור עיר באזור הזמן שלך:"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../common.templates.in:6001
+msgid "Select the state or province to set your time zone:"
+msgstr "נא לבחור במדינה או במחוז כדי להגדיר את אזור הזמן שלך:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:8001
+msgid "McMurdo"
+msgstr "אנטארקטיקה/מק-מרדו"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:8001
+msgid "Rothera"
+msgstr "אנטארקטיקה/רות׳רה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:8001
+msgid "Palmer"
+msgstr "אנטארקטיקה/פאלמר"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:8001
+msgid "Mawson"
+msgstr "אנטארקטיקה/מוסון"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:8001
+msgid "Davis"
+msgstr "אנטארקטיקה/דייויס"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:8001
+msgid "Casey"
+msgstr "אנטארקטיקה/קייסי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:8001
+msgid "Vostok"
+msgstr "אנטארקטיקה/ווסטוק"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:8001
+msgid "Dumont-d'Urville"
+msgstr "אנטארקטיקה/דומונט ד׳אורוויל"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:8001
+msgid "Syowa"
+msgstr "אנטארקטיקה/Syowa"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:9001
+msgid "Australian Capital Territory"
+msgstr "טריטוריית הבירה האוסטרלית"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:9001
+msgid "New South Wales"
+msgstr "ניו סאות׳ ויילס"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:9001
+msgid "Victoria"
+msgstr "ויקטוריה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:9001
+msgid "Northern Territory"
+msgstr "הטריטוריה הצפונית"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:9001
+msgid "Queensland"
+msgstr "קווינסלנד"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:9001
+msgid "South Australia"
+msgstr "דרום אוסטרליה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:9001
+msgid "Tasmania"
+msgstr "טסמניה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:9001
+msgid "Western Australia"
+msgstr "אוסטרליה המערבית"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:9001
+msgid "Eyre Highway"
+msgstr "דרך אייר"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:9001
+msgid "Yancowinna County"
+msgstr "מחוז ינקובינה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:9001
+msgid "Lord Howe Island"
+msgstr "אי הלורד האו"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Acre"
+msgstr "עכו"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Alagoas"
+msgstr "אלגואס"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Amazonas"
+msgstr "אמזונאס"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Amapá"
+msgstr "אמאפה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Bahia"
+msgstr "באהיה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Ceará"
+msgstr "סיארה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Distrito Federal"
+msgstr "המחוז הפדרלי של ברזיל"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Espírito Santo"
+msgstr "אספיריטו סאנטו"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Fernando de Noronha"
+msgstr "פרננדו די נורוניה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Goiás"
+msgstr "גויאס"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Maranhão"
+msgstr "מרניאו"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Minas Gerais"
+msgstr "מינאס ז׳ראיס"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Mato Grosso do Sul"
+msgstr "מאטו גרוסו דו סול"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Mato Grosso"
+msgstr "מאטו גרוסו"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Pará"
+msgstr "פארה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Paraíba"
+msgstr "פאראיבה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Pernambuco"
+msgstr "פרנמבוקו"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Piauí"
+msgstr "פיאאוי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Paraná"
+msgstr "פרנה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Rio de Janeiro"
+msgstr "ריו דה ז׳ניירו"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Rio Grande do Norte"
+msgstr "ריו גראנדה דו נורטה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Rondônia"
+msgstr "רונדוניה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Roraima"
+msgstr "רוריימה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Rio Grande do Sul"
+msgstr "ריו גראנדה דו סול"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Santa Catarina"
+msgstr "סנטה קטרינה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Sergipe"
+msgstr "סרז׳יפה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "São Paulo"
+msgstr "סאו פאולו"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:10001
+msgid "Tocantins"
+msgstr "טוקנטינס"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:11001
+msgid "Newfoundland"
+msgstr "ניופאונדלנד"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:11001
+msgid "Atlantic"
+msgstr "אטלנטי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:11001 ../common.templates.in:28001
+msgid "Eastern"
+msgstr "מזרחי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Type: select
+#. Choices
+#. :sl3:
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:11001 ../common.templates.in:22001
+#: ../common.templates.in:28001
+msgid "Central"
+msgstr "מרכזי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:11001
+msgid "East Saskatchewan"
+msgstr "מזרח ססקצ׳ואן"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:11001
+msgid "Saskatchewan"
+msgstr "ססקצ׳ואן"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:11001 ../common.templates.in:28001
+msgid "Mountain"
+msgstr "הררי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Type: select
+#. Choices
+#. :sl3:
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:11001 ../common.templates.in:22001
+#: ../common.templates.in:28001
+msgid "Pacific"
+msgstr "פסיפי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:12001
+msgid "Kinshasa"
+msgstr "קינשסה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:12001
+msgid "Lubumbashi"
+msgstr "לובומבאשי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:13001
+msgid "Santiago"
+msgstr "סנטיאגו"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:13001
+msgid "Easter Island"
+msgstr "אי הפסחא"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:14001
+msgid "Guayaquil"
+msgstr "גוויאקיל"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:14001
+msgid "Galapagos"
+msgstr "איי גלפאגוס"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:15001
+msgid "Madrid"
+msgstr "מדריד"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:15001
+msgid "Ceuta"
+msgstr "סאוטה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:15001
+msgid "Canary Islands"
+msgstr "האיים הקנריים"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:16001
+msgid "Yap"
+msgstr "יאפ"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:16001
+msgid "Truk"
+msgstr "טרוק"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:16001
+msgid "Pohnpei"
+msgstr "פונאפי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:16001
+msgid "Kosrae"
+msgstr "קוסראה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:17001
+msgid "Godthab"
+msgstr "נואוק"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:17001
+msgid "Danmarkshavn"
+msgstr "דנמרקסהוון"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:17001
+msgid "Scoresbysund"
+msgstr "קנגרטיטיווק"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:17001
+msgid "Thule"
+msgstr "ת׳ול"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:18001
+msgid "Western (Sumatra, Jakarta, Java, West and Central Kalimantan)"
+msgstr "מערב (סומטרה, ג׳קרטה, ג׳אווה, מרכז ומערב קלימנטן)"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:18001
+msgid "Central (Sulawesi, Bali, Nusa Tenggara, East and South Kalimantan)"
+msgstr "מרכז (סולאווסי, באלי, נוסה טנגרה, מזרח ודרום קלימנטן)"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:18001
+msgid "Eastern (Maluku, Papua)"
+msgstr "מזרח (מאלוקו, פפואה)"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:19001
+msgid "Tarawa (Gilbert Islands)"
+msgstr "טאראווה (איי גילברט)"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:19001
+msgid "Enderbury (Phoenix Islands)"
+msgstr "אנדרבורי (איי פניקס)"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:19001
+msgid "Kiritimati (Line Islands)"
+msgstr "קיריטימטי (איי ליין)"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:20001
+msgid "Almaty"
+msgstr "אלמטי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:20001
+msgid "Qyzylorda"
+msgstr "קיזילורדה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:20001
+msgid "Aqtobe"
+msgstr "אקטובה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:20001
+msgid "Atyrau"
+msgstr "אטיראו"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:20001
+msgid "Oral"
+msgstr "אורל"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:21001
+msgid "Ulaanbaatar"
+msgstr "אולן בטור"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:21001
+msgid "Hovd"
+msgstr "חובד"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:21001
+msgid "Choibalsan"
+msgstr "צ׳ויבלסאן"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:22001
+msgid "North-West"
+msgstr "צפון-מערב"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:22001
+msgid "Sonora"
+msgstr "סונורה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:22001
+msgid "South-East"
+msgstr "דרום-מזרח"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:23001
+msgid "Auckland"
+msgstr "אוקלנד"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:23001
+msgid "Chatham Islands"
+msgstr "איי צ׳טהאם"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:24001
+msgid "Tahiti (Society Islands)"
+msgstr "טהיטי (איי החברה)"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:24001
+msgid "Marquesas Islands"
+msgstr "איי מרקיז"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:24001
+msgid "Gambier Islands"
+msgstr "איי גמביה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:25001
+msgid "Lisbon"
+msgstr "ליסבון"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:25001
+msgid "Madeira Islands"
+msgstr "איי מדיירה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:25001
+msgid "Azores"
+msgstr "האיים האזוריים"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:26001
+msgid "Moscow-01 - Kaliningrad"
+msgstr "מוסקבה-01 - קלינינגרד"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:26001
+msgid "Moscow+00 - Moscow"
+msgstr "מוסקבה+00 - מוסקבה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:26001
+msgid "Moscow+01 - Samara"
+msgstr "מוסקבה+01 - סמרה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:26001
+msgid "Moscow+02 - Yekaterinburg"
+msgstr "מוסקבה+02 - יקטרינבורג"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:26001
+msgid "Moscow+03 - Omsk"
+msgstr "מוסקבה+03 - אומסק"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:26001
+msgid "Moscow+04 - Krasnoyarsk"
+msgstr "מוסקבה+04 - קרסנויארסק"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:26001
+msgid "Moscow+05 - Irkutsk"
+msgstr "מוסקבה+05 - אירקוטסק"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:26001
+msgid "Moscow+06 - Yakutsk"
+msgstr "מוסקבה+06 - יקוטסק"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:26001
+msgid "Moscow+07 - Vladivostok"
+msgstr "מוסקבה+07 - ולדיווסטוק"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:26001
+msgid "Moscow+08 - Magadan"
+msgstr "מוסקבה+08 - מגדן"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:26001
+msgid "Moscow+09 - Kamchatka"
+msgstr "מוסקבה+09 - קמצ׳טקה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:27001
+msgid "Johnston Atoll"
+msgstr "אטול ג׳ונסטון"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:27001
+msgid "Midway Islands"
+msgstr "אטול מידוויי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:27001
+msgid "Wake Island"
+msgstr "האיי וייק"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:28001
+msgid "Alaska"
+msgstr "אלסקה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:28001
+msgid "Hawaii"
+msgstr "הוואי"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:28001
+msgid "Arizona"
+msgstr "אריזונה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:28001
+msgid "East Indiana"
+msgstr "מזרח-אינדיאנה"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../common.templates.in:28001
+msgid "Samoa"
+msgstr "סמואה"
+
+#. Type: select
+#. Choices
+#. Time zone for Papua New Guinea
+#. :sl3:
+#: ../common.templates.in:29001
+msgid "Port Moresby"
+msgstr "פורט מורסבי"
+
+#. Type: select
+#. Choices
+#. Time zone for Papua New Guinea
+#. :sl3:
+#: ../common.templates.in:29001
+msgid "Bougainville"
+msgstr "בוגנוויל"
+
+#. Type: text
+#. Description
+#. finish-install progress bar item
+#. :sl1:
+#: ../tzsetup-udeb.templates:1001
+msgid "Saving the time zone..."
+msgstr "אזור הזמן נשמר…"

@@ -1,0 +1,16 @@
+Source: elilo-installer
+Section: debian-installer
+Priority: standard
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: dann frazier <dannf@debian.org>,Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9), po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/elilo-installer
+Vcs-Git: https://salsa.debian.org/installer-team/elilo-installer.git
+
+Package: elilo-installer
+Package-Type: udeb
+Architecture: i386 ia64
+Provides: bootable-system
+Depends: cdebconf-udeb, installed-base, partconf-find-partitions (>= 1.08), di-utils-mapdevfs, fat-modules, efi-modules
+XB-Installer-Menu-Item: 7600
+Description: Install elilo on a hard disk

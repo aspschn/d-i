@@ -1,0 +1,2923 @@
+# Debian GNU/Linux Installation Guide
+# Yangfl <mmyangfl@gmail.com>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: d-i-manual\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2018-10-25 23:05+0000\n"
+"PO-Revision-Date: 2017-06-11 23:30+0800\n"
+"Last-Translator: Yangfl <mmyangfl@gmail.com>\n"
+"Language-Team:  <debian-l10n-chinese@lists.debian.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#. Tag: title
+#: preparing.xml:5
+#, no-c-format
+msgid "Before Installing &debian-gnu;"
+msgstr "开始安装 &debian-gnu; 之前"
+
+#. Tag: para
+#: preparing.xml:6
+#, no-c-format
+msgid ""
+"This chapter deals with the preparation for installing &debian; before you "
+"even boot the installer. This includes backing up your data, gathering "
+"information about your hardware, and locating any necessary information."
+msgstr ""
+"本章涉及在启动安装程序安装 &debian; 之前的准备工作。这包括备份您的数据、搜集"
+"您硬件的信息，以及获取其他一些必要的信息。"
+
+#. Tag: title
+#: preparing.xml:19
+#, no-c-format
+msgid "Overview of the Installation Process"
+msgstr "安装概述"
+
+#. Tag: para
+#: preparing.xml:20
+#, no-c-format
+msgid ""
+"First, just a note about re-installations. With &debian;, a circumstance "
+"that will require a complete re-installation of your system is very rare; "
+"perhaps mechanical failure of the hard disk would be the most common case."
+msgstr ""
+"先说一下有关重新安装的事情。使用 &debian; 时，极少出现必须进行完全重新安装的"
+"情况，导致这种情况的可能大多是硬盘的物理故障。"
+
+#. Tag: para
+#: preparing.xml:27
+#, no-c-format
+msgid ""
+"Many common operating systems may require a complete installation to be "
+"performed when critical failures take place or for upgrades to new OS "
+"versions. Even if a completely new installation isn't required, often the "
+"programs you use must be re-installed to operate properly in the new OS."
+msgstr ""
+"许多常见的操作系统在遇到严重错误，或者要升级到新的版本时，必须进行重新安装。"
+"就算不需要完全重新安装，通常还得把您的各种程序在新的系统里也再重新安装一遍才"
+"行。"
+
+#. Tag: para
+#: preparing.xml:35
+#, no-c-format
+msgid ""
+"Under &debian-gnu;, it is much more likely that your OS can be repaired "
+"rather than replaced if things go wrong. Upgrades never require a wholesale "
+"installation; you can always upgrade in-place. And the programs are almost "
+"always compatible with successive OS releases. If a new program version "
+"requires newer supporting software, the &debian; packaging system ensures "
+"that all the necessary software is automatically identified and installed. "
+"The point is, much effort has been put into avoiding the need for re-"
+"installation, so think of it as your very last option. The installer is "
+"<emphasis>not</emphasis> designed to re-install over an existing system."
+msgstr ""
+"在 &debian-gnu; 里，如果操作系统遇到出错的情况，您大多时候都能把它修复而不用"
+"重新安装。升级不再需要进行大规模的安装操作，您可以就地升级它，而这些程序也总"
+"能和新版的操作系统和平共处。如果一个程序的新版本需要其他程序的更新版本来支持"
+"它，&debian; 软件包管理系统会自动帮您确定所有必须的软件，并把它们安装上。关键"
+"是，&debian; 为了避免重新安装而做了大量努力，所以您尽可以不用去烦心这些问题"
+"了。安装程序<emphasis>不是</emphasis>设计用来重装您的系统的。"
+
+#. Tag: para
+#: preparing.xml:48
+#, no-c-format
+msgid ""
+"Here's a road map for the steps you will take during the installation "
+"process."
+msgstr "这是安装过程的每个步骤："
+
+#. Tag: para
+#: preparing.xml:56
+#, no-c-format
+msgid ""
+"Back up any existing data or documents on the hard disk where you plan to "
+"install."
+msgstr "把将要用来安装系统的硬盘上的所有数据或者文档都备份下来。"
+
+#. Tag: para
+#: preparing.xml:62
+#, no-c-format
+msgid ""
+"Gather information about your computer and any needed documentation, before "
+"starting the installation."
+msgstr "在开始整个安装过程之前，收集您的计算机的硬件信息和可能会用到的文档。"
+
+#. Tag: para
+#: preparing.xml:68
+#, no-c-format
+msgid "Create partitionable space for &debian; on your hard disk."
+msgstr "在硬盘上为 &debian; 留出可以用来创建分区的空间。"
+
+#. Tag: para
+#: preparing.xml:73
+#, no-c-format
+msgid ""
+"Locate and/or download the installer software and any specialized driver or "
+"firmware files your machine requires."
+msgstr "查找并（或）下载您机器所需要的安装程序软件、特殊的驱动程序或固件文件。"
+
+#. Tag: para
+#: preparing.xml:79
+#, no-c-format
+msgid ""
+"Set up boot media such as CDs/DVDs/USB sticks or provide a network boot "
+"infrastructure from which the installer can be booted."
+msgstr "制作 CD/DVD/U盘 引导介质或提供安装程序可以引导的网络引导环境。"
+
+#. Tag: para
+#: preparing.xml:85
+#, no-c-format
+msgid "Boot the installation system."
+msgstr "启动安装系统；"
+
+#. Tag: para
+#: preparing.xml:90
+#, no-c-format
+msgid "Select the installation language."
+msgstr "选择要安装的语言。"
+
+#. Tag: para
+#: preparing.xml:95
+#, no-c-format
+msgid "Activate the ethernet network connection, if available."
+msgstr "如果可能，激活网络连接；"
+
+#. Tag: para
+#: preparing.xml:101
+#, no-c-format
+msgid "Configure one network interface."
+msgstr "配置一个网络接口；"
+
+# index.docbook:106, index.docbook:140
+#. Tag: para
+#: preparing.xml:106
+#, no-c-format
+msgid "Open an ssh connection to the new system."
+msgstr "开启新系统的 ssh 连接；"
+
+#. Tag: para
+#: preparing.xml:111
+#, no-c-format
+msgid "Attach one or more DASDs (Direct Access Storage Device)."
+msgstr "加上一个或多个直接存取设备(DASD)；"
+
+#. Tag: para
+#: preparing.xml:117
+#, no-c-format
+msgid ""
+"If necessary, resize existing partitions on your target harddisk to make "
+"space for the installation."
+msgstr "如果需要，调整目标硬盘上已有的分区大小供安装程序使用。"
+
+#. Tag: para
+#: preparing.xml:122
+#, no-c-format
+msgid "Create and mount the partitions on which &debian; will be installed."
+msgstr "创建并挂载用来安装 &debian; 的分区；"
+
+#. Tag: para
+#: preparing.xml:127
+#, no-c-format
+msgid ""
+"Watch the automatic download/install/setup of the <firstterm>base system</"
+"firstterm>."
+msgstr "等待自动下载、安装和设置<firstterm>基本系统</firstterm>。"
+
+#. Tag: para
+#: preparing.xml:133
+#, no-c-format
+msgid "Select and install <firstterm>additional software</firstterm>."
+msgstr ""
+
+#. Tag: para
+#: preparing.xml:138
+#, no-c-format
+msgid ""
+"Install a <firstterm>boot loader</firstterm> which can start up &debian-gnu; "
+"and/or your existing system."
+msgstr ""
+"安装 <firstterm>boot loader</firstterm>，它负责启动 &debian-gnu; 和（或）已有"
+"的其他系统。"
+
+#. Tag: para
+#: preparing.xml:144
+#, no-c-format
+msgid "Load the newly installed system for the first time."
+msgstr "第一次加载新安装的系统；"
+
+#. Tag: para
+#: preparing.xml:151
+#, no-c-format
+msgid ""
+"For &arch-title; you have the option of using <phrase arch=\"any-x86\">a</"
+"phrase> <phrase arch=\"powerpc\">an experimental</phrase> graphical version "
+"of the installation system. For more information about this graphical "
+"installer, see <xref linkend=\"graphical\"/>."
+msgstr ""
+"对于 &arch-title;，您可以选择使用<phrase arch=\"any-x86\">一个</"
+"phrase><phrase arch=\"powerpc\">一个实验性的</phrase>图形界面的安装系统。有关"
+"图形安装程序的更多信息，请参阅 <xref linkend=\"graphical\"/>。"
+
+#. Tag: para
+#: preparing.xml:159
+#, no-c-format
+msgid ""
+"If you have problems during the installation, it helps to know which "
+"packages are involved in which steps. Introducing the leading software "
+"actors in this installation drama:"
+msgstr ""
+"如果您在安装过程中遇到问题，下面的信息可以帮助您找到每个步骤里涉及到那些软件"
+"包。有关这场安装“戏剧”的“主角”的介绍："
+
+#. Tag: para
+#: preparing.xml:165
+#, no-c-format
+msgid ""
+"The installer software, <classname>debian-installer</classname>, is the "
+"primary concern of this manual. It detects hardware and loads appropriate "
+"drivers, uses <classname>dhcp-client</classname> to set up the network "
+"connection, runs <classname>debootstrap</classname> to install the base "
+"system packages, and runs <classname>tasksel</classname> to allow you to "
+"install certain additional software. Many more actors play smaller parts in "
+"this process, but <classname>debian-installer</classname> has completed its "
+"task when you load the new system for the first time."
+msgstr ""
+"安装软件，<classname>debian-installer</classname>，是本手册的关注焦点。它探测"
+"硬件并加载相应的驱动程序，使用 <classname>dhcp-client</classname> 建立网络连"
+"接，运行 <classname>debootstrap</classname> 安装基本系统的软件包，还运行 "
+"<classname>tasksel</classname> 让您安装某些附加软件。在这个过程中，还有许多其"
+"他程序扮演着各自的角色，而 <classname>debian-installer</classname> 将伴随您到"
+"第一次启动新系统时才完成它的使命。"
+
+#. Tag: para
+#: preparing.xml:177
+#, no-c-format
+msgid ""
+"To tune the system to your needs, <classname>tasksel</classname> allows you "
+"to choose to install various predefined bundles of software like a Web "
+"server or a Desktop environment."
+msgstr ""
+"要调节系统满足需求，<classname>tasksel</classname> 允许您选择安装各种预先定义"
+"的软件包集合，例如 Web 服务器或一个桌面环境。"
+
+#. Tag: para
+#: preparing.xml:183
+#, no-c-format
+msgid ""
+"One important option during the installation is whether or not to install a "
+"graphical desktop environment, consisting of the X Window System and one of "
+"the available graphical desktop environments. If you choose not to select "
+"the <quote>Desktop environment</quote> task, you will only have a relatively "
+"basic, command line driven system. Installing the Desktop environment task "
+"is optional because in relation to a text-mode-only system it requires a "
+"comparatively large amount of disk space and because many &debian-gnu; "
+"systems are servers which don't really have any need for a graphical user "
+"interface to do their job."
+msgstr ""
+"安装过程中一个重要的选项是要不要安装图形桌面环境，它由 X Window System 和一个"
+"图形桌面环境组成。如果没有选择<quote>桌面环境</quote>任务，就只有一个相对基本"
+"的、命令行驱动的系统。把安装桌面环境任务作为选项，是因为相对文本系统它需要大"
+"量的磁盘空间，而且由于许多 &debian-gnu; 系统是作为服务器，并不需要图形用户界"
+"面来完成它们的工作。"
+
+#. Tag: para
+#: preparing.xml:196
+#, no-c-format
+msgid ""
+"Just be aware that the X Window System is completely separate from "
+"<classname>debian-installer</classname>, and in fact is much more "
+"complicated. Troubleshooting of the X Window System is not within the scope "
+"of this manual."
+msgstr ""
+"要知道，X Window System 是与 <classname>debian-installer</classname> 完全分开"
+"的，实际上它要复杂得多。X Window System 的故障解答不在本手册所关注的范围之"
+"内。"
+
+#. Tag: title
+#: preparing.xml:211
+#, no-c-format
+msgid "Back Up Your Existing Data!"
+msgstr "记得备份您所有的数据！"
+
+#. Tag: para
+#: preparing.xml:212
+#, fuzzy, no-c-format
+#| msgid ""
+#| "Before you start, make sure to back up every file that is now on your "
+#| "system. If this is the first time a non-native operating system is going "
+#| "to be installed on your computer, it is quite likely you will need to re-"
+#| "partition your disk to make room for &debian-gnu;. Anytime you partition "
+#| "your disk, you run a risk of losing everything on the disk, no matter "
+#| "what program you use to do it. The programs used in the installation are "
+#| "quite reliable and most have seen years of use; but they are also quite "
+#| "powerful and a false move can cost you. Even after backing up, be careful "
+#| "and think about your answers and actions. Two minutes of thinking can "
+#| "save hours of unnecessary work."
+msgid ""
+"Before you start, make sure to back up every file that is now on your "
+"system. If this is the first time a non-native operating system is going to "
+"be installed on your computer, it is quite likely you will need to re-"
+"partition your disk to make room for &debian-gnu;. Anytime you partition "
+"your disk, you run a risk of losing everything on the disk, no matter what "
+"program you use to do it. The programs used in the installation of &debian-"
+"gnu; are quite reliable and most have seen years of use; but they are also "
+"quite powerful and a false move can cost you. Even after backing up, be "
+"careful and think about your answers and actions. Two minutes of thinking "
+"can save hours of unnecessary work."
+msgstr ""
+"开始安装之前，请确定您已经把系统中所有数据都进行了备份。如果这是您首次安装非"
+"预装的操作系统，很可能需要对硬盘进行重新分区，来给 Debian 腾出安装的空间。不"
+"管使用什么程序，分区都会使硬盘上的所有数据全部丢失。在我们的安装过程中使用的"
+"分区程序经过多年使用，被证明非常可靠，但它的功能也非常强大，您可能会为一次错"
+"误操作而付出代价。即使是已经备份过数据，也要谨慎使用，最好在每次操作之前先认"
+"真考虑一下。两分钟的思考可能会为您节省几个小时的不必要的恢复工作。"
+
+#. Tag: para
+#: preparing.xml:225
+#, no-c-format
+msgid ""
+"If you are creating a multi-boot system, make sure that you have the "
+"distribution media of any other present operating systems on hand. Even "
+"though this is normally not necessary, there might be situations in which "
+"you could be required to reinstall your operating system's boot loader to "
+"make the system boot or in a worst case even have to reinstall the complete "
+"operating system and restore your previously made backup."
+msgstr ""
+"如果您是想把计算机做成多重引导的系统，请先把计算机里存在的这些操作系统的安装"
+"介质放在手边。即使一般用不上，偶尔也会需要您重新安装操作系统的引导程序(boot "
+"loader)使系统可以启动，或者更糟的情况下，得重新安装该操作系统并恢复之前备份的"
+"文件。"
+
+#. Tag: title
+#: preparing.xml:244
+#, no-c-format
+msgid "Information You Will Need"
+msgstr "一些有用的信息"
+
+#. Tag: title
+#: preparing.xml:247
+#, no-c-format
+msgid "Documentation"
+msgstr "文档"
+
+#. Tag: title
+#: preparing.xml:250
+#, no-c-format
+msgid "Installation Manual"
+msgstr "安装手册"
+
+#. Tag: para
+#: preparing.xml:252
+#, no-c-format
+msgid "This document you are now reading, in plain ASCII, HTML or PDF format."
+msgstr "您正在阅读的文档，是纯文本、HTML 或者 PDF 格式。"
+
+#. Tag: itemizedlist
+#: preparing.xml:258
+#, no-c-format
+msgid "&list-install-manual-files;"
+msgstr "&list-install-manual-files;"
+
+#. Tag: para
+#: preparing.xml:264
+#, no-c-format
+msgid ""
+"The document you are now reading, which is the official version of the "
+"Installation Guide for the &releasename; release of &debian;; available in "
+"<ulink url=\"&url-release-area;/installmanual\">various formats and "
+"translations</ulink>."
+msgstr ""
+"您正在阅读的文档，是 &debian; &releasename; 发行版安装指南的正式版本; 还有"
+"<ulink url=\"&url-release-area;/installmanual\">各种文件格式和不同语种的翻译"
+"</ulink>。"
+
+#. Tag: para
+#: preparing.xml:273
+#, no-c-format
+msgid ""
+"The document you are now reading, which is a development version of the "
+"Installation Guide for the next release of &debian;; available in <ulink url="
+"\"&url-d-i-dillon-manual;\">various formats and translations</ulink>."
+msgstr ""
+"您正在阅读的文档，是 &debian; 下一个发行版安装指南的开发版本；有<ulink url="
+"\"&url-d-i-dillon-manual;\">各种文件格式和不同语种的翻译</ulink>。"
+
+#. Tag: title
+#: preparing.xml:285
+#, no-c-format
+msgid "Hardware documentation"
+msgstr "硬件文档"
+
+#. Tag: para
+#: preparing.xml:286
+#, no-c-format
+msgid ""
+"Often contains useful information on configuring or using your hardware."
+msgstr "通常包含设置和使用您硬件的有用信息。"
+
+#. Tag: ulink
+#: preparing.xml:297
+#, no-c-format
+msgid "The Debian Wiki hardware page"
+msgstr "Debian Wiki 硬件页面"
+
+#. Tag: ulink
+#: preparing.xml:303
+#, no-c-format
+msgid "Linux for SPARC Processors FAQ"
+msgstr "Linux for SPARC Processors FAQ"
+
+#. Tag: ulink
+#: preparing.xml:309
+#, no-c-format
+msgid "Linux/MIPS website"
+msgstr "Linux/MIPS website"
+
+#. Tag: title
+#: preparing.xml:318
+#, no-c-format
+msgid "&arch-title; Hardware References"
+msgstr "&arch-title; Hardware References"
+
+#. Tag: para
+#: preparing.xml:319
+#, no-c-format
+msgid ""
+"Documentation of &arch-title;-specific boot sequence, commands and device "
+"drivers (e.g. DASD, XPRAM, Console, OSA, HiperSockets and z/VM interaction)"
+msgstr ""
+"&arch-title;-规格引导次序、命令和设备驱动程序文档(如：DASD、XPRAM、Console、"
+"OSA、HiperSockets 和 z/VM interaction)"
+
+#. Tag: ulink
+#: preparing.xml:330
+#, no-c-format
+msgid "Device Drivers, Features, and Commands (Linux Kernel 3.2)"
+msgstr "设备驱动程序、特性和命令(Linux 内核 3.2)"
+
+#. Tag: para
+#: preparing.xml:335
+#, no-c-format
+msgid ""
+"IBM Redbook describing how Linux can be combined with z/VM on zSeries and "
+"&arch-title; hardware."
+msgstr ""
+"IBM Redbook 讲述了如何将 Linux 与 zSeries 的 z/VM 和 &arch-title; 硬件组合。"
+
+#. Tag: ulink
+#: preparing.xml:345
+#, no-c-format
+msgid "Linux for &arch-title;"
+msgstr "用于 &arch-title; 的 Linux"
+
+#. Tag: para
+#: preparing.xml:351
+#, no-c-format
+msgid ""
+"IBM Redbook describing the Linux distributions available for the mainframe. "
+"It has no chapter about &debian; but the basic installation concepts are the "
+"same across all &arch-title; distributions."
+msgstr ""
+"IBM Redbook 介绍了可用于 mainframe 的 Linux 发行版。其中没有关于 &debian; 的"
+"章节，但对于所有的 &arch-title; 发行版，基本的安装概念是相同的。"
+
+#. Tag: ulink
+#: preparing.xml:362
+#, no-c-format
+msgid "Linux for IBM eServer zSeries and &arch-title;: Distributions"
+msgstr "Linux for IBM eServer zSeries and &arch-title;: Distributions"
+
+#. Tag: title
+#: preparing.xml:372
+#, no-c-format
+msgid "Finding Sources of Hardware Information"
+msgstr "提供硬件信息的资源"
+
+#. Tag: para
+#: preparing.xml:373
+#, no-c-format
+msgid ""
+"In many cases, the installer will be able to automatically detect your "
+"hardware. But to be prepared, we do recommend familiarizing yourself with "
+"your hardware before the install."
+msgstr ""
+"许多情况下，安装程序能自动检测您的硬件。但作为预备，我们建议您还是在安装之前"
+"熟悉一下您的硬件比较好。"
+
+#. Tag: para
+#: preparing.xml:379
+#, no-c-format
+msgid "Hardware information can be gathered from:"
+msgstr "获取硬件信息的途径有："
+
+#. Tag: para
+#: preparing.xml:386
+#, no-c-format
+msgid "The manuals that come with each piece of hardware."
+msgstr "每个硬件附带的手册。"
+
+#. Tag: para
+#: preparing.xml:391
+#, no-c-format
+msgid ""
+"The BIOS setup screens of your computer. You can view these screens when you "
+"start your computer by pressing a combination of keys. Check your manual for "
+"the combination. Often, it is the <keycap>Delete</keycap> or the <keycap>F2</"
+"keycap> key, but some manufacturers use other keys or key combinations. "
+"Usually upon starting the computer there will be a message stating which key "
+"to press to enter the setup screen."
+msgstr ""
+"您计算机的 BIOS 配置画面。在计算机启动时，可以通过按组合键查看这些画面。请确"
+"认您手册中的组合键。通常，它是 <keycap>Delete</keycap> 或 <keycap>F2</"
+"keycap> 键，但有些厂商会使用其他的组合键。一般在系统开机的时候会显示信息表明"
+"按哪些键来进入设置界面。"
+
+#. Tag: para
+#: preparing.xml:401
+#, no-c-format
+msgid "The cases and boxes for each piece of hardware."
+msgstr "每个硬件的包装盒。"
+
+#. Tag: para
+#: preparing.xml:407
+#, no-c-format
+msgid "The System window in the Windows Control Panel."
+msgstr "Windows 控制面板里面的系统窗口。"
+
+#. Tag: para
+#: preparing.xml:413
+#, no-c-format
+msgid ""
+"System commands or tools in another operating system, including file manager "
+"displays. This source is especially useful for information about RAM and "
+"hard drive memory."
+msgstr ""
+"其他操作系统里面的系统命令或工具，包括文件管理器的显示。该资源对了解 RAM 和硬"
+"盘特别有用。"
+
+#. Tag: para
+#: preparing.xml:420
+#, no-c-format
+msgid ""
+"Your system administrator or Internet Service Provider. These sources can "
+"tell you the settings you need to set up your networking and e-mail."
+msgstr ""
+"您的系统管理员或者互联网服务提供商。他们可以告诉您所需的网络和 e-mail 配置信"
+"息。"
+
+#. Tag: title
+#: preparing.xml:432
+#, no-c-format
+msgid "Hardware Information Helpful for an Install"
+msgstr "有助于安装的硬件信息"
+
+#. Tag: entry
+#: preparing.xml:436
+#, no-c-format
+msgid "Hardware"
+msgstr "硬件"
+
+#. Tag: entry
+#: preparing.xml:436
+#, no-c-format
+msgid "Information You Might Need"
+msgstr "您需要了解的信息"
+
+#. Tag: entry
+#: preparing.xml:442
+#, no-c-format
+msgid "Hard Drives"
+msgstr "硬盘"
+
+#. Tag: entry
+#: preparing.xml:443
+#, no-c-format
+msgid "How many you have."
+msgstr "拥有的容量。"
+
+#. Tag: entry
+#: preparing.xml:445
+#, no-c-format
+msgid "Their order on the system."
+msgstr "它们在系统上的次序。"
+
+#. Tag: entry
+#: preparing.xml:447
+#, no-c-format
+msgid "Whether IDE (also known as PATA), SATA or SCSI."
+msgstr "是 IDE (也称为 PATA)、SATA 或 SCSI。"
+
+# index.docbook:445, index.docbook:497
+#. Tag: entry
+#: preparing.xml:449 preparing.xml:498
+#, no-c-format
+msgid "Available free space."
+msgstr "可用空间。"
+
+#. Tag: entry
+#: preparing.xml:450
+#, no-c-format
+msgid "Partitions."
+msgstr "分区。"
+
+#. Tag: entry
+#: preparing.xml:452
+#, no-c-format
+msgid "Partitions where other operating systems are installed."
+msgstr "安装有其他操作系统的分区。"
+
+#. Tag: entry
+#: preparing.xml:480
+#, no-c-format
+msgid "Network interfaces"
+msgstr "网卡"
+
+#. Tag: entry
+#: preparing.xml:481
+#, no-c-format
+msgid "Type/model of available network interfaces."
+msgstr "现有网卡的类型/型号。"
+
+#. Tag: entry
+#: preparing.xml:485
+#, no-c-format
+msgid "Printer"
+msgstr "打印机"
+
+# index.docbook:453, index.docbook:473, index.docbook:479, index.docbook:485
+#. Tag: entry
+#: preparing.xml:486
+#, no-c-format
+msgid "Model and manufacturer."
+msgstr "型号与制造商。"
+
+#. Tag: entry
+#: preparing.xml:490
+#, no-c-format
+msgid "Video Card"
+msgstr "视频卡"
+
+# index.docbook:453, index.docbook:473, index.docbook:479, index.docbook:485
+#. Tag: entry
+#: preparing.xml:491
+#, no-c-format
+msgid "Type/model and manufacturer."
+msgstr "类型/型号与制造商。"
+
+#. Tag: entry
+#: preparing.xml:495
+#, no-c-format
+msgid "DASD"
+msgstr "DASD"
+
+#. Tag: entry
+#: preparing.xml:496
+#, no-c-format
+msgid "Device number(s)."
+msgstr "设备数。"
+
+# index.docbook:472, index.docbook:500
+#. Tag: entry
+#: preparing.xml:501
+#, no-c-format
+msgid "Network"
+msgstr "网络"
+
+# index.docbook:475, index.docbook:501
+#. Tag: entry
+#: preparing.xml:502
+#, no-c-format
+msgid "Type of adapter."
+msgstr "适配器类型。"
+
+#. Tag: entry
+#: preparing.xml:504
+#, no-c-format
+msgid "Device numbers."
+msgstr "设备数。"
+
+#. Tag: entry
+#: preparing.xml:505
+#, no-c-format
+msgid "Relative adapter number for OSA cards."
+msgstr "OSA 卡的相对适配器号。"
+
+#. Tag: title
+#: preparing.xml:513
+#, no-c-format
+msgid "Hardware Compatibility"
+msgstr "硬件兼容性"
+
+#. Tag: para
+#: preparing.xml:515
+#, no-c-format
+msgid ""
+"Many products work without trouble on &arch-kernel;. Moreover, hardware "
+"support in &arch-kernel; is improving daily. However, &arch-kernel; still "
+"does not run as many different types of hardware as some operating systems."
+msgstr ""
+"多数产品在 &arch-kernel; 上运行不会有问题。而且，&arch-kernel; 对硬件支持每天"
+"都在改善。然而，&arch-kernel; 仍然不能像某些操作系统那样可以在各种不同的硬件"
+"上运行。"
+
+#. Tag: para
+#: preparing.xml:521
+#, no-c-format
+msgid ""
+"Drivers in &arch-kernel; in most cases are not written for a certain "
+"<quote>product</quote> or <quote>brand</quote> from a specific manufacturer, "
+"but for a certain hardware/chipset. Many seemingly different products/brands "
+"are based on the same hardware design; it is not uncommon that chip "
+"manufacturers provide so-called <quote>reference designs</quote> for "
+"products based on their chips which are then used by several different "
+"device manufacturers and sold under lots of different product or brand names."
+msgstr ""
+"大多数情况下 &arch-kernel; 里面的驱动程序并不是为某一厂商特定的<quote>产品</"
+"quote>或<quote>品牌</quote>开发的，而是基于特定的硬件/芯片。许多表面上看起来"
+"不同的产品/品牌实际上是基于相同的硬件设计；芯片厂商为芯片提供称为<quote>公版"
+"</quote>的产品，其他设备制造商采用这种设计并以不同的产品和品牌来销售是常见的"
+"做法。"
+
+#. Tag: para
+#: preparing.xml:532
+#, no-c-format
+msgid ""
+"This has advantages and disadvantages. An advantage is that a driver for one "
+"chipset works with lots of different products from different manufacturers, "
+"as long as their product is based on the same chipset. The disadvantage is "
+"that it is not always easy to see which actual chipset is used in a certain "
+"product/brand. Unfortunately sometimes device manufacturers change the "
+"hardware base of their product without changing the product name or at least "
+"the product version number, so that when having two items of the same brand/"
+"product name bought at different times, they can sometimes be based on two "
+"different chipsets and therefore use two different drivers or there might be "
+"no driver at all for one of them."
+msgstr ""
+"这样做有利也有弊。优点在于只要不同厂商生产的产品基于相同的芯片，驱动程序就可"
+"以用在多种产品上。不足之处是确定某一产品/品牌到底使用哪种芯片并不总是那么容"
+"易。更不幸的是设备厂商经常在修改产品设计的同时并不更改产品名称甚至是产品编"
+"号，以至于在不同时段购买的同一品牌/产品，它们会采用不同的芯片，造成需要使用两"
+"种不同的驱动程序，或者其中一个没有任何驱动程序。"
+
+#. Tag: para
+#: preparing.xml:545
+#, no-c-format
+msgid ""
+"For USB and PCI/PCI-Express/ExpressCard devices, a good way to find out on "
+"which chipset they are based is to look at their device IDs. All USB/PCI/PCI-"
+"Express/ExpressCard devices have so called <quote>vendor</quote> and "
+"<quote>product</quote> IDs, and the combination of these two is usually the "
+"same for any product based on the same chipset."
+msgstr ""
+"对于 USB 和 PCI/PCI-Express/ExpressCard 设备，发现所采用芯片好的方法是查看它"
+"们的设备 ID。所有的 USB/PCI/PCI-Express/ExpressCard 设备具有一个称为 "
+"<quote>vendor</quote> 和 <quote>product</quote> 的 ID，使用相同芯片的产品这两"
+"个组成的数值通常是一样的。"
+
+#. Tag: para
+#: preparing.xml:553
+#, no-c-format
+msgid ""
+"On Linux systems, these IDs can be read with the <command>lsusb</command> "
+"command for USB devices and with the <command>lspci -nn</command> command "
+"for PCI/PCI-Express/ExpressCard devices. The vendor and product IDs are "
+"usually given in the form of two hexadecimal numbers, seperated by a colon, "
+"such as <quote>1d6b:0001</quote>."
+msgstr ""
+"在 Linux 系统上，该 ID 可以使用 <command>lsusb</command> 命令读取 USB 设备上"
+"的值，<command>lspci -nn</command> 命令用于 PCI/PCI-Express/ExpressCard 设"
+"备。vendor 和 product ID 通常是十六进制数值形式，用冒号隔开，例如 "
+"<quote>1d6b:0001</quote>。"
+
+#. Tag: para
+#: preparing.xml:561
+#, no-c-format
+msgid ""
+"An example for the output of <command>lsusb</command>: <quote>Bus 001 Device "
+"001: ID 1d6b:0002 Linux Foundation 2.0 root hub</quote>, whereby 1d6b is the "
+"vendor ID and 0002 is the product ID."
+msgstr ""
+"<command>lsusb</command> 命令的输出的形式为：<quote>Bus 001 Device 001: ID "
+"1d6b:0002 Linux Foundation 2.0 root hub</quote>，其中 1d6b 是 vendor ID 而 "
+"0002 是 product ID。"
+
+#. Tag: para
+#: preparing.xml:567
+#, no-c-format
+msgid ""
+"An example for the output of <command>lspci -nn</command> for an Ethernet "
+"card: <quote>03:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., "
+"Ltd. RTL8111/8168B PCI Express Gigabit Ethernet controller [10ec:8168] (rev "
+"06)</quote>. The IDs are given inside the rightmost square brackets, i.e. "
+"here 10ec is the vendor- and 8168 is the product ID."
+msgstr ""
+"<command>lspci -nn</command> 输出的网卡设备形式为：<quote>03:00.0 Ethernet "
+"controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168B PCI Express "
+"Gigabit Ethernet controller [10ec:8168] (rev 06)</quote>。ID 位于最右边的方括"
+"号里面，这里 10ec 是 vendor ID 而 8168 是 product ID。"
+
+#. Tag: para
+#: preparing.xml:575
+#, no-c-format
+msgid ""
+"As another example, a graphics card could give the following output: "
+"<quote>04:00.0 VGA compatible controller [0300]: Advanced Micro Devices "
+"[AMD] nee ATI RV710 [Radeon HD 4350] [1002:954f]</quote>."
+msgstr ""
+"再举一个例子，显卡设备的输出形式为：<quote>04:00.0 VGA compatible controller "
+"[0300]: Advanced Micro Devices [AMD] nee ATI RV710 [Radeon HD 4350] "
+"[1002:954f]</quote>。"
+
+#. Tag: para
+#: preparing.xml:581
+#, no-c-format
+msgid ""
+"On Windows systems, the IDs for a device can be found in the Windows device "
+"manager on the tab <quote>details</quote>, where the vendor ID is prefixed "
+"with VEN_ and the product ID is prefixed with DEV_. On Windows 7 systems, "
+"you have to select the property <quote>Hardware IDs</quote> in the device "
+"manager's details tab to actually see the IDs, as they are not displayed by "
+"default."
+msgstr ""
+"在 Windows 系统上，设备 ID 可以通过打开 Windows 设备管理器上的 "
+"<quote>details</quote> 页查看，其中 vendor ID 的前缀是 VEN_ 而 product ID 的"
+"前缀是 DEV_。在 Windows 7 系统上，您需要再打开设备管理器页上的 "
+"<quote>Hardware IDs</quote> 属性才能看到 ID，默认是不显示的。"
+
+#. Tag: para
+#: preparing.xml:591
+#, no-c-format
+msgid ""
+"Searching on the internet with the vendor/product ID, <quote>&arch-kernel;</"
+"quote> and <quote>driver</quote> as the search terms often results in "
+"information regarding the driver support status for a certain chipset. If a "
+"search for the vendor/product ID does not yield usable results, a search for "
+"the chip code names, which are also often provided by lsusb and lspci "
+"(<quote>RTL8111</quote>/<quote>RTL8168B</quote> in the network card example "
+"and <quote>RV710</quote> in the graphics card example), can help."
+msgstr ""
+"通过互联网搜索 vendor/product ID，使用 <quote>&arch-kernel;</quote> 和 "
+"<quote>driver</quote> 作为搜索项得到的结果通常含有特定芯片对应驱动程序支持的"
+"情况。如果搜索 vendor/product ID 不能得到有用的结果，请换成芯片代码名称来搜"
+"索，该名称也是通过 lsusb 和 lspci(网卡例子中的 <quote>RTL8111</quote>/"
+"<quote>RTL8168B</quote> 和显卡例子中的 <quote>RV710</quote>) 命令查出。"
+
+#. Tag: title
+#: preparing.xml:604
+#, no-c-format
+msgid "Testing hardware compatibility with a Live-System"
+msgstr "使用 Live-System 测试硬件兼容性"
+
+#. Tag: para
+#: preparing.xml:606
+#, no-c-format
+msgid ""
+"&debian-gnu; is also available as a so-called <quote>live system</quote> for "
+"certain architectures. A live system is a preconfigured ready-to-use system "
+"in a compressed format that can be booted and used from a read-only medium "
+"like a CD or DVD. Using it by default does not create any permanent changes "
+"on your computer. You can change user settings and install additional "
+"programs from within the live system, but all this only happens in the "
+"computer's RAM, i.e. if you turn off the computer and boot the live system "
+"again, everything is reset to its defaults. If you want to see whether your "
+"hardware is supported by &debian-gnu;, the easiest way is to run a &debian; "
+"live system on it and try it out."
+msgstr ""
+"&debian-gnu; 在一些架构上可以使用称为 <quote>live 系统(live system)</quote> "
+"的形式。live 系统是一种经过压缩的预先配置好的系统，从只读的介质比如 CD 或 "
+"DVD 上直接引导就可以使用。它在默认的情况下并不对您的计算机进行永久性的改动。"
+"您可以在上面修改用户设置，安装额外的程序，但这些修改只存在于计算机的内存里"
+"面，也就是说，只要一关机，或者重启 live 系统，所有的东西都会恢复到默认状态。"
+"如果您想了解 &debian-gnu; 对硬件的支持情况，最简单的方法就是运行一个 "
+"&debian; live 系统来试试。"
+
+#. Tag: para
+#: preparing.xml:619
+#, no-c-format
+msgid ""
+"There are a few limitations in using a live system. The first is that as all "
+"changes you do within the live system must be held in your computer's RAM, "
+"this only works on systems with enough RAM to do that, so installing "
+"additional large software packages may fail due to memory constraints. "
+"Another limitation with regards to hardware compatibility testing is that "
+"the official &debian-gnu; live system contains only free components, i.e. "
+"there are no non-free firmware files included in it. Such non-free packages "
+"can of course be installed manually within the system, but there is no "
+"automatic detection of required firmware files like in the &d-i;, so "
+"installation of non-free components must be done manually if needed."
+msgstr ""
+"使用 live 系统有一些限制。首先，您所有的改动都只存在于内存之中，这就要求系统"
+"有足够的内存，像安装一个大的软件包就有可能因内存无法满足而失败。另外一个限制"
+"与硬件兼容性测试相关，因为官方的 &debian-gnu; live 系统只使用自由的组件，造成"
+"非自由的固件无法包含在里面。这些非自由的软件包当然可以通过手动方式安装，但这"
+"里没有 &d-i; 里可以自动检测所需固件的功能，因此需要的时候只能通过手动方式安装"
+"非自由的组件。"
+
+#. Tag: para
+#: preparing.xml:632
+#, no-c-format
+msgid ""
+"Information about the available variants of the &debian; live images can be "
+"found at the <ulink url=\"&url-debian-live-cd;\">Debian Live Images website</"
+"ulink>."
+msgstr ""
+"有关 &debian; live 映像的各种信息可以参考 <ulink url=\"&url-debian-live-cd;"
+"\">Debian Live Images website</ulink>。"
+
+#. Tag: title
+#: preparing.xml:646
+#, no-c-format
+msgid "Network Settings"
+msgstr "网络设置"
+
+#. Tag: para
+#: preparing.xml:648
+#, no-c-format
+msgid ""
+"If your computer is connected to a fixed network (i.e. an Ethernet or "
+"equivalent connection &mdash; not a dialup/PPP connection) which is "
+"administered by somebody else, you should ask your network's system "
+"administrator for this information:"
+msgstr ""
+"如果您的计算机固定连接在其他人管理的网上(即，以太网或等价的连接 &mdash; 而不"
+"是拨号或 PPP 连接)，您需要向网络系统管理员咨询这项信息。"
+
+#. Tag: para
+#: preparing.xml:656
+#, no-c-format
+msgid "Your host name (you may be able to decide this on your own)."
+msgstr "您的主机名(您也许可以自己决定)。"
+
+#. Tag: para
+#: preparing.xml:661
+#, no-c-format
+msgid "Your domain name."
+msgstr "您的域名。"
+
+#. Tag: para
+#: preparing.xml:666
+#, no-c-format
+msgid "Your computer's IP address."
+msgstr "您的计算机 IP 地址。"
+
+#. Tag: para
+#: preparing.xml:671
+#, no-c-format
+msgid "The netmask to use with your network."
+msgstr "您网络的网络掩码。"
+
+#. Tag: para
+#: preparing.xml:676
+#, no-c-format
+msgid ""
+"The IP address of the default gateway system you should route to, if your "
+"network <emphasis>has</emphasis> a gateway."
+msgstr ""
+"路由经过的默认网关的 IP 地址，如果您的网络<emphasis>有</emphasis>网关的话。"
+
+#. Tag: para
+#: preparing.xml:682
+#, no-c-format
+msgid ""
+"The system on your network that you should use as a DNS (Domain Name "
+"Service) server."
+msgstr "您的网络中作为 DNS(域名服务) 服务器的系统。"
+
+#. Tag: para
+#: preparing.xml:690
+#, no-c-format
+msgid ""
+"If the network you are connected to uses DHCP (Dynamic Host Configuration "
+"Protocol) for configuring network settings, you don't need this information "
+"because the DHCP server will provide it directly to your computer during the "
+"installation process."
+msgstr ""
+"如果通过 DHCP (Dynamic Host Configuration Protocol) 设置连接网络，您不需要这"
+"些信息，因为 DHCP 服务器将在安装过程中直接将它们提供给您的计算机。"
+
+#. Tag: para
+#: preparing.xml:697
+#, no-c-format
+msgid ""
+"If you have internet access via DSL or cable modem (i.e. over a cable tv "
+"network) and have a router (often provided preconfigured by your phone or "
+"catv provider) which handles your network connectivity, DHCP is usually "
+"available by default."
+msgstr ""
+"如果您通过 DSL 或有线猫(即使用有线电视网络)访问互联网，并由路由器(一般由电信"
+"或有线电视商预先设置)处理网络连接，通常默认都使用 DHCP。"
+
+#. Tag: para
+#: preparing.xml:705
+#, no-c-format
+msgid ""
+"As a rule of thumb: if you run a Windows system in your home network and did "
+"not have to manually perform any network settings there to achieve Internet "
+"access, network connectivity in &debian-gnu; will also be configured "
+"automatically."
+msgstr ""
+"经验法则：如果您在家庭网络中使用 Windows 系统不需要手动设置就能访问互联网，那"
+"么在 &debian-gnu; 下也会自动进行网络配置。"
+
+#. Tag: para
+#: preparing.xml:712
+#, no-c-format
+msgid "If you use a WLAN/WiFi network, you should find out:"
+msgstr "如果使用 WLAN/WiFi 网络，您应该找出："
+
+#. Tag: para
+#: preparing.xml:717
+#, no-c-format
+msgid "The ESSID (<quote>network name</quote>) of your wireless network."
+msgstr "您无线网络的 ESSID (<quote>网络名称</quote>)。"
+
+#. Tag: para
+#: preparing.xml:722
+#, no-c-format
+msgid "The WEP or WPA/WPA2 security key to access the network (if applicable)."
+msgstr "连接网络的 WEP 或 WPA/WPA2 安全密钥(如果可用)。"
+
+#. Tag: title
+#: preparing.xml:739
+#, no-c-format
+msgid "Meeting Minimum Hardware Requirements"
+msgstr "满足最低的硬件要求"
+
+#. Tag: para
+#: preparing.xml:740
+#, no-c-format
+msgid ""
+"Once you have gathered information about your computer's hardware, check "
+"that your hardware will let you do the type of installation that you want to "
+"do."
+msgstr ""
+"您一旦收集好计算机上硬件配置的相关信息，复查一下您的硬件，就可以让您如愿以"
+"偿，安装上系统。"
+
+#. Tag: para
+#: preparing.xml:746
+#, no-c-format
+msgid ""
+"Depending on your needs, you might manage with less than some of the "
+"recommended hardware listed in the table below. However, most users risk "
+"being frustrated if they ignore these suggestions."
+msgstr ""
+"基于您的需求，也许可以用低于下面表格所列的配置装上系统。但是，如果无视这些建"
+"议的话，多数用户会安装失败。"
+
+#. Tag: para
+#: preparing.xml:752
+#, no-c-format
+msgid ""
+"A Pentium 4, 1GHz system is the minimum recommended for a desktop system."
+msgstr "Pentium 4、1GHz 的系统是桌面系统的最低推荐配置。"
+
+#. Tag: para
+#: preparing.xml:757
+#, no-c-format
+msgid "Any OldWorld or NewWorld PowerPC can serve well as a desktop system."
+msgstr "任何一台 OldWorld 或 NewWorld PowerPC 都可以用作一个不错的桌面系统。"
+
+#. Tag: title
+#: preparing.xml:764
+#, no-c-format
+msgid "Recommended Minimum System Requirements"
+msgstr "推荐的最低系统配置"
+
+#. Tag: entry
+#: preparing.xml:768
+#, no-c-format
+msgid "Install Type"
+msgstr "安装类别"
+
+#. Tag: entry
+#: preparing.xml:769
+#, no-c-format
+msgid "RAM (minimum)"
+msgstr "RAM (最低要求)"
+
+#. Tag: entry
+#: preparing.xml:770
+#, no-c-format
+msgid "RAM (recommended)"
+msgstr "RAM (推荐配置)"
+
+#. Tag: entry
+#: preparing.xml:771
+#, no-c-format
+msgid "Hard Drive"
+msgstr "硬盘"
+
+#. Tag: entry
+#: preparing.xml:777
+#, no-c-format
+msgid "No desktop"
+msgstr "无桌面的系统"
+
+#. Tag: entry
+#: preparing.xml:778
+#, no-c-format
+msgid "128 megabytes"
+msgstr "128 MB"
+
+#. Tag: entry
+#: preparing.xml:779
+#, no-c-format
+msgid "512 megabytes"
+msgstr "512 MB"
+
+#. Tag: entry
+#: preparing.xml:780
+#, no-c-format
+msgid "2 gigabytes"
+msgstr "2 GB"
+
+#. Tag: entry
+#: preparing.xml:782
+#, no-c-format
+msgid "With Desktop"
+msgstr "桌面系统"
+
+#. Tag: entry
+#: preparing.xml:783
+#, no-c-format
+msgid "256 megabytes"
+msgstr "256 MB"
+
+#. Tag: entry
+#: preparing.xml:784
+#, no-c-format
+msgid "1 gigabyte"
+msgstr "1 GB"
+
+#. Tag: entry
+#: preparing.xml:785
+#, no-c-format
+msgid "10 gigabytes"
+msgstr "10 GB"
+
+#. Tag: para
+#: preparing.xml:790
+#, no-c-format
+msgid ""
+"The actual minimum memory requirements are a lot less than the numbers "
+"listed in this table. Depending on the architecture, it is possible to "
+"install &debian; with as little as 60MB (for amd64). The same goes for the "
+"disk space requirements, especially if you pick and choose which "
+"applications to install; see <xref linkend=\"tasksel-size-list\"/> for "
+"additional information on disk space requirements."
+msgstr ""
+"实际的内存最低要求会略低于表中的数字。根据各自的体系，&debian; 可以在 20MB "
+"(s390) 到 60MB (amd64) 这样少的内存上安装。同样，对磁盘空间也是如此，取决于您"
+"选择安装的应用软件。参阅 <xref linkend=\"tasksel-size-list\"/> 了解磁盘空间需"
+"求的内容。"
+
+#. Tag: para
+#: preparing.xml:800
+#, no-c-format
+msgid ""
+"It is possible to run a graphical desktop environment on older or low-end "
+"systems, but in that case it is recommended to install a window manager that "
+"is less resource-hungry than those of the GNOME or KDE Plasma desktop "
+"environments; alternatives include <classname>xfce4</classname>, "
+"<classname>icewm</classname> and <classname>wmaker</classname>, but there "
+"are others to choose from."
+msgstr ""
+"在老的或低阶的系统上也可以运行图形桌面环境，但这种情况下建议安装那些消耗资源"
+"比 GNOME 或 KDE 桌面环境少的窗口管理器，比如 <classname>xfce4</classname>、"
+"<classname>icewm</classname> 和 <classname>wmaker</classname>，有很多可供选"
+"择。"
+
+#. Tag: para
+#: preparing.xml:809
+#, no-c-format
+msgid ""
+"It is practically impossible to give general memory or disk space "
+"requirements for server installations as those very much depend on what the "
+"server is to be used for."
+msgstr ""
+"很难说清楚服务器安装该需要多少内存和磁盘空间，这完全取决于服务器的用途。"
+
+#. Tag: para
+#: preparing.xml:815
+#, no-c-format
+msgid ""
+"Remember that these sizes don't include all the other materials which are "
+"usually to be found, such as user files, mail, and data. It is always best "
+"to be generous when considering the space for your own files and data."
+msgstr ""
+"要提醒您的是，上面所说的空间大小并没有把任何其它的资料数据包含在内。这通常包"
+"含用户的文件、信件或者数据。在考虑您自己的文件和数据空间时，越慷慨越好。"
+
+#. Tag: para
+#: preparing.xml:822
+#, no-c-format
+msgid ""
+"Disk space required for the smooth operation of the &debian-gnu; system "
+"itself is taken into account in these recommended system requirements. "
+"Notably, the <filename>/var</filename> partition contains a lot of state "
+"information specific to &debian; in addition to its regular contents, like "
+"logfiles. The <command>dpkg</command> files (with information on all "
+"installed packages) can easily consume 40MB. Also, <command>apt</command> "
+"puts downloaded packages here before they are installed. You should usually "
+"allocate at least 200MB for <filename>/var</filename>, and a lot more if you "
+"install a graphical desktop environment."
+msgstr ""
+"在推荐的系统需求中已经包含流畅运行 &debian-gnu; 所需的磁盘空间。尤其是 "
+"<filename>/var</filename> 分区里装有许多 &debian; 的特定状态信息和类似日志文"
+"件这样的常规内容。<command>dpkg</command> 所用的文件(含有所有已安装软件包的信"
+"息)很容易就会消耗掉 40MB。另外，<command>apt-get</command> 会在安装前将下载的"
+"软件包放在这里。您应当最少分配 200MB 的空间给 <filename>/var</filename>，如果"
+"您安装了图形桌面系统，还要更多空间。"
+
+#. Tag: title
+#: preparing.xml:846
+#, no-c-format
+msgid "Pre-Partitioning for Multi-Boot Systems"
+msgstr "为多重启动系统事先分区"
+
+#. Tag: para
+#: preparing.xml:847
+#, no-c-format
+msgid ""
+"Partitioning your disk simply refers to the act of breaking up your disk "
+"into sections. Each section is then independent of the others. It's roughly "
+"equivalent to putting up walls inside a house; if you add furniture to one "
+"room it doesn't affect any other room."
+msgstr ""
+"为您的硬盘分区仅仅指的是将您的硬盘空间切分成几块。分区之后，每一块都是独立于"
+"其余部分的单独空间。这和在一个大房子里砌几堵墙有几分相似，如果您在其中一间房"
+"间里安置家具，那么这不会对其它房间有任何影响。"
+
+#. Tag: para
+#: preparing.xml:854
+#, no-c-format
+msgid ""
+"Whenever this section talks about <quote>disks</quote> you should translate "
+"this into a DASD or VM minidisk in the &arch-title; world. Also a machine "
+"means an LPAR or VM guest in this case."
+msgstr ""
+"本节中所有提到<quote>硬盘</quote>的地方，您应当把它理解为 &arch-title; 世界中"
+"的 DASD 或者 VM minidisk。同时，在这里，一台机器意指的是 LPAR 或者客户虚拟"
+"机。"
+
+#. Tag: para
+#: preparing.xml:860
+#, no-c-format
+msgid ""
+"If you already have an operating system on your system <phrase arch=\"any-"
+"x86\"> (Windows 9x, Windows NT/2000/XP/2003/Vista/7, OS/2, MacOS, Solaris, "
+"FreeBSD, &hellip;) </phrase> <phrase arch=\"s390\"> (VM, z/OS, OS/390, "
+"&hellip;) </phrase> which uses the whole disk and you want to stick &debian; "
+"on the same disk, you will need to repartition it. &debian; requires its own "
+"hard disk partitions. It cannot be installed on Windows or Mac OS X "
+"partitions. It may be able to share some partitions with other Unix systems, "
+"but that's not covered here. At the very least you will need a dedicated "
+"partition for the &debian; root filesystem."
+msgstr ""
+"如果在您的机器中已经安装有操作系统<phrase arch=\"x86\"> (Windows 9x、Windows "
+"NT/2000/XP/2003/Vista/7、OS/2、MacOS、Solaris、FreeBSD，&hellip;) </phrase> "
+"<phrase arch=\"s390\"> (VM、z/OS、OS/390，&hellip;) </phrase>占用了整个磁盘，"
+"同时您也希望把 Linux 装在同一块硬盘上，那么就必须重新对硬盘分区。&debian; 需"
+"要它自己专用的硬盘分区。它不能被安装在 Windows 或者 MacOS 的分区上。它可以与"
+"其它 Unix 系统共享一些分区，但是我们在这里不会对此进行说明。最起码，您要为 "
+"&debian; 的根目录准备一个专用的分区。"
+
+#. Tag: para
+#: preparing.xml:879
+#, no-c-format
+msgid ""
+"You can find information about your current partition setup by using a "
+"partitioning tool for your current operating system<phrase arch=\"any-"
+"x86\">, such as the integrated Disk Manager in Windows or fdisk in DOS</"
+"phrase><phrase arch=\"powerpc\">, such as Disk Utility, Drive Setup, HD "
+"Toolkit, or MacTools</phrase><phrase arch=\"s390\">, such as the VM diskmap</"
+"phrase>. Partitioning tools always provide a way to show existing partitions "
+"without making changes."
+msgstr ""
+"通过当前的操作系统中的分区工具，您可以获知现在的分区状况<phrase arch=\"any-"
+"x86\">，如 Windows 系统中的磁盘管理器或 DOS 下的 fdisk</phrase><phrase arch="
+"\"powerpc\">，如 Drive Setup、HD Toolkit 和 MacTools</phrase><phrase arch="
+"\"s390\">，如 VM diskmap</phrase>。分区工具总会提供一种办法让您查看现有的分区"
+"情况，而不作任何改动。"
+
+#. Tag: para
+#: preparing.xml:889
+#, no-c-format
+msgid ""
+"In general, changing a partition with a file system already on it will "
+"destroy any information there. Thus you should always make backups before "
+"doing any repartitioning. Using the analogy of the house, you would probably "
+"want to move all the furniture out of the way before moving a wall or you "
+"risk destroying it."
+msgstr ""
+"通常情况下，改动一个已经建立文件系统的分区，会导致其中的数据信息遭到损毁。因"
+"而，您应当在重新分区之前总是先做一下备份。继续拿房子作比喻，在移动墙壁时，您"
+"最好在把挡路的家具都移开，否则就要冒家具被毁坏的危险。"
+
+#. Tag: para
+#: preparing.xml:897
+#, no-c-format
+msgid ""
+"Several modern operating systems offer the ability to move and resize "
+"certain existing partitions without destroying their contents. This allows "
+"making space for additional partitions without losing existing data. Even "
+"though this works quite well in most cases, making changes to the "
+"partitioning of a disk is an inherently dangerous action and should only be "
+"done after having made a full backup of all data. <phrase arch=\"any-"
+"x86\">For FAT/FAT32 and NTFS partitions as used by DOS and Windows systems, "
+"the ability to move and resize them losslessly is provided both by &d-i; as "
+"well as by the integrated Disk Manager of Windows 7. </phrase>"
+msgstr ""
+"很多新的操作系统都提供无损移动和调节已有分区的功能。使得在不丢失任何数据的情"
+"况下就能添加分区空间。即使大多时候都可以正常使用，由于修改分区本身就是危险操"
+"作，应该在进行完整备份后再进行。<phrase arch=\"any-x86\">对于 DOS 和 Windows "
+"系统使用的 FAT/FAT32 和 NTFS 分区，这种无损修改能力 &d-i; 和 Windows 7 上的磁"
+"盘管理器都提供。</phrase>"
+
+#. Tag: para
+#: preparing.xml:912
+#, no-c-format
+msgid ""
+"To losslessly resize an existing FAT or NTFS partition from within &d-i;, go "
+"to the partitioning step, select the option for manual partitioning, select "
+"the partition to resize, and simply specify its new size."
+msgstr ""
+"在 &d-i; 里面无损调节已有的 FAT 或 NTFS 分区尺寸，要在分区设置步骤，选择手动"
+"分区选项，再选择修改大小，然后指定新尺寸。"
+
+#. Tag: emphasis
+#: preparing.xml:920
+#, no-c-format
+msgid "FIXME: write about HP-UX disks?"
+msgstr "FIXME: write about HP-UX disks?"
+
+#. Tag: para
+#: preparing.xml:922
+#, no-c-format
+msgid ""
+"Creating and deleting partitions can be done from within &d-i; as well as "
+"from an existing operating system. As a rule of thumb, partitions should be "
+"created by the system for which they are to be used, i.e. partitions to be "
+"used by &debian-gnu; should be created from within &d-i; and partitions to "
+"be used from another operating system should be created from there. &d-i; is "
+"capable of creating non-&arch-kernel; partitions, and partitions created "
+"this way usually work without problems when used in other operating systems, "
+"but there are a few rare corner cases in which this could cause problems, so "
+"if you want to be sure, use the native partitioning tools to create "
+"partitions for use by other operating systems."
+msgstr ""
+"创建和删除分区可以通过 &d-i; 也可以使用已有的操作系统进行。根据经验，分区应该"
+"由使用该分区的系统来创建，也就是说，&debian-gnu; 使用的分区应该用 &d-i; 创"
+"建，而别的分区则由别的操作系统来操作。&d-i; 可以创建非 &arch-kernel; 分区，这"
+"些分区在其他操作系统下工作也没有问题，但在极端罕见的情况也可能出错，所以如果"
+"要十拿九稳，就使用其操作系统上自带的工具来创建分区。"
+
+#. Tag: para
+#: preparing.xml:935
+#, no-c-format
+msgid ""
+"If you are going to install more than one operating system on the same "
+"machine, you should install all other system(s) before proceeding with the "
+"&debian; installation. Windows and other OS installations may destroy your "
+"ability to start &debian;, or encourage you to reformat non-native "
+"partitions."
+msgstr ""
+"倘若您打算在同一台机器上安装多个操作系统的话，应当在安装 &debian; 之前，先把"
+"所有其它系统都装好。Windows 和其它操作系统的安装过程可能会让您无法启动 "
+"&debian;，也可能会怂恿您重新格式化不属于它们自己的分区。"
+
+#. Tag: para
+#: preparing.xml:943
+#, no-c-format
+msgid ""
+"You can recover from these actions or avoid them, but installing the native "
+"system first saves you trouble."
+msgstr ""
+"尽管您可以在这些操作之后再恢复回来，也可以避免它们，但是首先安装原有的系统就"
+"能够帮您免除这些烦恼。"
+
+#. Tag: para
+#: preparing.xml:948
+#, no-c-format
+msgid ""
+"In order for OpenFirmware to automatically boot &debian-gnu; the &arch-"
+"parttype; partitions should appear before all other partitions on the disk, "
+"especially Mac OS X boot partitions. This should be kept in mind when pre-"
+"partitioning; you should create a &arch-parttype; placeholder partition to "
+"come <emphasis>before</emphasis> the other bootable partitions on the disk. "
+"(The small partitions dedicated to Apple disk drivers are not bootable.) You "
+"can delete the placeholder with the &debian; partition tools later during "
+"the actual install, and replace it with &arch-parttype; partitions."
+msgstr ""
+"为了能让 OpemFirmware 自动启动 &debian-gnu; &arch-parttype; 分区必须被安置在"
+"其它分区之前，特别是 MacOS 的启动分区。在事先分区时，这一点您必须牢记在心。"
+"即，您必须在其它可引导分区<emphasis>之前</emphasis>为 &arch-parttype; 预留一"
+"个分区。(专门留给 Apple 的硬盘驱动程序的那些小分区并不是可引导的。) 您可以在"
+"真正安装时，用 &debian; 的分区工具来删除当初预留的分区，再用 &arch-parttype; "
+"的分区取而代之。"
+
+#. Tag: title
+#: preparing.xml:1024
+#, no-c-format
+msgid "Partitioning from SunOS"
+msgstr "在 SunOS 下分区"
+
+#. Tag: para
+#: preparing.xml:1026
+#, no-c-format
+msgid ""
+"It's perfectly fine to partition from SunOS; in fact, if you intend to run "
+"both SunOS and &debian; on the same machine, it is recommended that you "
+"partition using SunOS prior to installing &debian;. The Linux kernel "
+"understands Sun disk labels, so there are no problems there. SILO supports "
+"booting Linux and SunOS from any of EXT2 (Linux), UFS (SunOS), romfs or "
+"iso9660 (CDROM) partitions."
+msgstr ""
+"从 SunOS 分区非常完美。事实上，如果您倾向在同一台计算机上使用 SunOS 和 "
+"&debian;，建议在安装 &debian; 之前使用 SunOS 进行分区。Linux 内核可以识别 "
+"Sun 的磁盘标签，因此不会有任何问题。SILO 支持从 EXT2 (Linux)、UFS (SunOS)、"
+"romfs 和 iso9660 (CDROM)分区启动 Linux 和 SunOS。"
+
+#. Tag: title
+#: preparing.xml:1038
+#, no-c-format
+msgid "Partitioning from Linux or another OS"
+msgstr "从 Linux 或其他 OS 分区"
+
+#. Tag: para
+#: preparing.xml:1040
+#, no-c-format
+msgid ""
+"Whatever system you are using to partition, make sure you create a "
+"<quote>Sun disk label</quote> on your boot disk. This is the only kind of "
+"partition scheme that the OpenBoot PROM understands, and so it's the only "
+"scheme from which you can boot. In <command>fdisk</command>, the <keycap>s</"
+"keycap> key is used to create Sun disk labels. You only need to do this on "
+"drives that do not already have a Sun disk label. If you are using a drive "
+"that was previously formatted using a PC (or other architecture) you must "
+"create a new disk label, or problems with the disk geometry will most likely "
+"occur."
+msgstr ""
+"无论使用什么系统分区，您要确保在您的启动盘上创建<quote>Sun disk label</quote>"
+"标签。这是 OpenBoot PROM 能识别的唯一分区方案，也是您唯一可以启动的方案。在 "
+"<command>fdisk</command> 里面，<keycap>s</keycap> 键用于创建 Sun 磁盘标签。您"
+"只须在没有 Sun 磁盘标签的磁盘上执行这个操作。如果您使用了一个被 PC (或其他体"
+"系)格式化过的磁盘，您必须创建新的磁盘标签，不然会有磁盘排列问题出现。"
+
+#. Tag: para
+#: preparing.xml:1052
+#, no-c-format
+msgid ""
+"You will probably be using <command>SILO</command> as your boot loader (the "
+"small program which runs the operating system kernel). <command>SILO</"
+"command> has certain requirements for partition sizes and location; see "
+"<xref linkend=\"partitioning\"/>."
+msgstr ""
+"您也许使用 <command>SILO</command> 作为您的 boot loader (运行操作系统内核的小"
+"程序)。<command>SILO</command> 对分区尺寸和位置有明确的要求，请参阅 <xref "
+"linkend=\"partitioning\"/>。"
+
+#. Tag: title
+#: preparing.xml:1067
+#, no-c-format
+msgid "Mac OS X Partitioning"
+msgstr "在 MacOS/OSX 下分区"
+
+#. Tag: para
+#: preparing.xml:1069
+#, no-c-format
+msgid ""
+"The <application>Disk Utility</application> application can be found under "
+"the <filename>Utilities</filename> menu in Mac OS X Installer. It will not "
+"adjust existing partitions; it is limited to partitioning the entire disk at "
+"once."
+msgstr ""
+"<application>Disk Utility</application> 程序可以在 MacOS 的 "
+"<filename>Utilities</filename> 菜单中找到。它并不能调整已经存在的分区，而仅限"
+"于一次性完成整个磁盘的分区。"
+
+#. Tag: para
+#: preparing.xml:1075
+#, no-c-format
+msgid ""
+"Remember to create a placeholder partition for GNU/Linux, preferably "
+"positioned first in the disk layout. it doesn't matter what type it is, it "
+"will be deleted and replaced later inside the &debian-gnu; installer."
+msgstr ""
+"记住要为 GNU/Linux 创建一个占位用的是分区，最好是磁盘布局中的第一个。它的类型"
+"无关紧要，在后面的 &debian-gnu; 安装程序中，它会被删除并替换。"
+
+#. Tag: para
+#: preparing.xml:1081
+#, no-c-format
+msgid ""
+"&debian; installer partition table editing tools are compatible with OS X, "
+"but not with MacOS 9. If you are planning to use both MacOS 9 and OS X, it "
+"is best to install OS X and &debian; on one hard drive, and put MacOS 9 on a "
+"separate hard drive. Separate options for OS 9 and OS X will appear when "
+"holding the <keycap>option</keycap> key at boot time, and separate options "
+"can be installed in the <application>yaboot</application> boot menu as well."
+msgstr ""
+"&debian; 的安装程序分区表编辑工具与 OS X 兼容，但与 MacOS 9 不兼容。如果您打"
+"算同时使用 MacOS 9 和 OS X，最好将 &debian; 和 OS X 安装在一个硬盘驱动器上，"
+"并将 MacOS 9 放在单独的硬盘驱动器上。在启动时按住 <keycap>option</keycap> "
+"键，将出现 OS 9 和 OS X 的独立选项，并且可以在 <application>yaboot</"
+"application> 引导菜单中安装单独的选项。"
+
+#. Tag: para
+#: preparing.xml:1091
+#, no-c-format
+msgid ""
+"GNU/Linux is unable to access information on UFS partitions, but can access "
+"HFS+ (aka MacOS Extended) partitions. OS X requires one of these two types "
+"for its boot partition. MacOS 9 can be installed on either HFS (aka MacOS "
+"Standard) or HFS+. To share information between the Mac OS X and GNU/Linux "
+"systems, an exchange partition is handy. HFS, HFS+ and MS-DOS FAT file "
+"systems are supported by MacOS 9, Mac OS X and GNU/Linux."
+msgstr ""
+"GNU/Linux 不能读取 UFS 分区，但支持 HFS+（又称 MacOS Extended）分区。OS X 要"
+"求使用这两个分区类型之一作为引导分区。MacOS 9 能安装到 HFS（又称 MacOS "
+"Standard）或 HFS+ 上。建一个交换信息分区就可以很方便地在 MacOS 和 GNU/Linux "
+"系统间共享信息。HFS，HFS+ 和 MS-DOS FAT 分区都能被 MacOS 和 Linux 支持。"
+
+#. Tag: title
+#: preparing.xml:1111
+#, no-c-format
+msgid "Pre-Installation Hardware and Operating System Setup"
+msgstr "安装前的硬件和操作系统的相关设置"
+
+#. Tag: para
+#: preparing.xml:1112
+#, no-c-format
+msgid ""
+"This section will walk you through pre-installation hardware setup, if any, "
+"that you will need to do prior to installing &debian;. Generally, this "
+"involves checking and possibly changing BIOS/system firmware settings for "
+"your system. The <quote>BIOS</quote> or <quote>system firmware</quote> is "
+"the core software used by the hardware; it is most critically invoked during "
+"the bootstrap process (after power-up)."
+msgstr ""
+"在本节中，我们将讨论安装之前有关硬件设置的一些问题。如果这些问题的确存在的"
+"话，您就需要在安装 &debian; 前先做一些准备工作了。一般来说，准备工作包括：检"
+"查或者可能修改系统中 BIOS/系统固件(system firmware)的设定。所谓<quote>BIOS</"
+"quote> 或 <quote>系统固件</quote>就是硬件运行所需的核心软件。它在系统引导过程"
+"(即开机之后)中起到了至关重要的作用。"
+
+#. Tag: title
+#: preparing.xml:1127
+#, no-c-format
+msgid "Invoking the BIOS Set-Up Menu"
+msgstr "BIOS 设置菜单的使用"
+
+#. Tag: para
+#: preparing.xml:1129
+#, no-c-format
+msgid ""
+"The BIOS provides the basic functions needed to boot your machine and to "
+"allow your operating system to access your hardware. Your system provides a "
+"BIOS setup menu, which is used to configure the BIOS. To enter the BIOS "
+"setup menu you have to press a key or key combination after turning on the "
+"computer. Often it is the <keycap>Delete</keycap> or the <keycap>F2</keycap> "
+"key, but some manufacturers use other keys. Usually upon starting the "
+"computer there will be a message stating which key to press to enter the "
+"setup screen."
+msgstr ""
+"BIOS 为启动机器提供了基本的功能，并允许您的操作系统可以访问硬件。系统提供了 "
+"BIOS 设置菜单，通过它可以配置 BIOS。要进入 BIOS 设置菜单，您需要在打开计算机"
+"的时候按下某组合键。通常这会是 <keycap>Delete</keycap> 或 <keycap>F2</"
+"keycap> 键，但也有厂商使用其他的键。一般在开机的时候会有信息显示使用哪些键可"
+"以进入设置界面。"
+
+# index.docbook:1522, index.docbook:1865
+#. Tag: title
+#: preparing.xml:1143 preparing.xml:1487 preparing.xml:1663
+#, no-c-format
+msgid "Boot Device Selection"
+msgstr "选择引导设备"
+
+#. Tag: para
+#: preparing.xml:1145
+#, no-c-format
+msgid ""
+"Within the BIOS setup menu, you can select which devices shall be checked in "
+"which sequence for a bootable operating system. Possible choices usually "
+"include the internal harddisks, the CD/DVD-ROM drive and USB mass storage "
+"devices such as USB sticks or external USB harddisks. On modern systems "
+"there is also often a possibility to enable network booting via PXE."
+msgstr ""
+"在 BIOS 设置菜单上，您可以选择用什么次序来检测设备上的可引导操作系统。供选择"
+"的通常有内置硬盘、CD/DVD-ROM 驱动器和 USB 存储设备，如 U 盘和外置硬盘。在新的"
+"系统上还可能会有使用 PXE 打开网络引导。"
+
+#. Tag: para
+#: preparing.xml:1153
+#, no-c-format
+msgid ""
+"Depending on the installation media (CD/DVD ROM, USB stick, network boot) "
+"you have chosen you should enable the appropriate boot devices if they are "
+"not already enabled."
+msgstr ""
+"根据不同的安装介质(CD/DVD ROM、U 盘、网络引导)，您可以选择打开哪些没有打开的"
+"引导设备。"
+
+#. Tag: para
+#: preparing.xml:1159
+#, no-c-format
+msgid ""
+"Most BIOS versions allow you to call up a boot menu on system startup in "
+"which you select from which device the computer should start for the current "
+"session. If this option is available, the BIOS usually displays a short "
+"message like <quote>press <keycap>F12</keycap> for boot menu</quote> on "
+"system startup. The actual key used to select this menu varies from system "
+"to system; commonly used keys are <keycap>F12</keycap>, <keycap>F11</keycap> "
+"and <keycap>F8</keycap>. Choosing a device from this menu does not change "
+"the default boot order of the BIOS, i.e. you can start once from a USB stick "
+"while having configured the internal harddisk as the normal primary boot "
+"device."
+msgstr ""
+"多数 BIOS 版本允许在启动时调出引导菜单选择本次会话中所使用的引导设备。如果有"
+"这项功能，BIOS 通常启动时会显示一条类似 <quote>press <keycap>F12</keycap> "
+"for boot menu</quote> 的信息。具体的按键会因系统的不同而不同；常用的键有 "
+"<keycap>F12</keycap>、<keycap>F11</keycap> 和 <keycap>F8</keycap>。从这个菜单"
+"选择的设备不会影响 BIOS 中默认的引导次序，就是说，可以从 U 盘启动一次，而将内"
+"置硬盘作为主引导设备。"
+
+#. Tag: para
+#: preparing.xml:1173
+#, no-c-format
+msgid ""
+"If your BIOS does not provide you with a boot menu to do ad-hoc choices of "
+"the current boot device, you will have to change your BIOS setup to make the "
+"device from which the &d-i; shall be booted the primary boot device."
+msgstr ""
+"如果您的 BIOS 不提供引导菜单选择当前的启动设备，您只好从 BIOS 设置中将 &d-i; "
+"设备设为主引导设备。"
+
+#. Tag: para
+#: preparing.xml:1179
+#, fuzzy, no-c-format
+#| msgid ""
+#| "Unfortunately some computers contain buggy BIOS versions. Booting &d-i; "
+#| "from a USB stick might not work even if there is an appropriate option in "
+#| "the BIOS setup menu and the stick is selected as the primary boot device. "
+#| "On some of these systems using a USB stick as boot medium is impossible; "
+#| "others can be tricked into booting from the stick by changing the device "
+#| "type in the BIOS setup from the default <quote>USB harddisk</quote> or "
+#| "<quote>USB stick</quote> to <quote>USB ZIP</quote> or <quote>USB CDROM</"
+#| "quote>. <phrase condition=\"isohybrid-supported\"> In particular if you "
+#| "use an isohybrid CD/DVD image on a USB stick (see <xref linkend=\"usb-"
+#| "copy-isohybrid\"/>), changing the device type to <quote>USB CDROM</quote> "
+#| "helps on some BIOSes which will not boot from a USB stick in USB harddisk "
+#| "mode.</phrase>"
+msgid ""
+"Unfortunately some computers contain buggy BIOS versions. Booting &d-i; from "
+"a USB stick might not work even if there is an appropriate option in the "
+"BIOS setup menu and the stick is selected as the primary boot device. On "
+"some of these systems using a USB stick as boot medium is impossible; others "
+"can be tricked into booting from the stick by changing the device type in "
+"the BIOS setup from the default <quote>USB harddisk</quote> or <quote>USB "
+"stick</quote> to <quote>USB ZIP</quote> or <quote>USB CDROM</quote>. <phrase "
+"condition=\"isohybrid-supported\"> In particular if you use an isohybrid CD/"
+"DVD image on a USB stick (see <xref linkend=\"usb-copy-isohybrid\"/>), "
+"changing the device type to <quote>USB CDROM</quote> helps on some BIOSes "
+"which will not boot from a USB stick in USB harddisk mode.</phrase> You may "
+"need to configure your BIOS to enable <quote>USB legacy support</quote>."
+msgstr ""
+"很不幸，有些计算机的 BIOS 版本有错误。即使将 BIOS 的主设备改成从 U 盘引导，也"
+"无法令 &d-i; 成功启动。有些系统完全不能从 U 盘介质进行引导；其他的引导需要将 "
+"U 盘引导默认从 <quote>USB harddisk</quote> 或 <quote>USB stick</quote> 改成 "
+"<quote>USB ZIP</quote> 或 <quote>USB CDROM</quote> 才行。<phrase condition="
+"\"isohybrid-supported\"> 特别是在您在 U 盘上使用 isohybrid CD/DVD 映像（参阅"
+"<xref linkend=\"usb-copy-isohybrid\"/>），将设备类型改成 <quote>USB CDROM</"
+"quote> 有助于解决不能从 U 盘硬盘模式下的引导问题。</phrase>"
+
+#. Tag: para
+#: preparing.xml:1195
+#, no-c-format
+msgid ""
+"If you cannot manipulate the BIOS to boot directly from a USB stick you "
+"still have the option of using an ISO copied to the stick. Boot &d-i; using "
+"<xref linkend=\"boot-drive-files\"/> and, after scanning the hard drives for "
+"an installer ISO image, select the USB device and choose an installation "
+"image."
+msgstr ""
+"如果您无法更改 BIOS 以从 U 盘直接启动，您仍然可以选择将 ISO 复制到该盘中。按"
+"<xref linkend=\"boot-drive-files\"/>启动 &d-i;，并在扫描硬盘驱动器发现安装程"
+"序 ISO 映像后，选择 USB 设备并选择安装映像。"
+
+#. Tag: title
+#: preparing.xml:1213
+#, no-c-format
+msgid "Invoking OpenFirmware"
+msgstr "使用 OpenFireware"
+
+#. Tag: para
+#: preparing.xml:1214
+#, no-c-format
+msgid ""
+"There is normally no need to set up the BIOS (called OpenFirmware) on &arch-"
+"title; systems. PReP and CHRP are equipped with OpenFirmware, but "
+"unfortunately, the means you use to invoke it vary from manufacturer to "
+"manufacturer. You'll have to consult the hardware documentation which came "
+"with your machine."
+msgstr ""
+"通常在 &arch-title; 系统上不需要去设置 BIOS(称为 OpenFirmware)。OpenFirmware "
+"常常配备 PReP 与 CHRP，但这也意味着依不同厂商而不同。您必须参阅计算机手册中相"
+"关的硬件文档。"
+
+#. Tag: para
+#: preparing.xml:1222
+#, no-c-format
+msgid ""
+"On &arch-title; Macintoshes, you invoke OpenFirmware with "
+"<keycombo><keycap>Command (cloverleaf/Apple)</keycap><keycap>Option</"
+"keycap><keycap>o</keycap><keycap>f</keycap></keycombo> while booting. "
+"Generally it will check for these keystrokes after the chime, but the exact "
+"timing varies from model to model. See <ulink url=\"&url-netbsd-powerpc-faq;"
+"\"></ulink> for more hints."
+msgstr ""
+"在 &arch-title; 的 Macintoshe 机器上，您在启动时通过 "
+"<keycombo><keycap>Command (cloverleaf/Apple)</keycap> <keycap>Option </"
+"keycap> <keycap>o</keycap> <keycap>f</keycap></keycombo> 命令使用 "
+"OpenFirmware。一般情况下，它会按时钟顺序检验击键，但也会与不同的型号有关。参"
+"阅 <ulink url=\"&url-netbsd-powerpc-faq;\"></ulink> 了解更多提示。"
+
+#. Tag: para
+#: preparing.xml:1230
+#, no-c-format
+msgid ""
+"The OpenFirmware prompt looks like this: <informalexample><screen>\n"
+"ok\n"
+"0 &gt;\n"
+"</screen></informalexample> Note that on older model &arch-title; Macs, the "
+"default and sometimes hardwired I/O for OpenFirmware user interaction is "
+"through the serial (modem) port. If you invoke OpenFirmware on one of these "
+"machines, you will just see a black screen. In that case, a terminal program "
+"running on another computer, connected to the modem port, is needed to "
+"interact with OpenFirmware."
+msgstr ""
+"OpenFirmware 的提示看起来像：<informalexample><screen>\n"
+"ok\n"
+"0 &gt;\n"
+"</screen></informalexample> 注意旧型号的 &arch-title; Mac 机器，OpenFirmware "
+"与用户交互所用的默认和 某些硬连线的 I/O 是通过串行(调制解调器)端口进行的。如"
+"果您在这样的机器上使用 OperFirmware，您只会看到黑屏。在这种情况下，需要用通过"
+"调制解调器端口连接到另外一台计算机上的终端程序来与 OpenFirmware 交互。"
+
+#. Tag: para
+#: preparing.xml:1243
+#, no-c-format
+msgid ""
+"The OpenFirmware on OldWorld Beige G3 machines, OF versions 2.0f1 and 2.4, "
+"is broken. These machines will most likely not be able to boot from the hard "
+"drive unless the firmware is patched. A firmware patch is included in the "
+"<application>System Disk 2.3.1</application> utility, available from Apple "
+"at <ulink url=\"ftp://ftp.apple.com/developer/macosxserver/utilities/"
+"SystemDisk2.3.1.smi.bin\"></ulink>. After unpacking the utility in MacOS, "
+"and launching it, select the <guibutton>Save</guibutton> button to have the "
+"firmware patches installed to nvram."
+msgstr ""
+"运行在 OldWorld Beige G3 机器上的 OF 版本 2.0f1 和 2.4 的 OpenFirmware 是坏"
+"的。这些机器如果没有打固件补丁，就不能够从硬盘启动。固件的补丁包含在 "
+"<application>System Disk 2.3.1</application> 工具包里面，它位于 Apple 的 "
+"<ulink url=\"ftp://ftp.apple.com/developer/macosxserver/utilities/"
+"SystemDisk2.3.1.smi.bin\"></ulink>。在 MacOS 上解包并运行，选择 "
+"<guibutton>Save</guibutton> 按钮使固件补丁安装到 nvram。"
+
+#. Tag: title
+#: preparing.xml:1259
+#, no-c-format
+msgid "How to update bare metal ppc64el firmware"
+msgstr "如何更新 ppc64el 裸机固件"
+
+#. Tag: para
+#: preparing.xml:1260
+#, no-c-format
+msgid ""
+"This is an excerpt from <ulink url=\"&url-ibm-powerkvm;\">IBM PowerKVM on "
+"IBM POWER8</ulink>."
+msgstr ""
+"以下摘录自 IBM POWER8 上的 <ulink url=\"&url-ibm-powerkvm;\">IBM PowerKVM on "
+"IBM POWER8</ulink>。"
+
+#. Tag: para
+#: preparing.xml:1265
+#, no-c-format
+msgid ""
+"Open Power Abstraction Layer (OPAL) is the system firmware in the stack of "
+"POWER processor-based server."
+msgstr "开放 Power 抽象层（OPAL）是基于 POWER 处理器的服务器的系统固件。"
+
+#. Tag: para
+#: preparing.xml:1270
+#, no-c-format
+msgid ""
+"There may be instances when the user might have to upgrade the Power Systems "
+"firmware to a more recent level to acquire new features or additional "
+"support for devices."
+msgstr ""
+"当用户需要将 Power Systems 固件升级到更新级别，以获取新功能或对设备的额外支持"
+"时，可能会出现这种情况。"
+
+#. Tag: para
+#: preparing.xml:1276
+#, no-c-format
+msgid "Make sure that the following requirements are met:"
+msgstr "确保满足以下要求："
+
+#. Tag: para
+#: preparing.xml:1281
+#, no-c-format
+msgid "an OS to be running on the system;"
+msgstr "系统上运行有操作系统；"
+
+#. Tag: para
+#: preparing.xml:1283
+#, no-c-format
+msgid "the .img file of the OPAL level that the user needs to update to;"
+msgstr "用户将要更新到 OPAL 级别的 .img 文件；"
+
+#. Tag: para
+#: preparing.xml:1285
+#, no-c-format
+msgid "the machine isn't under HMC control."
+msgstr "机器不在 HMC 控制下。"
+
+#. Tag: para
+#: preparing.xml:1289
+#, no-c-format
+msgid ""
+"Power Systems has two sides of flash to boot firmware from, namely permanent "
+"and temporary. This provides a way to test firmware updates on the temporary "
+"side of the flash before committing the tested changes to the permanent "
+"side, thereby committing the new updates."
+msgstr ""
+"Power 系统有两侧闪存可以用于固件启动，永久的和临时的。在将更改提交给永久性的"
+"一侧前，这提供了在临时侧测试更新固件的方法，然后再提交新的更新。"
+
+#. Tag: para
+#: preparing.xml:1296
+#, no-c-format
+msgid "Perform the following steps for the update:"
+msgstr "执行以下更新步骤："
+
+#. Tag: para
+#: preparing.xml:1301
+#, no-c-format
+msgid ""
+"Save the level of the existing firmware before really updating. In ASM, in "
+"the system menu, click <command>Service Aids -&gt; Service Processor Command "
+"Line</command>, and run the following command:"
+msgstr ""
+"在真正更新之前保存现有级别的固件。在 ASM 中，系统菜单中单击 <command>Service "
+"Aids -&gt; Service Processor Command Line</command>，并运行以下命令："
+
+#. Tag: screen
+#: preparing.xml:1305
+#, no-c-format
+msgid "cupdcmd -f"
+msgstr "cupdcmd -f"
+
+#. Tag: para
+#: preparing.xml:1306
+#, no-c-format
+msgid ""
+"Download the .img file of the level of firmware to be updated to a location "
+"in the host filesystem. Refer to <ulink url=\"&url-ibm-fixcentral;\">IBM Fix "
+"Central</ulink> for downloading the image file."
+msgstr ""
+"将要更新级别固件的 .img 文件下载到主机文件系统中的某个位置。请参阅 <ulink "
+"url=\"&url-ibm-fixcentral;\">IBM Fix Central</ulink> 下载映像文件。"
+
+#. Tag: para
+#: preparing.xml:1311
+#, no-c-format
+msgid ""
+"Verify the image downloaded by running the following command and save the "
+"output."
+msgstr "运行下列命令验证下载的映像，并保存其输出。"
+
+#. Tag: screen
+#: preparing.xml:1314
+#, no-c-format
+msgid "$update_flash -v -f &lt;file_name.img&gt;"
+msgstr "$update_flash -v -f &lt;file_name.img&gt;"
+
+#. Tag: para
+#: preparing.xml:1316
+#, no-c-format
+msgid "Update the firmware by running the following command."
+msgstr "运行以下命令更新固件。"
+
+#. Tag: screen
+#: preparing.xml:1318
+#, no-c-format
+msgid "$update_flash -f &lt;file_name.img&gt;"
+msgstr "$update_flash -f &lt;file_name.img&gt;"
+
+#. Tag: para
+#: preparing.xml:1324
+#, no-c-format
+msgid ""
+"The command reboots the system and therefore, sessions if any, would be lost."
+msgstr "该命令重启系统，因此，会话（如果有的话）将丢失。"
+
+#. Tag: para
+#: preparing.xml:1327
+#, no-c-format
+msgid "Do not reboot or switch off the system until it is back."
+msgstr "不要重新启动或关闭系统，直到完成。"
+
+#. Tag: para
+#: preparing.xml:1334
+#, no-c-format
+msgid ""
+"Verify the updated firmware level of the temporary side of the flash as in "
+"step 1."
+msgstr "验证闪存临时侧的更新固件级别，如步骤1所示。"
+
+#. Tag: para
+#: preparing.xml:1337
+#, no-c-format
+msgid ""
+"In case the update has to be reverted, the user can do so by running this "
+"command: <informalexample><screen>\n"
+"    $update_flash -r\n"
+"</screen></informalexample> Rejection would reject only the temporary side "
+"of the flash. Therefore, the new level should be committed to the permanent "
+"side only after thorough testing of the new firmware."
+msgstr ""
+"如果需要恢复更新，用户可以运行以下命令来执行此操作："
+"<informalexample><screen>\n"
+"    $update_flash -r\n"
+"</screen></informalexample>要错也只会错在临时侧。因此，只有在彻底测试新固件"
+"后，才能向永久侧提交。"
+
+#. Tag: para
+#: preparing.xml:1344
+#, no-c-format
+msgid ""
+"The new updated level can be committed to the permanent side of the flash by "
+"running the following command."
+msgstr "可以运行以下命令将新的更新级别提交到永久侧的闪存。"
+
+#. Tag: screen
+#: preparing.xml:1347
+#, no-c-format
+msgid "$update_flash -c"
+msgstr "$update_flash -c"
+
+#. Tag: title
+#: preparing.xml:1355
+#, no-c-format
+msgid "Updating KVM guest firmware (SLOF)"
+msgstr "更新 KVM 客户机固件（SLOF）"
+
+#. Tag: para
+#: preparing.xml:1356
+#, no-c-format
+msgid ""
+"Slimline Open Firmware (SLOF) is an implementation of the IEEE 1275 "
+"standard. It can be used as partition firmware for pSeries machines running "
+"on QEMU or KVM."
+msgstr ""
+"Slimline Open Firmware（SLOF）是 IEEE 1275 标准的实现。它可以用作在 QEMU 或 "
+"KVM 上运行的 pSeries 机器的分区固件。"
+
+#. Tag: para
+#: preparing.xml:1363
+#, no-c-format
+msgid ""
+"The package qemu-slof is, in fact, a dependency of package qemu-system-ppc "
+"(which also provides the virtual package qemu-system-ppc64), and can be "
+"installed or updated via <command>apt</command> tool on Debian-based "
+"distros. Like so: <informalexample><screen>\n"
+"# apt install qemu-slof\n"
+"</screen></informalexample> SLOF can also be installed into rpm-based "
+"distribution systems, given the proper repository or rpm package. "
+"Additionally, the upstream source code is available at <ulink url=\"http://"
+"github.com/leilihh/SLOF\"></ulink>."
+msgstr ""
+"实际上，qemu-slof 包依赖于 qemu-system-ppc（也提供了虚包 qemu-system-"
+"ppc64），可以通过 Debian 发行版上的 <command>apt</command> 工具安装或更新。如"
+"下所示：<informalexample><screen>\n"
+"# apt install qemu-slof\n"
+"</screen></informalexample>若有正确的软件源或 rpm 包，SLOF 也可安装到基于 "
+"rpm 的发行版中。此外，上游源代码可在 <ulink url=\"http://github.com/leilihh/"
+"SLOF\"></ulink> 中找到。"
+
+#. Tag: para
+#: preparing.xml:1378
+#, no-c-format
+msgid ""
+"Thus, one can use a different SLOF file rather than the default, when "
+"running <command>qemu-system</command>, by adding the command line argument "
+"<userinput>-bios &lt;slof_file&gt; </userinput> when starting qemu."
+msgstr ""
+"因此，运行 <command>qemu-system</command> 时添加命令行参数 <userinput>-bios "
+"&lt;slof_file&gt; </userinput>，可以使用不同的 SLOF 文件，而不是默认值。"
+
+#. Tag: title
+#: preparing.xml:1388
+#, no-c-format
+msgid "Updating PowerKVM hypervisor"
+msgstr "更新 PowerKVM 管理程序"
+
+#. Tag: title
+#: preparing.xml:1389
+#, no-c-format
+msgid "Instructions for Netboot installation"
+msgstr "Netboot 安装说明"
+
+#. Tag: para
+#: preparing.xml:1390
+#, no-c-format
+msgid ""
+"You will need a DHCP/TFTP (BOOTP) server, as well as a web server. After "
+"downloading ibm-powerkvm-*-ppc64-service-*.iso, mount loop it and unpack it "
+"into some directory within your HTTP server www root structure (say "
+"wwwroot): <informalexample><screen>\n"
+"# cd &lt;directory-where-the-iso-is&gt;\n"
+"# mkdir ./iso\n"
+"# sudo mount -o loop ibm-powerkvm-*-ppc64-service-*.iso ./iso\n"
+"# cp -a ./iso/* &lt;path-to-wwwroot&gt;\n"
+"</screen></informalexample> Create the petitboot.conf file in a directory "
+"under your tftproot, say /tftproot/powerkvm, with the following contents: "
+"<informalexample><screen>\n"
+"label PowerKVM Automated Install\n"
+"kernel http://YOUR-SERVER-IP/SOME-PATH-TO-wwwroot/ppc/ppc64/vmlinuz\n"
+"initrd http://YOUR-SERVER-IP/SOME-PATH-TO-wwwroot/ppc/ppc64/initrd.img\n"
+"append root=live:http://YOUR-SERVER-IP/SOME-PATH-TO-wwwroot/LiveOS/squashfs."
+"img repo=http://YOUR-SERVER-IP/SOME-PATH-TO-wwwroot/packages rd.dm=0 rd.md=0 "
+"console=hvc0 console=tty0\n"
+"</screen></informalexample> Editing your dhcpd.conf, set this directive at "
+"the beginning: <informalexample><screen>\n"
+"option conf-file code 209 = text;\n"
+"</screen></informalexample> Add the system directive: "
+"<informalexample><screen>\n"
+"host &lt;your-system&gt; {\n"
+"    hardware ethernet &lt;system macaddr&gt;\n"
+"    fixed-address &lt;system ip&gt;;\n"
+"    option host-name \"&lt;system hostname&gt;\";\n"
+"    option conf-file \"&lt;powerkvm/petitboot.conf&gt;\";\n"
+" }\n"
+"</screen></informalexample> Reboot the dhcp server."
+msgstr ""
+"您将需要一个 DHCP/TFTP（BOOTP）服务器，以及一个网页服务器。下载 ibm-powerkvm-"
+"*-ppc64-service-*.iso，循环挂载并将其解压到您的 HTTP 服务器 www 根目录（如 "
+"wwwroot）的某个目录中：<informalexample><screen>\n"
+"# cd &lt;directory-where-the-iso-is&gt;\n"
+"# mkdir ./iso\n"
+"# sudo mount -o loop ibm-powerkvm-*-ppc64-service-*.iso ./iso\n"
+"# cp -a ./iso/* &lt;path-to-wwwroot&gt;\n"
+"</screen></informalexample>在 tftproot 下的某个目录中创建 petitboot.conf 文"
+"件，如 /tftproot/powerkvm，内容如下：<informalexample><screen>\n"
+"label PowerKVM Automated Install\n"
+"kernel http://服务器-IP/到-wwwroot-的路径/ppc/ppc64/vmlinuz\n"
+"initrd http://服务器-IP/到-wwwroot-的路径/ppc/ppc64/initrd.img\n"
+"append root=live:http://服务器-IP/到-wwwroot-的路径/LiveOS/squashfs.img "
+"repo=http://服务器-IP/到-wwwroot-的路径/packages rd.dm=0 rd.md=0 "
+"console=hvc0 console=tty0\n"
+"</screen></informalexample>编辑 dhcpd.conf，在开头设置指令："
+"<informalexample><screen>\n"
+"option conf-file code 209 = text;\n"
+"</screen></informalexample>添加系统指令：<informalexample><screen>\n"
+"host &lt;your-system&gt; {\n"
+"    hardware ethernet &lt;system macaddr&gt;\n"
+"    fixed-address &lt;system ip&gt;;\n"
+"    option host-name \"&lt;system hostname&gt;\";\n"
+"    option conf-file \"&lt;powerkvm/petitboot.conf&gt;\";\n"
+" }\n"
+"</screen></informalexample>重启 dhcp 服务器。"
+
+#. Tag: para
+#: preparing.xml:1414
+#, no-c-format
+msgid "Boot your PowerLinux machine."
+msgstr "启动您的 PowerLinux 机器。"
+
+#. Tag: para
+#: preparing.xml:1418
+#, no-c-format
+msgid ""
+"There should be the following option at petitboot (select it): "
+"<informalexample><screen>\n"
+"\"Power KVM Automated Install\" \n"
+"</screen></informalexample> The installer menu should appear automatically."
+msgstr ""
+"在 petitboot（选择它）应该有以下选项：<informalexample><screen>\n"
+"\"Power KVM Automated Install\" \n"
+"</screen></informalexample>安装程序菜单应该会自动显示。"
+
+#. Tag: title
+#: preparing.xml:1429
+#, no-c-format
+msgid "Instructions for DVD"
+msgstr "DVD 说明"
+
+#. Tag: para
+#: preparing.xml:1430
+#, no-c-format
+msgid ""
+"Boot the ISO ibm-powerkvm-*-ppc64-service-*.iso (either burn a DVD or make "
+"it virtual if using QEMU) and simply wait for the boot."
+msgstr ""
+"启动 ISO ibm-powerkvm-*-ppc64-service-*.iso（刻录 DVD 或使用虚拟的 QEMU），然"
+"后只需等待启动完成。"
+
+#. Tag: para
+#: preparing.xml:1433
+#, no-c-format
+msgid ""
+"There should be the following option at petitboot (select it): "
+"<informalexample><screen>\n"
+"\"POWERKVM_LIVECD\" \n"
+"</screen></informalexample> The installer menu should appear automatically."
+msgstr ""
+"在 petitboot（选择它）应该有以下选项：<informalexample><screen>\n"
+"\"POWERKVM_LIVECD\" \n"
+"</screen></informalexample>安装程序菜单应该会自动显示。"
+
+#. Tag: title
+#: preparing.xml:1454
+#, no-c-format
+msgid "Invoking OpenBoot"
+msgstr "使用 OpenBoot"
+
+#. Tag: para
+#: preparing.xml:1456
+#, no-c-format
+msgid ""
+"OpenBoot provides the basic functions needed to boot the &arch-title; "
+"architecture. This is rather similar in function to the BIOS in the x86 "
+"architecture, although much nicer. The Sun boot PROMs have a built-in forth "
+"interpreter which lets you do quite a number of things with your machine, "
+"such as diagnostics and simple scripts."
+msgstr ""
+"OpenBoot 提供了启动 &arch-title; 体系所需的基本功能。功能与 x86 体系的 BIOS "
+"非常接近，但做得更好一些。Sun 的启动 PROM 内置了 forth 解释器，可以让您对计算"
+"机做很多事情，如诊断和简单脚本。"
+
+#. Tag: para
+#: preparing.xml:1464
+#, no-c-format
+msgid ""
+"To get to the boot prompt you need to hold down the <keycap>Stop</keycap> "
+"key (on older type 4 keyboards, use the <keycap>L1</keycap> key, if you have "
+"a PC keyboard adapter, use the <keycap>Break</keycap> key) and press the "
+"<keycap>A</keycap> key. The boot PROM will give you a prompt, either "
+"<userinput>ok</userinput> or <userinput>&gt;</userinput>. It is preferred to "
+"have the <userinput>ok</userinput> prompt. So if you get the old style "
+"prompt, hit the <keycap>n</keycap> key to get the new style prompt."
+msgstr ""
+"为了得到启动提示符，您需要按住 <keycap>Stop</keycap> 键(在老式的 type 4 键盘"
+"上，使用 <keycap>L1</keycap> 键，如果您有一个 PC 键盘适配器，使用 "
+"<keycap>Break</keycap> 健)并按下 <keycap>A</keycap> 键。启动 PROM 将给出提示"
+"符，可能是 <userinput>ok</userinput> 或者 <userinput>&gt;</userinput>。优先使"
+"用 <userinput>ok</userinput> 提示符。如果您得到的是旧风格的提示符，按下 "
+"<keycap>n</keycap> 键得到新风格的提示符。"
+
+#. Tag: para
+#: preparing.xml:1476
+#, no-c-format
+msgid ""
+"If you are using a serial console, send a break to the machine. With "
+"Minicom, use <keycap>Ctrl-A F</keycap>, with cu, hit <keycap>Enter</keycap>, "
+"then type <userinput>%~break</userinput>. Consult the documentation of your "
+"terminal emulator if you are using a different program."
+msgstr ""
+"如果您使用的是串口控制台，发送 break 到机器。在 Minicom 下，使用 "
+"<keycap>Ctrl-A F</keycap>，在 cu 下，按下 <keycap>Enter</keycap>，然后键入 "
+"<userinput>%~break</userinput>。如果您使用其他的程序，查看终端模拟器相关的文"
+"档。"
+
+#. Tag: para
+#: preparing.xml:1489
+#, no-c-format
+msgid ""
+"You can use OpenBoot to boot from specific devices, and also to change your "
+"default boot device. However, you need to know some details about how "
+"OpenBoot names devices; it's considerably different from Linux device "
+"naming, described in <xref linkend=\"device-names\"/>. Also, the command "
+"will vary a bit, depending on what version of OpenBoot you have. More "
+"information about OpenBoot can be found in the <ulink url=\"&url-openboot;"
+"\">Sun OpenBoot Reference</ulink>."
+msgstr ""
+"您可以使用 OpenBoot 从指定设备启动，也可以能改变默认启动设备。但您需要了解 "
+"OpenBoot 如何命名设备的细节，它与 Linux 命名方法有很大差别，说明见 <xref "
+"linkend=\"device-names\"/>。另外，该命令会依 OpenBoot 的版本不同而略有区别。"
+"更多关于 OpenBoot 的信息请参考 <ulink url=\"&url-openboot;\">Sun OpenBoot "
+"Reference</ulink>。"
+
+#. Tag: para
+#: preparing.xml:1499
+#, no-c-format
+msgid ""
+"Typically, with newer revisions, you can use OpenBoot devices such as "
+"<quote>floppy</quote>, <quote>cdrom</quote>, <quote>net</quote>, "
+"<quote>disk</quote>, or <quote>disk2</quote>. These have the obvious "
+"meanings; the <quote>net</quote> device is for booting from the network. "
+"Additionally, the device name can specify a particular partition of a disk, "
+"such as <quote>disk2:a</quote> to boot disk2, first partition. Full OpenBoot "
+"device names have the form: <informalexample> <screen>\n"
+"<replaceable>driver-name</replaceable>@\n"
+"<replaceable>unit-address</replaceable>:\n"
+"<replaceable>device-arguments</replaceable>\n"
+"</screen></informalexample> In older revisions of OpenBoot, device naming is "
+"a bit different: the floppy device is called <quote>/fd</quote>, and SCSI "
+"disk devices are of the form <quote>sd(<replaceable>controller</"
+"replaceable>, <replaceable>disk-target-id</replaceable>, <replaceable>disk-"
+"lun</replaceable>)</quote>. The command <userinput>show-devs</userinput> in "
+"newer OpenBoot revisions is useful for viewing the currently configured "
+"devices. For full information, whatever your revision, see the <ulink url="
+"\"&url-openboot;\">Sun OpenBoot Reference</ulink>."
+msgstr ""
+"一般来说，在较新的修订版中，您可以使用 OpenBoot 设备，如<quote>floppy</"
+"quote>、<quote>cdrom</quote>、<quote>net</quote>、<quote>disk</quote> 或 "
+"<quote>disk2</quote>。这些含义很直观，<quote>net</quote> 即指设备是从网络启"
+"动。另外，设备名可以明确指定磁盘分区，如 <quote>disk2:a</quote> 是启动磁盘 "
+"disk2 的第一个分区。完整的 OpenBoot 设备命名形式为 <informalexample> "
+"<screen>\n"
+"<replaceable>driver-name</replaceable>@\n"
+"<replaceable>unit-address</replaceable>:\n"
+"<replaceable>device-arguments</replaceable>\n"
+"</screen></informalexample>。在旧版的 OpenBoot 中，设备命名有些不同：软盘设备"
+"称为 <quote>/fd</quote>，SCSI 磁盘形式是 <quote>sd(<replaceable>controller</"
+"replaceable>, <replaceable>disk-target-id</replaceable>, <replaceable>disk-"
+"lun</replaceable>)</quote>。<userinput>show-devs</userinput> 命令在新版的 "
+"OpenBoot 中用于查看当前的配置设备。完整的信息，无论您使用什么版本，请参考 "
+"<ulink url=\"&url-openboot;\">Sun OpenBoot Reference</ulink>。"
+
+#. Tag: para
+#: preparing.xml:1522
+#, no-c-format
+msgid ""
+"To boot from a specific device, use the command <userinput>boot "
+"<replaceable>device</replaceable></userinput>. You can set this behavior as "
+"the default using the <userinput>setenv</userinput> command. However, the "
+"name of the variable to set changed between OpenBoot revisions. In OpenBoot "
+"1.x, use the command <userinput>setenv boot-from <replaceable>device</"
+"replaceable></userinput>. In later revisions of OpenBoot, use the command "
+"<userinput>setenv boot-device <replaceable>device</replaceable></userinput>. "
+"Note, this is also configurable using the <command>eeprom</command> command "
+"on Solaris, or modifying the appropriate files in <filename>/proc/openprom/"
+"options/</filename>, for example under Linux: <informalexample><screen>\n"
+"# echo disk1:1 &gt; /proc/openprom/options/boot-device\n"
+"</screen></informalexample> and under Solaris:"
+msgstr ""
+"要从指定的设备启动，请使用 <userinput>boot <replaceable>device</"
+"replaceable></userinput> 命令。您可以通过 <userinput>setenv</userinput> 命令"
+"将它设为默认方式。但变量的名称对不同版本有所改变。在 OpenBoot 1.x 中，请使用 "
+"<userinput>setenv boot-from <replaceable>device</replaceable></userinput> 命"
+"令。在稍后的 OpenBoot 修订版本中，请使用 <userinput>setenv boot-device "
+"<replaceable>device</replaceable></userinput> 命令。注意，它也可以通过使用 "
+"Solaris 上的 <command>eeprom</command> 命令或者修改 <filename>/proc/openprom/"
+"options/</filename> 中相应的文件来进行配置，例如，Linux 下使用："
+"<informalexample><screen>\n"
+"# echo disk1:1 &gt; /proc/openprom/options/boot-device\n"
+"</screen></informalexample> 或在 Solaris下执行："
+
+#. Tag: screen
+#: preparing.xml:1541
+#, no-c-format
+msgid "eeprom boot-device=disk1:1"
+msgstr "eeprom boot-device=disk1:1"
+
+#. Tag: title
+#: preparing.xml:1551
+#, no-c-format
+msgid "BIOS Setup"
+msgstr "BIOS 设置"
+
+#. Tag: para
+#: preparing.xml:1552
+#, no-c-format
+msgid ""
+"In order to install &debian-gnu; on a &arch-title; or zSeries machine you "
+"have first boot a kernel into the system. The boot mechanism of this "
+"platform is inherently different to other ones, especially from PC-like "
+"systems: there are no floppy devices available at all. You will notice "
+"another big difference while you work with this platform: most (if not all) "
+"of the time you will work remote, with the help of some client session "
+"software like telnet, or a browser. This is due to that special system "
+"architecture where the 3215/3270 console is line-based instead of character-"
+"based."
+msgstr ""
+"为了安装 &debian-gnu; 到 &arch-title; 或者 zSeries 机器上，您首先要将内核引导"
+"进系统。在此平台上的启动机制与其他类型，特别是类 PC 的系统，有着本质上的不"
+"同：它根本就没有软盘驱动器。您还会注意到此平台上的另外一个显著差异：大多数(如"
+"果不是全部)的时间，您将借助于其他客户机上的 telnet 这样的软件或者一个浏览器，"
+"通过远程方式使用。这归因于该系统上的 3215/3270 控制台是线型，而不是字符型的。"
+
+#. Tag: para
+#: preparing.xml:1564
+#, no-c-format
+msgid ""
+"Linux on this platform runs either natively on the bare machine, in a so-"
+"called LPAR (Logical Partition) or in a virtual machine supplied by the VM "
+"system. Boot media differs depending on the runtime mode. For example, you "
+"can use the virtual card reader of a virtual machine, or boot from the HMC "
+"(Hardware Management Console) of an LPAR if the HMC and this option is "
+"available for you."
+msgstr ""
+"Linux 在该平台上可以是本地化方式运行于裸机上，以所谓的 LPAR(Logical "
+"Partition) 方式或者 由 VM 系统提供的虚拟机方式。您可以在所有的系统上使用启动"
+"磁带；您也可以使用其他的介质，但它们并不一定都可用。例如，您可以在虚拟机上使"
+"用虚拟读卡器，或者在 HMC (Hardware Management Console) 可用的情况下，从 LPAR "
+"上的 HMC 启动。"
+
+#. Tag: para
+#: preparing.xml:1573
+#, no-c-format
+msgid ""
+"Before you actually perform an installation, you have to go over some design "
+"and preparation steps. IBM has made documentation available about the whole "
+"process, e.g. how to prepare an installation medium and how actually to boot "
+"from that medium. Duplicating that information here is neither possible nor "
+"necessary. However, we will describe here which kind of &debian;-specific "
+"data is needed and where to find it. Using both sources of information, you "
+"have to prepare your machine and the installation medium before you can "
+"perform a boot from it. When you see the welcome message in your client "
+"session, return to this document to go through the &debian;-specific "
+"installation steps."
+msgstr ""
+"在实际安装之前，您必须仔细检查一些规划和准备步骤。IBM 有关于整个过程的文档，"
+"如，怎样准备安装介质和如何从该介质启动。这里毋需复制那些信息。但是，我们会在"
+"此说明需要哪些 &debian; 规格的数据，以及在哪里能找到它们。使用这些信息资源，"
+"在引导之前您必须准备好计算机和安装介质。当您在客户端会话中看到欢迎画面，再返"
+"回到本文档查看 &debian; 规格的安装步骤。"
+
+#. Tag: title
+#: preparing.xml:1590
+#, no-c-format
+msgid "Native and LPAR installations"
+msgstr "本地化(Native)和 LPAR 安装"
+
+#. Tag: para
+#: preparing.xml:1591
+#, no-c-format
+msgid ""
+"Please refer to chapter 5 of the <ulink url=\"http://www.redbooks.ibm.com/"
+"pubs/pdfs/redbooks/sg244987.pdf\"> Linux for &arch-title;</ulink> Redbook "
+"and chapter 3.2 of the <ulink url=\"http://www.redbooks.ibm.com/pubs/pdfs/"
+"redbooks/sg246264.pdf\"> Linux for IBM eServer zSeries and &arch-title;: "
+"Distributions</ulink> Redbook on how to set up an LPAR for Linux."
+msgstr ""
+"请参考 <ulink url=\"http://www.redbooks.ibm.com/pubs/pdfs/redbooks/sg244987."
+"pdf\"> Linux for &arch-title;</ulink> Redbook 第 5 章和 <ulink url=\"http://"
+"www.redbooks.ibm.com/pubs/pdfs/redbooks/sg246264.pdf\"> Linux for IBM "
+"eServer zSeries and &arch-title;: Distributions</ulink> Redbook 第 3.2 节有关"
+"如何为 Linux 建立 LPAR 的部分。"
+
+#. Tag: title
+#: preparing.xml:1605
+#, no-c-format
+msgid "Installation as a VM guest"
+msgstr "作为一个 VM guest 安装"
+
+#. Tag: para
+#: preparing.xml:1607
+#, no-c-format
+msgid ""
+"Please refer to chapter 6 of the <ulink url=\"http://www.redbooks.ibm.com/"
+"pubs/pdfs/redbooks/sg244987.pdf\"> Linux for &arch-title;</ulink> Redbook "
+"and chapter 3.1 of the <ulink url=\"http://www.redbooks.ibm.com/pubs/pdfs/"
+"redbooks/sg246264.pdf\"> Linux for IBM eServer zSeries and &arch-title;: "
+"Distributions</ulink> Redbook on how to set up a VM guest for running Linux."
+msgstr ""
+"请参考 <ulink url=\"http://www.redbooks.ibm.com/pubs/pdfs/redbooks/sg244987."
+"pdf\"> Linux for &arch-title;</ulink> Redbook 第 6 章和 <ulink url=\"http://"
+"www.redbooks.ibm.com/pubs/pdfs/redbooks/sg246264.pdf\"> Linux for IBM "
+"eServer zSeries and &arch-title;: Distributions</ulink> Redbook 第 3.1 节有关"
+"如何为运行 Linux 建立 VM guest 的部分。"
+
+#. Tag: para
+#: preparing.xml:1617
+#, no-c-format
+msgid ""
+"You need to copy all the files from the <filename>generic</filename> sub-"
+"directory to your CMS disk. Be sure to transfer <filename>kernel.debian</"
+"filename> and <filename>initrd.debian</filename> in binary mode with a fixed "
+"record length of 80 characters (by specifying <userinput>BINARY</userinput> "
+"and <userinput>LOCSITE FIX 80</userinput> in your FTP client). "
+"<filename>parmfile.debian</filename> can be in either ASCII or EBCDIC "
+"format. A sample <filename>debian.exec</filename> script, which will punch "
+"the files in the proper order, is included with the images."
+msgstr ""
+"您需要从 <filename>generic</filename> 子目录复制所有的文件到 CMS 磁盘。并确"
+"保 <filename>kernel.debian</filename> 和 <filename>initrd.debian</filename> "
+"以 80 字符固定长度二进制模式传输(FTP 客户端使用 <userinput>BINARY</"
+"userinput> 和 <userinput>LOCSITE FIX 80</userinput>)。<filename>parmfile."
+"debian</filename> 可以是 ASCII 或 EBCDIC 格式。映像里面包含有一个 "
+"<filename>debian.exec</filename> 示例脚本，用于按正确次序存放文件。"
+
+#. Tag: title
+#: preparing.xml:1634
+#, no-c-format
+msgid "Setting up an installation server"
+msgstr "建立安装服务器"
+
+#. Tag: para
+#: preparing.xml:1636
+#, no-c-format
+msgid ""
+"If you don't have a connection to the Internet (either directly or via a web "
+"proxy) you need to create a local installation server that can be accessed "
+"from your S/390. This server keeps all the packages you want to install and "
+"must make them available using NFS, HTTP or FTP."
+msgstr ""
+"如果您没有连接到互联网(直接或者间接通过 web 代理)，您需要创建一个您的 S/390 "
+"能访问的本地安装服务器。该服务器包含所有您需要安装的软件包，并可以通过 NFS，"
+"HTTP 或 FTP 访问。"
+
+#. Tag: para
+#: preparing.xml:1644
+#, no-c-format
+msgid ""
+"The installation server needs to copy the exact directory structure from any "
+"&debian-gnu; mirror, but only the S/390 and architecture-independent files "
+"are required. You can also copy the contents of all installation CDs into "
+"such a directory tree."
+msgstr ""
+"安装服务器需要从任意 &debian-gnu; 镜像复制精确的目录结构，当然只需 S/390 和一"
+"些独立于体系的文件。您也可以复制所有的安装 CD 到这样的目录树中。"
+
+#. Tag: emphasis
+#: preparing.xml:1653
+#, no-c-format
+msgid "FIXME: more information needed &mdash; from a Redbook?"
+msgstr "FIXME: more information needed &mdash; from a Redbook?"
+
+#. Tag: title
+#: preparing.xml:1670
+#, no-c-format
+msgid "ARM firmware"
+msgstr "ARM 固件"
+
+#. Tag: para
+#: preparing.xml:1672
+#, no-c-format
+msgid ""
+"As already mentioned before, there is unfortunately no standard for system "
+"firmware on ARM systems. Even the behaviour of different systems which use "
+"nominally the same firmware can be quite different. This results from the "
+"fact that a large part of the devices using the ARM architecture are "
+"embedded systems, for which the manufacturers usually build heavily "
+"customized firmware versions and include device-specific patches. "
+"Unfortunately the manufacturers often do not submit their changes and "
+"extensions back to the mainline firmware developers, so their changes are "
+"not integrated into newer versions of the original firmware."
+msgstr ""
+"如前所述，很不幸 ARM 系统的系统固件没有标准。即使使用名义上相同固件的不同系"
+"统，行为也可能是完全不同的。这是由于使用 ARM 架构的大部分设备是嵌入式系统，制"
+"造商通常会为此构建有大量定制的固件版本，并且包含特定于设备的修补程序。不幸的"
+"是，制造商通常不会将其更改和扩展提交给主线固件开发人员，因此它们的更改不会集"
+"成到较新版本的原始固件中。"
+
+#. Tag: para
+#: preparing.xml:1684
+#, no-c-format
+msgid ""
+"As a result even newly sold systems often use a firmware that is based on a "
+"years-old manufacturer-modified version of a firmware whose mainline "
+"codebase has evolved a lot further in the meantime and offers additional "
+"features or shows different behaviour in certain aspects. In addition to "
+"that, the naming of onboard devices is not consistent between different "
+"manufacturer-modified versions of the same firmware, therefore it is nearly "
+"impossible to provide usable product-independend instructions for ARM-based "
+"systems."
+msgstr ""
+"因此，即便是新出售的系统，使用的固件也是基于一年多前制造商修改的固件版本，但"
+"与此同时，其主线代码库也进一步发展，且提供了附加功能，或是在某些方面行为不"
+"同。除此之外，相同固件的不同制造商修改版本之间的板载设备命名不一致，因此几乎"
+"不可能为基于ARM的系统提供可用的产品无关指令。"
+
+#. Tag: title
+#: preparing.xml:1697
+#, no-c-format
+msgid "Debian-provided U-Boot (system firmware) images"
+msgstr "Debian 提供的 U-Boot（系统固件）映像"
+
+#. Tag: para
+#: preparing.xml:1698
+#, no-c-format
+msgid ""
+"Debian provides U-Boot images for various armhf systems that can load their "
+"U-Boot from an SD card at &armmp-uboot-img;. The U-Boot builds are offered "
+"in two formats: raw U-Boot components and a ready-made card image that can "
+"easily be written onto an SD card. The raw U-Boot components are provided "
+"for advanced users; the generally recommended way is to use one of the ready-"
+"made SD card images. They are named &lt;system-type&gt;.sdcard.img.gz and "
+"can be written to a card e.g. with <informalexample><screen>zcat &lt;system-"
+"type&gt;.sdcard.img.gz &gt; /dev/SD_CARD_DEVICE</screen></informalexample> "
+"As with all images, please be aware that writing the image to an SD card "
+"wipes all previous contents of the card!"
+msgstr ""
+"为各种能从 SD 卡中加载其 U-Boot 的 armhf 系统，Debian 在 &armmp-uboot-img; 提"
+"供了 U-Boot 映像。提供两种格式的 U-Boot：原始 U-Boot 组件和可以轻松写入 SD 卡"
+"的现成卡片映像。原始 U-Boot 组件为高级用户提供；一般推荐的方法是使用现成 SD "
+"卡的映像之一。它们名为 &lt;system-type&gt;.sdcard.img.gz，可以写入到卡中，例"
+"如使用<informalexample><screen>zcat &lt;system-type&gt;.sdcard.img.gz &gt; /"
+"dev/SD_CARD_DEVICE</screen></informalexample>请注意，与所有映像一样，将映像写"
+"入到SD卡将擦除所有之前的内容！"
+
+#. Tag: para
+#: preparing.xml:1713
+#, no-c-format
+msgid ""
+"If Debian provides a U-Boot image for your system, it is recommended that "
+"you use this image instead of the vendor-provided U-Boot, as the version in "
+"Debian is usually newer and has more features."
+msgstr ""
+"如果 Debian 为您的系统提供 U-Boot 映像，建议您使用此映像而不是供应商提供的 U-"
+"Boot，因为 Debian 中的版本通常较新，并且具有更多功能。"
+
+#. Tag: title
+#: preparing.xml:1721
+#, no-c-format
+msgid "Setting the ethernet MAC address in U-Boot"
+msgstr "在 U-Boot 中设置以太网 MAC 地址"
+
+#. Tag: para
+#: preparing.xml:1722
+#, no-c-format
+msgid ""
+"The MAC address of every ethernet interface should normally be globally "
+"unique, and it technically has to be unique within its ethernet broadcast "
+"domain. To achieve this, the manufacturer usually allocates a block of MAC "
+"addresses from a centrally-administered pool (for which a fee has to be "
+"paid) and preconfigures one of these addresses on each item sold."
+msgstr ""
+"每个以太网接口的 MAC 地址通常应该是全局唯一的，技术上讲，它在以太网广播域中必"
+"须是唯一的。为了实现这一点，制造商通常从中央管理的池中分配到一个 MAC 地址块"
+"（必须支付费用），并且为每个出售的商品从这些地址中选择其一，并预先配置上去。"
+
+#. Tag: para
+#: preparing.xml:1730
+#, no-c-format
+msgid ""
+"In the case of development boards, sometimes the manufacturer wants to avoid "
+"paying these fees and therefore provides no globally unique addresses. In "
+"these cases the users themselves have to define MAC addresses for their "
+"systems. When no MAC address is defined for an ethernet interface, some "
+"network drivers generate a random MAC address that can change on every boot, "
+"and if this happens, network access would be possible even when the user has "
+"not manually set an address, but e.g. assigning semi-static IP addresses by "
+"DHCP based on the MAC address of the requesting client would obviously not "
+"work reliably."
+msgstr ""
+"对某些开发板，有时制造商希望避免支付这些费用，因此不提供全球唯一的地址。在这"
+"些情况下，用户本身必须为其系统定义 MAC 地址。当没有为以太网接口定义 MAC 地址"
+"时，一些网络驱动程序会生成随机 MAC 地址，每次启动时都可以更改 MAC 地址，如果"
+"发生这种情况，即使用户没有手动设置地址，但是基于请求客户端的 MAC 地址来分配静"
+"态 IP 地址的 DHCP 显然不能可靠地工作。"
+
+#. Tag: para
+#: preparing.xml:1741
+#, no-c-format
+msgid ""
+"To avoid conflicts with existing officially-assigned MAC addresses, there is "
+"an address pool which is reserved for so-called <quote>locally administered</"
+"quote> addresses. It is defined by the value of two specific bits in the "
+"first byte of the address (the article <quote>MAC address</quote> in the "
+"English language Wikipedia gives a good explanation). In practice this means "
+"that e.g. any address starting with hexadecimal ca (such as ca:ff:"
+"ee:12:34:56) can be used as a locally administered address."
+msgstr ""
+"为了避免与现有的官方分配 MAC 地址冲突，有一个保留地址池是为所谓的<quote>本地"
+"管理</quote>地址。它由地址的第一个字节中的两个特定位的值定义（维基百科中的条"
+"目 <quote>MAC 地址</quote>给出了很好的解释）。实际上，这意味着，例如以十六进"
+"制 ca 开头的任何地址（如 ca:ff:ee:12:34:56）都可以用作本地管理的地址。"
+
+#. Tag: para
+#: preparing.xml:1751
+#, no-c-format
+msgid ""
+"On systems using U-Boot as system firmware, the ethernet MAC address is "
+"placed in the <quote>ethaddr</quote> environment variable. It can be checked "
+"at the U-Boot command prompt with the command <quote>printenv ethaddr</"
+"quote> and can be set with the command <quote>setenv ethaddr ca:ff:"
+"ee:12:34:56</quote>. After setting the value, the command <quote>saveenv</"
+"quote> makes the assignment permanent."
+msgstr ""
+"在以 U-Boot 作系统固件的系统上，以太网 MAC 地址位于 <quote>ethaddr</quote> 环"
+"境变量中。可以使用命令 <quote>printenv ethaddr</quote> 在 U-Boot 命令提示符下"
+"检查，并可以使用命令 <quote>setenv ethaddr ca:ff:ee:12:34:56</quote>。设置该"
+"值后，命令 <quote>saveenv</quote> 可长久赋值。"
+
+#. Tag: title
+#: preparing.xml:1762
+#, no-c-format
+msgid "Kernel/Initrd/Device-Tree relocation issues in U-Boot"
+msgstr "U-Boot 中的内核/Initrd/设备树的重定位问题"
+
+#. Tag: para
+#: preparing.xml:1763
+#, no-c-format
+msgid ""
+"On some systems with older U-Boot versions there can be problems with "
+"properly relocating the Linux kernel, the initial ramdisk and the device-"
+"tree blob in memory during the boot process. In this case, U-Boot shows the "
+"message <quote>Starting kernel ...</quote>, but the system freezes "
+"afterwards without further output. These issues have been solved with newer "
+"U-Boot versions from v2014.07 onwards."
+msgstr ""
+"在具有较旧 U-Boot 版本的某些系统上，在引导过程中，在内存中重定位 Linux 内核、"
+"初始化内存盘和设备树 blob 可能会出现问题。在这种情况下，U-Boot 会显示信息 "
+"<quote>Starting kernel ...</quote>，然后系统就不再输出了。这些问题已经在 "
+"v2014.07 更新的 U-Boot 版本上得到了解决。"
+
+#. Tag: para
+#: preparing.xml:1772
+#, no-c-format
+msgid ""
+"If the system has originally used a U-Boot version older than v2014.07 and "
+"has been upgraded to a newer version later, the problem might still occur "
+"even after upgrading U-Boot. Upgrading U-Boot usually does not modify the "
+"existing U-Boot environment variables and the fix requires an additional "
+"environment variable (bootm_size) to be set, which U-Boot does automatically "
+"only on fresh installations without existing environment data. It is "
+"possible to manually set bootm_size to the new U-Boot's default value by "
+"running the command <quote>env default bootm_size; saveenv</quote> at the U-"
+"Boot prompt."
+msgstr ""
+"如果系统最初使用的是早于 v2014.07 的 U-Boot 版本，并且以后升级到较新版本，则"
+"升级 U-Boot 后仍可能会出现此问题。升级 U-Boot 通常不会修改现有的 U-Boot 环境"
+"变量，并且修复这个问题需要设置一个额外的环境变量（bootm_size），U-Boot 仅在没"
+"有现有环境数据的新安装上自动执行。在 U-Boot 提示符运行命令 <quote>env "
+"default bootm_size; saveenv</quote>，可以手动将 bootm_size 设置为新的 U-Boot "
+"的默认值。"
+
+#. Tag: para
+#: preparing.xml:1783
+#, no-c-format
+msgid ""
+"Another possibility to circumvent relocation-related problems is to run the "
+"command <quote>setenv fdt_high ffffffff; setenv initrd_high 0xffffffff; "
+"saveenv</quote> at the U-Boot prompt to completely disable the relocation of "
+"the initial ramdisk and the device-tree blob."
+msgstr ""
+"规避重定位相关问题的另一种可能性是在 U-Boot 提示符下运行命令 <quote>setenv "
+"fdt_high ffffffff; setenv initrd_high 0xffffffff; saveenv</quote>，完全禁用初"
+"始化内存盘和设备树 blob 重定位。"
+
+#. Tag: title
+#: preparing.xml:1793
+#, no-c-format
+msgid "Systems with UEFI firmware"
+msgstr "具有 UEFI 固件的系统"
+
+#. Tag: para
+#: preparing.xml:1794
+#, no-c-format
+msgid ""
+"UEFI (<quote>Unified Extensible Firmware Interface</quote>) is a new kind of "
+"system firmware that is used on many modern systems and is - among other "
+"uses - intended to replace the classic PC BIOS."
+msgstr ""
+"UEFI（<quote>统一可扩展固件接口</quote>）是一种新型系统固件，用于许多现代系"
+"统，并且 - 与其他用途一起 - 旨在取代传统的 PC BIOS。"
+
+#. Tag: para
+#: preparing.xml:1800
+#, no-c-format
+msgid ""
+"Currently most PC systems that use UEFI also have a so-called "
+"<quote>Compatibility Support Module</quote> (CSM) in the firmware, which "
+"provides exactly the same interfaces to an operating system as a classic PC "
+"BIOS, so that software written for the classic PC BIOS can be used "
+"unchanged. Nonetheless UEFI is intended to one day completely replace the "
+"old PC BIOS without being fully backwards-compatible and there are already a "
+"lot of systems with UEFI but without CSM."
+msgstr ""
+"目前，大多数使用 UEFI 的 PC 系统在固件中也有一个所谓的“兼容支持模块”（CSM），"
+"它提供与经典的 PC BIOS 完全相同的操作系统接口，以便软件编写对于经典的 PC "
+"BIOS 可以不变地使用。尽管如此，UEFI 旨在有一天完全取代旧的 PC BIOS，而不会完"
+"全向后兼容，并且已经有很多具有 UEFI 但没有 CSM 的系统。"
+
+#. Tag: para
+#: preparing.xml:1810
+#, no-c-format
+msgid ""
+"On systems with UEFI there are a few things to take into consideration when "
+"installing an operating system. The way the firmware loads an operating "
+"system is fundamentally different between the classic BIOS (or UEFI in CSM "
+"mode) and native UEFI. One major difference is the way the harddisk "
+"partitions are recorded on the harddisk. While the classic BIOS and UEFI in "
+"CSM mode use a DOS partition table, native UEFI uses a different "
+"partitioning scheme called <quote>GUID Partition Table</quote> (GPT). On a "
+"single disk, for all practical purposes only one of the two can be used and "
+"in case of a multi-boot setup with different operating systems on one disk, "
+"all of them must therefore use the same type of partition table. Booting "
+"from a disk with GPT is only possible in native UEFI mode, but using GPT "
+"becomes more and more common as hard disk sizes grow, because the classic "
+"DOS partition table cannot address disks larger than about 2 Terabytes while "
+"GPT allows for far larger disks. The other major difference between BIOS (or "
+"UEFI in CSM mode) and native UEFI is the location where boot code is stored "
+"and in which format it has to be. This means that different bootloaders are "
+"needed for each system."
+msgstr ""
+"在使用 UEFI 的系统上，安装操作系统时需要考虑几件事情。固件加载操作系统的方式"
+"在经典 BIOS（或 CSM 模式下的 UEFI）和原生 UEFI 之间完全不同。一个主要的区别"
+"是，硬盘分区在硬盘上的记录方式。虽然经典的 BIOS 和 UEFI 在 CSM 模式下使用 "
+"DOS 分区表，但是原生 UEFI 使用不同的分区方案，称为 <quote>GUID分区表</"
+"quote>（GPT）。在单个磁盘上，为了所有的实际目的，只能使用两个中的一个，并且在"
+"一个磁盘上使用不同操作系统的多引导设置的情况下，所有系统都必须使用相同类型的"
+"分区表。使用 GPT 从磁盘引导只能在原生 UEFI 模式下进行，但随着硬盘大小的增长，"
+"使用 GPT 变得越来越普遍，因为传统的 DOS 分区表无法寻址大于 2TB 的磁盘，而 "
+"GPT 允许更大的磁盘。BIOS（或 CSM 模式下的 UEFI）和原生 UEFI 之间的另一个主要"
+"区别是存储引导代码的位置，以及以哪种格式。这意味着每个系统都需要不同的引导加"
+"载程序。"
+
+#. Tag: para
+#: preparing.xml:1830
+#, no-c-format
+msgid ""
+"The latter becomes important when booting &d-i; on a UEFI system with CSM "
+"because &d-i; checks whether it was started on a BIOS- or on a native UEFI "
+"system and installs the corresponding bootloader. Normally this simply works "
+"but there can be a problem in multi-boot environments. On some UEFI systems "
+"with CSM the default boot mode for removable devices can be different from "
+"what is actually used when booting from hard disk, so when booting the "
+"installer from a USB stick in a different mode from what is used when "
+"booting another already installed operating system from the hard disk, the "
+"wrong bootloader might be installed and the system might be unbootable after "
+"finishing the installation. When choosing the boot device from a firmware "
+"boot menu, some systems offer two seperate choices for each device, so that "
+"the user can select whether booting shall happen in CSM or in native UEFI "
+"mode."
+msgstr ""
+"后者在有 CSM 的 UEFI 系统上，在启动 &d-i; 时变得很重要，因为 &d-i; 会检查它是"
+"在 BIOS 还是在原生 UEFI 系统上启动，然后安装相应的引导加载程序。通常情况下，"
+"这很简单，但在多引导环境中可能会出现问题。在一些具有 CSM 的 UEFI 系统上，可移"
+"动设备的默认启动模式可能与从硬盘启动时实际使用的不同，因此当从 U 盘启动安装程"
+"序时，模式可能与启动另一个已经安装在硬盘上的操作系统不同，这可能会安装错误的"
+"引导加载程序，并且在完成安装后系统可能无法启动。当从固件启动菜单中选择启动设"
+"备时，某些系统为每个设备提供两个独立的选择，以便用户可以选择是在 CSM 还是原"
+"生 UEFI 模式下进行。"
+
+#. Tag: para
+#: preparing.xml:1846
+#, no-c-format
+msgid ""
+"Another UEFI-related topic is the so-called <quote>secure boot</quote> "
+"mechanism. Secure boot means a function of UEFI implementations that allows "
+"the firmware to only load and execute code that is cryptographically signed "
+"with certain keys and thereby blocking any (potentially malicious) boot code "
+"that is unsigned or signed with unknown keys. In practice the only key "
+"accepted by default on most UEFI systems with secure boot is a key from "
+"Microsoft used for signing the Windows bootloader. As the boot code used by "
+"&d-i; is not signed by Microsoft, booting the installer requires prior "
+"deactivation of secure boot in case it is enabled. Secure boot is often "
+"enabled by default on systems that come preinstalled with a 64-bit version "
+"of Windows 8 and there is unfortunately no standard way to disable it in the "
+"UEFI setup. On some systems, the option to disable secure boot is only made "
+"visible when a BIOS password has been set by the user, so if you have a "
+"system with secure boot enabled, but cannot find an option to disable it, "
+"try setting a BIOS password, powercycle the machine and look again for an "
+"appropriate option."
+msgstr ""
+"另一个与 UEFI 相关的主题是所谓的<quote>安全引导</quote>机制。安全启动是 UEFI "
+"实现的一个功能，仅允许固件加载和执行使用某些密钥签名的代码，从而阻止任何（潜"
+"在的恶意）未签名或用未知密钥签名的引导代码。实际上，大多数 UEFI 的安全启动默"
+"认仅接受微软的签名，其用于签署 Windows 启动加载程序。由于 &d-i; 使用的引导代"
+"码未由微软签名，如果启用了安全启动，需要先停用才能启动安装程序。默认预装 64 "
+"位版本的 Windows 8 系统启用了安全启动，不幸的是没有标准的方法在 UEFI 设置中禁"
+"用它。在某些系统上，禁用安全启动的选项仅在用户设置 BIOS 密码时才可见，因此，"
+"如果您的系统启用了安全启动但无法禁用该选项，请尝试设置 BIOS 密码，重新启动机"
+"器，然后再次寻找适当的选项。"
+
+#. Tag: title
+#: preparing.xml:1868
+#, no-c-format
+msgid "Disabling the Windows 8 <quote>fast boot</quote> feature"
+msgstr "禁用 Windows 8 的<quote>快速启动</quote>功能"
+
+#. Tag: para
+#: preparing.xml:1869
+#, no-c-format
+msgid ""
+"Windows 8 offers a feature called <quote>fast boot</quote> to cut down "
+"system startup time. Technically, when this feature is enabled, Windows 8 "
+"does not do a real shutdown and a real cold boot afterwards when ordered to "
+"shut down, but instead does something resembling a partial suspend to disk "
+"to reduce the <quote>boot</quote> time. As long as Windows 8 is the only "
+"operating system on the machine, this is unproblematic, but it can result in "
+"problems and data loss when you have a dual boot setup in which another "
+"operating system accesses the same filesystems as Windows 8 does. In that "
+"case the real state of the filesystem can be different from what Windows 8 "
+"believes it to be after the <quote>boot</quote> and this could cause "
+"filesystem corruption upon further write accesses to the filesystem. "
+"Therefore in a dual boot setup, to avoid filesystem corruption the "
+"<quote>fast boot</quote> feature has to be disabled within Windows."
+msgstr ""
+"Windows 8 提供了一个名为<quote>快速启动</quote>的功能来减少系统启动时间。从技"
+"术上讲，当启用此功能时，Windows 8 在执行关机命令后不会进行真正的关机和真正的"
+"冷启动，而是执行类似于部分挂起到磁盘的操作，以减少引导时间。只要 Windows 8 是"
+"机器上唯一的操作系统，这就没问题，但当您有双引导时，若另一个操作系统与 "
+"Windows 8 访问相同的文件系统，这就有可能会导致问题和数据丢失。在这种情况下，"
+"文件系统的真实状态可能与 Windows 8 认为在<quote>启动</quote>之后的情况不同，"
+"并且可能在进一步写入文件系统时导致文件系统损坏。因此，在双引导设置中，为了避"
+"免文件系统损坏，必须在 Windows 中禁用<quote>快速启动</quote>功能。"
+
+#. Tag: para
+#: preparing.xml:1885
+#, no-c-format
+msgid ""
+"It may also be necessary to disable <quote>fast boot</quote> to even allow "
+"access to UEFI setup to choose to boot another operating system or &d-i;. On "
+"some UEFI systems, the firmware will reduce <quote>boot</quote> time by not "
+"initialising the keyboard controller or USB hardware; in these cases, it is "
+"necessary to boot into Windows and disable this feature to allow for a "
+"change of boot order."
+msgstr ""
+"也可能需要禁用<quote>快速启动</quote>，甚至需要允许访问 UEFI 设置。来选择启动"
+"另一个操作系统或 &d-i;。在某些 UEFI 系统上，固件将会不初始化键盘控制器或 USB "
+"硬件，以减少<quote>启动</quote>时间。在这些情况下，有必要启动到 Windows 并禁"
+"用此功能，以允许更改引导顺序。"
+
+#. Tag: title
+#: preparing.xml:1897
+#, no-c-format
+msgid "Hardware Issues to Watch Out For"
+msgstr "需要留心的硬件问题"
+
+#. Tag: title
+#: preparing.xml:1900
+#, no-c-format
+msgid "USB BIOS support and keyboards"
+msgstr "USB BIOS 支持与键盘"
+
+#. Tag: para
+#: preparing.xml:1901
+#, no-c-format
+msgid ""
+"If you have no PS/2-style keyboard, but only a USB model, on some very old "
+"PCs you may need to enable legacy keyboard emulation in your BIOS setup to "
+"be able to use your keyboard in the bootloader menu, but this is not an "
+"issue for modern systems. If your keyboard does not work in the bootloader "
+"menu, consult your mainboard manual and look in the BIOS for <quote>Legacy "
+"keyboard emulation</quote> or <quote>USB keyboard support</quote> options."
+msgstr ""
+"假如您没有 PS/2 规格的键盘，而只有 USB 键盘，在一些很老的 PC 上您需要在 BIOS "
+"设置里面打开 legacy keyboard emulation 设置，使得在引导菜单中可以使用键盘。当"
+"然新系统中不会遇到这种问题。如果您的键盘无法在引导菜单下工作，请参考主板手"
+"册，并在 BIOS 中查看 <quote>Legacy keyboard emulation</quote> 或 <quote>USB "
+"keyboard support</quote> 选项。"
+
+#. Tag: title
+#: preparing.xml:1914
+#, no-c-format
+msgid "Display-visibility on OldWorld Powermacs"
+msgstr "在 OldWorld Powermac 上正常显示"
+
+#. Tag: para
+#: preparing.xml:1916
+#, no-c-format
+msgid ""
+"Some OldWorld Powermacs, most notably those with the <quote>control</quote> "
+"display driver, may not reliably produce a colormap under Linux when the "
+"display is configured for more than 256 colors. If you are experiencing such "
+"issues with your display after rebooting (you can sometimes see data on the "
+"monitor, but on other occasions cannot see anything) or, if the screen turns "
+"black after booting the installer instead of showing you the user interface, "
+"try changing your display settings under MacOS to use 256 colors instead of "
+"<quote>thousands</quote> or <quote>millions</quote>."
+msgstr ""
+"有些 OldWorld Powermac，大多数是带有 <quote>control</quote> 的显示驱动，在 "
+"Linux 下面如果设置超过 256 色，可能不能正常地产生 colormap。如果重新启动后您"
+"碰到这种问题(有时可以看到显示器上的数据，有时却什么都没有)，或者引导安装程序"
+"以后黑屏，而不是显示用户界面，请试着在 MacOS 下修改显示设置为 256 色，替代 "
+"<quote>thousands</quote> 或 <quote>millions</quote>。"
+
+#~ msgid "64 megabytes"
+#~ msgstr "64 MB"
+
+#~ msgid ""
+#~ "If you are planning to install both MacOS 9 and OS X, it is best to "
+#~ "create separate partitions for OS 9 and OS X. If they are installed on "
+#~ "the same partition, <application>Startup Disk</application> (and reboot) "
+#~ "must be used to select between the two; the choice between the two "
+#~ "systems can't be made at boot time. With separate partitions, separate "
+#~ "options for OS 9 and OS X will appear when holding the <keycap>option</"
+#~ "keycap> key at boot time, and separate options can be installed in the "
+#~ "<application>yaboot</application> boot menu as well. Also, Startup Disk "
+#~ "will de-bless all other mountable partitions, which can affect GNU/Linux "
+#~ "booting. Both OS 9 and OS X partitions will be accessible from either OS "
+#~ "9 or OS X."
+#~ msgstr ""
+#~ "如果您计划同时安装 MacOS 9 与 OS X，最好为 OS 9 和 OS X 创建不同的分区。如"
+#~ "果将它们安装在同一分区，就必须使用 <application>Startup Disk</"
+#~ "application> (并重启)来选择它们两个，而在启动时是无法对两个操作系统进行选"
+#~ "择的。使用不同的分区，如果在启动时按住 <keycap>option</keycap> 键就可以显"
+#~ "示出 OS 9 和 OS X 两个不同的选项，而且这些分开的选项也可以被安装到 "
+#~ "<application>yaboot</application> 启动菜单里面。还有，Startup Disk 将无法"
+#~ "保证其他可挂载的分区的可靠性，这可能会影响 GNU/Linux 启动。OS 9 和 OS X 分"
+#~ "区从 OS 9 和 OS X 中都能访问。"

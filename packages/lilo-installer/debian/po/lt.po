@@ -1,0 +1,294 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Lithuanian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Marius Gedminas <mgedmin@b4net.lt>, 2004.
+# Darius Skilinskas <darius10@takas.lt>, 2005.
+# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004...2010.
+# Translations from iso-codes:
+# Gintautas Miliauskas <gintas@akl.lt>, 2008.
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Translations from KDE:
+# - Ričardas Čepas <rch@richard.eu.org>
+# Free Software Foundation, Inc., 2000-2001, 2004
+# Gediminas Paulauskas <menesis@delfi.lt>, 2000-2001.
+# Alastair McKinstry <mckinstry@computer.org>, 2001,2002.
+# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004, 2006, 2008, 2009, 2010.
+# Rimas Kudelis <rq@akl.lt>, 2012, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: lilo-installer@packages.debian.org\n"
+"POT-Creation-Date: 2009-12-18 22:47+0000\n"
+"PO-Revision-Date: 2017-11-26 20:23+0000\n"
+"Last-Translator: Rimas Kudelis <rq@akl.lt>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001
+msgid "${disc}: Master Boot Record"
+msgstr "${disc}: pagrindinis įkelties įrašas (Master Boot Record)"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001
+msgid "${part}: new Debian partition"
+msgstr "${part}: naujas „Debian“ disko skaidinys"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001 ../lilo-installer.templates:2001
+msgid "Other choice (Advanced)"
+msgstr "Kiti pasirinkimai (Išsamesni)"
+
+#. Type: select
+#. Description
+#. :sl3:
+#. Type: select
+#. Description
+#. :sl3:
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002 ../lilo-installer.templates:2002
+#: ../lilo-installer.templates:3001
+msgid "LILO installation target:"
+msgstr "LILO įdiegimo objektas:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002
+msgid ""
+"The LILO program needs to be installed to make your new system bootable. By "
+"installing it onto your disk's Master Boot Record, LILO will take complete "
+"control of the boot process, but if you want to use a different boot "
+"manager, just install LILO on the new Debian partition instead."
+msgstr ""
+"Tam, kad naujai įdiegtą sistemą padaryti įkeliama, reikia įdiegti LILO "
+"paleidyklę. Įdiegus ją į disko paleidimo įrašą (Master Boot Record), LILO "
+"atliks pilną paleidimo proceso kontrolę, bet jei norite naudoti kitą "
+"paleidyklę, diekite LILO į naują „Debian“ disko skaidinį."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002
+msgid "If unsure, install LILO into the Master Boot Record."
+msgstr ""
+"Jei abejojate, diekite LILO į pagrindinį įkelties įrašą (Master Boot Record)."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:2001
+msgid "${disc}: software RAID array"
+msgstr "${disc}: programinio RAID masyvas"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:2002
+msgid ""
+"The LILO program needs to be installed to make your new system bootable. You "
+"may choose to install it onto a software RAID array or another device."
+msgstr ""
+"Tam, kad naujai įdiegtą sistemą padaryti įkeliama, reikia įdiegti LILO "
+"paleidyklę. Galite pasirinkti diegti ją į programinio RAID masyvą arba kitą "
+"įrenginį."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:3001
+msgid ""
+"Please enter the device name of the partition or disk onto which LILO should "
+"be installed, such as /dev/hda or /dev/sda1."
+msgstr ""
+"Įveskite disko arba disko skaidinio, kuriame turėtų būti įdiegtas LILO, "
+"vardą, pvz. /dev/hda arba /dev/sda1."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:4001
+msgid "Invalid partition name"
+msgstr "Netinkamas disko skaidinio vardas"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:4001
+msgid ""
+"The path ${path} does not represent a partition or hard disk device. Please "
+"try again."
+msgstr ""
+"Kelias ${path} nenukreipia į disko skaidinį ar kietojo disko įrenginį. "
+"Mėginkite dar kartą."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:5001
+msgid "Installing LILO..."
+msgstr "Diegiamas LILO..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:6001
+msgid "Activating partition ${bootdev}"
+msgstr "Aktyvinamas disko skaidinys ${bootdev}"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:7001
+msgid "Creating lilo.conf"
+msgstr "Kuriamas failas lilo.conf"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:8001
+msgid "Installing the LILO package"
+msgstr "Diegiamas paketas LILO"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:9001
+msgid "Running LILO for ${bootdev}"
+msgstr "LILO vykdymas dėl ${bootdev}"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:10001
+msgid "LILO configured to use a serial console"
+msgstr "LILO konfigūruotas naudoti konsolę per nuoseklią jungtį"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:10001
+msgid ""
+"LILO is configured to use serial port ${PORT} as the console. ${PORT_SPEED}"
+msgstr ""
+"LILO yra konfigūruotas naudoti nuoseklią jungtį ${PORT} kaip konsolę. "
+"${PORT_SPEED}"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:11001
+msgid "The serial port speed is set to ${SPEED}."
+msgstr "Nuoseklios jungties greitis nustatytas į ${SPEED}."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid "Would you like to make this partition active?"
+msgstr "Ar norite paskirti šį skaidinį (partition) aktyviu?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid ""
+"You have chosen to install LILO on a partition that is not the active one. "
+"If this partition is not marked active, then LILO will not be loaded by the "
+"boot loader. This may cause you to be unable to boot into the system that is "
+"being installed."
+msgstr ""
+"Jūs pasirinkote įdiegti LILO į disko skaidinį, kuris nėra aktyvus. Jei šis "
+"skaidinys nėra pažymėtas kaip aktyvus, paleidyklė negalės įkelti LILO.  Tai "
+"gali tapti priežastimi, dėl kurios negalėsite įkelti operacinės sistemos, "
+"kurią diegiate."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid ""
+"You should make this partition active unless you have another boot loader "
+"that will allow you to access your new Linux installation."
+msgstr ""
+"Jūs turite padaryti šį skaidinį aktyviu, nebent turite kitą paleidyklę, kuri "
+"leis jums prieiti prie naujai įdiegtos „Linux“ sistemos."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:13001
+msgid "LILO installation failed. Continue anyway?"
+msgstr "Nepavyko įdiegti „LILO“. Tęsti nepaisant to?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:13001
+msgid ""
+"The lilo package failed to install into /target/. Installing LILO as a boot "
+"loader is a required step. The install problem might however be unrelated to "
+"LILO, so continuing the installation may be possible."
+msgstr ""
+"Nepavyko įdiegti „lilo“ paketo į /target/. Paleidyklės įdiegimas yra būtinas "
+"žingsnis, tačiau diegimo problema galbūt nesusijusi su „LILO“, taigi "
+"įdiegimą galbūt galima tęsti."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:14001
+msgid "LILO installation failed"
+msgstr "„LILO“ įdiegti nepavyko"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:14001
+msgid "Running \"/sbin/lilo\" failed with error code \"${ERRCODE}\"."
+msgstr "„/sbin/lilo“ vykdymas nepavyko. Gauta klaida „${ERRCODE}“."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl3:
+#: ../lilo-installer.templates:15001
+msgid "Install the LILO boot loader on a hard disk"
+msgstr "Paleidyklės „LILO“ diegimas į kietąjį diską"

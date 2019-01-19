@@ -1,0 +1,20 @@
+Source: debian-installer-launcher
+Section: utils
+Priority: optional
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: debhelper (>= 9), po-debconf
+Standards-Version: 3.9.6
+Vcs-Browser: https://salsa.debian.org/installer-team/debian-installer-launcher
+Vcs-Git: https://salsa.debian.org/installer-team/debian-installer-launcher.git
+
+Package: debian-installer-launcher
+Section: utils
+Architecture: all
+Depends: ${misc:Depends}, menu, psmisc, xterm | x-terminal-emulator, sudo
+Suggests: kexec-tools
+Description: Debian Installer desktop launcher
+ This is a desktop launcher for Debian Installer images. It is intended to be
+ used on Debian Live systems.
+ .
+ You probably do not want to install this package onto a non-live system,
+ although it will do no harm.

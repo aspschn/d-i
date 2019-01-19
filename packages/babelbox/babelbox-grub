@@ -1,0 +1,20 @@
+menuentry 'BabelBox install' --class debian --class gnu-linux --class gnu --class os {
+	insmod part_msdos
+	insmod ext2
+	set root='(hd0,1)'
+	echo	'Loading Linux ...'
+	linux    /srv/vmlinuz video=vesa:ywrap,mtrr vga=788 priority=critical console-keymaps-at/keymap=us keyboard-configuration/xkb-keymap=us file=/hd-media/srv/babelbox/preseed.cfg debian-installer/locale=en_US
+	echo	'Loading initial ramdisk ...'
+	initrd	/srv/initrd.gz
+}
+
+menuentry 'BabelBox demo' --class debian --class gnu-linux --class gnu --class os {
+	insmod part_msdos
+	insmod ext2
+	set root='(hd0,5)'
+	echo	'Loading Linux ...'
+	linux	/vmlinuz root=/dev/sda5 ro quiet
+	echo	'Loading initial ramdisk ...'
+	initrd	/initrd.img
+}
+

@@ -1,0 +1,230 @@
+<!-- $Id$ -->
+<!-- original version: 70696 -->
+
+ <sect1 id="boot-installer-accessibility" arch="not-s390">
+ <title>Zpřístupnění</title>
+<para>
+
+Někteří uživatelé mohou vyžadovat speciální podporu, například z
+důvodu zrakového postižení.
+
+<phrase arch="ia64;powerpc;ppc64el;x86">Braillovy řádky připojené přes USB
+jsou rozpoznány automaticky (s výjimkou sériových modelů připojených
+přes USB převodník), ale většinu zpřístupňujících vlastností je třeba
+zapnout ručně.</phrase>
+
+<phrase arch="arm;hppa;mips;mipsel;mips64el;sparc">Většinu
+zpřístupňujících vlastností je třeba zapnout ručně.</phrase>
+
+<phrase arch="x86">Na počítačích, které to podporují, se v zaváděcím
+menu ozve pípnutí (jednou pro systémy s BIOSem, dvakrát pro systémy
+s UEFI). Toto pípnutí signalizuje, že je menu připraveno zpracovávat
+stisky kláves. Poté můžete přidat zaváděcí parametry, které zapnou
+některé další zpřístupňující vlastnosti (viz <xref
+linkend="boot-screen"/>).</phrase> Zavaděče na většině architektur
+interpretují klávesnici jako QWERTY.
+
+</para>
+
+  <sect2>
+  <title>Uživatelské rozhraní instalačního systému</title>
+<para>
+
+Instalační systém &debian;u podporuje několik rozhraní pro komunikaci
+s uživatelem, které se liší v míře zpřístupnění. Například rozhraní
+<userinput>text</userinput> používá čistý text, zatímco rozhraní
+<userinput>newt</userinput> využívá textová dialogová okna. Konkrétní
+rozhraní si můžete zvolit před zavedením instalačního systému, jak je
+popsáno v dokumentaci proměnné <userinput>DEBIAN_FRONTEND</userinput>
+v kapitole <xref linkend="installer-args"/>.
+
+</para>
+  </sect2>
+
+  <sect2 arch="ia64;powerpc;ppc64el;x86">
+  <title>Braillův řádek připojený na USB</title>
+<para>
+
+Braillovy řádky připojené na USB by měly být rozpoznány automaticky. V
+takovém případě se instalace automaticky přepne do textového rozhraní
+a podpora braillova řádku se automaticky doinstaluje do instalovaného
+systému. V zaváděcím menu tedy stačí pouze stisknout &enterkey;. Po
+startu <classname>brltty</classname> si můžete v nastaveních zvolit
+vhodnou braillovu tabulku. Dokumentaci ohledně rozložení kláves
+naleznete <ulink url="&url-brltty-driver-help;">na
+stránkách <classname>brltty</classname></ulink>.
+
+</para>
+  </sect2>
+
+  <sect2 arch="ia64;powerpc;ppc64el;x86">
+  <title>Braillův řádek připojený na sériový port</title>
+<para>
+
+Braillovy řádky připojené na sériový port nelze rozpoznat automaticky,
+protože by to některé modely mohlo poškodit. Musíte tedy použít
+zaváděcí parametr
+<userinput>brltty=<replaceable>ovladač</replaceable>,<replaceable>port</replaceable></userinput>,
+kterým <classname>brltty</classname> řeknete, který ovladač a port má
+použít.  <replaceable>ovladač</replaceable> je dvoupísmenný kód
+ovladače připojeného řádku (viz <ulink
+url="&url-brltty-manual;">příručka
+k BRLTTY</ulink>). <replaceable>port</replaceable> je název sériového
+portu, ke kterému je řádek připojen; výchozí hodnotou je
+<userinput>ttyS0</userinput>. Při použití USB převodníku se port
+obvykle jmenuje <userinput>ttyUSB0</userinput>. Volitelný třetí
+parametr určuje braillovu tabulku pro daný jazyk (viz <ulink
+url="&url-brltty-manual;">příručka k BRLTTY </ulink>); výchozí je
+anglická tabulka. Tabulku můžete změnit i později v nastaveních
+<classname>brltty</classname>. Čtvrtým parametrem lze předat parametry
+ovladači braillova řádku
+(např. <userinput>protocol=<replaceable>xzy</replaceable></userinput>),
+což je potřeba u některých raritních kousků. Dokumentaci ohledně
+rozložení kláves naleznete <ulink url="&url-brltty-driver-help;">na
+stránkách <classname>brltty</classname></ulink>.
+
+</para>
+  </sect2>
+
+  <sect2 arch="x86">
+  <title>Softwarová syntéza hlasu</title>
+<para>
+
+Podporu softwarové syntézy hlasu naleznete ve všech variantách
+grafického instalátoru a můžete ji aktivovat v zaváděcím menu stiskem
+klávesy <userinput>s</userinput> (vybere příslušnou položku menu)
+a potvrdit klávesou &enterkey;. Instalace se pak automaticky spustí
+v textovém režimu a podpora hlasové systézy se automaticky doinstaluje
+i do nového systému.
+
+</para><para>
+
+První otázka (výběr jazyka) je přečtena v angličtině, zbytek instalace
+probíhá ve zvoleném jazyce (pokud jej <classname>espeak</classname>
+podporuje).
+
+</para><para>
+
+Výchozí rychlost řeči je docela pomalá, urychlit ji můžete stiskem
+<keycombo><keycap>CapsLock</keycap><keycap>6</keycap></keycombo>.
+Naopak pro zpomalení použijte kombinaci
+<keycombo><keycap>CapsLock</keycap><keycap>5</keycap></keycombo>.
+Podobně můžete měnit i hlasitost: klávesami
+<keycombo><keycap>CapsLock</keycap><keycap>2</keycap></keycombo>
+hlasitost zvýšíte, klávesami
+<keycombo><keycap>CapsLock</keycap><keycap>1</keycap></keycombo>
+ztišíte.
+
+</para><para>
+
+Další klávesové zkratky naleznete v <ulink
+url="&url-speakup-guide;">příručce programu Speakup</ulink>.
+
+</para><para>
+
+Chcete-li při instalaci zvolit výchozí odpověď na otázku, jednoduše na
+promptu stiskněte <keycap>Enter</keycap>. Pro zadání prázdné odpovědi
+napište do promptu vykřičník <userinput>!</userinput> a pro návrat
+k předchozí otázce do promptu zadejte <userinput>&lt;</userinput>.
+
+</para>
+  </sect2>
+
+  <sect2 arch="x86">
+  <title>Hardwarová syntéza hlasu</title>
+<para>
+
+Podpora pro hardwarovou syntézu hlasu funguje pouze v textovém režimu,
+nicméně kvůli své velikosti je dostupná pouze na médiích s podporou
+grafického instalátoru. V zaváděcím menu tedy musíte vybrat grafickou
+instalaci <quote>Graphical install</quote>.
+
+</para><para>
+
+Zařízení pro hardwarovou syntézu hlasu nelze rozpoznat automaticky a
+proto musíte použít zaváděcí parametr
+<userinput>speakup.synth=<replaceable>ovladač</replaceable></userinput>,
+kterým <classname>speakup</classname>u prozradíte, který ovladač má
+použít. Jako <replaceable>ovladač</replaceable> zadejte dvoupísmenný
+kód ovladače vašeho zařízení (viz
+<ulink url="&url-speakup-guide;">seznam kódů</ulink>). Instalace
+se pak automaticky přepne do textového režimu a do instalovaného
+systému přidá podporu pro hlasovou syntézu.
+
+</para>
+  </sect2>
+
+  <sect2 arch="linux-any"><title>Zařízení připojená rovnou na sběrnici</title>
+<para>
+
+Některá zařízení pro zpřístupnění jsou dodávána jako karty zapojené
+uvnitř počítače, které čtou text přímo z videopaměti. Aby tyto karty
+fungovaly, musíte vypnout framebuffer zaváděcím parametrem
+<userinput arch="x86">vga=normal</userinput>
+<userinput>fb=false</userinput>. Tím však také snížíte počet
+dostupných jazyků.
+
+</para><para arch="x86">
+
+Pokud chcete, je možné aktivovat textovou verzi zavaděče ještě před
+přidáním zaváděcího parametru stiskem klávesy
+<userinput>h</userinput> následované klávesou &enterkey;.
+
+</para>
+  </sect2>
+
+  <sect2><title>Kontrastní téma</title>
+<para>
+
+Uživatelé se zhoršeným zrakem mohou při instalaci použít vysoce
+kontrastní téma, které by mělo zlepšit čitelnost. Pro zapnutí
+stačí přidat zaváděcí parametr <userinput>theme=dark</userinput>.
+
+</para>
+  </sect2>
+
+  <sect2><title>Změna velikosti písma</title>
+<para>
+
+Grafický instalátor obsahuje základní podporu pro změnu velikosti
+písma. Klávesovými zkratkami <keycombo><keycap>Control</keycap>
+<keycap>+</keycap></keycombo> resp.
+<keycombo><keycap>Control</keycap> <keycap>-</keycap></keycombo> lze
+velikost písma zvětšit, resp. zmenšit.
+
+</para>
+  </sect2>
+
+  <sect2><title>Záchranný režim, expertní a automatizované instalace</title>
+<para>
+
+Zpřístupnění funguje i v režimech Expert, Rescue a Automatizovaná
+instalace. V zaváděcím menu je naleznete pod nabídkou <quote>Advanced
+options</quote>, do které se dostanete stiskem klávesy
+<keycap>a</keycap>. Na systémech s BIOSem (v zaváděním menu se ozvalo
+jedno pípnutí) musíte každou volbu potvrdit ještě klávesou
+&enterkey;. Pro povolení syntézy hlasu stiskněte klávesu
+<keycap>s</keycap> (na systémech s BIOSem opět následovanou klávesou
+&enterkey;). Zde můžete použít klávesy <keycap>x</keycap> pro expertní
+režim, <keycap>r</keycap> pro záchranný režim nebo <keycap>a</keycap>
+pro automatizovaný režim.
+
+<para></para>
+
+Volba automatizované instalace umožňuje nainstalovat &debian; zcela
+automaticky pomocí přednastavení. Tomuto způsobu se podrobně věnuje
+kapitola <xref linkend="appendix-preseed"/>.
+
+</para>
+  </sect2>
+
+  <sect2><title>Zpřístupnění v nainstalovaném systému</title>
+<para>
+
+Problematikou zpřístupnění v nainstalovaném systému se zabývá wiki
+stránka <ulink url="&url-debian-wiki-accessibility;">Debian
+Accessibility</ulink>.
+
+</para>
+  </sect2>
+ </sect1>

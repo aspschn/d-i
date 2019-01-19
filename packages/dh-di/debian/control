@@ -1,0 +1,17 @@
+Source: dh-di
+Section: devel
+Priority: optional
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Colin Watson <cjwatson@debian.org>, Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9), perl (>= 5.6.0-16)
+Standards-Version: 3.9.6
+Vcs-Browser: https://salsa.debian.org/installer-team/dh-di
+Vcs-Git: https://salsa.debian.org/installer-team/dh-di.git
+
+Package: dh-di
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: Debhelper addon for debian-installer
+ This debhelper addon automates various specialised tasks needed to build
+ packages that form part of the Debian installer (d-i).

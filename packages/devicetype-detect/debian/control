@@ -1,0 +1,32 @@
+Source: devicetype-detect
+Section: utils
+Priority: optional
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Emmet Hikory <emmet.hikory@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.2
+Vcs-Browser: https://salsa.debian.org/installer-team/devicetype-detect
+Vcs-Git: https://salsa.debian.org/installer-team/devicetype-detect.git
+
+Package: devicetype-detect
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: dmidecode (>> 2.7)
+Suggests: x11-xserver-utils (>> 7.4+2)
+Description: attempt to detect the type of the current device
+ devicetype-detect attempts to determine device class of the running
+ system based on the display size, display resolution, and presence or
+ absence of a battery.
+ .
+ devicename-detect attempts to determine the name of the device, to the
+ best knowledge of the device itself, for use as a sensible default model
+ name.
+
+Package: laptop-detect
+Architecture: all
+Depends: devicetype-detect, ${misc:Depends}
+Description: attempt to detect a laptop (transitional wrapper)
+ This package is a transitional wrapper for users of the traditional laptop-detect
+ package, based on the newer devicetype-detect device analysis tool.  It attempts
+ to report whether it is being run on a device containing a battery or not, and
+ appraises the caller of this

@@ -1,0 +1,17 @@
+Source: partman-zfs
+Section: debian-installer
+Priority: standard
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Robert Millan <rmh@debian.org>,
+           Christian Perrier <bubulle@debian.org>,
+           Steven Chamberlain <steven@pyro.eu.org>
+Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/partman-zfs
+Vcs-Git: https://salsa.debian.org/installer-team/partman-zfs.git
+
+Package: partman-zfs
+Package-Type: udeb
+Architecture: kfreebsd-any
+Depends: ${misc:Depends}, zfsutils-udeb (>= 9.2~), zfs-modules, partman-basicfilesystems (>= 59), partman-base (>= 134),
+ cdebconf-udeb (>= 0.133), di-utils (>= 1.14),
+Description: Add to partman support for ZFS

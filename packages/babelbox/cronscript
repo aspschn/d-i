@@ -1,0 +1,52 @@
+#! /bin/bash
+
+# Script to prepare babelbox for the next install: switch language to the
+# next in the list. Normally run from installed system, but can also be run
+# from the base system that controls the babelbox runs.
+# It takes the top line from langlist as the next language and moves that
+# line to the bottom of the list.
+
+set -e
+
+ROOT=""
+
+if [ -f /BABELBOX ] ; then
+	ROOT="/mnt"
+	sleep 30
+
+	mount /dev/sda1 $ROOT
+fi
+
+cd $ROOT/srv/babelbox
+
+LANGSEL="$(egrep -v "^[[:space:]]*(#.*)?$" langlist | grep -A1 ":x:")"
+if [ -z "$LANGSEL" ]; then
+	LANGSEL="$(head -n2 langlist)"
+fi
+if [ $(echo "$LANGSEL" | wc -l) -eq 2 ]; then
+	LANG="$(echo "$LANGSEL" | head -n1)"
+	NEXTLANG="$(echo "$LANGSEL" | tail -n1)"
+else
+	# Selected language is the last in the file
+	LANG="$LANGSEL"
+	NEXTLANG="$(egrep -v '^[[:space:]]*(#.*)?$' langlist | head -n1)"
+fi
+
+LOCALE=$(echo "$LANG" | cut -d: -f1)
+LANGNAME=$(echo "$LANG" | cut -d: -f3)
+GRUBLINE=$(echo "$LANG" | cut -d: -f4)
+
+sed -i "s/LANGNAME \".*\"/LANGNAME \"$LANGNAME\"/" preseed_early
+
+sed -i "s/locale=.*$/locale=$LOCALE $GRUBLINE/
+        s/^\([[:space:]]*\)set default=\"[[:digit:]]*\"$/\1set default=\"2\"/" $ROOT/boot/grub/grub.cfg
+
+# Comment out the next three lines if you don't want the language to change
+N_LOCALE=$(echo "$NEXTLANG" | cut -d: -f1)
+sed -i "s/:x:/::/;s/^$N_LOCALE::/$N_LOCALE:x:/" langlist
+
+if [ -z "$ROOT" ]; then
+	echo "Next language: $LANGNAME"
+fi
+
+exit 0

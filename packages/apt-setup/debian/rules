@@ -1,0 +1,16 @@
+#! /usr/bin/make -f
+%:
+	dh $@
+
+DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
+
+ifeq ($(DEB_HOST_ARCH),x32)
+MULTIARCH := amd64
+else
+MULTIARCH :=
+endif
+
+override_dh_installdebconf-arch:
+	dh_installdebconf
+	sed -i 's/@MULTIARCH@/$(MULTIARCH)/' \
+		debian/apt-setup-udeb/DEBIAN/templates

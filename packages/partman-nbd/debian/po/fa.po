@@ -1,0 +1,197 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Persian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# , 2005.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry - further translations from ICU-3.0
+#   Alastair McKinstry <mckinstry@computer.org>, 2001,2004.
+#   Free Software Foundation, Inc., 2001,2003,2004
+#   Roozbeh Pournader <roozbeh@farsiweb.info>, 2004,2005.
+#   Sharif FarsiWeb, Inc., 2004
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Translations from kde:
+#   - FarsiKDE Team <info@farsikde.org>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fa\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2012-10-20 19:56+0330\n"
+"Last-Translator: Behrad Eslamifar <behrad_es@yahoo.com>\n"
+"Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "پیکربندی Network Block Device"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "عملیات پیکربندی NBD:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "اکنون ${NUMBER} تجهیز متصل هستند."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "خادم Network Block Device:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"نام hostname و آدرس IP ماشینی که بر روی آن nbd-server در حال کار است وارد "
+"کنید."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "نود تجهیز Network Block Device:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"لطفاً نود تجهیز NBD را که می خواهید به آن متصل و یا جدا شوید انتخاب کنید."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "اتصال نا موفق به خادم NBD"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"اتصال به nbd-server شکست خورد. مطمئن شوید که میزبان یا شماره پورت و یا نام "
+"میزبانی که nbd-server بر روی آن در حال اجرا است، درست وارد شده است و اینکه "
+"شبکه به درستی پیکربندی شده باشد و مجدداً تلاش کنید."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "دیگر Network Block Device ای باقی نمانده است"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"یا تمامی نود های NBD در حال استفاده هستند یا مشکلی در شناسایی نودها وجود "
+"دارد."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr "هیچ نود NBD ای تا زمانی که یکی از آنها قطع گردد، نمی‌تواند پیکربندی شود"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "هیچ نود Network Block Device ای پیدا نشد."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"در حال حاضر هیچ Network Block Device ای متصل نیست. به همین دلیل شما نمی "
+"توانید هیچ کدام را قطع کنید."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "اتصال به Network Block Device"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "قطع ارتباط یک Network Block Device"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "خاتمه و بازگشت به پارتیشن بندی"

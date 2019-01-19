@@ -1,0 +1,15 @@
+*.dsc
+*.changes
+*.tar.gz
+*.udeb
+*.deb
+*.upload
+*.build
+
+*.debhelper*
+*.substvars
+files
+tzsetup-udeb
+tzmap
+iso_3166.tab
+

@@ -1,0 +1,503 @@
+<!-- $Id$ -->
+<!-- original version: 70798 -->
+
+  <sect2 arch="arm">
+  <title>Tři hlavní ARM porty</title>
+<para>
+
+Architektura ARM se vyvíjí a moderní ARM procesory nabízí možnosti,
+které nejsou na starších modelech dostupné. &debian; proto nabízí tři
+základní ARM porty pro nejlepší podporu širokého spektra systémů:
+
+<itemizedlist>
+<listitem><para>
+
+&debian;/armel cílí na starší 32 bitové ARM procesory bez hardwarové
+podpory výpočtů s plovoucí desetinnou čárkou (nemají FPU)
+
+</para></listitem>
+<listitem><para>
+
+&debian;/armhf běží jen na novějších 32 bitových ARM procesorech,
+které implementují alespoň architekturu ARMv7 s 3. verzí ARM
+specifikace pro vektorové výpočty s plovoucí desetinnou čárkou
+(VFPv3). &debian;/armhf využívá tyto rozšířené možnosti a vyšší výkon
+nových modelů.
+
+</para></listitem>
+<listitem><para>
+
+&debian;/arm64 funguje na 64 bitových ARM procesorech implementujících
+alespoň architekturu ARMv8.
+
+</para></listitem>
+</itemizedlist>
+
+</para><para>
+
+Technicky mohou všechny aktuálně dostupné ARM procesory běžet v obou
+režimech adresování (<quote>little-endian</quote>
+i <quote>big-endian</quote>), avšak v praxi používá drtivá většina ARM
+systémů adresování <quote>little-endian</quote>. V tomto duchu
+podporuje &debian;/arm64, &debian;/armhf i &debian;/armel pouze
+systémy <quote>little-endian</quote>.
+
+</para>
+  </sect2>
+
+  <sect2 arch="arm">
+  <title>Různé návrhy ARM procesorů a náročnost podpory</title>
+<para>
+
+Systémy ARM jsou mnohem různorodější, než systémy založené na
+architektuře i386/amd64, takže podpora může být složitější.
+Architektura ARM se používá hlavně v řešeních vše v jednom, tzv. SoC
+(<quote>system-on-chip</quote>). Tyto SoC navrhuje spousta společností
+z nejrůznějších hardwarových součástí, které se liší i v tak základní
+funkcionalitě, jako je zavedení systému.
+
+</para><para arch="armel;armhf">
+
+Systémy využívající tyto čipy obvykle postrádají jednotné rozhraní
+v podobě systémového firmwaru a ve výsledku se linuxové jádro na
+architektuře ARM musí starat o spousty nízkoúrovňových detailů
+specifických pro konkrétní systém, o což by se ve světě PC postaral
+BIOS.
+
+</para><para arch="armel;armhf">
+
+To znamenalo, že když Linux získal podporu architektury ARM, muselo se
+pro každý systém sestavovat speciální jádro, na rozdíl od architektury
+i386/amd64, kde jedno jádro běží na téměř libovolném hardwaru. Tento
+přístup samozřejmě nebyl s ohromným počtem různých systémů udržitelný
+a vývojáři začali pracovat na tom, aby se podobně jako u PC dalo jedno
+jádro použít na různých ARM systémech. Toto jádro se pak nazývá
+multiplatformní a podporuje většinu novějších systémů. V &debian;u je
+na architektuře &debian;/armhf označeno jako <literal>armmp</literal>.
+
+Stále však existují starší systémy, které vyžadují speciální jádro.
+Z tohoto důvodu podporuje standardní &debian; instalaci jen na několik
+vybraných starších systémů.
+
+</para><para arch="arm64">
+
+Na rozdíl od starších verzí ARM architektury je architektura ARMv8
+(arm64) mnohem více standardizovaná a tudíž jednodušeji podporovatelná
+jak ze strany linuxového jádra, tak ostatního softwaru.
+
+</para><para arch="arm64">
+
+Serverová verze ARMv8 hardwaru se typicky konfiguruje s využitím
+standardů UEFI (Unified Extensible Firmware Interface) a ACPI
+(Advanced Configuration and Power Interface), které poskytují
+jednotný, na zařízení nezávislý způsob inicializace počítačového
+hardwaru. Oba standardy jsou běžné ve světě počítačů x86.
+
+</para>
+  </sect2>
+
+  <sect2 arch="arm64" id="arm64-supported-platforms">
+  <title>Platformy podporované v &debian;/arm64</title>
+<para>
+
+Arm64/AArch64/ARMv8 hardware se stal dostupným v pozdní fázi
+vývojového cyklu &debian;u &releasename-cap;, tudíž se do jádra
+používaného v tomto vydání dostala podpora jen málo platforem.
+&debian;/arm64 v tomto vydání podporuje následující platformy.
+(Všechny uvedené platformy jsou podporovány jediným jádrem).
+
+</para>
+
+<variablelist>
+<varlistentry>
+<term>Applied Micro (APM) Mustang/X-Gene</term>
+<listitem><para>
+
+APM Mustang byl první ARMv8 systém použitelný v Linuxu. Používá SoC
+X-gene SoC, který je nyní používán i v dalších počítačích. Jedná se
+o osmijádrový procesor, s ethernetem, USB a sériovým rozhraním.
+Vzhledově vypadá jako běžný desktopový počítač, nicméně je očekáváno
+mnoho dalších verzí. Většina hardwaru je podporována přímo oficiálním
+jádrem, ale v jádře dostupném v &releasename-cap; kulhá podpora USB.
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Vývojová platforma ARM Juno</term>
+<listitem><para>
+
+Juno je vývojářská deska s šestijádrovým procesorem ARMv8-A 800MHz
+(2xA57, 4xA53), grafikou Mali (T624), 8GB DDR3 RAM, ethernetem, USB
+a sériovým rozhraním. Jelikož je deska zaměřená na vývojáře, aby se
+seznámili s touto platformou, není ani malá, ani levná, ale jedná se
+o jednu z prvních dostupných desek a jádro v &releasename-cap;
+podporuje veškerý integrovaný hardware.
+
+</para></listitem>
+</varlistentry>
+</variablelist>
+
+<para>
+
+Při použití &d-i; na systémech bez UEFI se možná budete muset na konci
+instalace přepnout do shellu a ručně zadat několik příkazů pro
+nastavení zavádění nově nainstalovaného systému.
+<command>flash-kernel</command> ví, jak nastavit zavádění systému
+X-Gene pomocí U-Boot.
+
+</para>
+
+   <sect3 arch="arm64" id="arm64-other-platforms">
+   <title>Ostatní platformy</title>
+<para>
+
+Díky multiplatformní podpoře v linuxovém jádře je možné, že &d-i;
+poběží i na arm64 systémech zde explicitně neuvedených. Stačí, aby
+jádro podporovalo komponenty instalovaného systému a byl dostupný
+soubor popisující strom zařízení daného systému. V případě použití
+UEFI by se mělo v takto nainstalovaném systému automaticky nastavit
+i zavádění. Na systémech bez UEFI se možná budete muset na konci
+instalace přepnout do shellu a ručně zadat několik příkazů pro
+nastavení zavádění.
+
+</para>
+   </sect3>
+  </sect2>
+
+  <sect2 arch="armhf" id="armhf-armmp-supported-platforms">
+  <title>Platformy podporované v &debian;/armhf</title>
+<para>
+
+O následujících systémech je známo, že fungují s &debian;/armhf
+používajícím multiplatformní jádro <literal>armmp</literal>:
+
+<variablelist>
+
+<varlistentry>
+<term>Freescale MX53 Quick Start Board (MX53 LOCO Board)</term>
+<listitem><para>
+
+IMX53QSB je vývojářská deska založená na SoC i.MX53.
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Versatile Express</term>
+<listitem><para>
+
+Versatile Express je série vývojářských desek od ARMu skládající se ze
+základní desky, která se dá osadit různými dceřinnými CPU.
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Některé vývojářské desky a embeded systémy Allwinner založené na sun<replaceable>X</replaceable>i</term>
+<listitem><para>
+
+Jádro armmp podporuje několik vývojářských desek a embeded systémů
+založených na SoC Allwinner A10 (architektura <quote>sun4i</quote>),
+A10s/A13 (architektura <quote>sun5i</quote>), A20 (architektura
+<quote>sun7i</quote>), A31/A31s (architektura <quote>sun6i</quote>)
+a A23/A33 (součást rodiny <quote>sun8i</quote>). Instalační systém
+plně podporuje následující systémy:
+
+  <itemizedlist>
+  <listitem><para>
+             Cubietech Cubieboard 1 + 2 / Cubietruck
+  </para></listitem>
+  <listitem><para>
+             LeMaker Banana Pi a Banana Pro
+  </para></listitem>
+  <listitem><para>
+             LinkSprite pcDuino a pcDuino3
+  </para></listitem>
+  <listitem><para>
+             Olimex A10-Olinuxino-LIME / A20-Olinuxino-LIME /
+             A20-Olinuxino-LIME2 / A20-Olinuxino Micro / A20-SOM-EVB
+  </para></listitem>
+  <listitem><para>
+             Xunlong OrangePi Plus
+  </para></listitem>
+  </itemizedlist>
+
+ </para><para>
+
+Podpora pro zařízení Allwinner založená na architektuře
+sun<replaceable>X</replaceable>i je daná ovladači a stromy zařízení
+dostupnými v oficiálním linuxovém jádře. Jádra jednotlivých dodavatelů
+(jako třeba jádra z Allwinner SDK) a jádra linux-sunxi.org 3.4
+odvozená z Androidu nejsou v &debian;u podporována.
+
+ </para><para>
+
+Oficiální linuxové jádro na SoC Allwinner A10, A10s/A13, A20, A23/A33
+a A31/A31s obvykle podporuje sériovou konzoli, ethernet, SATA, USB
+a karty MMC/SD. Míra podpory lokálního displeje (HDMI/VGA/LCD)
+a integrovaného audio hardwaru se liší systém od systému. Pro většinu
+systémů jádro neobsahuje nativní ovladače grafiky a místo toho využívá
+infrastrukturu <quote>simplefb</quote>, která spoléhá na to, že se
+o inicializaci zobrazovacího hardwaru postará zavaděč a jádro pak již
+jen znovu-použije předpřipravený framebuffer. V praxi to funguje
+poměrně dobře, ale přináší to s sebou několik omezení, jako je
+nemožnost měnit za běhu rozlišení a nefunkční správa napájení.
+
+</para><para>
+
+Integrovaná flash paměť sloužící jako mass storage se na systémech
+založených na sun<replaceable>X</replaceable>i vyskytuje ve dvou
+základních variantách: NAND a eMMC. Většina starších desek používá
+NAND flash, pro kterou obvykle neexistují ovladače v oficiálním jádře
+a proto ani v Debianu. Mnohé novější systémy používají místo NAND
+flash eMMC flash. Čip s eMMC se navenek tváří jako rychlá,
+nevyměnitelná SD karta a je tedy podporována stejně, jako běžná SD
+karta.
+
+</para><para>
+
+Instalátor obsahuje základní podporu pro mnoho dalších, výše
+neuvedených systémů založených na sun<replaceable>X</replaceable>i,
+avšak tyto povětšinou nejsou otestovány, protože projekt &debian; nemá
+k danému hardwaru přístup. Pro tyto systémy neexistují předpřipravené
+obrazy SD karet s instalačním systémem. Mezi tyto vývojářské desky
+s omezenou podporou patří:
+
+  <itemizedlist>
+  <listitem><para>
+             Olimex A10s-Olinuxino Micro / A13-Olinuxino /
+             A13-Olinuxino Micro
+  </para></listitem>
+  <listitem><para>
+             Sinovoip BPI-M2 (založená na A31s)
+  </para></listitem>
+  <listitem><para>
+             Xunlong Orange Pi (založená na A20) /
+             Orange Pi Mini (založená na A20)
+  </para></listitem>
+  </itemizedlist>
+
+</para><para>
+
+Kromě výše uvedených systémů obsahuje instalátor velice omezenou
+podporu pro platformu Allwinner H3 a desky na ní založené. V době
+vydání Debianu 9 je podpora H3 v oficiálním jádře stále ve vývoji
+a instalátor tedy na systémech založených na H3 podporuje pouze
+sériovou konzoli, MMC/SD a USB řadič. Chybí podpora integrovaného
+ethernetu, takže síťování je možné pouze přes externí ethernetovou
+nebo Wifi kartu do USB. Mezi systémy založené na H3, které mají
+základní podporu instalátoru, patří:
+
+  <itemizedlist>
+  <listitem><para>
+             FriendlyARM NanoPi NEO
+  </para></listitem>
+  <listitem><para>
+             Xunlong Orange Pi Lite / Orange Pi One / Orange Pi PC /
+             Orange Pi PC Plus / Orange Pi Plus / Orange Pi Plus 2E /
+             Orange Pi 2
+  </para></listitem>
+  </itemizedlist>
+
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>NVIDIA Jetson TK1</term>
+<listitem><para>
+
+NVIDIA Jetson TK1 je vývojářská deska založená na čipu Tegra K1 (též
+známým jako Tegra 124). Tegra K1 se pyšní čtyřjárovým 32 bitovým
+procesorem ARM Cortex-A15 a grafickou kartou Kepler (GK20A) se 192
+CUDA jádry. Je možné, že budou fungovat i jiné systémy založené na
+Tegra 124.
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Seagate Personal Cloud a Seagate NAS</term>
+<listitem><para>
+
+Seagate Personal Cloud a Seagate NAS jsou NAS zařízení založené na
+platformě Armada 370 od Marvellu. Debian podporuje Personal Cloud
+(SRN21C), Personal Cloud 2-Bay (SRN22C), Seagate NAS 2-Bay (SRPD20)
+a Seagate NAS 4-Bay (SRPD40).
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>SolidRun Cubox-i2eX / Cubox-i4Pro</term>
+<listitem><para>
+
+Řada Cubox-i jsou malé systémy ve tvaru kostky založené na rodině SoC
+Freescale i.MX6. Podpora pro řadu Cubox-i je daná ovladači a stromy
+zařízení dostupnými v oficiálním linuxovém jádře. Jádra Freescale 3.0
+pro Cubox-i nejsou v &debian;u podporována. Oficiální linuxové jádro
+podporuje sériovou konzoli, ethernet, USB, karty MMC/SD a podporu
+zobrazování přes HDMI (konzole i X11). Na Cubox-i4Pro je navíc
+podporován i eSATA port.
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Wandboard</term>
+<listitem><para>
+
+Wandboard Quad, Dual a Solo jsou vývojářské desky založená na SoC
+Freescale i.MX6 Quad. Podpora je daná ovladači a stromy zařízení
+dostupnými v oficiálním linuxovém jádře. Speciální jádra řady 3.0
+a 3.10 z wandboard.org nejsou v &debian;u podporována. Oficiální
+linuxové jádro podporuje sériovou konzoli, zobrazování přes HDMI
+(konzole i X11), ethernet, USB, karty MMC/SD SATA (jen Quad)
+a analogové audio. V &debian;u 9 nejsou podporovány ostatní audio
+výstupy (S/PDIF a HDMI) a ani integrovaný WLAN/Bluetooth modul.
+
+</para></listitem>
+</varlistentry>
+</variablelist>
+
+</para><para>
+
+Pokud má jádro použité v &d-i;u podporu daných systémových komponent
+a je dostupný soubor se stromem zařízení, umožňuje multiplatformní
+linuxové jádro spustit &d-i; i na armhf systémech výše explicitně
+neuvedených.
+
+</para><para>
+
+Na takových systémech obvykle instalace funguje, nicméně se asi
+nepodaří automaticky nastavit zavádění, jelikož to často vyžaduje
+konkrétní informace přesně pro dané zařízení. V takovém případě je
+nutno před dokončením instalace nastavit zavádění ručně, například
+spuštěním požadovaných příkazů v shellu spuštěném z prostředí &d-i;u.
+
+</para>
+  </sect2>
+
+  <sect2 arch="armhf" id="armhf-unsupported-platforms">
+  <title>Platformy dále nepodporované v &debian;/armhf</title>
+
+<variablelist>
+<varlistentry>
+<term>EfikaMX</term>
+<listitem><para>
+
+Platforma EfikaMX (Genesi Efika Smartbook a Genesi EfikaMX nettop)
+byla podporovaná v &debian;u 7 specifickým jádrem, ale jelikož byla
+v roce 2012 podpora této platformy z oficiálního linuxového jádra
+odstraněna, nemůže ani &debian; dále pokračovat v podpoře.
+
+</para><para>
+
+Řešením by bylo použití multiplatformního jádra armmp, ale pro
+platformu EfikaMX v současnosti není dostupný příslušný strom
+zařízení.
+
+</para></listitem>
+</varlistentry>
+</variablelist>
+
+  </sect2>
+
+  <sect2 arch="armel" id="armel-supported-platforms">
+  <title>Platformy podporované v &debian;/armel</title>
+<para>
+
+&debian;/armel podporuje následující platformy. Tyto platformy
+vyžadují specifická jádra.
+
+<variablelist>
+<varlistentry>
+<term>Kirkwood</term>
+<listitem><para>
+
+Orion je řešení typu vše v jednom (SoC &mdash; System on a Chip) od
+Marvelu, které v jediném čipu integruje procesor ARM, ethernet, SATA,
+USB a další funkcionalitu. V současné době podporujeme následující
+zařízení založené na Kirkwoodu:
+
+<itemizedlist>
+  <listitem><para>
+    <ulink url="&url-arm-cyrius-sheevaplug;">zásuvkové počítače
+    (SheevaPlug, GuruPlug, DreamPlug a Seagate FreeAgent
+    DockStar)</ulink>
+  </para></listitem>
+  <listitem><para>
+    <ulink url="&url-arm-cyrius-qnap-kirkwood;">QNAP Turbo Station</ulink>
+    (všechny modely TS-11x/TS-12x, HS-210, TS-21x/TS-22x a TS-41x/TS-42x)
+  </para></listitem>
+  <listitem><para>
+    NASy LaCie (Network Space v2, Network Space Max v2, Internet Space
+    v2, d2 Network v2, 2Big Network v2 a 5Big Network v2)
+  </para></listitem>
+  <listitem><para>
+    OpenRD (OpenRD-Base, OpenRD-Client a OpenRD-Ultimate)
+  </para></listitem>
+</itemizedlist>
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Orion5x</term>
+<listitem><para>
+
+Orion je řešení typu vše v jednom (SoC &mdash; System on a Chip) od
+Marvelu, které v jediném čipu integruje procesor ARM, ethernet, SATA,
+USB a další funkcionalitu. Na trhu existuje mnoho NAS zařízení
+(Network Attached Storage) založených právě na tomto čipu. V současné
+době podporujeme
+<ulink url="&url-arm-cyrius-kuroboxpro;">Buffalo Kurobox</ulink> a
+<ulink url="&url-arm-cyrius-mv2120;">HP mv2120</ulink>.
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Versatile</term>
+<listitem><para>
+
+Platforma Versatile je emulovaná v QEMU a je tudíž příjemnou možností,
+jak testovat/používat &debian; na platformě ARM v případě, že
+nedisponujete příslušným hardwarem.
+
+</para></listitem>
+</varlistentry>
+</variablelist>
+
+</para>
+  </sect2>
+
+  <sect2 arch="arm">
+  <title>Platformy a zařízení dále nepodporované v &debian;/armel</title>
+
+<variablelist>
+<varlistentry>
+<term>IXP4xx</term>
+<listitem><para>
+
+Podpora pro platformu Intel IXP4xx byla odstraněna v &debian;u 9. Na
+této platformě byl založen populární Linksys NSLU2.
+
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Orion5x</term>
+<listitem><para>
+
+S &debian;em 9 byla z platformy Orion5x odebrána podpora pro zařízení
+D-Link DNS-323 a Conceptronic CH3SNAS, protože se linuxové jádro na
+těchto zařízeních již nevešlo do flash paměti. Ostatní Orion zařízení
+jako Buffalo Kurobox a HP mv2120 jsou nadále podporovány.
+
+</para></listitem>
+</varlistentry>
+</variablelist>
+
+  </sect2>

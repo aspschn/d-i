@@ -1,0 +1,18 @@
+Source: arcboot-installer
+Section: debian-installer
+Priority: standard
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9), po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/arcboot-installer
+Vcs-Git: https://salsa.debian.org/installer-team/arcboot-installer.git
+
+Package: arcboot-installer
+Package-Type: udeb
+Architecture: mips
+XB-Subarchitecture: r4k-ip22 r5k-ip22 r5k-ip32 r10k-ip32 r12k-ip32
+Provides: bootable-system
+Depends: cdebconf-udeb, kernel-installer, di-utils-mapdevfs
+XB-Installer-Menu-Item: 7300
+Description: Install Arcboot on a hard disk
+ This udeb will install Arcboot on the hard disk.

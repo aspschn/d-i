@@ -1,0 +1,326 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of lv.po to Latvian
+# Latvian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Translations from iso-codes:
+# Copyright (C) Free Software Foundation, Inc., 2001,2003.
+# Translations from KDE:
+# Andris Maziks <andzha@latnet.lv>
+#
+#
+# Aigars Mahinovs <aigarius@debian.org>, 2006, 2008.
+# Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008.
+# Aigars Mahinovs <aigarius@debian.org>, 2006.
+# Alastair McKinstry <mckinstry@computer.org>, 2001, 2002.
+# Free Software Foundation, Inc., 2002,2004.
+# Juris Kudiņš <cooker@inbox.lv>, 2001.
+# Rihards Priedītis <rprieditis@gmail.com>, 2009, 2010.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013.
+# Peteris Krisjanis <pecisk@gmail.com>, 2008, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: lv\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-21 10:05+0100\n"
+"PO-Revision-Date: 2013-10-06 13:45+0300\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2)\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:1001
+msgid "Installing quik"
+msgstr "Instalē quik"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:2001
+msgid "Installing quik boot loader"
+msgstr "Instalē quik palaidēju"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:3001
+msgid "quik installation failed. Continue anyway?"
+msgstr "quik instalēšana bija nesekmīga. Tomēr turpināt?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:3001
+msgid ""
+"The quik package failed to install into /target/.  Installing quik as a boot "
+"loader is a required step.  The install problem might however be unrelated "
+"to quik, so continuing the installation may be possible."
+msgstr ""
+"quik pakotnes instalēšana uz /target/ beidzās nesekmīgi. quik kā palaidēja "
+"instalēšana ir nepieciešams solis. Taču instalēšanas problēma varētu būt "
+"nesaistīta ar quik, un tāpēc ir iespējams, ka sistēmas instalēšanu var "
+"turpināt."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:4001
+msgid "Checking partitions"
+msgstr "Pārbauda nodalījumus"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:5001
+msgid "No root partition found"
+msgstr "Saknes nodalījums nav atrasts"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:5001
+msgid ""
+"No partition is mounted as your new root partition. You must mount a root "
+"partition first."
+msgstr ""
+"Neviens nodalījums nav piemontēts kā saknes nodalījums. Vispirms ir "
+"jāpiemontē saknes nodalījums."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:6001
+msgid "Boot partition not on first disk"
+msgstr "Palaišanas nodalījums neatrodas uz pirmā diska"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:6001
+msgid ""
+"The quik boot loader requires partition that holds /boot to be on the first "
+"disk. Please return to the partitioning step."
+msgstr ""
+"Lai izmantotu quik palaidēju, /boot direktorijai jāatrodas uz pirmā diska. "
+"Lūdzu, atgriezieties disku dalīšanas solī."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:7001
+msgid "Boot partition must be on ext2"
+msgstr "Palaišanas nodalījumam jābūt uz ext2"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:7001
+msgid ""
+"The quik boot loader requires the partition that holds /boot to be formatted "
+"using the ext2 file system. Please return to the partitioning step."
+msgstr ""
+"Lai izmantotu quik palaidēju, nodalījumam ar /boot direktoriju jābūt "
+"formatētam ar ext2 datņu sistēmu. Lūdzu, atgriezieties disku dalīšanas solī."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001 ../quik-installer.templates:9001
+msgid "Do you really want to install the quik boot loader?"
+msgstr "Vai tiešām vēlaties instalēt quik palaidēju?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001
+msgid ""
+"You have chosen to install the quik boot loader. You will not be able to "
+"boot any other operating system from this disk. Furthermore, your machine "
+"may not be bootable in any manner after this process completes. If you are "
+"left with a blank screen, you may need to try a cold boot and hold down "
+"Command-Option-P-R."
+msgstr ""
+"Jūs izvēlējāties instalēt quik palaidēju. Jūs nevarēsiet ielādēt citas "
+"operētājsistēmas no šī diska. Vēl jo vairāk, šis dators var arī neielādēties "
+"pēc šī procesa pabeigšanās. Ja jūsu ekrāns paliek tukšs, jums būs jāveic "
+"aukstā pārstartēšana un jātur Command-Option-P-R."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001 ../quik-installer.templates:9001
+msgid "Be aware that this code has not been thoroughly tested."
+msgstr "Ņemiet vērā, ka šis kods nav pilnībā pārbaudīts."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:9001
+msgid ""
+"You have chosen to install the quik boot loader. You will not be able to "
+"boot any other operating system from this disk. Furthermore, your machine "
+"may not be bootable in any manner after this process completes."
+msgstr ""
+"Jūs izvēlējāties instalēt quik palaidēju. Jūs nevarēsiet ielādēt citas "
+"operētājsistēmas no šī diska. Vēl jo vairāk, šis dators var arī neielādēties "
+"pēc šī procesa pabeigšanās."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:10001
+msgid "Creating quik configuration"
+msgstr "Veido quik konfigurāciju"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001
+msgid "Failed to create quik configuration"
+msgstr "quik konfigurāciju neizdevās izveidot"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001
+msgid "The creation of the main quik configuration file failed."
+msgstr "Neizdevās izveidot galveno quik konfigurācijas datni."
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001 ../quik-installer.templates:13001
+#: ../quik-installer.templates:17001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"Pārbaudiet /var/log/syslog vai skatieties sīkāk ceturtajā virtuālajā konsolē "
+"(ALT+F4)."
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001 ../quik-installer.templates:17001
+msgid "Warning: Your system may be unbootable!"
+msgstr "Uzmanību — jūsu sistēma varētu būt nepalaižama!"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:12001
+msgid "Installing quik into bootstrap partition"
+msgstr "Instalē quik palaišanas programmas nodalījumā"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "Failed to install boot loader"
+msgstr "Neizdevās uzinstalēt palaidēju"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "The installation of the quik boot loader failed."
+msgstr "quik instalēšana bija nesekmīga."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "Warning: your system may be unbootable!"
+msgstr "Uzmanību — jūsu sistēma var nepalaisties!"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:14001
+msgid "Setting up OpenFirmware"
+msgstr "Iestata OpenFirmware"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:15001
+msgid "Unable to configure OpenFirmware"
+msgstr "Neizdevās nokonfigurēt OpenFirmware"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:15001
+msgid ""
+"Setting the OpenFirmware boot-device variable failed. You will have to "
+"configure OpenFirmware yourself to boot."
+msgstr ""
+"Neizdevās iestatīt OpenFirmware palaišanas ierīces mainīgo. Jums pašam "
+"vajadzēs nokonfigurēt OpenFirmware, lai tas palaistos."
+
+#. Type: error
+#. Description
+#. :sl4:
+#. This error may not be fatal, depending on the exact type of Mac.
+#: ../quik-installer.templates:16001
+msgid "Problem configuring OpenFirmware"
+msgstr "Problēma ar OpenFirmware konfigurāciju"
+
+#. Type: error
+#. Description
+#. :sl4:
+#. This error may not be fatal, depending on the exact type of Mac.
+#: ../quik-installer.templates:16001
+msgid ""
+"Setting the OpenFirmware boot-command variable failed. You may have "
+"intermittent boot failures."
+msgstr ""
+"Neizdevās iestatīt OpenFirmware palaišanas komandas mainīgo. Var gadīties "
+"epizodiskas palaišanās kļūmes."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:17001
+msgid "Failed to mount /target/proc"
+msgstr "Neizdevās piemontēt /target/proc"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:17001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "Neizdevās piemontēt proc datņu sistēmu uz /target/proc."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl4:
+#: ../quik-installer.templates:18001
+msgid "Install quik on a hard disk"
+msgstr "Instalēt quik uz cietā diska"

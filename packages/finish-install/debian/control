@@ -1,0 +1,15 @@
+Source: finish-install
+Section: debian-installer
+Priority: required
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9), po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/finish-install
+Vcs-Git: https://salsa.debian.org/installer-team/finish-install.git
+
+Package: finish-install
+Package-Type: udeb
+Architecture: all
+Depends: ${misc:Depends}, archdetect, installed-base, created-fstab, bootable-system
+XB-Installer-Menu-Item: 7800
+Description: Finish the installation and reboot

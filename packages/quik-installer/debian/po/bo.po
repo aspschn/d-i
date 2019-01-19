@@ -1,0 +1,302 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Tibetan translation for Debian Installer.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-21 10:05+0100\n"
+"PO-Revision-Date: 2012-04-14 22:12+0600\n"
+"Last-Translator: Tennom <tankola@ymail.com, tennomyathog@gmail.com>\n"
+"Language-Team: bo <translation-team-bo@lists.sourceforge.net>\n"
+"Language: bo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:1001
+#, fuzzy
+msgid "Installing quik"
+msgstr "ནང་སྙིང་ཐུམ་བུ་སྒྲིག་འཇུག་བྱེད་བཞིན་པ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:2001
+#, fuzzy
+msgid "Installing quik boot loader"
+msgstr "GRUB འགོ་འཛུགས་ཆས་སྒྲིག་འཇུག་བྱེད་བཞིན་པ"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:3001
+#, fuzzy
+msgid "quik installation failed. Continue anyway?"
+msgstr "ELILO སྒྲིག་འཇུག་མ་ཐུབ་པས་གང་ལྟར་མུ་མཐུད་དགོས་སམ"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:3001
+#, fuzzy
+msgid ""
+"The quik package failed to install into /target/.  Installing quik as a boot "
+"loader is a required step.  The install problem might however be unrelated "
+"to quik, so continuing the installation may be possible."
+msgstr ""
+"elilo ཐུམ་བུ་ཡིས་/target/ ནང་དུ་སྒྲིག་འཇུག་མ་ཐུབ། ELILO འགོ་འཛུགས་ཆས་ལ་སྒྲིག་འཇུག་བྱེད་པ་ནི་"
+"དགོས་ངེས་ཀྱི་རིམ་པ་ཡིན། འོན་ཀྱང་སྒྲིག་འཇུག་གི་སྐྱོན་འདི་ELILO དང་འབྲེལ་བ་མེད་སྲིད་པས་སྒྲིག་འཇུག་འདི་མུ་"
+"མཐུད་པའི་གོ་སྐབས་ཡོད་སྲིད"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:4001
+#, fuzzy
+msgid "Checking partitions"
+msgstr "ཁག་གི་ཆེ་ཆུང་བཟོ་བཞིན་པ་་་"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:5001
+#, fuzzy
+msgid "No root partition found"
+msgstr "འགོ་འཛུགས་ཀྱི་གསོག་སྡེར་ཁག་གང་ཡང་ཚོར་རྟོགས་མ་ཐུབ་པ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:5001
+msgid ""
+"No partition is mounted as your new root partition. You must mount a root "
+"partition first."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:6001
+#, fuzzy
+msgid "Boot partition not on first disk"
+msgstr "བདམས་ཟིན་པའི་གསོག་སྡེར་ལ་ཁག་བཟོ་མ་ཐུབ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:6001
+msgid ""
+"The quik boot loader requires partition that holds /boot to be on the first "
+"disk. Please return to the partitioning step."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:7001
+#, fuzzy
+msgid "Boot partition must be on ext2"
+msgstr "འགོ་འཛུགས་ཀྱི་གསོག་སྡེར་ཁག་གང་ཡང་ཚོར་རྟོགས་མ་ཐུབ་པ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:7001
+msgid ""
+"The quik boot loader requires the partition that holds /boot to be formatted "
+"using the ext2 file system. Please return to the partitioning step."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001 ../quik-installer.templates:9001
+msgid "Do you really want to install the quik boot loader?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001
+msgid ""
+"You have chosen to install the quik boot loader. You will not be able to "
+"boot any other operating system from this disk. Furthermore, your machine "
+"may not be bootable in any manner after this process completes. If you are "
+"left with a blank screen, you may need to try a cold boot and hold down "
+"Command-Option-P-R."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001 ../quik-installer.templates:9001
+msgid "Be aware that this code has not been thoroughly tested."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:9001
+msgid ""
+"You have chosen to install the quik boot loader. You will not be able to "
+"boot any other operating system from this disk. Furthermore, your machine "
+"may not be bootable in any manner after this process completes."
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:10001
+#, fuzzy
+msgid "Creating quik configuration"
+msgstr "CoLo ཡི་སྒྲིག་འགོད་གསར་འཛུགས་བཞིན་པ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001
+#, fuzzy
+msgid "Failed to create quik configuration"
+msgstr "སྔོན་འགྲོའི་སྒྲིག་འགོད་ཡིག་ཆ་དེ་ལེན་མ་ཐུབ་པ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001
+msgid "The creation of the main quik configuration file failed."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001 ../quik-installer.templates:13001
+#: ../quik-installer.templates:17001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr "ཞིབ་ཕྲ་སྐོར་/var/log/syslog ཡང་ན་རྟོགས་བཟོས་སྐྱོན་གསོ་སའི་གནས་༤ བ་ལ་ལྟོས"
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001 ../quik-installer.templates:17001
+msgid "Warning: Your system may be unbootable!"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:12001
+msgid "Installing quik into bootstrap partition"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+#, fuzzy
+msgid "Failed to install boot loader"
+msgstr "GRUB འགོ་འཛུགས་ཆས་བསྐྱར་དུ་སྒྲིག་འཇུག"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+#, fuzzy
+msgid "The installation of the quik boot loader failed."
+msgstr "/target/ ཐོག་ཏུ་རྨང་གཞིའི་སྒྲིག་འཇུག་བྱེད་མ་ཐུབ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "Warning: your system may be unbootable!"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:14001
+msgid "Setting up OpenFirmware"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:15001
+#, fuzzy
+msgid "Unable to configure OpenFirmware"
+msgstr "GRUB སྒྲིག་འགོད་བྱེད་མི་ནུས་པ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:15001
+msgid ""
+"Setting the OpenFirmware boot-device variable failed. You will have to "
+"configure OpenFirmware yourself to boot."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#. This error may not be fatal, depending on the exact type of Mac.
+#: ../quik-installer.templates:16001
+msgid "Problem configuring OpenFirmware"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#. This error may not be fatal, depending on the exact type of Mac.
+#: ../quik-installer.templates:16001
+msgid ""
+"Setting the OpenFirmware boot-command variable failed. You may have "
+"intermittent boot failures."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:17001
+#, fuzzy
+msgid "Failed to mount /target/proc"
+msgstr "མཉེན་སྡེར་བཀར་མ་ཐུབ་པ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:17001
+#, fuzzy
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "/target/ ཐོག་ཏུ་རྨང་གཞིའི་སྒྲིག་འཇུག་བྱེད་མ་ཐུབ"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl4:
+#: ../quik-installer.templates:18001
+#, fuzzy
+msgid "Install quik on a hard disk"
+msgstr "སྲ་སྡེར་ཞིག་གི་ཐོག་ཏུ་elilo འགོ་འཛུགས་འཇུག་ཆས་སྒྲིག་འཇུག་བྱེད་པ"

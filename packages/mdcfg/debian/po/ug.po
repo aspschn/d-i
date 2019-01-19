@@ -1,0 +1,439 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+# Translations from iso-codes:
+# Sahran <sahran.ug@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-08-06 20:14+0000\n"
+"PO-Revision-Date: 2011-09-16 10:36+0600\n"
+"Last-Translator: Sahran <sahran.ug@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../mdcfg-utils.templates:1001
+msgid "Configure MD devices"
+msgstr "MD ئۈسكۈنىسى سەپلەش"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:2001
+msgid "Multidisk (MD) not available"
+msgstr "Multidisk (MD) ئىشلەتكىلى بولمايدۇ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:2001
+msgid ""
+"The current kernel doesn't seem to support multidisk devices. This should be "
+"solved by loading the needed modules."
+msgstr ""
+"نۆۋەتتىكى يادرو كۆپ دىسكا (multidisk)ئۈسكۈنىسىنى قوللىمايدۇ، لازىملىق "
+"بۆلەكنى يۈكلەڭ."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../mdcfg-utils.templates:3001
+msgid "Create MD device"
+msgstr "MD ئۈسكۈنىسى قۇر"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../mdcfg-utils.templates:3001
+msgid "Delete MD device"
+msgstr "MD ئۈسكۈنىسى ئۆچۈر"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../mdcfg-utils.templates:3001
+msgid "Finish"
+msgstr "تامام"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:3002
+msgid "Multidisk configuration actions"
+msgstr "كۆپ دىسكا سەپلىمە مەشغۇلاتى"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:3002
+msgid "This is the Multidisk (MD) and software RAID configuration menu."
+msgstr "بۇ كۆپ دىسكا (Multidisk) ۋە يۇمشاق دېتاللىق RAID سەپلىمە تىزىملىكى."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:3002
+msgid ""
+"Please select one of the proposed actions to configure multidisk devices."
+msgstr ""
+"كۆپ دىسكا ئۈسكۈنە سەپلەش ئۈچۈن تەۋسىيە قىلىنغان ئۇسۇللاردىن بىرنى تاللاڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:4001
+msgid "No RAID partitions available"
+msgstr "ئىشلەتكىلى بولىدىغان RAID رايونى يوق"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:4001
+msgid ""
+"No unused partitions of the type \"Linux RAID Autodetect\" are available. "
+"Please create such a partition, or delete an already used multidisk device "
+"to free its partitions."
+msgstr ""
+"تىپى \"Linux RAID Autodetect\" بولغان ئىشلىتىلمىگەن رايونلار يوق ئىكەن. "
+"مۇشۇنداق رايونلارنى قۇرۇڭ ياكى ئىشلىتىلىۋاتقان كۆپ دىسكا  ئۈسكۈنىسىنى "
+"ئۆچۈرۈپ رايون ئۈچۈن بوشلۇق تەييارلاڭ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:4001
+msgid ""
+"If you have such partitions, they might contain actual file systems, and are "
+"therefore not available for use by this configuration utility."
+msgstr ""
+"ئەگەر بۇنداق رايون بولسا، بۇ رايون ھۆججەت سىستېمىسىنى ئۆز ئىچىگە ئالغان "
+"بولۇشى مۇمكىن، شۇڭا سەپلەش ئۈسكۈنىسى ئىشلىتەلمەيدۇ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:5001
+msgid "Not enough RAID partitions available"
+msgstr "ئىشلەتكىلى بولىدىغان يېتەرلىك RAID رايونى يوق"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:5001
+msgid ""
+"There are not enough RAID partitions available for your selected "
+"configuration.  You have ${NUM_PART} RAID partitions available but your "
+"configuration requires ${REQUIRED} partitions."
+msgstr ""
+"ئىشلەتكىلى بولىدىغان يېتەرلىك RAID رايونى ئارقىلىق تاللىغان سەپلىمە تەلىپىنى "
+"قاندۇرالمايدۇ. سىزنىڭ ${NUM_PART} دانە RAID رايونىڭىز بار، ئەمما سەپلىمىڭىز "
+"${REQUIRED} رايونغا ئېھتىياجلىق."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../mdcfg-utils.templates:6001 ../mdcfg-utils.templates:13001
+msgid "Cancel"
+msgstr "ۋاز كەچ"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:6002
+msgid "Multidisk device type:"
+msgstr "كۆپ دىسكا ئۈسكۈنە تۈرى:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:6002
+msgid "Please choose the type of the multidisk device to be created."
+msgstr "قۇرماقچى بولغان كۆپ دىسكا ئۈسكۈنىسىنىڭ تۈرىنى كىرگۈزۈڭ."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:7001
+msgid "Active devices for the RAID0 multidisk device:"
+msgstr "RAID0 كۆپ دىسكا ئۈسكۈنىسىنىڭ ئاكتىپ ئۈسكۈنىسى:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:7001
+msgid ""
+"You have chosen to create a RAID0 array. Please choose the active devices in "
+"this array."
+msgstr "RAID0 تىزىقى قۇرۇشنى تاللىدىڭىز. بۇ تىزىقتىكى ئاكتىپ ئۈسكۈنىنى تاللاڭ."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:8001
+msgid "Number of active devices for the RAID${LEVEL} array:"
+msgstr "بۇ RAID${LEVEL} تىزىقىدىكى ئاكتىپ ئۈسكۈنىنىڭ سانى:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:8001
+msgid ""
+"The RAID${LEVEL} array will consist of both active and spare partitions. The "
+"active partitions are those used, while the spare devices will only be used "
+"if one or more of the active devices fail. A minimum of ${MINIMUM} active "
+"devices is required."
+msgstr ""
+"RAID${LEVEL} قاتار بىرلا ۋاقىتتا ئاكتىپ ۋە زاپاس رايوننى ئۆز ئىچىگە ئالغان. "
+"ئاكتىپ رايون ئىشلىتىلىۋاتقان رايوننى كۆرسىتىدۇ، زاپاس ئۈسكۈنە بىر ياكى بىر "
+"قانچە ئاكتىپ ئۈسكۈنەدە كاشىلا كۆرۈلگەندە قوزغىتىلىدۇ. بۇ جايدا ئاز دېگەندە "
+"${MINIMUM} ئاكتىپ ئۈسكۈنە زۆرۈر."
+
+#. Type: string
+#. Description
+#. :sl3:
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:8001 ../mdcfg-utils.templates:12001
+msgid "NOTE: this setting cannot be changed later."
+msgstr "دىققەت: بۇ تەڭشەكنى كېيىن ئۆزگەرتكىلى بولمايدۇ."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:9001
+msgid "Active devices for the RAID${LEVEL} multidisk device:"
+msgstr "RAID${LEVEL} كۆپ دىسكا ئۈسكۈنىسىنىڭ ئاكتىپ ئۈسكۈنىسى:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:9001
+msgid ""
+"You have chosen to create a RAID${LEVEL} array with ${COUNT} active devices."
+msgstr ""
+"سىز ${COUNT} دانە ئاكتىپ ئۈسكۈنىسى بار RAID${LEVEL} تىزىقى قۇرۇشنى "
+"تاللىدىڭىز."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:9001
+msgid ""
+"Please choose which partitions are active devices. You must select exactly "
+"${COUNT} partitions."
+msgstr ""
+"ئاكتىپ ئۈسكۈنە قىلىدىغان رايوننى تاللاڭ. ${COUNT} رايون تاللىشىڭىز لازىم."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:10001
+msgid "Number of spare devices for the RAID${LEVEL} array:"
+msgstr "بۇ RAID${LEVEL} قاتارىدىكى بوش ئۈسكۈنىنىڭ سانى:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:11001
+msgid "Spare devices for the RAID${LEVEL} multidisk device:"
+msgstr "RAID${LEVEL} كۆپ دىسكا ئۈسكۈنىسىنىڭ زاپاس ئۈسكۈنىسى:"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:11001
+msgid ""
+"You have chosen to create a RAID${LEVEL} array with ${COUNT} spare devices."
+msgstr ""
+"سىز ${COUNT} دانە بوش ئۈسكۈنىسى بار RAID${LEVEL} تىزىقى قۇرۇشنى تاللىدىڭىز."
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:11001
+msgid ""
+"Please choose which partitions will be used as spare devices. You may choose "
+"up to ${COUNT} partitions. If you choose less than ${COUNT} devices, the "
+"remaining partitions will be added to the array as \"missing\". You will be "
+"able to add them later to the array."
+msgstr ""
+"قايسى رايوننى زاپاس ئۈسكۈنە قىلىپ ئىشلىتىلىدىغانلىقىنى تاللاڭ. ئەڭ كۆپ "
+"بولغاندا ${COUNT} partitions نى تاللىغىلى بولىدۇ. سانى ${COUNT}  دىن ئاز "
+"بولۇپ قالسا قالغانلىرى ئىشلىتىلمىگەن قاتارغا قوشۇۋېتىلىدۇ. ئىشلىتىلمىگەن "
+"قاتارنى كېيىن قاتارغا قوشۇشقا بولىدۇ."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:12001
+msgid "Layout of the RAID10 multidisk device:"
+msgstr "RAID10 array كۆپ دىسكا ئۈسكۈنىسىنىڭ ئورۇنلاشتۇرۇلۇشى:"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:12001
+msgid ""
+"The layout must be n, o, or f (arrangement of the copies) followed by a "
+"number (number of copies of each chunk). The number must be smaller or equal "
+"to the number of active devices."
+msgstr ""
+"ئورۇنلاشتۇرۇش چوقۇم n، o ياكى f (كۆپەيتىلمىسىنىڭ قاتارى) ئارقىسىدىن بىر سان "
+"(ھەر بىر بۆلەكنىڭ كۆپەيتىلمىسى)ئەگىشىپ كېلىدۇ. سانى چوقۇم ھەرىكەتتىكى "
+"ئۈسكۈنە سانىغا تەڭ ياكى كىچىك بولىدۇ."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:12001
+msgid ""
+"The letter is the arrangement of the copies:\n"
+" n - near copies: Multiple copies of one data block are at similar\n"
+"     offsets in different devices.\n"
+" f - far copies: Multiple copies have very different offsets\n"
+" o - offset copies: Rather than the chunks being duplicated within a\n"
+"     stripe, whole stripes are duplicated but are rotated by one\n"
+"     device so duplicate blocks are on different devices."
+msgstr ""
+"بۇ ھەرپ كۆپەيتىلمىنىڭ تىزىلىش ئۇسۇلىنى بەلگىلەيدۇ:\n"
+" n - يېقىن كۆپەيتىلمىسى: بىر سانلىق مەلۇمات بۆلىكىنىڭ كۆپ كۆپەيتىلمىسى "
+"ئوخشاش بولمىغان ئۈسكۈنىدە يېقىن كېلىدىغان چەتنەش قىممىتى بار.\n"
+"  f - يىراق كوپەيتىلمىسى: كۆپ كۆپەيتىلمىسىنىڭ پەرقى ناھايىتى چوڭ بولغان "
+"چەتنەش قىممىتى بار\n"
+" o - چەتنەش كۆپەيتىلمىسىنىڭ كۆپەيتىلمىسى: بىر تاسماقنىڭ ئىچىدە سانلىق "
+"مەلۇمات بۆلىكىنى كۆچۈرمەي بەلكى پۈتكۈل تاسماقنى كۆچۈرۈپ ئۈسكۈنىدە "
+"ئايلاندۇرۇپ ساقلايدۇ، بۇنداق تەكرارلانغان بۆلەك ئوخشىمىغان ئۈسكۈنىدە "
+"ساقلىنىدۇ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:13002
+msgid "Multidisk device to be deleted:"
+msgstr "كۆپ دىسكا ئۈسكۈنىسى ئۆچۈرۈلىدۇ.:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:13002
+msgid ""
+"Deleting a multidisk device will stop it and clear the superblock of all its "
+"components."
+msgstr ""
+"كۆپ دىسكا ئۈسكۈنىسى ئۆچۈرۈلسە ئۇ توختاپ قېلىپ، بارلىق بۆلەكلەرنىڭ superblock "
+"لىرى ئۆچۈرۈلۈپ كېتىدۇ"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:13002
+msgid ""
+"Please note this will not immediately allow you to reuse the partitions or "
+"devices in a new multidisk device. The array will however be unusable after "
+"the deletion."
+msgstr ""
+"يېڭى كۆپ دىسكا ئۈسكۈنىسىدىكى ئۈسكۈنە ياكى رايونلارنى دەرھال ئىشلەتكىلى "
+"بولمايدىغانلىقىغا دىققەت قىلىڭ. مەزكۇر قاتار ئۆرۈلمىگۈچە قايتا ئىشلەتكىلى "
+"بولمايدۇ."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:13002
+msgid ""
+"If you select a device for deletion, you will get some information about it "
+"and you will be given the option of aborting this operation."
+msgstr ""
+"ئەگەر بىر ئۈسكۈنىنى ئۆچۈرۈشنى تاللىسىڭىز ئۇنىڭغا مۇناسىۋەتلىك بىر قىسىم "
+"ئۇچۇرلارنى كۆرەلەيسىز، ھەمدە بۇ مەشغۇلاتتىن ۋاز كېچىش پۇرسىتىڭىز بار."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:14001
+msgid "No multidisk devices available"
+msgstr "ئىشلەتكىلى بولىدىغان كۆپ دىسكا ئۈسكۈنىسى يوق"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:14001
+msgid "No multidisk devices are available for deletion."
+msgstr "ئۆچۈرۈلىدىغان كۆپ دىسكا ئۈسكۈنىسى مەۋجۇد ئەمەس."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:15001
+msgid "Really delete this multidisk device?"
+msgstr "بۇ كۆپ دىسكا ئۈسكۈنىسىنى راستىنلا ئۆچۈرەمدۇ؟"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:15001
+msgid ""
+"Please confirm whether you really want to delete the following multidisk "
+"device:"
+msgstr "ئۆچۈرمەكچى بولغان تۆۋەندىكى كۆپ دىسكا ئۈسكۈنىلىرىنى جەزملەڭ:"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:15001
+msgid ""
+" Device:            ${DEVICE}\n"
+" Type:              ${TYPE}\n"
+" Component devices:"
+msgstr ""
+" ئۈسكۈنە :            ${DEVICE}\n"
+" تىپى:              ${TYPE}\n"
+" ئۈسكۈنە بۆلىكى:"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:16001
+msgid "Failed to delete the multidisk device"
+msgstr "كۆپ دىسكا ئۈسكۈنىسىنى ئۆچۈرەلمىدى."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../mdcfg-utils.templates:16001
+msgid "There was an error deleting the multidisk device. It may be in use."
+msgstr ""
+"كۆپ دىسكا ئۈسكۈنىسىنى ئۆچۈرۈشتە خاتالىق كۆرۈلدى. ئۇ ئىشلىتىلىۋاتقان بولۇشى "
+"مۇمكىن."

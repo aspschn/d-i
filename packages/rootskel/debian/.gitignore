@@ -1,0 +1,7 @@
+*.debhelper*
+*.substvars
+files
+rootskel
+rootskel-locale
+templates
+

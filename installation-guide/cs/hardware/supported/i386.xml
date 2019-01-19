@@ -1,0 +1,46 @@
+<!-- $Id$ -->
+<!-- original version: 70113 -->
+
+  <sect2 arch="i386">
+  <title>Procesory, základní desky a grafické karty</title>
+<para>
+
+Úplné informace o podporovaných zařízeních naleznete v
+<ulink url="&url-hardware-howto;">Linux Hardware Compatibility
+HOWTO</ulink>. Tato kapitola nastiňuje pouze základní požadavky.
+
+</para>
+
+   <sect3><title>Procesory</title>
+<para>
+
+Jsou podporovány téměř všechny aktivně používané procesory řady x86
+(IA-32). To zahrnuje i 32 bitové procesory AMD Athlon XP, Intel
+Pentium 4, Intel Xeon nebo Via C3.
+
+</para><para>
+
+&debian-gnu; &releasename; nepoběží na procesorech třídy 586 (Pentium)
+a starších.
+
+</para><note><para>
+
+Pokud je váš počítač postaven na 64 bitovém procesoru z rodiny AMD64
+nebo Intel 64 (např. Intel Core i5), budete pravděpodobně chtít
+použít instalátor pro architekturu amd64. Díky zpětné kompatibilitě
+však můžete použít i 32 bitový instalátor pro architekturu i386.
+
+</para></note>
+   </sect3>
+
+   <sect3 id="bus"><title>V/V sběrnice</title>
+<para>
+
+Systémová sběrnice je částí základní desky, která umožňuje procesoru
+komunikaci s perifériemi jako jsou například datová média. Váš počítač
+musí být vybaven sběrnicí PCI, PCIe nebo PCI-X.
+
+</para>
+   </sect3>
+  </sect2>
+

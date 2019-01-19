@@ -1,0 +1,327 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of sl.po to Slovenian
+#
+#
+# Slovenian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Jure Čuhalev <gandalf@owca.info>, 2005.
+# Jure Cuhalev <gandalf@owca.info>, 2006.
+# Matej Kovačič <matej.kovacic@owca.info>, 2006.
+# Jožko Škrablin <jozko.skrablni@gmail.com>, 2006.
+# Vanja Cvelbar <cvelbar@gmail.com>, 2008
+# Vanja Cvelbar <cvelbar@gmail.com>, 2009, 2010.
+#
+# Translations from iso-codes:
+#   Tobias Toedter <t.toedter@gmx.net>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Primož Peterlin <primozz.peterlin@gmail.com>, 2005, 2007, 2008, 2009, 2010.
+# Copyright (C) 2000, 2002, 2003, 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
+# Alastair McKinstry <mckinstry@computer.org>, 2002.
+# Translations from KDE:
+# Roman Maurer <roman.maurer@amis.net>, 2002.
+# Primož Peterlin <primozz.peterlin@gmail.com>, 2003, 2005, 2006, 2007, 2008, 2009, 2010, 2011.
+#
+# Andraz Tori <andraz.tori1@@guest.arnes.si> 2000.
+# Alastair McKinstry, <mckinstry@@computer.org>, 2001.
+msgid ""
+msgstr ""
+"Project-Id-Version: sl\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2012-04-27 15:43+0100\n"
+"Last-Translator: Vanja Cvelbar <cvelbar@gmail.com>\n"
+"Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "Poišči na trdih diskih sliko ISO namestilnika."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "Zaznavanje strojne opremo za odkrivanje trdih diskov"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "Iskanje ISO sliko namestilnika na diskih"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "Priklapljanje ${DRIVE}..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "Preiskovanje ${DRIVE} (v ${DIRECTORY})..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "Ali naj se išče ISO sliko namestitve na celotnem disku ?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"Pri hitrem iskanju ISO slike namestitve, ki išče samo na pogostih mestih, ni "
+"bilo mogoče najti slike ISO namestitve. Obstaja možnost, da bo najdena pri "
+"bolj podrobnem iskanju, ki pa lahko traja dlje časa."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "Iskanje ISO slike namestitve ni uspelo"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"Nobene namestitvene ISO slike ni bilo mogoče najti. V primeru, da ste "
+"prenesli ISO sliko, ima morda zgrešeno ime (se ne končna z \".iso\"), ali pa "
+"se nahaja na datotečnem sistemu, ki ga ni bilo mogoče priklopiti."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"Morali boste uporabiti alternativni način nameščanja, izbrati drugo napravo "
+"za iskanje datotek ISO, ali pa poskusiti znova, potem ko boste odpravili "
+"napako."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"Čeprav je na razpolago ena ali več ISO slik, teh ni bilo mogoče priklopiti. "
+"ISO slika, ki ste jo prenesli je morda pokvarjena."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "Nobene slike ISO namestilnika ni bilo mogoče najti."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"Čeprav je na razpolago ena ali več ISO slik, te ne izgledajo veljavne slike "
+"ISO namestitve."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "Priklop slike ISO ${SUITE} namestilnika je uspel"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"Kot ISO slika namestitve bo uporabljena ISO datoteka ${FILENAME} na "
+"${DEVICE} (${SUITE})."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "Naprave, ki so na voljo"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "Ročni vnos naprave"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "Naprava ali razdelek za iskanje namestitvene datoteke ISO:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"Izberete lahko napravo, ročno določite napravo, ki ni bila zaznana, ali pa "
+"ponovno preiščete naprave, ki so na razpolago (uporabno s počasnejšimi "
+"napravami USB)."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "Naprava:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "Poglobljeno iskanje"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "Uporabljena bo datoteka ISO:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"Na izbranih napravah je ena ali več datotek ISO. Izberite tisto, ki jo "
+"želite uporabiti ali pa zahtevajte poglobljeno iskanje."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr "Je datoteka ISO ${FILENAME} pravilna za namestitev?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"Kot ISO slika namestitve bo uporabljena ISO datoteka ${FILENAME} na "
+"${DEVICE} (${SUITE}, koda ${CODENAME}, z opisom  '${DESCRIPTION}')."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"V primeru, da imate na istem namestitvenem pogonu več datotek ISO, lahko "
+"izbirate katero želite uporabiti."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "Namesti namestitvene komponente iz namestitvene slike ISO"

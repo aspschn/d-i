@@ -1,0 +1,112 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2013-12-03 12:47+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: Tajik\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#. Type: select
+#. Description
+#: ../elilo-installer.templates:1001
+msgid "Partition for boot loader installation:"
+msgstr "Қисми диск барои насбкунии худроҳандозӣ:"
+
+#. Type: select
+#. Description
+#: ../elilo-installer.templates:1001
+msgid ""
+"Partitions currently available in your system are listed. Please choose the "
+"one you want elilo to use to boot your new system."
+msgstr ""
+"Қисмҳои диске, ки дар айни ҳол дастрасанд, дар системаи шумо номбар карда "
+"шудаанд. Лутфан, якеро интихоб кунед, ки elilo барои роҳандозии системаи "
+"нави шумо истифода барад."
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:2001
+msgid "No boot partitions detected"
+msgstr "Ягон қисми диски роҳандозӣ ёфт нашуд"
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:2001
+msgid ""
+"There were no suitable partitions found for elilo to use.  Elilo needs a "
+"partition with a FAT file system, and the boot flag set."
+msgstr ""
+"Барои elilo ягон қисми диски мувофиқ ёфт нашуд.  Ба elilo қисмбандии дорои "
+"системаи файлии FAT ва байрақчаи фаъоли роҳандозӣ лозим аст."
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../elilo-installer.templates:3001
+msgid "Install the elilo boot loader on a hard disk"
+msgstr "Насб кардани худроҳандозии elilo ба диски сахт"
+
+#. Type: text
+#. Description
+#: ../elilo-installer.templates:4001
+msgid "Installing the ELILO package"
+msgstr "Насбкунии бастаи ELILO"
+
+#. Type: text
+#. Description
+#: ../elilo-installer.templates:5001
+msgid "Running ELILO for ${bootdev}"
+msgstr "ELILO барои ${bootdev} иҷро шуда истодааст"
+
+#. Type: boolean
+#. Description
+#: ../elilo-installer.templates:6001
+msgid "ELILO installation failed.  Continue anyway?"
+msgstr ""
+"Насбкунии ELILO бо нокомӣ дучор шудааст. Шумо мехоҳед, ки ба ҳар ҳол идома "
+"диҳед?"
+
+#. Type: boolean
+#. Description
+#: ../elilo-installer.templates:6001
+msgid ""
+"The elilo package failed to install into /target/.  Installing ELILO as a "
+"boot loader is a required step.  The install problem might however be "
+"unrelated to ELILO, so continuing the installation may be possible."
+msgstr ""
+"Бастаи elilo ба /target/ насб карда нашуд.  Насбкунии ELILO ҳамчун "
+"худроҳандозӣ қадами тавсияшуда мебошад.  Аммо, мушкилии насбкунӣ метавонад "
+"ба ELILO алоқаманд набошад, барои ҳамин идомадиҳии насбкунӣ имконпазир аст."
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:7001
+msgid "ELILO installation failed"
+msgstr "Насбкунии ELILO ба анҷом нарасид"
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:7001
+msgid "Running \"/usr/sbin/elilo\" failed with error code \"${ERRCODE}\"."
+msgstr ""
+"Иҷроиши \"/usr/sbin/elilo\" бо рамзи хатогии \"${ERRCODE}\" бо нокомӣ дучор "
+"шудааст."

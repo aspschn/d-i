@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+exec kbd-chooser

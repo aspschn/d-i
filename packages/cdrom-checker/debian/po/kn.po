@@ -1,0 +1,200 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+# Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2012-01-24 19:34+0530\n"
+"Last-Translator: Prabodh C P <prabodh@fsmk.org>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:1001
+msgid "Check CD-ROM integrity?"
+msgstr "ಸಿ ಡಿ ರೊಮ್ ನ  ಸಮಗ್ರತೆಯನ್ನು ಪರಿಶೀಲಿಸಿ?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:1001
+msgid "Warning: this check depends on your hardware and may take some time."
+msgstr ""
+"ಎಚ್ಚರಿಕೆ: ಈ ಪರೀಶೀಲನೆಯು ನಿಮ್ಮ ಯಂತ್ರಾಂಶವನ್ನು ಅವಲಂಬಿಸಿರುತ್ತದೆ ಮತ್ತು ಕೆಲ ಕಾಲ "
+"ತೆಗೆದುಕೊಳ್ಳಬಹುದು."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:2001
+msgid "Insert a Debian CD-ROM"
+msgstr "ಡೆಬಿಯನ್ ಸಿ ಡಿ ರೊಮ್ ಅನ್ನು ತುರುಕಿ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:2001
+msgid ""
+"Please insert one of the official Debian CD-ROMs into the drive before "
+"continuing."
+msgstr ""
+"ದಯಮಾಡಿ ಮುಂದುವರೆಯುವ ಮುನ್ನ ಯಾವುದಾದರೊಂದು ಅಧಿಕೃತ ಡೆಬಿಯನ್ ಗಣಕಮುದ್ರಿಕೆಯನ್ನು ಡ್ರೈವಿನೊಳಗೆ "
+"ಹಾಕಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:3001
+msgid "Failed to mount CD-ROM"
+msgstr "ಸಿ ಡಿ ರೊಮ್ ಅನ್ನು  ಆರೋಹಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:3001
+msgid ""
+"The CD-ROM ${CDROM} could not be mounted correctly. Please check the media "
+"and cables, and try it again."
+msgstr ""
+"${CDROM} ಗಣಕಮುದ್ರಿಕೆಯನ್ನು ಸರಿಯಾಗಿ ಏರಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ದಯಮಾಡಿ ಮಾಧ್ಯಮ ಹಾಗು "
+"ಕೇಬಲ್ಲುಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ ಮತ್ತು ಮರುಪ್ರಯತ್ನಿಸಿ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:4001
+msgid "No valid Debian CD-ROM"
+msgstr "ಮಾನ್ಯವಾದ  ಡೆಬಿಯನ್ ಸಿಡಿ ರಾಂ ಕಂಡುಬಂದಿಲ್ಲ‌."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:4001
+msgid ""
+"The CD-ROM you have inserted is not a valid Debian CD-ROM. Please change the "
+"disk."
+msgstr ""
+"ನೀವು ಹಾಕಿದ ಗಣಕಮುದ್ರಿಕೆಯು ಡೆಬಿಯನ್ನಿನ ಅಧಿಕೃತ ಗಣಕಮುದ್ರಿಕೆಯಲ್ಲ. ದಯಮಾಡಿ ಡಿಸ್ಕನ್ನು "
+"ಬದಲಾಯಿಸಿ."
+
+#. Type: error
+#. Description
+#. TRANSLATORS: MD5 is a file name, don't translate it.
+#. :sl3:
+#: ../cdrom-checker.templates:5001
+msgid "Failed to open checksum file"
+msgstr "checksum ಕಡತವನ್ನು ತೆರೆಯುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ "
+
+#. Type: error
+#. Description
+#. TRANSLATORS: MD5 is a file name, don't translate it.
+#. :sl3:
+#: ../cdrom-checker.templates:5001
+msgid ""
+"Opening the MD5 file on the CD-ROM failed. This file contains the checksums "
+"of the files located on the CD-ROM."
+msgstr ""
+"ಗಣಕಮುದ್ರಿಕೆಯಲ್ಲಿನ MD5 ಕಡತವನ್ನು ತೆರೆಯುವಲ್ಲಿ ವಿಫಲವಾಗಿದೆ. ಈ ಕಡತವು ಗಣಕಮುದ್ರಿಕೆಯ ಮೇಲಿನ "
+"ಕಡತಗಳ ಪರೀಕ್ಷಣಾಮೊತ್ತವನ್ನು ಹೊಂದಿದೆ."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:6001
+msgid "Integrity test successful"
+msgstr "ಸಮಗ್ರತಾ ಪರೀಕ್ಷೆ ಯಶಸ್ವಿಗೊಂಡಿದೆ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:6001
+msgid "The CD-ROM integrity test was successful. The CD-ROM is valid."
+msgstr "ಗಣಕಮುದ್ರಿಕೆಯ ಸಮಗ್ರತೆಯ ಪರೀಕ್ಷೆ ಯಶಸ್ವಿಯಾಗಿದೆ. ಗಣಕಮುದ್ರಿಕೆಯ ಸರಿಯಾಗಿದೆ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:7001
+msgid "Integrity test failed"
+msgstr "ಸಮಗ್ರತಾ ಪರೀಕ್ಷೆಯು ವಿಫಲಗೊಂಡಿದೆ."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:7001
+msgid ""
+"The ${FILE} file failed the MD5 checksum verification. Your CD-ROM or this "
+"file may have been corrupted."
+msgstr ""
+"${FILE} ಕಡತವು MD5 ಪರೀಕ್ಷಣಾಮೊತ್ತ ಪರಿಶೀಲನೆಯಲ್ಲಿ ವಿಫಲವಾಗಿದೆ. ನಿಮ್ಮ ಗಣಕಮುದ್ರಿಕೆ ಅಥವಾ "
+"ಈ ಕಡತವು ಹಾಳಾಗಿರಬಹುದು."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:8001
+msgid "Check the integrity of another CD-ROM?"
+msgstr "ಬೇರೊಂದು ಅಡಕ ತಟ್ಟೆಯ ಸಮಗ್ರತೆಯನ್ನು ಪರೀಕ್ಷಿಸುವುದೇ?"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:9001
+msgid "Insert Debian boot CD-ROM"
+msgstr "ಡೆಬಿಯನ್ ಸಿ ಡಿ ರೊಮ್ ಅನ್ನು ತುರುಕಿ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:9001
+msgid ""
+"Please make sure you have inserted the Debian boot CD-ROM  to continue with "
+"the installation."
+msgstr ""
+"ದಯಮಾಡಿ ಅನುಸ್ಥಾಪನೆಯನ್ನು ಮುಂದುವರೆಸಲು ನೀವು ಡೆಬಿಯನ್ ಬೂಟ್ ಗಣಕಮುದ್ರಿಕೆಯನ್ನು ಹಾಕಿರುವಿರಾ "
+"ಎಂಬುದನ್ನು ಖಾತ್ರಿಪಡಿಸಿ."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:10001
+msgid "Checking CD-ROM integrity"
+msgstr "ಸಿ ಡಿ ರೊಮ್ ನ  ಸಮಗ್ರತೆಯನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:11001
+msgid "Checking file: ${FILE}"
+msgstr "ಕಡತವನ್ನು :${FILE} ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. Translators: keep it under 65 columns
+#. :sl2:
+#: ../cdrom-checker.templates:12001
+msgid "Check the CD-ROM(s) integrity"
+msgstr "ಅಡಕ ತಟ್ಟೆಯ ಸಮಗ್ರತೆಯನ್ನು ಪರೀಕ್ಷಿಸಿ"

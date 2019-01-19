@@ -1,0 +1,182 @@
+#!/bin/sh
+set -e
+
+. /usr/share/debconf/confmodule
+
+TEMPLATE_ROOT=network-console
+
+KEY_FILE=/etc/ssh/ssh_host_rsa_key
+ARCHDETECT="$(archdetect)"
+
+if [ ! -f $KEY_FILE ]; then
+	db_progress START 0 1 $TEMPLATE_ROOT/key
+	ssh-keygen -b 2048 -t rsa -N '' -f $KEY_FILE -q
+	db_progress STOP
+fi
+
+db_get $TEMPLATE_ROOT/password
+INST_PWD="$RET"
+
+db_get $TEMPLATE_ROOT/authorized_keys_url
+
+AUTHORIZED_KEYS_URL="$RET"
+AUTHORIZED_KEYS_DIRECTORY="/.ssh"
+AUTHORIZED_KEYS_FILE="$AUTHORIZED_KEYS_DIRECTORY/authorized_keys"
+
+if [ -n "$AUTHORIZED_KEYS_URL" ]; then
+	if [ ! -f "$AUTHORIZED_KEYS_FILE" ]; then
+		[ -d "$AUTHORIZED_KEYS_DIRECTORY" ] || \
+		    mkdir "$AUTHORIZED_KEYS_DIRECTORY"
+		chmod 0700 "$AUTHORIZED_KEYS_DIRECTORY"
+		if ! wget -q "$AUTHORIZED_KEYS_URL" -O "$AUTHORIZED_KEYS_FILE"; then
+			db_subst $TEMPLATE_ROOT/authorized_keys_fetch_failure \
+			    LOCATION "$AUTHORIZED_KEYS_URL"
+			db_input critical $TEMPLATE_ROOT/authorized_keys_fetch_failure \
+			    || true
+			db_go
+			exit 1
+		fi
+		chmod 0644 "$AUTHORIZED_KEYS_FILE" || true
+	fi
+fi
+
+while [ ! -f "$AUTHORIZED_KEYS_FILE" ] && [ -z "$PASSWORD" ]; do
+	db_input critical $TEMPLATE_ROOT/password || true
+	COMPARE_PW=''
+	db_input high $TEMPLATE_ROOT/password-again && COMPARE_PW=1 || true
+	db_go
+
+	db_get $TEMPLATE_ROOT/password
+	INST_PW="$RET"
+	if [ -z "$INST_PW" ]; then
+		db_input critical $TEMPLATE_ROOT/password-empty
+		continue
+	fi
+	db_get $TEMPLATE_ROOT/password-again
+	if [ "$COMPARE_PW" ] && [ "$INST_PW" != "$RET" ]; then
+		db_input critical $TEMPLATE_ROOT/password-mismatch
+		continue
+	fi
+	PASSWORD=$INST_PW
+
+	db_set $TEMPLATE_ROOT/password ""
+	db_set $TEMPLATE_ROOT/password-again ""
+	db_fset $TEMPLATE_ROOT/password seen false
+	db_fset $TEMPLATE_ROOT/password-again seen false
+done
+
+echo "installer:$(gen-crypt $PASSWORD):1:0:99999:7:::" >> /etc/shadow
+
+grep -qs ^nogroup: /etc/group || echo "nogroup:*:65534:" >> /etc/group
+grep -qs ^sshd: /etc/passwd || \
+	echo "sshd:*:100:65534::/run/sshd:/bin/false" >> /etc/passwd
+mkdir -p /run/sshd
+chmod 0755 /run/sshd
+
+KEY_FINGERPRINT=$(ssh-keygen -l -f $KEY_FILE | cut -f2 -d ' ')
+
+/usr/sbin/sshd
+
+# Queue installation of ssh to make sure we can log in after reboot
+apt-install openssh-server || true
+
+case "$(udpkg --print-os)" in
+	linux)
+		IPADDRS=$(ip addr | grep '^[[:space:]]*inet6\? ' | grep -v -e "127\.0\." -e "::1" | \
+			 sed 's/.*inet6\? \([a-f0-9.:]*\).*/\1/')
+		;;
+	kfreebsd)
+		IPADDRS=$(ifconfig| grep '^[[:space:]]*inet6\? ' | grep -v -e "127\.0\." -e "::1" | \
+			 sed 's/.*inet6\? \([a-f0-9.:]*\).*/\1/')
+		;;
+	hurd)
+		IPADDRS=$(fsysopts /servers/socket/2 | sed 's/ /\n/g' | sed -n 's/--address6\?=\([a-f0-9.:]*\).*/\1/p')
+		;;
+	*)
+		IPADDRS="TODO"
+		;;
+esac
+
+IPADDR=$(echo $IPADDRS | sed 's/ .*//')
+
+db_subst $TEMPLATE_ROOT/start ip $IPADDR
+db_subst $TEMPLATE_ROOT/start ips $IPADDRS
+db_subst $TEMPLATE_ROOT/start fingerprint $KEY_FINGERPRINT
+case "$ARCHDETECT" in
+    arm*/ixp4xx)
+	modprobe ixp4xx-beeper || true
+	if [ -e /sys/class/leds/nslu2:green:ready/brightness ]; then
+		echo 1 > /sys/class/leds/nslu2:green:ready/brightness
+	fi
+	beep -e /dev/input/event0 -f 220 -l 500 -d 500 -r 3 || true
+	;;
+    arm*/iop32x)
+	machine=$(grep "^Hardware" /proc/cpuinfo | sed 's/Hardware\s*:\s*//')
+	case "$machine" in
+		"Thecus N2100")
+			beep -e /dev/input/event0 -f 220 -l 500 -d 500 -r 3 || true
+		;;
+	esac
+	;;
+    arm*/kirkwood)
+	# QNAP devices
+	if type qcommand >/dev/null 2>&1; then
+		qcommand statusled greenon
+		qcommand buzzer short
+	fi
+	# LaCie Network Space v2 (and parents) and d2 Network v2
+	for led_dev in ns_v2 d2net_v2; do
+		if [ -e /sys/class/leds/$led_dev:blue:sata/brightness ]; then
+			echo 0 > /sys/class/leds/$led_dev:blue:sata/brightness
+		fi
+		if [ -e /sys/class/leds/$led_dev:red:fail/brightness ]; then
+			echo 255 > /sys/class/leds/$led_dev:red:fail/brightness
+		fi
+	done
+	# LaCie 2Big Network v2
+	if [ -e /sys/class/leds/net2big-v2:red:power/brightness ]; then
+		echo 255 > /sys/class/leds/net2big-v2:red:power/brightness
+	fi
+	# LaCie 5Big Network v2
+	if [ -e /sys/class/leds/net5big-v2:red:power/brightness ]; then
+		echo 255 > /sys/class/leds/net5big-v2:red:power/brightness
+	fi
+	# Buffalo Linkstation LS-CHLv2/LS-XHL
+	if [ -e /sys/class/leds/lsxl:blue:power/trigger ]; then
+		echo none > /sys/class/leds/lsxl:blue:power/trigger
+	fi
+	if [ -e /sys/class/leds/lsxl:red:alarm/brightness ]; then
+		echo 255 > /sys/class/leds/lsxl:red:alarm/brightness
+	fi
+	;;
+    arm*/orion5x)
+	# Buffalo devices
+	if type micro_evtd.command >/dev/null 2>&1; then
+		micro_evtd.command init
+	fi
+	# QNAP devices
+	if type qcommand >/dev/null 2>&1; then
+		qcommand statusled greenon
+		qcommand buzzer short
+	fi
+	# HP mv2120
+	if [ -e /sys/class/leds/mv2120:blue:health/trigger ]; then
+		echo none > /sys/class/leds/mv2120:blue:health/trigger
+	fi
+	if [ -e /sys/class/leds/mv2120:blue:health ]; then
+		echo 1 > /sys/class/leds/mv2120:blue:health/brightness
+	fi
+	;;
+    armhf/generic)
+	# Seagate Personal Cloud (Cumulus)
+	if [ -e /sys/devices/platform/gpio-leds/leds/cumulus:red:sata0/brightness ]; then
+		echo 0 > /sys/devices/platform/gpio-leds/leds/cumulus:red:sata0/brightness
+	fi
+	# Seagate NAS (Dart)
+	if [ -e /sys/devices/platform/gpio-leds/leds/dart:red:power/brightness ]; then
+		echo 0 > /sys/devices/platform/gpio-leds/leds/dart:red:power/brightness
+	fi
+	;;
+esac
+db_input critical $TEMPLATE_ROOT/start || true
+db_go

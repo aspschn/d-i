@@ -1,0 +1,138 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of id.po to Bahasa Indonesia
+# Indonesian messages for debian-installer.
+#
+#
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Translators:
+#
+# Debian Indonesian L10N Team <debian-l10n-id@gurame.fisika.ui.ac.id>, 2004.
+# * Parlin Imanuel Toh (parlin_i@yahoo.com), 2004-2005.
+# * I Gede Wijaya S (gwijayas@yahoo.com), 2004.
+# * Arief S F (arief@gurame.fisika.ui.ac.id), 2004-2007.
+# * Setyo Nugroho (setyo@gmx.net), 2004.
+# Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>, 2008-2011.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2002.
+#   Andhika Padmawan <andhika.padmawan@gmail.com>, 2010,2011.
+#   Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>, 2004-2006.
+#   Erwid M Jadied <jadied@gmail.com>, 2008.
+#   Free Software Foundation, Inc., 2002,2004
+#   Translations from KDE:
+#   Ahmad Sofyan <fade@2bl.ac>, 2001.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer (level1)\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2012-02-13 03:15+0700\n"
+"Last-Translator: Mahyuddin Susanto <udienz@ubuntu.com>\n"
+"Language-Team: Debian Indonesia Translators <debian-l10n-indonesian@lists."
+"debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Main menu item
+#. Keep translations below 55 ccolumns (1 character=1 column
+#. except for wide character languages such as Chinese/Japanese/Korean)
+#. A bit of context for translators :
+#. PReP stands for PowerPC Reference Platform, is an acronym, and should not be
+#. translated. The PReP boot partition is a partition of type 0x41, which is
+#. used by PReP boxes and IBM CHRP boxes to boot yaboot or the kernel from.
+#: ../prep-installer.templates:1001
+msgid "Install the kernel on a PReP boot partition"
+msgstr "Memasang kernel pada partisi boot PReP"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Type: text
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:2001 ../prep-installer.templates:7001
+msgid "Copying the kernel to the PReP boot partition"
+msgstr "Menyalin kernel ke partisi boot PReP"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:3001
+msgid "Looking for PReP boot partitions"
+msgstr "Mencari partisi boot PReP"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:4001
+msgid "No PReP boot partitions"
+msgstr "Partisi boot PReP tidak ditemukan"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:4001
+msgid ""
+"No PReP boot partitions were found. You must create a PReP boot partition "
+"within the first 8MB of your hard disk."
+msgstr ""
+"Tak ditemukan partisi boot PReP. Anda harus membuat partisi boot PReP dalam "
+"8MB pertama ruang hard disk anda."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:5001
+msgid "Looking for the root partition"
+msgstr "Mencari partisi root"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:6001
+msgid "No root partition found"
+msgstr "Partisi root tidak ditemukan"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:6001
+msgid ""
+"No partition is mounted as your new root partition. You must mount a root "
+"partition first."
+msgstr ""
+"Belum ada partisi yang dikaitkan sebagai partisi root yang baru. Anda harus "
+"mengaitkan partisi root terlebih dahulu."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:8001
+msgid "Successfully installed PReP"
+msgstr "Berhasil memasang PReP"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:8001
+msgid "The kernel was properly copied to the PReP boot partition."
+msgstr "Kernel telah disalin dengan baik ke partisi boot PReP."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../prep-installer.templates:8001
+msgid "The new system is now ready to boot."
+msgstr "Sistem baru siap melakukan booting."

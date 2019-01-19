@@ -1,0 +1,21 @@
+#! /usr/bin/make -f
+%:
+	dh $@ --with autoreconf
+
+export CFLAGS=-W -Wall -g
+
+autoreconf:
+	autoreconf -f -i
+	# autoreconf will not do this for us, since this package does not use
+	# automake.
+	cp -f /usr/share/misc/config.guess /usr/share/misc/config.sub ./
+
+override_dh_autoreconf:
+	dh_autoreconf debian/rules -- autoreconf
+
+override_dh_auto_configure:
+	dh_auto_configure -- --without-depends --without-debug --without-l10n \
+		--without-remove --with-admindir=/var/lib/dpkg
+
+override_dh_auto_build:
+	$(MAKE) small

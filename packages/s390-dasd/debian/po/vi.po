@@ -1,0 +1,169 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Vietnamese translation for Debian Installer Level 1.
+# Copyright © 2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Jean Christophe André <progfou@gmail.com>
+# Vũ Quang Trung <vu.quang.trung@auf.org>
+# Trịnh Minh Thành <tmthanh@yahoo.com>
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2010
+# Hai-Nam Nguyen <hainam@jcisio.com>, 2012
+#
+# Translations from iso-codes:
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
+# Copyright © 2009 Free Software Foundation, Inc.
+# Nguyễn Hùng Vũ <vuhung16@bigfoot.com>, 2001.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer Level 1\n"
+"Report-Msgid-Bugs-To: s390-dasd@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-28 22:01+0000\n"
+"PO-Revision-Date: 2015-03-05 11:15+0100\n"
+"Last-Translator: Hai-Nam Nguyen <hainam@jcisio.com>\n"
+"Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Type: select
+#. Choices
+#. :sl5:
+#. TRANSLATORS, please translate "Finish" the same way you translate it in
+#. the 'Select "Finish" at the bottom of the list when you are done' string
+#: ../s390-dasd.templates:1001
+msgid "Finish"
+msgstr "Kết thúc"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Available devices:"
+msgstr "Các thiết bị có sẵn:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid ""
+"The following direct access storage devices (DASD) are available. Please "
+"select each device you want to use one at a time."
+msgstr ""
+"Những thiết bị cất giữ truy cập trực tiếp (DASD) sau là sẵn sàng. Hãy chọn "
+"mỗi thiết bị cần dùng từng cái một."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Select \"Finish\" at the bottom of the list when you are done."
+msgstr "Hãy chọn « Kết thúc » tại cuối danh sách khi bạn đã làm xong."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid "Choose device:"
+msgstr "Chọn thiết bị:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid ""
+"Please choose a device. You have to specify the complete device number, "
+"including leading zeros."
+msgstr ""
+"Hãy chọn một thiết bị. Phải ghi rõ toàn bộ số thiết bị, gồm con số không đi "
+"trước."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "Invalid device"
+msgstr "Thiết bị không hợp lệ"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "An invalid device number has been chosen."
+msgstr "Một số thiết bị không hợp lệ đã được chọn."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001 ../s390-dasd.templates:5001
+msgid "Format the device?"
+msgstr "Định dạng thiết bị ?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid "The DASD ${device} is already low-level formatted."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid ""
+"Please choose whether you want to format again and remove any data on the "
+"DASD. Note that formatting a DASD might take a long time."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:5001
+#, fuzzy
+msgid ""
+"The DASD ${device} is not low-level formatted. DASD devices must be "
+"formatted before you can create partitions."
+msgstr ""
+"Bộ cài đặt không thể phát hiện nếu thiết bị ${device} đã được định dạng "
+"chưa. Cần phải định dạng mỗi thiết bị trước khi tạo phân vùng."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+#, fuzzy
+msgid "The DASD ${device} is in use"
+msgstr "Thiết bị đang được dùng"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid ""
+"Could not low-level format the DASD ${device} because the DASD is in use.  "
+"For example, the DASD could be a member of a mapped device in an LVM volume "
+"group."
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:7001
+msgid "Formatting ${device}..."
+msgstr "Đang định dạng ${device}..."
+
+#. Type: text
+#. Description
+#. Main menu item. Keep translations below 55 columns
+#. :sl5:
+#: ../s390-dasd.templates:8001
+msgid "Configure direct access storage devices (DASD)"
+msgstr "Cấu hình thiết bị cất giữ truy cập trực tiếp (DASD)"

@@ -1,0 +1,207 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of nb.po to Norwegian Bokmål
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Knut Yrvin <knuty@skolelinux.no>, 2004.
+# Klaus Ade Johnstad <klaus@skolelinux.no>, 2004.
+# Axel Bojer <axelb@skolelinux.no>, 2004.
+# Bjørn Steensrud <bjornst@powertech.no>, 2004-2007.
+# Hans Fredrik Nordhaug <hans@nordhaug.priv.no>, 2005, 2007-2015.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2002
+#   Axel Bojer <axelb@skolelinux.no>, 2004.
+#   Bjørn Steensrud <bjornst@powertech.no>, 2006.
+#   Free Software Foundation, Inc., 2002,2004
+#   Hans Fredrik Nordhaug <hans@nordhaug.priv.no>, 2007-2015.
+#   Håvard Korsvoll <korsvoll@skulelinux.no>, 2004.
+#   Knut Yrvin <knuty@skolelinux.no>, 2004.
+#   Tobias Toedter <t.toedter@gmx.net>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Translations from KDE:
+#   Rune Nordvik <rune@linuxnorge.com>, 2001
+#   Kjartan Maraas <kmaraas@broadpark.no>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nb\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2015-10-30 11:02+0100\n"
+"Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
+"Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "Sett opp nettverksblokkenheten"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "Handling for NBD-oppsett:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "${NUMBER} enheter er tilkoblet."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "Tjener for nettverksblokkenhet:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"Skriv inn vertsnavnet eller IP-adressen til systemet som kjører NBD-tjeneren."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "Navn på NBD-eksport"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"Skriv inn NBD-eksportnavnet som trengs for å få tilgang til NBD-tjeneren. "
+"Navnet må samsvare med en eksisterende eksport på tjeneren."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "Node for nettverksblokkenhet:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "Velg NBD-enhetsnoden som du vil koble til eller fra."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "Klarte ikke å koble til NBD-tjeneren"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"Klarte ikke koble til NBD-tjeneren. Kontroller at verten og eksportnavnet du "
+"skrev inn er riktig, at NBD-tjener-prosessen kjører på den verten, at "
+"nettverket er riktig satt opp, og prøv på nytt."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "Ingen flere noder for nettverksblokkenhet ledig"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"Enten er alle tilgjengelige noder for NBD-enheter er i bruk, eller noe gikk "
+"galt med gjenkjenning av nodene."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"Ingen flere noder for NBD-enheter kan settes opp før en konfigurert en er "
+"frakoblet."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "Ingen tilkoblede noder for nettverksblokkenhet ble funnet"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"Det er for øyeblikket ingen noder for nettverksblokkenheter som er koblet "
+"til en tjener. Du kan derfor ikke koble fra noe av dem."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "Koble til en nettverksblokkenhet"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "Koble fra en nettverksblokkenhet"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "Avslutt og gå tilbake til partisjoneringsprogrammet"

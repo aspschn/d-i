@@ -1,0 +1,14 @@
+Source: partman-nbd
+Section: debian-installer
+Priority: optional
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Wouter Verhelst <wouter@debian.org>, Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9), po-debconf, dh-di
+Vcs-Git: https://salsa.debian.org/installer-team/partman-nbd.git
+Vcs-Browser: https://salsa.debian.org/installer-team/partman-nbd
+
+Package: partman-nbd
+Package-Type: udeb
+Architecture: all
+Depends: ${misc:Depends}, partman-base, nbd-client-udeb, nbd-modules, configured-network, di-utils (>= 1.106)
+Description: Adds support for NBD to partman

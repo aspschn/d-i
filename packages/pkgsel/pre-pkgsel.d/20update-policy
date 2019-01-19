@@ -1,0 +1,41 @@
+#!/bin/sh
+
+set -e
+. /usr/share/debconf/confmodule
+
+DISTRIB_ID=$(. /target/etc/os-release; echo $ID)
+DISTRIB_ID_LIKE=$(. /target/etc/os-release; echo $ID_LIKE)
+
+if [ "$DISTRIB_ID" = "ubuntu" ] || [ "$DISTRIB_ID_LIKE" = "ubuntu" ]; then
+	# Ubuntu hack to ask this at high priority on server or netboot
+	# installations, medium otherwise
+	if [ ! -d /cdrom/.disk ] || grep -iq server /cdrom/.disk/info; then
+		update_priority=high
+	else
+		update_priority=medium
+	fi
+else
+	# In Debian, by default, we don't display it but enable unattended-upgrades
+	update_priority=medium
+fi
+
+db_input "$update_priority" pkgsel/update-policy || true
+db_go || true
+db_get pkgsel/update-policy
+if [ "$RET" = none ]; then
+	# We might pull in unattended-upgrades, which defaults to doing security
+	# updates automatically. Seed it to have auto updates disabled so that if
+	# we *do* pull it in, it won't break stuff.
+	echo 'unattended-upgrades unattended-upgrades/enable_auto_updates boolean false' | \
+		log-output -t pkgsel chroot /target debconf-set-selections || \
+		true
+elif [ "$RET" = unattended-upgrades ]; then
+	# unattended-upgrades defaults to true on installation if otherwise untouched.
+	apt-install unattended-upgrades || true
+elif [ "$RET" = landscape ]; then
+	# This is Ubuntu-specific but does no harm here
+	echo 'landscape-client landscape-client/register_system boolean true' | \
+		log-output -t pkgsel chroot /target debconf-set-selections || \
+		true
+	apt-install landscape-client || true
+fi

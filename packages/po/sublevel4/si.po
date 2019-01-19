@@ -1,0 +1,712 @@
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+# Danishka Navin <danishka@gmail.com>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-02-28 10:16+0530\n"
+"Last-Translator: Danishka Navin <danishka@gmail.com>\n"
+"Language-Team: Sinhala <info@hanthana.org>\n"
+"Language: si\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "අතත්‍ය තැටිය %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "අතත්‍ය තැටිය %s, කොටස #%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - POSIX.1e පිවිසුම් පාලන ලැයිස්තුවට සහය දක්වයි"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr "කෙටිනම් - පැරණි MS-DOS 8.3 ආකාරයේ ගොනු නාම පමණක් යොදන්න"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"ඔබේ නව පද්ධතිය ආරම්භ කිරීම සඳහා, ආරම්භක කොටසක් තුළ ගබඩා කර ඇති ආරම්භක පූරකය ලෙස "
+"හැඳින්වෙන්නක් භාවිත වේ. ඔබට එම කොටස සඳහා ආරම්භකලහැකි ධජය යෙදීමට සිදුවේ. එවන් කොටස් ප්‍රධාන "
+"කොටස්කිරීම් මෙනුවේ \"${BOOTABLE}\" ලෙස ලකුණු කෙරේ."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! දෝශයක්: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "KEYSTROKES:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "'%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "මෙම සහාය පණිවුඩය පෙන්වන්න"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "පෙර ගැටළුවට ආපසු යන්න"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "හිස් යෙදුමක් තෝරන්න"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "පොරොත්තු: '%c' සහාය සඳහා, පෙරනිමිය=%d> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "පොරොත්තුව: '%c' උදව් සඳහා> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "පොරොත්තුව: '%c' උදව් සඳහා, පෙරනිමි=%s> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[ඉදිරියට යාමට enter යොදන්න]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "භාවිත කරන අතුරුමුහුණත"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"සැකසුම් සඳහා debconf හවුල් කරගන්නා සෑම පැකේජයක්ම පොදු පෙනුමක් දරයි. කරුණාකර ඒවා භාවිත "
+"කරන පරිශීලක අතුරුමුහුණත් වර්‍ගය තෝරන්න."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "නොමැත"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "'නොමැත' ඔබෙන් කිසිඳු ගැටළුවක් නොවිමසයි."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "පෙළ"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "\"පෙළ\" යනු සාම්ප්‍රදායික පැතලි පෙළ අතුරුමුහුණතකි."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "Newt"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "'Newt' යනු සම්පූර්ණ තිර, අනුලකුණු පාදක අතුරුමුහුණතකි."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "GTK"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr "'GTK' යනු ඕනෑම චිත්‍රණ පාරිසරිකයක භාවිත කළ හැකි චිත්‍රණ අතුරුමුහුණතකි."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "/target/proc රැඳවීම අසාර්ථක විය"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "proc ගොනු පද්ධතිය /target/proc හි රැඳවීම අසාර්ථක විය."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "අවවාදයයි: ඔබේ පද්ධතිය නැවතආරම්භ කල නොහැකිවිය හැක!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "ස්වයංක්‍රීය ආරම්භය සඳහා ෆර්ම්වෙයා විචල්‍ය සකසමින්"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"ඔබේ පද්ධතිය ස්වයංක්‍රීයව ඇරඹීම සඳහා Gensi ස්ථීරාංගයය තුළ ඇතැම් විචල්‍යයන් සැකසීමට සිදුවේ. "
+"ස්ථාපනය අවසානයේදී, පද්ධතිය නැවත ආරම්භ වනු ඇත. ස්ථීරාංග පොරොත්තුවේදී, ස්වයංක්‍රීය-ආරම්භය සක්‍රීය "
+"කිරීම සඳහා පහත ස්ථීරාංග විචල්‍යයන් සකසන්න:"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"ඔබට මෙය කිරීමට සිදුවන්නේ එක් වරක් පමණි. ඉන් පසු, ඔබේ අභිනවයෙන් ස්ථාපිත පද්ධතිය වෙත පිවිසීම සඳහා "
+"පද්ධතිය නැවත ආරම්භ කිරීමට \"boot\" විධානය යොදන්න."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr "අමතරව, ඔබට ස්ථීරාංග පොරොත්තුවේදී ඇතුලත් කිරීම මගින් කර්නලය ශ්‍රමිකව ආරම්ණ කිරීමටද හැක:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"ඔබේ පද්ධතිය ස්වයංක්‍රීයව ඇරඹීම සඳහා CFE ස්ථීරාංගයය තුළ ඇතැම් විචල්‍යයන් සැකසීමට සිදුවේ. ස්ථාපනය "
+"අවසානයේදී, පද්ධතිය නැවත ආරම්භ වනු ඇත. ස්ථීරාංග පොරොත්තුවේදී, ආරම්භය වඩා සරල කිරීම සඳහා "
+"පහත ස්ථීරාංග විචල්‍යයන් සකසන්න:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"ඔබට මෙය සිදුකිරීමට සිදුවන්නේ එක්වරක් පමණි. මෙය ඔබට CFE පොරොත්තුවේදී \"boot_debian\" විධානය "
+"නිකුත් කිරීමට ඉඩ දෙයි."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"ඔබ සෑම ආරම්භයකදීම ස්වයංක්‍රීය-ආරම්භය ලැබීමට කැමති නම්, පෙර ඒවාට අමතරව පහත විචල්‍යයන්ද "
+"සැකසිය හැක:"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "GRUB ස්ථාපනය කරන්නද?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB 2 යනු GNU GRUB හී ඊලඟ පරම්පරාවයි, එය i386/amd64 PCහි බොහෝවිට භාවිත කරන ආරම්භක "
+"පූරකයයි. දැන් එය ${ARCH} සඳහාද පවතී."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"එය සතුව සිත්ගන්නාසුළු නව විශේෂාංග පවතින නමුත් එය තවම මෙම සැලසුම සඳහා පරීක්‍ෂණ මට්ටමේ පවතින "
+"මෘදුකාංගයකි. ඔබ එය ස්ථාපනය කිරීමට තෝරාගත්තේ නම්. ඔබ එය කඩාවැටීම ගැන සූදානම්ව සිටිය යුතු හා "
+"ආරම්භ කිරීමට නොහැකි වීමට ඉඩ ඇති ඔබේ පද්ධතිය නැවත සකසා ගැනීමටද දැනුමක් තිබිය යුතුයි. වෘත්තීයමය "
+"තත්වයන් සඳහා මෙය භාවිත නොකිරීම වඩාත් සුදුසුයි."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "Arcboot ආරම්භකපූරකය දෘඩතැටියේ ස්ථාපනය කරන්න"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "ආරම්භක පූරක ස්ථාපනය සඳහා තැටිය:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"Arcboot ස්ථාපනය විය යුත්තේ SGI තැටි ලේබලයක් සහිත වෙළුම් ශීර්ෂයක් ඇති තැටියකයි. සාමාන්‍යෙන් /"
+"dev/sda භාවිත වේ. කරුණාකර arcboot දැමීමට ඇවැසි උපකරණයේ නම ඇතුළත් කරන්න."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "Arcboot සකසා ඇත්තේ ශ්‍රේණිගත කොන්සෝලය භාවිත කිරීමටයි"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"Arcboot සකසා ඇත්තේ කොන්සෝලය ලෙස ${PORT} ශ්‍රේණිගත පේනුව භාවිත කිරීමටයි. එම ශ්‍රේණිගත "
+"පේනුවේ වේගය ${SPEED} ලෙස සකසා ඇත."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "Arcboot ස්ථාපනය අසාර්ථකයි. කෙසේ හෝ ඉදිරියට යන්නද?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"/target/ වෙත arcboot පැකේජය ස්ථාපනය අසාර්ථක විය. ආරම්භක පූරකයක් ලෙස Arcboot ස්ථාපනය "
+"අත්‍යාවශ්‍ය පියවරකි. ඇතැම්විට මෙම ගැටළුව Arcboot, හට අදාල නොවිය හැක. එමනිසා ඇතැම්විට "
+"ස්ථාපනය ඉදිරියට යා හැකිවිය හැක."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "Arcboot සඳහා PROM විචල්‍යන් සකසමින්"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"මෙම පරිගණකයේ ප්‍රථම Linux ස්ථාපනය මෙය නම් හෝ දෘඩ තැටි නැවත කොටස්කරණයට ලක්ව ඇත්නම්, "
+"පද්ධතිය නැවත සාමාන්‍ය පරිදි ආරම්භ කිරීමට පෙර PROM හි ඇතැම් විචල්‍යයන් සැකසීමට සිදුවේ."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"මෙම ස්ථාපන අදියරෙන් පසු, පද්ධතිය නැවත ආරම්භ වනු ඇත. එයින් පසු,  \"සේවා සඳහා නවතන්න\" "
+"අභිප්‍රේතයෙන් විධාන දර්ශකය ඇතුළත් කර, පහත විධාන ඇතුළත් කරන්න."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "ජාල වැලකුම් උපකරණය සකසන්න"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD සැකසුම් ක්‍රියාව:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "දැනට උපකරණ ${NUMBER} ගණනක් සබඳ කර ඇත."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "ජාල වැලකුම් සේවාදායකය:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "කරුණාකර nbd-සේවාදායකය ධාවනය වන ධාරක නාමය හෝ IP ලිපින ඇතුළත් කරන්න."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "ජාල වැලකුම් උපකරණ නෝඩය:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "කරුණාකර ඔබ සබඳ හෝ විසන්ධි කිරීමට බලාපොරොත්තු වන NBD උපකරණ තෝරන්න."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD සේවාදායකයට සම්බන්ධවීම අසාර්ථකයි"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+#| msgid ""
+#| "Connecting to the nbd-server failed. Please ensure that the host and the "
+#| "port or the name which you entered are correct, that the nbd-server "
+#| "process is running on that host and port (or using that name), that the "
+#| "network is configured correctly, and retry."
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd-server සබඳවීම අසාර්ථක විය. කරුණාකර ඔබ ඇතුළත් කල ධාරකය හා පේනුව නිවැරදිද, nbd-"
+"server සැකසීම එම ධාරයක හා පේනුවේ ධාවනය වේද, එම ජාලය නිසි පරිදි සකසා ඇද්ද යන්න තහවුරු "
+"කරගෙන, යළි උත්සාහ කරන්න. "
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ජාල වැලකුම් උපකරණ කිසිවක් ඉතිරිව නැත"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"සියළු NBD උපකරණ නෝඩ භාවිතයේ පවතී නොහොත් උපකරණ නෝඩ හඳුනාගැනීමේ ගැටළුවක් පැන නැගී ඇත."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr "සැකසූ එකක් විසන්ධි කරන තෙක් තවත් කිසිඳු NBD උපකරණ නෝඩයක් සැකසිය නොහැක."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "කිසිඳු සබඳ කල ජාල වැලකුම් උපකරණ නෝඩයම් හමු නොවිනි"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"කිසිඳු සේවාදායකයකට සබඳ කල ජාල වැලකුම් උපකරණ නෝඩයක් නොමැත. තිබියහොත්, ඔබට ඒවා කිසිවක් "
+"විසන්ධි කල නොහැක."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "ජාල වැලකුම් උපකරණයක් සබඳ කරන්න"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "ජාල වැලකුම් උපකරණයක් විසන්ධි කරන්න"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "අවසන්කර කොටස්කාරයකට නැවත පැමිණෙන්න"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "පද්ධතිය පණගැන්වීමට ෆ්ලෑශ්මතකය සකසමින්"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "පද්ධතිය ආරම්භකලහැකි ලෙස සකසමින්"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "පද්ධතිය සූදානම් කරමින්..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "ෆ්ලෑශ් මතකයට කර්නලය ලියමින්..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "ආරම්භක පිළිබිඹුව තැටිය මත සකසමින්..."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "පද්ධතිය ඇරඹිය-හැකි තත්වයට හරවන්න"

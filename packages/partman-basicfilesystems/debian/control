@@ -1,0 +1,17 @@
+Source: partman-basicfilesystems
+Section: debian-installer
+Priority: standard
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Anton Zinoviev <zinoviev@debian.org>,
+           Colin Watson <cjwatson@debian.org>,
+           Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/partman-basicfilesystems
+Vcs-Git: https://salsa.debian.org/installer-team/partman-basicfilesystems.git
+
+Package: partman-basicfilesystems
+Package-Type: udeb
+Architecture: any
+Depends: ${misc:Depends}, e2fsprogs-udeb, ext2-modules, fat-modules, dosfstools-udeb [linux-any]
+Provides: partman-filesystem
+Description: Add to partman support for ext2, linux-swap, fat16, fat32 and ntfs

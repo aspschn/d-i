@@ -1,0 +1,56 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+# Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2011-12-17 11:35+0530\n"
+"Last-Translator: Prabodh C P <prabodh@fsmk.org>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-cdrom.templates:1001
+msgid "Load installer components from CD"
+msgstr "ಸ್ಥಾಪಕ ಭಾಗಗಳನ್ನು ಸೀ ಡೀ ಮುಖಾಂತರ ತುಂಬಿರಿ "
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-retriever.templates:1001
+msgid "Failed to copy file from CD-ROM. Retry?"
+msgstr "ಸಿಡಿ-ರಾಂ ನಿಂದ ಕಡತವನ್ನು ನಕಲುಮಾಡುವುದು ವಿಫಲವಾಗಿದೆ. ಪುನಃ ಪ್ರಯತ್ನಿಸಬೇಕೆ?"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../cdrom-retriever.templates:1001
+msgid ""
+"There was a problem reading data from the CD-ROM. Please make sure it is in "
+"the drive. If retrying does not work, you should check the integrity of your "
+"CD-ROM."
+msgstr ""
+"ಅಡಕ ತಟ್ಟೆಯಿಂದ ಮಾಹಿತಿಯನ್ನು ಓದುವಲ್ಲಿ ತೊಂದರೆಯುಂಟಾಗಿದೆ. ದಯಮಾಡಿ ಅದು ಡ್ರೈವಿನಲ್ಲಿದೆಯೆಂದು "
+"ಖಾತರಿಪಡಿಸಿ. ಮರುಪ್ರಯತ್ನ ಕಾರ್ಯ ಮಾಡದೇ ಹೋದರೆ, ನಿಮ್ಮ ಅಡಕ ತಟ್ಟೆಯ ಸಮಗ್ರತೆಯನ್ನು ಪರೀಕ್ಷಿಸಿ."

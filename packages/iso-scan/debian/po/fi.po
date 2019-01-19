@@ -1,0 +1,326 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Finnish messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Thanks to laatu@lokalisointi.org.
+#
+#
+# Tommi Vainikainen <thv+debian@iki.fi>, 2003 - 2004.
+# Tapio Lehtonen <tale@debian.org>, 2004 - 2006.
+# Esko Arajärvi <edu@iki.fi>, 2007 - 2008, 2009, 2010.
+# Timo Jyrinki <timo.jyrinki@iki.fi>, 2012.
+# Juhani Numminen <juhaninumminen0@gmail.com>, 2018.
+# Arto Keiski <arto.keiski@iki.fi>, 2018.
+#
+# Translations from iso-codes:
+# Copyright (C) 2007 Tobias Toedter <t.toedter@gmx.net>.
+#     Translations taken from ICU SVN on 2007-09-09
+# Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2005-2010.
+# Copyright (C) 2005-2006, 2008-2010 Free Software Foundation, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2018-08-14 21:36+0000\n"
+"Last-Translator: Juhani Numminen <juhaninumminen0@gmail.com>\n"
+"Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "Etsi kiintolevyiltä asentimen ISO-levyotos"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "Etsitään kiintolevyjä tunnistamalla laitteistoa"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "Etsitään levyiltä asentimen ISO-levyotosta"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "Liitetään ${DRIVE}..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "Luetaan levyä ${DRIVE} (hakemistossa ${DIRECTORY})..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "Etsitäänkö kaikilta levyiltä asentimen ISO-levyotosta?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"Asentimen ISO-levyotosta ei löytynyt tavallisimmista kansioista. On "
+"mahdollista, että kattavampi etsintä löytää ISO-levyotoksen, mutta haku voi "
+"kestää pitkään."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "Asentimen ISO-levyotoksia ei löytynyt"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"Asentimen-ISO-levyotoksia ei löytynyt. Jos olet noutanut ISO-levyotoksen, se "
+"voi olla väärin nimetty (ei pääty ”.iso”) tai voi olla "
+"tiedostojärjestelmällä, jota ei voitu liittää."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"Sinun täytyy joko käyttää vaihtoehtoista asennustapaa, valita toinen laite "
+"levykuvan etsimistä varten tai yrittää uudelleen korjattuasi levykuvan."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"Yksi tai useampia mahdollisia ISO-levyotoksia löytyi, mutta niitä ei voitu "
+"liittää. Noutamasi ISO-levyotos voi olla viallinen."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "Asentimen ISO-levyotosta ei löytynyt"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"Yksi tai useampia mahdollisia ISO-levyotoksia löytyi, ne eivät vaikuttaneet "
+"kelvollisilta asentimen-ISO-levyotoksilta."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "Jakelun ${SUITE} asentimen ISO-levyotos liitetty onnistuneesti"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"ISO-tiedosto ${FILENAME} laitteella ${DEVICE} (${SUITE}) otetaan käyttöön "
+"asennus-ISO-levyotoksena."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "Kaikki havaitut laitteet"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "Määritä laite käsin"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "Laite tai osio, jolta asennus-ISO-levykuv(i)a etsitään:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"Voit valita laitteen, määrittää käsin havaitsemattoman laitteen tai tehdä "
+"laitteiden haku uudelleen (hyödyllinen hitaille USB-laitteille)."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "Laitteen nimi:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "Täysi haku"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "Käytettävät ISO-tiedosto:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"Yksi tai useampia ISO-tiedostoja on havaittu valitu(i)lla laitteilla. "
+"Valitse käytettävä tiedosto, tai suorita täysi haku."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr "Onko ISO-tiedosto ${FILENAME} oikea levykuva asennukseen?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"ISO-tiedosto ${FILENAME} laitteella ${DEVICE} (${SUITE}, koodi ${CODENAME}, "
+"itsensä kuvaamana '${DESCRIPTION}') otetaan käyttöön asennus-ISO-"
+"levyotoksena."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"Jos useampi ISO-tiedosto sijaitsee samalla asennuslevyllä, voit valita mitä "
+"niistä käytetään."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr "Kopioidaanko ISO-levykuva keskusmuistiin ennen sen liittämistä?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr ""
+"Keskusmuistia on riittävästi ISO-levykuvan kopioimiseksi keskusmuistiin."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+"Tämä valinta mahdollistaa ISO-levykuvan sisältävän levyn uudelleenkäytön. "
+"Jos et kopioi levykuvaa muistiin, levyä käytetään aktiivisesti ISO-levykuvaa "
+"käyttäessä, eikä kyseistä levyä voida osioida asennusohjelman toimesta."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+"Huomaa kuitenkin, että jos ylikirjoitat levyn, jolla ISO levykuva sijaitsee, "
+"sinun ei tule käynnistää konetta uudelleen ennenkuin asennus on valmis, "
+"sillä et voi käynnistää asennusta enää uudelleen, koska se on poistunut "
+"kovalevyltä ja keskusmuistista."
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "Lataa asennusohjelman osat ISO-levyotokselta"

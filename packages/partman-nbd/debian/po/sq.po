@@ -1,0 +1,200 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Albanian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+#
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004
+#   Elian Myftiu <elian.myftiu@gmail.com>, 2004,2006.
+#
+# Eva Vranici <evavranici@gmail.com>, 2017.
+# Silva Arapi <silva.arapi@gmail.com>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2017-09-04 19:14+0200\n"
+"Last-Translator: Silva Arapi <silva.arapi@gmail.com>\n"
+"Language-Team: Albanian <debian-l10n-albanian@lists.debian.org>\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
+"4;\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "Konfiguro Pajisjen e Bllokimit të Rrjetit"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "Konfigurimi i NBD:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "Aktualisht janë të lidhura ${NUMBER} pajisje."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "Server i Pajisjes të Bllokimit të Rrjetit:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"Të lutem shkruaj emrin e mikpritësit ose adresën IP të sistemit i cili po "
+"punon me serverin nbd."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "Emri për eksportin NBD"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"Të lutem shkruaj emrin e eksportit NBD që nevojitet për të aksesuar serverin-"
+"nbd. Emri i zgjedhur këtu duhet të përshtatet me një eksport ekzistues në "
+"server."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "Pajisja e Bllokimit të Rrjetit nyja e pajisjes:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"Të lutem zgjidh nyjen e pajisjes NBD që dëshirosh të lidhësh ose shkëputësh."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "Dështoi lidhja e serverit NBD"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"Lidhja e serverit-nbd dështoi. Të lutem sigurohu që mikpritësi dhe emri i "
+"eksportit që ke zgjedhur janë të sakta, që proçesi i serverit-nbd po punon "
+"në ate mikpritës, që rrjeti është konfiguruar saktë, dhe riprovo."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "Nuk kane ngelur më nyje të Pajisjes të Bllokimit të Rrjetit"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"Ose të gjitha nyjet në gjendje të pajisjes NBD janë në përdorim ose diçka "
+"nuk shkoi mirë me ndalimin e nyjeve të pajisjes."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"Nuk mund të konfigurohen më nyje te pajisjes NBD deri sa të shkëputet një e "
+"konfiguruar."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "Nuk u gjetën nyje të lidhura të Pajisjes të Bllokimit të Rrjetit"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"Aktualisht nuk ka nyje të Pajisjes të Bllokimt të Rrjetit të lidhura në "
+"asnjë server. Si e tillë ti nuk mund të shkëputësh asnjë prej tyre."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "Lidhu me një Pajisje të bllokimit të Rrjetit"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "Shkëputu nga një Pajisje e bllokimit të Rrjetit"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "Përfundo dhe kthehu tek menuja e ndarjes?"

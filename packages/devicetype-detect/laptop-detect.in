@@ -1,0 +1,60 @@
+#! /bin/sh -e
+# 
+# Copyright 2011 Emmet Hikory <persia@ubuntu.com>
+#
+# With thanks to Thom May and Otavio Salvador for a well-documented API
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+usage () {
+    echo "Usage: $0 [-h|--help|-v|--verbose]"
+    echo ""
+    echo "  -h | --help      print this help"
+    echo "  -v | --verbose   be verbose (messages go to STDERR)"
+    echo "  -V | --version   print version information"
+    echo
+    echo "Possible return values:"
+    echo "0 most likely running on a laptop"
+    echo "1 most likely NOT running on a laptop"
+    echo "2 called with unknown option, -j, --help, -V, or --version"
+}
+
+VERBOSE=""
+if [ "$1" != "" ]; then
+    case "$1" in
+        "-h" | "--help")
+            usage
+            exit 2
+            ;;
+        "-V" | "--version")
+            echo "Version: @VERSION@"
+            exit 2
+            ;;
+        "-v" | "--verbose")
+            VERBOSE="Limited Explanations"
+            ;;
+    esac
+fi
+
+if [ -x /usr/sbin/devicetype-detect ]; then
+    case "$(/usr/sbin/devicetype-detect)" in
+        "desktop")
+            [ -z "$VERBOSE" ] || echo "We're not on a laptop (no relevant hint found)" >&2
+            exit 1
+        *)
+            [ -z "$VERBOSE" ] || echo "We're a laptop (relevant hint found)" >&2
+            exit 0
+else
+    echo "This wrapper requires devicetype-detect installed" >2
+    exit 2
+fi

@@ -1,0 +1,190 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@debian.org>, 2004.
+# Priti Patil <prithisd@gmail.com>, 2007.
+# Sampada Nakhare, 2007.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2010.
+# localuser <sampadanakhare@gmail.com>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2015-05-04 09:32+0530\n"
+"Last-Translator: Sampada <sampadanakhare@gmail.com>\n"
+"Language-Team: CDAC_DI\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "नेटवर्क ब्लॉक उपकरण संरचित करा"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD संरचना कृतीः"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "सध्या ${NUMBER} उपकरणे जोडलेली आहेत."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "नेटवर्क ब्लॉक उपकरण परिसेवक:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "nbd-परिसेवक चालवत असलेल्या प्रणालीचे यजमाननाम वा आयपी पत्ता द्या."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "नेटवर्क ब्लॉक उपकरणाचे उपकरण नोड:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "तुम्ही जोडणी करू वा तोडू इच्छित असलेले NBD उपकरण नोड निवडा."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD परिसेवकाशी जोडणी करणे असफल"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd-परिसेवकाशी जोडणी असफल. कृपया तुम्ही प्रविष्ट केलेला यजमान व पोर्ट बरोबर आहे, त्या "
+"यजमानावर व पोर्टवर nbd-परिसेवक क्रिया चालू आहे (वा ते नाव वापरत आहे), नेटवर्क "
+"योग्यरित्या संरचित आहे याची खातरजमा करा, व पुन्हा प्रयत्न करा."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "आणखी कोणतेही नेटवर्क ब्लॉक उपकरण नोड बाकी नाहीत"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"एकतर सर्व उपलब्ध NBD उपकरण नोड वापरात आहेत किंवा उपकरण नोड्स शोधताना काहीतरी चूक "
+"झाली."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"संरचित केलेला NBD उपकरण नोड डिस्कनेक्ट केल्याशिवाय आणखी कोणतेही संरचित करता येणार नाहीत."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "कोणतेही जोडलेले नेटवर्क ब्लॉक उपकरण सापडले नाही\t"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"सध्या कोणतेही नेटवर्क ब्लॉक उपकरण नोड कोणत्याही परिसेवकाला जोडलेले नाहीत. त्यामुळे, तुम्ही "
+"त्यांपैकी कोणताही डिस्कनेक्ट करू शकत नाही."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "नेटवर्क ब्लॉक उपकरणाची जोडणी करा"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "नेटवर्क ब्लॉक उपकरण डिस्कनेक्ट करा"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "संपवून विभाजनाच्या मेन्यूकडे परत जा"

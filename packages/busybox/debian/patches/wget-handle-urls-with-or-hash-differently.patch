@@ -1,0 +1,54 @@
+From: Denys Vlasenko <vda.linux@googlemail.com>
+Date: Tue, 24 Apr 2018 13:35:32 +0200
+Subject: wget: handle URLs with @ or hash differently
+Origin: Origin: https://git.busybox.net/busybox/commit/?id=df45eb49acaeb64574e14f78c6bb5b95f1157058
+
+If server replied with 302 and
+
+Location: ?foo
+
+we used to underflow the allocated space while trying to form the "@foo"
+filename. Switch to forming "foo" filename.
+
+function                                             old     new   delta
+packed_usage                                       32795   32799      +4
+parse_url                                            387     352     -35
+------------------------------------------------------------------------------
+(add/remove: 0/0 grow/shrink: 1/1 up/down: 4/-35)             Total: -31 bytes
+
+Signed-off-by: Denys Vlasenko <vda.linux@googlemail.com>
+---
+ networking/wget.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+--- a/networking/wget.c
++++ b/networking/wget.c
+@@ -530,7 +530,7 @@ static void parse_url(const char *src_ur
+ 	//   and saves 'index.html?var=a%2Fb' (we save 'b')
+ 	// wget 'http://busybox.net?login=john@doe':
+ 	//   request: 'GET /?login=john@doe HTTP/1.0'
+-	//   saves: 'index.html?login=john@doe' (we save '?login=john@doe')
++	//   saves: 'index.html?login=john@doe' (we save 'login=john@doe')
+ 	// wget 'http://busybox.net#test/test':
+ 	//   request: 'GET / HTTP/1.0'
+ 	//   saves: 'index.html' (we save 'test')
+@@ -544,13 +544,13 @@ static void parse_url(const char *src_ur
+ 	} else if (*sp == '/') {
+ 		*sp = '\0';
+ 		h->path = sp + 1;
+-	} else { // '#' or '?'
++	} else {
++		// sp points to '#' or '?'
++		// Note:
+ 		// http://busybox.net?login=john@doe is a valid URL
+-		// memmove converts to:
+-		// http:/busybox.nett?login=john@doe...
+-		memmove(h->host - 1, h->host, sp - h->host);
+-		h->host--;
+-		sp[-1] = '\0';
++		// (without '/' between ".net" and "?"),
++		// can't store NUL at sp[-1] - this destroys hostname.
++		*sp++ = '\0';
+ 		h->path = sp;
+ 	}
+ 

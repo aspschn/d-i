@@ -1,0 +1,326 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+# Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-21 10:05+0100\n"
+"PO-Revision-Date: 2013-09-30 16:17+0530\n"
+"Last-Translator: Prabodh C P (FSMK Localisation Team) <prabodh@fsmk.org>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:1001
+msgid "Installing quik"
+msgstr "quik ಇನ್ಸ್ಟಾಲ್ ಆಗುತ್ತಿದೆ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:2001
+msgid "Installing quik boot loader"
+msgstr "quik ಬೂಟ್ ಲೋಡರ್  ಇನ್ಸ್ಟಾಲ್ ಆಗುತ್ತಿದೆ"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:3001
+msgid "quik installation failed. Continue anyway?"
+msgstr "quik ಇನ್ಸ್ಟಾಲ್ ಲೇಶನ್  ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮುಂದುವರೆಯಬೇಕೇ?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:3001
+msgid ""
+"The quik package failed to install into /target/.  Installing quik as a boot "
+"loader is a required step.  The install problem might however be unrelated "
+"to quik, so continuing the installation may be possible."
+msgstr ""
+"/target/ ನೊಳಗೆ ಇನ್ಸ್ಟಾಲ್ ಆಗಲು  quik ಪ್ಯಾಕೇಜ್ ವಿಫಲವಾಗಿದೆ. quik ಅನ್ನು ಒಂದು ಬೂಟ್ ಲೋಡರ್ "
+"ಆಗಿ ಇನ್ಸ್ಟಾಲ್ ಮಾಡುವುದು ಒಂದು ಅವಶ್ಯಕ ಹೆಜ್ಜೆಯಾಗಿದೆ. ಇನ್ಸ್ಟಾಲ್ ಸಮಸ್ಯೆಯು  quik ಗೆ  "
+"ಸಂಬಂಧಪಡದೆ ಇರಬಹುದು. ಆದ್ದರಿಂದ ಇನ್ಸ್ಟಾಲೇಶನ್ ಅನ್ನು ಮುಂದುವರೆಸುವುದುಸಾಧ್ಯವಿದೆ."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:4001
+msgid "Checking partitions"
+msgstr "ವಿಭಜನೆಗಳ ತಪಾಸಣೆ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:5001
+msgid "No root partition found"
+msgstr "ಯವುದೇ ಮೂಲ ವಿಭಜನೆಯು ಸಿಗಲಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:5001
+msgid ""
+"No partition is mounted as your new root partition. You must mount a root "
+"partition first."
+msgstr ""
+"ಯವುದೇ ವಿಭಜನೆಯು ಮೂಲ ವಿಭಜನೆಯಾಗಿ ಮೌನ್ಟ್ ಆಗಿಲ್ಲಾ.ನೀವು ಮೊದಲು ಮೂಲ ವಿಭಜನೆಯಾಗಿ ಮೌನ್ಟ್ "
+"ಮಾಡಬೇಕು"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:6001
+msgid "Boot partition not on first disk"
+msgstr "ಮೊದಲ ಡಿಸ್ಕಲ್ಲಿ ಬೂಟ್ ವಿಭಜನೆಯು ಇಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:6001
+msgid ""
+"The quik boot loader requires partition that holds /boot to be on the first "
+"disk. Please return to the partitioning step."
+msgstr ""
+"quik ಬೂಟ್ ಲೋಡರ್  ಗೆ  /boot ಹಿಡಿಥದ  ವಿಭಜನೆಯ  ಮೊದಲ ಡಿಸ್ಕ್ ಮೆಲೆ ಇರುವುದು ಅವಶ್ಯಕಡಯಮಾಡಿ "
+"ಹಿಂದಿನ ವಿಭಜನೆಯ ಹಂತಕ್ಕೆ ಹಿಂತಿರುಗಿ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:7001
+msgid "Boot partition must be on ext2"
+msgstr "ಬೂಟ್ ವಿಭಜನೆಯು  ext2 ರ ಮೇಲಿರಬೇಕು"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:7001
+msgid ""
+"The quik boot loader requires the partition that holds /boot to be formatted "
+"using the ext2 file system. Please return to the partitioning step."
+msgstr ""
+"quik ಬೂಟ್ ಲೋಡರ್  ಗೆ  /boot ಹಿಡಿಥದ  ವಿಭಜನೆ  ext2 ಕಡತ ವ್ಯವಸ್ಥೆ  ದಿಂದ ಫಾರ್ಮ್ಯಾಟ್    "
+"ಆಗಿರುವುದು ಅವಶ್ಯಕ"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001 ../quik-installer.templates:9001
+msgid "Do you really want to install the quik boot loader?"
+msgstr "ನಿಮಗೆ  quik ಬೂಟ್ ಲೋಡರ್  ಇನ್ಸ್ಟಾಲ್  ಮಾಡುವ ಉದ್ದೆಶ ಇದೆಯೆ ?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001
+msgid ""
+"You have chosen to install the quik boot loader. You will not be able to "
+"boot any other operating system from this disk. Furthermore, your machine "
+"may not be bootable in any manner after this process completes. If you are "
+"left with a blank screen, you may need to try a cold boot and hold down "
+"Command-Option-P-R."
+msgstr ""
+"ನೀವು quik ಬೂಟ್ ಲೋಡರ್   ಇನ್ಸ್ಟಾಲ್  ಮಾಡಬೇಕೆಂದು ನಿರ್ದರಿಸಿದ್ದೀರನೀವು ಯಾವುದೇ ಆಪರೇಟಿಂಗ್  "
+"ಸಿಸ್ಟಮ್ಮಗೆ  ಈ ಡಿಸ್ಕಿನಿಂದ ಬೂಟ್ ಮಾಡಲು ಸಾದ್ದ್ಯವಿಲ್ಲಇದಾದಮೇಲೆ ನಿಮ್ಮ ಯಂತ್ರ ಯವುದೇ ರೀತಿ ಇಂದ "
+"ಬೂಟ್ ಆಗುವ ಸಾದ್ದ್ಯತೆ ಇಲ್ಲ ನಿಮಗೆ ಖಾಲಿ ಸ್ಕ್ರೀನ್ ಕಾಣಿಸಿಕೊಂಡರೆ  cold ಬೂಟ್ ಮಾಡಿ ಮತ್ತು  "
+"Command-Option-P-R ಹಿಡಿದುಕೊಳ್ಳಿ"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001 ../quik-installer.templates:9001
+msgid "Be aware that this code has not been thoroughly tested."
+msgstr "ನಿಮ್ಮ ಗಮನದಲ್ಲಿರಲಿ ಈ ನಿಬಮ್ದನವನ್ನು ಪೂರ್ಣವಾಗಿ ಪರೀಕ್ಶಿಸಲಾಗಲಿಲ್ಲ "
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:9001
+msgid ""
+"You have chosen to install the quik boot loader. You will not be able to "
+"boot any other operating system from this disk. Furthermore, your machine "
+"may not be bootable in any manner after this process completes."
+msgstr ""
+"ನೀವು quik ಬೂಟ್ ಲೋಡರ್   ಇನ್ಸ್ಟಾಲ್  ಮಾಡಬೇಕೆಂದು ನಿರ್ದರಿಸಿದ್ದೀರನೀವು ಯಾವುದೇ  ಆಪರೇಟಿಂಗ್  "
+"ಸಿಸ್ಟಮ್ಮಗೆ  ಈ ಡಿಸ್ಕಿನಿಂದ ಬೂಟ್ ಮಾಡಲು ಸಾದ್ದ್ಯವಿಲ್ಲಇದಾದಮೇಲೆ ನಿಮ್ಮ ಯಂತ್ರ ಯವುದೇ ರೀತಿ ಇಂದ "
+"ಬೂಟ್ ಆಗುವ ಸಾದ್ದ್ಯತೆ ಇಲ್ಲ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:10001
+msgid "Creating quik configuration"
+msgstr "quik ವಿನ್ಯಸದ ನಿರ್ಮಣ "
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001
+msgid "Failed to create quik configuration"
+msgstr "quik ಕಾನ್ಫಿಗರೇಶನ್ ನಿರ್ಮಾಣ ವಿಫಲವಾಗಿದೆ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001
+msgid "The creation of the main quik configuration file failed."
+msgstr "quik ಕಾನ್ಫಿಗರೇಶನ್ ಕಡತದ ನಿರ್ಮಾಣ ವಿಫಲವಾಗಿದೆ"
+
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#  templates.pot (PACKAGE VERSION)#-#-#-#-
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001 ../quik-installer.templates:13001
+#: ../quik-installer.templates:17001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"/var/log/syslogನಲ್ಲಿ ಅಥವಾ ಅವಾಸ್ತವಿಕ ಆಜ್ಞಾಫಲಕ ೪ ರಲ್ಲಿ ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಪರೀಕ್ಷಿಸಿ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001 ../quik-installer.templates:17001
+msgid "Warning: Your system may be unbootable!"
+msgstr "ಏಚ್ಚರಿಕೆ: ನಿಮ್ಮ  ವ್ಯವಸ್ಥೆಯು ಬೂಟ್ ಮಾಡಲು ಸಾದ್ಯವಾಗದಿರಬಹುದು"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:12001
+msgid "Installing quik into bootstrap partition"
+msgstr "ಬೂಟ್ ಸ್ಟ್ರಾಪ್ ವಿಭಜನೆಗೆ  quik ಅನ್ನು ಇನ್ಸ್ಟಾಲ್ ಮಾಡಲಾಗುತ್ತಿದೆ..."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "Failed to install boot loader"
+msgstr "ಬೂಟ್ ಲೋಡರ್  ಇನ್ಸ್ಟಾಲ್  ವಿಫಲವಾಗಿದೆ. "
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "The installation of the quik boot loader failed."
+msgstr "quik ಬೂಟ್ ಲೋಡರ್   ಇನ್ಸ್ಟಾಲೇಶನ್  ವಿಫಲವಾಗಿದೆ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "Warning: your system may be unbootable!"
+msgstr "ಎಚ್ಚರಿಕೆ: ನಿಮ್ಮ ಯಂತ್ರ  ಬೂಟ್ ಆಗುವ ಸಾದ್ದ್ಯತೆ ಇಲ್ಲ ! "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:14001
+msgid "Setting up OpenFirmware"
+msgstr "OpenFirmware ಸಿದ್ದಗೊಳಿಸಲಾಗುತ್ತಿದೆ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:15001
+msgid "Unable to configure OpenFirmware"
+msgstr "OpenFirmware ವಿನ್ಯಾಸ  ಗೊಳಿಸಲು  ಸಾಧ್ಯವಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:15001
+msgid ""
+"Setting the OpenFirmware boot-device variable failed. You will have to "
+"configure OpenFirmware yourself to boot."
+msgstr ""
+"OpenFirmware ಬೂಟ್-ಯಂತ್ರ ಚರಗಳ  ಸ್ಥಿರವು  ವಿಫಲವಾಗಿದೆನೀವು ಬೂಟ್ ಮಾಡಲು  OpenFirmware ರ "
+"ವಿನ್ಯಸ ನೀವೇ ಮಾಡಬೇಕು"
+
+#. Type: error
+#. Description
+#. :sl4:
+#. This error may not be fatal, depending on the exact type of Mac.
+#: ../quik-installer.templates:16001
+msgid "Problem configuring OpenFirmware"
+msgstr "OpenFirmware ವಿನ್ಯಸದಲ್ಲಿ ಸಮಸ್ಯೆ "
+
+#. Type: error
+#. Description
+#. :sl4:
+#. This error may not be fatal, depending on the exact type of Mac.
+#: ../quik-installer.templates:16001
+msgid ""
+"Setting the OpenFirmware boot-command variable failed. You may have "
+"intermittent boot failures."
+msgstr ""
+"OpenFirmware ಬೂಟ್-ಸೂಚನೆ ಚರಗಳ  ಸ್ಥಿರವು  ವಿಫಲವಾಗಿದೆಆಗಾಗ  ಬೂಟ್ ವಿಫಲತೆಗಳು ಸಾಮಾನ್ಯ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:17001
+msgid "Failed to mount /target/proc"
+msgstr "/target/proc ಕಳಶವಾಗಿಸಲು ವಿಫಲವಾಗಿದೆ "
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:17001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "proc ಕಡತ ವ್ಯವಸ್ಥೆ ಯು /target/proc ಮೇಲೆ  ಕಳಶವಾಗಿಸಲು  ವಿಫಲವಾಗಿದೆ  "
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl4:
+#: ../quik-installer.templates:18001
+msgid "Install quik on a hard disk"
+msgstr "quik ಅನ್ನು ಹಾರ್ಡ್ ಡಿಸ್ಕ್ ಮೇಲೆ ಇನ್ಸ್ಟಾಲ್ ಮಾಡಿ"

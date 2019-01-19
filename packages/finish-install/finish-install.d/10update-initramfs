@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# If both cryptsetup and console-setup are installed, run
+# update-initramfs to make sure one can type the passphrase
+# (see #694156, workaround for #696773):
+/bin/in-target \
+    /bin/sh -c "dpkg-query -s cryptsetup >/dev/null 2>&1 && dpkg-query -s console-setup >/dev/null 2>&1"
+
+if [ $? = 0 ]; then
+    echo "Encrypted LVM detected, refreshing initramfs"
+    /bin/in-target update-initramfs -u -k all
+fi

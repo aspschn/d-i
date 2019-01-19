@@ -1,0 +1,988 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Lithuanian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Marius Gedminas <mgedmin@b4net.lt>, 2004.
+# Darius Skilinskas <darius10@takas.lt>, 2005.
+# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004...2010.
+# Translations from iso-codes:
+# Gintautas Miliauskas <gintas@akl.lt>, 2008.
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Translations from KDE:
+# - Ričardas Čepas <rch@richard.eu.org>
+# Free Software Foundation, Inc., 2000-2001, 2004
+# Gediminas Paulauskas <menesis@delfi.lt>, 2000-2001.
+# Alastair McKinstry <mckinstry@computer.org>, 2001,2002.
+# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004, 2006, 2008, 2009, 2010.
+# Rimas Kudelis <rq@akl.lt>, 2012, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-zfs@packages.debian.org\n"
+"POT-Creation-Date: 2013-05-22 22:05+0000\n"
+"PO-Revision-Date: 2017-11-26 20:23+0000\n"
+"Last-Translator: Rimas Kudelis <rq@akl.lt>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. File system name (untranslatable in many languages)
+#. Type: text
+#. Description
+#. :sl4:
+#. Short file system name (untranslatable in many languages)
+#. Type: text
+#. Description
+#. :sl4:
+#. keep it short (ideally a 3-letter acronym)
+#: ../partman-zfs.templates:1001 ../partman-zfs.templates:2001
+#: ../partman-zfs.templates:20001
+msgid "zfs"
+msgstr "zfs"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. File system name
+#: ../partman-zfs.templates:3001
+msgid "ZFS file system"
+msgstr "ZFS failų sistema"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:4001
+msgid "Separate /boot and /lib/modules mandatory for this ZFS configuration"
+msgstr "Šioje ZFS konfigūracijoje būtina atskirti „/boot“ ir „/lib/modules“"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:4001
+msgid ""
+"Your root file system is on a ZFS pool that uses more than one physical "
+"volume."
+msgstr ""
+"Jūsų šakninė failų sistema yra ZFS tomų grupėje (pool), apimančioje daugiau "
+"nei vieną fizinį tomą."
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:4001 ../partman-zfs.templates:5001
+msgid ""
+"The boot loader only supports this configuration for pools in Mirror or "
+"Striped modes, but not RAID-Z mode."
+msgstr ""
+"Paleidyklė šią konfigūraciją leidžia tik tomų grupėms, esančioms „Mirror“ ir "
+"„Striped“ veiksenose, bet ne „RAID-Z“ veiksenoje."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:4001
+msgid ""
+"Make sure /boot and /lib/modules are on a partition using a supported ZFS "
+"pool configuration, or a different file system such as UFS."
+msgstr ""
+"Įsitikinkite, jog „/boot“ ir „/lib/modules“ aplankai yra skaidinyje, "
+"naudojančiame palaikomą ZFS tomų grupės konfigūraciją, arba kitą failų "
+"sistemą, pavyzdžiui, UFS."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:5001
+msgid "Unsupported multiple volume ZFS for ${MNT}"
+msgstr "Skaidiniui „${MNT}“ naudojama nepalaikoma kelių tomų ZFS konfigūracija"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:5001
+msgid ""
+"Your ${MNT} partition is on a ZFS pool that uses more than one physical "
+"volume."
+msgstr ""
+"Jūsų skaidinys „${MNT}“ yra ZFS tomų grupėje (pool), apimančioje daugiau nei "
+"vieną fizinį tomą."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:5001
+msgid ""
+"Make sure ${MNT} is on a partition using a supported ZFS pool configuration, "
+"or a different file system such as UFS."
+msgstr ""
+"Įsitikinkite, jog „${MNT}“ skaidinys naudotų palaikomą ZFS tomų grupės "
+"konfigūraciją, arba kitą failų sistemą, pavyzdžiui, UFS."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:6001 ../partman-zfs.templates:7001
+msgid "Go back to the menu and correct this problem?"
+msgstr "Ar grįžti į meniu ir pataisyti šią problemą?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:6001
+msgid ""
+"You have configured one or more partitions with the ZFS file system. "
+"Although ZFS is supported on 32-bit i386, using it without special tuning "
+"may lead to performance or stability problems due to limitations of this "
+"architecture."
+msgstr ""
+"Vienam ar daugiau skaidinių yra parinkta ZFS failų sistema. Nors ZFS yra "
+"palaikoma 32 bitų „i386“ architektūros kompiuteriuose, dėl architektūros "
+"ribojimų šios failų sistemos naudojimas be papildomo tinkinimo gali sukelti "
+"našumo ar stabilumo problemų."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:6001
+msgid ""
+"You should either use the 64-bit (amd64) version of this installer (if your "
+"hardware supports this), or go back to the partitioning menu and configure "
+"the partitions to use another file system."
+msgstr ""
+"Turėtumėte arba naudoti 64 bitų („amd64“) įdiegiklį (jeigu šis kompiuteris "
+"tai palaiko), arba grįžti į disko skaidymo meniu ir skaidiniams parinkti "
+"kitą failų sistemą."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:7001
+msgid ""
+"You have configured one or more partitions with the ZFS file system. Using "
+"ZFS on a computer with less than 512 MB of memory may lead to stability "
+"problems and is not recommended."
+msgstr ""
+"Vienam ar daugiau skaidinių yra parinkta ZFS failų sistema. Naudoti ZFS "
+"kompiuteryje su 512MB ar mažiau darbinės atminties nepatartina, nes tai gali "
+"sukelti stabilumo problemų."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:7001
+msgid ""
+"You should go back to the partitioning menu and configure the partitions to "
+"use another file system."
+msgstr ""
+"Jums derėtų grįžti atgal į disko skaidymo meniu ir parinkti šiems "
+"skaidiniams kitą failų sistemą."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:8001
+msgid "Configure ZFS"
+msgstr "ZFS konfigūravimas"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. What is "in use" is a partition
+#: ../partman-zfs.templates:9001
+msgid "In use by ZFS pool ${VG}"
+msgstr "Naudojamas ZFS tomų grupėje „${VG}“"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinitive form
+#: ../partman-zfs.templates:10001
+msgid "Display configuration details"
+msgstr "Rodyti išsamesnę konfigūraciją"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinitive form
+#: ../partman-zfs.templates:11001
+msgid "Create ZFS pool"
+msgstr "Sukurti ZFS tomų grupę (pool)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinitive form
+#: ../partman-zfs.templates:12001
+msgid "Delete ZFS pool"
+msgstr "Pašalinti ZFS tomų grupę"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinitive form
+#: ../partman-zfs.templates:13001
+msgid "Create logical volume"
+msgstr "Sukurti loginį tomą (logical volume)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinitive form
+#: ../partman-zfs.templates:14001
+msgid "Create root file system"
+msgstr "Sukurti šakninę failų sistemą"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinitive form
+#: ../partman-zfs.templates:15001
+msgid "Delete logical volume"
+msgstr "Išmesti loginį tomą (logical volume)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinitive form
+#: ../partman-zfs.templates:16001
+msgid "Finish"
+msgstr "Baigti"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:17001
+msgid "Write the changes to disk and configure ZFS?"
+msgstr "Ar įrašyti pakeitimus į diską ir konfigūruoti ZFS?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:17001
+msgid ""
+"Before ZFS can be configured, the current partitioning scheme has to be "
+"written to disk. These changes cannot be undone."
+msgstr ""
+"Prieš konfigūruojant ZFS, į diską būtina įrašyti dabartinę disko skaidinių "
+"schemą. Šis pakeitimas negrįžtamas."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:17001
+msgid ""
+"After ZFS is configured, no additional changes to the partitioning scheme of "
+"disks containing physical volumes are allowed during the installation. "
+"Please decide if you are satisfied with the current partitioning scheme "
+"before continuing."
+msgstr ""
+"Užbaigus ZFS konfigūravimą, papildomi disko skaidinių pakeitimai diskuose, "
+"talpinančiuose fizinius tomus, nebeleistini. Prieš tęsdami, nuspręskite, ar "
+"esate patenkinti esama disko dalijimo skaidiniais schema."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:18001
+msgid "ZFS configuration failure"
+msgstr "ZFS konfigūravimo klaida"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:18001
+msgid "An error occurred while writing the changes to the disks."
+msgstr "Klaida įvyko rašant pakeitimus į diskus."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:18001
+msgid "ZFS configuration has been aborted."
+msgstr "ZFS konfigūravimas nutrauktas."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:19001
+msgid "physical volume for ZFS"
+msgstr "fizinis tomas skirtas ZFS"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:21001
+msgid "ZFS configuration action:"
+msgstr "ZFS konfigūravimo veiksmas:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:21001
+msgid "Summary of current ZFS configuration:"
+msgstr "Dabartinės ZFS konfigūracijos santrauka:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:21001
+msgid ""
+" Free physical volumes:  ${FREE_PVS}\n"
+" Used physical volumes:  ${USED_PVS}\n"
+" ZFS pools:              ${VGS}\n"
+" ZFS logical volumes:    ${LVS}\n"
+" ${BOOTFS}"
+msgstr ""
+" Tušti fiziniai tomai:     ${FREE_PVS}\n"
+" Naudojami fiziniai tomai: ${USED_PVS}\n"
+" ZFS tomų grupės (pools):  ${VGS}\n"
+" ZFS loginiai tomai:       ${LVS}\n"
+" ${BOOTFS}"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:22001
+msgid "Current ZFS configuration:"
+msgstr "Dabartinė ZFS konfigūracija:"
+
+#. Type: multiselect
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:23001
+msgid "Devices for the new ZFS pool:"
+msgstr "Įrenginiai naujai ZFS tomų grupei:"
+
+#. Type: multiselect
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:23001
+msgid "Please select devices for the new ZFS pool."
+msgstr "Pasirinkite įrenginius naujai ZFS tomų grupei."
+
+#. Type: multiselect
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:23001
+msgid "You can select one or more devices."
+msgstr "Galite pasirinkti vieną ar daugiau įrenginių."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:24001
+msgid "Multidisk mode for this ZFS pool:"
+msgstr "Diskų naudojimo būdas šioje ZFS tomų grupėje:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:24001
+msgid ""
+"Please choose the mode for multidisk operations for this ZFS pool:\n"
+" * Striped: similar to RAID 0 (default) - data is spread across the\n"
+"            physical volumes;\n"
+" * Mirror:  similar to RAID 1 - data is replicated to each physical\n"
+"            volume;\n"
+" * RAID-Z:  similar to RAID 5 or RAID 6 - some physical volumes\n"
+"            store parity bits and data is spread across others."
+msgstr ""
+"Pasirinkite į šią ZFS tomų grupę įtraukiamų diskų naudojimo būdą:\n"
+" * Striped: veiksena, panaši į RAID 0 (numatytoji) – duomenys\n"
+"            paskirstomi po fizinius tomus;\n"
+" * Mirror:  veiksena, panaši į RAID 1 – duomenys replikuojami\n"
+"            visuose fiziniuose tomuose;\n"
+" * RAID-Z:  veiksena, panaši į RAID 5 ir RAID 6 – dalyje fizinių\n"
+"            tomų laikomi lyginumo bitai, o duomenys\n"
+"            paskirstomi kituose tomuose."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:25001
+msgid "Parity level for RAID-Z:"
+msgstr "RAID-Z lyginumo lygis:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:25001
+msgid ""
+"Please choose the number of physical volumes that will be used to store "
+"parity bits."
+msgstr "Pasirinkite, keliuose fiziniuose tomuose bus rašomi lyginumo bitai."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:26001
+msgid "ZFS pool name:"
+msgstr "ZFS tomų grupės pavadinimas:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:26001
+msgid "Please enter the name you would like to use for the new ZFS pool."
+msgstr ""
+"Įveskite pavadinimą, kurį norėtumėte suteikti naujajai ZFS tomų grupei."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:27001
+msgid "No physical volumes selected"
+msgstr "Nepasirinkote nė vieno iš fizinių tomų (physical volume)"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:27001
+msgid ""
+"No physical volumes were selected. The creation of a new ZFS pool has been "
+"aborted."
+msgstr ""
+"Nepasirinkote nė vieno fizinio tomo. Naujos ZFS tomų grupės kūrimas "
+"atšauktas."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:28001
+msgid "No ZFS pool name"
+msgstr "Neįvestas ZFS tomų grupės pavadinimas"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:28001
+msgid "No name for the ZFS pool has been entered. Please enter a name."
+msgstr "Neįvestas šios ZFS tomų grupės pavadinimas. Įveskite pavadinimą."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:29001
+msgid "ZFS pool name already in use"
+msgstr "ZFS tomų grupės pavadinimas jau naudojamas"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:29001
+msgid ""
+"The selected ZFS pool name is already in use. Please choose a different name."
+msgstr ""
+"Pasirinktas ZFS tomų grupės pavadinimas jau naudojamas. Pasirinkite kitą "
+"pavadinimą."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:30001
+msgid "Error while creating ZFS pool"
+msgstr "Klaida kuriant ZFS tomų grupę"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:30001
+msgid "The ZFS pool ${VG} could not be created."
+msgstr "ZFS tomų grupės „${VG}“ sukurti nepavyko."
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:30001 ../partman-zfs.templates:41001
+#: ../partman-zfs.templates:45001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr ""
+"Detaliau žiūrėkite į /var/log/syslog arba ketvirtojoje virtualioje konsolėje."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:31001
+msgid "ZFS pool to delete:"
+msgstr "ZFS tomų grupė, kurią norite naikinti:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:31001
+msgid "Please select the ZFS pool you wish to delete."
+msgstr "Pasirinkite ZFS tomų grupę, kurią norite naikinti."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:32001
+msgid "No ZFS pool"
+msgstr "ZFS tomų grupių nėra"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:32001
+msgid "No ZFS pool has been found."
+msgstr "Nepavyko rasti nė vienos ZFS tomų grupės (pool)."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:32001
+msgid "The ZFS pool may have already been deleted."
+msgstr "Galbūt ZFS tomų grupė jau panaikinta."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:33001
+msgid "Really delete the ZFS pool?"
+msgstr "Ar tikrai naikinti šią ZFS tomų grupę?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:33001
+msgid "Please confirm the removal of the ZFS pool ${VG}."
+msgstr "Patvirtinkite, jog norite naikinti ZFS tomų grupę „${VG}“."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:34001
+msgid "Error while deleting ZFS pool"
+msgstr "Klaida naikinant ZFS tomų grupę"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:34001
+msgid ""
+"The selected ZFS pool could not be deleted. One or more logical volumes may "
+"currently be in use."
+msgstr ""
+"Pasirinktos ZFS tomų grupės panaikinti nepavyko. Galbūt dalis jos loginių "
+"tomų šiuo metu naudojami."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:35001
+msgid "No ZFS pool found"
+msgstr "Nerasta ZFS tomų grupė"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:35001
+msgid ""
+"No free ZFS pools were found for creating a new logical volume. Please "
+"create another ZFS pool, or free space in an existing ZFS pool."
+msgstr ""
+"Nepavyko rasti nė vienos laisvos ZFS tomų grupės (pool), kurioje būtų galima "
+"sukurti naują loginį tomą. Sukurkite naują ZFS tomų grupę, arba "
+"atlaisvinkite vietos jau egzistuojančioje."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:36001
+msgid "Logical volume name:"
+msgstr "Loginio tomo (Logical Volume) pavadinimas:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:36001
+msgid "Please enter the name you would like to use for the new logical volume."
+msgstr ""
+"Prašau įvesti pavadinimą, kurį norėtumėte naudoti naujam loginiam tomui "
+"(Logical Volume)."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:37001
+msgid "ZFS pool:"
+msgstr "ZFS tomų grupė:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:37001
+msgid ""
+"Please select the ZFS pool where the new logical volume should be created."
+msgstr ""
+"Pasirinkite ZFS tomų grupę (pool), kurioje norite sukurti naują loginį tomą."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:38001
+msgid "No logical volume name entered"
+msgstr "Neįvestas loginio tomo (Logical Volume) pavadinimas"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:38001
+msgid "No name for the logical volume has been entered. Please enter a name."
+msgstr "Neįvestas loginio tomo vardas. Įveskite vardą."
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:39001 ../partman-zfs.templates:41001
+msgid "Error while creating a new logical volume"
+msgstr "Klaida kuriant naują loginį tomą (Logical Volume)"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:39001
+msgid ""
+"The name ${LV} is already in use by another logical volume on the same ZFS "
+"pool (${VG})."
+msgstr ""
+"Pavadinimas „${LV}“ jau naudojamas kitam loginiam tomui toje pačioje ZFS "
+"tomų grupėje („${VG}“)."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:40001
+msgid "Logical volume size:"
+msgstr "Loginio tomo (Logical Volume) dydis:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:40001
+msgid ""
+"Please enter the size of the new logical volume. The size may be entered in "
+"the following formats: 10K (Kilobytes), 10M (Megabytes), 10G (Gigabytes), "
+"10T (Terabytes). The default unit is Megabytes."
+msgstr ""
+"Prašau įvesti norimą naujo loginio tomo (Logical Volume) dydį. Jį galite "
+"nurodyti kilobaitais (pvz., 10K), megabaitais (10M), gigabaitais (10G), "
+"terabaitais (10T).  Jei nenurodysite vieneto, dydis bus matuojamas "
+"megabaitais."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:41001
+msgid ""
+"Unable to create a new logical volume (${LV}) on ${VG} with the new size "
+"${SIZE}."
+msgstr ""
+"Nepavyko sukurti ${SIZE} dydžio naujo loginio tomo (${LV}) tomų grupėje "
+"${VG}."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:42001
+msgid "No logical volume found"
+msgstr "Neradau loginių tomų (Logical Volume)"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:42001
+msgid "No logical volume has been found. Please create a logical volume first."
+msgstr "Nerastas nė vienas loginis tomas. Pirma sukurkite loginį tomą."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:43001
+msgid "Logical volume:"
+msgstr "Loginis tomas (Logical Volume):"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:43001
+msgid "Please select the logical volume to delete."
+msgstr "Pasirinkti loginį tomą (logical volume), kurį norite pašalinti."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:44001
+msgid "in VG ${VG}"
+msgstr "VG ${VG}"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:45001
+msgid "Error while deleting the logical volume"
+msgstr "Klaida bandant išmesti loginį tomą (Logical Volume)"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:45001
+msgid "The logical volume ${LV} on ${VG} could not be deleted."
+msgstr "Nepavyko pašalinti loginio tomo „${LV}“ iš grupės „${VG}“."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:46001
+msgid "No usable physical volumes found"
+msgstr "Neradau vartotinų fizinių tomų (physical volume)"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:46001
+msgid ""
+"No physical volumes (i.e. partitions) were found in this system. All "
+"physical volumes may already be in use. You may also need to load some "
+"required kernel modules or re-partition the hard drives."
+msgstr ""
+"Šioje sistemoje nepavyko rasti fizinių tomų (t.y. diskų skaidinių). Galbūt "
+"jie visi jau naudojami. O gal Jums reiktų įkelti papildomų branduolio "
+"modulių ar naujai suskaidyti standžiuosius diskus."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:47001
+msgid "ZFS not available"
+msgstr "ZFS neprieinama"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:47001
+msgid ""
+"The current kernel doesn't support ZFS. You may need to load the zfs module."
+msgstr ""
+"Esamas branduolys nepalaiko ZFS failų sistemos. Galbūt reikia įkelti modulį "
+"„zfs“."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:48001
+msgid "Invalid logical volume, ZFS pool name or ZFS file system name"
+msgstr ""
+"Netinkamas loginio tomo, ZFS tomų grupės ar ZFS failų sistemos pavadinimas"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:48001
+msgid ""
+"Logical volumes, ZFS pool names and ZFS file systems may only contain "
+"alphanumeric characters, hyphen, colon, period, and underscore. They must be "
+"255 characters or less and must begin with an alphanumeric character. The "
+"names \"mirror\", \"raidz\", \"spare\", and \"log\" are not allowed."
+msgstr ""
+"Loginių tomų, ZFS tomų grupių ir ZFS failų sistemų pavadinimus gali sudaryti "
+"tik raidės, skaitmenys, brūkšneliai, dvitaškiai, taškai ir pabraukimo "
+"ženklai. Šie pavadinimai gali būti iki 255 simbolių ilgio ir privalo "
+"prasidėti raide ar skaitmeniu. Pavadinimai „mirror“, „raidz“, „spare“ ir "
+"„log“ neleistini."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:48001
+msgid "Please choose a different name."
+msgstr "Pasirinkite kitą vardą."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:49001
+msgid "Remove existing logical volume data?"
+msgstr "Ar pašalinti egzistuojančius loginio tomo duomenis?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:49001
+msgid ""
+"The selected device already contains the following ZFS logical volumes and "
+"ZFS pools which are about to be removed:"
+msgstr ""
+"Pasirinktame įrenginyje jau yra ZFS loginių tomų ir ZFS tomų grupių, kurias "
+"numatoma pašalinti:"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:49001
+msgid "Logical volume(s): ${LVTARGETS}"
+msgstr "Loginis(-iai) tomas(-ai): ${LVTARGETS}"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:49001
+msgid "ZFS pool(s): ${VGTARGETS}"
+msgstr "ZFS tomų grupė(s): ${VGTARGETS}"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:49001
+msgid ""
+"Note that this will also permanently erase any data currently on the logical "
+"volumes."
+msgstr ""
+"Pastebėkite, kad tai visiškai ištrins visus duomenis esančius loginiuose "
+"tomuose."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:50001
+msgid "ZFS"
+msgstr "ZFS"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:50001
+msgid ""
+"A common situation for system administrators is to find that some disk "
+"partition (usually the most important one) is short on space, while some "
+"other partition is underused. ZFS can help with this."
+msgstr ""
+"Dažnai atsitinka taip, kad kažkuriame disko skaidinyje (paprastai, "
+"svarbiausiame) ima trūkti vietos, tuo tarpu kitas skaidinys akivaizdžiai "
+"neišnaudojamas. ZFS gali pagelbėti tokioje situacijoje."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:50001
+msgid ""
+"ZFS allows combining disk or partition devices (\"physical volumes\") to "
+"form a virtual disk (\"ZFS pool\"), which can then be divided into virtual "
+"partitions (\"logical volumes\"). ZFS pools and logical volumes may span "
+"across several physical disks. New physical volumes may be added to a ZFS "
+"pool at any time, and logical volumes have no size limit other than the "
+"total size of the ZFS pool."
+msgstr ""
+"ZFS leidžia sujungti diskus ir diskų skaidinius („fizinius tomus“) į "
+"virtualų diską („ZFS tomų grupę (pool)“), kurį tuomet galima skaidyti į "
+"virtualius skaidinius („loginius tomus“). ZFS tomų grupės ir loginiai tomai "
+"gali būti išsidėstę keliuose fiziniuose diskuose. Į ZFS tomų grupę bet kada "
+"galima įtraukti naujus fizinius tomus, o loginių tomų dydį riboja tik "
+"bendras ZFS tomų grupės dydis."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:50001
+msgid ""
+"The items on the ZFS configuration menu can be used to edit ZFS pools and "
+"logical volumes. After you return to the main partition manager screen, "
+"logical volumes will be displayed in the same way as ordinary partitions, "
+"and should be treated as such."
+msgstr ""
+"Naudodamiesi ZFS konfigūravimo meniu, galite redaguoti ZFS tomų grupes ir "
+"loginius tomus. Grįžus į pagrindinį diskų dalijimo ekraną, loginiai tomai "
+"bus rodomi kaip įprastiniai disko skaidiniai. Taip jie ir turėtų būti "
+"traktuojami."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:51001
+msgid "Pool to modify:"
+msgstr "Tomų grupė, kurią norite keisti:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:52001
+msgid "ZFS boot file system name:"
+msgstr "ZFS paleidimo failų sistemos pavadinimas:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:52001
+msgid "Please enter the name of the boot file system among the following:"
+msgstr "Įveskite paleidimo failų sistemos pavadinimą, vieną iš šių:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:52001
+msgid ""
+"This will be prefixed by ${VG}/ROOT and mounted as the root file system."
+msgstr ""
+"Pridėjus ${VG}/ROOT prefiksą, ši failų sistema bus prijungta kaip šakninė."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:53001
+msgid "No file system name entered"
+msgstr "Neįvestas failų sistemos pavadinimas"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:53001
+msgid "No name has been entered for the root file system. Please enter a name."
+msgstr "Neįvestas šakninės failų sistemos pavadinimas. Įveskite jį."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:54001
+msgid "ZFS boot"
+msgstr "ZFS paleidimas"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-zfs.templates:55001
+msgid "Loading ZFS module..."
+msgstr "Įkeliamas ZFS modulis..."

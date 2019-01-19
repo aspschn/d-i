@@ -1,0 +1,155 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of id.po to Bahasa Indonesia
+# Indonesian messages for debian-installer.
+#
+#
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Translators:
+#
+# Debian Indonesian L10N Team <debian-l10n-id@gurame.fisika.ui.ac.id>, 2004.
+# * Parlin Imanuel Toh (parlin_i@yahoo.com), 2004-2005.
+# * I Gede Wijaya S (gwijayas@yahoo.com), 2004.
+# * Arief S F (arief@gurame.fisika.ui.ac.id), 2004-2007.
+# * Setyo Nugroho (setyo@gmx.net), 2004.
+# * Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>, 2008-2011.
+# * Al Qalit <qal.smith@gmail.com>, 2018.
+# * Andika Triwidada <andika@gmail.com>, 2018.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2002.
+#   Andhika Padmawan <andhika.padmawan@gmail.com>, 2010,2011.
+#   Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>, 2004-2006.
+#   Erwid M Jadied <jadied@gmail.com>, 2008.
+#   Free Software Foundation, Inc., 2002,2004
+#   Translations from KDE:
+#   Ahmad Sofyan <fade@2bl.ac>, 2001.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer (level1)\n"
+"Report-Msgid-Bugs-To: pkgsel@packages.debian.org\n"
+"POT-Creation-Date: 2018-06-27 14:00+0200\n"
+"PO-Revision-Date: 2018-09-24 13:29+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Debian Indonesia Translators <debian-l10n-indonesian@lists."
+"debian.org>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. should not be more than 55 columns
+#. pkgsel is the module that installs packages by running tasksel to
+#. select "tasks". Please use "install *software*" and not
+#. "install *packages*" which is less adapted for non technical users
+#: ../pkgsel.templates:1001
+msgid "Select and install software"
+msgstr "Memilih dan memasang perangkat lunak"
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when pkgsel is launched, before it installs packages
+#: ../pkgsel.templates:2001
+msgid "Setting up..."
+msgstr "Sedang menata..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when upgrading already installed packages.
+#: ../pkgsel.templates:4001
+msgid "Upgrading software..."
+msgstr "Memperbarui piranti lunak ..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when running tasksel to allow selecting packages
+#. Tasksel will then display its own screens
+#: ../pkgsel.templates:5001
+msgid "Running tasksel..."
+msgstr "Menjalankan tasksel..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used at the end of the installation phase while
+#. cleaning up pkgsel's stuff
+#: ../pkgsel.templates:6001
+msgid "Cleaning up..."
+msgstr "Sedang membersihkan..."
+
+#. Type: text
+#. Description
+#: ../pkgsel.templates:8001
+msgid "Running ${SCRIPT}..."
+msgstr "Menjalankan ${SCRIPT}..."
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "No automatic updates"
+msgstr "Update otomatis tidak tersedia"
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "Install security updates automatically"
+msgstr "Pasang pembaharuan keamanan secara otomatis"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid "Updates management on this system:"
+msgstr "Manajemen pembaruan pada sistem ini:"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Applying updates on a frequent basis is an important part of keeping the "
+"system secure."
+msgstr ""
+"Menerapkan pembaruan secara sering merupakan bagian penting dalam menjaga "
+"sistem tetap aman."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"By default, security updates are not automatically installed, as security "
+"advisories should be reviewed before manual installation of the updates "
+"using standard package management tools."
+msgstr ""
+"Secara baku, pembaruan keamanan tidak dipasang secara otomatis, karena "
+"peringatan keamanan mesti ditinjau sebelum menerapkan pembaruan secara "
+"manual menggunakan alat manajemen paket standar."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Alternatively the unattended-upgrades package can be installed, which will "
+"install security updates automatically. Note however that automatic "
+"installation of updates may occasionally cause unexpected downtime of "
+"services provided by this machine in the rare cases where the update is not "
+"fully backward-compatible, or where the security advisory requires the "
+"administrator to perform some other manual operation."
+msgstr ""
+"Sebagai alternatif, paket unattended-upgrade dapat dipasang, yang akan "
+"secara otomatis memasang pembaruan keamanan. Namun perhatikan bahwa "
+"instalasi otomatis pembaruan kadang-kadang dapat menyebabkan downtime yang "
+"tak terduga dari layanan yang disediakan oleh mesin ini dalam kondisi langka "
+"saat pembaruan tidak sepenuhnya kompatibel ke belakang, atau saat peringatan "
+"keamanan memerlukan administrator untuk melakukan beberapa operasi manual "
+"lain."

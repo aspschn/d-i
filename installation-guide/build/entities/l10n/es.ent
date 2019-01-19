@@ -1,0 +1,5 @@
+<!ENTITY MSG-YES "<userinput>Sí</userinput>">
+<!ENTITY MSG-NO "<userinput>No</userinput>">
+
+<!ENTITY archive-mirror "ftp.es.debian.org">
+<!ENTITY url-brltty-manual "http://rt001pvr.eresmas.net/linuxitania/tutoriales/brltty/BRLTTY.html">

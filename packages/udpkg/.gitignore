@@ -1,0 +1,14 @@
+*.o
+autom4te.cache
+build-stamp
+config.log
+config.h
+config.h.in
+config.cache
+config.guess
+config.status
+config.sub
+configure
+makefile
+udpkg
+

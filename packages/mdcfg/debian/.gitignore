@@ -1,0 +1,7 @@
+*.debhelper*
+*.substvars
+mdcfg
+mdcfg.postinst
+files
+mdcfg-utils
+

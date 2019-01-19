@@ -1,0 +1,299 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of lo.po to Lao
+# Lao translation of debian-installer.
+# Copyright (C) 2006-2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Anousak Souphavanh <anousak@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: lo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-21 10:05+0100\n"
+"PO-Revision-Date: 2012-04-25 09:05+0700\n"
+"Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
+"Language-Team: Lao <lo@li.org>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:1001
+msgid "Installing quik"
+msgstr "ກຳລັງຕິດຕັ້ງ quik"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:2001
+msgid "Installing quik boot loader"
+msgstr "ກຳລັງຕິດຕັ້ງບູດໂຫຼດເດີ quik"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:3001
+msgid "quik installation failed. Continue anyway?"
+msgstr "ຕິດຕັ້ງ quik ບໍ່ສຳເລັດ ຈະດຳເນີນການຕໍ່ໄປ ຫຼື ບໍ?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:3001
+msgid ""
+"The quik package failed to install into /target/.  Installing quik as a boot "
+"loader is a required step.  The install problem might however be unrelated "
+"to quik, so continuing the installation may be possible."
+msgstr ""
+"ຕິດຕັ້ງແພັກເກັດ quik ລົງໃນ /target/ ບໍ່ສຳເລັດ ການຕິດຕັ້ງ quik ເປັນບູດໂຫຼດເດີ ເປັນຂັ້ນຕອນທີ່ຈຳເປັນ "
+"ແຕ່ບັນຫາຂອງການຕິດຕັ້ງອາດບໍ່ກ່ຽວກັບ quik ກໍໄດ້ ດັ່ງນັ້ນ ການດຳເນີນການຕິດຕັ້ງຕໍ່ໄປກໍ່ອາດເຮັດໄດ້"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:4001
+msgid "Checking partitions"
+msgstr "ກຳລັງກວດສອບພາທິຊັ້ນ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:5001
+msgid "No root partition found"
+msgstr "ບໍ່ພົບພາທິຊັ້ນພື້ນຖານ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:5001
+msgid ""
+"No partition is mounted as your new root partition. You must mount a root "
+"partition first."
+msgstr "ບໍ່ມີພາທິຊັ້ນເມົ້າທ໌ທີ່ເປັນພາທິຊັ້ນພື້ນຖານໃໝ່ ທ່ານຕ້ອງເມົ້າທ໌ທີ່ເປັນພາທິຊັ້ນພື້ນຖານກ່ອນ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:6001
+msgid "Boot partition not on first disk"
+msgstr "ພາທິຊັ້ນບູດບໍ່ໄດ້ຢູ່ໃນດິກສ໌ທຳອິດ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:6001
+msgid ""
+"The quik boot loader requires partition that holds /boot to be on the first "
+"disk. Please return to the partitioning step."
+msgstr ""
+"ບູດໂຫຼດເດີ quik ຈຳເປັນຕ້ອງໃຫ້ພາທິຊັ້ນທີ່ມີ /boot ຢູ່ໃນດິກສ໌ທຳອິດ ກະລຸນາກັບໄປທີ່ຂັ້ນຕອນແບ່ງພາທິຊັ້ນ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:7001
+msgid "Boot partition must be on ext2"
+msgstr "ພາທິຊັ້ນບູດຕ້ອງເປັນ ext2"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:7001
+msgid ""
+"The quik boot loader requires the partition that holds /boot to be formatted "
+"using the ext2 file system. Please return to the partitioning step."
+msgstr ""
+"ບູດໂຫຼດເດີ quik ຕ້ອງການໃຫ້ພາທິຊັ້ນທີ່ເປັນ /boot ຟໍຣແມັດດ້ວຍລະບົບແຟ້ມແບບ ext2 "
+"ກະລຸນາກັບໄປທີ່ຂັ້ນຕອນແບ່ງພາທິຊັ້ນ"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001 ../quik-installer.templates:9001
+msgid "Do you really want to install the quik boot loader?"
+msgstr "ທ່ານຕ້ອງການຕິດຕັ້ງບູດໂຫຼດເດີ quik ແທ້ ຫຼື ບໍ?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001
+msgid ""
+"You have chosen to install the quik boot loader. You will not be able to "
+"boot any other operating system from this disk. Furthermore, your machine "
+"may not be bootable in any manner after this process completes. If you are "
+"left with a blank screen, you may need to try a cold boot and hold down "
+"Command-Option-P-R."
+msgstr ""
+"ທ່ານໄດ້ເລືອກທີ່ຈະຕິດຕັ້ງບູດໂຫຼດເດີ quik  ທ່ານບໍ່ສາມາດບູດລະບົບປະຕິບັດການອື່ນຈາກດິກສ໌ນີ້ໄດ້ ນອກຈາກນີ້ "
+"ເຄື່ອງຂອງທ່ານອາດຈະບໍ່ສາມາດບູດໄດ້ບໍ່ວ່າກໍລະນີໃດໆ ຫຼັງຈາກສິ້ນສຸດການຕິດຕັ້ງນີ້ແລ້ວ ຖ້າທ່ານພົບແຕ່ຈໍເປົ່າ "
+"ທ່ານອາດຈະຕ້ອງລອງ cold boot ແລ້ວກົດປຸ່ມ Command-Option-P-R"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:8001 ../quik-installer.templates:9001
+msgid "Be aware that this code has not been thoroughly tested."
+msgstr "ກະລຸນາຮັບຮູ້ໄວ້ວ່າໂປຼແກມນີ້ຍັງບໍ່ຜ່ານການກວດສອບຢ່າງຖີ່ຖ້ວນ"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:9001
+msgid ""
+"You have chosen to install the quik boot loader. You will not be able to "
+"boot any other operating system from this disk. Furthermore, your machine "
+"may not be bootable in any manner after this process completes."
+msgstr ""
+"ທ່ານໄດ້ເລືອກທີ່ຈະຕິດຕັ້ງບູດໂຫຼດເດີ quik   ທ່ານບໍ່ສາມາດບູດລະບົບປະຕິບັດການອື່ນຈາກດິກສ໌ນີ້ໄດ້ ນອກຈາກນີ້ "
+"ເຄື່ອງຂອງທ່ານອາດຈະບໍ່ສາມາດບູດໄດ້ບໍ່ວ່າກໍລະນີໃດໆ  ຫຼັງຈາກສິ້ນສຸດການຕິດຕັ້ງນີ້ແລ້ວ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:10001
+msgid "Creating quik configuration"
+msgstr "ກຳລັງຕັ້ງຄ່າໃຫ້ກັບ quik"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001
+msgid "Failed to create quik configuration"
+msgstr "ສ້າງແຟ້ມຄ່າຕັ້ງໃຫ້ກັບ quik ບໍ່ສຳເລັດ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001
+msgid "The creation of the main quik configuration file failed."
+msgstr "ບໍ່ສາມາດສ້າງແຟ້ມຄ່າຕັ້ງຫຼັກຂອງ quik ໄດ້"
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001 ../quik-installer.templates:13001
+#: ../quik-installer.templates:17001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr "ກະລຸນາກວດສອບ /var/log/syslog ຫຼືເບີ່ງທີ່ຄອນໂຊຄວາມແທ້ຈິງທີ 4 ເພື່ອເບິ່ງລາຍລະອຽດ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:11001 ../quik-installer.templates:17001
+msgid "Warning: Your system may be unbootable!"
+msgstr "ຄຳເຕືອນ: ລະບົບຂອງທ່ານອາດບໍ່ສາມາດບູດໄດ້!"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:12001
+msgid "Installing quik into bootstrap partition"
+msgstr "ກຳລັງຕິດຕັ້ງ quik ລົງໃນພາທິຊັ້ນຍູດ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "Failed to install boot loader"
+msgstr "ຕິດຕັ້ງບູດໂຫຼດເດີບໍ່ສຳເລັດ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "The installation of the quik boot loader failed."
+msgstr "ການຕິດຕັ້ງບູດໂຫຼດເດີ quik ລົ້ມເຫຼວ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:13001
+msgid "Warning: your system may be unbootable!"
+msgstr "ຄຳເຕືອນ:ລະບົບຂອງທ່ານອາດບໍ່ສາມາດບູດໄດ້!"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:14001
+msgid "Setting up OpenFirmware"
+msgstr "ກຳລັງຕັ້ງຄ່າ OpenFirmware"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:15001
+msgid "Unable to configure OpenFirmware"
+msgstr "ບໍ່ສາມາດຕັ້ງຄ່າ OpenFirmware ໄດ້"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:15001
+msgid ""
+"Setting the OpenFirmware boot-device variable failed. You will have to "
+"configure OpenFirmware yourself to boot."
+msgstr ""
+" ຕັ້ງຄ່າຕົວແປ boot-device ຂອງ OpenFirmware ບໍ່ສຳເລັດ ທ່ານຈະຕ້ອງຕັ້ງຄ່າ OpenFirmware ເອງ  "
+"ເພື່ອຈະບູດລະບົບໄດ້"
+
+#. Type: error
+#. Description
+#. :sl4:
+#. This error may not be fatal, depending on the exact type of Mac.
+#: ../quik-installer.templates:16001
+msgid "Problem configuring OpenFirmware"
+msgstr "ເກີດບັນຫາຂະນະຕັ້ງຄ່າ OpenFirmware"
+
+#. Type: error
+#. Description
+#. :sl4:
+#. This error may not be fatal, depending on the exact type of Mac.
+#: ../quik-installer.templates:16001
+msgid ""
+"Setting the OpenFirmware boot-command variable failed. You may have "
+"intermittent boot failures."
+msgstr " ຕັ້ງຄ່າຕົວແປ boot-command ຂອງ OpenFirmware ບໍ່ສຳເລັດ ທ່ານອາດບູດລະບົບບໍ່ຂື້ນເປັນຄັງຄາວ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:17001
+msgid "Failed to mount /target/proc"
+msgstr "ລົ້ມແຫຼວທີ່ຈະຍຶດເປົ້າໝາຍ /target/proc"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../quik-installer.templates:17001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "ເມົ້າທ໌ລະບົບແຟ້ມ proc ເທີງ /target/proc ບໍ່ສຳເລັດ"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl4:
+#: ../quik-installer.templates:18001
+msgid "Install quik on a hard disk"
+msgstr "ຕິດຕັ້ງ quik ລົງໃນຮາດດິກສ໌"

@@ -1,0 +1,5 @@
+*.debhelper*
+*.substvars
+clock-setup
+files
+

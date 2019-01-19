@@ -1,0 +1,193 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+#
+# Debian Installer master translation for Uyghur
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+# Translations from iso-codes:
+# Sahran <sahran.ug@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2014-03-03 14:41+0600\n"
+"Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "تور بۆلەك ئۈسكىنىسى سەپلاش"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD سەپلەش مەشغۇلاتى:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "ھازىر باغلانغان ئۈسكۈنىلەرنىڭ سانى ${NUMBER} ."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "تور بۆلەك ئۈسكىنە مۇلازىمېتىرى:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"nbd-server ئىجرا بولۇۋاتقان سىستېمىنىڭ IP ئادرېسىنى ۋە كومپيۇتېر ئاتىنى "
+"كىرگۈزۈڭ."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "تور بۆلەك ئۈسكىنە تۈگۈنى:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "باغلانماقچى ياكى ئۈزۈلمەكچى بولغان NBD ئۈسكىنە تۈگۈنىنى كىرگۈزۈڭ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD مۇلازىمېتىرىغا باغلىنىش مەغلۇپ بولدى."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"NBD مۇلازىمېتىرىغا باغلىنىش مەغلۇپ بولدى. كىرگۈزگەن ماشىنا ئادرېس ۋە ئېغىز "
+"ياكى ئات توغرىمۇ، ماشىنا ۋە ئېغىز (ياكى ئىشلەتكەن ئات) تىكى nbd-server ئىجرا "
+"بولۇۋاتامدۇ،  تور توغرا تەڭشەلگەنمۇ ھەممىنى تەكشۈرۈپ ئاندىن قايتا سىناڭ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ئەمدى تور بۆلەك ئۈسكۈنىسى تۈگۈنى قالمىدى."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"بارلىق NBD ئۈسكۈنە تۈگۈنى ئىشلىتىلىۋاتىدۇ ياكى ئۈسكىنە تۈگۈنىنى ئىزدەشتە "
+"مەسىلە كۆرۈلدى."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"ھازىر سەپلەنگەن تۈگۈندىن ئۈزۈلمىگۈچە باشقا NBD ئۈسكۈنە تۈگۈنىنى سەپلىگىلى "
+"بولمايدۇ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "باغلانغان تور بۆلەك ئۈسكۈنە تۈگۈنى تېپىلمىدى."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"نۆۋەتتە تور بۆلەك ئۈسكىنە تۈگۈنى ھېچقانداق مۇلازىمېتىرغا باغلانمىدى. شۇڭا "
+"سىز ھېچقايسىسىدىن ئۈزۈلەلمەيسىز."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "بىر تور بۆلەك ئۈسكۈنىسىگە باغلىنىش"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "بىر تور بۆلەك ئۈسكۈنىسىدىن ئۈزۈلۈش"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "تاماملاپ رايون ئايرىغۇغا(partitioner) قايتىش"

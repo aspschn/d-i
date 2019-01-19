@@ -1,0 +1,29 @@
+partman-auto/text/home_scheme ::
+
+8 1 1 prep
+	$primary{ }
+	$bootable{ }
+	method{ prep } .
+
+1500 6000 20000 $default_filesystem
+	$lvmok{ }
+	$primary{ }
+	method{ format }
+	format{ }
+	use_filesystem{ }
+	$default_filesystem{ }
+	mountpoint{ / } .
+
+100% 512 300% linux-swap
+	$lvmok{ }
+	method{ swap }
+	format{ } .
+
+1000 10000 -1 $default_filesystem
+	$lvmok{ }
+	method{ format }
+	format{ }
+	use_filesystem{ }
+	$default_filesystem{ }
+	mountpoint{ /home } .
+

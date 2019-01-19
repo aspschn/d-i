@@ -1,0 +1,4111 @@
+# French translation of the Debian Installer Manual
+# Philippe Batailler - ?-2013
+#
+# Baptiste Jammet <baptiste@mailoo.org>, 2014, 2016, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: hardware\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2017-07-12 09:14+0000\n"
+"PO-Revision-Date: 2017-10-15 18:25+0100\n"
+"Last-Translator: Baptiste Jammet <baptiste@mailoo.org>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#. Tag: title
+#: hardware.xml:5
+#, no-c-format
+msgid "System Requirements"
+msgstr "Configuration nécessaire"
+
+#. Tag: para
+#: hardware.xml:7
+#, no-c-format
+msgid ""
+"This section contains information about what hardware you need to get "
+"started with &debian;. You will also find links to further information about "
+"hardware supported by GNU and &arch-kernel;."
+msgstr ""
+"Cette section contient des informations sur le matériel dont vous avez "
+"besoin pour commencer avec &debian;. Vous trouverez aussi des liens vers des "
+"informations supplémentaires concernant le matériel reconnu par GNU et &arch-"
+"kernel;."
+
+#. Tag: title
+#: hardware.xml:20
+#, no-c-format
+msgid "Supported Hardware"
+msgstr "Matériel reconnu"
+
+#. Tag: para
+#: hardware.xml:21
+#, no-c-format
+msgid ""
+"&debian; does not impose hardware requirements beyond the requirements of "
+"the Linux or kFreeBSD kernel and the GNU tool-sets. Therefore, any "
+"architecture or platform to which the Linux or kFreeBSD kernel, libc, "
+"<command>gcc</command>, etc. have been ported, and for which a &debian; port "
+"exists, can run &debian;. Please refer to the Ports pages at <ulink url="
+"\"&url-ports;\"></ulink> for more details on &arch-title; architecture "
+"systems which have been tested with &debian-gnu;."
+msgstr ""
+"En ce qui concerne le matériel, &debian; n'a pas plus d'exigences que le "
+"noyau Linux ou kFreeBSD et les outils GNU. Par conséquent, toute "
+"architecture ou plate-forme sur laquelle le noyau Linux ou kFreeBSD, la "
+"libc, le compilateur gcc, etc., ont été portés, et pour laquelle un portage "
+"de &debian; existe, peut faire fonctionner &debian;. Reportez-vous aux pages "
+"sur les portages <ulink url=\"&url-ports;\"></ulink> pour plus de précisions "
+"concernant les systèmes d'architecture &arch-title; qui ont été testés avec "
+"&debian-gnu;."
+
+#. Tag: para
+#: hardware.xml:32
+#, no-c-format
+msgid ""
+"Rather than attempting to describe all the different hardware configurations "
+"which are supported for &arch-title;, this section contains general "
+"information and pointers to where additional information can be found."
+msgstr ""
+"Plutôt que d'essayer de décrire les différentes configurations matérielles "
+"acceptées par &arch-title;, cette section contient des informations "
+"générales et des liens vers des informations complémentaires."
+
+#. Tag: title
+#: hardware.xml:41
+#, no-c-format
+msgid "Supported Architectures"
+msgstr "Architectures reconnues"
+
+#. Tag: para
+#: hardware.xml:42
+#, no-c-format
+msgid ""
+"&debian; GNU/Linux &release; supports ten major architectures and several "
+"variations of each architecture known as <quote>flavors</quote>."
+msgstr ""
+"&debian; GNU/Linux &release; fonctionne sur dix architectures principales et "
+"sur de nombreuses variantes de celles-ci, appelées <quote>saveurs</quote>."
+
+#. Tag: entry
+#: hardware.xml:53
+#, no-c-format
+msgid "Architecture"
+msgstr "Architecture"
+
+#. Tag: entry
+#: hardware.xml:53
+#, no-c-format
+msgid "&debian; Designation"
+msgstr "Étiquette &debian;"
+
+#. Tag: entry
+#: hardware.xml:54
+#, no-c-format
+msgid "Subarchitecture"
+msgstr "Sous-Architecture"
+
+#. Tag: entry
+#: hardware.xml:54
+#, no-c-format
+msgid "Flavor"
+msgstr "Saveur"
+
+#. Tag: entry
+#: hardware.xml:60
+#, no-c-format
+msgid "Intel x86-based"
+msgstr "Intel x86-based"
+
+#. Tag: entry
+#: hardware.xml:61
+#, no-c-format
+msgid "i386"
+msgstr "i386"
+
+#. Tag: entry
+#: hardware.xml:62
+#, no-c-format
+msgid "default x86 machines"
+msgstr "systèmes x86"
+
+#. Tag: entry
+#: hardware.xml:63
+#, no-c-format
+msgid "default"
+msgstr "variante par défaut"
+
+#. Tag: entry
+#: hardware.xml:65
+#, no-c-format
+msgid "Xen PV domains only"
+msgstr "domaines Xen PV uniquement"
+
+#. Tag: entry
+#: hardware.xml:66
+#, no-c-format
+msgid "<entry>xen</entry>"
+msgstr "<entry>xen</entry>"
+
+#. Tag: entry
+#: hardware.xml:70
+#, no-c-format
+msgid "AMD64 &amp; Intel 64"
+msgstr "AMD64 &amp; Intel 64"
+
+#. Tag: entry
+#: hardware.xml:71
+#, no-c-format
+msgid "amd64"
+msgstr "amd64"
+
+#. Tag: entry
+#: hardware.xml:77
+#, no-c-format
+msgid "<entry>ARM</entry>"
+msgstr "<entry>ARM</entry>"
+
+#. Tag: entry
+#: hardware.xml:78
+#, no-c-format
+msgid "armel"
+msgstr "armel"
+
+#. Tag: entry
+#: hardware.xml:79
+#, no-c-format
+msgid "Marvell Kirkwood and Orion"
+msgstr "Marvell Kirkwood et Orion"
+
+#. Tag: entry
+#: hardware.xml:80
+#, no-c-format
+msgid "marvell"
+msgstr "marvell"
+
+#. Tag: entry
+#: hardware.xml:84
+#, no-c-format
+msgid "ARM with hardware FPU"
+msgstr "ARM avec matériel FPU"
+
+#. Tag: entry
+#: hardware.xml:85
+#, no-c-format
+msgid "armhf"
+msgstr "armhf"
+
+#. Tag: entry
+#: hardware.xml:86
+#, no-c-format
+msgid "multiplatform"
+msgstr "multiplate-forme"
+
+#. Tag: entry
+#: hardware.xml:87
+#, no-c-format
+msgid "armmp"
+msgstr "armmp"
+
+#. Tag: entry
+#: hardware.xml:91
+#, no-c-format
+msgid "64bit ARM"
+msgstr "ARM 64 bits"
+
+#. Tag: entry
+#: hardware.xml:92
+#, no-c-format
+msgid "arm64"
+msgstr "arm64"
+
+#. Tag: entry
+#: hardware.xml:98
+#, no-c-format
+msgid "32bit MIPS (big-endian)"
+msgstr "MIPS 32 bits (grand-boutien)"
+
+#. Tag: entry
+#: hardware.xml:99
+#, no-c-format
+msgid "mips"
+msgstr "mips"
+
+#. Tag: entry
+#: hardware.xml:100 hardware.xml:110 hardware.xml:123
+#, no-c-format
+msgid "<entry>MIPS Malta</entry>"
+msgstr "<entry>MIPS Malta</entry>"
+
+#. Tag: entry
+#: hardware.xml:101 hardware.xml:124
+#, no-c-format
+msgid "4kc-malta"
+msgstr "4kc-malta"
+
+#. Tag: entry
+#: hardware.xml:103 hardware.xml:113 hardware.xml:126
+#, no-c-format
+msgid "<entry>Cavium Octeon</entry>"
+msgstr "<entry>Cavium Octeon</entry>"
+
+#. Tag: entry
+#: hardware.xml:104 hardware.xml:114 hardware.xml:127
+#, no-c-format
+msgid "octeon"
+msgstr "octeon"
+
+#. Tag: entry
+#: hardware.xml:108
+#, no-c-format
+msgid "64bit MIPS (little-endian)"
+msgstr "MIPS 64 bits (petit-boutien)"
+
+#. Tag: entry
+#: hardware.xml:109
+#, no-c-format
+msgid "mips64el"
+msgstr "mips64el"
+
+#. Tag: entry
+#: hardware.xml:111
+#, no-c-format
+msgid "5kc-malta"
+msgstr "5kc-malta"
+
+#. Tag: entry
+#: hardware.xml:116 hardware.xml:129
+#, no-c-format
+msgid "<entry>Loongson 3</entry>"
+msgstr "<entry>Loongson 3</entry>"
+
+#. Tag: entry
+#: hardware.xml:117 hardware.xml:130
+#, no-c-format
+msgid "loongson-3"
+msgstr "loongson-3"
+
+#. Tag: entry
+#: hardware.xml:121
+#, no-c-format
+msgid "32bit MIPS (little-endian)"
+msgstr "MIPS 32 bits (petit-boutien)"
+
+#. Tag: entry
+#: hardware.xml:122
+#, no-c-format
+msgid "mipsel"
+msgstr "mipsel"
+
+#. Tag: entry
+#: hardware.xml:148
+#, no-c-format
+msgid "Power Systems"
+msgstr "Power Systems"
+
+#. Tag: entry
+#: hardware.xml:149
+#, no-c-format
+msgid "ppc64el"
+msgstr "ppc64el"
+
+#. Tag: entry
+#: hardware.xml:150
+#, no-c-format
+msgid "IBM POWER8 or newer machines"
+msgstr "Machines IBM POWER8 ou plus récentes"
+
+#. Tag: entry
+#: hardware.xml:175
+#, no-c-format
+msgid "64bit IBM S/390"
+msgstr "IBM S/390 64 bits"
+
+#. Tag: entry
+#: hardware.xml:176
+#, no-c-format
+msgid "s390x"
+msgstr "s390x"
+
+#. Tag: entry
+#: hardware.xml:177
+#, no-c-format
+msgid "IPL from VM-reader and DASD"
+msgstr ""
+"IPL avec lecteur de machine virtuelle (VM-reader) et accès direct au "
+"périphérique de stockage (DASD)"
+
+#. Tag: entry
+#: hardware.xml:178
+#, no-c-format
+msgid "generic"
+msgstr "generic"
+
+#. Tag: para
+#: hardware.xml:185
+#, no-c-format
+msgid ""
+"This document covers installation for the <emphasis>&arch-title;</emphasis> "
+"architecture using the <emphasis>&arch-kernel;</emphasis> kernel. If you are "
+"looking for information on any of the other &debian;-supported architectures "
+"take a look at the <ulink url=\"http://www.debian.org/ports/\">&debian;-"
+"Ports</ulink> pages."
+msgstr ""
+"Ce document décrit l'installation pour l'architecture <emphasis>&arch-title;"
+"</emphasis> avec le noyau <emphasis>&arch-kernel;</emphasis>. Des versions "
+"pour les autres architectures disponibles existent sur les pages <ulink url="
+"\"http://www.debian.org/ports/\">Debian-Ports</ulink>."
+
+#. Tag: para
+#: hardware.xml:195
+#, no-c-format
+msgid ""
+"This is the first official release of &debian-gnu; for the &arch-title; "
+"architecture. We feel that it has proven itself sufficiently to be released. "
+"However, because it has not had the exposure (and hence testing by users) "
+"that some other architectures have had, you may encounter a few bugs. Use "
+"our <ulink url=\"&url-bts;\">Bug Tracking System</ulink> to report any "
+"problems; make sure to mention the fact that the bug is on the &arch-title; "
+"platform using the <emphasis>&arch-kernel;</emphasis> kernel. It can be "
+"necessary to use the <ulink url=\"&url-list-subscribe;\">debian-&arch-"
+"listname; mailing list</ulink> as well."
+msgstr ""
+"Voici la première version officielle de &debian-gnu; pour l'architecture "
+"&arch-title;. Nous pensons que le portage a fait ses preuves et qu'il peut "
+"être rendu public. Cependant, comme il n'a pas encore été soumis à la "
+"<quote>vraie vie</quote> (ni testé par d'autres utilisateurs) comme l'ont "
+"été d'autres architectures, vous pourriez rencontrer quelques bogues. "
+"Utilisez notre <ulink url=\"&url-bts;\">système de suivi des bogues</ulink> "
+"pour signaler les problèmes&nbsp;; n'oubliez pas de mentionner que le bogue "
+"s'est produit sur une plate-forme &arch-title;. Et prévenez aussi la <ulink "
+"url=\"&url-list-subscribe;\">liste de diffusion debian-&arch-listname;</"
+"ulink>."
+
+#. Tag: title
+#: hardware.xml:217
+#, no-c-format
+msgid "CPU Support"
+msgstr "Microprocesseurs"
+
+#. Tag: para
+#: hardware.xml:218
+#, no-c-format
+msgid "Both AMD64 and Intel 64 processors are supported."
+msgstr "Les processeurs AMD64 et Intel 64 sont reconnus."
+
+#. Tag: title
+#: hardware.xml:242
+#, no-c-format
+msgid "Three different ARM ports"
+msgstr "Trois portages ARM différents"
+
+#. Tag: para
+#: hardware.xml:244
+#, no-c-format
+msgid ""
+"The ARM architecture has evolved over time and modern ARM processors provide "
+"features which are not available in older models. &debian; therefore "
+"provides three ARM ports to give the best support for a very wide range of "
+"different machines:"
+msgstr ""
+"L'architecture ARM a évolué et les processeurs ARM récents fournissent des "
+"fonctionnalités qui ne sont pas disponibles dans les anciens modèles. "
+"&debian; fournit donc trois portages ARM pour assurer la meilleure prise en "
+"charge d'une très grande variété de machines :"
+
+#. Tag: para
+#: hardware.xml:250
+#, no-c-format
+msgid ""
+"&debian;/armel targets older 32-bit ARM processors without support for a "
+"hardware floating point unit (FPU),"
+msgstr ""
+"&debian;/armel est destiné aux anciens processeurs ARM 32 bits qui n'ont pas "
+"d'unité de calcul flottant au niveau matériel (<quote>FPU</quote>)."
+
+#. Tag: para
+#: hardware.xml:254
+#, no-c-format
+msgid ""
+"&debian;/armhf works only on newer 32-bit ARM processors which implement at "
+"least the ARMv7 architecture with version 3 of the ARM vector floating point "
+"specification (VFPv3). It makes use of the extended features and performance "
+"enhancements available on these models."
+msgstr ""
+"&debian;/armhf ne fonctionne que sur les nouveaux processeurs ARM 32 bits "
+"qui implémentent au moins l'architecture ARMv7 avec la version 3 des "
+"spécifications de calcul flottant (VFPv3). Il utilise les fonctionnalités "
+"étendues et les améliorations de performances disponibles sur ces modèles."
+
+#. Tag: para
+#: hardware.xml:261
+#, no-c-format
+msgid ""
+"&debian;/arm64 works on 64-bit ARM processors which implement at least the "
+"ARMv8 architecture."
+msgstr ""
+"&debian;/arm64 fonctionne sur les processeurs ARM 64 bits qui implémentent "
+"au moins l'architecture ARMv8."
+
+#. Tag: para
+#: hardware.xml:268
+#, no-c-format
+msgid ""
+"Technically, all currently available ARM CPUs can be run in either endian "
+"mode (big or little), but in practice the vast majority use little-endian "
+"mode. All of &debian;/arm64, &debian;/armhf and &debian;/armel support only "
+"little-endian systems."
+msgstr ""
+"Techniquement, la plupart des CPU ARM peuvent fonctionner en mode petit-"
+"boutien ou en mode grand-boutien. Cependant les systèmes les plus courants "
+"utilisent le mode petit-boutien. &debian;/arm64, &debian;/armel et &debian;/"
+"armhf fonctionnent tous les trois uniquement sur les processeurs ARM petits-"
+"boutiens."
+
+#. Tag: title
+#: hardware.xml:277
+#, no-c-format
+msgid "Variations in ARM CPU designs and support complexity"
+msgstr ""
+"Différences dans la conception des processeurs ARM et difficulté de la prise "
+"en charge"
+
+#. Tag: para
+#: hardware.xml:279
+#, no-c-format
+msgid ""
+"ARM systems are much more heterogeneous than those based on the i386/amd64-"
+"based PC architecture, so the support situation can be much more complicated."
+msgstr ""
+"Les systèmes ARM sont beaucoup plus hétérogènes que l'architecture PC de "
+"type i386/amd64. La situation de la prise en charge (matérielle) peut donc "
+"être plus compliquée."
+
+#. Tag: para
+#: hardware.xml:285
+#, no-c-format
+msgid ""
+"The ARM architecture is used mainly in so-called <quote>system-on-chip</"
+"quote> (SoC) designs. These SoCs are designed by many different companies "
+"with vastly varying hardware components even for the very basic "
+"functionality required to bring the system up. System firmware interfaces "
+"have been increasingly standardised over time, but especially on older "
+"hardware firmware/boot interfaces vary a great deal, so on these systems the "
+"Linux kernel has to take care of many system-specific low-level issues which "
+"would be handled by the mainboard's BIOS in the PC world."
+msgstr ""
+"L'architecture ARM est utilisée surtout dans les systèmes sur puce "
+"(<quote>system-on-chip</quote> (SOC)). Ces SOC sont conçus par différentes "
+"entreprises, avec une grande diversité de composants matériels, même pour "
+"les fonctionnalités les plus élémentaires nécessaires pour démarrer le "
+"système. Ces systèmes n'ont généralement pas de microprogramme commun et la "
+"conséquence est que le noyau Linux, sur les systèmes ARM, doit s'occuper de "
+"tous les problèmes de bas niveau liés au matériel, qui seraient gérés par le "
+"BIOS de la carte mère dans le monde PC."
+
+#. Tag: para
+#: hardware.xml:297
+#, no-c-format
+msgid ""
+"At the beginning of the ARM support in the Linux kernel, the hardware "
+"variety resulted in the requirement of having a separate kernel for each ARM "
+"system in contrast to the <quote>one-fits-all</quote> kernel for PC systems. "
+"As this approach does not scale to a large number of different systems, work "
+"was done to allow booting with a single ARM kernel that can run on different "
+"ARM systems. Support for newer ARM systems is now implemented in a way that "
+"allows the use of such a multiplatform kernel, but for several older systems "
+"a separate specific kernel is still required. Because of this, the standard "
+"&debian; distribution only supports installation on a selected number of "
+"such older ARM systems, alongside the newer systems which are supported by "
+"the ARM multiplatform kernels (called <quote>armmp</quote>) in &debian;/"
+"armhf."
+msgstr ""
+"Au début de la prise en charge d'ARM dans le noyau Linux, cela conduisait à "
+"avoir un noyau différent pour chaque système ARM, à l'opposé de l'approche "
+"<quote>one-fits-all</quote> pour le noyau des systèmes de type PC. Comme "
+"cette approche ne s'adaptait pas bien à un grand nombre de systèmes "
+"différents, un travail a commencé pour fournir un noyau ARM unique qui "
+"pourrait s'exécuter sur différents systèmes. La prise en charge de nouveaux "
+"systèmes est implémentée de manière à avoir un tel noyau multiplate-forme, "
+"mais pour plusieurs anciens systèmes, un noyau spécifique est toujours "
+"nécessaire. À cause de cela, la distribution standard &debian; ne prend en "
+"charge l'installation que sur un nombre restreint de ces anciens systèmes "
+"ARM, en plus des systèmes plus récents pris en charge par les noyaux ARM "
+"multiplates-formes (appelés <quote>armmp</quote>) dans &debian;/armhf."
+
+#. Tag: para
+#: hardware.xml:313
+#, no-c-format
+msgid ""
+"The ARM architecture is used mainly in so-called <quote>system-on-chip</"
+"quote> (SoC) designs. These SoCs are designed by many different companies, "
+"often with vastly varying hardware components even for the very basic "
+"functionality required to bring the system up. Older versions of the ARM "
+"architecture have seen massive differences from one SoC to the next, but "
+"ARMv8 (arm64) is much more standardised and so is easier for the Linux "
+"kernel and other software to support."
+msgstr ""
+"L'architecture ARM est utilisée surtout dans les systèmes sur puce "
+"(<quote>system-on-chip</quote> (SOC)). Ces SOC sont conçus par différentes "
+"entreprises, avec une grande diversité de composants matériels, même pour "
+"les fonctionnalités les plus élémentaires nécessaires pour démarrer le "
+"système. Dans les anciennes versions de l'architecture ARM, il y avait "
+"d'importantes différences d'une puce à l'autre, mais l'architecture ARMv8 "
+"(arm64) est bien plus standardisée. Cela facilite donc la prise en charge "
+"par le noyau Linux et les autres logiciels."
+
+#. Tag: para
+#: hardware.xml:324
+#, no-c-format
+msgid ""
+"Server versions of ARMv8 hardware are typically configured using the Unified "
+"Extensible Firmware Interface (UEFI) and Advanced Configuration and Power "
+"Interface (ACPI) standards. These two provide common, device-independent "
+"ways to boot and configure computer hardware. They are also common in the "
+"x86 PC world."
+msgstr ""
+"Les versions serveur des matériels ARMv8 sont souvent configurées en "
+"utilisant les standards UEFI (<quote>Unified Extensible Firmware Interface</"
+"quote>) et ACPI (<quote>Advanced Configuration and Power Interface</quote>) "
+"qui procurent une méthode commune et indépendante du matériel pour amorcer "
+"et configurer le matériel. Ces standards sont aussi utilisés dans le monde "
+"des PC."
+
+#. Tag: title
+#: hardware.xml:334
+#, no-c-format
+msgid "Platforms supported by Debian/arm64"
+msgstr "Plates-formes prises en charge par Debian/arm64"
+
+#. Tag: para
+#: hardware.xml:336
+#, no-c-format
+msgid ""
+"Arm64/AArch64/ARMv8 hardware became available quite late in the &debian; "
+"&releasename-cap; release cycle so not many platforms had support merged in "
+"the mainline kernel version by the time of this release; this is the main "
+"requirement to have &d-i; working on them. The following platforms are known "
+"to be supported by &debian;/arm64 in this release. There is only one kernel "
+"image, which supports all the listed platforms."
+msgstr ""
+"Les matériels Arm64, AArch64 et ARMv8 sont apparus relativement tard dans le "
+"cycle de développement de &debian; &releasename-cap;. Ainsi, peu de plates-"
+"formes ont leur prise en charge intégrée dans la version de la branche "
+"principale du noyau de &debian; &release;, ce qui est la condition "
+"principale à leur intégration à l'&d-i;. Les plates-formes suivantes sont "
+"prises en charge dans cette publication de &debian;/arm64. Il n'y a qu'une "
+"image du noyau qui prend en charge toutes ces plates-formes."
+
+#. Tag: term
+#: hardware.xml:348
+#, no-c-format
+msgid "Applied Micro (APM) Mustang/X-Gene"
+msgstr "Applied Micro (APM) Mustang/X-Gene"
+
+#. Tag: para
+#: hardware.xml:350
+#, no-c-format
+msgid ""
+"The APM Mustang was the first Linux-capable ARMv8 system available. It uses "
+"the X-gene SoC, which has since also been used in other machines. It is an 8-"
+"core CPU, with ethernet, USB and serial. A common form-factor looks just "
+"like a desktop PC box, but many other versions are expected in the future. "
+"Most of the hardware is supported in the mainline kernel, but at this point "
+"USB support is lacking in the &releasename-cap; kernel."
+msgstr ""
+"Le système APM Mustang a été le premier système ARMv8 disponible faisant "
+"fonctionner Linux. Il utilise la puce X-gene, utilisée depuis dans d'autres "
+"machines, qui est un processeur à 8 cœurs avec Ethernet, USB et port série. "
+"Un facteur de forme commun le fait ressembler à un ordinateur de bureau, "
+"mais d'autres versions sont attendues. La majorité du matériel est prise en "
+"charge dans la branche principale du noyau, mais la prise en charge de l'USB "
+"n'existe pas encore dans le noyau de &releasename-cap;."
+
+#. Tag: term
+#: hardware.xml:364
+#, no-c-format
+msgid "ARM Juno Development Platform"
+msgstr "Plate-forme de développement ARM Juno"
+
+#. Tag: para
+#: hardware.xml:366
+#, no-c-format
+msgid ""
+"Juno is a capable development board with a 6-core (2xA57, 4xA53) ARMv8-A "
+"800Mhz CPU, Mali (T624) graphics, 8GB DDR3 RAM, Ethernet, USB, Serial. It "
+"was designed for system bring-up and power testing so is neither small nor "
+"cheap, but was one of the first boards available. All the on-board hardware "
+"is supported in the mainline kernel and in &releasename-cap;."
+msgstr ""
+"Juno est une carte de développement ARMv8 équipée d'un processeur 800 MHz à "
+"6 cœurs (deux A57 et quatre A53), d'un processeur graphique Mali (T624), de "
+"8 Go de RAM DDR3 et de ports Ethernet, USB et série. Elle a été conçue pour "
+"la mise en place de ce système et les tests de puissance. Elle n'est donc ni "
+"petite ni bon marché, mais était une des premières disponibles. Tout le "
+"matériel intégré est pris en charge dans la branche principale du noyau et "
+"dans &releasename-cap;."
+
+#. Tag: para
+#: hardware.xml:380
+#, no-c-format
+msgid ""
+"When using &d-i; on non-UEFI systems, you may have to manually make the "
+"system bootable at the end of the installation, e.g. by running the required "
+"commands in a shell started from within &d-i;. flash-kernel knows how to set "
+"up an X-Gene system booting with U-Boot."
+msgstr ""
+"Si vous utilisez l'installateur sur un système non UEFI, vous devrez le "
+"rendre amorçable vous-même à la fin de l'installation, par exemple en "
+"exécutant les commandes nécessaires dans un terminal démarré à l'intérieur "
+"de l'installateur. Flash-kernel sait comment installer un système X-Gene en "
+"amorçant avec U-Boot."
+
+#. Tag: title
+#: hardware.xml:388
+#, no-c-format
+msgid "Other platforms"
+msgstr "Autres plates-formes"
+
+#. Tag: para
+#: hardware.xml:389
+#, no-c-format
+msgid ""
+"The multiplatform support in the arm64 Linux kernel may also allow running "
+"&d-i; on arm64 systems not explicitly listed above. So long as the kernel "
+"used by &d-i; has support for the target system's components, and a device-"
+"tree file for that target is available, a new target system may work just "
+"fine. In these cases, the installer can usually provide a working "
+"installation, and so long as UEFI is in use, it should be able to make the "
+"system bootable as well. If UEFI is not used you may also need to perform "
+"some manual configuration steps to make the system bootable."
+msgstr ""
+"La prise en charge d'ARM multiplate-forme dans le noyau Linux arm64 permet "
+"d'exécuter l'installateur sur les systèmes arm64 qui ne sont pas listés ci-"
+"dessus. Tant que le noyau utilisé par l'installateur prend en charge les "
+"composants de la cible et qu'un arbre de périphériques est disponible, un "
+"nouveau système cible peut fonctionner de façon adéquate. Dans ce cas, "
+"l'installateur peut fournir une installation de l'espace utilisateur "
+"fonctionnelle et, si UEFI est utilisé, il devrait pouvoir rendre le système "
+"amorçable. Si UEFI n'est pas utilisé, vous devrez probablement effectuer "
+"quelques étapes manuellement pour rendre le système amorçable."
+
+#. Tag: title
+#: hardware.xml:405
+#, no-c-format
+msgid "Platforms supported by Debian/armhf"
+msgstr "Plates-formes prises en charge par Debian/armhf"
+
+#. Tag: para
+#: hardware.xml:407
+#, no-c-format
+msgid ""
+"The following systems are known to work with &debian;/armhf using the "
+"multiplatform (armmp) kernel:"
+msgstr ""
+"Les systèmes suivants sont connus pour fonctionner avec &debian;/armhf en "
+"utilisant le noyau multiplate-forme (armmp) :"
+
+#. Tag: term
+#: hardware.xml:414
+#, no-c-format
+msgid "Freescale MX53 Quick Start Board (MX53 LOCO Board)"
+msgstr "Freescale MX53 Quick Start Board (MX53 LOCO Board)"
+
+#. Tag: para
+#: hardware.xml:416
+#, no-c-format
+msgid "The IMX53QSB is a development board based on the i.MX53 SoC."
+msgstr "La IMX53QSB est une carte de développement basée sur la puce i.MX53."
+
+#. Tag: term
+#: hardware.xml:423
+#, no-c-format
+msgid "Versatile Express"
+msgstr "Versatile Express"
+
+#. Tag: para
+#: hardware.xml:425
+#, no-c-format
+msgid ""
+"The Versatile Express is a development board series from ARM consisting of a "
+"baseboard which can be equipped with various CPU daughter boards."
+msgstr ""
+"La Versatile Express est une série de cartes de développement d'ARM "
+"constituée d'une carte de base qui peut être équipée avec diverses cartes "
+"filles avec CPU."
+
+#. Tag: term
+#: hardware.xml:434
+#, no-c-format
+msgid "Certain Allwinner sunXi-based development boards and embedded systems"
+msgstr ""
+"Certaines cartes de développement et systèmes embarqués basés sur Allwinner "
+"sunXi"
+
+#. Tag: para
+#: hardware.xml:437
+#, no-c-format
+msgid ""
+"The armmp kernel supports several development boards and embedded systems "
+"based on the Allwinner A10 (architecture codename <quote>sun4i</quote>), "
+"A10s/A13 (architecture codename <quote>sun5i</quote>), A20 (architecture "
+"codename <quote>sun7i</quote>), A31/A31s (architecture codename "
+"<quote>sun6i</quote>) and A23/A33 (part of the <quote>sun8i</quote> family) "
+"SoCs. Full installer support (including provision of ready-made SD card "
+"images with the installer) is currently available for the following sunXi-"
+"based systems:"
+msgstr ""
+"Le noyau armmp prend en charge différentes cartes de développement et "
+"systèmes embarqués basés sur les puces Allwiner A10 (nom de code "
+"d'architecture <quote>sun4i</quote>), A10s/A13 (nom de code d'architecture "
+"<quote>sun5i</quote>), A20 (nom de code d'architecture <quote>sun7i</"
+"quote>), A31/A31s (nom de code d'architecture <quote>sun6i</quote>) et A23/"
+"A33 (une partie de la famille <quote>sun8i</quote>). Les systèmes suivants, "
+"basés sur sunXi sont totalement pris en charge par l'installateur (et des "
+"images de cartes SD sont disponibles) :"
+
+#. Tag: para
+#: hardware.xml:451
+#, no-c-format
+msgid "Cubietech Cubieboard 1 + 2 / Cubietruck"
+msgstr "Cubietech Cubieboard 1 + 2 / Cubietruck"
+
+#. Tag: para
+#: hardware.xml:454
+#, no-c-format
+msgid "LeMaker Banana Pi and Banana Pro"
+msgstr "LeMaker Banana Pi et Banana Pro"
+
+#. Tag: para
+#: hardware.xml:457
+#, no-c-format
+msgid "LinkSprite pcDuino and pcDuino3"
+msgstr "LinkSprite pcDuino et pcDuino3"
+
+#. Tag: para
+#: hardware.xml:460
+#, no-c-format
+msgid ""
+"Olimex A10-Olinuxino-LIME / A20-Olinuxino-LIME / A20-Olinuxino-LIME2 / A20-"
+"Olinuxino Micro / A20-SOM-EVB"
+msgstr ""
+"Olimex A10-Olinuxino-LIME, A20-Olinuxino-LIME, A20-Olinuxino-LIME2, A20-"
+"Olinuxino Micro et A20-SOM-EVB."
+
+#. Tag: para
+#: hardware.xml:464
+#, no-c-format
+msgid "Xunlong OrangePi Plus"
+msgstr "Xunlong OrangePi Plus"
+
+#. Tag: para
+#: hardware.xml:470
+#, no-c-format
+msgid ""
+"System support for Allwinner sunXi-based devices is limited to drivers and "
+"device-tree information available in the mainline Linux kernel. Vendor-"
+"specific kernel trees (such as the Allwinner SDK kernels) and the android-"
+"derived linux-sunxi.org kernel 3.4 series are not supported by &debian;."
+msgstr ""
+"La prise en charge des périphériques d'Allwinner basés sur sunXi est limitée "
+"aux informations des pilotes et arbre de périphériques disponibles dans la "
+"branche principale du noyau. Les autres branches spécifiques du noyau (comme "
+"les noyaux Allwinner SDK) et la branche linux-sunxi.org 3.4 dérivée "
+"d'Android ne sont pas prises en charge par &debian;."
+
+#. Tag: para
+#: hardware.xml:478
+#, no-c-format
+msgid ""
+"The mainline Linux kernel generally supports serial console, ethernet, SATA, "
+"USB and MMC/SD-cards on Allwinner A10, A10s/A13, A20, A23/A33 and A31/A31s "
+"SoCs. The level of support for local display (HDMI/VGA/LCD) and audio "
+"hardware varies between individual systems. For most systems, the kernel "
+"doesn't have native graphics drivers but instead uses the <quote>simplefb</"
+"quote> infrastructure in which the bootloader initializes the display and "
+"the kernel just re-uses the pre-initialized framebuffer. This generally "
+"works reasonably well, although it results in certain limitations (the "
+"display resolution cannot be changed on the fly and display powermanagement "
+"is not possible)."
+msgstr ""
+"La branche principale du noyau Linux prend généralement en charge la console "
+"série, l'ethernet, le SATA, l'USB et les cartes MMC/SD pour les puces "
+"Allwinner A10, A10s/A13, A20, A23/A33 et A31/A31s. Le niveau de prise en "
+"charge de l'affichage local (HDMI/VGA/LCD) et du matériel audio varie d'un "
+"système à l'autre. Pour la plupart des systèmes, le noyau ne possède pas de "
+"pilote graphique natif mais utilise à la place l'infrastructure "
+"<quote>simplefb</quote> dans laquelle le gestionnaire d'amorçage initialise "
+"l'affichage, le noyau se contentant de réutiliser le framebuffer. "
+"Généralement, cela fonctionne plutôt bien malgré quelques limitations (la "
+"résolution ne peut pas être changée à la volée, et la gestion d'alimentation "
+"de l'affichage n'est pas possible)."
+
+#. Tag: para
+#: hardware.xml:493
+#, no-c-format
+msgid ""
+"Onboard flash memory intended to be used as a mass storage device generally "
+"exists in two basic variants on sunXi-based systems: raw NAND flash and eMMC "
+"flash. Most older sunXi-based boards with onboard flash storage use raw NAND "
+"flash for which support is not generally available in the mainline kernel "
+"and therefore also not in Debian. A number of newer systems use eMMC flash "
+"instead of raw NAND flash. An eMMC flash chip basically appears as a fast, "
+"non-removable SD card and is supported in the same way as a regular SD card."
+msgstr ""
+"La mémoire flash embarquée prévue pour le stockage de masse existe en deux "
+"versions sur les systèmes sunXi : la mémoire flash NAND brute et la mémoire "
+"flash eMMC. La plupart des anciens systèmes sunXi utilisent une mémoire "
+"flash NAND brute, pour laquelle il n'existe pas de prise en charge dans la "
+"branche principale du noyau, pas plus que dans Debian. Un certain nombre de "
+"systèmes plus récents utilisent la mémoire flash eMMC à la place. Une puce "
+"eMMC apparaît comme une carte SD non amovible et est prise en charge de la "
+"même manière qu'une carte SD."
+
+#. Tag: para
+#: hardware.xml:506
+#, no-c-format
+msgid ""
+"The installer includes basic support for a number of sunXi-based systems not "
+"listed above, but it is largely untested on those systems as the &debian; "
+"project doesn't have access to the corresponding hardware. No pre-built SD "
+"card images with the installer are provided for those systems. Development "
+"boards with such limited support include:"
+msgstr ""
+"Certains systèmes sunXi qui ne sont pas listés ici peuvent être en partie "
+"pris en charge par l'installateur, mais ce matériel n'est pas testé car le "
+"projet &debian; n'y a pas accès. Il n'y a pas d'image de carte SD pour ces "
+"systèmes. Les cartes de développement suivantes ont une prise en charge "
+"limitée :"
+
+#. Tag: para
+#: hardware.xml:515
+#, no-c-format
+msgid "Olimex A10s-Olinuxino Micro / A13-Olinuxino / A13-Olinuxino Micro"
+msgstr "Olimex A10s-Olinuxino Micro, A13-Olinuxino et A13-Olinuxino Micro"
+
+#. Tag: para
+#: hardware.xml:519
+#, no-c-format
+msgid "Sinovoip BPI-M2 (A31s-based)"
+msgstr "Sinovoip BPI-M2 (basé sur A31s)"
+
+#. Tag: para
+#: hardware.xml:522
+#, no-c-format
+msgid "Xunlong Orange Pi (A20-based) / Orange Pi Mini (A20-based)"
+msgstr "Xunlong Orange Pi et Orange Pi Mini (basé sur A20)"
+
+#. Tag: para
+#: hardware.xml:527
+#, no-c-format
+msgid ""
+"In addition to the SoCs and systems listed above, the installer has very "
+"limited support for the Allwinner H3 SoC and a number of boards based on it. "
+"Mainline kernel support for the H3 is still largely work in progress at the "
+"time of the Debian 9 release freeze, so the installer only supports serial "
+"console, MMC/SD and the USB host controller on H3-based systems. There is no "
+"driver for the on-board ethernet port of the H3 yet, so networking is only "
+"possible with a USB ethernet adaptor or a USB wifi dongle. Systems based on "
+"the H3 for which such very basic installer support is available include:"
+msgstr ""
+"En plus des puces et systèmes listés ci-dessus, l'installateur possède une "
+"prise en charge très limitée de la puce Allwinner H3 et certaines cartes "
+"basées dessus. La prise en charge de H3 dans la branche principale du noyau "
+"est en cours à l'heure du gel de Debian 9, l'installateur ne prend donc en "
+"charge que la console série, les contrôleurs MMC/SD et USB hôte. Il n'y a "
+"pas de pilote disponible pour le port ethernet embarqué, la mise en réseau "
+"n'est donc possible qu'avec un adaptateur USB ou un dongle wifi USB. Les "
+"systèmes H3 suivants font partie de cette prise en charge restreinte :"
+
+#. Tag: para
+#: hardware.xml:540
+#, no-c-format
+msgid "FriendlyARM NanoPi NEO"
+msgstr "FriendlyARM NanoPi NEO"
+
+#. Tag: para
+#: hardware.xml:543
+#, no-c-format
+msgid ""
+"Xunlong Orange Pi Lite / Orange Pi One / Orange Pi PC / Orange Pi PC Plus / "
+"Orange Pi Plus / Orange Pi Plus 2E / Orange Pi 2"
+msgstr ""
+"Xunlong Orange Pi Lite, Orange Pi One, Orange Pi PC, Orange Pi PC Plus, "
+"Orange Pi Plus, Orange Pi Plus 2E et Orange Pi 2"
+
+#. Tag: term
+#: hardware.xml:554
+#, no-c-format
+msgid "NVIDIA Jetson TK1"
+msgstr "NVIDIA Jetson TK1"
+
+#. Tag: para
+#: hardware.xml:556
+#, no-c-format
+msgid ""
+"The NVIDIA Jetson TK1 is a developer board based on the Tegra K1 chip (also "
+"known as Tegra 124). The Tegra K1 features a quad-core 32-bit ARM Cortex-A15 "
+"CPU and Kepler GPU (GK20A) with 192 CUDA cores. Other systems based on the "
+"Tegra 124 may work, too."
+msgstr ""
+"La NVIDIA Jetson TK1 est une carte de développement basée sur la puce "
+"Tegra K1 (connue aussi sous le nom Tegra 124). La Tegra K1 possède un "
+"processeur quad-core ARM 32 bits Cortex-A15 et un GPU Kepler (GK20A) avec "
+"192 cœurs CUDA. D'autres systèmes basés sur la Tegra 124 pourraient aussi "
+"fonctionner."
+
+#. Tag: term
+#: hardware.xml:567
+#, no-c-format
+msgid "Seagate Personal Cloud and Seagate NAS"
+msgstr "Seagate Personal Cloud et NAS Seagate"
+
+#. Tag: para
+#: hardware.xml:569
+#, no-c-format
+msgid ""
+"The Seagate Personal Cloud and Seagate NAS are NAS devices based on "
+"Marvell's Armada 370 platform. Debian supports the Personal Cloud (SRN21C), "
+"Personal Cloud 2-Bay (SRN22C), Seagate NAS 2-Bay (SRPD20) and Seagate NAS 4-"
+"Bay (SRPD40)."
+msgstr ""
+"Le Seagate Personal Cloud et le NAS Seagate sont des périphériques basés sur "
+"la plate-forme Armada 370 de Marvell. Debian prend en charge le Personal "
+"Cloud (SRN21C), le Personal Cloud 2 bay (SRN22C), le NAS Seagate 2 bay "
+"(SRPD20) et le NAS Seagate 4 bay (SRPD40)."
+
+#. Tag: term
+#: hardware.xml:579
+#, no-c-format
+msgid "SolidRun Cubox-i2eX / Cubox-i4Pro"
+msgstr "SolidRun Cubox-i2eX / Cubox-i4Pro"
+
+#. Tag: para
+#: hardware.xml:581
+#, no-c-format
+msgid ""
+"The Cubox-i series is a set of small, cubical-shaped systems based on the "
+"Freescale i.MX6 SoC family. System support for the Cubox-i series is limited "
+"to drivers and device-tree information available in the mainline Linux "
+"kernel; the Freescale 3.0 kernel series for the Cubox-i is not supported by "
+"&debian;. Available drivers in the mainline kernel include serial console, "
+"ethernet, USB, MMC/SD-card and display support over HDMI (console and X11). "
+"In addition to that, the eSATA port on the Cubox-i4Pro is supported."
+msgstr ""
+"La série Cubox-i est un ensemble de systèmes petits et cubiques basés sur la "
+"famille de puce Freescale i.MX6. La prise en charge de la série Cubox-i est "
+"limitée aux informations de pilotes et arbre de périphériques disponibles "
+"dans la branche principale du noyau ; la branche du noyau Freescale 3.0 pour "
+"les Cubox-i n'est pas prise en charge par &debian;. Les pilotes pris en "
+"charge dans la branche principale du noyau comprennent la console série, "
+"Ethernet, USB, les cartes MMC/SD et la prise en charge de l'affichage par "
+"HDMI (console et X11). En plus de cela, le portage de eSATA est pris en "
+"charge sur le Cubox-i4Pro."
+
+#. Tag: term
+#: hardware.xml:596
+#, no-c-format
+msgid "Wandboard"
+msgstr "Wandboard"
+
+#. Tag: para
+#: hardware.xml:598
+#, no-c-format
+msgid ""
+"The Wandboard Quad, Dual and Solo are development boards based on the "
+"Freescale i.MX6 Quad SoC. System support is limited to drivers and device-"
+"tree information available in the mainline Linux kernel; the wandboard-"
+"specific 3.0 and 3.10 kernel series from wandboard.org are not supported by "
+"&debian;. The mainline kernel includes driver support for serial console, "
+"display via HDMI (console and X11), ethernet, USB, MMC/SD, SATA (Quad only) "
+"and analog audio. Support for the other audio options (S/PDIF, HDMI-Audio) "
+"and for the onboard WLAN/Bluetooth module is untested or not available in "
+"&debian; 9."
+msgstr ""
+"Les Wanboard Quad, Dual et Solo sont des cartes de développement basées sur "
+"la puce Freescale i.MX6 Quad. La prise en charge est limitée aux "
+"informations de pilotes et arbre de périphériques disponibles dans la "
+"branche principale du noyau ; la branche du noyau wanboard 3.0 et 3.10 de "
+"wanboard.org n'est pas prise en charge par &debian;. Les pilotes pris en "
+"charge dans la branche principale du noyau comprennent la console série, "
+"l'affichage par HDMI (console et X11), Ethernet, USB, les cartes MMC/SD, "
+"SATA (Quad uniquement) et audio analogique. La prise en charge des autres "
+"sorties audio embarquées (S/PDIF et HDMI-Audio) et du module WLAN/Bluetooth "
+"embarqué n'est pas testée ou n'est pas disponible dans &debian; 9."
+
+#. Tag: para
+#: hardware.xml:616
+#, no-c-format
+msgid ""
+"Generally, the ARM multiplatform support in the Linux kernel allows running "
+"&d-i; on armhf systems not explicitly listed above, as long as the kernel "
+"used by &d-i; has support for the target system's components and a device-"
+"tree file for the target is available. In these cases, the installer can "
+"usually provide a working installation, but it may not be able to "
+"automatically make the system bootable. Doing that in many cases requires "
+"device-specific information."
+msgstr ""
+"Généralement, la prise en charge d'ARM multiplate-forme dans le noyau Linux "
+"permet d'exécuter l'installateur sur les systèmes armhf qui ne sont pas "
+"listés ci-dessus tant que le noyau utilisé par l'installateur prend en "
+"charge les composants de la cible et qu'un arbre de périphériques est "
+"disponible. Dans ce cas, l'installateur peut fournir une installation "
+"fonctionnelle mais ne pourra probablement pas rendre le système "
+"automatiquement amorçable, car il faudrait parfois pour cela avoir des "
+"informations spécifiques aux périphériques."
+
+#. Tag: para
+#: hardware.xml:628
+#, no-c-format
+msgid ""
+"When using &d-i; on such systems, you may have to manually make the system "
+"bootable at the end of the installation, e.g. by running the required "
+"commands in a shell started from within &d-i;."
+msgstr ""
+"Si vous utilisez l'installateur sur de tels systèmes, vous devrez le rendre "
+"amorçable vous-même à la fin de l'installation, par exemple en exécutant les "
+"commandes nécessaires dans un terminal démarré à l'intérieur de "
+"l'installateur."
+
+#. Tag: title
+#: hardware.xml:637
+#, no-c-format
+msgid "Platforms no longer supported by Debian/armhf"
+msgstr "Plates-formes qui ne sont plus prises en charge par Debian/armhf"
+
+#. Tag: term
+#: hardware.xml:641
+#, no-c-format
+msgid "EfikaMX"
+msgstr "EfikaMX"
+
+#. Tag: para
+#: hardware.xml:642
+#, no-c-format
+msgid ""
+"The EfikaMX platform (Genesi Efika Smartbook and Genesi EfikaMX nettop) was "
+"supported in &debian; 7 with a platform-specific kernel, but is no longer "
+"supported from &debian; 8 onwards. The code required to build the formerly "
+"used platform-specific kernel has been removed from the upstream Linux "
+"kernel source in 2012, so &debian; cannot provide newer builds. Using the "
+"armmp multiplatform kernel on the EfikaMX platform would require device-tree "
+"support for it, which is currently not available."
+msgstr ""
+"La plate-forme EfikaMX (Smartbook Genesi Efika et nettop Genesi EfikaMX) "
+"était prise en charge dans &debian; 7 avec un noyau spécifique, mais n'est "
+"plus prise en charge dans &debian; 8. Le code nécessaire pour construire ce "
+"noyau spécifique a été retiré de la source amont du noyau Linux en 2012. "
+"&debian; ne peut donc plus fournir de nouvelles constructions. L'utilisation "
+"du noyau multiplate-forme armmp sur la plate-forme EfikaMX nécessiterait un "
+"arbre de périphériques qui n'est actuellement pas disponible."
+
+#. Tag: title
+#: hardware.xml:660
+#, no-c-format
+msgid "Platforms supported by Debian/armel"
+msgstr "Plates-formes prises en charge par Debian/armel"
+
+#. Tag: para
+#: hardware.xml:662
+#, no-c-format
+msgid ""
+"The following platforms are supported by &debian;/armel; they require "
+"platform-specific kernels."
+msgstr ""
+"Les plates-formes suivantes sont prises en charge par &debian;/armel ; elles "
+"nécessitent un noyau spécifique à la plate-forme."
+
+#. Tag: term
+#: hardware.xml:670
+#, no-c-format
+msgid "Kirkwood"
+msgstr "Kirkwood"
+
+#. Tag: para
+#: hardware.xml:671
+#, no-c-format
+msgid ""
+"Kirkwood is a system-on-chip (SoC) from Marvell that integrates an ARM CPU, "
+"Ethernet, SATA, USB, and other functionality in one chip. &debian; currently "
+"supports the following Kirkwood based devices:"
+msgstr ""
+"Kirkwood est un système sur une puce (SOC) de Marvell qui intègre processeur "
+"ARM, Ethernet, SATA, USB et autres fonctionnalités sur une seule puce. Pour "
+"l'instant les systèmes suivants sont reconnus :"
+
+#. Tag: ulink
+#: hardware.xml:679
+#, no-c-format
+msgid ""
+"Plug computers (SheevaPlug, GuruPlug, DreamPlug and Seagate FreeAgent "
+"DockStar)"
+msgstr ""
+"Machines Plug (SheevaPlug, GuruPlug, DreamPlug et Seagate FreeAgent DockStar)"
+
+#. Tag: para
+#: hardware.xml:682
+#, no-c-format
+msgid ""
+"<ulink url=\"&url-arm-cyrius-qnap-kirkwood;\">QNAP Turbo Station</ulink> "
+"(all TS-11x/TS-12x, HS-210, TS-21x/TS-22x and TS-41x/TS-42x models)"
+msgstr ""
+"<ulink url=\"&url-arm-cyrius-qnap-kirkwood;\">QNAP Turbo Station</ulink> "
+"(tous les modèles TS-11x/TS-12x, HS-210, TS-21x/TS-22x et TS-41x/TS-42x)"
+
+#. Tag: para
+#: hardware.xml:686
+#, no-c-format
+msgid ""
+"LaCie NASes (Network Space v2, Network Space Max v2, Internet Space v2, d2 "
+"Network v2, 2Big Network v2 and 5Big Network v2)"
+msgstr ""
+"Les NAS LaCie (Network Space v2, Network Space Max v2, Internet Space v2, d2 "
+"Network v2, 2Big Network v2 et 5Big Network v2)"
+
+#. Tag: para
+#: hardware.xml:690
+#, no-c-format
+msgid "OpenRD (OpenRD-Base, OpenRD-Client and OpenRD-Ultimate)"
+msgstr "OpenRD (OpenRD-Base, OpenRD-Client et OpenRD-Ultimate)"
+
+#. Tag: term
+#: hardware.xml:699 hardware.xml:743
+#, no-c-format
+msgid "Orion5x"
+msgstr "Orion5x"
+
+#. Tag: para
+#: hardware.xml:700
+#, no-c-format
+msgid ""
+"Orion is a system-on-chip (SoC) from Marvell that integrates an ARM CPU, "
+"Ethernet, SATA, USB, and other functionality in one chip. There are many "
+"Network Attached Storage (NAS) devices on the market that are based on an "
+"Orion chip. &debian; currently supports the following Orion based devices: "
+"<ulink url=\"&url-arm-cyrius-kuroboxpro;\">Buffalo Kurobox</ulink> and "
+"<ulink url=\"&url-arm-cyrius-mv2120;\">HP mv2120</ulink>."
+msgstr ""
+"Orion est un système sur une puce (SOC) de Marvell qui intègre processeur "
+"ARM, Ethernet, SATA, USB et autres fonctionnalités sur une seule puce. Il "
+"existe sur le marché beaucoup de périphériques NAS (<quote>Network Attached "
+"Storage</quote>) basés sur la puce Orion. Pour l'instant sont reconnus les "
+"systèmes suivants : <ulink url=\"&url-arm-cyrius-kuroboxpro;\">Buffalo "
+"Kurobox</ulink> et <ulink url=\"&url-arm-cyrius-mv2120;\">HP mv2120</ulink>."
+
+#. Tag: term
+#: hardware.xml:714
+#, no-c-format
+msgid "Versatile"
+msgstr "Versatile"
+
+#. Tag: para
+#: hardware.xml:715
+#, no-c-format
+msgid ""
+"The Versatile platform is emulated by QEMU and is therefore a nice way to "
+"test and run &debian; on ARM if you don't have real hardware."
+msgstr ""
+"La plate-forme <quote>Versatile</quote> est émulée par QEMU. C'est un bon "
+"moyen de tester &debian; sur ARM quand on ne possède pas de matériel réel."
+
+#. Tag: title
+#: hardware.xml:728
+#, no-c-format
+msgid "Platforms and devices no longer supported by Debian/armel"
+msgstr ""
+"Plates-formes et périphériques qui ne sont plus pris en charge par Debian/"
+"armel"
+
+#. Tag: term
+#: hardware.xml:732
+#, no-c-format
+msgid "IXP4xx"
+msgstr "IXP4xx"
+
+#. Tag: para
+#: hardware.xml:733
+#, no-c-format
+msgid ""
+"Support for the Intel IXP4xx platform has been dropped in &debian; 9. The "
+"Linksys NSLU2 device is based on IXP4xx and is therefore no longer supported."
+msgstr ""
+"La prise en charge de la plate-forme Intel IXP4xx a été supprimée de "
+"&debian; 9. Le Linksys NSLU2 est basé sur IXP4xx et n'est donc plus pris en "
+"charge."
+
+#. Tag: para
+#: hardware.xml:744
+#, no-c-format
+msgid ""
+"Support for the D-Link DNS-323 and Conceptronic CH3SNAS devices has been "
+"dropped from the Orion5x platform in &debian; 9. The Linux kernel no longer "
+"fits into the flash on these devices. Other Orion devices, such as Buffalo "
+"Kurobox and HP mv2120, are still supported."
+msgstr ""
+"La prise en charge du D-Link DNS-323 et du Conceptronic CH3SNAS a été "
+"supprimée de la plate-forme Orion5x dans &debian; 9. Le noyau Linux est trop "
+"gros pour rentrer sur la mémoire flash de ces appareils. D'autres "
+"périphériques Orion, comme le Buffalo Kurobox et le HP mv2120, sont toujours "
+"pris en charge."
+
+#. Tag: title
+#: hardware.xml:763 hardware.xml:931 hardware.xml:1374
+#, no-c-format
+msgid "CPU, Main Boards, and Video Support"
+msgstr "Microprocesseurs, cartes mère et cartes vidéo"
+
+#. Tag: para
+#: hardware.xml:764
+#, no-c-format
+msgid ""
+"Complete information concerning supported peripherals can be found at <ulink "
+"url=\"&url-hardware-howto;\">Linux Hardware Compatibility HOWTO</ulink>. "
+"This section merely outlines the basics."
+msgstr ""
+"Vous pouvez trouver une information complète concernant les périphériques "
+"reconnus dans le <ulink url=\"&url-hardware-howto;\">HOWTO sur la "
+"compatibilité des matériels avec Linux</ulink>. Cette section présente "
+"seulement les éléments de base."
+
+#. Tag: title
+#: hardware.xml:772 hardware.xml:875
+#, no-c-format
+msgid "<title>CPU</title>"
+msgstr "<title>Microprocesseurs</title>"
+
+#. Tag: para
+#: hardware.xml:773
+#, no-c-format
+msgid ""
+"Nearly all x86-based (IA-32) processors still in use in personal computers "
+"are supported. This also includes 32-bit AMD and VIA (former Cyrix) "
+"processors, and processors like the Athlon XP and Intel P4 Xeon."
+msgstr ""
+"Quasiment tous les processeurs de la famille x86 (IA-32) encore en usage sur "
+"les PC sont reconnus&nbsp;; cela inclut également les processeurs 32 bits "
+"AMD et VIA (anciennement Cyrix) et les processeurs tels que Athlon XP et "
+"Intel P4 Xeon."
+
+#. Tag: para
+#: hardware.xml:780
+#, no-c-format
+msgid ""
+"However, &debian; GNU/Linux &releasename; will <emphasis>not</emphasis> run "
+"on 586 (Pentium) or earlier processors."
+msgstr ""
+"Cependant, &debian; GNU/Linux &releasename; ne fonctionnera <emphasis>pas</"
+"emphasis> sur les processeurs 586 (Pentium) ou précédents."
+
+#. Tag: para
+#: hardware.xml:786
+#, no-c-format
+msgid ""
+"If your system has a 64-bit processor from the AMD64 or Intel 64 families, "
+"you will probably want to use the installer for the amd64 architecture "
+"instead of the installer for the (32-bit) i386 architecture."
+msgstr ""
+"Si votre système possède un processeur 64 bits des familles AMD64 ou "
+"Intel 64, vous devriez utiliser l'installateur pour l'architecture amd64 au "
+"lieu de l'installateur pour l'architecture i386 (32 bits)."
+
+#. Tag: title
+#: hardware.xml:795
+#, no-c-format
+msgid "I/O Bus"
+msgstr "Bus d'entrée sortie"
+
+#. Tag: para
+#: hardware.xml:796
+#, no-c-format
+msgid ""
+"The system bus is the part of the motherboard which allows the CPU to "
+"communicate with peripherals such as storage devices. Your computer must use "
+"the PCI, PCIe, or PCI-X bus. Essentially all personal computers sold in "
+"recent years use one of these."
+msgstr ""
+"Le bus système est la partie de la carte mère permettant au processeur de "
+"communiquer avec les périphériques tels que les périphériques de stockage. "
+"Votre ordinateur doit utiliser l'un des bus PCI, PCIe, ou PCI-X. Tous les PC "
+"vendus ces dernières années utilisent l'un d'entre eux."
+
+#. Tag: title
+#: hardware.xml:813
+#, no-c-format
+msgid "Platforms supported by the &debian; &architecture; port"
+msgstr "Plates-formes prises en charge par le portage &debian; &architecture;"
+
+#. Tag: para
+#: hardware.xml:815
+#, no-c-format
+msgid "&debian; on &arch-title; supports the following platforms:"
+msgstr ""
+"&debian; sur l'architecture &arch-title; prend en charge les plates-formes "
+"suivantes :"
+
+#. Tag: term
+#: hardware.xml:821
+#, no-c-format
+msgid "<term>Cavium Octeon</term>"
+msgstr "<term>Cavium Octeon</term>"
+
+#. Tag: para
+#: hardware.xml:823
+#, no-c-format
+msgid ""
+"Cavium designs a range of 64-bit MIPS Octeon processors which are mainly "
+"used in networking devices. Devices with these processors include the "
+"Ubiquiti EdgeRouter and the Rhino Labs UTM8."
+msgstr ""
+"Cavium conçoit des processeurs MIPS Octeon 64 bits qui sont utilisés "
+"principalement dans les périphériques réseau. Parmi ces périphériques, on "
+"recense le Ubiquiti EdgeRouter et le Rhino Labs UTM8."
+
+#. Tag: term
+#: hardware.xml:832
+#, no-c-format
+msgid "<term>Loongson 3</term>"
+msgstr "<term>Loongson 3</term>"
+
+#. Tag: para
+#: hardware.xml:834
+#, no-c-format
+msgid "Devices based on the Loongson 3A and 3B processors are supported."
+msgstr ""
+"Les périphériques basés sur les processeurs Loongson 3A et 3B sont pris en "
+"charge."
+
+#. Tag: term
+#: hardware.xml:842
+#, no-c-format
+msgid "<term>MIPS Malta</term>"
+msgstr "<term>MIPS Malta</term>"
+
+#. Tag: para
+#: hardware.xml:844
+#, no-c-format
+msgid ""
+"This platform is emulated by QEMU and is therefore a nice way to test and "
+"run &debian; on MIPS if you don't have the hardware."
+msgstr ""
+"Cette plate-forme est émulée par QEMU. C'est un bon moyen de tester &debian; "
+"sur MIPS quand on ne possède pas de matériel réel."
+
+#. Tag: para
+#: hardware.xml:848
+#, no-c-format
+msgid ""
+"There are two Malta kernel flavours: 4kc-malta is built for 32-bit "
+"processors, and 5kc-malta is built for 64-bit processors."
+msgstr ""
+"Il y a deux saveurs du noyau pour Malta : 4kc-malta est construit pour les "
+"processeurs 32 bits, tandis que 5kc-malta est construit pour les processeurs "
+"64 bits."
+
+#. Tag: para
+#: hardware.xml:856
+#, no-c-format
+msgid ""
+"In addition, other boards which contain <phrase arch=\"mips;mipsel"
+"\">MIPS32r2 or</phrase> MIPS64r2 based processors should also be able to run "
+"&debian;, however kernels for these processors are not built and the "
+"&debian; installer does not directly support them."
+msgstr ""
+"De plus, d'autres cartes équipées de processeurs basés sur <phrase arch="
+"\"mips;mipsel\">MIPS32r2 ou</phrase> MIPS64r2 devraient être en mesure de "
+"faire fonctionner &debian;. Cependant, les noyaux pour ces processeurs ne "
+"sont pas compilés et l'installateur &debian; ne les prend pas directement en "
+"charge."
+
+#. Tag: para
+#: hardware.xml:864
+#, no-c-format
+msgid ""
+"Complete information regarding supported mips/mipsel/mips64el machines can "
+"be found at the <ulink url=\"&url-linux-mips;\">Linux-MIPS homepage</ulink>. "
+"In the following, only the systems supported by the &debian; installer will "
+"be covered. If you are looking for support for other subarchitectures, "
+"please contact the <ulink url=\"&url-list-subscribe;\"> debian-&arch-"
+"listname; mailing list</ulink>."
+msgstr ""
+"Une information complète sur les machines mips/mipsel/mips64el se trouve "
+"dans la <ulink url=\"&url-linux-mips;\">page Linux-MIPS</ulink>. Dans la "
+"suite, seuls les systèmes gérés par l'installateur &debian; seront traités. "
+"Si vous recherchez de l'aide pour d'autres sous-architectures, vous pouvez "
+"contacter la <ulink url=\"&url-list-subscribe;\">liste de diffusion debian-"
+"&arch-listname;</ulink>."
+
+#. Tag: para
+#: hardware.xml:876
+#, no-c-format
+msgid ""
+"Some MIPS machines can be operated in both big and little endian mode. "
+"<phrase arch=\"mips64el;mipsel\"> For little endian MIPS, please read the "
+"documentation for the mipsel and mips64el architectures. </phrase> <phrase "
+"arch=\"mips\"> For big endian MIPS, please read the documentation for the "
+"mips architecture. </phrase>"
+msgstr ""
+"Certaines machines MIPS peuvent fonctionner dans les modes grand-boutien ou "
+"petit-boutien. <phrase arch=\"mips64el;mipsel\">Pour les MIPS petit-boutien, "
+"veuillez vous reporter à la documentation sur l'architecture « mipsel » et "
+"« mips64el ». </phrase><phrase arch=\"mips\">Pour les MIPS grand-boutien, "
+"veuillez vous reporter à la documentation sur l'architecture « mips ». </"
+"phrase>"
+
+#. Tag: title
+#: hardware.xml:891
+#, no-c-format
+msgid "Platforms no longer supported by the &debian; &architecture; port"
+msgstr ""
+"Plates-formes qui ne sont plus prises en charge par le portage &debian; "
+"&architecture;"
+
+#. Tag: para
+#: hardware.xml:892
+#, no-c-format
+msgid ""
+"Since &debian; Stretch, support for all MIPS processors which do not "
+"implement MIPS32 Release 2 have been dropped. Therefore the following "
+"platforms supported in Jessie are no longer supported:"
+msgstr ""
+"Depuis &debian; Stretch, la prise en charge des processeurs MIPS qui "
+"n'implémentent pas la version 2 de MIPS 32 (« MIPS32 Release 2 ») a été "
+"supprimée. Les plates-formes suivantes, fonctionnant avec Jessie, ne sont "
+"donc plus prises en charge :"
+
+#. Tag: term
+#: hardware.xml:899
+#, no-c-format
+msgid "Loongson 2E and 2F"
+msgstr "Loongson 2E et  2F"
+
+#. Tag: listitem
+#: hardware.xml:900
+#, no-c-format
+msgid ""
+"These are the older Loongson processors. Devices based on them include the "
+"Fuloong Mini-PC and the Lemote Yeeloong laptop."
+msgstr ""
+"Ce sont les anciens processeurs Loongson. Les périphériques basés dessus "
+"comprennent le Mini-PC Fuloong et le portable Lemote Yeeloong."
+
+#. Tag: term
+#: hardware.xml:906
+#, no-c-format
+msgid "SGI IP22"
+msgstr "SGI IP22"
+
+#. Tag: listitem
+#: hardware.xml:907
+#, no-c-format
+msgid "This platform includes the SGI machines Indy, Indigo 2 and Challenge S."
+msgstr ""
+"Cette plate-forme inclut les machines SGI Indy, Indigo 2 et Challenge S."
+
+#. Tag: term
+#: hardware.xml:912
+#, no-c-format
+msgid "SGI IP32"
+msgstr "SGI IP32"
+
+#. Tag: listitem
+#: hardware.xml:913
+#, no-c-format
+msgid "This platform is generally known as SGI O2."
+msgstr "Cette plate-forme est connue sous le nom SGI O2."
+
+#. Tag: term
+#: hardware.xml:916
+#, no-c-format
+msgid "Broadcom BCM91250"
+msgstr "Broadcom BCM91250"
+
+#. Tag: listitem
+#: hardware.xml:917
+#, no-c-format
+msgid ""
+"Development board for Broadcom's SiByte core. Also known by its codename "
+"SWARM."
+msgstr ""
+"Carte de développement pour le cœur SiByte de Broadcom, aussi connue sous le "
+"nom de SWARM."
+
+#. Tag: para
+#: hardware.xml:932
+#, no-c-format
+msgid ""
+"For &debian-gnu; &release; only the PMac (Power-Macintosh or PowerMac) and "
+"PreP subarchitectures are supported."
+msgstr ""
+"Avec &debian-gnu; &release; seules les sous-architectures PMac (Power-"
+"Macintosh ou PowerMac) et PreP sont reconnues."
+
+#. Tag: title
+#: hardware.xml:953
+#, no-c-format
+msgid "Kernel Flavours"
+msgstr "Les différents noyaux"
+
+#. Tag: para
+#: hardware.xml:955
+#, no-c-format
+msgid ""
+"There are two flavours of the powerpc kernel in &debian;, based on the CPU "
+"type:"
+msgstr ""
+"Il existe deux variantes du noyau powerpc, basées sur le type de "
+"processeur&nbsp;:"
+
+#. Tag: term
+#: hardware.xml:962
+#, no-c-format
+msgid "powerpc"
+msgstr "powerpc"
+
+#. Tag: para
+#: hardware.xml:963
+#, no-c-format
+msgid ""
+"This kernel flavour supports the PowerPC 601, 603, 604, 740, 750, and 7400 "
+"processors. All Apple PowerMac machines up to and including the one marketed "
+"as G4 use one of these processors."
+msgstr ""
+"Cette variante reconnaît les processeurs PowerPC 601, 603, 604, 740, 750 et "
+"7400. Toutes les machines Apple PowerMac jusqu'à G4 utilisent l'un de ces "
+"processeurs."
+
+#. Tag: term
+#: hardware.xml:973
+#, no-c-format
+msgid "powerpc-smp"
+msgstr "powerpc-smp"
+
+#. Tag: para
+#: hardware.xml:974
+#, no-c-format
+msgid "All Apple PowerMac G4 SMP machines."
+msgstr "Toutes les machines Apple PowerMac G4 SMP."
+
+#. Tag: term
+#: hardware.xml:982
+#, no-c-format
+msgid "power64"
+msgstr "power64"
+
+#. Tag: para
+#: hardware.xml:983
+#, no-c-format
+msgid "The power64 kernel flavour supports the following CPUs:"
+msgstr "La variante power64 accepte les processeurs suivants&nbsp;:"
+
+#. Tag: para
+#: hardware.xml:987
+#, no-c-format
+msgid ""
+"The POWER3 processor is used in older IBM 64-bit server systems: known "
+"models include the IntelliStation POWER Model 265, the pSeries 610 and 640, "
+"and the RS/6000 7044-170, 7043-260, and 7044-270."
+msgstr ""
+"Le processeur POWER3 est utilisé par les anciens systèmes IBM 64 bits. On "
+"trouve les machines IntelliStation POWER Model 265, les pSeries 610 et 640 "
+"et les RS/6000 7044-170, 7043-260, 7044-270."
+
+#. Tag: para
+#: hardware.xml:993
+#, no-c-format
+msgid ""
+"The POWER4 processor is used in more recent IBM 64-bit server systems: known "
+"models include the pSeries 615, 630, 650, 655, 670, and 690."
+msgstr ""
+"Le processeur POWER4 est utilisé par les nouveaux systèmes IBM 64 bits. On "
+"trouve les machines pSeries 615, 630, 650, 655, 670 et 690."
+
+#. Tag: para
+#: hardware.xml:998
+#, no-c-format
+msgid ""
+"Systems using the PPC970 processor (Apple G5, YDL PowerStation, IBM "
+"Intellistation POWER 185) are also based on the POWER4 architecture, and use "
+"this kernel flavour."
+msgstr ""
+"Les systèmes qui utilisent le processeur PPC970 (Apple G5, YDL PowerStation, "
+"IBM Intellistation POWER 185) sont aussi basés sur l'architecture POWER4 et "
+"utilisent cette variante du noyau."
+
+#. Tag: para
+#: hardware.xml:1004
+#, no-c-format
+msgid "Newer IBM systems using POWER5, POWER6, and POWER7 processors."
+msgstr ""
+"Les nouveaux systèmes IBM qui utilisent les processeurs POWER5, POWER6 et "
+"POWER7."
+
+#. Tag: title
+#: hardware.xml:1037
+#, no-c-format
+msgid "Power Macintosh (pmac) subarchitecture"
+msgstr "La sous-architecture Power Macintosh (pmac)"
+
+#. Tag: para
+#: hardware.xml:1039
+#, no-c-format
+msgid ""
+"Apple (and briefly a few other manufacturers &mdash; Power Computing, for "
+"example) made a series of Macintosh computers based on the PowerPC "
+"processor. For purposes of architecture support, they are categorized as "
+"NuBus (not supported by &debian;), OldWorld, and NewWorld."
+msgstr ""
+"Apple (et quelques autres constructeurs, Power Computing, par exemple), a "
+"produit une série d'ordinateurs Macintosh basés sur le processeur PowerPC. "
+"On distingue trois catégories&nbsp;: NuBus (non gérée par &debian;), "
+"OldWorld et NewWorld."
+
+#. Tag: para
+#: hardware.xml:1046
+#, no-c-format
+msgid ""
+"OldWorld systems are most Power Macintoshes with a floppy drive and a PCI "
+"bus. Most 603, 603e, 604, and 604e based Power Macintoshes are OldWorld "
+"machines. Those pre-iMac PowerPC models from Apple use a four digit naming "
+"scheme, except for the beige colored G3 systems, which are also OldWorld."
+msgstr ""
+"Les systèmes OldWorld représentent la plupart des Power Macintosh qui "
+"possèdent un lecteur de disquettes et un bus PCI. La plupart des Power "
+"Macintosh 603, 603e, 604 et 604e sont des machines OldWorld. Les numéros de "
+"modèles PowerPC pré-iMac de chez Apple ont quatre chiffres, sauf les "
+"systèmes G3 de couleur beige qui sont aussi des OldWorld."
+
+#. Tag: para
+#: hardware.xml:1054
+#, no-c-format
+msgid ""
+"The so called NewWorld PowerMacs are any PowerMacs in translucent colored "
+"plastic cases and later models. That includes all iMacs, iBooks, G4 systems, "
+"blue colored G3 systems, and most PowerBooks manufactured in and after 1999. "
+"The NewWorld PowerMacs are also known for using the <quote>ROM in RAM</"
+"quote> system for MacOS, and were manufactured from mid-1998 onwards."
+msgstr ""
+"Les machines appelées PowerMac NewWorld sont les PowerMac avec un boîtier en "
+"plastique de couleur et translucide&nbsp;: tous les iMac, iBook, G4, G3 de "
+"couleur bleue et la plupart des PowerBook fabriqués à partir de 1999. Les "
+"PowerMac NewWorld sont aussi connus pour utiliser le système <quote>ROM in "
+"RAM</quote> de MacOS et ont commencé à être fabriqués à partir de 1998."
+
+#. Tag: para
+#: hardware.xml:1062
+#, no-c-format
+msgid ""
+"Specifications for Apple hardware are available at <ulink url=\"http://www."
+"info.apple.com/support/applespec.html\">AppleSpec</ulink>, and, for older "
+"hardware, <ulink url=\"http://www.info.apple.com/support/applespec.legacy/"
+"index.html\">AppleSpec Legacy</ulink>."
+msgstr ""
+"Les spécifications pour le matériel Apple sont disponibles sur <ulink url="
+"\"http://www.info.apple.com/support/applespec.html\">AppleSpec</ulink>, et "
+"pour le matériel plus ancien, <ulink url=\"http://www.info.apple.com/support/"
+"applespec.legacy/index.html\">AppleSpec Legacy</ulink>."
+
+#. Tag: entry
+#: hardware.xml:1078 hardware.xml:1213 hardware.xml:1257 hardware.xml:1290
+#, no-c-format
+msgid "Model Name/Number"
+msgstr "Modèle Nom/Numéro"
+
+#. Tag: entry
+#: hardware.xml:1079
+#, no-c-format
+msgid "Generation"
+msgstr "Génération"
+
+#. Tag: entry
+#: hardware.xml:1085
+#, no-c-format
+msgid "Apple"
+msgstr "Apple"
+
+#. Tag: entry
+#: hardware.xml:1086
+#, no-c-format
+msgid "iMac Bondi Blue, 5 Flavors, Slot Loading"
+msgstr "iMac Bondi Blue, 5 Flavors, Slot Loading"
+
+#. Tag: entry
+#: hardware.xml:1087 hardware.xml:1090 hardware.xml:1093 hardware.xml:1096
+#: hardware.xml:1099 hardware.xml:1102 hardware.xml:1105 hardware.xml:1108
+#: hardware.xml:1111 hardware.xml:1114 hardware.xml:1117 hardware.xml:1120
+#: hardware.xml:1123 hardware.xml:1126 hardware.xml:1129 hardware.xml:1132
+#, no-c-format
+msgid "NewWorld"
+msgstr "NewWorld"
+
+#. Tag: entry
+#: hardware.xml:1089
+#, no-c-format
+msgid "iMac Summer 2000, Early 2001"
+msgstr "iMac Summer 2000, Early 2001"
+
+#. Tag: entry
+#: hardware.xml:1092
+#, no-c-format
+msgid "iMac G5"
+msgstr "iMac G5"
+
+#. Tag: entry
+#: hardware.xml:1095
+#, no-c-format
+msgid "iBook, iBook SE, iBook Dual USB"
+msgstr "iBook, iBook SE, iBook Dual USB"
+
+#. Tag: entry
+#: hardware.xml:1098
+#, no-c-format
+msgid "iBook2"
+msgstr "iBook2"
+
+#. Tag: entry
+#: hardware.xml:1101
+#, no-c-format
+msgid "iBook G4"
+msgstr "iBook G4"
+
+#. Tag: entry
+#: hardware.xml:1104
+#, no-c-format
+msgid "Power Macintosh Blue and White (B&amp;W) G3"
+msgstr "Power Macintosh Blue and White (B&amp;W) G3"
+
+#. Tag: entry
+#: hardware.xml:1107
+#, no-c-format
+msgid "Power Macintosh G4 PCI, AGP, Cube"
+msgstr "Power Macintosh G4 PCI, AGP, Cube"
+
+#. Tag: entry
+#: hardware.xml:1110
+#, no-c-format
+msgid "Power Macintosh G4 Gigabit Ethernet"
+msgstr "Power Macintosh G4 Gigabit Ethernet"
+
+#. Tag: entry
+#: hardware.xml:1113
+#, no-c-format
+msgid "Power Macintosh G4 Digital Audio, Quicksilver"
+msgstr "Power Macintosh G4 Digital Audio, Quicksilver"
+
+#. Tag: entry
+#: hardware.xml:1116
+#, no-c-format
+msgid "Power Macintosh G5"
+msgstr "Power Macintosh G5"
+
+#. Tag: entry
+#: hardware.xml:1119
+#, no-c-format
+msgid "PowerBook G3 FireWire Pismo (2000)"
+msgstr "PowerBook G3 FireWire Pismo (2000)"
+
+#. Tag: entry
+#: hardware.xml:1122
+#, no-c-format
+msgid "PowerBook G3 Lombard (1999)"
+msgstr "PowerBook G3 Lombard (1999)"
+
+#. Tag: entry
+#: hardware.xml:1125
+#, no-c-format
+msgid "PowerBook G4 Titanium"
+msgstr "PowerBook G4 Titanium"
+
+#. Tag: entry
+#: hardware.xml:1128
+#, no-c-format
+msgid "PowerBook G4 Aluminum"
+msgstr "PowerBook G4 Aluminum"
+
+#. Tag: entry
+#: hardware.xml:1131
+#, no-c-format
+msgid "Xserve G5"
+msgstr "Xserve G5"
+
+#. Tag: entry
+#: hardware.xml:1134
+#, no-c-format
+msgid "Performa 4400, 54xx, 5500"
+msgstr "Performa 4400, 54xx, 5500"
+
+#. Tag: entry
+#: hardware.xml:1135 hardware.xml:1138 hardware.xml:1141 hardware.xml:1144
+#: hardware.xml:1147 hardware.xml:1150 hardware.xml:1153 hardware.xml:1156
+#: hardware.xml:1159 hardware.xml:1162 hardware.xml:1165 hardware.xml:1168
+#: hardware.xml:1174 hardware.xml:1177 hardware.xml:1183 hardware.xml:1189
+#: hardware.xml:1195
+#, no-c-format
+msgid "OldWorld"
+msgstr "OldWorld"
+
+#. Tag: entry
+#: hardware.xml:1137
+#, no-c-format
+msgid "Performa 6360, 6400, 6500"
+msgstr "Performa 6360, 6400, 6500"
+
+#. Tag: entry
+#: hardware.xml:1140
+#, no-c-format
+msgid "Power Macintosh 4400, 5400"
+msgstr "Power Macintosh 4400, 5400"
+
+#. Tag: entry
+#: hardware.xml:1143
+#, no-c-format
+msgid "Power Macintosh 7200, 7300, 7500, 7600"
+msgstr "Power Macintosh 7200, 7300, 7500, 7600"
+
+#. Tag: entry
+#: hardware.xml:1146
+#, no-c-format
+msgid "Power Macintosh 8200, 8500, 8600"
+msgstr "Power Macintosh 8200, 8500, 8600"
+
+#. Tag: entry
+#: hardware.xml:1149
+#, no-c-format
+msgid "Power Macintosh 9500, 9600"
+msgstr "Power Macintosh 9500, 9600"
+
+#. Tag: entry
+#: hardware.xml:1152
+#, no-c-format
+msgid "Power Macintosh (Beige) G3 Minitower"
+msgstr "Power Macintosh (Beige) G3 Minitower"
+
+#. Tag: entry
+#: hardware.xml:1155
+#, no-c-format
+msgid "Power Macintosh (Beige) Desktop, All-in-One"
+msgstr "Power Macintosh (Beige) Desktop, All-in-One"
+
+#. Tag: entry
+#: hardware.xml:1158
+#, no-c-format
+msgid "PowerBook 2400, 3400, 3500"
+msgstr "PowerBook 2400, 3400, 3500"
+
+#. Tag: entry
+#: hardware.xml:1161
+#, no-c-format
+msgid "PowerBook G3 Wallstreet (1998)"
+msgstr "PowerBook G3 Wallstreet (1998)"
+
+#. Tag: entry
+#: hardware.xml:1164
+#, no-c-format
+msgid "Twentieth Anniversary Macintosh"
+msgstr "Twentieth Anniversary Macintosh"
+
+#. Tag: entry
+#: hardware.xml:1167
+#, no-c-format
+msgid "Workgroup Server 7250, 7350, 8550, 9650, G3"
+msgstr "Workgroup Server 7250, 7350, 8550, 9650, G3"
+
+#. Tag: entry
+#: hardware.xml:1172
+#, no-c-format
+msgid "Power Computing"
+msgstr "Power Computing"
+
+#. Tag: entry
+#: hardware.xml:1173
+#, no-c-format
+msgid "PowerBase, PowerTower / Pro, PowerWave"
+msgstr "PowerBase, PowerTower / Pro, PowerWave"
+
+#. Tag: entry
+#: hardware.xml:1176
+#, no-c-format
+msgid "PowerCenter / Pro, PowerCurve"
+msgstr "PowerCenter / Pro, PowerCurve"
+
+#. Tag: entry
+#: hardware.xml:1181
+#, no-c-format
+msgid "UMAX"
+msgstr "UMAX"
+
+#. Tag: entry
+#: hardware.xml:1182
+#, no-c-format
+msgid "C500, C600, J700, S900"
+msgstr "C500, C600, J700, S900"
+
+#. Tag: entry
+#: hardware.xml:1187
+#, no-c-format
+msgid "<entry>APS</entry>"
+msgstr "<entry>APS</entry>"
+
+#. Tag: entry
+#: hardware.xml:1188
+#, no-c-format
+msgid "APS Tech M*Power 604e/2000"
+msgstr "APS Tech M*Power 604e/2000"
+
+#. Tag: entry
+#: hardware.xml:1193 hardware.xml:1219
+#, no-c-format
+msgid "Motorola"
+msgstr "Motorola"
+
+#. Tag: entry
+#: hardware.xml:1194
+#, no-c-format
+msgid "Starmax 3000, 4000, 5000, 5500"
+msgstr "Starmax 3000, 4000, 5000, 5500"
+
+#. Tag: title
+#: hardware.xml:1203
+#, no-c-format
+msgid "PReP subarchitecture"
+msgstr "La sous-architecture PReP"
+
+#. Tag: entry
+#: hardware.xml:1220
+#, no-c-format
+msgid "Firepower, PowerStack Series E, PowerStack II"
+msgstr "Firepower, PowerStack Series E, PowerStack II"
+
+#. Tag: entry
+#: hardware.xml:1222
+#, no-c-format
+msgid "MPC 7xx, 8xx"
+msgstr "MPC 7xx, 8xx"
+
+#. Tag: entry
+#: hardware.xml:1224
+#, no-c-format
+msgid "MTX, MTX+"
+msgstr "MTX, MTX+"
+
+#. Tag: entry
+#: hardware.xml:1226
+#, no-c-format
+msgid "MVME2300(SC)/24xx/26xx/27xx/36xx/46xx"
+msgstr "MVME2300(SC)/24xx/26xx/27xx/36xx/46xx"
+
+#. Tag: entry
+#: hardware.xml:1228
+#, no-c-format
+msgid "MCP(N)750"
+msgstr "MCP(N)750"
+
+#. Tag: entry
+#: hardware.xml:1232 hardware.xml:1263
+#, no-c-format
+msgid "IBM RS/6000"
+msgstr "IBM RS/6000"
+
+#. Tag: entry
+#: hardware.xml:1233
+#, no-c-format
+msgid "40P, 43P"
+msgstr "40P, 43P"
+
+#. Tag: entry
+#: hardware.xml:1235
+#, no-c-format
+msgid "Power 830/850/860 (6070, 6050)"
+msgstr "Power 830/850/860 (6070, 6050)"
+
+#. Tag: entry
+#: hardware.xml:1237
+#, no-c-format
+msgid "6030, 7025, 7043"
+msgstr "6030, 7025, 7043"
+
+#. Tag: entry
+#: hardware.xml:1239
+#, no-c-format
+msgid "p640"
+msgstr "p640"
+
+#. Tag: title
+#: hardware.xml:1247
+#, no-c-format
+msgid "CHRP subarchitecture"
+msgstr "La sous-architecture CHRP"
+
+#. Tag: entry
+#: hardware.xml:1264
+#, no-c-format
+msgid "B50, 43P-150, 44P"
+msgstr "B50, 43P-150, 44P"
+
+#. Tag: entry
+#: hardware.xml:1267
+#, no-c-format
+msgid "Genesi"
+msgstr "Genesi"
+
+#. Tag: entry
+#: hardware.xml:1268
+#, no-c-format
+msgid "Pegasos I, Pegasos II"
+msgstr "Pegasos I, Pegasos II"
+
+#. Tag: entry
+#: hardware.xml:1271
+#, no-c-format
+msgid "Fixstars"
+msgstr "Fixstars"
+
+#. Tag: entry
+#: hardware.xml:1272
+#, no-c-format
+msgid "YDL PowerStation"
+msgstr "YDL PowerStation"
+
+#. Tag: title
+#: hardware.xml:1280
+#, no-c-format
+msgid "APUS subarchitecture (unsupported)"
+msgstr "La sous-architecture APUS (non gérée)"
+
+#. Tag: entry
+#: hardware.xml:1296
+#, no-c-format
+msgid "Amiga Power-UP Systems (APUS)"
+msgstr "Amiga Power-UP Systems (APUS)"
+
+#. Tag: entry
+#: hardware.xml:1297
+#, no-c-format
+msgid "A1200, A3000, A4000"
+msgstr "A1200, A3000, A4000"
+
+#. Tag: title
+#: hardware.xml:1305
+#, no-c-format
+msgid "Nubus PowerMac subarchitecture (unsupported)"
+msgstr "Sous-architecture NuBus PowerMac (non gérée)"
+
+#. Tag: para
+#: hardware.xml:1307
+#, no-c-format
+msgid ""
+"NuBus systems are not currently supported by &debian;/powerpc. The "
+"monolithic Linux/PPC kernel architecture does not have support for these "
+"machines; instead, one must use the MkLinux Mach microkernel, which &debian; "
+"does not yet support. These include the following: <itemizedlist> "
+"<listitem><para> Power Macintosh 6100, 7100, 8100 </para></listitem> "
+"<listitem><para> Performa 5200, 6200, 6300 </para></listitem> "
+"<listitem><para> Powerbook 1400, 2300, and 5300 </para></listitem> "
+"<listitem><para> Workgroup Server 6150, 8150, 9150 </para></listitem> </"
+"itemizedlist> A linux kernel for these machines and limited support is "
+"available at <ulink url=\"http://nubus-pmac.sourceforge.net/\"></ulink>."
+msgstr ""
+"Les systèmes NuBus ne sont pas reconnus par &debian;/powerpc pour le moment. "
+"L'architecture monolithique du noyau Linux/PPC n'accepte pas ces "
+"machines&nbsp;; à la place, il faut utiliser le micronoyau MkLinux Mach, que "
+"&debian; ne gère pas encore. Cela inclut les modèles suivants&nbsp;: "
+"<itemizedlist> <listitem><para> Power Macintosh 6100, 7100, 8100 </para></"
+"listitem> <listitem><para> Performa 5200, 6200, 6300 </para></listitem> "
+"<listitem><para> Powerbook 1400, 2300, et 5300 </para></listitem> "
+"<listitem><para> Workgroup Server 6150, 8150, 9150 </para></listitem> </"
+"itemizedlist> Il existe un noyau Linux pour ces machines et un support "
+"limité est disponible sur <ulink url=\"http://nubus-pmac.sourceforge.net/"
+"\"></ulink>."
+
+#. Tag: title
+#: hardware.xml:1344
+#, no-c-format
+msgid "Non-PowerPC Macs"
+msgstr "Mac non PowerPC"
+
+#. Tag: para
+#: hardware.xml:1346
+#, no-c-format
+msgid ""
+"Macintosh computers using the 680x0 series of processors are <emphasis>not</"
+"emphasis> in the PowerPC family but are instead m68k machines. Those models "
+"start with <quote>Mac II</quote> series, go on to the <quote>LC</quote> "
+"family, then the Centris series, and culminate in the Quadras and Performas. "
+"These models usually have a Roman numeral or 3-digit model number such as "
+"Mac IIcx, LCIII or Quadra 950."
+msgstr ""
+"Les ordinateurs Macintosh utilisant la série des microprocesseurs 680x0 "
+"n'appartiennent pas à la famille des PowerPC, mais à celle des machines "
+"m68k. Ces modèles commencent avec les <quote>Mac II</quote>, continuent avec "
+"les <quote>LC</quote>, puis les <quote>Centris</quote> et les <quote>Quadra</"
+"quote> et <quote>Performa</quote>. Ces modèles ont un numéro à trois "
+"chiffres comme Mac IIcx, LCIII ou Quadra 950."
+
+#. Tag: para
+#: hardware.xml:1355
+#, no-c-format
+msgid ""
+"This model range started with the Mac II (Mac II, IIx, IIcx, IIci, IIsi, "
+"IIvi, IIvx, IIfx), then the LC (LC, LCII, III, III+, 475, 520, 550, 575, "
+"580, 630), then the Mac TV, then the Centris (610, 650, 660AV), the Quadra "
+"(605, 610, 630, 650, 660AV, 700, 800, 840AV, 900, 950), and finally the "
+"Performa 200-640CD."
+msgstr ""
+"Ces modèles commencent avec les Mac II (Mac II, IIx, IIcx, IIci, IIsi, IIvi, "
+"IIvx, IIfx), puis les LC (LC, LCII, III, III+, 475, 520, 550, 575, 580, "
+"630), puis les Mac TV, puis les Centris (610, 650, 660AV), les Quadra (605, "
+"610, 630, 650, 660AV, 700, 800, 840AV, 900, 950), et enfin Performa "
+"200-640CD."
+
+#. Tag: para
+#: hardware.xml:1363
+#, no-c-format
+msgid ""
+"In laptops, it started with the Mac Portable, then the PowerBook 100-190cs "
+"and the PowerBook Duo 210-550c (excluding PowerBook 500 which is Nubus, "
+"please see the section above)."
+msgstr ""
+"Pour les portables, ces modèles commencent avec le Mac Portable, puis les "
+"PowerBook 100-190cs et les PowerBook Duo 210-550c (en excluant le PowerBook "
+"500, qui est de type NuBus, voyez la section ci-dessus."
+
+#. Tag: title
+#: hardware.xml:1377
+#, no-c-format
+msgid "Machines"
+msgstr "Machines"
+
+#. Tag: para
+#: hardware.xml:1380
+#, no-c-format
+msgid "S822L"
+msgstr "S822L"
+
+#. Tag: para
+#: hardware.xml:1385
+#, no-c-format
+msgid "S821L"
+msgstr "S821L"
+
+#. Tag: para
+#: hardware.xml:1390
+#, no-c-format
+msgid "S822"
+msgstr "S822"
+
+#. Tag: para
+#: hardware.xml:1395
+#, no-c-format
+msgid "S821"
+msgstr "S821"
+
+#. Tag: para
+#: hardware.xml:1400
+#, no-c-format
+msgid "TYAN GN70-BP010"
+msgstr "TYAN GN70-BP010"
+
+#. Tag: title
+#: hardware.xml:1415
+#, no-c-format
+msgid "zSeries and System z machine types"
+msgstr "Types de machine zSeries et System z"
+
+#. Tag: para
+#: hardware.xml:1416
+#, no-c-format
+msgid ""
+"Since &debian; Squeeze, support for booting in ESA/390 mode was dropped. "
+"Your machine needs to support the z/Architecture, 64-bit support is "
+"mandatory. The userland of the S/390 port is still compiled for ESA/390, "
+"though. All zSeries and System z hardware is fully supported. &arch-title; "
+"support software is included from the kernel 4.3 development stream. The "
+"most current information about IBM's Linux support can be found at the "
+"<ulink url=\"http://www.ibm.com/developerworks/linux/linux390/"
+"development_technical.html\"> Linux on <trademark class=\"registered"
+"\">System z</trademark> page on developerWorks</ulink>."
+msgstr ""
+"Depuis la version Squeeze, la gestion du démarrage en mode ESA/390 a été "
+"abandonnée. Votre machine doit reconnaître au moins l'architecture z et le "
+"mode 64 bits est obligatoire. Toutes les applications du portage S/390 sont "
+"encore compilées pour ESA/390. Toutes les machines zSeries et System z sont "
+"pleinement reconnues. Les logiciels pour &arch-title; sont inclus à partir "
+"de la version de développement du noyau 4.3. L'information la plus à jour "
+"sur la prise en charge de Linux par IBM se trouve sur la <ulink url=\"http://"
+"www.ibm.com/developerworks/linux/linux390/development_technical.html\"> page "
+"Linux sur <trademark class=\"registered\">System z</trademark> sur "
+"developerWorks</ulink>."
+
+#. Tag: title
+#: hardware.xml:1433
+#, no-c-format
+msgid "PAV and HyperPAV"
+msgstr "PAV et HyperPAV"
+
+#. Tag: para
+#: hardware.xml:1434
+#, no-c-format
+msgid ""
+"PAV and HyperPAV are supported transparently, multipathing is not needed to "
+"take advantage of these storage system features. Be sure to configure the "
+"devices during DASD device selection. The alias devices will not be offered "
+"neither for formatting, partitioning nor direct use."
+msgstr ""
+"PAV et HyperPAV sont immédiatement reconnus ; le <quote>multipathing</quote> "
+"n'est pas nécessaire pour bénéficier des fonctionnalités de ces systèmes de "
+"stockage. Faites attention à configurer les périphériques lors de la "
+"sélection du DASD. Les périphériques <quote>alias</quote> ne sont pas "
+"proposés pour le formatage, le partitionnement ou une utilisation immédiate."
+
+#. Tag: title
+#: hardware.xml:1450
+#, no-c-format
+msgid "CPU and Main Boards Support"
+msgstr "Microprocesseurs et cartes mères"
+
+#. Tag: para
+#: hardware.xml:1451
+#, no-c-format
+msgid ""
+"Sparc-based hardware is divided into a number of different subarchitectures, "
+"identified by one of the following names: sun4, sun4c, sun4d, sun4m, sun4u "
+"or sun4v. The following list describes what machines they include and what "
+"level of support may be expected for each of them."
+msgstr ""
+"Le matériel Sparc comprend nombre de sous-architectures différentes, "
+"identifiées comme suit&nbsp;: sun4, sun4c, sun4d, sun4m, sun4u ou sun4v. La "
+"liste suivante indique les machines qui correspondent à ces architectures et "
+"dans quelle mesure elles sont gérées par &debian;."
+
+#. Tag: term
+#: hardware.xml:1462
+#, no-c-format
+msgid "sun4, sun4c, sun4d, sun4m"
+msgstr "sun4, sun4c, sun4d, sun4m"
+
+#. Tag: para
+#: hardware.xml:1464
+#, no-c-format
+msgid ""
+"None of these 32-bit sparc subarchitectures (sparc32) is supported. For a "
+"complete list of machines belonging to these subarchitectures, please "
+"consult the <ulink url=\"http://en.wikipedia.org/wiki/SPARCstation"
+"\">Wikipedia SPARCstation page</ulink>."
+msgstr ""
+"Aucune de ces sous-architectures 32 bits (sparc32) n'est gérée. La <ulink "
+"url=\"http://en.wikipedia.org/wiki/SPARCstation\">page SPARCstation de "
+"Wikipedia</ulink> donne la liste de toutes les machines concernées."
+
+#. Tag: para
+#: hardware.xml:1471
+#, no-c-format
+msgid ""
+"The last &debian; release to support sparc32 was Etch, but even then only "
+"for sun4m systems. Support for the other 32-bits subarchitectures had "
+"already been discontinued after earlier releases."
+msgstr ""
+"<emphasis>Etch</emphasis> est la dernière version de &debian; qui gère "
+"sparc32, et seulement pour les systèmes sun4m. Les autres sous-architectures "
+"32 bits avaient été abandonnées lors de précédentes versions."
+
+#. Tag: term
+#: hardware.xml:1481
+#, no-c-format
+msgid "sun4u"
+msgstr "sun4u"
+
+#. Tag: para
+#: hardware.xml:1483
+#, no-c-format
+msgid ""
+"This subarchitecture includes all 64-bit machines (sparc64) based on the "
+"UltraSparc processor and its clones. Most of the machines are well "
+"supported, even though for some you may experience problems booting from CD "
+"due to firmware or bootloader bugs (this problem may be worked around by "
+"using netbooting). Use the sparc64 or sparc64-smp kernel in UP and SMP "
+"configurations respectively."
+msgstr ""
+"Cette architecture comprend toutes les machines 64 bits (sparc64) basées sur "
+"le processeur UltraSparc et ses clones. La plupart de ces machines sont bien "
+"gérées même si vous pouvez rencontrer des problèmes lors de l'amorçage à "
+"partir d'un CD à cause de bogues dans le microprogramme ou dans le programme "
+"d'amorçage (on peut contourner ce problème en amorçant sur le réseau). "
+"Utilisez les noyaux sparc64 ou sparc64-smp selon que la machine possède un "
+"ou plusieurs processeurs."
+
+#. Tag: term
+#: hardware.xml:1496
+#, no-c-format
+msgid "sun4v"
+msgstr "sun4v"
+
+#. Tag: para
+#: hardware.xml:1498
+#, no-c-format
+msgid ""
+"This is the newest addition to the Sparc family, which includes machines "
+"based on the Niagara multi-core CPUs. At the moment such CPUs are only "
+"available in T1000 and T2000 servers by Sun, and are well supported. Use the "
+"sparc64-smp kernel."
+msgstr ""
+"C'est la plus récente architecture de la famille Sparc. Elle comprend des "
+"machines basées sur les processeurs Niagara à plusieurs cœurs. Pour "
+"l'instant ces processeurs ne sont disponibles que sur les serveurs T1000 et "
+"T2000 de Sun. Ils sont correctement gérés. Utilisez le noyau sparc64-smp."
+
+#. Tag: para
+#: hardware.xml:1509
+#, no-c-format
+msgid ""
+"Note that Fujitsu's SPARC64 CPUs used in PRIMEPOWER family of servers are "
+"not supported due to lack of support in the Linux kernel."
+msgstr ""
+"Notez que les processeurs SPARC64 de Fujitsu utilisés dans la famille de "
+"serveurs PRIMEPOWER ne sont pas reconnus car ils ne sont pas gérés par le "
+"noyau Linux."
+
+#. Tag: title
+#: hardware.xml:1518
+#, no-c-format
+msgid "Laptops"
+msgstr "Portables"
+
+#. Tag: para
+#: hardware.xml:1519
+#, no-c-format
+msgid ""
+"From a technical point of view, laptops are normal PCs, so all information "
+"regarding PC systems applies to laptops as well. Installations on laptops "
+"nowadays usually work out of the box, including things like automatically "
+"suspending the system on closing the lid and laptop specfic hardware buttons "
+"like those for disabling the wifi interfaces (<quote>airplane mode</quote>). "
+"Nonetheless sometimes the hardware vendors use specialized or proprietary "
+"hardware for some laptop-specific functions which might not be supported. To "
+"see if your particular laptop works well with GNU/Linux, see for example the "
+"<ulink url=\"&url-x86-laptop;\">Linux Laptop pages</ulink>."
+msgstr ""
+"D'un point de vue technique, les ordinateurs portables fonctionnent comme "
+"les autres PC et les informations concernant les PC s'appliquent aussi aux "
+"portables. L'installation de &debian; sur un portable se passe très bien. "
+"Des fonctionnalités comme la suspension automatique du système à la "
+"fermeture du couvercle ou la reconnaissance de boutons spécifiques aux "
+"portables comme celui pour désactiver l'interface wifi (mode « airplane ») "
+"sont correctement installées. Cependant quelques constructeurs utilisent du "
+"matériel propriétaire pour certaines fonctions, matériel qui n'est pas "
+"toujours reconnu. Pour vérifier que votre portable fonctionne bien avec GNU/"
+"Linux, consultez les <ulink url=\"&url-x86-laptop;\">pages sur les portables "
+"sous Linux</ulink>."
+
+#. Tag: title
+#: hardware.xml:1536 hardware.xml:1556 hardware.xml:1578 hardware.xml:1601
+#, no-c-format
+msgid "Multiple Processors"
+msgstr "Processeurs multiples"
+
+#. Tag: para
+#: hardware.xml:1537
+#, no-c-format
+msgid ""
+"Multiprocessor support &mdash; also called <quote>symmetric multiprocessing</"
+"quote> or SMP &mdash; is available for this architecture. Having multiple "
+"processors in a computer was originally only an issue for high-end server "
+"systems but has become common in recent years nearly everywhere with the "
+"introduction of so called <quote>multi-core</quote> processors. These "
+"contain two or more processor units, called <quote>cores</quote>, in one "
+"physical chip."
+msgstr ""
+"Cette architecture accepte les systèmes à plusieurs processeurs "
+"(<quote>symmetric multiprocessing</quote> ou SMP). À l'origine, sur certains "
+"serveurs haut de gamme, un système à multiples processeurs pouvait provoquer "
+"des problèmes. Aujourd'hui, un simple ordinateur de bureau ou un portable "
+"possède plusieurs processeurs sous la forme d'un processeur multicœur, une "
+"puce contenant deux processeurs ou plus, appelés cœurs."
+
+#. Tag: para
+#: hardware.xml:1547
+#, no-c-format
+msgid ""
+"The standard &debian; &release; kernel image has been compiled with SMP "
+"support. It is also usable on non-SMP systems without problems."
+msgstr ""
+"L'image standard du noyau &debian; &release; a été compilée avec SMP mais "
+"elle est parfaitement utilisable sur les systèmes non-SMP."
+
+#. Tag: para
+#: hardware.xml:1558
+#, no-c-format
+msgid ""
+"Multiprocessor support &mdash; also called <quote>symmetric multiprocessing</"
+"quote> or SMP &mdash; is available for this architecture. The standard "
+"&debian; &release; kernel image has been compiled with <firstterm>SMP-"
+"alternatives</firstterm> support. This means that the kernel will detect the "
+"number of processors (or processor cores) and will automatically deactivate "
+"SMP on uniprocessor systems."
+msgstr ""
+"Cette architecture accepte les systèmes à plusieurs processeurs "
+"(<quote>symmetric multiprocessing</quote> ou SMP). L'image standard du noyau "
+"&debian; &release; a été compilée avec l'option <firstterm>SMP-alternatives</"
+"firstterm>. Le noyau détectera si votre système possède plusieurs "
+"processeurs et désactivera automatiquement la gestion SMP sur les systèmes "
+"avec un seul processeur."
+
+#. Tag: para
+#: hardware.xml:1567
+#, no-c-format
+msgid ""
+"Having multiple processors in a computer was originally only an issue for "
+"high-end server systems but has become common in recent years nearly "
+"everywhere with the introduction of so called <quote>multi-core</quote> "
+"processors. These contain two or more processor units, called <quote>cores</"
+"quote>, in one physical chip."
+msgstr ""
+"À l'origine, sur certains serveurs haut de gamme, un système à multiples "
+"processeurs pouvait provoquer des problèmes. Aujourd'hui, un simple "
+"ordinateur de bureau ou un portable possède plusieurs processeurs sous la "
+"forme d'un processeur multicœur, une puce contenant deux processeurs ou "
+"plus, appelés cœurs."
+
+#. Tag: para
+#: hardware.xml:1579
+#, no-c-format
+msgid ""
+"Multiprocessor support &mdash; also called <quote>symmetric multiprocessing</"
+"quote> or SMP &mdash; is available for this architecture. However, the "
+"standard &debian; &release; kernel image does not support SMP. This should "
+"not prevent installation, since the standard, non-SMP kernel should boot on "
+"SMP systems; the kernel will simply use only the first CPU."
+msgstr ""
+"Cette architecture accepte les systèmes à plusieurs processeurs "
+"(<quote>symmetric multiprocessing</quote> ou SMP). Cependant, l'image "
+"standard du noyau &debian; &release; ne reconnaît pas le SMP. Cela ne "
+"devrait pas empêcher l'installation, puisque le noyau non-SMP devrait "
+"démarrer sur les systèmes SMP, le noyau utilisera simplement le premier CPU."
+
+#. Tag: para
+#: hardware.xml:1588
+#, no-c-format
+msgid ""
+"In order to take advantage of multiple processors, you'll have to replace "
+"the standard &debian; kernel.<phrase arch=\"linux-any\"> You can find a "
+"discussion of how to do this in <xref linkend=\"kernel-baking\"/>. At this "
+"time (kernel version &kernelversion;) the way you enable SMP is to select "
+"<quote>&smp-config-option;</quote> in the <quote>&smp-config-section;</"
+"quote> section of the kernel config.</phrase>"
+msgstr ""
+"Afin de tirer profit de plusieurs processeurs, vous devrez remplacer le "
+"noyau standard &debian;. <phrase arch=\"linux-any\">Vous trouverez une "
+"discussion sur la façon de faire dans la <xref linkend=\"kernel-baking\"/>. "
+"Aujourd'hui, (version &kernelversion; du noyau) la façon d'activer SMP est "
+"de choisir <quote>&smp-config-option;</quote> dans la section <quote>&smp-"
+"config-section;</quote> quand on configure le noyau.</phrase>"
+
+#. Tag: para
+#: hardware.xml:1602
+#, no-c-format
+msgid ""
+"Multiprocessor support &mdash; also called <quote>symmetric multiprocessing</"
+"quote> or SMP &mdash; is available for this architecture, and is supported "
+"by a precompiled &debian; kernel image. Depending on your install media, "
+"this SMP-capable kernel may or may not be installed by default. This should "
+"not prevent installation, since the standard, non-SMP kernel should boot on "
+"SMP systems; the kernel will simply use the first CPU."
+msgstr ""
+"Cette architecture accepte les systèmes à plusieurs processeurs "
+"(<quote>symmetric multiprocessing</quote> ou SMP). Une image standard du "
+"noyau &debian; &release; a été compilée avec SMP. Selon votre support "
+"d'installation, ce noyau peut ou non être installé par défaut. Cela ne "
+"devrait pas empêcher l'installation, puisque le noyau non-SMP devrait "
+"démarrer sur les systèmes SMP&nbsp;; le noyau utilisera simplement le "
+"premier processeur."
+
+#. Tag: para
+#: hardware.xml:1612
+#, no-c-format
+msgid ""
+"In order to take advantage of multiple processors, you should check to see "
+"if a kernel package that supports SMP is installed, and if not, choose an "
+"appropriate kernel package."
+msgstr ""
+"Afin de tirer profit de plusieurs processeurs, vous devrez vérifier que le "
+"noyau installé accepte le SMP ou bien vous en installerez un."
+
+#. Tag: para
+#: hardware.xml:1618
+#, no-c-format
+msgid ""
+"You can also build your own customized kernel to support SMP.<phrase arch="
+"\"linux-any\"> You can find a discussion of how to do this in <xref linkend="
+"\"kernel-baking\"/>. At this time (kernel version &kernelversion;) the way "
+"you enable SMP is to select <quote>&smp-config-option;</quote> in the "
+"<quote>&smp-config-section;</quote> section of the kernel config.</phrase>"
+msgstr ""
+"Vous pouvez aussi compiler vous-même un noyau avec SMP. <phrase arch=\"linux-"
+"any\">Vous trouverez une discussion sur la façon de faire dans la <xref "
+"linkend=\"kernel-baking\"/>. Aujourd'hui (version &kernelversion; du noyau) "
+"la façon d'activer SMP est de choisir <quote>&smp-config-option;</quote> "
+"dans la section <quote>&smp-config-section;</quote> quand on configure le "
+"noyau.</phrase>"
+
+#. Tag: title
+#: hardware.xml:1629
+#, no-c-format
+msgid "Graphics Hardware Support"
+msgstr "Gestion du matériel graphique"
+
+#. Tag: para
+#: hardware.xml:1630
+#, no-c-format
+msgid ""
+"&debian;'s support for graphical interfaces is determined by the underlying "
+"support found in X.Org's X11 system, and the kernel. Basic framebuffer "
+"graphics is provided by the kernel, whilst desktop environments use X11. "
+"Whether advanced graphics card features such as 3D-hardware acceleration or "
+"hardware-accelerated video are available, depends on the actual graphics "
+"hardware used in the system and in some cases on the installation of "
+"additional <quote>firmware</quote> images (see <xref linkend=\"hardware-"
+"firmware\"/>)."
+msgstr ""
+"&debian; reconnaît les interfaces graphiques dans la mesure où elles sont "
+"reconnues par le système X11 de X.Org et par le noyau. Le noyau fournit le "
+"tampon vidéo (<emphasis>framebuffer</emphasis>), tandis que les "
+"environnements de bureau utilisent X11. Certaines fonctionnalités avancées "
+"des cartes graphiques, comme l'accélération 3D ou l'accélération matérielle "
+"(<emphasis>hardware-accelerated video</emphasis>), dépendent parfois de la "
+"carte graphique installée et demandent l'installation de microprogrammes "
+"supplémentaires, voyez la <xref linkend=\"hardware-firmware\"/>."
+
+#. Tag: para
+#: hardware.xml:1642
+#, no-c-format
+msgid ""
+"On modern PCs, having a graphical display usually works out of the box. In "
+"very few cases there have been reports about hardware on which installation "
+"of additional graphics card firmware was required even for basic graphics "
+"support, but these have been rare exceptions. For quite a lot of hardware, "
+"3D acceleration also works well out of the box, but there is still some "
+"hardware that needs binary blobs to work well."
+msgstr ""
+"Sur les ordinateurs modernes, tout environnement graphique fonctionne sans "
+"problème. Dans de très rares cas, il a été noté que certains matériels "
+"demandaient l'installation de microprogrammes même pour les fonctionnalités "
+"de base de la carte graphique. Pour un certain nombre de matériels, "
+"l'accélération 3D fonctionne aussi sans problème, mais il y en a toujours "
+"qui nécessitent des binaires supplémentaires pour fonctionner correctement."
+
+#. Tag: para
+#: hardware.xml:1653
+#, no-c-format
+msgid ""
+"Nearly all ARM machines have the graphics hardware built-in, rather than "
+"being on a plug-in card. Some machines do have expansion slots which will "
+"take graphics cards, but that is a rarity. Hardware designed to be headless "
+"with no graphics at all is quite common. Whilst basic framebuffer video "
+"provided by the kernel should work on all devices that have graphics, fast "
+"3D graphics invariably needs binary drivers to work. The situation is "
+"changing quickly but at the time of the &releasename; release free drivers "
+"for nouveau (Nvidia Tegra K1 SoC) and freedreno (Qualcomm Snapdragon SoCs) "
+"are available in the release. Other hardware needs non-free drivers from 3rd "
+"parties."
+msgstr ""
+"Presque toutes les machines ARM possèdent du matériel graphique intégré, "
+"plutôt que sous forme de carte externe. Quelques rares machines ont des "
+"connecteurs d'extension qui acceptent les cartes graphiques, mais le "
+"matériel conçu pour fonctionner sans écran est commun. Alors que le tampon "
+"vidéo fourni par le noyau devrait fonctionner sur tous les périphériques, "
+"les cartes graphiques rapides 3D nécessitent toujours des binaires "
+"supplémentaires. La situation évolue rapidement, mais au moment de la "
+"publication de &releasename;, les pilotes libres nouveaux (Nvidia Tegra K1 "
+"SoC) et freedreno (Qualcomm Snapdragon SoCs) sont disponibles. Les autres "
+"matériels nécessitent des pilotes non libres."
+
+#. Tag: para
+#: hardware.xml:1667
+#, no-c-format
+msgid ""
+"Details on supported graphics hardware and pointing devices can be found at "
+"<ulink url=\"&url-xorg;\"></ulink>. &debian; &release; ships with X.Org "
+"version &x11ver;."
+msgstr ""
+"Des précisions sur les matériels graphiques acceptés et les dispositifs de "
+"pointage sont disponibles sur <ulink url=\"&url-xorg;\"></ulink>. &debian; "
+"&release; propose la version &x11ver; de X.Org."
+
+#. Tag: para
+#: hardware.xml:1672
+#, no-c-format
+msgid ""
+"Most graphics options commonly found on Sparc-based machines are supported. "
+"X.org graphics drivers are available for sunbw2, suncg14, suncg3, suncg6, "
+"sunleo and suntcx framebuffers, Creator3D and Elite3D cards (sunffb driver), "
+"PGX24/PGX64 ATI-based video cards (ati driver), and PermediaII-based cards "
+"(glint driver). To use an Elite3D card with X.org you additionally need to "
+"install the <classname>afbinit</classname> package, and read the "
+"documentation included with it on how to activate the card."
+msgstr ""
+"La plupart des options graphiques communes des machines basées sur Sparc "
+"sont gérées. Les pilotes de X.org sont disponibles pour les tampons vidéo "
+"sunbw2, suncg14, suncg3, suncg6, sunleo et suntcx, les cartes Creator3D et "
+"Elite3D (pilote sunffb), les cartes ATI PGX24/PGX64 (pilote ati), et les "
+"cartes PermediaII (pilote glint). Pour utiliser une carte Elite3D avec X.org "
+"vous devez aussi installer le paquet <classname>afbinit</classname> et lire "
+"la documentation pour savoir comment activer la carte."
+
+#. Tag: para
+#: hardware.xml:1682
+#, no-c-format
+msgid ""
+"It is not uncommon for a Sparc machine to have two graphics cards in a "
+"default configuration. In such a case there is a possibility that the Linux "
+"kernel will not direct its output to the card initially used by the "
+"firmware. The lack of output on the graphical console may then be mistaken "
+"for a hang (usually the last message seen on console is 'Booting Linux...'). "
+"One possible solution is to physically remove one of the video cards; "
+"another option is to disable one of the cards using a kernel boot parameter. "
+"Also, if graphical output is not required or desired, serial console may be "
+"used as an alternative. On some systems use of serial console can be "
+"activated automatically by disconnecting the keyboard before booting the "
+"system."
+msgstr ""
+"Il n'est pas exceptionnel qu'une machine Sparc possède deux cartes "
+"graphiques en configuration normale. Il se peut alors que le noyau Linux ne "
+"dirige pas la sortie vidéo vers la carte utilisée par le microprogramme. "
+"L'absence de sortie vidéo sur la console graphique peut être confondue avec "
+"un arrêt (habituellement le dernier message vu sur la console est "
+"<quote>Booting Linux...</quote>). Une solution possible est d'enlever l'une "
+"des cartes vidéo. Une autre solution est de désactiver l'une des cartes avec "
+"un paramètre passé au noyau. Quand la sortie vidéo n'est pas nécessaire ou "
+"souhaitée, on peut utiliser une console série. Sur certains systèmes, on "
+"peut activer automatiquement la console série en déconnectant le clavier "
+"avant d'amorcer le système."
+
+#. Tag: title
+#: hardware.xml:1704
+#, no-c-format
+msgid "Network Connectivity Hardware"
+msgstr "Matériel de connexion réseau"
+
+#. Tag: para
+#: hardware.xml:1705
+#, no-c-format
+msgid ""
+"Almost any network interface card (NIC) supported by the &arch-kernel; "
+"kernel should also be supported by the installation system; drivers should "
+"normally be loaded automatically. <phrase arch=\"x86\">This includes most "
+"PCI/PCI-Express cards as well as PCMCIA/Express Cards on laptops.</phrase> "
+"<phrase arch=\"i386\">Many older ISA cards are supported as well.</phrase>"
+msgstr ""
+"Toute carte réseau (<emphasis>NIC, network interface card</emphasis>) "
+"reconnue par le noyau &arch-kernel; devrait aussi être reconnue par "
+"l'installateur. Les pilotes devraient être chargés de manière automatique. "
+"<phrase arch=\"x86\">La plupart des cartes PCI/PCI-Express sont reconnues "
+"ainsi que les cartes PCMCIA/Express pour les portables.</phrase> <phrase "
+"arch=\"i386\">Beaucoup d'anciennes cartes ISA le sont aussi.</phrase>"
+
+#. Tag: para
+#: hardware.xml:1715
+#, no-c-format
+msgid ""
+"This includes a lot of generic PCI cards (for systems that have PCI) and the "
+"following NICs from Sun:"
+msgstr ""
+"Beaucoup de cartes PCI génériques sont reconnues, ainsi que les cartes SUN "
+"suivantes&nbsp;:"
+
+#. Tag: para
+#: hardware.xml:1721
+#, no-c-format
+msgid "Sun LANCE"
+msgstr "Sun LANCE"
+
+#. Tag: para
+#: hardware.xml:1726
+#, no-c-format
+msgid "Sun Happy Meal"
+msgstr "Sun Happy Meal"
+
+#. Tag: para
+#: hardware.xml:1731
+#, no-c-format
+msgid "Sun BigMAC"
+msgstr "Sun BigMAC"
+
+#. Tag: para
+#: hardware.xml:1736
+#, no-c-format
+msgid "Sun QuadEthernet"
+msgstr "Sun QuadEthernet"
+
+#. Tag: para
+#: hardware.xml:1741
+#, no-c-format
+msgid "MyriCOM Gigabit Ethernet"
+msgstr "MyriCOM Gigabit Ethernet"
+
+#. Tag: para
+#: hardware.xml:1748
+#, no-c-format
+msgid "The list of supported network devices is:"
+msgstr "La liste des cartes réseau reconnues est&nbsp;:"
+
+#. Tag: para
+#: hardware.xml:1753
+#, no-c-format
+msgid "Channel to Channel (CTC) and ESCON connection (real or emulated)"
+msgstr "Channel to Channel (CTC) et ESCON connection (réelle ou émulée)."
+
+#. Tag: para
+#: hardware.xml:1758
+#, no-c-format
+msgid "OSA-2 Token Ring/Ethernet and OSA-Express Fast Ethernet (non-QDIO)"
+msgstr "OSA-2 Token Ring/Ethernet et OSA-Express Fast Ethernet (non-QDIO)"
+
+#. Tag: para
+#: hardware.xml:1763
+#, no-c-format
+msgid "OSA-Express in QDIO mode, HiperSockets and Guest-LANs"
+msgstr "OSA-Express en mode QDIO, HiperSockets et Guest-LANs"
+
+#. Tag: para
+#: hardware.xml:1772
+#, no-c-format
+msgid ""
+"On &arch-title;, most built-in Ethernet devices are supported and modules "
+"for additional PCI and USB devices are provided."
+msgstr ""
+"Sur &arch-title;, la plupart des périphériques Ethernet intégrés sont "
+"reconnus et des modules pour les périphériques USB et PCI sont fournis."
+
+#. Tag: para
+#: hardware.xml:1777
+#, no-c-format
+msgid "ISDN is supported, but not during the installation."
+msgstr "Le RNIS ne peut pas être utilisé pour l'installation."
+
+#. Tag: title
+#: hardware.xml:1784
+#, no-c-format
+msgid "Wireless Network Cards"
+msgstr "Cartes réseau sans fil"
+
+#. Tag: para
+#: hardware.xml:1785
+#, no-c-format
+msgid ""
+"Wireless networking is in general supported as well and a growing number of "
+"wireless adapters are supported by the official &arch-kernel; kernel, "
+"although many of them do require firmware to be loaded."
+msgstr ""
+"Les cartes réseau sans fil sont en général reconnues et le noyau &arch-"
+"kernel; officiel reconnaît un nombre croissant d'adaptateurs. Cependant "
+"beaucoup d'entre eux demandent le chargement d'un microprogramme."
+
+#. Tag: para
+#: hardware.xml:1792
+#, no-c-format
+msgid ""
+"If firmware is needed, the installer will prompt you to load firmware. See "
+"<xref linkend=\"loading-firmware\"/> for detailed information on how to load "
+"firmware during the installation."
+msgstr ""
+"Quand un microprogramme est nécessaire, l'installateur vous demandera de le "
+"télécharger. Consultez la <xref linkend=\"loading-firmware\"/> pour des "
+"informations détaillées sur la manière de charger un microprogramme pendant "
+"l'installation."
+
+#. Tag: para
+#: hardware.xml:1797
+#, no-c-format
+msgid ""
+"Wireless NICs that are not supported by the official &arch-kernel; kernel "
+"can generally be made to work under &debian-gnu;, but are not supported "
+"during the installation."
+msgstr ""
+"On peut faire fonctionner des cartes non reconnues par le noyau &arch-"
+"kernel; officiel avec &debian-gnu;, mais elles ne sont pas gérées pendant "
+"l'installation."
+
+#. Tag: para
+#: hardware.xml:1802
+#, no-c-format
+msgid ""
+"If there is a problem with wireless and there is no other NIC you can use "
+"during the installation, it is still possible to install &debian-gnu; using "
+"a full CD-ROM or DVD image. Select the option to not configure a network and "
+"install using only the packages available from the CD/DVD. You can then "
+"install the driver and firmware you need after the installation is completed "
+"(after the reboot) and configure your network manually."
+msgstr ""
+"Si vous ne pouvez pas utiliser d'autre carte pour l'installation, vous "
+"pouvez toujours installer &debian-gnu; avec un CD ou un DVD. Choisissez "
+"l'option de ne pas configurer le réseau et utilisez seulement les paquets "
+"qui se trouvent sur le CD. Une fois l'installation terminée (après le "
+"réamorçage), vous pourrez charger le pilote et le microprogramme dont vous "
+"avez besoin et configurer le réseau."
+
+#. Tag: para
+#: hardware.xml:1812
+#, no-c-format
+msgid ""
+"In some cases the driver you need may not be available as a &debian; "
+"package. You will then have to look if there is source code available in the "
+"internet and compile the driver yourself. How to do this is outside the "
+"scope of this manual. <phrase arch=\"x86\">If no Linux driver is available, "
+"your last resort is to use the <classname>ndiswrapper</classname> package, "
+"which allows you to use a Windows driver.</phrase>"
+msgstr ""
+"Parfois, le pilote nécessaire n'est pas disponible sous forme de paquet "
+"&debian;. Il faudra chercher le code source sur internet et le compiler vous-"
+"même. Comment procéder dépasse le cadre de ce manuel. <phrase arch="
+"\"x86\">S'il n'existe pas de pilote pour Linux, vous pouvez toujours "
+"utiliser le paquet <classname>ndiswrapper</classname> qui permet d'installer "
+"un pilote Windows.</phrase>"
+
+#. Tag: title
+#: hardware.xml:1826
+#, no-c-format
+msgid "Known Issues for &arch-title;"
+msgstr "Problèmes connus sur &arch-title;"
+
+#. Tag: para
+#: hardware.xml:1827
+#, no-c-format
+msgid ""
+"There are a couple of issues with specific network cards that are worth "
+"mentioning here."
+msgstr ""
+"Quelques cartes réseau spéciales posent des problèmes qui méritent d'être "
+"mentionnés."
+
+#. Tag: title
+#: hardware.xml:1834
+#, no-c-format
+msgid "Conflict between tulip and dfme drivers"
+msgstr "Conflits entre les pilotes tulip et dfme"
+
+#. Tag: para
+#: hardware.xml:1836
+#, no-c-format
+msgid ""
+"There are various PCI network cards that have the same PCI identification, "
+"but are supported by related, but different drivers. Some cards work with "
+"the <literal>tulip</literal> driver, others with the <literal>dfme</literal> "
+"driver. Because they have the same identification, the kernel cannot "
+"distinguish between them and it is not certain which driver will be loaded. "
+"If this happens to be the wrong one, the NIC may not work, or work badly."
+msgstr ""
+"Certaines cartes PCI ont la même identité mais sont gérées par des pilotes "
+"différents. Certaines sont gérées par le pilote <literal>tulip</literal> et "
+"d'autres par le pilote <literal>dfme</literal>. Comme elles ont la même "
+"identité, le noyau ne les distingue pas et peut charger le mauvais pilote."
+
+#. Tag: para
+#: hardware.xml:1846
+#, no-c-format
+msgid ""
+"This is a common problem on Netra systems with a Davicom (DEC-Tulip "
+"compatible) NIC. In that case the <literal>tulip</literal> driver is "
+"probably the correct one. You can prevent this issue by blacklisting the "
+"wrong driver module as described in <xref linkend=\"module-blacklist\"/>."
+msgstr ""
+"C'est un problème connu sur les systèmes Netra avec une carte Davicom "
+"(compatible DEC-Tulip). Dans ce cas, le pilote <literal>tulip</literal> est "
+"probablement le pilote correct. Pour éviter ce problème, il faut mettre le "
+"module défectueux sur liste noire. Voyez la <xref linkend=\"module-blacklist"
+"\"/>."
+
+#. Tag: para
+#: hardware.xml:1854
+#, no-c-format
+msgid ""
+"An alternative solution during the installation is to switch to a shell and "
+"unload the wrong driver module using <userinput>modprobe -r "
+"<replaceable>module</replaceable></userinput> (or both, if they are both "
+"loaded). After that you can load the correct module using "
+"<userinput>modprobe <replaceable>module</replaceable></userinput>. Note that "
+"the wrong module may then still be loaded when the system is rebooted."
+msgstr ""
+"Pendant l'installation, la solution est de passer sur un interpréteur de "
+"commande et de supprimer le mauvais pilote (ou les deux, si les deux sont "
+"chargés) avec <userinput>modprobe -r <replaceable>module</replaceable></"
+"userinput>. Ensuite, il suffit de charger le bon pilote avec "
+"<userinput>modprobe <replaceable>module</replaceable></userinput>. Il se "
+"peut malgré tout que le mauvais module soit chargé quand le système est "
+"redémarré."
+
+#. Tag: title
+#: hardware.xml:1867
+#, no-c-format
+msgid "Sun B100 blade"
+msgstr "Sun B100 blade"
+
+#. Tag: para
+#: hardware.xml:1869
+#, no-c-format
+msgid ""
+"The <literal>cassini</literal> network driver does not work with Sun B100 "
+"blade systems."
+msgstr ""
+"Le pilote réseau <literal>cassini</literal> ne fonctionne pas avec les "
+"systèmes Sun B100 blade."
+
+#. Tag: title
+#: hardware.xml:1884
+#, no-c-format
+msgid "Braille Displays"
+msgstr "Les plages Braille"
+
+#. Tag: para
+#: hardware.xml:1885
+#, no-c-format
+msgid ""
+"Support for braille displays is determined by the underlying support found "
+"in <classname>brltty</classname>. Most displays work under "
+"<classname>brltty</classname>, connected via either a serial port, USB or "
+"bluetooth. Details on supported braille devices can be found on the <ulink "
+"url=\"&url-brltty;\"><classname>brltty</classname> website</ulink>. &debian-"
+"gnu; &release; ships with <classname>brltty</classname> version &brlttyver;."
+msgstr ""
+"La gestion des plages Braille dépend de <classname>brltty</classname>. La "
+"plupart des plages fonctionnent avec <classname>brltty</classname>, connecté "
+"par un port série, un port USB ou un port bluetooth. Des précisions sur les "
+"plages fonctionnelles se trouvent sur le <ulink url=\"&url-brltty;\">site de "
+"<classname>brltty</classname></ulink>. &debian-gnu; &release; propose la "
+"version &brlttyver; de <classname>brltty</classname>."
+
+#. Tag: title
+#: hardware.xml:1899
+#, no-c-format
+msgid "Hardware Speech Synthesis"
+msgstr "Synthèse vocale matérielle"
+
+#. Tag: para
+#: hardware.xml:1900
+#, no-c-format
+msgid ""
+"Support for hardware speech synthesis devices is determined by the "
+"underlying support found in <classname>speakup</classname>. "
+"<classname>speakup</classname> only supports integrated boards and external "
+"devices connected to a serial port (no USB, serial-to-USB or PCI adapters "
+"are supported). Details on supported hardware speech synthesis devices can "
+"be found on the <ulink url=\"&url-speakup;\"><classname>speakup</classname> "
+"website</ulink>. &debian-gnu; &release; ships with <classname>speakup</"
+"classname> version &speakupver;."
+msgstr ""
+"La synthèse vocale matérielle est prise en charge par <classname>speakup</"
+"classname>. <classname>Speakup</classname> n'accepte que les cartes "
+"intégrées et les périphériques externes connectés par un port série, (pas "
+"d'adaptateurs USB, serial-to-USB ou PCI). On peut trouver des précisions sur "
+"la synthèse vocale matérielle sur le <ulink url=\"&url-speakup;\">site de "
+"<classname>speakup</classname></ulink>. &debian-gnu; &release; propose la "
+"version &speakupver; de <classname>speakup</classname>."
+
+#. Tag: title
+#: hardware.xml:1920
+#, no-c-format
+msgid "Peripherals and Other Hardware"
+msgstr "Périphériques et autres matériels"
+
+#. Tag: para
+#: hardware.xml:1921
+#, no-c-format
+msgid ""
+"&arch-kernel; supports a large variety of hardware devices such as mice, "
+"printers, scanners, PCMCIA/CardBus/ExpressCard and USB devices. However, "
+"most of these devices are not required while installing the system."
+msgstr ""
+"&arch-kernel; reconnaît une large gamme de périphériques comme les souris, "
+"les imprimantes, les scanners, les périphériques PCMCIA/CardBus/ExpressCard "
+"et USB. Cependant, aucun de ces périphériques n'est requis lors de "
+"l'installation du système."
+
+#. Tag: para
+#: hardware.xml:1927
+#, no-c-format
+msgid ""
+"USB hardware generally works fine. On some very old PC systems some USB "
+"keyboards may require additional configuration (see <xref linkend=\"hardware-"
+"issues\"/>). On modern PCs, USB keyboards and mice work without requiring "
+"any specific configuration."
+msgstr ""
+"Le matériel USB fonctionne correctement. Pour quelques très anciens PC, les "
+"claviers USB peuvent nécessiter une configuration supplémentaire (voyez la "
+"<xref linkend=\"hardware-issues\"/>). Sur les ordinateurs modernes, claviers "
+"et souris USB ne demandent aucune configuration particulière."
+
+#. Tag: para
+#: hardware.xml:1936
+#, no-c-format
+msgid ""
+"Package installations from XPRAM and tape are not supported by this system. "
+"All packages that you want to install need to be available on a DASD or over "
+"the network using NFS, HTTP or FTP."
+msgstr ""
+"Les installations de paquets à partir de XPRAM ou d'une bande ne sont pas "
+"reconnues par le système. Tous les paquets que vous désirez installer "
+"doivent être disponibles sur un DASD ou bien sur le réseau avec NFS, HTTP ou "
+"FTP."
+
+#. Tag: title
+#: hardware.xml:1949
+#, no-c-format
+msgid "Devices Requiring Firmware"
+msgstr ""
+"Périphériques demandant des microprogrammes (<emphasis>firmware</emphasis>)"
+
+#. Tag: para
+#: hardware.xml:1950
+#, no-c-format
+msgid ""
+"Besides the availability of a device driver, some hardware also requires so-"
+"called <firstterm>firmware</firstterm> or <firstterm>microcode</firstterm> "
+"to be loaded into the device before it can become operational. This is most "
+"common for network interface cards (especially wireless NICs), but for "
+"example some USB devices and even some hard disk controllers also require "
+"firmware. With many graphics cards, basic functionality is available without "
+"additional firmware, but the use of advanced features requires an "
+"appropriate firmware file to be installed in the system."
+msgstr ""
+"Outre la disponibilité d'un pilote, certains périphériques exigent le "
+"chargement d'un <firstterm>microprogramme</firstterm> pour fonctionner. "
+"C'est le cas pour les cartes réseau (particulièrement les cartes réseau sans "
+"fil), mais certains périphériques USB ou certains contrôleurs de disque dur "
+"demandent des microprogrammes. Pour les cartes graphiques, les "
+"fonctionnalités de base ne demandent pas de microprogramme supplémentaire, "
+"contrairement aux fonctionnalités avancées qui demandent l'installation sur "
+"le système d'un microprogramme spécifique."
+
+#. Tag: para
+#: hardware.xml:1961
+#, no-c-format
+msgid ""
+"On many older devices which require firmware to work, the firmware file was "
+"permanently placed in an EEPROM/Flash chip on the device itself by the "
+"manufacturer. Nowadays most new devices do not have the firmware embedded "
+"this way anymore, so the firmware file must be uploaded into the device by "
+"the host operating system every time the system boots."
+msgstr ""
+"Pour beaucoup de périphériques anciens, le microprogramme était placé par le "
+"fabricant sur le périphérique lui-même, sur une puce EEPROM/Flash. "
+"Aujourd'hui, les périphériques n'embarquent plus de microprogramme de cette "
+"façon. Le microprogramme doit être chargé sur le périphérique par le système "
+"d'exploitation à chaque démarrage."
+
+#. Tag: para
+#: hardware.xml:1969
+#, no-c-format
+msgid ""
+"In most cases firmware is non-free according to the criteria used by the "
+"&debian-gnu; project and thus cannot be included in the main distribution or "
+"in the installation system. If the device driver itself is included in the "
+"distribution and if &debian-gnu; legally can distribute the firmware, it "
+"will often be available as a separate package from the non-free section of "
+"the archive."
+msgstr ""
+"Dans la plupart des cas, le microprogramme n'est pas libre selon les "
+"critères du projet &debian; et ne peut donc être inclus dans la section "
+"<emphasis>main</emphasis> de l'archive ou dans le système d'installation. Si "
+"le pilote lui-même est inclus dans la distribution et si le projet &debian; "
+"peut distribuer légalement le microprogramme, il sera disponible sous forme "
+"de paquet dans la section <emphasis>non-free</emphasis> de l'archive."
+
+#. Tag: para
+#: hardware.xml:1978
+#, no-c-format
+msgid ""
+"However, this does not mean that such hardware cannot be used during an "
+"installation. Starting with &debian-gnu; 5.0, &d-i; supports loading "
+"firmware files or packages containing firmware from a removable medium, such "
+"as a USB stick. See <xref linkend=\"loading-firmware\"/> for detailed "
+"information on how to load firmware files or packages during the "
+"installation."
+msgstr ""
+"Cependant, cela ne signifie pas que ce type de matériel ne puisse pas être "
+"utilisé pendant l'installation. À partir de &debian-gnu; 5.0, l'installateur "
+"sait charger des microprogrammes sous forme de simple fichier ou sous forme "
+"de paquet sur des supports amovibles comme une clé USB. Consultez la <xref "
+"linkend=\"loading-firmware\"/> pour des précisions sur la manière de "
+"télécharger des microprogrammes pendant l'installation."
+
+#. Tag: para
+#: hardware.xml:1987
+#, no-c-format
+msgid ""
+"If the &d-i; prompts for a firmware file and you do not have this firmware "
+"file available or do not want to install a non-free firmware file on your "
+"system, you can try to proceed without loading the firmware. There are "
+"several cases where a driver prompts for additional firmware because it may "
+"be needed under certain circumstances, but the device does work without it "
+"on most systems (this e.g. happens with certain network cards using the tg3 "
+"driver)."
+msgstr ""
+"Si l'&d-i; demande un microprogramme qui n'est pas disponible ou que vous ne "
+"voulez pas installer un microprogramme non libre, vous pouvez continuer "
+"l'installation sans télécharger le microprogramme. Certains pilotes "
+"demandent des microprogrammes supplémentaires parce qu'ils sont nécessaires "
+"dans certaines circonstances, mais le périphérique fonctionnera sans sur la "
+"plupart des systèmes. Ainsi, cela arrive avec des cartes réseau utilisant le "
+"pilote tg3."
+
+#. Tag: title
+#: hardware.xml:2004
+#, no-c-format
+msgid "Purchasing Hardware Specifically for GNU/&arch-kernel;"
+msgstr "Acheter du matériel spécialement pour GNU/&arch-kernel;"
+
+#. Tag: para
+#: hardware.xml:2006
+#, no-c-format
+msgid ""
+"There are several vendors, who ship systems with &debian; or other "
+"distributions of GNU/Linux <ulink url=\"&url-pre-installed;\">pre-installed</"
+"ulink>. You might pay more for the privilege, but it does buy a level of "
+"peace of mind, since you can be sure that the hardware is well-supported by "
+"GNU/Linux."
+msgstr ""
+"Il existe des vendeurs qui livrent des systèmes en <ulink url=\"&url-pre-"
+"installed;\">pré-installant</ulink> &debian; ou d'autres distributions de "
+"GNU/Linux. Vous paierez peut-être plus cher pour avoir ce privilège, mais "
+"vous achetez ainsi un peu de tranquillité d'esprit, puisque vous serez "
+"certain que le matériel est bien reconnu par GNU/Linux."
+
+#. Tag: para
+#: hardware.xml:2014
+#, no-c-format
+msgid ""
+"If you do have to buy a machine with Windows bundled, carefully read the "
+"software license that comes with Windows; you may be able to reject the "
+"license and obtain a rebate from your vendor. Searching the Internet for "
+"<quote>windows refund</quote> may get you some useful information to help "
+"with that."
+msgstr ""
+"Si vous devez acheter un ordinateur fourni avec Windows, lisez attentivement "
+"la licence logicielle accompagnant Windows&nbsp;; vous pourrez peut-être "
+"rejeter la licence et obtenir un rabais de votre vendeur. Une recherche sur "
+"internet avec la chaîne <quote>remboursement Windows</quote> peut vous "
+"donner des pistes."
+
+#. Tag: para
+#: hardware.xml:2022
+#, no-c-format
+msgid ""
+"Whether or not you are purchasing a system with &arch-kernel; bundled, or "
+"even a used system, it is still important to check that your hardware is "
+"supported by the &arch-kernel; kernel. Check if your hardware is listed in "
+"the references found above. Let your salesperson (if any) know that you're "
+"shopping for a &arch-kernel; system. Support &arch-kernel;-friendly hardware "
+"vendors."
+msgstr ""
+"Que vous achetiez ou non un système livré avec &arch-kernel;, ou même un "
+"système d'occasion, il est important de vérifier que votre matériel est "
+"reconnu par le noyau &arch-kernel;. Vérifiez si votre matériel est listé "
+"dans les références ci-dessus. Indiquez à votre revendeur que vous "
+"recherchez un système &arch-kernel;. Soutenez les revendeurs de matériel "
+"amis de &arch-kernel;."
+
+#. Tag: title
+#: hardware.xml:2033
+#, no-c-format
+msgid "Avoid Proprietary or Closed Hardware"
+msgstr "Éviter le matériel propriétaire ou fermé"
+
+#. Tag: para
+#: hardware.xml:2034
+#, no-c-format
+msgid ""
+"Some hardware manufacturers simply won't tell us how to write drivers for "
+"their hardware. Others won't allow us access to the documentation without a "
+"non-disclosure agreement that would prevent us from releasing the driver's "
+"source code, which is one of the central elements of free software. Since we "
+"haven't been granted access to usable documentation on these devices, they "
+"simply won't work under &arch-kernel;."
+msgstr ""
+"Certains constructeurs refusent simplement de fournir les informations qui "
+"permettraient d'écrire des pilotes pour leur matériel. D'autres n'autorisent "
+"pas l'accès à la documentation sans accord de confidentialité, ce qui nous "
+"empêche de distribuer le code source qui est l'élément essentiel du logiciel "
+"libre. Sans accès à une documentation utilisable, ces pilotes ne peuvent pas "
+"fonctionner sous &arch-kernel;."
+
+#. Tag: para
+#: hardware.xml:2044
+#, no-c-format
+msgid ""
+"In many cases there are standards (or at least some de-facto standards) "
+"describing how an operating system and its device drivers communicate with a "
+"certain class of devices. All devices which comply to such a (de-"
+"facto-)standard can be used with a single generic device driver and no "
+"device-specific drivers are required. With some kinds of hardware (e.g. USB "
+"<quote>Human Interface Devices</quote>, i.e. keyboards, mice, etc., and USB "
+"mass storage devices like USB flash disks and memory card readers) this "
+"works very well and practically every device sold in the market is standards-"
+"compliant."
+msgstr ""
+"Le plus souvent il existe des normes (au moins, <emphasis>de facto</"
+"emphasis>) qui décrivent comment communiquent un système d'exploitation et "
+"ses pilotes de périphériques avec les différentes classes de périphériques. "
+"Tous les périphériques qui satisfont cette norme <emphasis>de facto</"
+"emphasis> peuvent fonctionner avec un pilote générique. Certains "
+"périphériques USB, clavier, souris, disque flash, lecteur de carte mémoire, "
+"fonctionnent ainsi très bien et pratiquement tous les modèles sur le marché "
+"se conforment à la norme."
+
+#. Tag: para
+#: hardware.xml:2056
+#, no-c-format
+msgid ""
+"In other fields, among them e.g. printers, this is unfortunately not the "
+"case. While there are many printers which can be addressed via a small set "
+"of (de-facto-)standard control languages and therefore can be made to work "
+"without problems in any operating system, there are quite a few models which "
+"only understand proprietary control commands for which no usable "
+"documentation is available and therefore either cannot be used at all on "
+"free operating systems or can only be used with a vendor-supplied closed-"
+"source driver."
+msgstr ""
+"Mais dans certains domaines, par exemple celui des imprimantes, ce n'est pas "
+"le cas. Beaucoup d'imprimantes peuvent certes être contrôlées par des "
+"langages standardisés et peuvent donc fonctionner sans problème sur tout "
+"système d'exploitation. Cependant, quelques imprimantes ne comprennent que "
+"des commandes spéciales pour lesquelles aucune documentation n'est "
+"disponible. Elles ne peuvent donc pas fonctionner sur un système "
+"d'exploitation libre sans un pilote propriétaire fourni par le constructeur."
+
+#. Tag: para
+#: hardware.xml:2067
+#, no-c-format
+msgid ""
+"Even if there is a vendor-provided closed-source driver for such hardware "
+"when purchasing the device, the practical lifespan of the device is limited "
+"by driver availability. Nowadays product cycles have become short and it is "
+"not uncommon that a short time after a consumer device has ceased "
+"production, no driver updates get made available any more by the "
+"manufacturer. If the old closed-source driver does not work anymore after a "
+"system update, an otherwise perfectly working device becomes unusable due to "
+"lacking driver support and there is nothing that can be done in this case. "
+"You should therefore avoid buying closed hardware in the first place, "
+"regardless of the operating system you want to use it with."
+msgstr ""
+"Même s'il existe un tel pilote propriétaire, sa disponibilité limite la "
+"durée de vie du périphérique. De nos jours, les cycles de vie des produits "
+"se raccourcissent et il n'est pas inhabituel de constater l'absence de mise "
+"à jour du pilote quand la production du périphérique a cessé. Si l'ancien "
+"pilote ne fonctionne plus après une mise à jour du système, un périphérique "
+"en parfait état devient inutilisable. On ne peut rien faire ! Vous devriez "
+"donc éviter d'acheter du matériel propriétaire, quel que soit le système "
+"d'exploitation que vous utilisez."
+
+#. Tag: para
+#: hardware.xml:2080
+#, no-c-format
+msgid ""
+"You can help improve this situation by encouraging manufacturers of closed "
+"hardware to release the documentation and other resources necessary for us "
+"to provide free drivers for their hardware."
+msgstr ""
+"Vous pouvez changer cette situation en encourageant les constructeurs de "
+"matériel propriétaire à publier les documentations et tout autre moyen "
+"nécessaire à la programmation de pilotes libres pour leur matériel."
+
+#. Tag: title
+#: hardware.xml:2095
+#, no-c-format
+msgid "Installation Media"
+msgstr "Les supports d'installation"
+
+#. Tag: para
+#: hardware.xml:2097
+#, no-c-format
+msgid ""
+"This section will help you determine which different media types you can use "
+"to install &debian;. There is a whole chapter devoted to media, <xref "
+"linkend=\"install-methods\"/>, which lists the advantages and disadvantages "
+"of each media type. You may want to refer back to this page once you reach "
+"that section."
+msgstr ""
+"Cette section précise les différents supports utilisables pour installer "
+"&debian;. Un chapitre entier est consacré aux supports, le <xref linkend="
+"\"install-methods\"/>&nbsp;; il indique les avantages et les désavantages de "
+"chaque support. Quand vous aurez atteint ce chapitre, vous pourrez vous "
+"reporter à cette page."
+
+#. Tag: title
+#: hardware.xml:2107
+#, no-c-format
+msgid "Floppies"
+msgstr "Les disquettes"
+
+#. Tag: para
+#: hardware.xml:2108
+#, no-c-format
+msgid ""
+"In some cases, you'll have to do your first boot from floppy disks. "
+"Generally, all you will need is a high-density (1440 kilobytes) 3.5 inch "
+"floppy drive."
+msgstr ""
+"Dans certains cas, vous devrez effectuer votre premier amorçage depuis un "
+"lecteur de disquettes. En général vous avez besoin d'une disquette haute "
+"densité (1440 kilo-octets) de 3,5 pouces."
+
+#. Tag: para
+#: hardware.xml:2114
+#, no-c-format
+msgid "For CHRP, floppy support is currently broken."
+msgstr "Pour CHRP, l'utilisation de disquette est actuellement impossible."
+
+#. Tag: title
+#: hardware.xml:2121
+#, no-c-format
+msgid "CD-ROM/DVD-ROM/BD-ROM"
+msgstr "CD-ROM/DVD-ROM/BD-ROM"
+
+#. Tag: para
+#: hardware.xml:2123
+#, no-c-format
+msgid ""
+"Whenever you see <quote>CD-ROM</quote> in this manual, it applies to all of "
+"CD-ROMs, DVD-ROMs and BD-ROMs, because all these technologies are really the "
+"same from the operating system's point of view."
+msgstr ""
+"Chaque fois que vous lirez <quote>CD</quote> dans ce manuel, cela voudra "
+"dire aussi bien CD-ROM que DVD-ROM ou BD-ROM, car, du point de vue du "
+"système d'exploitation, les trois techniques sont les mêmes."
+
+#. Tag: para
+#: hardware.xml:2129
+#, no-c-format
+msgid "CD-ROM based installation is supported for most architectures."
+msgstr ""
+"L'installation à partir d'un CD est aussi possible avec la plupart des "
+"architectures."
+
+#. Tag: para
+#: hardware.xml:2133
+#, no-c-format
+msgid ""
+"On PCs SATA, IDE/ATAPI, USB and SCSI CD-ROMs are supported, as are FireWire "
+"devices that are supported by the ohci1394 and sbp2 drivers."
+msgstr ""
+"Sur les PC, les ports SATA et IDE/ATAPI, ainsi que les lecteurs USB et CD-"
+"ROM SCSI sont reconnus, comme le sont les périphériques FireWire reconnus "
+"par les pilotes ohci1394 et sbp2."
+
+#. Tag: title
+#: hardware.xml:2150
+#, no-c-format
+msgid "USB Memory Stick"
+msgstr "Les clés USB"
+
+#. Tag: para
+#: hardware.xml:2152
+#, no-c-format
+msgid ""
+"USB flash disks a.k.a. USB memory sticks have become a commonly used and "
+"cheap storage device. Most modern computer systems also allow booting the &d-"
+"i; from such a stick. Many modern computer systems, in particular netbooks "
+"and thin laptops, do not have a CD/DVD-ROM drive anymore at all and booting "
+"from USB media is the standard way of installing a new operating system on "
+"them."
+msgstr ""
+"Les disques flash USB (clés USB) sont des périphériques de stockage bon "
+"marché et très utilisés. La plupart des systèmes modernes permettent "
+"d'amorcer l'&d-i; à partir d'une clé USB. Ainsi, pour ceux qui ne possèdent "
+"pas de lecteur de CD, comme les netbooks ou les ultraportables, "
+"l'installation d'un nouveau système peut se faire par une clé USB."
+
+#. Tag: title
+#: hardware.xml:2164
+#, no-c-format
+msgid "Network"
+msgstr "Le réseau"
+
+#. Tag: para
+#: hardware.xml:2166
+#, no-c-format
+msgid ""
+"The network can be used during the installation to retrieve files needed for "
+"the installation. Whether the network is used or not depends on the "
+"installation method you choose and your answers to certain questions that "
+"will be asked during the installation. The installation system supports most "
+"types of network connections (including PPPoE, but not ISDN or PPP), via "
+"either HTTP or FTP. After the installation is completed, you can also "
+"configure your system to use ISDN and PPP."
+msgstr ""
+"Pendant l'installation, le téléchargement des fichiers nécessaires peut se "
+"faire par le réseau. Selon le type d'installation que vous avez choisi et "
+"les réponses que vous donnez à certaines questions, le réseau est utilisé ou "
+"non. Le système d'installation accepte la plupart des modes de connexion "
+"(PPPoE, par exemple, mais pas ISDN ou PPP), par HTTP ou FTP. Une fois "
+"l'installation terminée, vous pouvez configurer les modes ISDN ou PPP."
+
+#. Tag: para
+#: hardware.xml:2176
+#, no-c-format
+msgid ""
+"You can also <emphasis>boot</emphasis> the installation system over the "
+"network without needing any local media like CDs/DVDs or USB sticks. If you "
+"already have a netboot-infrastructure available (i.e. you are already "
+"running DHCP and TFTP services in your network), this allows an easy and "
+"fast deployment of a large number of machines. Setting up the necessary "
+"infrastructure requires a certain level of technical experience, so this is "
+"not recommended for novice users. <phrase arch=\"mips;mipsel;mips64el\">This "
+"is the preferred installation technique for &arch-title;.</phrase>"
+msgstr ""
+"Vous pouvez aussi <emphasis>amorcer</emphasis> le système d'installation sur "
+"le réseau, sans CD ni clé USB. Si vous avez l'infrastructure nécessaire "
+"— votre réseau fait fonctionner des services DHCP et TFTP —, il est très "
+"facile et rapide de déployer un grand nombre de machines. Mettre en œuvre "
+"une telle infrastructure exige cependant une certaine expérience technique "
+"qui n'est pas à la portée des débutants. <phrase arch=\"mips;mipsel;mips64el"
+"\">C'est la méthode d'installation préférée pour &arch-title;.</phrase>"
+
+#. Tag: para
+#: hardware.xml:2189
+#, no-c-format
+msgid ""
+"Diskless installation, using network booting from a local area network and "
+"NFS-mounting of all local filesystems, is another option."
+msgstr ""
+"L'installation sans disque, en utilisant le démarrage par réseau et le "
+"montage par NFS de tous les systèmes de fichiers locaux, est une autre "
+"possibilité."
+
+#. Tag: title
+#: hardware.xml:2198
+#, no-c-format
+msgid "Hard Disk"
+msgstr "Les disques durs"
+
+#. Tag: para
+#: hardware.xml:2200
+#, no-c-format
+msgid ""
+"Booting the installation system directly from a hard disk is another option "
+"for many architectures. This will require some other operating system to "
+"load the installer onto the hard disk. This method is only recommended for "
+"special cases when no other installation method is available."
+msgstr ""
+"L'installation à partir d'un disque local est aussi possible sur beaucoup "
+"d'architectures. Cela demande qu'un autre système d'exploitation charge "
+"l'installateur sur le disque dur. Cette méthode n'est recommandée que pour "
+"des cas spéciaux, quand aucune autre méthode n'est disponible."
+
+#. Tag: para
+#: hardware.xml:2207
+#, no-c-format
+msgid ""
+"Although the &arch-title; does not allow booting from SunOS (Solaris), you "
+"can install from a SunOS partition (UFS slices)."
+msgstr ""
+"Bien que &arch-title; ne permette pas de démarrer à partir de SunOS "
+"(Solaris), l'installation à partir d'une partition SunOS (tranches UFS) est "
+"tout à fait possible."
+
+#. Tag: title
+#: hardware.xml:2216
+#, no-c-format
+msgid "Un*x or GNU system"
+msgstr "Un*x ou système GNU"
+
+#. Tag: para
+#: hardware.xml:2218
+#, no-c-format
+msgid ""
+"If you are running another Unix-like system, you could use it to install "
+"&debian-gnu; without using the &d-i; described in the rest of this manual. "
+"This kind of install may be useful for users with otherwise unsupported "
+"hardware or on hosts which can't afford downtime. If you are interested in "
+"this technique, skip to the <xref linkend=\"linux-upgrade\"/>. This "
+"installation method is only recommended for advanced users when no other "
+"installation method is available."
+msgstr ""
+"Si vous utilisez un système de type Unix, vous pouvez installer &debian-gnu; "
+"sans utiliser l'installateur qui est décrit dans la suite de ce manuel. "
+"Cette manière de faire peut servir à des utilisateurs qui possèdent un "
+"matériel non reconnu ou qui sont sur des machines qui ne peuvent se "
+"permettre un temps d'arrêt. Si cette technique vous intéresse, reportez-vous "
+"à la <xref linkend=\"linux-upgrade\"/>. Cette méthode n'est recommandée que "
+"pour les experts, quand aucune autre méthode n'est disponible."
+
+#. Tag: title
+#: hardware.xml:2231
+#, no-c-format
+msgid "Supported Storage Systems"
+msgstr "Systèmes de stockage reconnus"
+
+#. Tag: para
+#: hardware.xml:2233
+#, no-c-format
+msgid ""
+"The &debian; installer contains a kernel which is built to maximize the "
+"number of systems it runs on."
+msgstr ""
+"L'installateur &debian; contient un noyau construit pour permettre de faire "
+"tourner un maximum de systèmes."
+
+#. Tag: para
+#: hardware.xml:2237
+#, no-c-format
+msgid ""
+"Generally, the &debian; installation system includes support for IDE (also "
+"known as PATA) drives, SATA and SCSI controllers and drives, USB, and "
+"FireWire. The supported file systems include FAT, Win-32 FAT extensions "
+"(VFAT) and NTFS."
+msgstr ""
+"Le système d'installation &debian; reconnaît les disques IDE (PATA), les "
+"contrôleurs et disques SATA et SCSI, les périphériques USB et FireWire. Les "
+"systèmes de fichiers reconnus comprennent FAT, les extensions FAT Win-32 "
+"(VFAT) et NTFS."
+
+#. Tag: para
+#: hardware.xml:2254
+#, no-c-format
+msgid ""
+"Any storage system supported by the Linux kernel is also supported by the "
+"boot system. The following SCSI drivers are supported in the default kernel: "
+"<itemizedlist> <listitem><para> Sparc ESP </para></listitem> "
+"<listitem><para> PTI Qlogic,ISP </para></listitem> <listitem><para> Adaptec "
+"AIC7xxx </para></listitem> <listitem><para> NCR and Symbios 53C8XX </para></"
+"listitem> </itemizedlist> IDE systems (such as the UltraSPARC 5) are also "
+"supported. See <ulink url=\"&url-sparc-linux-faq;\">Linux for SPARC "
+"Processors FAQ</ulink> for more information on SPARC hardware supported by "
+"the Linux kernel."
+msgstr ""
+"Tout système de stockage reconnu par le noyau Linux est aussi reconnu par le "
+"système de démarrage. Les pilotes SCSI suivants sont reconnus dans le noyau "
+"par défaut&nbsp;: <itemizedlist> <listitem><para>Sparc ESP</para></listitem> "
+"<listitem><para>PTI Qlogic,ISP</para></listitem> <listitem><para>Adaptec "
+"AIC7xxx</para></listitem> <listitem><para>NCR et Symbios 53C8XX</para></"
+"listitem> </itemizedlist> Les systèmes IDE (tels que UltraSPARC 5) sont "
+"aussi reconnus. Voyez la <ulink url=\"&url-sparc-linux-faq;\">FAQ Linux pour "
+"les processeurs SPARC</ulink> pour plus d'informations sur le matériel SPARC "
+"reconnu par le noyau Linux."
+
+#. Tag: para
+#: hardware.xml:2287
+#, no-c-format
+msgid ""
+"Any storage system supported by the Linux kernel is also supported by the "
+"boot system. Note that the current Linux kernel does not support floppies on "
+"CHRP systems at all."
+msgstr ""
+"Tout système de stockage reconnu par le noyau Linux est aussi reconnu par le "
+"système de démarrage. Il faut remarquer que le noyau Linux actuel n'accepte "
+"pas du tout les disquettes sur les systèmes CHRP."
+
+#. Tag: para
+#: hardware.xml:2293
+#, no-c-format
+msgid ""
+"Any storage system supported by the Linux kernel is also supported by the "
+"boot system. Note that the current Linux kernel does not support the floppy "
+"drive."
+msgstr ""
+"Tout système de stockage reconnu par le noyau Linux est aussi reconnu par le "
+"système de démarrage. Il faut remarquer que le noyau Linux actuel n'accepte "
+"pas les disquettes."
+
+#. Tag: para
+#: hardware.xml:2299
+#, no-c-format
+msgid ""
+"Any storage system supported by the Linux kernel is also supported by the "
+"boot system."
+msgstr ""
+"Tout système de stockage reconnu par le noyau Linux est aussi reconnu par le "
+"système de démarrage."
+
+#. Tag: para
+#: hardware.xml:2304
+#, no-c-format
+msgid ""
+"Any storage system supported by the Linux kernel is also supported by the "
+"boot system. This means that FBA and ECKD DASDs are supported with the old "
+"Linux disk layout (ldl) and the new common S/390 disk layout (cdl)."
+msgstr ""
+"Tout système de stockage reconnu par le noyau Linux est aussi supporté par "
+"le système de démarrage. Cela signifie que les DASD FBA et ECKD sont "
+"reconnus pour les vieux formats de disque Linux (ldl) et le nouveau format "
+"de disque S/390 plus courant (cdl)."
+
+#. Tag: title
+#: hardware.xml:2321
+#, no-c-format
+msgid "Memory and Disk Space Requirements"
+msgstr "Mémoire et espace disque nécessaires"
+
+#. Tag: para
+#: hardware.xml:2323
+#, no-c-format
+msgid ""
+"You must have at least &minimum-memory; of memory and &minimum-fs-size; of "
+"hard disk space to perform a normal installation. Note that these are fairly "
+"minimal numbers. For more realistic figures, see <xref linkend=\"minimum-"
+"hardware-reqts\"/>."
+msgstr ""
+"Vous devez posséder au moins &minimum-memory; de mémoire vive et &minimum-fs-"
+"size; d'espace disque. Ce sont vraiment des valeurs minimales. Pour une "
+"estimation plus réaliste, voyez la <xref linkend=\"minimum-hardware-reqts\"/"
+">."
+
+#. Tag: para
+#: hardware.xml:2330
+#, no-c-format
+msgid ""
+"Installation on systems with less memory<footnote condition=\"gtk\"> <para> "
+"Installation images that support the graphical installer require more memory "
+"than images that support only the textual installer and should not be used "
+"on systems with less than &minimum-memory; of memory. If there is a choice "
+"between booting the text-based and the graphical installer, the former "
+"should be selected on such systems. </para> </footnote> or disk space "
+"available may be possible but is only advised for experienced users."
+msgstr ""
+"L'installation sur des systèmes avec moins de mémoire <footnote condition="
+"\"gtk\"> <para> L'installateur graphique demande plus de mémoire que "
+"l'installateur texte. Il ne doit pas être utilisé sur des systèmes avec une "
+"quantité de mémoire inférieure à &minimum-memory;. Si un choix est proposé, "
+"il vaut mieux sélectionner l'installateur texte, sur de tels systèmes. </"
+"para> </footnote> ou avec moins d'espace disque disponible est encore "
+"possible mais ce n'est recommandé qu'aux utilisateurs expérimentés."
+
+#~ msgid "<entry>Versatile</entry>"
+#~ msgstr "<entry>Versatile</entry>"
+
+#~ msgid "multiplatform for LPAE-capable systems"
+#~ msgstr "multiplate-forme pour les systèmes à extension d'adressage (LPAE)"
+
+#~ msgid "armmp-lpae"
+#~ msgstr "armmp-lpae"
+
+#~ msgid "MIPS Malta (32 bit)"
+#~ msgstr "MIPS Malta (32 bits)"
+
+#~ msgid "MIPS Malta (64 bit)"
+#~ msgstr "MIPS Malta (64 bits)"
+
+#~ msgid "<term>Versatile</term>"
+#~ msgstr "<term>Versatile</term>"
+
+#, fuzzy
+#~| msgid "MIPS Malta (32 bit)"
+#~ msgid "MIPS Malta"
+#~ msgstr "MIPS Malta"
+
+#~ msgid ""
+#~ "&debian; on &arch-title; supports the following platforms: <itemizedlist> "
+#~ "<listitem><para> SGI IP22: this platform includes the SGI machines Indy, "
+#~ "Indigo 2 and Challenge S. Since these machines are very similar, whenever "
+#~ "this document refers to the SGI Indy, the Indigo 2 and Challenge S are "
+#~ "meant as well. </para></listitem> <listitem><para> SGI IP32: this "
+#~ "platform is generally known as SGI O2. </para></listitem> "
+#~ "<listitem><para> MIPS Malta: this platform is emulated by QEMU and is "
+#~ "therefore a nice way to test and run &debian; on MIPS if you don't have "
+#~ "the hardware. </para></listitem> </itemizedlist> Complete information "
+#~ "regarding supported mips/mipsel/mips64el machines can be found at the "
+#~ "<ulink url=\"&url-linux-mips;\">Linux-MIPS homepage</ulink>. In the "
+#~ "following, only the systems supported by the &debian; installer will be "
+#~ "covered. If you are looking for support for other subarchitectures, "
+#~ "please contact the <ulink url=\"&url-list-subscribe;\"> debian-&arch-"
+#~ "listname; mailing list</ulink>."
+#~ msgstr ""
+#~ "&debian; sur &arch-title; gère les plates-formes suivantes&nbsp;: "
+#~ "<itemizedlist> <listitem><para> SGI IP22&nbsp;: cette plate-forme englobe "
+#~ "les machines SGI Indy, Indigo 2 et Challenge S. Puisque ces machines sont "
+#~ "très semblables, chaque fois que ce document se rapporte aux machines SGI "
+#~ "Indy, cela concerne aussi les machines Indigo 2 et Challenge S. </para></"
+#~ "listitem> <listitem><para> SGI IP32&nbsp;: cette plate-forme est connue "
+#~ "comme SGI O2. </para></listitem> <listitem><para> MIPS Malta&nbsp;: cette "
+#~ "plate-forme est simulée par QEMU. C'est un bon moyen de tester &debian; "
+#~ "sur MIPS quand on ne possède pas le matériel. </para></listitem> </"
+#~ "itemizedlist> Une information complète à propos des machines mips/mipsel/"
+#~ "mips64el se trouve dans la <ulink url=\"&url-linux-mips;\">page Linux-"
+#~ "MIPS</ulink>. Dans la suite, seuls les systèmes gérés par l'installateur "
+#~ "&debian; seront traités. Si vous recherchez de l'aide pour d'autres sous-"
+#~ "architectures, vous pouvez contacter la <ulink url=\"&url-list-subscribe;"
+#~ "\">liste de diffusion debian-&arch-listname;</ulink>."
+
+#~ msgid ""
+#~ "On SGI IP22, SGI Indy, Indigo 2 and Challenge S with R4000, R4400, R4600 "
+#~ "and R5000 processors are supported by the &debian; installation system on "
+#~ "big endian MIPS. On SGI IP32, currently only systems based on the R5000 "
+#~ "are supported."
+#~ msgstr ""
+#~ "Sur SGI IP22, les plates-formes SGI Indy, Indigo 2 et Challenge S "
+#~ "utilisant les processeurs R4000, R4400, R4600 et R5000 sont reconnues par "
+#~ "le système d'installation de &debian; pour MIPS grand-boutien. Sur SGI "
+#~ "IP32, seuls les systèmes basés sur le R5000 sont reconnus."
+
+#~ msgid ""
+#~ "The X.Org X Window System is only supported on the SGI Indy and the O2."
+#~ msgstr ""
+#~ "Le système X window de X.Org n'est disponible pour le moment que sur SGI "
+#~ "Indy et O2."
+
+#~ msgid ""
+#~ "On SGI machines, booting from CD-ROM requires a SCSI CD-ROM drive capable "
+#~ "of working with a logical blocksize of 512 bytes. Many of the SCSI CD-ROM "
+#~ "drives sold on the PC market do not have this capability. If your CD-ROM "
+#~ "drive has a jumper labeled <quote>Unix/PC</quote> or <quote>512/2048</"
+#~ "quote>, place it in the <quote>Unix</quote> or <quote>512</quote> "
+#~ "position. To start the install, simply choose the <quote>System "
+#~ "installation</quote> entry in the firmware."
+#~ msgstr ""
+#~ "Sur les machines SGI, amorcer depuis un CD demande un lecteur SCSI qui "
+#~ "puisse fonctionner avec un bloc logique de 512 octets. La plupart des "
+#~ "lecteurs SCSI vendus sur le marché ne le peuvent pas. Si votre lecteur "
+#~ "possède un cavalier <quote>Unix/PC ou 512/2048</quote>, mettez-le en "
+#~ "position <quote>Unix</quote> ou <quote>512</quote>. Pour commencer "
+#~ "l'installation, choisissez l'entrée <quote>System installation</quote> "
+#~ "dans le microprogramme."
+
+#~ msgid "IBM/Motorola PowerPC"
+#~ msgstr "IBM/Motorola PowerPC"
+
+#~ msgid "<entry morerows=\"0\">powerpc</entry>"
+#~ msgstr "<entry morerows=\"0\">powerpc</entry>"
+
+#~ msgid "Mele A1000"
+#~ msgstr "Mele A1000"
+
+#~ msgid "Miniand Hackberry"
+#~ msgstr "Miniand Hackberry"
+
+#~ msgid "PineRiver Mini X-Plus"
+#~ msgstr "PineRiver Mini X-Plus"
+
+#~ msgid ""
+#~ "The mainline Linux kernel generally supports serial console, ethernet, "
+#~ "SATA, USB and MMC/SD-cards on Allwinner A10, A10s/A13 and A20 SoCs, but "
+#~ "it does not have native drivers for the display (HDMI/VGA/LCD) and audio "
+#~ "hardware in these SoCs. The NAND flash memory that is built into some "
+#~ "sunXi-based systems is not supported."
+#~ msgstr ""
+#~ "La branche principale du noyau Linux prend généralement en charge la "
+#~ "console série, Ethernet, SATA, USB et les cartes MMC/SD sur les puces "
+#~ "Allwinner A10, A10/A13 et A20, mais il n’y pas d'affichage local (HDMI/"
+#~ "VGA/LVDS) ni de prise en charge de l'audio. La mémoire flash NAND "
+#~ "intégrée sur certains systèmes basés sur sunXi n'est pas non plus prise "
+#~ "en charge."
+
+#~ msgid ""
+#~ "Using a local display is technically possible without native display "
+#~ "drivers via the <quote>simplefb</quote> infrastructure in the mainline "
+#~ "kernel, which relies on the <quote>U-Boot</quote> bootloader for "
+#~ "initialising the display hardware."
+#~ msgstr ""
+#~ "L'utilisation d'un affichage local est techniquement possible sans les "
+#~ "pilotes d'affichage natifs grâce à l'infrastructure <quote>simplefb</"
+#~ "quote> de la branche principale du noyau Linux, qui s'appuie sur le "
+#~ "gestionnaire d'amorçage <quote>U-Boot</quote> pour initialiser le "
+#~ "matériel d'affichage. "
+
+#~ msgid "kirkwood"
+#~ msgstr "kirkwood"
+
+#~ msgid "orion5x"
+#~ msgstr "orion5x"
+
+#~ msgid "SGI IP22 (Indy/Indigo 2)"
+#~ msgstr "SGI IP22 (Indy/Indigo 2)"
+
+#~ msgid "r4k-ip22"
+#~ msgstr "r4k-ip22"
+
+#~ msgid "r5k-ip32"
+#~ msgstr "r5k-ip32"
+
+#~ msgid "PowerMac"
+#~ msgstr "PowerMac"
+
+#~ msgid "pmac"
+#~ msgstr "pmac"
+
+#~ msgid "PReP"
+#~ msgstr "PReP"
+
+#~ msgid "prep"
+#~ msgstr "prep"
+
+#~ msgid "Intel IXP4xx"
+#~ msgstr "Intel IXP4xx"
+
+#~ msgid "ixp4xx"
+#~ msgstr "ixp4xx"
+
+#~ msgid ""
+#~ "The Intel IXP4xx processor series is used in commonly used network "
+#~ "attached storage (NAS) devices like the Linksys NSLU2."
+#~ msgstr ""
+#~ "La série de processeurs IXP4xx de Intel est utilisée dans les "
+#~ "périphériques de stockage réseau (NAS, network attached storage) comme le "
+#~ "Linksys NSLU2."
+
+#~ msgid ""
+#~ "While there is kernel support for this platform in &debian; 8, it is not "
+#~ "supported by the &d-i;. It is possible to do a <quote>dist-upgrade</"
+#~ "quote> from &debian; 7 to &debian; 8 for existing installations, though. "
+#~ "Due to the small amount of RAM that systems based on the IXP4xx typically "
+#~ "have, this requires that swap space is enabled prior to upgrading. "
+#~ "Support for the IXP4xx platform will be dropped completely in &debian; 9."
+#~ msgstr ""
+#~ "Alors que le noyau inclus dans &debian; 8 prend en charge aussi ces "
+#~ "plates-formes, elles ne sont pas prises en charge par l'&d-i;. Cependant, "
+#~ "il est possible d'effectuer une mise à niveau (<quote>dist-upgrade</"
+#~ "quote>) depuis &debian; 7 pour les installations existantes. Mais en "
+#~ "raison de la faible quantité de mémoire généralement disponible sur les "
+#~ "systèmes basés sur IXP4xx, cela nécessite d'activer l'espace d'échange "
+#~ "(swap) avant. La prise en charge de la plate-forme IXP4xx sera supprimée "
+#~ "totalement dans &debian; 9."
+
+#~ msgid ""
+#~ "Kirkwood is a system-on-chip (SoC) from Marvell that integrates an ARM "
+#~ "CPU, Ethernet, SATA, USB, and other functionality in one chip. &debian; "
+#~ "currently supports the following Kirkwood based devices: OpenRD (OpenRD-"
+#~ "Base, OpenRD-Client and OpenRD-Ultimate), <ulink url=\"&url-arm-cyrius-"
+#~ "sheevaplug;\">plug computers (SheevaPlug, GuruPlug and DreamPlug)</"
+#~ "ulink>, <ulink url=\"&url-arm-cyrius-qnap-kirkwood;\">QNAP Turbo Station</"
+#~ "ulink> (all TS-11x, TS-21x and TS-41x models), and LaCie NASes (Network "
+#~ "Space v2, Network Space Max v2, Internet Space v2, d2 Network v2, 2Big "
+#~ "Network v2 and 5Big Network v2)."
+#~ msgstr ""
+#~ "Kirkwood est un système sur une puce (SOC) de Marvell qui comporte un "
+#~ "processeur ARM, Ethernet, SATA, USB, et d'autres fonctionnalités sur une "
+#~ "seule puce. Pour l'instant sont reconnus les systèmes suivants : OpenRD "
+#~ "(OpenRD-Base, OpenRD-Client et OpenRD-Ultimate), <ulink url=\"&url-arm-"
+#~ "cyrius-sheevaplug;\">plug computers (SheevaPlug, GuruPlug and DreamPlug)</"
+#~ "ulink>, <ulink url=\"&url-arm-cyrius-qnap-kirkwood;\">QNAP Turbo Station</"
+#~ "ulink> (tous les modèles TS-11x, TS-21x et TS-41x), et LaCie NASes "
+#~ "(Network Space v2, Network Space Max v2, Internet Space v2, d2 Network "
+#~ "v2, 2Big Network v2 et 5Big Network v2)."
+
+#~ msgid "IOP32x"
+#~ msgstr "IOP32x"
+
+#~ msgid ""
+#~ "Intel's I/O Processor (IOP) line is found in a number of products related "
+#~ "to data storage and processing, such as the <ulink url=\"&url-arm-cyrius-"
+#~ "glantank;\">GLAN Tank</ulink> from IO-Data and the <ulink url=\"&url-arm-"
+#~ "cyrius-n2100;\">Thecus N2100</ulink>. &debian; has supported the IOP32x "
+#~ "platform in &debian; 7, but does not support it any longer from version 8 "
+#~ "on due to hardware constraints of the platform which make it unsuitable "
+#~ "for the installation of newer &debian; releases."
+#~ msgstr ""
+#~ "On trouve la famille de processeurs d'Intel I/O Processor (IOP) sur "
+#~ "nombre de produits relatifs au stockage de données, comme les "
+#~ "périphériques <ulink url=\"&url-arm-cyrius-glantank;\">GLAN Tank</ulink> "
+#~ "de IO-Data et <ulink url=\"&url-arm-cyrius-n2100;\">Thecus N2100</ulink>. "
+#~ "&debian; a pris en charge la plate-forme IOP32x dans &debian; 7, mais ne "
+#~ "la prend plus en charge à partir de la version 8 à cause des contraintes "
+#~ "matérielles de la plate-forme qui la rendent inappropriée pour "
+#~ "l'installation des nouvelles versions de &debian;."
+
+#~ msgid "MV78xx0"
+#~ msgstr "MV78xx0"
+
+#~ msgid ""
+#~ "The MV78xx0 platform has been used on the Marvell DB-78xx0-BP development "
+#~ "board. It was supported in &debian; 7 with a platform-specific kernel "
+#~ "(based on the Linux kernel version 3.2), but is not supported any more "
+#~ "from &debian; 8 onwards."
+#~ msgstr ""
+#~ "La plate-forme MV78xx0 a été utilisée sur les cartes de développement "
+#~ "DB-78xx0-BP de Marvell. Elle a été prise en charge dans &debian; 7 avec "
+#~ "un noyau spécifique à la plate-forme (basé sur le noyau Linux 3.2), mais "
+#~ "n'est plus prise en charge à partir de &debian; 8."
+
+#~ msgid ""
+#~ "However, &debian; GNU/Linux &releasename; will <emphasis>not</emphasis> "
+#~ "run on 486 or earlier processors. Despite the architecture name \"i386\", "
+#~ "support for actual 80386 and 80486 processors (and their clones) was "
+#~ "dropped with the Sarge (r3.1) and Squeeze (r6.0) releases of &debian;, "
+#~ "respectively. The Intel Pentium and clones, including those without an "
+#~ "FPU (Floating-Point Unit or math coprocessor), are supported. The Intel "
+#~ "Quark is <emphasis>not</emphasis> supported, due to hardware errata."
+#~ msgstr ""
+#~ "Néanmoins, &debian; GNU/Linux &releasename; ne fonctionnera "
+#~ "<emphasis>pas</emphasis> sur les processeurs 486 et précédents. Malgré le "
+#~ "nom de l'architecture « i386 », la prise en charge des processeurs 80386 "
+#~ "et 80486 (et leurs clones) a été supprimée à la publication de Sarge "
+#~ "(3.1) et Squeeze (6.0) respectivement. Les Pentium d'Intel et leurs "
+#~ "clones, y compris ceux sans FPU (unité de calcul en virgule flottante, "
+#~ "Floating-Point Unit) sont pris en charge. Le Quark de Intel n'est "
+#~ "<emphasis>pas</emphasis> pris en charge à cause d'erreurs matérielles."
+
+#~ msgid ""
+#~ "The 586 flavour of the &debian; kernel image packages for &arch-title; is "
+#~ "not compiled with SMP support."
+#~ msgstr ""
+#~ "Pour l'architecture &arch-title;, la variante 586 de l'image &debian; du "
+#~ "noyau n'est pas compilée avec l'option SMP."
+
+#~ msgid "&debian; GNU/kFreeBSD &release; supports two architectures."
+#~ msgstr "&debian; GNU/kFreeBSD &release; fonctionne sur deux architectures."
+
+#~ msgid "kfreebsd-i386"
+#~ msgstr "kfreebsd-i386"
+
+#~ msgid "kfreebsd-amd64"
+#~ msgstr "kfreebsd-amd64"
+
+#~ msgid ""
+#~ "Because of this, the standard &debian; distribution only supports "
+#~ "installation on a selected number of older 32-bit ARM systems in addition "
+#~ "to the newer (32 and 64-bit) systems which are supported by the ARM "
+#~ "multiplatform kernels (called 'armmp' on 32-bit armhf, no flavour name on "
+#~ "64-bit arm64)."
+#~ msgstr ""
+#~ "À cause de cela, la distribution &debian; ne prend en charge "
+#~ "l'installation que sur un certain nombre d'anciens systèmes ARM 32 bits, "
+#~ "en plus des nouveaux (32 et 64 bits) pris en charge par le noyau ARM "
+#~ "multiplate-forme (appelé armmp sur les plates-formes 32 bits armhf, sans "
+#~ "nom de saveur sur les plates-formes 64 bits arm64)."
+
+#~ msgid ""
+#~ "The ARM architecture has evolved over time and modern ARM processors "
+#~ "provide features which are not available in older models. &debian; "
+#~ "therefore provides three ARM ports: the &debian;/arm64 port for all 64-"
+#~ "bit machines, and the &debian;/armel and the &debian;/armhf ports for 32-"
+#~ "bit machines. &debian;/armel targets older ARM processors without support "
+#~ "for a hardware floating point unit (FPU), while &debian;/armhf works only "
+#~ "on newer ARM processors which implement at least the ARMv7 architecture "
+#~ "with version 3 of the ARM vector floating point specification (VFPv3). "
+#~ "&debian;/armhf makes use of the extended features and performance "
+#~ "enhancements available on these models. &debian;/arm64 works on "
+#~ "processors which implement at least the ARMv8 architecture (which is "
+#~ "64bit)."
+#~ msgstr ""
+#~ "L'architecture ARM a évolué, et les processeurs ARM récents fournissent "
+#~ "des fonctionnalités qui ne sont pas disponibles pour les anciens modèles. "
+#~ "&debian; fournit trois portages ARM : &debian;/arm64 pour les machines "
+#~ "64 bits, &debian;/armel et &debian;/armhf pour les machines 32 bits. "
+#~ "&debian;/armel est destiné aux anciens processeurs ARM sans prise en "
+#~ "charge de la virgule flottante au niveau matériel (<quote>hardware "
+#~ "floating point unit (FPU)</quote>), alors que &debian;/armhf ne "
+#~ "fonctionne que sur les nouveaux processeurs qui implémentent au moins "
+#~ "l'architecture ARMv7 et la version 3 des spécifications de virgule "
+#~ "flottante (VFPv3). &debian;/armhf utilise les fonctionnalités étendues et "
+#~ "les améliorations de performance de ces modèles. &debian;/arm64 "
+#~ "fonctionne sur les processeurs qui implémentent au moins l'architecture "
+#~ "ARMv8 (qui fonctionne en 64 bits)."
+
+#~ msgid ""
+#~ "The following platforms are known to be supported by &debian;/arm64 in "
+#~ "this release. There is only one kernel, which supports all the listed "
+#~ "platforms."
+#~ msgstr ""
+#~ "Les plates-formes suivantes sont prises en charge par &debian;/arm64 dans "
+#~ "cette publication. Il n'y a qu'un seul noyau qui prend en charge toutes "
+#~ "les plates-formes listées."
+
+#~ msgid ""
+#~ "Using the armmp multiplatform kernel on the EfikaMX platform would "
+#~ "require device-tree support for it, which is currently not available."
+#~ msgstr ""
+#~ "L'utilisation du noyau multiplate-forme armmp sur la plate-forme EfikaMX "
+#~ "nécessiterait une prise en charge d'un arbre de périphériques qui n'est "
+#~ "actuellement pas disponible."
+
+#~ msgid "IBM PowerPC (little endian)"
+#~ msgstr "IBM PowerPC (petit boutien)"
+
+#~ msgid ""
+#~ "The &arch-title; architecture only supports Intel Itanium processors and "
+#~ "not the much more common 64-bit processors from the Intel 64 family "
+#~ "(including e.g. the Pentium&nbsp;D and the Core2&nbsp;Duo). Those systems "
+#~ "are supported by the <emphasis>amd64</emphasis> architecture or, if you "
+#~ "prefer a 32-bit userland, the <emphasis>i386</emphasis> architecture."
+#~ msgstr ""
+#~ "L'architecture &arch-title; fonctionne seulement sur les processeurs "
+#~ "Itanium d'Intel. Elle ne fonctionne pas sur les processeurs 64 bits plus "
+#~ "communs appartenant à la famille Intel 64, comme le Pentium&nbsp;D ou le "
+#~ "Core2&nbsp;Duo. Ces systèmes fonctionnent avec l'architecture "
+#~ "<emphasis>amd64</emphasis> ou si vous préférez le mode 32 bits, avec "
+#~ "l'architecture <emphasis>i386</emphasis>."
+
+#~ msgid ""
+#~ "There are two major support <emphasis>&architecture;</emphasis> flavors: "
+#~ "PA-RISC 1.1 and PA-RISC 2.0. The PA-RISC 1.1 architecture is targeted at "
+#~ "32-bit processors whereas the 2.0 architecture is targeted to the 64-bit "
+#~ "processors. Some systems are able to run either kernel. In both cases, "
+#~ "the userland is 32-bit. There is the possibility of a 64-bit userland in "
+#~ "the future."
+#~ msgstr ""
+#~ "Il y a 2 versions principales de <emphasis>&architecture;</"
+#~ "emphasis>&nbsp;: PA-RISC&nbsp;1.1 et PA-RISC&nbsp;2.0. L'architecture PA-"
+#~ "RISC&nbsp;1.1 s'adresse aux processeurs 32 bits tandis que la 2.0 "
+#~ "s'adresse aux processeurs 64 bits. Certains systèmes permettent "
+#~ "d'exécuter l'un ou l'autre noyau. Dans les deux cas, l'espace utilisateur "
+#~ "(<quote>userland</quote>) est en 32 bits. Il y a aura peut-être un espace "
+#~ "utilisateur en 64 bits."
+
+#~ msgid "On PCs SATA, IDE/ATAPI and SCSI CD-ROMs are supported."
+#~ msgstr "Les CD de type SCSI, SATA et IDE/ATAPI sont reconnus."
+
+#~ msgid "IDE/ATAPI CD-ROMs are supported on all ARM machines."
+#~ msgstr "Les CD IDE/ATAPI sont reconnus par toutes les architectures ARM."
+
+#~ msgid ""
+#~ "However, &debian; GNU/Linux &releasename; will <emphasis>not</emphasis> "
+#~ "run on 386 or earlier processors. Despite the architecture name \"i386\", "
+#~ "support for actual 80386 processors (and their clones) was dropped with "
+#~ "the Sarge (r3.1) release of &debian;<footnote> <para> We have long tried "
+#~ "to avoid this, but in the end it was necessary due a unfortunate series "
+#~ "of issues with the compiler and the kernel, starting with an bug in the C+"
+#~ "+ ABI provided by GCC. You should still be able to run &debian; GNU/Linux "
+#~ "on actual 80386 processors if you compile your own kernel and compile all "
+#~ "packages from source, but that is beyond the scope of this manual. </"
+#~ "para> </footnote>. (No version of Linux has ever supported the 286 or "
+#~ "earlier chips in the series.) All i486 and later processors are still "
+#~ "supported<footnote> <para> Many &debian; packages will actually run "
+#~ "slightly faster on modern computers as a positive side effect of dropping "
+#~ "support for these old chips. The i486, introduced in 1989, has three "
+#~ "opcodes (bswap, cmpxchg, and xadd) which the i386, introduced in 1986, "
+#~ "did not have. Previously, these could not be easily used by most &debian; "
+#~ "packages; now they can. </para> </footnote>."
+#~ msgstr ""
+#~ "Cependant, &debian; GNU/Linux &releasename; <emphasis>ne fonctionnera "
+#~ "pas</emphasis> sur les processeurs 386 ou antérieurs. Malgré le nom de "
+#~ "l'architecture, <quote>i386</quote>, la gestion des processeurs 80386 (et "
+#~ "de leurs clones) a été abandonnée depuis la version r3.1 de Sarge "
+#~ "<footnote> <para> Nous avons longtemps essayé d'éviter cet abandon mais "
+#~ "il est devenu nécessaire à cause de problèmes malheureux avec le "
+#~ "compilateur et le noyau, en commençant par un bogue dans l'ABI C++ "
+#~ "fournie par GCC. Il est toujours possible d'installer &debian; GNU/Linux "
+#~ "sur des processeurs 80386 mais il faut compiler le noyau et tous les "
+#~ "paquets à partir des sources. </para> </footnote>. (Aucune version de "
+#~ "Linux n'a jamais fonctionné avec les processeurs 286 ou antérieurs.) Tous "
+#~ "les processeurs 586 sont gérés <footnote> <para> Beaucoup de paquets "
+#~ "&debian; fonctionneront légèrement plus vite sur des ordinateurs "
+#~ "modernes, c'est un effet positif de l'abandon de la gestion des anciens "
+#~ "processeurs. Le processeur i486, lancé en 1989, possède trois "
+#~ "<quote>opcodes</quote>, bswap, cmpxchg et xadd que ne possède pas l'i386, "
+#~ "lancé en 1986. Les paquets &debian; ne pouvaient pas les utiliser "
+#~ "facilement. </para> </footnote>."
+
+#~ msgid "Marvell MV78xx0"
+#~ msgstr "Marvell MV78xx0"
+
+#~ msgid "mv78xx0"
+#~ msgstr "mv78xx0"
+
+#~ msgid ""
+#~ "The MV78xx0 platform is used on the Marvell DB-78xx0-BP development board."
+#~ msgstr ""
+#~ "La plate-forme MV78xx0 est utilisée sur les cartes de développement "
+#~ "Marvell DB-78xx0-BP."
+
+#~ msgid ""
+#~ "The Intel IXP4xx processor series has been used in network attached "
+#~ "storage devices like the the Linksys NSLU2. &debian; has supported the "
+#~ "IXP4xx platform in &debian; 7, but does not support it anymore from "
+#~ "version 8 on, as the formerly supported devices do not provide enough "
+#~ "flash capacity for the kernel used in &debian; 8."
+#~ msgstr ""
+#~ "La série de processeur IXP4xx d'Intel était utilisée dans les "
+#~ "périphériques de stockage de données en réseau (NAS) comme le Linksys "
+#~ "NSLU2. &debian; a pris en charge la plate-forme IXP4xx dans &debian; 7 "
+#~ "mais ne la prend plus en charge à partir de la version 8, car ces "
+#~ "périphériques ne fournissent pas assez de mémoire flash pour le noyau "
+#~ "utilisé dans &debian; 8."

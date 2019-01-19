@@ -1,0 +1,17 @@
+aclocal.m4
+autom4te.cache
+build-deb
+config.guess
+config.h
+config.h.in
+config.log
+config.status
+config.sub
+configure
+depcomp
+install-sh
+Makefile
+Makefile.in
+missing
+stamp-h1
+

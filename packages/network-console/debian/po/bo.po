@@ -1,0 +1,229 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Tibetan translation for Debian Installer.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: network-console@packages.debian.org\n"
+"POT-Creation-Date: 2012-10-01 22:05+0000\n"
+"PO-Revision-Date: 2012-04-14 22:12+0600\n"
+"Last-Translator: Tennom <tankola@ymail.com, tennomyathog@gmail.com>\n"
+"Language-Team: bo <translation-team-bo@lists.sourceforge.net>\n"
+"Language: bo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:1001
+#, fuzzy
+msgid "Continue installation remotely using SSH"
+msgstr "བདམས་ཟིན་པའི་སྐད་རིགས་ཀྱི་ཐོག་ཏུ་སྒྲིག་འཇུག་མུ་མཐུད་དགོས་སམ"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+#, fuzzy
+msgid "Start installer"
+msgstr "སྒྲིག་འཇུག་ཆས་མཚམས་བཞག"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start installer (expert mode)"
+msgstr ""
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+#, fuzzy
+msgid "Start shell"
+msgstr "ཕན་ཚུན་འབྲེལ་ཡོད་ཀྱི་འཇུག་ངོགས"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+#, fuzzy
+msgid "Network console option:"
+msgstr "དྲ་ལམ་སྒྲིག་འགོད་ཀྱི་ཐབས་ཤེས："
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid ""
+"This is the network console for the Debian installer. From here, you may "
+"start the Debian installer, or execute an interactive shell."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid "To return to this menu, you will need to log in again."
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:3001
+msgid "Generating SSH host key"
+msgstr ""
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+#, fuzzy
+msgid "Remote installation password:"
+msgstr "མུ་མཐུད་སྒྲིག་འཇུག"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+#, fuzzy
+msgid ""
+"You need to set a password for remote access to the Debian installer. A "
+"malicious or unqualified user with access to the installer can have "
+"disastrous results, so you should take care to choose a password that is not "
+"easy to guess. It should not be a word found in the dictionary, or a word "
+"that could be easily associated with you, like your middle name."
+msgstr ""
+"'རྩ་བ' འམ་མ་ལག་གི་བདག་སྐྱོང་པའི་ཐོ་ཁོངས་ལ་གསང་གྲངས་ཞིག་ཡོད་དགོས་པ རྡུབ་རྩུབ་ཅན་དང་ཆོག་ཆན་མེད་"
+"པའི་སྤྱོད་མཁན་ལ་རྩ་བའི་དབང་ཆ་ཡོད་ན་མཇུག་འབྲས་ཚབས་ཆེན་བཟོ་ནུས། དེ་འདྲ་ཁྱོད་ཀྱིས་ཚོད་དཔག་བྱེད་བཀའ་"
+"བའི་རྩ་བའི་གསང་གྲངས་ཞིག་བཟོ་རྒྱུ་ལ་དོ་སྣང་བྱེད་དགོས་པ་དང་ཚིག་མཛོད་ནང་དུ་ཡོད་པ་དང་ཁྱོད་དང་འབྲེལ་ཡོད་"
+"ཀྱི་ཚིག་སྤྱོད་མི་ཉན"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid ""
+"This password is used only by the Debian installer, and will be discarded "
+"once you finish the installation."
+msgstr ""
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+msgid "Re-enter password to verify:"
+msgstr "གསང་གྲངས་བསྐྱར་དུ་འཇུག་ནས་དག་ཐེར་བྱེད་པ："
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+#, fuzzy
+msgid ""
+"Please enter the same remote installation password again to verify that you "
+"have typed it correctly."
+msgstr "རྩ་བའི་གསང་གྲངས་དེ་བསྐྱར་དུ་ཅིག་འཇུག་ནས་ཁྱོད་ཀྱིས་བྲིས་པ་དེ་དག་ཐེར་བྱེད་རོགས"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid "Empty password"
+msgstr "གསང་གྲངས་སྟོང་པ་ཡིན་པ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid ""
+"You entered an empty password, which is not allowed. Please choose a non-"
+"empty password."
+msgstr ""
+"ཁྱོད་ཀྱིས་འཇུག་པའི་གསང་གྲངས་ནི་སྟོང་བ་རེད་འདུག་སྟོང་པ་མིན་པའི་གསང་གྲངས་ཞིག་ངེས་པར་དུ་འཇུག་དགོས"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+msgid "Password mismatch"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+#, fuzzy
+msgid ""
+"The two passwords you entered were not the same. Please enter a password "
+"again."
+msgstr "ཁྱོད་ཀྱིས་འཇུག་པའི་གསང་གྲངས་གཉིས་མ་གཅིག་མཚུངས་མིན་པས་ཡང་བསྐྱར་འཇུག་རོགས"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "Start SSH"
+msgstr ""
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid ""
+"To continue the installation, please use an SSH client to connect to the IP "
+"address ${ips} and log in as the \"installer\" user. For example:"
+msgstr ""
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "The fingerprint of this SSH server's host key is: ${fingerprint}"
+msgstr ""
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid ""
+"Please check this carefully against the fingerprint reported by your SSH "
+"client."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Could not fetch SSH authorized keys"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Translators: do NOT translate the "LOCATION" variable name
+#: ../network-console.templates:10001
+msgid "An error occurred while fetching SSH authorized keys from ${LOCATION}."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr "ཞིབ་ཕྲ་སྐོར་/var/log/syslog ཡང་ན་རྟོགས་བཟོས་སྐྱོན་གསོ་སའི་གནས་༤ བ་ལ་ལྟོས"

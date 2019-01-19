@@ -1,0 +1,17 @@
+Source: nobootloader
+Section: debian-installer
+Priority: standard
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Stephen R. Marenka <smarenka@debian.org>, Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9)
+Vcs-Browser: https://salsa.debian.org/installer-team/nobootloader
+Vcs-Git: https://salsa.debian.org/installer-team/nobootloader.git
+
+Package: nobootloader
+Package-Type: udeb
+Architecture: all
+Provides: bootable-system
+Depends: cdebconf-udeb, installed-base, di-utils-mapdevfs
+XB-Installer-Menu-Item: 7700
+Description: Don't install any bootloader
+ This package will skip installing a boot-loader

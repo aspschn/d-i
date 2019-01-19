@@ -1,0 +1,39 @@
+<!-- retain these comments for translator revision tracking -->
+<!-- $Id$ -->
+
+
+  <sect2 arch="powerpc"><title>Mac OS X Partitioning</title>
+
+<para>
+
+The <application>Disk Utility</application> application can be found under the
+<filename>Utilities</filename> menu in Mac OS X Installer. It will not adjust 
+existing partitions; it is limited to partitioning the entire disk at once.
+
+</para><para>
+
+Remember to create a placeholder partition for GNU/Linux, preferably
+positioned first in the disk layout. it doesn't matter what type it
+is, it will be deleted and replaced later inside the &debian-gnu; installer.
+
+</para><para>
+
+&debian; installer partition table editing tools are compatible with OS X, 
+but not with MacOS 9. If you are planning to use both MacOS 9 and OS X, it 
+is best to install OS X and &debian; on one hard drive, and put MacOS 9 
+on a separate hard drive.  Separate options for OS 9 and OS X will appear when 
+holding the <keycap>option</keycap> key at boot time, and separate
+options can be installed in the <application>yaboot</application> boot menu as 
+well. 
+
+</para><para>
+
+GNU/Linux is unable to access information on UFS partitions, but can access 
+HFS+ (aka MacOS Extended) partitions. OS X requires one of these
+two types for its boot partition. MacOS 9 can be installed on either HFS
+(aka MacOS Standard) or HFS+. To share information between the Mac OS X and
+GNU/Linux systems, an exchange partition is handy. HFS, HFS+ and MS-DOS FAT
+file systems are supported by MacOS 9, Mac OS X and GNU/Linux.
+
+</para>
+  </sect2>

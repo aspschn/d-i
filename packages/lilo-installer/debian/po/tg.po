@@ -1,0 +1,287 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: lilo-installer@packages.debian.org\n"
+"POT-Creation-Date: 2009-12-18 22:47+0000\n"
+"PO-Revision-Date: 2018-02-08 14:24+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001
+msgid "${disc}: Master Boot Record"
+msgstr "${disc}: Сабти асосии худроҳандозӣ"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001
+msgid "${part}: new Debian partition"
+msgstr "${part}: қисми диски нави Debian"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:1001 ../lilo-installer.templates:2001
+msgid "Other choice (Advanced)"
+msgstr "Имконоти дигар (Иловагӣ)"
+
+#. Type: select
+#. Description
+#. :sl3:
+#. Type: select
+#. Description
+#. :sl3:
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002 ../lilo-installer.templates:2002
+#: ../lilo-installer.templates:3001
+msgid "LILO installation target:"
+msgstr "Ҷойгиршавии насбкунии LILO:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002
+msgid ""
+"The LILO program needs to be installed to make your new system bootable. By "
+"installing it onto your disk's Master Boot Record, LILO will take complete "
+"control of the boot process, but if you want to use a different boot "
+"manager, just install LILO on the new Debian partition instead."
+msgstr ""
+"Барои он ки низоми шумо худроҳандозӣ шавад, барномаи LILO бояд насб карда "
+"шавад. Агар онро ба қайди роҳандозии асосии диск насб намоед, LILO тамоми "
+"раванди роҳандозиро идора мекунад, вале агар шумо хоҳед, ки мудири "
+"худроҳандозии дигареро истифода баред, барномаи LILO-ро дар қисми диски нави "
+"Debian насб намоед."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:1002
+msgid "If unsure, install LILO into the Master Boot Record."
+msgstr "Агар шумо мутмаин набошед, LILO-ро ба Сабти оғози асосӣ насб намоед."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../lilo-installer.templates:2001
+msgid "${disc}: software RAID array"
+msgstr "${disc}: қатори нармафзори RAID"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:2002
+msgid ""
+"The LILO program needs to be installed to make your new system bootable. You "
+"may choose to install it onto a software RAID array or another device."
+msgstr ""
+"Барномаи LILO бояд насб шуда бошад, то ин ки низоми нави шумо роҳандозӣ "
+"карда шавад. Шумо метавонед интихоб намоед, ки онро ба қатори нармафзори "
+"RAID ё дастгоҳи дигар насб намоед."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:3001
+msgid ""
+"Please enter the device name of the partition or disk onto which LILO should "
+"be installed, such as /dev/hda or /dev/sda1."
+msgstr ""
+"Лутфан, номи дастгоҳи қисми диск ё дискеро ворид намоед, ки ба он LILO бояд "
+"насб карда шавад, ба мисли /dev/hda ё /dev/sda1."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:4001
+msgid "Invalid partition name"
+msgstr "Номи қисми диск нодуруст аст"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:4001
+msgid ""
+"The path ${path} does not represent a partition or hard disk device. Please "
+"try again."
+msgstr ""
+"Масири ${path} қисми диск ё дастгоҳи диски сахтро ифода намекунад. Лутфан, "
+"амалро такрор намоед."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:5001
+msgid "Installing LILO..."
+msgstr "Насбкунии LILO..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:6001
+msgid "Activating partition ${bootdev}"
+msgstr "Қисми диски ${bootdev} фаъол шуда истодааст"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:7001
+msgid "Creating lilo.conf"
+msgstr "Эҷодкунии lilo.conf"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:8001
+msgid "Installing the LILO package"
+msgstr "Насбкунии бастаи LILO"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:9001
+msgid "Running LILO for ${bootdev}"
+msgstr "LILO барои ${bootdev} иҷро шуда истодааст"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:10001
+msgid "LILO configured to use a serial console"
+msgstr "LILO барои истифодаи сатри фармони силсилавӣ танзим шудааст"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:10001
+msgid ""
+"LILO is configured to use serial port ${PORT} as the console. ${PORT_SPEED}"
+msgstr ""
+"LILO барои истифодаи порти силсилавии ${PORT} дар сатри фармон танзим "
+"шудааст. ${PORT_SPEED}"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:11001
+msgid "The serial port speed is set to ${SPEED}."
+msgstr "Порти силсилавӣ ба ${SPEED} таъин шуд."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid "Would you like to make this partition active?"
+msgstr "Шумо мехоҳед, ки ин қисми дискро фаъол намоед?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid ""
+"You have chosen to install LILO on a partition that is not the active one. "
+"If this partition is not marked active, then LILO will not be loaded by the "
+"boot loader. This may cause you to be unable to boot into the system that is "
+"being installed."
+msgstr ""
+"Шумо интихоб кардед, ки LILO-ро дар қисми диске насб намоед, ки он фаъол "
+"намебошад. Агар он қисми диск фаъол набошад, он гоҳ LILO бо худроҳандозӣ бор "
+"карда намешавад. Ин метавонад сабаби он гардад, ки шумо ба низоми "
+"насбшаванда роҳандозӣ карда наметавонед."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:12001
+msgid ""
+"You should make this partition active unless you have another boot loader "
+"that will allow you to access your new Linux installation."
+msgstr ""
+"Шумо бояд ин қисми дискро фаъол намоед, агар шумо худроҳандозии дигарро "
+"надошта бошед, ки ба шумо дастрасиро ба насбкунии нави Linux-и шумо иҷозат "
+"намедиҳад."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:13001
+msgid "LILO installation failed. Continue anyway?"
+msgstr "Насбкунии LILO бо нокомӣ дучор шуд. Ба ҳар ҳол идома медиҳед?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:13001
+msgid ""
+"The lilo package failed to install into /target/. Installing LILO as a boot "
+"loader is a required step. The install problem might however be unrelated to "
+"LILO, so continuing the installation may be possible."
+msgstr ""
+"Бастаи lilo ба /target/ насб карда нашуд. Насбкунии LILO ҳамчун худроҳандозӣ "
+"- ин қадами лозимӣ мебошад. Аммо, мушкилии насбкунӣ метавонад ба LILO "
+"алоқаманд набошад, барои ҳамин идомадиҳии насбкунӣ метавонад имконпазир "
+"бошад."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:14001
+msgid "LILO installation failed"
+msgstr "Насбкунии LILO ба анҷом нарасид"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../lilo-installer.templates:14001
+msgid "Running \"/sbin/lilo\" failed with error code \"${ERRCODE}\"."
+msgstr ""
+"Иҷроиши \"/sbin/lilo\" бо рамзи хатои \"${ERRCODE}\" бо нокомӣ дучор шудааст."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl3:
+#: ../lilo-installer.templates:15001
+msgid "Install the LILO boot loader on a hard disk"
+msgstr "Насб кардани худроҳандозии LILO ба диски сахт"

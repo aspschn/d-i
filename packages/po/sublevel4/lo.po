@@ -1,0 +1,705 @@
+# translation of lo.po to Lao
+# Lao translation of debian-installer.
+# Copyright (C) 2006-2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Anousak Souphavanh <anousak@gmail.com>, 2010, 1980.
+msgid ""
+msgstr ""
+"Project-Id-Version: lo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-04-23 11:59+0700\n"
+"Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
+"Language-Team: Lao <lo@li.org>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Poedit-Language: Lao\n"
+"X-Poedit-Country: LAO PEOPLE'S DEMOCRATIC REPUBLIC\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "ດິກສຂອງແທ້ %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "ດິກສຂອງແທ້ %s,ພາຣທິຊັ້ນ #%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - ຮອງຮັບ Access Control List ຕາມ POSIX.1e"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr "shortnames -ໃຊ້ຊື່ແຟ້ມໃນແບບ 8.3 ແບບເກົ່າຂອງ MS-DOS ເທົ່ານັ້ນ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"ການເລີ່ມຕົ້ນເຮັດວຽກຂອງລະບົບເມື່ອເປີດເຄື່ອງ ຈະອາໄສສີ່ງທີ່ຮ້ອງວ່າບູດໂຫຼດເດີ "
+"ບູດໂຫຼດເດີຈະຖືກຕິດຕັ້ງໃວ້ໃນພາຣທິຊັ້ນສຳລັບບູດ ທ່ານຕ້ອງກຳນົດແຟັກ bootable ໃຫ້ກັບພາຣທິຊັ້ນດັ່ງກ່າວດ້ວຍ "
+"ແລະ ພາຣທິຊັ້ນດັ່ງກ່າວ  ຈະຖືກເຮັດເຄື່ອງໝາຍດ້ວຍ \"${BOOTABLE}\" ໃນລາຍການຫຼັກສຳລັບແບ່ງພາຣທິຊັ້ນ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! ຜິດພາດ: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "ການກົດແປ້ນພີມ:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "ສະແດງຂໍ້ຄວາມຊ່ວຍເຫຼືອ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "ກັບໄປທີ່ຄຳຖາມກ່ອນ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "ເລືອກລາຍການທີ່ຫວ່າງເປົາ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "ຄຳສັ່ງ: '%c' ເພື່ອຂໍຄວາມຊ່ວຍເຫຼືອເລີ່ມຕົ້ນ=%d>"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "ຄຳສັ່ງ: '%c' ເບີ່ງວິທີໃຊ້>"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "ຄຳສັ່ງ: '%c' ເພື່ອຂໍຄວາມຊ່ວຍເຫຼືອເລີ່ມຕົ້ນ=%s>"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[ກົດ enter ເພື່ອດຳເນີນການຕໍ່]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+#, fuzzy
+#| msgid "ISO file to use:"
+msgid "Interface to use:"
+msgstr "ໄຟລ໌ ISO ທີ່ຈະໃຊ້:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "ລົ້ມແຫຼວທີ່ຈະຍຶດເປົ້າໝາຍ /target/proc"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "ເມົ້າທ໌ລະບົບແຟ້ມ proc ເທີງ /target/proc ບໍ່ສຳເລັດ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "ຄຳເຕືອນ: ລະບົບຂອງທ່ານອາດບໍ່ສາມາດບູດໄດ້!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "ການຕັ້ງຄ່າຕົວແປເຟີມແວສຳລັບການບູດອັດຕະໂນມັດ"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"ທ່ານຈຳເປັນຕ້ອງຕັ້ງຄ່າຕົວແປໃນເຟີມແວ Genesi ເພື່ອໃຫ້ລະບົບຂອງທ່ານສາມາດບູດໄດ້ໂດຍອັດຕະໂນມັດ "
+"ເມື່ອສຳເລັດຂະບວນການຕິດຕັ້ງແລ້ວ ລະບົບຈະເລີ່ມບູດໃໝ່ ທີ່ແຖວຄຳສັ່ງຂອງເຟີມແວ ໃຫ້ຕັ້ງຄ່າຂອງເຟີມແວຕໍ່ໄປນີ້ "
+"ເພື່ອທີ່ຈະສາມາດບູດໄດ້ໂດຍອັດຕະໂນມັດ:"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"ການສັ່ງດັ່ງກ່າວພຽງເທື່ອດຽວກໍ່ພຽງພໍ ໃນເທື່ອຕໍ່ໄປ ພຽງປ້ອນຄຳສັ່ງ \"boot\" "
+"ຫຼືບູດເຄື່ອງໃໝ່ເພື່ອເຂົ້າສູ້ລະບົບເພື່ອຕິດຕັ້ງໃໝ່"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr "ຫຼື ບໍ່ດັ່ງນັ້ນ ທ່ານກໍ່ສາມາດສັ່ງບູດເດີຄາເນວເອງໄດ້ໂດຍປ້ອນຄຳສັ່ງທີ່ແຖວຄຳສັ່ງຂອງເຟີມແວ:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"ທ່ານຈຳເປັນຕ້ອງຕັ້ງຄ່າຕົວແປໃນ CFE ເພື່ອໃຫ້ລະບົບຂອງທ່ານບູດໄດ້ໂດຍອັດຕະໂນມັດ ເມື່ອສິ້ນສຸດຂະບວນການຕິດຕັ້ງ "
+"ລະບົບຈະເລີ່ມບູດໃໝ່ ທີ່ແຖວຄຳສັ່ງຂອງເຟີມແວ ໃຫ້ຕັ້ງຄ່າຕົວແປຕໍ່ໄປນີ້ ເພື່ອໃຫ້ບູດໄດ້ງ່າຍເຂົ້າ:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"ທ່ານຈະຕ້ອງເຮັດແບບນີ້ພຽງເທື່ອດຽວເທົ່ານັ້ນ ເພື່ອໃຫ້ທ່ານສາມາດ \"boot_debian\" ທີ່ແຖວຄຳສັ່ງ CFE ໄດ້"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"ຖ້າທ່ານຢາກໃຫ້ບູດອັດຕະໂນມັດທຸກໆຄັ້ງທີ່ເປີດເຄື່ອງ ທ່ານສາມາດກຳນົດຕົວແປຕໍ່ໄປນີ້ເພີ່ມເຕີມຈາກຕົວແປຂ້າງຕົ້ນໄດ້:"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "ຕ້ອງການຕິດຕັ້ງ GRUB?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB 2 ເປັນລຸ້ນຖັດໄປຂອງ  GNU GRUB, ບູດທີ່ເປັນທີ່ນິຍົມໃຊ້ຂອງ  i386/amd64 PCs. "
+"ຕອນີ້ຍັງສາມາດໃຊ້ໄດ້ກັບ  $ {} ARCH"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"ມັນມີຄຸນນະສົມບັດໃໝ່ທີ່ນ້າສົນໃຈ ແຕ່ຍັງຄົງມີຊອຟແວຣ໌ການທົດລອງສຳຫຼັບສະຖາປັດຕະຍາກຳ "
+"ຫາກເຈົ້າເລືອກທີ່ຈະຕິດຕັ້ງເຈົ້າຄວນທີ່ຈະຕຽມການແຕກ ແລະ "
+"ມີຄວາມຄິດກ່ຽວກັບວິທີການກູ້ຄືນລະບົບຂອງເຈົາມັນຈະກາຍເປັນ unbootable "
+"ເຈົ້າບໍ່ຄວນຈະທົດລອງກັບລະບົບການຜະລິດຂອງເຈົ້າ."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "ຕິດຕັ້ງບູດໂຫຼດເດີ Arcboot ລົງໃນຮາດດິດສ໌"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "ດິດສ໌ສຳລັບຕິດຕັ້ງບູດໂຫຼດເດີ"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"arcboot ຈະຕ້ອງຕິດຕັ້ງລົງໃນສ່ວນຕົ້ນຂອງດິດສ໌ທີ່ມີປ້າຍຊື່ດິດສ໌ແບບ SGI ຊື່ງໂດຍປົກະຕິແລ້ວ ຈະໃຊ້ສ່ວນຕົ້ນຂອງ /"
+"dev/sda ກະລຸນາລະບຸຊື່ອຸປະກອນຂອງດິດສ໌ທີ່ຈະຕ້ອງຕິດຕັ້ງ arcboot"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "arcboot ຖືກຕັ້ງຄ່າໃວ້ໃຫ້ໃຊ້ຄອນໂຊນແບບລຽນ"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"arcboot ຖືກຕັ້ງຄ່າໃວ້ໃຫ້ໃຊ້ແບບຕໍ່ລຽນ ${PORT} ເປັນຄອນໂຊນ ຄວາມໄວຂອງພອດແບບລຽນຖືກກຳນົດໃວ້ເປັນ "
+"${SPEED}"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "ຕິດຕັງ arcboot ບໍ່ສຳເລັດ ຈະດຳເນີນງານຕໍ່ໄປ ຫຼື ບໍ?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"ຕິດຕັງແພັກເກັດ arcboot ລົງໃນ /target/ ບໍ່ສຳເລັດ ການຕິດຕັ້ງ Arcboot ເປັນບູດໂຫຼດເດີ "
+"ເປັນຂັ້ນຕອນທີ່ຈຳເປັນ ແຕ່ບັນຫາຂອງການຕິດຕັ້ງອາດບໍ່ກ່ຽວກັບ Arcboot ກໍ່ໄດ້ ດັ່ງນີ້ "
+"ການດຳເນີນການຕິດຕັ້ງຕໍ່ໄປກໍ່ອາດເຮັດໄດ້"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "ກຳລັງກຳນົດຄ່າ PROM ສຳລັບ Arcboot"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"ຖ້ານີ້ເປັນການຕິດຕັ້ງລີນຸກຄັ້ງທຳອິດໃນເຄື່ອງນີ້ ຫຼື ມີການແບ່ງພາທິຊັ້ນໃນຮາດດິດສ໌ໃໝ່ ຄ່າບາງຄ່າໃນ PROM "
+"ຈະຕ້ອງຖືກກຳນົດໃໝ່ ເພື່ອໃຫ້ລະບົບສາມາດບູດໄດ້ປົກະຕິ"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"ເມື່ອຈົບຂັນຕອນການຕິດຕັ້ງນີ້ ລະບົບຈະບູດໃໝ່ຫຼັງຈາກນັ້ນ ໃຫ້ທ່ານເຂົ້າສູ່ໜ້າຈໍຄຳສັ່ງຈາກຕົວເລືອກ \"Stop for "
+"Maintenance\" ແລ້ວປ້ອນຄຳສັ່ງຕໍ່ໄປນີ້:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "ຕັ້ງຄ່າອຸປະກອນປ້ອງກັນລະບົບເຄືອຂ່າຍ"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "ກຳລັງດຳເນີນການຕັ້ງຄ່າ NBD:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "ຂະນະນີ້ອຸປະກອນ $ {NUMBER} ເຊື່ອມຕໍ່"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "ຊະນິດຂອງອຸປະກອນປ້ອງກັນເຄືອຂ່າຍ:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "ກະລຸນາປ້ອນຊື່ໂຮສຫຼືທີ່ຢູ່ IP ຂອງລະບົບກາເຮັດວຽກ NBD - server."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "ຊະນິດຂອງອຸປະກອນທີຖືກບອ໋ກຂອງໂໝດອຸປະກອນເຄືອຂ່າຍ:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "ກະລຸນາເລືອກໂໝດອຸປະກອນ NBD ທີ່ທ່ານຕ້ອງການເຊື່ອມຕໍ່ຫຼືຖອດ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "ລົ້ມແຫຼວໃນການເຊື່ອມກັບ server NBD"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+#| msgid ""
+#| "Connecting to the nbd-server failed. Please ensure that the host and the "
+#| "port or the name which you entered are correct, that the nbd-server "
+#| "process is running on that host and port (or using that name), that the "
+#| "network is configured correctly, and retry."
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"ເຊື່ອມຕໍ່ກັບເຊີບເວີ NBD - ລົ້ມແຫຼວ ກະລຸນາກວດສອບວ່າໂຮນ ແລະ ພອດ ຫຼື "
+"ຊື່ທີ່ເຈົ້າປ້ອນທີ່ຖືກຕ້ອງວ່າຂະບວນການ  NBD ເຊີບເວີເຮັດວຽກຢູ່ເທິງໂຮນນັ້ນ ແລະ ພອດ ( ຫຼືໃຊ້ຊື່ທີ່ ), "
+"ທີ່ເຄືອຂ່າຍມີການກຳນົດຄ່າຢ່າງຖືກຕ້ອງ ແລະ ລອງອີກຄັ້ງ."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ເຄືອຂ່າຍທີຖືກບ໋ອກ ບໍ່ຫຼາຍກ່ວາໂໝດອຸປະກອນທາງດ້ານຊ້າຍ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr "ທັງທີ່ມີຢູ່ທັງໝົດໂໝດ NBD ອຸປະກອນໃນການໃຊ້ງານຫຼືສິ່ງທີ່ຜິດພາດກັບການກວດສອບຂອງໂໝດອຸປະກອນ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr "ບໍ່ມີ NBD ຫຼາຍກວ່າໂໝດອຸປະກອນສາມາດກຳນົດຄ່າຈົນກວ່າຈະມີການກຳນົດຄ່າທີ່ຖືກຕັດ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "ເຄືອຂ່າຍທີ່ຖືກບ່ອກບໍ່ມີການເຊື່ອມຕໍ່ໂໝດອຸປະກອນທີ່ພົບ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"ຂະນະນີ້ເຄືອຂ່າຍທີ່ຖືກບ໋ອກບໍມີໂໝດອຸປະກອນທີ່ເຊື່ອມຕໍ່ໄປຍັງເຊີບເວໃດ ເປັບແບບນີ້ເຈົາບໍ່ສາມາດຕັດການເຊື່ອມຕໍ່ໃດໆ "
+"ຂອງພວກເຂົາ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "ຕັ້ງຄ່າອຸປະກອນເຄືອຂ່າຍທີ່ຖືກບອ໋ກ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "ຖອດອຸປະກອນເຄືອຂ່າຍທີ່ຖືກບ໋ອກ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "ສຳເລັດ ແລະ ກັບໄປທີ່ພາທິຊັນ"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "ກຳລັງຕັງຄ່າໜ່ວຍຄວາມຈຳແຟັດຊ໌ໃຫ້ບູດລະບົບ"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "ກຳລັງເຮັດໃຫ້ລະບົບບູດໄດ້"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "ກຳລັງຕຽມພ້ອມລະບົບ..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "ກຳລັງຂຽນເຄີເນວລົງໃນໜ່ວຍຄວາມຈຳແຟັດຊ໌..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "ກຳລັງສ້າງອີເມວສຳລັບບູດໄດ້ໃນດິດສ໌..."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "ເຮັດໃຫ້ລະບົບບູດໄດ້"

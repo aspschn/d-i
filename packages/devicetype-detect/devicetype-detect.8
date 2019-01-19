@@ -1,0 +1,50 @@
+.TH DEVICETYPE-DETECT 1
+.SH NAME
+devicetype-detect \- attempt to detect the type of the current device
+.SH SYNOPSIS
+.B devicetype-detect
+[\fB\-h\fR|\fB\-\-help\fR|\fB\-v\fR|\fB\-\-verbose\fR|\fB\-V\fR|\fB\-\-version\fR]
+.SH DESCRIPTION
+.B devicetype-detect
+attempts to determine device class of the running system based on the display
+size, display resolution, and presence or absence of a battery.  Depending on
+the detected device, one of "phone", "desktop", "netbook", or "laptop" will
+be printed to STDOUT.
+.SH OPTIONS
+.TP
+.BR \-h ", " \-\-help
+display a usage message and exit
+.TP
+.BR \-v ", " \-\-verbose
+print extra information to STDERR during detection
+.TP
+.BR \-V ", " \-\-version
+output version information and exit
+.SH EXIT STATUS
+.TP
+.BR 0
+Detection was successfully attempted
+.TP
+.BR 1
+Detection attempt was unsuccessful.
+.TP
+.BR 2
+Invalid Options
+.TP
+.BR Others
+Errors in the detection process (please report a bug)
+.SH NOTES
+The device type detection is necessarily crude, and would benefit hugely from
+clearer product differentiation.  With "phones" having resolutions of 1280x720
+or greater, "laptops" available down to 3.7" diagonal, "desktops" with internal
+batteries for "power conditioning", and an increasing presence of modems, both
+AT and 3G in devices of all classes, device class is often determined by the
+usage model of specific individuals, rather than objective measurements of the
+device.
+.SH BUGS
+It would be a great boon to be able to detect tablets by determining if there
+is a physical keyboard available.
+.SH SEE ALSO
+.BR laptop-detect (1)
+.SH AUTHOR
+Written by Emmet Hikory

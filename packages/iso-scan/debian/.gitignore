@@ -1,0 +1,6 @@
+*.debhelper*
+*.substvars
+files
+iso-scan
+load-iso
+

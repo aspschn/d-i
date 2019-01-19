@@ -1,0 +1,101 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of lv.po to Latvian
+# Latvian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Translations from iso-codes:
+# Copyright (C) Free Software Foundation, Inc., 2001,2003.
+# Translations from KDE:
+# Andris Maziks <andzha@latnet.lv>
+#
+# Aigars Mahinovs <aigarius@debian.org>, 2006, 2008.
+# Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008.
+# Aigars Mahinovs <aigarius@debian.org>, 2006.
+# Alastair McKinstry <mckinstry@computer.org>, 2001, 2002.
+# Free Software Foundation, Inc., 2002,2004.
+# Juris Kudiņš <cooker@inbox.lv>, 2001.
+# Rihards Priedītis <rprieditis@gmail.com>, 2009, 2010.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012.
+# Peteris Krisjanis <pecisk@gmail.com>, 2008, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lv\n"
+"Report-Msgid-Bugs-To: partman-ufs@packages.debian.org\n"
+"POT-Creation-Date: 2011-02-19 22:47+0000\n"
+"PO-Revision-Date: 2012-05-27 12:29+0300\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latviešu <locale-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2)\n"
+
+#. Type: text
+#. Description
+#. :sl3:
+#. File system name (untranslatable in many languages)
+#. Type: text
+#. Description
+#. :sl3:
+#. Short file system name (untranslatable in many languages)
+#. Type: text
+#. Description
+#. :sl3:
+#. Short file system name (untranslatable in many languages)
+#: ../partman-ufs.templates:1001 ../partman-ufs.templates:3001
+#: ../partman-ufs.templates:4001
+msgid "ufs"
+msgstr "ufs"
+
+#. Type: text
+#. Description
+#. :sl3:
+#. File system name
+#. Type: text
+#. Description
+#. :sl3:
+#. File system name
+#: ../partman-ufs.templates:2001 ../partman-ufs.templates:5001
+msgid "UFS file system"
+msgstr "UFS datņu sistēma"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-ufs.templates:6001
+msgid "Go back to the menu and correct this problem?"
+msgstr "Atgriezties uz galveno izvēlni un izlabot kļūdas?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-ufs.templates:6001
+msgid ""
+"Your root partition has not been configured with a bootable file system. "
+"This is needed by your machine in order to boot. Please go back and use "
+"either the UFS or the ZFS file system."
+msgstr ""
+"Saknes nodalījums nav nokonfigurēts ar palaižamu datņu sistēmu. Šāda "
+"konfigurācija ir nepieciešama, lai palaistu datoru. Lūdzu, atgriezieties un "
+"izvēlieties UFS vai ZFS datņu sistēmu."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-ufs.templates:6001
+msgid ""
+"If you do not go back to the partitioning menu and correct this error, the "
+"partition will be used as is.  This means that you may not be able to boot "
+"from your hard disk."
+msgstr ""
+"Ja neatgriezīsieties uz nodalījumu veidošanas izvēlni un neizlabosiet šo "
+"kļūdu, tad nodalījumi tiks izmantoti esošajā konfigurācijā. Tas nozīmē, ka "
+"var nebūt iespējams palaist datoru no cietā diska."

@@ -1,0 +1,25 @@
+From 4dc86699b57ff35c287ca396d562ec206776694a Mon Sep 17 00:00:00 2001
+From: Denys Vlasenko <vda.linux@googlemail.com>
+Date: Fri, 4 Aug 2017 02:01:45 +0200
+Subject: [PATCH] microcom: require exactly one non-option
+
+Signed-off-by: Denys Vlasenko <vda.linux@googlemail.com>
+---
+ miscutils/microcom.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/miscutils/microcom.c b/miscutils/microcom.c
+index 14b9f3baf..f382edebb 100644
+--- a/miscutils/microcom.c
++++ b/miscutils/microcom.c
+@@ -74,6 +74,7 @@ int microcom_main(int argc UNUSED_PARAM, char **argv)
+ 	unsigned opts;
+ 
+ 	// fetch options
++	opt_complementary = "=1";
+ 	opts = getopt32(argv, "Xs:+d:+t:+", &speed, &delay, &timeout);
+ //	argc -= optind;
+ 	argv += optind;
+-- 
+2.18.0
+

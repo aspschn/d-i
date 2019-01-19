@@ -1,0 +1,23 @@
+Source: lvmcfg
+Section: debian-installer
+Priority: optional
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/lvmcfg
+Vcs-Git: https://salsa.debian.org/installer-team/lvmcfg.git
+Standards-Version: 3.9.4
+
+Package: lvmcfg
+Architecture: all
+Depends: ${misc:Depends}, partitioned-harddrives, partconf-find-partitions
+XB-Installer-Menu-Item: 4400
+Package-Type: udeb
+Description: Configure the Logical Volume Manager
+
+Package: lvmcfg-utils
+Architecture: all
+Depends: ${misc:Depends}, md-modules, lvm2-udeb, parted-udeb, di-utils (>= 1.15)
+Package-Type: udeb
+Description: lvmcfg without the main menu item

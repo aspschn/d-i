@@ -1,0 +1,43 @@
+Source: cdebconf-entropy
+Priority: optional
+Section: debian-installer
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Max Vozeler <xam@debian.org>, Jérémy Bobbio <lunar@debian.org>, Christian Perrier <bubulle@debian.org>, Colin Watson <cjwatson@debian.org>
+Build-Depends: debhelper (>= 9), po-debconf (>= 0.5.0), libdebian-installer4-dev,
+ libdebconfclient0-dev (>= 0.206),
+ libnewt-dev, libtextwrap-dev,
+ libgtk2.0-dev (>= 2.18.7-2),
+# libgtk-3-dev,
+ dh-autoreconf
+Vcs-Browser: https://salsa.debian.org/installer-team/cdebconf-entropy
+Vcs-Git: https://salsa.debian.org/installer-team/cdebconf-entropy.git
+
+Package: cdebconf-text-entropy
+Architecture: any
+Depends: cdebconf-text-udeb, ${shlibs:Depends}, ${misc:Depends}
+Provides: cdebconf-entropy
+Package-Type: udeb
+Description: cdebconf text plugin for reading from /dev/random
+ cdebconf plugin to facilitate reading random data from /dev/random.
+ Asks the user to enter random characters on the keyboard and shows a
+ progressbar with percent-of-data read.
+
+Package: cdebconf-newt-entropy
+Architecture: any
+Depends: cdebconf-newt-udeb, ${shlibs:Depends}, ${misc:Depends}
+Provides: cdebconf-entropy
+Package-Type: udeb
+Description: cdebconf newt plugin for reading from /dev/random
+ cdebconf plugin to facilitate reading random data from /dev/random.
+ Asks the user to enter random characters on the keyboard and shows a
+ progressbar with percent-of-data read.
+
+Package: cdebconf-gtk-entropy
+Architecture: any
+Depends: cdebconf-gtk-udeb, ${shlibs:Depends}, ${misc:Depends}
+Provides: cdebconf-entropy
+Package-Type: udeb
+Description: cdebconf gtk plugin for reading from /dev/random
+ cdebconf plugin to facilitate reading random data from /dev/random.
+ Asks the user to enter random characters on the keyboard and random mouse
+ movements while a progressbar shows the amount of entropy already gathered.

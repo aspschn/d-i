@@ -1,0 +1,26 @@
+#!/bin/sh
+. /usr/share/debconf/confmodule
+
+log() {
+	logger -t lilo-installer "$@"
+}
+
+ARCH="$(archdetect)"
+case $ARCH in
+    i386/mac|amd64/mac|i386/efi|amd64/efi)
+	# LILO stands a better chance of working in BIOS compatibility mode,
+	# where /sys/firmware/efi doesn't exist.
+	# Note: depends on partman-efi to load the efivars module!
+	if [ -d /sys/firmware/efi ] && [ ! -f /var/lib/partman/ignore_uefi ]; then
+		log "LILO not usable on EFI PCs without BIOS compatibility; use grub-efi"
+		exit 1
+	fi
+	;;
+esac
+
+db_get lilo-installer/skip
+if [ "$RET" = true ]; then
+	exit 1
+fi
+
+exit 0

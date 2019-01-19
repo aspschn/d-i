@@ -1,0 +1,110 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of ro.po to Romanian
+# Romanian translation
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+# Eddy Petrișor <eddy.petrisor@gmail.com>, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+#
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@debian.org>, 2004
+# Andrei Popescu <andreimpopescu@gmail.com>, 2010.
+# Eddy Petrișor <eddy.petrisor@gmail.com>, 2004, 2006, 2007, 2008, 2009.
+# Free Software Foundation, Inc., 2000, 2001
+# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009, 2010.
+# Mişu Moldovan <dumol@go.ro>, 2000, 2001.
+# Tobias Toedter <t.toedter@gmx.net>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Ioan Eugen Stan <stan.ieugen@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ro\n"
+"Report-Msgid-Bugs-To: partman-ufs@packages.debian.org\n"
+"POT-Creation-Date: 2011-02-19 22:47+0000\n"
+"PO-Revision-Date: 2011-09-15 09:41+0300\n"
+"Last-Translator: Ioan Eugen Stan <stan.ieugen@gmail.com>\n"
+"Language-Team: ro <debian-l10n-romanian@lists.debian.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: utf-8\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+
+#. Type: text
+#. Description
+#. :sl3:
+#. File system name (untranslatable in many languages)
+#. Type: text
+#. Description
+#. :sl3:
+#. Short file system name (untranslatable in many languages)
+#. Type: text
+#. Description
+#. :sl3:
+#. Short file system name (untranslatable in many languages)
+#: ../partman-ufs.templates:1001 ../partman-ufs.templates:3001
+#: ../partman-ufs.templates:4001
+msgid "ufs"
+msgstr "ufs"
+
+#. Type: text
+#. Description
+#. :sl3:
+#. File system name
+#. Type: text
+#. Description
+#. :sl3:
+#. File system name
+#: ../partman-ufs.templates:2001 ../partman-ufs.templates:5001
+msgid "UFS file system"
+msgstr "sistem de fișiere UFS"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-ufs.templates:6001
+msgid "Go back to the menu and correct this problem?"
+msgstr "Înapoi la meniu pentru a corecta această problemă?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-ufs.templates:6001
+msgid ""
+"Your root partition has not been configured with a bootable file system. "
+"This is needed by your machine in order to boot. Please go back and use "
+"either the UFS or the ZFS file system."
+msgstr ""
+"Partiția dumneavoastră de pornire nu a fost configurată cu un sistem de "
+"fișiere de pe care se poate inițializa. Acest lucru este necesar sistemului "
+"dumneavoastră pentru a putea porni. Vă rugăm să mergeți înapoi și să "
+"folosiți sistemul de fișiere UFS sau ZFS."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-ufs.templates:6001
+msgid ""
+"If you do not go back to the partitioning menu and correct this error, the "
+"partition will be used as is.  This means that you may not be able to boot "
+"from your hard disk."
+msgstr ""
+"Dacă nu vă întoarceți la meniul de partiționare să corectați aceste erori, "
+"partiția va fi folosită așa cum este. Acest lucru înseamnă că poate nu o să "
+"puteți porni de pe discul fix."

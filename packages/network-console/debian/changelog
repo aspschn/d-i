@@ -1,0 +1,1489 @@
+network-console (1.79) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Arabic (ar.po) by ButterflyOfFire
+  * Galician (gl.po) by mantinan
+  * Latvian (lv.po) by Tranzistors
+
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 30 Oct 2018 19:07:55 +0100
+
+network-console (1.78) unstable; urgency=medium
+
+  * Team upload
+
+  [ Cyril Brulebois ]
+  * Update Vcs-{Browser,Git} to point to salsa (alioth's replacement).
+
+  [ Updated translations ]
+  * Finnish (fi.po) by Juhani Numminen
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 12 Aug 2018 10:57:04 +0200
+
+network-console (1.77) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Arabic (ar.po) by ButterflyOfFire
+  * Welsh (cy.po) by Huw Waters
+  * Hebrew (he.po) by Yaron Shahrabani
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 03 Apr 2018 06:55:09 +0200
+
+network-console (1.76) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Hebrew (he.po) by Yaron Shahrabani
+  * Indonesian (id.po) by Al Qalit
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 16 Feb 2018 19:36:04 +0100
+
+network-console (1.75) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 22 Jan 2018 06:59:39 +0100
+
+network-console (1.74) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Icelandic (is.po) by Sveinn í Felli
+  * Bokmål, Norwegian (nb.po) by Alexander Jansen
+  * Panjabi (pa.po) by Aman ALam
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 13 Jan 2018 16:26:56 +0100
+
+network-console (1.73) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Esperanto (eo.po) by Felipe Castro
+  * Simplified Chinese (zh_CN.po) by Boyuan Yang
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 25 Dec 2017 09:27:51 +0100
+
+network-console (1.72) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Hungarian (hu.po) by Dr. Nagy Elemér Károly
+  * Lithuanian (lt.po) by Rimas Kudelis
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 30 Nov 2017 21:35:02 +0100
+
+network-console (1.71) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+  * Greek (el.po) by Sotirios Vrachas
+  * Estonian (et.po) by Kristjan Räts
+  * Norwegian Nynorsk (nn.po) by Allan Nordhøy
+  * Swedish (sv.po) by Anders Jonsson
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 26 Nov 2017 06:54:47 +0100
+
+network-console (1.70) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 18 Oct 2017 08:36:37 +0200
+
+network-console (1.69) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Hebrew (he.po) by Lior Kaplan
+  * Albanian (sq.po) by Redon Skikuli
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 17 Sep 2017 08:38:58 +0200
+
+network-console (1.68) unstable; urgency=medium
+
+  * Create the sshd user home-directory, which is used as an empty PrivSep
+    directory. This should resolve Missing privilege separation directory
+    error on network-console configuration.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Mon, 31 Jul 2017 14:29:41 +0100
+
+network-console (1.67) unstable; urgency=medium
+
+  * Fix sshd startup to work with OpenSSH >= 7.5, where privilege separation
+    is mandatory: network-console now creates an sshd user in the installer
+    environment.
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 02 Jul 2017 02:23:33 +0100
+
+network-console (1.66) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Galician (gl.po) by Jorge Barreiro
+  * Simplified Chinese (zh_CN.po) by Yangfl
+  * Traditional Chinese (zh_TW.po) by Yao Wei (魏銘廷)
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 27 Jun 2017 18:49:55 +0200
+
+network-console (1.65) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Italian (it.po) by Milo Casagrande
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 20 Feb 2017 06:50:06 +0100
+
+network-console (1.64) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Korean (ko.po) by Changwoo Ryu
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 14 Feb 2017 06:49:16 +0100
+
+network-console (1.63) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 31 Jan 2017 07:19:50 +0100
+
+network-console (1.62) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 23 Nov 2016 07:13:47 +0100
+
+network-console (1.61) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Polish (pl.po) by Michał Kułach
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 10 Oct 2016 07:32:44 +0200
+
+network-console (1.60) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 22 Sep 2016 12:18:27 +0200
+
+network-console (1.59) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 18 Sep 2016 18:09:29 +0200
+
+network-console (1.58) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 15 Aug 2016 10:15:19 +0200
+
+network-console (1.57) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Ukrainian (uk.po) by Anton Gladky
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 18 Jul 2016 12:27:43 +0200
+
+network-console (1.56) unstable; urgency=medium
+
+  [ Aurelien Jarno ]
+  * More Cobalt support removal.
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 23 May 2016 08:14:21 +0200
+
+network-console (1.55) unstable; urgency=medium
+
+  [ Martin Michlmayr ]
+  * Change LED to indicate SSH is ready on Seagate Personal Cloud and
+    Seagate NAS.
+  * Remove Cobalt support.
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 22 Apr 2016 04:30:16 +0200
+
+network-console (1.54) unstable; urgency=medium
+
+  [ Dimitri John Ledkov ]
+  * Adjust regexpes to include all ipv4 and ipv6 addresses, list all ip
+    addresses (sans loopback) in the template instructions, and use only
+    the first ip address in the example command. Closes: #816600 LP:
+    #1552368
+  * Adjust variable name in template translations.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Fri, 01 Apr 2016 11:52:11 +0100
+
+network-console (1.53) unstable; urgency=medium
+
+  [ Colin Watson ]
+  * Use HTTPS for Vcs-* URLs, and link to cgit rather than gitweb.
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 03 Feb 2016 07:10:49 +0100
+
+network-console (1.52) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 25 Jul 2015 21:56:45 +0200
+
+network-console (1.51) unstable; urgency=medium
+
+  [ Michael Walle ]
+  * Add support for Buffalo Linkstation LS-CHLv2/LS-XHL (Closes: #744715).
+
+ -- Cyril Brulebois <kibi@debian.org>  Thu, 26 Feb 2015 05:02:03 +0100
+
+network-console (1.50) unstable; urgency=low
+
+  [ Updated translations ]
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 20 Sep 2014 10:17:16 +0200
+
+network-console (1.49) unstable; urgency=low
+
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+  * Estonian (et.po) by Mattias Põldaru
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 15 Sep 2014 19:17:36 +0200
+
+network-console (1.48) unstable; urgency=low
+
+  [ Updated translations ]
+  * Bosnian (bs.po) by Amila Valjevčić
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 12 May 2014 09:25:34 +0200
+
+network-console (1.47) unstable; urgency=low
+
+  [ Updated translations ]
+  * Bosnian (bs.po) by Amila Valjevčić
+  * Hungarian (hu.po) by Judit Gyimesi
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 14 Dec 2013 08:04:52 +0100
+
+network-console (1.46) unstable; urgency=low
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 08 Sep 2013 15:59:18 +0200
+
+network-console (1.45) unstable; urgency=low
+
+  [ Dmitrijs Ledkovs ]
+  * Set debian source format to '3.0 (native)'.
+  * Bump debhelper compat level to 9.
+  * Set Vcs-* to canonical format.
+
+  [ Colin Watson ]
+  * Handle failure to read from /dev/urandom.
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 13 Jul 2013 14:40:20 +0200
+
+network-console (1.44) unstable; urgency=low
+
+  [ Colin Watson ]
+  * Use correct compiler when cross-building.
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 16 May 2013 18:59:28 +0200
+
+network-console (1.43) unstable; urgency=low
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+  * Tamil (ta.po) by Dr.T.Vasudevan
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 30 Mar 2013 17:04:28 +0100
+
+network-console (1.42) unstable; urgency=low
+
+  [ Updated translations ]
+  * Hungarian (hu.po) by Dr. Nagy Elemér Károly
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 11 Dec 2012 22:02:59 +0100
+
+network-console (1.41) unstable; urgency=low
+
+  * [l10n] Drop use of sublevel 6 and move "recently" added
+    strings to the sublevel they pertain to. Move all strings to
+    sublevel 3, as the feature brought by network-console belongs
+    to "some low priority features such as RAID, encrypted partitions,
+    etc."
+
+  [ Updated translations ]
+  * Asturian (ast.po) by ivarela
+  * Welsh (cy.po) by Dafydd Tomos
+  * Kannada (kn.po) by Prabodh
+  * Ukrainian (uk.po) by Yuri Chornoivan
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 21 Oct 2012 19:50:29 +0200
+
+network-console (1.40) unstable; urgency=low
+
+  [ Updated translations ]
+  * Sinhala (si.po) by Danishka Navin
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 01 Oct 2012 06:41:32 +0200
+
+network-console (1.39) unstable; urgency=low
+
+  [ Updated translations ]
+  * Persian (fa.po) by Hamid
+  * Traditional Chinese (zh_TW.po) by Ｖ字龍 | Vdragon
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 23 Sep 2012 08:15:22 +0200
+
+network-console (1.38) unstable; urgency=low
+
+  [ Updated translations ]
+  * German (de.po) by Holger Wansing
+  * Greek (el.po) by galaxico
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 18 Aug 2012 14:08:12 +0200
+
+network-console (1.37) unstable; urgency=low
+
+  * Team upload
+  
+  [ Updated translations ]
+  * Malayalam (ml.po) by Praveen Arimbrathodiyil
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 24 Jun 2012 11:40:15 +0200
+
+network-console (1.36) unstable; urgency=low
+
+  * Team upload
+
+  [ Updated translations ]
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 24 Jun 2012 08:21:28 +0200
+
+network-console (1.35) unstable; urgency=low
+
+  * Team upload
+
+  [ Updated translations ]
+  * Dzongkha (dz.po) by Dawa
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 22 Jun 2012 20:01:21 +0200
+
+network-console (1.34) unstable; urgency=low
+
+  * Team upload
+
+  [ Updated translations ]
+  * Macedonian (mk.po) by Arangel Angov
+  * Telugu (te.po) by Arjuna Rao Chavala
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 21 Jun 2012 20:34:00 +0200
+
+network-console (1.33) unstable; urgency=low
+
+  * Team upload
+
+  [ Updated translations ]
+  * Bokmål, Norwegian (nb.po) by Hans Fredrik Nordhaug
+  * Serbian (sr.po) by Karolina Kalic
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 21 Jun 2012 07:33:20 +0200
+
+network-console (1.32) unstable; urgency=low
+
+  * Team upload
+
+  [ Updated translations ]
+  * Bengali (bn.po) by Ayesha Akhtar
+  * German (de.po) by Holger Wansing
+  * Estonian (et.po) by Mattias Põldaru
+  * Croatian (hr.po) by Tomislav Krznar
+  * Swedish (sv.po) by Martin Bagge / brother
+  * Vietnamese (vi.po) by Nguyen Vu Hung
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 19 Jun 2012 07:46:36 +0200
+
+network-console (1.31) unstable; urgency=low
+
+  * Team upload
+  * Replace XC-Package-Type by Package-Type
+
+  [ Matt T. Proud ]
+  * Add support for public-key authentication (Closes:#592550, LP: #184108).
+
+  [ Charles Plessy ]
+  * Mark authorized_keys_fetch_failure for translation, sublevel 6.
+
+  [ Simon Guinot ]
+  * Set LED signal on LaCie Kirkwood NAS devices when SSH is ready
+    (Closes: #670941).
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama Khayat
+  * Asturian (ast.po) by ivarela
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Tibetan (bo.po) by Tennom
+  * Bosnian (bs.po) by Armin Besirovic
+  * Catalan (ca.po) by Jordi Mallach
+  * Czech (cs.po) by Miroslav Kure
+  * Welsh (cy.po) by Dafydd Tomos
+  * Danish (da.po) by Joe Hansen
+  * German (de.po) by Holger Wansing
+  * Greek, Modern (1453-) (el.po)
+  * Esperanto (eo.po) by Felipe Castro
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * Finnish (fi.po) by Timo Jyrinki
+  * French (fr.po) by Christian Perrier
+  * Irish (ga.po) by Kevin Patrick Scannell
+  * Galician (gl.po) by Jorge Barreiro
+  * Hebrew (he.po) by Omer Zak
+  * Hindi (hi.po) by Kumar Appaiah
+  * Croatian (hr.po) by Tomislav Krznar
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Icelandic (is.po) by Sveinn í Felli
+  * Italian (it.po) by Milo Casagrande
+  * Japanese (ja.po) by Kenshi Muto
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Korean (ko.po) by Changwoo Ryu
+  * Lao (lo.po) by Anousak Souphavanh
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Latvian (lv.po) by Rūdolfs Mazurs
+  * Macedonian (mk.po) by Arangel Angov
+  * Malayalam (ml.po) by Praveen Arimbrathodiyil
+  * Marathi (mr.po) by sampada
+  * Dutch (nl.po) by Jeroen Schot
+  * Panjabi (pa.po) by A S Alam
+  * Polish (pl.po) by Michał Kułach
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by ioan-eugen stan
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Ivan Masár
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Swedish (sv.po) by Martin Bagge / brother
+  * Telugu (te.po) by Arjuna Rao Chavala
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Turkish (tr.po) by Mert Dirik
+  * Uyghur (ug.po) by Sahran
+  * Vietnamese (vi.po) by Hai-Nam Nguyen
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+  * Traditional Chinese (zh_TW.po) by Yao Wei
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 15 Jun 2012 19:29:35 +0200
+
+network-console (1.30) unstable; urgency=low
+
+  [ Updated translations ]
+  * Asturian (ast.po) by Mikel González
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * German (de.po) by Holger Wansing
+  * Estonian (et.po) by Mattias Põldaru
+  * Basque (eu.po)
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Indonesian (id.po) by Mahyuddin Susanto
+  * Icelandic (is.po) by Sveinn í Felli
+  * Italian (it.po) by Milo Casagrande
+  * Kannada (kn.po) by Prabodh C P
+  * Macedonian (mk.po) by Arangel Angov
+  * Dutch (nl.po) by Jeroen Schot
+  * Polish (pl.po) by Marcin Owsiany
+  * Romanian (ro.po) by Ioan Eugen Stan
+  * Sinhala (si.po)
+  * Ukrainian (uk.po) by Borys Yanovych
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Otavio Salvador <otavio@debian.org>  Thu, 15 Mar 2012 14:51:22 -0300
+
+network-console (1.29) unstable; urgency=low
+
+  [ Samuel Thibault ]
+  * Fix getting the local IP on hurd and kfreebsd.
+
+  [ Updated translations ]
+  * Hebrew (he.po) by Lior Kaplan
+
+ -- Otavio Salvador <otavio@debian.org>  Sun, 24 Jul 2011 15:24:00 +0200
+
+network-console (1.28) unstable; urgency=low
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Czech (cs.po) by Miroslav Kure
+  * Esperanto (eo.po) by Felipe Castro
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Korean (ko.po) by Changwoo Ryu
+  * Romanian (ro.po) by Eddy Petrișor
+  * Northern Sami (se.po) by Børre Gaup
+  * Slovak (sk.po) by Ivan Masár
+  * Swedish (sv.po) by Daniel Nylander
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Uyghur (ug.po) by Sahran
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 23 Apr 2011 11:50:12 +0200
+
+network-console (1.27) unstable; urgency=low
+
+  [ Colin Watson ]
+  * Fix link line ordering to avoid breaking with 'ld --as-needed'.
+
+  [ Updated translations ]
+  * Lao (lo.po) by Anousak Souphavanh
+  * Northern Sami (se.po) by Børre Gaup
+  * Sinhala (si.po) by Danishka Navin
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 24 Dec 2010 19:18:58 -0200
+
+network-console (1.26) unstable; urgency=low
+
+  [ Updated translations ]
+  * Asturian (ast.po) by maacub
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bengali (bn.po) by Israt Jahan
+  * Bosnian (bs.po) by Armin Beširović
+  * Catalan (ca.po) by Jordi Mallach
+  * Danish (da.po) by Jacob Sparre Andersen
+  * Persian (fa.po) by Ebrahim Byagowi
+  * Icelandic (is.po) by Sveinn í Felli
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Telugu (te.po) by Arjuna Rao Chavala
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 12 Nov 2010 16:13:51 -0200
+
+network-console (1.25) unstable; urgency=low
+
+  * Remove no longer needed Lintian override for missing Standards-
+    Version field.
+  * Upgrade to debhelper v7.
+  * Drop no longer needed versioning in dependency on openssh-server-udeb.
+
+  [ Updated translations ]
+  * Asturian (ast.po) by astur
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Bengali (bn.po) by Israt Jahan
+  * Danish (da.po) by Jacob Sparre Andersen
+  * German (de.po) by Holger Wansing
+  * Persian (fa.po) by acathur
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Marce Villarino
+  * Hebrew (he.po) by Omer Zak
+  * Italian (it.po) by Milo Casagrande
+  * Central Khmer (km.po) by Khoem Sokhem
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Macedonian (mk.po) by Arangel Angov
+  * Marathi (mr.po) by Sampada
+  * Romanian (ro.po) by ioan-eugen stan
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Simplified Chinese (zh_CN.po) by 苏运强
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 11 Jul 2010 17:21:40 +0200
+
+network-console (1.24) unstable; urgency=low
+
+  [ Martin Michlmayr ]
+  * Change status led and sound buzzer on QNAP TS-119/219
+    to indicate installer is ready for SSH connections.
+
+  [ Updated translations ]
+  * Asturian (ast.po) by Marcos Antonio Alvarez Costales
+  * Czech (cs.po) by Miroslav Kure
+  * Hindi (hi.po)
+  * Italian (it.po) by Milo Casagrande
+
+ -- Martin Michlmayr <tbm@cyrius.com>  Sat, 10 Oct 2009 21:42:23 +0100
+
+network-console (1.23) unstable; urgency=low
+
+  [ Frans Pop ]
+  * Remove myself as uploader.
+
+  [ Christian Perrier ]
+  * Bump debhelper compatibility level to 6
+  * Set myself as uploader
+
+  [ Updated translations ]
+  * Asturian (ast.po) by Marcos Alvarez Costales
+  * Bengali (bn.po) by Md. Rezwan Shahid
+  * Estonian (et.po) by Mattias Põldaru
+  * Basque (eu.po) by Piarres Beobide
+  * Galician (gl.po) by Marce Villarino
+  * Hindi (hi.po) by Kumar Appaiah
+  * Kazakh (kk.po) by daur88
+  * Malayalam (ml.po) by Praveen Arimbrathodiyil
+  * Marathi (mr.po) by Sampada
+  * Slovak (sk.po) by Ivan Masár
+  * Tagalog (tl.po) by Eric Pareja
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 14 Jun 2009 18:10:07 +0200
+
+network-console (1.22) unstable; urgency=low
+
+  [ Martin Michlmayr ]
+  * Turn on the green "ready" status LED on the NSLU2 when SSH is ready.
+
+ -- Martin Michlmayr <tbm@cyrius.com>  Tue, 18 Nov 2008 08:17:17 +0100
+
+network-console (1.21) unstable; urgency=low
+
+  [ Updated translations ]
+  * Bengali (bn.po) by Mahay Alam Khan (মাহে আলম খান)
+  * Bosnian (bs.po) by Armin Besirovic
+  * Catalan (ca.po) by Jordi Mallach
+  * Welsh (cy.po) by Jonathan Price
+  * Danish (da.po)
+  * Greek, Modern (1453-) (el.po)
+  * Hindi (hi.po) by Kumar Appaiah
+  * Croatian (hr.po) by Josip Rodin
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Central Khmer (km.po) by KHOEM Sokhem
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Macedonian (mk.po) by Arangel Angov
+  * Nepali (ne.po) by Shiva Prasad Pokharel
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Serbian (sr.po) by Veselin Mijušković
+  * Ukrainian (uk.po) by Borys Yanovych
+  * Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+
+ -- Otavio Salvador <otavio@debian.org>  Sun, 21 Sep 2008 19:26:36 -0300
+
+network-console (1.20) unstable; urgency=low
+
+  [ Martin Michlmayr ]
+  * Make 3 beeps on the Thecus N2100 when SSH is ready.
+
+  [ Per Andersson ]
+  * Run micro_evtd.command to indicate SSH is ready (for Buffalo devices).
+
+ -- Martin Michlmayr <tbm@cyrius.com>  Sun, 17 Aug 2008 16:06:00 +0300
+
+network-console (1.19) unstable; urgency=low
+
+  [ Joey Hess ]
+  * Install ssh keys before ssh is installed, to allow it to check them for
+    weakness.
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Croatian (hr.po) by Josip Rodin
+  * Italian (it.po) by Milo Casagrande
+
+ -- Otavio Salvador <otavio@debian.org>  Tue, 29 Jul 2008 12:31:00 -0300
+
+network-console (1.18) unstable; urgency=low
+
+  [ Martin Michlmayr ]
+  * Change the health LED to solid blue on the HP mv2120 to indicate
+    when the installer is ready for ssh connections.
+
+  [ Updated translations ]
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+
+ -- Martin Michlmayr <tbm@cyrius.com>  Sun, 20 Jul 2008 17:32:28 +0300
+
+network-console (1.17) unstable; urgency=low
+
+  * Change status led and sound buzzer on QNAP ts-109/209 (arm/armel) to
+    indicate installer is ready for ssh connection.
+  * Unset seen flags on password templates after clearing them.
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Pavel Piatruk
+  * Basque (eu.po) by Iñaki Larrañaga Murgoitio
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Frans Pop <fjp@debian.org>  Mon, 14 Jul 2008 10:35:46 +0200
+
+network-console (1.16) unstable; urgency=low
+
+  [ Updated translations ]
+  * Amharic (am.po) by tegegne tefera
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Jens Seidel
+  * Dzongkha (dz.po) by Jurmey Rabgay(Bongop) (DIT,BHUTAN)
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Finnish (fi.po) by Esko Arajärvi
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hebrew (he.po) by Lior Kaplan
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Indonesian (id.po) by Arief S Fitrianto
+  * Korean (ko.po) by Changwoo Ryu
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Malayalam (ml.po) by Praveen|പ്രവീണ്‍ A|എ
+  * Marathi (mr.po) by Sampada
+  * Norwegian Bokmal (nb.po) by Hans Fredrik Nordhaug
+  * Dutch (nl.po) by Frans Pop
+  * Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+  * Punjabi (Gurmukhi) (pa.po) by Amanpreet Singh Alam
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Romanian (ro.po) by Eddy Petrișor
+  * Russian (ru.po) by Yuri Kozlov
+  * Tamil (ta.po) by Dr.T.Vasudevan
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Simplified Chinese (zh_CN.po) by Ming Hua
+  * Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Otavio Salvador <otavio@debian.org>  Thu, 08 May 2008 00:22:46 -0300
+
+network-console (1.15) unstable; urgency=low
+
+  * Use 'ip addr' instead of 'ifconfig' to determine the IP address. The local
+    interface can be listed first and thus needs to be filtered out.
+  * Display example ssh command. Closes: #471027.
+
+  [ Updated translations ]
+  * Amharic (am.po) by Tegegne Tefera
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Esperanto (eo.po) by Serge Leblanc
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Japanese (ja.po) by Kenshi Muto
+  * Dutch (nl.po) by Frans Pop
+  * Panjabi (pa.po) by Amanpreet Singh Alam
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Slovak (sk.po) by Ivan Masár
+  * Swedish (sv.po) by Daniel Nylander
+  * Thai (th.po) by Theppitak Karoonboonyanan
+
+ -- Frans Pop <fjp@debian.org>  Wed, 19 Mar 2008 20:50:22 +0100
+
+network-console (1.14) unstable; urgency=low
+
+  [ Updated translations ]
+  * Amharic (am.po) by tegegne tefera
+  * Dzongkha (dz.po) by Jurmey Rabgay
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * Finnish (fi.po) by Esko Arajärvi
+  * Hindi (hi.po) by Kumar Appaiah
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Indonesian (id.po) by Arief S Fitrianto
+  * Italian (it.po) by Stefano Canepa
+  * Central Khmer (km.po) by Khoem Sokhem
+  * Korean (ko.po) by Changwoo Ryu
+  * Kurdish (ku.po) by Amed Çeko Jiyan
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Latvian (lv.po) by Viesturs Zarins
+  * Malayalam (ml.po) by Praveen|പ്രവീണ്‍ A|എ
+  * Norwegian Bokmål (nb.po) by Hans Fredrik Nordhaug
+  * Nepali (ne.po) by Shyam Krishna Bal
+  * Panjabi (pa.po) by Amanpreet Singh Alam
+  * Polish (pl.po) by Bartosz Fenski
+  * Slovak (sk.po) by Ivan Masár
+  * Slovenian (sl.po) by Matej Kovacic
+  * Turkish (tr.po) by Recai Oktaş
+  * Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 15 Feb 2008 08:37:13 -0200
+
+network-console (1.13) unstable; urgency=low
+
+  [ Joey Hess ]
+  * Add a menu item to start d-i in expert mode.
+  * Reword menu items.
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Hleb Rubanau
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bengali (bn.po) by Jamil Ahmed
+  * Catalan (ca.po) by Jordi Mallach
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Dzongkha (dz.po) by Tshewang Norbu
+  * Esperanto (eo.po) by Serge Leblanc
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hebrew (he.po) by Lior Kaplan
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Italian (it.po) by Stefano Canepa
+  * Japanese (ja.po) by Kenshi Muto
+  * Korean (ko.po) by Sunjae Park
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Norwegian Bokmål (nb.po) by Bjørn Steensrud
+  * Nepali (ne.po) by Nabin Gautam
+  * Dutch (nl.po) by Bart Cornelis
+  * Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+  * Panjabi (pa.po) by A S Alam
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by Eddy Petrișor
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Peter Mann
+  * Albanian (sq.po) by Elian Myftiu
+  * Swedish (sv.po) by Daniel Nylander
+  * Tamil (ta.po) by Dr.T.Vasudevan
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Tagalog (tl.po) by Eric Pareja
+  * Ukrainian (uk.po)
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+  * Simplified Chinese (zh_CN.po) by Ming Hua
+  
+ -- Otavio Salvador <otavio@debian.org>  Sat, 27 Oct 2007 12:16:10 -0200
+
+network-console (1.12) unstable; urgency=low
+
+  * Multiply menu-item-numbers by 100
+
+  [ Updated translations ]
+  * Esperanto (eo.po) by Serge Leblanc
+  * Norwegian Bokmål (nb.po) by Bjørn Steensrud
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 10 Apr 2007 14:43:24 -0400
+
+network-console (1.11) unstable; urgency=low
+
+  [ Joey Hess ]
+  * Add support for armel.
+
+  [ Updated translations ]
+  * Malayalam (ml.po) by Praveen A
+  * Swedish (sv.po) by Daniel Nylander
+
+ -- Frans Pop <fjp@debian.org>  Tue, 27 Feb 2007 16:57:11 +0100
+
+network-console (1.10) unstable; urgency=low
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Belarusian (be.po) by Pavel Piatruk
+  * Danish (da.po) by Claus Hindsgaul
+  * Esperanto (eo.po) by Serge Leblanc
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Hebrew (he.po) by Lior Kaplan
+  * Kurdish (ku.po) by Amed Çeko Jiyan
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Malayalam (ml.po) by Praveen A
+  * Panjabi (pa.po) by A S Alam
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Romanian (ro.po) by Eddy Petrișor
+  * Slovak (sk.po) by Peter Mann
+  * Slovenian (sl.po) by Matej Kovačič
+
+ -- Frans Pop <fjp@debian.org>  Wed, 31 Jan 2007 11:49:48 +0100
+
+network-console (1.9) unstable; urgency=low
+
+  [ Martin Michlmayr ]
+  * Remove the arm/nslu2 code to beep that is now handled by arm/ixp4xx.
+  * arm/ixp4xx: Make sure the ixp4xx-beeper driver is loaded.
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivaniv
+  * Esperanto (eo.po) by Serge Leblanc
+  * Georgian (ka.po) by Aiet Kolkhi
+
+ -- Martin Michlmayr <tbm@cyrius.com>  Fri, 17 Nov 2006 16:22:47 +0000
+
+network-console (1.8) unstable; urgency=low
+
+  * Ask for password and password confirmation in one db_go.
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Andrei Darashenka
+  * Catalan (ca.po) by Jordi Mallach
+  * Esperanto (eo.po) by Serge Leblanc
+  * Estonian (et.po) by Siim Põder
+  * Finnish (fi.po) by Tapio Lehtonen
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hindi (hi.po) by Nishant Sharma
+  * Croatian (hr.po) by Josip Rodin
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Italian (it.po) by Stefano Canepa
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Dutch (nl.po) by Bart Cornelis
+  * Romanian (ro.po) by Eddy Petrișor
+  * Swedish (sv.po) by Daniel Nylander
+  * Tamil (ta.po) by Damodharan Rajalingam
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Frans Pop <fjp@debian.org>  Tue, 24 Oct 2006 15:32:53 +0200
+
+network-console (1.7) unstable; urgency=low
+
+  [ Frans Pop ]
+  * Bring description of password dialogs in line with other components.
+
+  [ Martin Michlmayr ]
+  * Also beep on arm/ixp4xx when SSH is ready.
+
+  [ Frans Pop ]
+  * Remove standards-version and add Lintian override for it.
+  * Add dependency on debconf.
+
+  [ Updated translations ]
+  * Bengali (bn.po) by Mahay Alam Khan (মাহে আলম খান)
+  * Catalan (ca.po) by Jordi Mallach
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Dzongkha (dz.po) by Jurmey Rabgay
+  * Greek, Modern (1453-) (el.po) by quad-nrg.net
+  * Esperanto (eo.po) by Serge Leblanc
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * Finnish (fi.po) by Tapio Lehtonen
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hebrew (he.po) by Lior Kaplan
+  * Hungarian (hu.po) by SZERVÑC Attila
+  * Icelandic (is.po) by David Steinn Geirsson
+  * Italian (it.po) by Giuseppe Sacco
+  * Japanese (ja.po) by Kenshi Muto
+  * Khmer (km.po) by Khoem Sokhem
+  * Korean (ko.po) by Sunjae park
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Macedonian (mk.po) by Georgi Stanojevski
+  * Norwegian Bokmål (nb.po) by Bjørn Steensrud
+  * Dutch (nl.po) by Bart Cornelis
+  * Panjabi (pa.po) by A S Alam
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+  * Romanian (ro.po) by Eddy Petrişor
+  * Russian (ru.po) by Yuri Kozlov
+  * Northern Sami (se.po) by Børre Gaup
+  * Swedish (sv.po) by Daniel Nylander
+  * Tagalog (tl.po) by Eric Pareja
+  * Turkish (tr.po) by Recai Oktaş
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
+  * Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Frans Pop <fjp@debian.org>  Sat, 16 Sep 2006 11:50:10 +0200
+
+network-console (1.6) unstable; urgency=low
+
+  [ Martin Michlmaur ]
+  * Explictly pass the beeper device to beep.
+
+  [ Updated translations ]
+  * Estonian (et.po) by Siim Põder
+  * Dutch (nl.po) by Bart Cornelis
+
+ -- Martin Michlmayr <tbm@cyrius.com>  Wed, 12 Jul 2006 20:37:34 +0200
+
+network-console (1.5) unstable; urgency=low
+
+  [ Colin Watson ]
+  * Use TCPKeepAlive option in sshd_config rather than the deprecated
+    KeepAlive.
+
+  [ Christian Perrier ]
+  * Split Choices in debconf templates
+
+  [ Joey Hess ]
+  * prebaseconfig transition
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Bosnian (bs.po) by Safir Secerovic
+  * Catalan (ca.po) by Jordi Mallach
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Dzongkha (dz.po)
+  * Esperanto (eo.po) by Serge Leblanc
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hungarian (hu.po) by SZERVÑC Attila
+  * Italian (it.po) by Giuseppe Sacco
+  * Japanese (ja.po) by Kenshi Muto
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Khmer (km.po) by Khoem Sokhem
+  * Korean (ko.po) by Sunjae park
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Malagasy (mg.po) by Jaonary Rabarisoa
+  * Macedonian (mk.po) by Georgi Stanojevski
+  * Bokmål, Norwegian (nb.po) by Bjørn Steensrud
+  * Nepali (ne.po) by Shiva Pokharel
+  * Dutch (nl.po) by Bart Cornelis
+  * Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+  * Romanian (ro.po) by Eddy Petrişor
+  * Russian (ru.po) by Yuri Kozlov
+  * Northern Sami (se.po) by Børre Gaup
+  * Slovak (sk.po) by Peter Mann
+  * Slovenian (sl.po) by Jure Čuhalev
+  * Albanian (sq.po) by Elian Myftiu
+  * Swedish (sv.po) by Daniel Nylander
+  * Tamil (ta.po) by Damodharan Rajalingam
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Tagalog (tl.po) by Eric Pareja
+  * Turkish (tr.po) by Recai Oktaş
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+
+ -- Joey Hess <joeyh@debian.org>  Wed,  7 Jun 2006 22:09:43 -0400
+
+network-console (1.4) unstable; urgency=low
+
+  [ Martin Michlmayr ]
+  * Mention the IP address in the note telling people to log in via SSH.
+    Closes: #349902.
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Ognyan Kulev
+  * Bosnian (bs.po) by Safir Secerovic
+  * Catalan (ca.po) by Jordi Mallach
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Esperanto (eo.po) by Serge Leblanc
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Irish (ga.po) by Kevin Patrick Scannell
+  * Galician (gl.po) by Jacobo Tarrio
+  * Indonesian (id.po) by Parlin Imanuel Toh
+  * Italian (it.po) by Giuseppe Sacco
+  * Japanese (ja.po) by Kenshi Muto
+  * Khmer (km.po) by hok kakada
+  * Macedonian (mk.po) by Georgi Stanojevski
+  * Bokmål, Norwegian (nb.po) by Bjørn Steensrud
+  * Dutch (nl.po) by Bart Cornelis
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by Eddy Petrişor
+  * Russian (ru.po) by Yuri Kozlov
+  * Northern Sami (se.po) by Børre Gaup
+  * Slovak (sk.po) by Peter Mann
+  * Slovenian (sl.po) by Jure Cuhalev
+  * Swedish (sv.po) by Daniel Nylander
+  * Tamil (ta.po) by Damodharan Rajalingam
+  * Tagalog (tl.po) by Eric Pareja
+  * Turkish (tr.po) by Recai Oktaş
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+  * Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
+
+ -- Frans Pop <fjp@debian.org>  Sun,  9 Apr 2006 22:30:48 +0200
+
+network-console (1.3) unstable; urgency=low
+
+  [ Martin Michlmayr ]
+  * Make some noise with the beeper on NSLU2 when we're ready to accept
+    SSH connections.
+
+  [ Updated translations ]
+  * Bosnian (bs.po) by Safir Secerovic
+  * Basque (eu.po) by Piarres Beobide
+  * Swedish (sv.po) by Daniel Nylander
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+
+ -- Martin Michlmayr <tbm@cyrius.com>  Sun, 19 Mar 2006 17:03:12 +0000
+
+network-console (1.2) unstable; urgency=low
+
+  [ Joey Hess ]
+  * Consistent indentation.
+
+  [ Frans Pop ]
+  * Copy over RSA key used during installation to installed system.
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+  * Finnish (fi.po) by Tapio Lehtonen
+  * Slovak (sk.po) by Peter Mann
+  * Slovenian (sl.po) by Matej Kovačič
+
+ -- Frans Pop <fjp@debian.org>  Mon, 13 Feb 2006 16:30:58 +0100
+
+network-console (1.1.1) unstable; urgency=low
+
+  [ Martin Michlmayr ]
+  * mipsel/cobalt: Generate a random password and show it on the LCD
+    along with host/login information and SSH fingerprint.
+
+  [ Updated translations ]
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Slovak (sk.po) by Peter Mann
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+
+ -- Martin Michlmayr <tbm@cyrius.com>  Mon, 23 Jan 2006 17:34:40 +0000
+
+network-console (1.1) unstable; urgency=low
+
+  * Install openssh-server instead of ssh as the latter is transitional.
+  * Remove two now unused templates.
+  * Force setting debconf/language to make sure the frontend gets the
+    currently selected language.
+
+  [ Updated translations ]
+  * Japanese (ja.po) by Kenshi Muto
+  * Swedish (sv.po) by Daniel Nylander
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Frans Pop <fjp@debian.org>  Mon,  9 Jan 2006 23:01:20 +0100
+
+network-console (1.0) unstable; urgency=low
+
+  * Now that base-config is no longer run after the reboot, we don't need
+    to set up the installed system for access using the 'installer' user.
+    This version needs pkgsel to be run during the installation.
+  * Version bump as network-console has proven itself by now.
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Bengali (bn.po) by Baishampayan Ghose
+  * Greek, Modern (1453-) (el.po) by quad-nrg.net
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Icelandic (is.po) by David Steinn Geirsson
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Malagasy (mg.po) by Jaonary Rabarisoa
+  * Dutch (nl.po) by Frans Pop
+  * Norwegian Nynorsk (nn.po)
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+  * Romanian (ro.po) by Eddy Petrişor
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovenian (sl.po) by Jure Čuhalev
+  * Swedish (sv.po) by Daniel Nylander
+
+ -- Frans Pop <fjp@debian.org>  Tue, 27 Dec 2005 19:51:19 +0100
+
+network-console (0.0.14) unstable; urgency=low
+
+  [ Colin Watson ]
+  * Update GPL notices with the FSF's new address.
+
+  [ Updated translations ]
+  * German (de.po) by Holger Wansing
+  * Greek, Modern (1453-) (el.po) by Greek Translation Team
+  * Esperanto (eo.po) by Serge Leblanc
+  * French (fr.po) by Christian Perrier
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Bokmål, Norwegian (nb.po) by Bjørn Steensrud
+  * Dutch (nl.po) by Bart Cornelis
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+  * Romanian (ro.po) by Eddy Petrisor
+  * Slovenian (sl.po) by Jure Čuhalev
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 26 Sep 2005 17:14:38 +0200
+
+network-console (0.0.13) unstable; urgency=low
+
+  * Updated translations: 
+    - Greek, Modern (1453-) (el.po) by Greek Translation Team
+    - Gallegan (gl.po) by Jacobo Tarrio
+    - Indonesian (id.po) by Arief S Fitrianto
+    - Lithuanian (lt.po) by Kęstutis Biliūnas
+    - Tagalog (tl.po) by Eric Pareja
+    - Ukrainian (uk.po) by Eugeniy Meshcheryakov
+    - Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+    - Xhosa (xh.po) by Canonical Ltd
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 15 Jul 2005 17:02:01 +0300
+
+network-console (0.0.12) unstable; urgency=low
+
+  * Frans Pop
+    - Changed naming scheme for templates to network-console/...
+    - Added new template for prebaseconfig to inform user if
+      network-console-config was unavailable or failed to install.
+      Closes: #279090.
+    - The new opensshd-server requires sshd to be started with an abolute
+      path. This may be a bug (#313382); add path to work around it for now.
+    - Add myself as uploader.
+  * Joey Hess
+    - Patch from Paul Telford to allow preseeding of network-console/start.
+      Closes: #298952
+  * Christian Perrier
+    - Add a comment about the Choices length for translators
+      in the debconf templates file
+  * Updated translations: 
+    - Arabic (ar.po) by Ossama M. Khayat
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Catalan (ca.po) by Guillem Jover
+    - Czech (cs.po) by Miroslav Kure
+    - Welsh (cy.po) by Dafydd Harries
+    - Danish (da.po) by Claus Hindsgaul
+    - German (de.po) by Dennis Stampfer
+    - Greek, Modern (1453-) (el.po) by Greek Translation Team
+    - Spanish (Castilian) (es.po) by Javier Fernández-Sanguino Peña
+    - Basque (eu.po) by Piarres Beobide
+    - Finnish (fi.po) by Tapio Lehtonen
+    - French (fr.po) by Christian Perrier
+    - Gallegan (gl.po) by Jacobo Tarrio
+    - Hebrew (he.po) by Lior Kaplan
+    - Italian (it.po) by Giuseppe Sacco
+    - Japanese (ja.po) by Kenshi Muto
+    - Korean (ko.po) by Changwoo Ryu
+    - Lithuanian (lt.po) by Kęstutis Biliūnas
+    - Bøkmal, Norwegian (nb.po) by Hans Fredrik Nordhaug
+    - Dutch (nl.po) by Bart Cornelis
+    - Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+    - Portuguese (pt.po) by Miguel Figueiredo
+    - Romanian (ro.po) by Eddy Petrişor
+    - Russian (ru.po) by Yuri Kozlov
+    - Slovak (sk.po) by Peter KLFMANiK Mann
+    - Albanian (sq.po) by Elian Myftiu
+    - Swedish (sv.po) by Per Olofsson
+    - Turkish (tr.po) by Recai Oktaş
+    - Ukrainian (uk.po) by Eugeniy Meshcheryakov
+    - Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
+    - Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Frans Pop <aragorn@tiscali.nl>  Mon, 13 Jun 2005 13:31:05 +0200
+
+network-console (0.0.11) unstable; urgency=low
+
+  * Sven Luther
+    - Moved reseting of the password at the end of the loop, to allow password
+      preseeding.
+
+ -- Sven Luther <luther@debian.org>  Fri, 10 Dec 2004 22:56:32 +0100
+
+network-console (0.0.10) unstable; urgency=low
+
+  * Frans Pop
+    - Forgot that now network-console-config should be purged if user
+      decided not to install over SSH after all
+    - Rewrite log messages in prebaseconfig
+
+ -- Joey Hess <joeyh@debian.org>  Mon,  6 Dec 2004 13:53:26 -0500
+
+network-console (0.0.9) unstable; urgency=low
+
+  * Frans Pop
+    - Only copy SSH keys and installer account if network-console-config
+      is installed successfully. Closes: #283377.
+    - Queue installation of network-console-config in postinst as for
+      CD-based installations the CD will already be unmounted when the
+      prebaseconfig script is run (tanks to Colin Watson for spotting this).
+
+ -- Joey Hess <joeyh@debian.org>  Wed,  1 Dec 2004 14:09:07 -0500
+
+network-console (0.0.8) unstable; urgency=low
+
+  * Frans Pop
+    - Add check to see if installation of network-console-config was
+      successful (partial fix for #279090)
+  * Updated translations: 
+    - Finnish (fi.po) by Tapio Lehtonen
+    - Romanian (ro.po) by Eddy Petrisor
+
+ -- Joey Hess <joeyh@debian.org>  Mon,  1 Nov 2004 12:25:27 -0500
+
+network-console (0.0.7) unstable; urgency=low
+
+  * Updated translations: 
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Greek, Modern (1453-) (el.po) by Greek Translation Team
+    - French (fr.po) by French Team
+    - Hebrew (he.po) by Lior Kaplan
+    - Croatian (hr.po) by Krunoslav Gernhard
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 20 Oct 2004 14:37:02 -0400
+
+network-console (0.0.6) unstable; urgency=low
+
+  * Updated translations: 
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Catalan (ca.po) by Jordi Mallach
+    - Czech (cs.po) by Miroslav Kure
+    - Welsh (cy.po) by Dafydd Harries
+    - Danish (da.po) by Claus Hindsgaul
+    - German (de.po) by Dennis Stampfer
+    - Greek, Modern (1453-) (el.po) by Greek Translation Team
+    - Spanish (Castilian) (es.po) by Javier Fernandez-Sanguino Peña
+    - Basque (eu.po) by Piarres Beobide Egaña
+    - Finnish (fi.po) by Tapio Lehtonen
+    - French (fr.po) by French Team
+    - Hebrew (he.po) by Lior Kaplan
+    - Croatian (hr.po) by Krunoslav Gernhard
+    - Hungarian (hu.po) by VEROK Istvan
+    - Indonesian (id.po) by Debian Indonesia Team
+    - Japanese (ja.po) by Kenshi Muto
+    - Korean (ko.po) by Changwoo Ryu
+    - Lithuanian (lt.po) by Kęstutis Biliūnasn
+    - Latvian (lv.po) by Aigars Mahinovs
+    - Bøkmal, Norwegian (nb.po) by Bjorn Steensrud
+    - Dutch (nl.po) by Bart Cornelis
+    - Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+    - Polish (pl.po) by Bartosz Fenski
+    - Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+    - Romanian (ro.po) by Eddy Petrisor
+    - Russian (ru.po) by Russian L10N Team
+    - Slovak (sk.po) by Peter KLFMANiK Mann
+    - Slovenian (sl.po) by Jure Čuhalev
+    - Albanian (sq.po) by Elian Myftiu
+    - Swedish (sv.po) by Per Olofsson
+    - Turkish (tr.po) by Recai Oktaş
+    - Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
+    - Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Joey Hess <joeyh@debian.org>  Wed,  6 Oct 2004 14:58:33 -0400
+
+network-console (0.0.5) unstable; urgency=low
+
+  * Colin Watson
+    - Fix bashism in Makefile.
+  * Joey Hess
+    - Remove unnecessary seen flag fsetting in network-console.postinst, 
+      not necessary in the d-i environment.
+  * Updated translations: 
+    - Arabic (ar.po) by Ossama M. Khayat
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Bosnian (bs.po) by Safir Šećerović
+    - Catalan (ca.po) by Jordi Mallach
+    - Czech (cs.po) by Miroslav Kure
+    - Welsh (cy.po) by Dafydd Harries
+    - Danish (da.po) by Claus Hindsgaul
+    - German (de.po) by Dennis Stampfer
+    - Greek, Modern (1453-) (el.po) by Greek Translation Team
+    - Spanish (Castilian) (es.po) by Javier Fernandez-Sanguino Peña
+    - Basque (eu.po) by Piarres Beobide Egaña
+    - Finnish (fi.po) by Tapio Lehtonen
+    - French (fr.po) by French Team
+    - Hebrew (he.po) by Lior Kaplan
+    - Croatian (hr.po) by Krunoslav Gernhard
+    - Indonesian (id.po) by Parlin Imanuel Toh
+    - Japanese (ja.po) by Kenshi Muto
+    - Korean (ko.po) by Changwoo Ryu
+    - Lithuanian (lt.po) by Kęstutis Biliūnasn
+    - Latvian (lv.po) by Aigars Mahinovs
+    - Bøkmal, Norwegian (nb.po) by Axel Bojer
+    - Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+    - Polish (pl.po) by Bartosz Fenski
+    - Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+    - Russian (ru.po) by Russian L10N Team
+    - Slovak (sk.po) by Peter KLFMANiK Mann
+    - Slovenian (sl.po) by Jure Čuhalev
+    - Albanian (sq.po) by Elian Myftiu
+    - Swedish (sv.po) by Per Olofsson
+    - Turkish (tr.po) by Recai Oktaş
+    - Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 27 Sep 2004 21:39:31 -0400
+
+network-console (0.0.4) unstable; urgency=high
+
+  * Bastian Blank
+    - Remove package during cleanup.
+  * Joey Hess
+    - High urgency upload to get to testing by d-i release.
+  * Updated translations: 
+    - Welsh (cy.po) by Dafydd Harries
+    - German (de.po) by Dennis Stampfer
+    - Hungarian (hu.po) by VERÓK István
+    - Italian (it.po) by Giuseppe Sacco
+    - Bøkmal, Norwegian (nb.po) by Petter Reinholdtsen
+    - Swedish (sv.po) by Per Olofsson
+    - Traditional Chinese (zh_TW.po) by Tetralet
+    - French (fr.po) by Christian Perrier
+    - Albanian (sq.po) by Elian Myftiu
+
+ -- Joey Hess <joeyh@debian.org>  Sun, 25 Jul 2004 19:31:16 -0400
+
+network-console (0.0.3) unstable; urgency=low
+
+  * Bastian Blank
+    - Add network-console-config package for the base-config step.
+    - Add reminder to prebaseconfig.
+  * Updated translations: 
+    - Arabic (ar.po) by Abdulaziz Al-Arfaj
+    - Catalan (ca.po) by Jordi Mallach
+    - Czech (cs.po) by Miroslav Kure
+    - Danish (da.po) by Frederik Dannemare
+    - Greek (el.po) by George Papamichelakis
+    - Spanish (es.po) by Javier Fernandez-Sanguino Peña
+    - Basque (eu.po) by Piarres Beobide Egaña
+    - Finnish (fi.po) by Tapio Lehtonen
+    - French (fr.po) by Christian Perrier
+    - Hebrew (he.po) by Lior Kaplan
+    - Croatian (hr.po) by Krunoslav Gernhard
+    - Japanese (ja.po) by Kenshi Muto
+    - Lithuanian (lt.po) by Kęstutis Biliūnas
+    - Norwegian (nn.po) by Håvard Korsvoll
+    - Polish (pl.po) by Bartosz Fenski
+    - Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+    - Portuguese (pt.po) by Miguel Figueiredo
+    - Romanian (ro.po) by Eddy Petrisor
+    - Russian (ru.po) by Yuriy Talakan'
+    - Slovak (sk.po) by Peter KLFMANiK Mann
+    - Turkish (tr.po) by Recai Oktaş
+    - Ukrainian (uk.po) by Eugeniy Meshcheryakov
+    - Simplified Chinese (zh_CN.po) by Ming Hua
+
+ -- Bastian Blank <waldi@debian.org>  Sat, 24 Jul 2004 12:04:34 +0200
+
+network-console (0.0.2) unstable; urgency=low
+ 
+  * Bastian Blank
+    - Set TERM and TERM_TYPE to sane defaults.
+    - Make udpkg quiet (workaround warning).
+    - Add prebaseconfig script.
+    - Use shadow support. Needs rootskel 0.88, fixed openssh.
+  * Updated translations: 
+    - Bulgarian (bg.po) by Ognyan Kulev
+    - Bosnian (bs.po) by Safir Šećerović
+    - Catalan (ca.po) by Jordi Mallach
+    - Czech (cs.po) by Miroslav Kure
+    - Danish (da.po) by Claus Hindsgaul
+    - German (de.po) by Dennis Stampfer
+    - Greek (el.po) by George Papamichelakis
+    - Spanish (es.po) by Javier Fernandez-Sanguino Peña
+    - Basque (eu.po) by Piarres Beobide Egaña
+    - Persian (fa.po) by Arash Bijanzadeh
+    - Finnish (fi.po) by Tapio Lehtonen
+    - Hebrew (he.po) by Lior Kaplan
+    - hr (hr.po) by Krunoslav Gernhard
+    - Hungarian (hu.po) by VERÓK István
+    - Japanese (ja.po) by Kenshi Muto
+    - Korean (ko.po) by Changwoo Ryu
+    - Lithuanian (lt.po) by Kęstutis Biliūnas
+    - Dutch (nl.po) by Bart Cornelis
+    - Norwegian (nn.po) by Håvard Korsvoll
+    - Polish (pl.po) by Bartosz Fenski
+    - Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+    - Romanian (ro.po) by Eddy Petrisor
+    - Russian (ru.po) by Yuri Kozlov
+    - Slovak (sk.po) by Peter KLFMANiK Mann
+    - Albanian (sq.po) by Elian Myftiu
+    - Turkish (tr.po) by Recai Oktaş
+    - Ukrainian (uk.po) by Eugeniy Meshcheryakov
+    - Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
+
+ -- Bastian Blank <waldi@debian.org>  Thu, 22 Jul 2004 13:12:56 +0200
+
+network-console (0.0.1) unstable; urgency=low
+
+  * Initial Release by Bastian Blank.
+  * Christian Perrier
+    - rewrite templates for style consistency with d-i and shadow (after
+      planned rewrite)
+
+ -- Bastian Blank <waldi@debian.org>  Tue, 29 Jun 2004 09:35:37 +0200
+

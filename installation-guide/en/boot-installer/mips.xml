@@ -1,0 +1,9 @@
+<!-- retain these comments for translator revision tracking -->
+<!-- $Id$ -->
+
+
+  <sect2 arch="mips;mips64el;mipsel" id="boot-tftp-mips"><title>Booting with TFTP</title>
+
+&boot-installer-intro-net.xml;
+ 
+   </sect2>

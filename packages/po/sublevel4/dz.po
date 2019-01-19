@@ -1,0 +1,718 @@
+# translation of dz.po to Dzongkha
+# Translation of debian-installer level 1 Dzongkha
+# Debian Installer master translation file template
+# Copyright @ 2006 Free Software Foundation, Inc.
+#
+# Sonam Rinchen <somchen@druknet.bt>, 2006.
+# Christian Perrier <bubulle@debian.org>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: dDz.po\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-01-28 08:18+0100\n"
+"Last-Translator: Christian Perrier <bubulle@debian.org>\n"
+"Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
+"Language: dz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: Bhutan\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "བར་ཅུ་ཡལ་ཌིཀསི་ %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "བར་ཅུ་ཡལ་ཌིཀསི་ %s བར་བཅད་ #%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - POSIX.1e འཛུལ་སྤྱོད་ཚད་འཛིན་ཐོ་ཡིག་ངོས་ལེན་འབདཝ་ཨིན།"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr "མིང་་ཐུང་ཀུ་ - MS-DOS 8.3 བཟོ་རྣམ་ཡིག་སྣོད་མིང་རྙིངམ་ཚུ་རྐྱངམ་ཅིག་ལག་ལེན་འཐབ།"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"ཁྱོད་ཀྱི་རིམ་ལུགས་གསརཔ་འགོ་བཙུགས་ནིའི་གོ་རིམ་ལུ་ བུཊི་མངོན་གསལ་པ་ཟེར་མི་འདི་ལག་ལེན་འཐབ་བཏུབ་ འ་ནི་"
+"འདི་བུཊི་བར་བཅད་ནང་ལུ་གཞི་བཙུགས་འབད་ཡོད་ཁྱོད་ཀྱིས་བར་བཅད་ཀྱི་དོན་ལུ་བུཊི་འབད་བཏུབ་ཟུར་རྟགས་འདི་གཞི་"
+"སྒྲིག་འབད་དགོ་ དེ་བཟུམ་གྱི་བར་བཅད་འདི་བར་བཅད་འབད་མི་དཀར་ཆག་ངོ་མ་ནང་ལུ་\"${BOOTABLE}\"ཟེར་"
+"བརྟག་བཀལ་འདི་ཡོད།"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! ERROR: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "KEYSTROKES:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "'%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "གྲོག་རམ་འཕྲིན་དོན་འདི་བཀྲམ་སྟོན་འབད།"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "ཧེ་མའི་དྲི་བ་ལུ་ལོག་འགྱོ།"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "ཐོ་བཀོད་སྟོངམ་སེལ་འཐུ་འབད།"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "གྲོག་རམ་གྱི་དོན་ལུ་ Prompt: '%c' སྔོན་སྒྲིག་=%d> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "གྲོག་རམ་> གི་དོན་ལུ་ Prompt: '%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "གྲོག་རམ་གྱི་དོན་ལུ་ Prompt: '%c' སྔོན་སྒྲིག་=%s> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[འཕྲོ་མཐུད་ནི་ལུ་ལོག་ལྡེ་ཨེབ་]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "ལག་ལེན་འཐབ་ནི་ལུ་ངོས་པར་དགོ་:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"རིམ་སྒྲིག་དོན་ལུ་debconf ལག་ལེན་འཐབ་མི་ཐུམ་སྒྲིལ་ཚུ་གིས་ ཐུན་མོང་གི་མཐོང་སྣང་དང་ཚོར་སྣང་ རུབ་སྤྱོད་"
+"འབདཝ་ཨིན། ཁྱོད་ཀྱིས་ ཁོང་གིས་ལག་ལེན་འཐབ་པའི་ལག་ལེན་པ་ངོས་འདྲ་བའི་དབྱེ་བ་ སེལ་འཐུ་འབད།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "ཅི་མེད།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "'None' ནམ་ཡང་ ཁྱོད་ལུ་ དྲི་བ་མི་འདྲི།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "ཚིག་ཡིག།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "'Text' འདི་ སྔོན་སྲོལ་གྱི་ ཚིག་ཡིག་རྐྱང་པའི་ངོས་འདྲ་བ་ཅིག་ཨིན།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "Newt"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "'Newt' འདི་ གསལ་གཞི་གང་བའི་ ཡིག་འབྲུ་གཞི་རྟེན་གྱི་ངོས་འདྲ་བ་ཅིག་ཨིན།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "ཇི་ཊི་ཀེ།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr ""
+"'ཇི་ཊི་ཀེ' འདི་ ཚད་རིས་ཀྱི་མཐའ་འཁོར་གང་རུང་གིས་ ལག་ལེན་འཐབ་ནིའི་ ཚད་རིས་ངོས་འདྲ་བ་ཅིག་ཨིན།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr " /target/proc སྦྱར་བརྩེགས་འབད་ནི་ལུ་འཐུས་ཤོར་བྱུང་ཡོད།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr " /target/proc ལུ་ proc ཡིག་སྣོད་རིམ་ལུགས་སྦྱར་བརྩེགས་འབད་ནི་ལུ་འཐུས་ཤོར་བྱུང་ཡོ"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "ཉེན་བརྡ་:ཁྱོད་ཀྱི་རིམ་ལུགས་བུཊི་འབད་མི་བཏུབ་འོང་!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "རང་བཞིན་གྱིས་བུཊི་འབད་ནིའི་དོན་ལུ་ཚོང་ལས་ཁང་གི་ཅ་ཆས་འགྱུར་ཅན་ཚུ་གཞི་སྒྲིག་འབད་དོ།"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"ཁྱོད་ཀྱི་རིམ་ལུགས་རང་བཞིན་གྱིས་བུཊི་འབད་ནིའི་དོན་ལུ་ ཇི་པི་སི་ ཕརཤ་ཝེར་ནང་ འགྱུར་ཅན་ཚུ་ལ་ལོ་ཅིག་ གཞི་"
+"སྒྲིག་འབད་དགོ། གཞི་བཙུགས་མཇུག་བསྡུ་བའི་ཤུལ་ལུ་ རིམ་ལུགས་དེ་བུཊི་འབད་འོང་། རང་བཞིན་བུ་ཊིང་་འབད་ཚུགས་"
+"པའི་དོན་ལུ་ ཕརམ་ཝེར་ནུས་སྤེལ་གུ་ འོག་གི་ཕརམ་ཝེར་་འགྱུར་བ་ཚུ་ གཞི་སྒྲིག་འབད།"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"འ་ནི་འདི་ཁྱོད་ཀྱིས་ཚར་གཅིག་རྐྱངམ་ཅིག་འབད་དགོ། ཤུལ་ལས་ \"boot\"བརྡ་བཀོད་བཙུགས་ ཡང་ན་ ཁྱོད་ཀྱི་རིམ་"
+"ལུགས་གསརཔ་གཞི་བཙུགས་འབད་ཡོད་མི་ལུ་འགྱོ་ནིའི་དོན་ལུ་ རིམ་ལུགས་དེ་ རི་བུཊི་འབད།"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"ཐབས་གཞན་གྱི་ཐོག་ལས་ ཁྱོད་ཀྱིས་ཕརམ་ཝེར་ནུས་སྤེལ་གུ་ བཙུགས་པའི་ཐོག་ལས་ ལག་ཐོག་ལས་ཀར་ནེལ་དེ་ བུཊི་"
+"འབད་ཚུགས་:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"རིམ་ལུགས་འདི་ རང་བཞིན་གྱིས་ བུཊི་འབད་ཐབས་ལུ་ སི་ཨེཕ་ཨི་ནང་ འགྱུར་ཅན་ལ་ལོ་ཅིག་ གཞི་སྒྲིག་འབད་དགོ། "
+"གཞི་བཙུགས་འབད་ཚར་ཞིནམ་ལས་ རིམ་ལུགས་འདི་ལོག་བུཊི་འབད་འོང་། ཕརམ་ཝེར་རྒྱུད་བསྐུལ་ནང་ བུཊི་ཊིང་འཇམ་"
+"སམ་བཟོ་ཐབས་ལུ་ འོག་གི་འགྱུར་ཅན་ཚུ་གཞི་སྒྲིག་འབད།"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"འ་ནི་འདི་ ཁྱོད་ཀྱིས་ ཚར་གཅིག་རྐྱངམ་ཅིག་འབད་དགོ། དེ་གིས་ སི་ཨེཕ་ཨི་རྒྱུད་བསྐུལ་ནང་ བརྡ་བཀོད་  "
+"\"boot_debian\" བྱིན་ཚུགས།"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"ཚར་རེ་འགོ་བཙུགསཔ་ད་ རང་བཞིན་-བུཊི་འདི་ དགའ་བ་ཅིན་ གོང་གི་ཁ་སྐོང་སྦེ་ འོག་གི་འགྱུར་ཅན་ཚུ་ གཞི་སྒྲིག་"
+"འབད་ཚུགས།"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "GRUB བུཊི་མངོན་གསལ་པ་གཞི་བཙུགས་འབད་ནི་ཨིན་ན?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB ༢ འདི་ པི་སི་ i386/amd64 ནང་ ལག་ལེན་འཐབ་སྲོལ་ཡོད་པའི་བིཊི་མངོན་གསལ་པ་ ཇི་ཨེན་ཡུ་ GRUB "
+"གྱི་འཐོན་རིམ་གསརཔ་ཨིན། འདི་ ད་ལས་ཕར་ ${ARCH} གི་དོན་ལུ་ཐོབ་ཚུགས།"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"དེ་ལུ་ ཁྱད་ཆོས་ལེ་ཤ་ཡོད་རུང་ བཟོ་བཀོད་འདི་གི་དོན་ལུ་ མོ་བཏབ་མཉེན་ཆས་ཅིག་ཨིན། ཁྱོད་ཀྱིས་ གཞི་བཙུགས་"
+"འབད་ནི་འབད་ གདམ་ཁ་རྐྱབ་པ་ཅིན་ བུཊི་འབད་བ་བཏུབ་པར་མེདཔ་འགྱོ་ནིའི་ཉེན་ཁ་ཡོདཔ་ལས་ སླར་གསོ་འབད་"
+"ཤེས་དགོ དེ་མེན་པ་ཅིན་ བཀོག་བཞག་དགོ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "ཧརཌ་ཌིཀསི་ལུ་ཨརཀ་བུཊི་མངོན་གསལ་པ་འདི་གཞི་བཙུགས་འབད།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "བུཊི་མངོན་གསལ་པ་གཞི་བཙུགས་འབད་ནིའི་དོན་ལུ་ཌིཀསི:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"ཨརག་བུཊི་དེ་ ཌིགསི་གི་སྦུང་ཚད་མགོ་ཡིག་ནང་ལུ་ SGIཌིགསི་ཁ་ཡིག་དང་གཅིག་ཁར་ གཞི་བཙུགས་འབད་འོང་། སྤྱིར་"
+"གཏང་གི་/dev/sdaགི་སྦུང་ཚད་མགོ་ཡིག་དེ་ལག་ལེད་འཐབ་ཨིན། ཨརག་བུཊི་བཙུགས་ནིའི་དོན་ལུ་ དིགསི་གི་ཐབས་"
+"འཕྲུལ་གྱི་མིང་བཏགས་གནང་།"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "ཨང་རིམ་མ་སྒྲོམ་ལག་ལེན་འཐབ་ནི་ལུ་ཨརཀ་བུཊི་རིམ་སྒྲིག་འབད་ཡོད།"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"མ་སྒྲོམ་འདི་བཟུམ་སྦེ་ཨང་རིམ་འདྲེན་ལམ་${PORT}ལག་ལེན་འཐབ་ནི་ལུ་ཨརཀ་བུཊི་འདི་རིམ་སྒྲིག་འབད་ཡོད། ཨང་"
+"རིམ་འདྲེན་ལམ་མགྱོགས་ཚད་འདི་${SPEED}་ལུ་གཞི་སྒྲིག་འབད་ཡོད།"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "ཨརཀ་བུཊི་གཞི་བཙེགས་འབད་ནི་ལུ་འཐུས་ཤོར་བྱུང་ཡོད། གང་རུང་སྦེ་འཕྲོ་མཐུད?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"ཨརག་བུཊི་ཐུམ་སྒྲིལ་དེ་/target/ནང་ལུ་གཞི་བཙུགས་འབད་ནི་ཐུས་ཤོར་བྱུང་ནུག ཨརག་བུཊི་དེ་ བུཊི་མངོན་གསལ་"
+"འབད་མི་བཟུམ་སྦེ་གཞི་བཙུགས་འབད་མི་དེ་ དགོས་མཁོ་ཡོད་པའི་གནས་རིམ་ཅིག་ཨིན། གཞི་བཙུགས་ཀྱི་དཀའ་ངལ་དེ་"
+"ཨའག་བུཊི་དང་འབྲེལ་བ་མེདཔ་ལས་ གཞི་བཙུགས་འཕྲོ་འཐུད་འབད་ཚུགས།"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "Setting PROM variables for Arcboot"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"འ་ནི་འདི་ འཕྲུལ་ཨམ་འདི་ནང་གི་ལའི་ནོགསི་དང་པབ་ཨིན་པ་ཅིན་ ཡང་ན་ ཧརཌི་ཌའིབ་དེ་བར་བཅད་བསྐྱར་ལོག་"
+"འབད་ཡོད་པ་ཅིན་ རིམ་ལུགས་དེ་གིས་སྤྱིར་གཏང་སྦེ་བུཊི་མ་འབད་བའི་ཧེ་མ་ བསྒྱུར་ཅན་ལ་ལུ་ཅིག་PROMནང་གཞི་"
+"སྒྲིག་འབད་དགོཔ་ཨིན།"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"གཞི་བཙུགས་འགོ་རིམ་འདི་གི་མཇུག་ལུ་ རིམ་ལུག་དེ་གིས་ལོག་བུཊི་འབད་འོང་། དོ་གི་ཤུལ་ལས་ \"Stop for "
+"Maintenance\"གདམ་ཁའི་ནང་ལས་ བརྡ་བཀོད་བལྟ་རྟོགས་པ་དེ་བཙུགས་ཏེ་ དེ་ལས་ འོག་ལུ་བཀོད་དེ་ཡོད་པའི་"
+"བརྡ་བཀོད་དེ་བཙུགས།"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་རིམ་སྒྲིག་འབད།"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "ཨེན་བི་ཌི་ རིམ་སྒྲིག་བྱ་བ་:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "ད་ལྟོ་ ཐབས་འཕྲུལ་ ${NUMBER} མཐུད་ཅི།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་སར་བར་:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "ཨེན་བི་ཌི་-སར་བར་གཡོག་བཀོལ་མི་རིམ་ལུགས་ཀྱི་ཧོསཊི་མིང་ ཡང་ན་ ཨའི་པི་ཁ་བྱང་བཙུགས་གནང་།"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་ནོཌི་་:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "ཁྱོད་ཀྱིས་ མཐུད་ནི་ ཡང་ན་ མཐུད་ལམ་བཏོག་ནི་ཨིན་པའི་ཨེན་ཌི་བི་ཐབས་འཕྲུལ་ནོཌི་འདི་སེལ་འཐུ་འབད།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "ཨེན་བི་ཌི་སར་བར་ལུ་མཐུད་མ་ཚུགས།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+#| msgid ""
+#| "Connecting to the nbd-server failed. Please ensure that the host and the "
+#| "port or the name which you entered are correct, that the nbd-server "
+#| "process is running on that host and port (or using that name), that the "
+#| "network is configured correctly, and retry."
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"ཨེན་བི་ཌི་-སར་བར་ལུ་མཐུད་མ་ཚུགས་པས། ཧོསཊི་དང་འདྲེན་ལམ་ ཡང་ན་ བཙུགས་མི་མིང་འདི་ འཛོལ་ནི་མི་"
+"འོང་། དེ་མ་ཚད་ ཨེན་བི་ཌི་-སར་བར་ལས་སྦྱོར་འདི་ ཧོསཊི་དང་འདྲེན་ལམ་ (མིང་དེ་ལག་ལེན་འཐབ་ཐོག་ལས་) "
+"གཡོག་བཀོལ་དགོཔ་དང་ ཡོངས་འབྲེལ་འདི་ཡང་  མ་འཛོལ་བར་རིམ་སྒྲིག་འབད་དགོ དེ་ལས་ ལོག་འབད།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་ནོཌི་ཅིག་ཡང་མེད།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"ཨེན་བི་ཌི་ཐབས་འཕྲུལ་ག་ར་ ཡང་ཅིན་ ལག་ལེན་འཐབ་སྟེ་ཡོདཔ་དང་ ཡང་ན་ ཐབས་འཕྲུལ་ནོཌི་གི་སྐྱོན་འཛིན་འདི་"
+"མེདཔ་ཐལ་སོངཔ་འོང་ནི་མས།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr "རིམ་སྒྲིག་འབད་ཡོད་མི་འདི་མཐུད་ལམ་མ་བཏོག་ཚུན་ ཨེན་བི་ཌི་ཐབས་འཕྲུལ་ནོཌི་ཚུ་རིམ་སྒྲིག་མི་འབད།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "མཐུད་ཡོད་པའི་ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་ནོཌི་མ་ཐོབ།"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"ད་ལྟོ་ ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་ནོཌི་ཚུ་ སར་བར་ག་ལུ་ཡང་མ་མཐུད་པས། དེ་འབདཝ་ལས་ ཁྱོད་ཀྱིས་ "
+"དེ་ཚུ་ག་ཡང་མཐུད་ལམ་མ་བཏོག"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་ལུ་མཐུད།"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "ཡོངས་འབྲེལ་བཀག་འཛིན་ཐབས་འཕྲུལ་མཐུན་ལམ་བཏོག"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "མཇུག་བསྡུ་སྟེ་ ལོག་བར་བཅད་འབད་མི་ནང་འགྱོ།"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "རིམ་ལུགས་འདི་ བུཊི་གི་དོན་ལུ་ ཕེལེཤི་དྲན་ཚད་ རིམ་སྒྲིག་འབད་དོ།"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "རིམ་ལུགས་ བུཊི་འབད་བཏུབ་བཟོ་དོ།"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "རིམ་ལུགས་ གྲ་སྒྲིག་འབད་དོ་་་་་"
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "ཀར་ནེལ་ ཕེ་ལེཤ་དྲན་ཚད་ནང་འབྲི་དོ་་་་"
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "ཀར་ནེལ་གཟུགས་བརྙན་ ཌིཀསི་གུ་བཟོ་བཏོན་འབད་དོ་་་་"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "རིམ་ལུགས་ བུཊི་འབད་བཏུབ་བཟོ།"

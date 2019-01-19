@@ -1,0 +1,174 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of be.po to Belarusian (Official spelling)
+# Andrei Darashenka <adorosh2@it.org.by>, 2005, 2006.
+# Nasciona Piatrouskaja <naska.pet@gmail.com>, 2006.
+# Pavel Piatruk <berserker@neolocation.com>, 2006, 2007, 2008.
+# Hleb Rubanau <g.rubanau@gmail.com>, 2006, 2007.
+# Nasciona Piatrouskaja <naska1@tut.by>, 2006.
+# Paul Petruk <berserker@neolocation.com>, 2007.
+# Pavel Piatruk <piatruk.p@gmail.com>, 2008, 2009, 2011.
+# Viktar Siarheichyk <vics@eq.by>, 2010, 2011, 2012, 2015.
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@debian.org>, 2004.
+# Alexander Nyakhaychyk <nyakhaychyk@gmail.com>, 2009.
+# Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2007, 2010.
+# Viktar Siarheichyk <viсs@eq.by>, 2014.
+# Viktar Siarheichyk <vics@fsfe.org>, 2014, 2015, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: be\n"
+"Report-Msgid-Bugs-To: s390-dasd@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-28 22:01+0000\n"
+"PO-Revision-Date: 2017-03-01 16:35+0300\n"
+"Last-Translator: Viktar Siarheichyk <vics@fsfe.org>\n"
+"Language-Team: Debian l10n team for Belarusian <debian-l10n-belarusian@lists."
+"debian.org>\n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. Type: select
+#. Choices
+#. :sl5:
+#. TRANSLATORS, please translate "Finish" the same way you translate it in
+#. the 'Select "Finish" at the bottom of the list when you are done' string
+#: ../s390-dasd.templates:1001
+msgid "Finish"
+msgstr "Скончыць"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Available devices:"
+msgstr "Даступныя прылады:"
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid ""
+"The following direct access storage devices (DASD) are available. Please "
+"select each device you want to use one at a time."
+msgstr ""
+"Наступныя прылады \"Direct Access Storage Device\" (DASD) даступныя. Калі "
+"ласка, пазначце адну за адной кожную з прыладаў, якую Вы хочаце выкарыстаць."
+
+#. Type: select
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:1002
+msgid "Select \"Finish\" at the bottom of the list when you are done."
+msgstr "Калі ўсё будзе скончана, пазначце \"Скончыць\" ўнізе спіса."
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid "Choose device:"
+msgstr "Выбраць прыладу:"
+
+#. Type: string
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:2001
+msgid ""
+"Please choose a device. You have to specify the complete device number, "
+"including leading zeros."
+msgstr ""
+"Калі ласка, выберыце прыладу. Вам трэба вызначыць поўны нумар прылады, разам "
+"з пачатковымі нулямі."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "Invalid device"
+msgstr "Несапраўдная прылада"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:3001
+msgid "An invalid device number has been chosen."
+msgstr "Быў абраны няслушны нумар прылады."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001 ../s390-dasd.templates:5001
+msgid "Format the device?"
+msgstr "Фарматаваць гэтую прыладу?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid "The DASD ${device} is already low-level formatted."
+msgstr "DASD ${device} ужо адфарматаваны на нізкім узроўні."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:4001
+msgid ""
+"Please choose whether you want to format again and remove any data on the "
+"DASD. Note that formatting a DASD might take a long time."
+msgstr ""
+"Выберыце, ці хочаце вы зноў фарматаваць і выдаліць усю інфармацыю на гэтым "
+"DASD. Майце на ўвазе, што фарматаванне DASD можа заняць працяглы час."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:5001
+msgid ""
+"The DASD ${device} is not low-level formatted. DASD devices must be "
+"formatted before you can create partitions."
+msgstr ""
+"Гэты DASD ${device} не быў раней адфарматаваны на нізкім узроўні. Каб на "
+"прыладах DASD можна было ствараць раздзелы, спачатку іх трэба адфарматаваць."
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid "The DASD ${device} is in use"
+msgstr "Гэты DASD ${device} выкарыстоўваецца"
+
+#. Type: error
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:6001
+msgid ""
+"Could not low-level format the DASD ${device} because the DASD is in use.  "
+"For example, the DASD could be a member of a mapped device in an LVM volume "
+"group."
+msgstr ""
+"Не атрымалася фарматаванне DASD ${device} таму што гэты DASD "
+"выкарыстоўваецца. Напрыклад, гэты DASD можа удзельнічаць у групе тамоў LVM."
+
+#. Type: text
+#. Description
+#. :sl5:
+#: ../s390-dasd.templates:7001
+msgid "Formatting ${device}..."
+msgstr "Фарматаванне ${device}..."
+
+#. Type: text
+#. Description
+#. Main menu item. Keep translations below 55 columns
+#. :sl5:
+#: ../s390-dasd.templates:8001
+msgid "Configure direct access storage devices (DASD)"
+msgstr "Наладзіць прылады direct access storage devices (DASD)"

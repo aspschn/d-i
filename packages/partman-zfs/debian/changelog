@@ -1,0 +1,621 @@
+partman-zfs (57) UNRELEASED; urgency=medium
+
+  * Update Vcs-{Browser,Git} to point to salsa (alioth's replacement).
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 27 Apr 2018 03:43:06 +0200
+
+partman-zfs (56) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Hungarian (hu.po) by Dr. Nagy Elemér Károly
+  * Lithuanian (lt.po) by Rimas Kudelis
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 04 Dec 2017 06:48:57 +0100
+
+partman-zfs (55) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Greek (el.po) by Sotirios Vrachas
+  * Norwegian Nynorsk (nn.po) by Allan Nordhøy
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 26 Nov 2017 20:49:36 +0100
+
+partman-zfs (54) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Albanian (sq.po) by Silva Arapi
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 18 Sep 2017 21:34:09 +0200
+
+partman-zfs (53) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Simplified Chinese (zh_CN.po) by Yangfl
+  * Traditional Chinese (zh_TW.po) by Yao Wei (魏銘廷)
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 30 Jun 2017 05:56:15 +0200
+
+partman-zfs (52) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 15 Aug 2016 10:58:18 +0200
+
+partman-zfs (51) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Serbian (sr.po) by Dragan Filipović
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 09 Jun 2016 06:43:09 +0200
+
+partman-zfs (50) unstable; urgency=medium
+
+  [ Colin Watson ]
+  * Use HTTPS for Vcs-* URLs, and link to cgit rather than gitweb.
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 07 Feb 2016 18:27:19 +0100
+
+partman-zfs (49) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Swedish (sv.po) by Martin Bagge / brother
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 27 Jan 2016 12:25:40 +0100
+
+partman-zfs (48) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Hebrew (he.po) by Lior Kaplan
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 23 Aug 2015 20:16:32 +0200
+
+partman-zfs (47) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Portuguese (Brazil) (pt_BR.po) by Adriano Rafael Gomes
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 13 Jul 2015 08:03:51 +0200
+
+partman-zfs (46) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Portuguese (Brazil) (pt_BR.po) by Adriano Rafael Gomes
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 21 May 2015 21:33:38 +0200
+
+partman-zfs (45) unstable; urgency=low
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 05 Apr 2015 18:06:21 +0200
+
+partman-zfs (44) unstable; urgency=low
+
+  [ Updated translations ]
+  * Romanian (ro.po) by Bradut Boghita
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 27 Mar 2015 06:55:42 +0100
+
+partman-zfs (43) unstable; urgency=medium
+
+  * Do not enable zpool features by default, except those that are
+    read-only compatible, and lz4_compress which is supported by
+    grub-pc >> 2.02~ (Closes: #775395)
+  * Add myself to Uploaders
+
+ -- Steven Chamberlain <steven@pyro.eu.org>  Fri, 27 Feb 2015 23:50:29 +0000
+
+partman-zfs (42) unstable; urgency=low
+
+  [ Updated translations ]
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 08 Dec 2014 16:08:29 +0100
+
+partman-zfs (41) unstable; urgency=low
+
+  [ Updated translations ]
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 22 Oct 2014 12:38:27 +0200
+
+partman-zfs (40) unstable; urgency=medium
+
+  [ Steven Chamberlain ]
+  * Team upload.
+  * Re-enable optional zpool features including lz4_compress, now that
+    grub-pc >> 2.02~ has reached testing.
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 16 Oct 2014 21:28:50 +0200
+
+partman-zfs (39) unstable; urgency=high
+
+  [ Steven Chamberlain ]
+  * Team upload.
+  * When creating new zpools, disable optional features including
+    lz4_compress, because that will require grub-pc >> 2.02~, which is
+    in sid but not jessie yet. (Closes: #764287)
+    Please revert this after grub-pc >> 2.02~ migrates.
+  * Bump zfsutils dependency to upstream version 9.2 or later, with
+    support for the zpool create -d flag required for the above
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 09 Oct 2014 14:16:40 +0200
+
+partman-zfs (38) unstable; urgency=low
+
+  [ Updated translations ]
+  * German (de.po) by Holger Wansing
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 26 Sep 2014 06:43:39 +0200
+
+partman-zfs (37) unstable; urgency=high
+
+  [ Steven Chamberlain ]
+  * Disable createfs code on GNU/kFreeBSD;  ZFS-on-Linux work introduced
+    support for non-legacy ZFS filesystems but GNU/kFreeBSD maintainers
+    prefer not to enable this feature yet.
+
+  [ Updated translations ]
+  * Estonian (et.po) by Mattias Põldaru
+  * Punjabi (Gurmukhi) (pa.po) by A S Alam
+
+ -- Cyril Brulebois <kibi@debian.org>  Sun, 14 Sep 2014 20:47:25 +0200
+
+partman-zfs (36) unstable; urgency=high
+
+  * Cope with parted 3.2 automatically creating a partition when creating a
+    fresh loop label (closes: #757664).
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 10 Aug 2014 19:43:47 +0100
+
+partman-zfs (35) unstable; urgency=medium
+
+  * Remove pre-wheezy dependency on libparted0-udeb, which is no longer
+    needed; this will become libparted2-udeb with parted 3.1.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 21 Jul 2014 15:26:37 +0100
+
+partman-zfs (34) unstable; urgency=low
+
+  [ Updated translations ]
+  * Bosnian (bs.po) by Amila Valjevčić
+  * Ukrainian (uk.po) by Anton Gladky
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 13 May 2014 07:49:45 +0200
+
+partman-zfs (33) unstable; urgency=low
+
+  [ Updated translations ]
+  * Korean (ko.po) by Changwoo Ryu
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 19 Mar 2014 18:53:14 +0100
+
+partman-zfs (32) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Hungarian (hu.po) by Judit Gyimesi
+  * Tajik (tg.po) by Victor Ibragimov
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 14 Mar 2014 18:57:52 +0100
+
+partman-zfs (31) unstable; urgency=low
+
+  [ Updated translations ]
+  * Bosnian (bs.po) by Amila Valjevčić
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 19 Dec 2013 20:06:19 +0100
+
+partman-zfs (30) unstable; urgency=low
+
+  [ Updated translations ]
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 09 Nov 2013 23:01:41 +0100
+
+partman-zfs (29) unstable; urgency=low
+
+  * Revert the following changes, since there's nothing ready for it on
+    the Linux kernel side, and we just end up shipping uninstallable linux
+    binaries:
+    - Support arch linux-any.
+
+  [ Updated translations ]
+  * Updated po files: el, eo, ga, gu, kk, mr, pl, tr.
+
+ -- Cyril Brulebois <kibi@debian.org>  Mon, 07 Oct 2013 02:20:54 +0200
+
+partman-zfs (28) unstable; urgency=low
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama Khayat
+  * German (de.po) by Holger Wansing
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 08 Sep 2013 17:03:17 +0200
+
+partman-zfs (27) unstable; urgency=low
+
+  * Fix syntax error in lib/zfs-base.sh. Closes: #720442
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 22 Aug 2013 10:15:08 +0200
+
+partman-zfs (26) unstable; urgency=low
+
+  * Rewrite the logic on waiting zfs moudule to
+    load. Closes: #720065
+  * Add check for sparc as well. Closes: #720064
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bokmål, Norwegian (nb.po) by Hans Fredrik Nordhaug
+  * Slovak (sk.po) by Ivan Masár
+  * Tajik (tg.po) by Victor Ibragimov
+  * Thai (th.po) by Theppitak Karoonboonyanan
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 19 Aug 2013 07:18:08 +0200
+
+partman-zfs (25) unstable; urgency=low
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 19 May 2013 18:19:52 +0200
+
+partman-zfs (24.tf.3) unstable; urgency=low
+
+  [ Dmitrijs Ledkovs ]
+  * Set debian source format to '3.0 (native)'.
+  * Bump debhelper compat level to 9.
+  * Set Vcs-* to canonical format.
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 13 Jul 2013 14:11:26 +0200
+
+partman-zfs (24.tf.2) unstable; urgency=low
+
+  * Add support to modify pool and filesystem options
+
+ -- Turbo Fredrkisson <turbo@bayour.com>  Fri, 10 May 2013 20:43:50 +0200
+
+partman-zfs (24.tf.1) unstable; urgency=low
+
+  * Support arch linux-any.
+
+ -- Turbo Fredriksson <turbo@bayour.com>  Mon, 06 May 2013 11:58:59 +0200
+
+partman-zfs (24) unstable; urgency=low
+
+  [ Updated translations ]
+  * Hungarian (hu.po) by Dr. Nagy Elemér Károly
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 12 Dec 2012 07:43:57 +0100
+
+partman-zfs (23) unstable; urgency=low
+
+  [ Updated translations ]
+  * Malayalam (ml.po) by Hrishikesh K B
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 21 Oct 2012 19:15:33 +0200
+
+partman-zfs (22) unstable; urgency=low
+
+  [ Updated translations ]
+  * Asturian (ast.po) by ivarela
+  * Galician (gl.po) by Jorge Barreiro
+  * Ukrainian (uk.po) by Yuri Chornoivan
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 16 Oct 2012 13:36:05 +0200
+
+partman-zfs (21) unstable; urgency=low
+
+  * Replace XC-Package-Type by Package-Type in debian/control
+  * Add myself to Uploaders.
+
+  [ Updated translations ]
+  * Lithuanian (lt.po) by Rimas Kudelis
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 23 Sep 2012 12:18:28 +0200
+
+partman-zfs (20) unstable; urgency=low
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 18 Aug 2012 18:13:20 +0200
+
+partman-zfs (19) unstable; urgency=low
+
+  [ Robert Millan ]
+  * Force generation of /boot/zfs/zpool.cache cachefile when importing
+    pre-existing pools, not just when creating new ones.
+
+  [ Aurelien Jarno ]
+  * Recode changelog in UTF-8.
+
+  [ Updated translations ]
+  * Tibetan (bo.po) by Tennom
+  * Welsh (cy.po) by Dafydd Tomos
+  * Basque (eu.po) by Piarres Beobide
+  * Finnish (fi.po) by Timo Jyrinki
+  * Irish (ga.po) by Kevin Patrick Scannell
+  * Galician (gl.po) by Jorge Barreiro
+  * Hebrew (he.po) by Omer Zak
+  * Hindi (hi.po) by Kumar Appaiah
+  * Croatian (hr.po) by Tomislav Krznar
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Icelandic (is.po) by Sveinn í Felli
+  * Lao (lo.po) by Anousak Souphavanh
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Latvian (lv.po) by Rūdolfs Mazurs
+  * Macedonian (mk.po) by Arangel Angov
+  * Panjabi (pa.po) by A S Alam
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Romanian (ro.po) by Eddy Petrișor
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Swedish (sv.po) by Martin Bagge / brother
+  * Vietnamese (vi.po) by Hai-Nam Nguyen
+  * Traditional Chinese (zh_TW.po) by Yao Wei (魏銘廷)
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 25 Jun 2012 12:46:33 +0200
+
+partman-zfs (18) unstable; urgency=low
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Bengali (bn.po) by Ayesha Akhtar
+  * Danish (da.po) by Joe Hansen
+  * Telugu (te.po) by Arjuna Rao Chavala
+
+ -- Otavio Salvador <otavio@debian.org>  Thu, 15 Mar 2012 15:15:38 -0300
+
+partman-zfs (17) unstable; urgency=low
+
+  * Allow Striped ZFS as root file system (supported in grub-pc 1.99-14).
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama Khayat
+  * Asturian (ast.po) by Mikel González
+  * Belarusian (be.po) by Pavel Piatruk
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bosnian (bs.po) by Armin Besirovic
+  * Catalan (ca.po) by Jordi Mallach
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Joe Hansen
+  * German (de.po) by Holger Wansing
+  * Dzongkha (dz.po) by Christian Perrier
+  * Greek (el.po) by galaxico
+  * Esperanto (eo.po) by Felipe Castro
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Estonian (et.po) by Mattias Põldaru
+  * Persian (fa.po) by Behrad Eslamifar
+  * French (fr.po) by Christian Perrier
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Indonesian (id.po) by Mahyuddin Susanto
+  * Icelandic (is.po) by Sveinn í Felli
+  * Italian (it.po) by Milo Casagrande
+  * Japanese (ja.po) by Kenshi Muto
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Khmer (km.po) by Khoem Sokhem
+  * Kannada (kn.po) by Prabodh C P
+  * Korean (ko.po) by Changwoo Ryu
+  * Marathi (mr.po) by sampada
+  * Dutch (nl.po) by Jeroen Schot
+  * Polish (pl.po) by Marcin Owsiany
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by Bradut Boghita
+  * Russian (ru.po) by Yuri Kozlov
+  * Sinhala (si.po) by Danishka Navin
+  * Slovak (sk.po) by Ivan Masár
+  * Serbian (sr.po) by Karolina Kalic
+  * Swedish (sv.po) by Martin Bagge / brother
+  * Tamil (ta.po) by Dr.T.Vasudevan
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Turkish (tr.po) by Mert Dirik
+  * Uyghur (ug.po) by Sahran
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Robert Millan <rmh@debian.org>  Sat, 03 Mar 2012 18:10:49 +0100
+
+partman-zfs (16) unstable; urgency=low
+
+  * Force generation of /boot/zfs/zpool.cache cachefile.
+    (Closes: #651720)
+
+  [ Updated translations ]
+  * Kannada (kn.po) by Prabodh C P
+  * Norwegian Bokmal (nb.po) by Hans Fredrik Nordhaug
+  * Dutch (nl.po) by Jeroen Schot
+  * Serbian (sr.po) by Karolina Kalic
+
+ -- Robert Millan <rmh@debian.org>  Sun, 11 Dec 2011 22:06:37 +0100
+
+partman-zfs (15) unstable; urgency=low
+
+  [ Robert Millan ]
+  * check.d/zfs_i386: source /lib/partman/lib/base.sh to enable debconf
+    commands.
+  * choose_partition/zfs/do_option: Use vg_list_pvs() instead of
+    (poorly) reinventing it.
+  * Compatibility fix for ZFS v28.
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bosnian (bs.po) by Armin Besirovic
+  * Czech (cs.po) by Miroslav Kure
+  * Dzongkha (dz.po) by Jurmey Rabgay
+  * Esperanto (eo.po) by Felipe Castro
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Basque (eu.po) by Piarres Beobide
+  * Persian (fa.po) by Behrad Eslamifar
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Khmer (km.po) by Chan Sambathratanak
+  * Kannada (kn.po) by vignesh prabhu
+  * Korean (ko.po) by Changwoo Ryu
+  * Marathi (mr.po) by sampada
+  * Dutch (nl.po) by Jeroen Schot
+  * Punjabi (Gurmukhi) (pa.po) by A S Alam
+  * Polish (pl.po) by Marcin Owsiany
+  * Romanian (ro.po) by Ioan Eugen Stan
+  * Sinhala (si.po) by Danishka Navin
+  * Slovak (sk.po) by Ivan Masár
+  * Swedish (sv.po) by Martin Bagge / brother
+  * Tamil (ta.po) by Dr.T.Vasudevan
+  * Telugu (te.po) by Arjuna Rao Chavala
+  * Turkish (tr.po) by Mert Dirik
+  * Uyghur (ug.po) by Sahran
+  * Ukrainian (uk.po) by Borys Yanovych
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Robert Millan <rmh@debian.org>  Fri, 18 Nov 2011 19:17:29 +0100
+
+partman-zfs (14) unstable; urgency=low
+
+  [ Updated translations ]
+  * German (de.po) by Holger Wansing
+  * French (fr.po) by Christian Perrier
+  * Italian (it.po) by Milo Casagrande
+  * Japanese (ja.po) by Kenshi Muto
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Russian (ru.po) by Yuri Kozlov
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Robert Millan <rmh@debian.org>  Sat, 27 Aug 2011 09:34:42 +0000
+
+partman-zfs (13) unstable; urgency=low
+
+  * Do not detect single-disk arrays as striped.
+  * Fix check.d/no_zfs_boot detection:
+    - Separate /boot with sane configuration wasn't detected as correct.
+    - Need for separate /lib/modules wasn't taken into account (see #600568).
+
+ -- Robert Millan <rmh@debian.org>  Fri, 05 Aug 2011 13:21:06 +0200
+
+partman-zfs (12) unstable; urgency=low
+
+  * Fix same size PV check.
+  * Fix vg_list_pvs check to take Mirror and RAID-Z into account.
+  * Detect configurations not currently supported by GRUB.
+
+ -- Robert Millan <rmh@debian.org>  Thu, 04 Aug 2011 15:04:16 +0200
+
+partman-zfs (11) unstable; urgency=low
+
+  * Mirror and RAID-Z support.
+  * Correct LVS/PVS output from vg_get_info (this makes deletion of ZFS
+    pools possible).
+  * Display a warning when using ZFS on machines with less than 512 MiB
+    of memory.
+
+ -- Robert Millan <rmh@debian.org>  Thu, 04 Aug 2011 03:06:14 +0200
+
+partman-zfs (10) unstable; urgency=low
+
+  * Add a few more exec bits.
+  * Use sane defaults for new ZFS datasets (borrow create_new_partition()
+    from partman-partitioning for this purpose).
+
+ -- Robert Millan <rmh@debian.org>  Tue, 02 Aug 2011 23:09:11 +0200
+
+partman-zfs (9) unstable; urgency=low
+
+  * Fix ZFS pool and dataset name check.
+  * Add missing exec bit, which was missing in a few scripts.
+
+ -- Robert Millan <rmh@debian.org>  Tue, 02 Aug 2011 01:11:32 +0200
+
+partman-zfs (8) unstable; urgency=low
+
+  * Redesign ZFS pool management (mostly based on partman-lvm).  New features
+    include:
+    - Support for ZFS pools with multiple physical devices.
+    - Support for multiple filesystems within a ZFS pool.
+    - Support for legacy filesystems using ZFS volumes (ZVOL).
+    - Arbitrary names for ZFS pools, filesystems and ZVOLs.
+
+ -- Robert Millan <rmh@debian.org>  Sun, 31 Jul 2011 21:51:47 +0200
+
+partman-zfs (7) unstable; urgency=low
+
+  [ Christian Perrier ]
+  * Resync translations with D-I master files
+
+  [ Updated translations ]
+  * Asturian (ast.po) by MAAC
+  * Belarusian (be.po) by Pavel Piatruk
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+  * Esperanto (eo.po) by Felipe Castro
+  * Estonian (et.po) by Mattias Põldaru
+  * Basque (eu.po)
+  * Hebrew (he.po) by Lior Kaplan
+  * Italian (it.po) by Milo Casagrande
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Korean (ko.po) by Changwoo Ryu
+  * Macedonian (mk.po) by Arangel Angov
+  * Marathi (mr.po) by sampada
+  * Nepali (ne.po)
+  * Romanian (ro.po) by Eddy Petrișor
+  * Russian (ru.po) by Yuri Kozlov
+  * Sinhala (si.po) by Danishka Navin
+  * Slovak (sk.po) by Ivan Masár
+  * Swedish (sv.po) by Daniel Nylander
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Uyghur (ug.po) by Sahran
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Wed, 27 Jul 2011 23:08:31 +0200
+
+partman-zfs (6) unstable; urgency=low
+
+  [ Robert Millan ]
+  * Re-enable ZFS on kfreebsd-i386. Add partman-zfs/i386 template to warn
+    users about possible stability problems on i386.
+
+  [ Updated translations ]
+  * Nepali (ne.po)
+
+ -- Robert Millan <rmh@debian.org>  Sun, 13 Feb 2011 21:53:15 +0100
+
+partman-zfs (5) unstable; urgency=low
+
+  [ Updated translations ]
+  * Central Khmer (km.po) by Khoem Sokhem
+  * Telugu (te.po) by Arjuna Rao Chavala
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Fri, 24 Dec 2010 21:33:11 -0200
+
+partman-zfs (4) unstable; urgency=low
+
+  * Disable on kfreebsd-i386.
+
+ -- Robert Millan <rmh@debian.org>  Sun, 05 Dec 2010 15:17:06 +0100
+
+partman-zfs (3) unstable; urgency=low
+
+  * Change architecture to kfreebsd-any.
+
+ -- Robert Millan <rmh@debian.org>  Sat, 06 Nov 2010 22:48:42 +0100
+
+partman-zfs (2) unstable; urgency=low
+
+  * Team upload
+  * Localize debconf templates
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 03 Nov 2010 22:07:16 +0100
+
+partman-zfs (1) unstable; urgency=low
+
+  * Took partman-ufs and s/ufs/zfs/, essentially.  (Closes: #595759)
+
+ -- Robert Millan <rmh@debian.org>  Sun, 17 Oct 2010 19:32:10 +0200

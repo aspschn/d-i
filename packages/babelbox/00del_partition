@@ -1,0 +1,30 @@
+#! /bin/sh
+
+# Script run during partman initialization to delete the extended partition
+# that contains the 'babelbox' installation.
+# It calls fdisk with the commands to delete the 3rd partition, write the
+# changes and quit.
+
+DEV="/dev/sda"
+PART=3
+
+if [ -e $DEV$PART ]; then
+	if ! fdisk -l $DEV | grep -q "$DEV$PART.*Extended"; then
+		# This is more a sanity check than that it provides real safety
+		logger -t babelbox "$DEV$PART is not an extended partition; not deleting"
+		exit 1
+	fi
+else
+	logger -t babelbox "$DEV$PART does not exist; nothing to delete"
+	exit 0
+fi
+
+logger -t babelbox "Deleting partition $PART for $DEV"
+fdisk $DEV >/dev/null 2>&1 <<EOT
+d
+$PART
+w
+q
+EOT
+
+exit 0

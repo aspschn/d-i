@@ -1,0 +1,298 @@
+partman-ufs (22) UNRELEASED; urgency=medium
+
+  [ Cyril Brulebois ]
+  * Update Vcs-{Browser,Git} to point to salsa (alioth's replacement).
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sat, 15 Dec 2018 19:20:25 +0100
+
+partman-ufs (21) unstable; urgency=medium
+
+  [ Colin Watson ]
+  * Use HTTPS for Vcs-* URLs, and link to cgit rather than gitweb.
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 11 Feb 2016 18:52:35 +0100
+
+partman-ufs (20) unstable; urgency=medium
+
+  [ Steven Chamberlain ]
+  * Set "rw" option on non-root filesystems not explicitly "rw" or "ro".
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 01 May 2015 08:50:28 +0200
+
+partman-ufs (19) unstable; urgency=medium
+
+  [ Debian Install System Team ]
+  [ Steven Chamberlain]
+  * Enable soft updates for newly-created UFS filesystems unless mounted
+    on / or /boot (Closes: #760169)
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 09 Sep 2014 08:26:09 +0200
+
+partman-ufs (18) unstable; urgency=high
+
+  * Switch architecture field from all to kfreebsd-any as this package
+    depends on kfreebsd-specific packages (ufsutils-udeb, ufs-modules),
+    which resolves the uninstallability issue on other architectures
+    (Closes: #717239).
+  * Revert priority from optional back to standard since the priority
+    was appropriate, and the monolithic image FTBFS is properly fixed
+    with the change above.
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 14 Feb 2014 12:16:51 +0300
+
+partman-ufs (17) unstable; urgency=low
+
+  * Change priority to optional to allow buiding monolithic images on
+    non-kFreeBSD architectures
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 17 Aug 2013 14:40:57 +0200
+
+partman-ufs (16) unstable; urgency=low
+
+  [ Dmitrijs Ledkovs ]
+  * Set debian source format to '3.0 (native)'.
+  * Bump debhelper compat level to 9.
+  * Set Vcs-* to canonical format.
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 13 Jul 2013 12:23:35 +0200
+
+partman-ufs (15) unstable; urgency=low
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 19 May 2013 18:17:13 +0200
+
+partman-ufs (14) unstable; urgency=low
+
+  [ Updated translations ]
+  * Malayalam (ml.po) by Hrishikesh K B
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 21 Oct 2012 19:01:15 +0200
+
+partman-ufs (13) unstable; urgency=low
+
+  * Add myself to Uploaders
+
+  [ Updated translations ]
+  * Galician (gl.po) by Jorge Barreiro
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 16 Oct 2012 13:31:42 +0200
+
+partman-ufs (12) unstable; urgency=low
+
+  [ Updated translations ]
+  * Spanish (es.po) by Javier Fernández-Sanguino
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 26 Jul 2012 02:37:49 +0200
+
+partman-ufs (11) unstable; urgency=low
+
+  * Team upload
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 21 Jun 2012 22:58:37 +0200
+
+partman-ufs (10) unstable; urgency=low
+
+  * Team upload
+  * Replace XC-Package-TYpe with Package-Type
+
+  [ Updated translations ]
+  * Tibetan (bo.po) by Tennom
+  * Welsh (cy.po) by Dafydd Tomos
+  * Finnish (fi.po) by Timo Jyrinki
+  * Galician (gl.po) by Jorge Barreiro
+  * Hebrew (he.po) by Omer Zak
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Icelandic (is.po) by Sveinn í Felli
+  * Lao (lo.po) by Anousak Souphavanh
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Latvian (lv.po) by Rūdolfs Mazurs
+  * Macedonian (mk.po) by Arangel Angov
+  * Panjabi (pa.po) by A S Alam
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Vietnamese (vi.po) by Hai-Nam Nguyen
+  * Traditional Chinese (zh_TW.po) by Yao Wei (魏銘廷)
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 16 Jun 2012 07:46:00 +0200
+
+partman-ufs (9) unstable; urgency=low
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama Khayat
+  * Asturian (ast.po) by Mikel González
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bosnian (bs.po) by Armin Besirovic
+  * Catalan (ca.po) by Jordi Mallach
+  * Danish (da.po) by Joe Hansen
+  * German (de.po) by Holger Wansing
+  * Dzongkha (dz.po) by dawa pemo
+  * Greek (el.po) by galaxico
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Estonian (et.po) by Mattias Põldaru
+  * Basque (eu.po)
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Indonesian (id.po) by Mahyuddin Susanto
+  * Icelandic (is.po) by Sveinn í Felli
+  * Italian (it.po) by Milo Casagrande
+  * Japanese (ja.po) by Kenshi Muto
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Khmer (km.po) by Khoem Sokhem
+  * Kannada (kn.po) by Prabodh C P
+  * Macedonian (mk.po) by Arangel Angov
+  * Norwegian Bokmal (nb.po) by Hans Fredrik Nordhaug
+  * Dutch (nl.po) by Jeroen Schot
+  * Punjabi (Gurmukhi) (pa.po) by A S Alam
+  * Polish (pl.po) by Marcin Owsiany
+  * Romanian (ro.po) by Ioan Eugen Stan
+  * Sinhala (si.po)
+  * Serbian (sr.po) by Karolina Kalic
+  * Tamil (ta.po) by Dr.T.Vasudevan
+  * Telugu (te.po) by Arjuna Rao Chavala
+  * Turkish (tr.po) by Mert Dirik
+  * Ukrainian (uk.po) by Borys Yanovych
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Otavio Salvador <otavio@debian.org>  Thu, 15 Mar 2012 15:14:05 -0300
+
+partman-ufs (8) unstable; urgency=low
+
+  * Team upload
+
+  [ Robert Millan ]
+  * Adjust partman-ufs/root_not_ufs to take ZFS into account.
+    (missing part of #605029, closes: #605029).
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Pavel Piatruk
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bengali (bn.po) by Israt Jahan
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+  * Esperanto (eo.po) by Felipe Castro
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Estonian (et.po) by Mattias Põldaru
+  * Persian (fa.po) by Behrad Eslamifar
+  * French (fr.po) by Christian Perrier
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Korean (ko.po) by Changwoo Ryu
+  * Marathi (mr.po) by sampada
+  * Nepali (ne.po)
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by Eddy Petrișor
+  * Russian (ru.po) by Yuri Kozlov
+  * Northern Sami (se.po) by Børre Gaup
+  * Slovak (sk.po) by Ivan Masár
+  * Swedish (sv.po) by Daniel Nylander
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Uyghur (ug.po) by Sahran
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 30 Apr 2011 12:23:04 +0200
+
+partman-ufs (7) unstable; urgency=low
+
+  [ Updated translations ]
+  * Central Khmer (km.po) by Khoem Sokhem
+  * Telugu (te.po) by Arjuna Rao Chavala
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Fri, 24 Dec 2010 21:31:56 -0200
+
+partman-ufs (6) unstable; urgency=low
+
+  * Team upload.
+  * Disable partman-ufs/root_not_ufs on ZFS.  Part of #605029.
+
+ -- Robert Millan <rmh@debian.org>  Fri, 03 Dec 2010 18:09:24 +0100
+
+partman-ufs (5) unstable; urgency=low
+
+  [ Updated translations ]
+  * Bengali (bn.po) by Israt Jahan
+  * Catalan (ca.po) by Jordi Mallach
+  * Danish (da.po) by Anders Jenbo
+  * Greek, Modern (1453-) (el.po) by Emmanuel Galatoulas
+  * Esperanto (eo.po) by Felipe Castro
+  * Estonian (et.po) by Mattias Põldaru
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Indonesian (id.po) by Arief S Fitrianto
+  * Icelandic (is.po) by Sveinn í Felli
+  * Korean (ko.po) by Changwoo Ryu
+  * Dutch (nl.po) by Eric Spreen
+  * Polish (pl.po) by Bartosz Fenski
+  * Tamil (ta.po) by Dr.T.Vasudevan
+  * Ukrainian (uk.po) by Borys Yanovych
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 12 Nov 2010 16:28:43 -0200
+
+partman-ufs (4) unstable; urgency=low
+
+  [ Aurelien Jarno ]
+  * Fix mount options list.
+  * Make sure /tmp is not mounted as noexec.
+
+  [ Updated translations ]
+  * Asturian (ast.po) by maacub
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Danish (da.po) by Jacob Sparre Andersen
+  * Basque (eu.po) by Piarres Beobide
+  * Finnish (fi.po) by Esko Arajärvi
+  * Galician (gl.po) by Jorge Barreiro
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Bokmål, Norwegian (nb.po) by Hans Fredrik Nordhaug
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 23 Aug 2010 17:57:01 +0200
+
+partman-ufs (3) unstable; urgency=low
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+  * Spanish (es.po) by Omar Campagne
+  * Persian (fa.po) by Farnaz Pirasteh
+  * French (fr.po) by Christian Perrier
+  * Italian (it.po) by Milo Casagrande
+  * Japanese (ja.po) by Kenshi Muto
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Marathi (mr.po) by Sampada
+  * Panjabi (pa.po) by A S Alam
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by ioan-eugen STAN
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Ivan Masár
+  * Serbian (sr.po) by Janos Guljas
+  * Swedish (sv.po) by Daniel Nylander
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 28 Jul 2010 08:29:45 +0200
+
+partman-ufs (2) unstable; urgency=low
+
+  [ Aurelien Jarno ]
+  * Correctly display already existing UFS partition.
+  * Add support for setting the reserved size.
+
+  [ Colin Watson ]
+  * Use 'dh $@ --options' rather than 'dh --options $@', for
+    forward-compatibility with debhelper v8.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 15 Jul 2010 11:49:18 +0200
+
+partman-ufs (1) unstable; urgency=low
+
+  [ Aurelien Jarno ]
+  * Took partman-xfs and s/xfs/ufs/, essentially.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 06 Jul 2010 18:24:15 +0200

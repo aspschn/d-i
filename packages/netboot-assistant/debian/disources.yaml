@@ -1,0 +1,4 @@
+addon: disources
+description: "allow syntax highlighting for disources files"
+files: 
+  - syntax/disources.vim

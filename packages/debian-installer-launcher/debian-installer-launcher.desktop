@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Install Debian
+Name[fr]=Installer Debian
+Name[da]=Installer Debian
+Comment=Install this system permanently to your hard disk
+Comment[fr]=Installer ce système de manière permanente sur votre disque dur
+Comment[da]=Installer dette system permanent på din harddisk
+Exec=su-to-root -X -c /usr/sbin/debian-installer-launcher
+Icon=debian-installer-launcher
+Type=Application
+Categories=Application;System;
+StartupNotify=true
+Terminal=false

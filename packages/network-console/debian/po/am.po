@@ -1,0 +1,233 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Amharic translation for debian-installer
+# This file is distributed under the same license as the debian-installer package.
+# tegegne tefera <tefera@mekuria.com>, 2006.
+#
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004.
+#   Data taken from ICU-2.8; contributed by:
+#   - Daniel Yacob <yacob@geez.org>, Ge'ez Frontier Foundation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: network-console@packages.debian.org\n"
+"POT-Creation-Date: 2012-10-01 22:05+0000\n"
+"PO-Revision-Date: 2014-04-04 22:07+0100\n"
+"Last-Translator: Tegegne Tefera <tefera@mekuria.com>\n"
+"Language-Team: Amharic <linux-ethiopia@googlegroups.com>\n"
+"Language: am\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: n>1;\n"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:1001
+msgid "Continue installation remotely using SSH"
+msgstr "SSHን በመጠቀም ከርቀት ተከላውን ቀጥል"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start installer"
+msgstr "ተካይን አስነሳ"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start installer (expert mode)"
+msgstr "ተካይን አስነሳ (ላባለ እውቀት)"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../network-console.templates:2001
+msgid "Start shell"
+msgstr "ቀፎ አስነሳ"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid "Network console option:"
+msgstr "የአውታር መደብ ምርጫዎች"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid ""
+"This is the network console for the Debian installer. From here, you may "
+"start the Debian installer, or execute an interactive shell."
+msgstr ""
+"ይህ የደቢያን የአውታር ኮንሶል ነው። ከዚህ የደቢያንን ተካይ ዋና ምናሌ ወይም የሰጣገባ ቀፎን ማስነሳት ይችላሉ።"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../network-console.templates:2002
+msgid "To return to this menu, you will need to log in again."
+msgstr "ወደዚህ ምናሌ ለመመለስ እንደገና ሎግመግባት ያስፈልግዎታል።"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../network-console.templates:3001
+msgid "Generating SSH host key"
+msgstr "የSSH ተጠሪ ቁልፍን በማመንጨት ላይ"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid "Remote installation password:"
+msgstr "የከሩቅ ተከላ ሚስጢር ቃል፦"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid ""
+"You need to set a password for remote access to the Debian installer. A "
+"malicious or unqualified user with access to the installer can have "
+"disastrous results, so you should take care to choose a password that is not "
+"easy to guess. It should not be a word found in the dictionary, or a word "
+"that could be easily associated with you, like your middle name."
+msgstr ""
+"ለደብያን ተካይ ከሩቅ አገባብ ማለፊያ ቃል ሊሰጡት ይገባል። ተንኮለኛ ወይም ብቃት የሌለው ሰው ወደ ተካዩ መግባት ከቻለ "
+"ጥፋት ሊያስከትል ስለሚችል በግምት ሊገኝ የማይችል ማለፊያ ቃል በጥንቃቄ ይምረጡ። በመዝገበቃላት ውስጥ የሚገኝ ወይም "
+"ከርስዎ ጋር በቀላሉ ሊገናኝ የሚችል ቃል ለምሳሌ የናትዎን ስም አይጠቀሙ።"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:4001
+msgid ""
+"This password is used only by the Debian installer, and will be discarded "
+"once you finish the installation."
+msgstr "ይህ ማለፊያቃል ጠቃሚነቱ ለደቢያን ተካይ ብቻ ነው። አንዴ ተከላው ከተጠናቀቀ በኋላ ይሰረዛል።"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+msgid "Re-enter password to verify:"
+msgstr "ለማረጋገጥ ማለፊያቃልን እንደገና ያስገቡ፦"
+
+#. Type: password
+#. Description
+#. :sl3:
+#: ../network-console.templates:5001
+msgid ""
+"Please enter the same remote installation password again to verify that you "
+"have typed it correctly."
+msgstr "እባክዎ ተመሳሳይ የሩቅ ተከላ ማለፊያቃል በማስገባት በትክክል መጻፍዎትን ያረጋግጡ።"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid "Empty password"
+msgstr "ባዶ የሚስጢር ቃል"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:6001
+msgid ""
+"You entered an empty password, which is not allowed. Please choose a non-"
+"empty password."
+msgstr "ባዶ ማለፊያ ቃል አስገብተዋል፡፡ ይህ አይፈቀድም፡፡ እባክዎ ባዶ ያልሆነ ማለፊያ ቃል ያስገቡ፡፡"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+msgid "Password mismatch"
+msgstr "ሚስጢር ቃል አለመስማማት"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:7001
+msgid ""
+"The two passwords you entered were not the same. Please enter a password "
+"again."
+msgstr "ሁለቱ የጻፉዋቸው ማለፊያ ቃላት አንድ አይደሉም። እባክዎን ማለፊያቃሉን እንደገና ያስገቡ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "Start SSH"
+msgstr "SSH አስነሳ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+#, fuzzy
+msgid ""
+"To continue the installation, please use an SSH client to connect to the IP "
+"address ${ips} and log in as the \"installer\" user. For example:"
+msgstr ""
+"ተከላውን ለምቀጠል እባክዎ SSH ጠሪን ከIP አድራሻ ${ip} ለመገናኘት ይጠቀሙ።  ከዚያ እንደ \"installer\" "
+"ተጠቃሚ ተሰይመው ይግቡ።"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid "The fingerprint of this SSH server's host key is: ${fingerprint}"
+msgstr "የSSH ተጠሪ መግቢያ ቁልፍ አሻራ፦ ${fingerprint}"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../network-console.templates:8001
+msgid ""
+"Please check this carefully against the fingerprint reported by your SSH "
+"client."
+msgstr "እባክዎ ይህንን የSSH ጠሪው ሪፖርት ካደረገው ጋር በጥንቃቄ ያመሳክሩት፡፡"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Could not fetch SSH authorized keys"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Translators: do NOT translate the "LOCATION" variable name
+#: ../network-console.templates:10001
+#, fuzzy
+msgid "An error occurred while fetching SSH authorized keys from ${LOCATION}."
+msgstr "አዲስ keyfile ሲፈጠር ስህተት ተከስቷል"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../network-console.templates:10001
+msgid "Check /var/log/syslog or see virtual console 4 for the details."
+msgstr "ለዝርዝሩ /var/log/syslog ወይም virtual console 4ን ይመልከቱ።"

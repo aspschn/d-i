@@ -1,0 +1,223 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# German messages for debian-installer (sublevel1).
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# #
+# This file is distributed under the same license as debian-installer.
+# Holger Wansing <linux@wansing-online.de>, 2008 - 2015.
+# Jens Seidel <jensseidel@users.sf.net>, 2005, 2006, 2007, 2008.
+# Dennis Stampfer <seppy@debian.org>, 2003, 2004, 2005.
+# Alwin Meschede <ameschede@gmx.de>, 2003, 2004.
+# Bastian Blank <waldi@debian.org>, 2003.
+# Jan Luebbe <jluebbe@lasnet.de>, 2003.
+# Thorsten Sauter <tsauter@gmx.net>, 2003.
+# #
+# Console-setup strings translations:
+# (identified by "./console-setup.templates")
+# Copyright (C) 2006, the console-setup package'c copyright holder
+# Copyright (C) 2006, Matthias Julius
+# Copyright (C) 2007-2009 Helge Kreutzmann
+# Copyright (C) 2008-2011 Holger Wansing
+# #
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@computer.org>, 2001.
+# Björn Ganslandt <bganslan@gmx.net>, 2000, 2001.
+# Bruno Haible <bruno@clisp.org>, 2004, 2007.
+# Christian Stimming <stimming@tuhh.de>, 2006.
+# Dennis Stampfer <seppy@debian.org>, 2004.
+# Karl Eichwalder <ke@suse.de>, 2001.
+# Simon Hürlimann <simon.huerlimann@access.unizh.ch>, 2004.
+# Stefan Siegel <siegel@mandrakesoft.com>, 2001.
+# Tobias Quathamer <toddy@debian.org>, 2006, 2007, 2008, 2009, 2010.
+# Translations taken from ICU SVN on 2007-09-09
+# Wolfgang Rohdewald <wolfgang@rohdewald.de>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2015-11-21 15:11+0100\n"
+"Last-Translator: Holger Wansing <linux@wansing-online.de>\n"
+"Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "Das Netzwerk-Speichergerät konfigurieren"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD-Konfigurationsaktion:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "Derzeit sind ${NUMBER} Geräte verbunden."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "Netzwerk-Speichergeräte-Server:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"Bitte geben Sie den Host-Namen oder die IP-Adresse des Systems ein, auf dem "
+"der NBD-Server (Netzwerk-Speichergeräte-Server) läuft."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "Name für NBD-Export"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"Bitte geben Sie den Namen des NBD-Exports ein, der für den Zugriff auf nbd-"
+"server benötigt wird. Der eingegebene Name sollte mit einem auf dem Server "
+"vorhandenen Export identisch sein."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "Geräteknoten des Netzwerk-Speichergeräts:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"Bitte wählen Sie den Geräteknoten des Netzwerk-Speichergeräts, den Sie "
+"verbinden oder trennen möchten."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr ""
+"Verbindung zum NBD-Server (Netzwerk-Speichergeräte-Server) fehlgeschlagen"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"Verbinden zum NBD-Server fehlgeschlagen. Bitte stellen Sie sicher, dass Host "
+"und Export-Name, die Sie eingegeben haben, korrekt sind, dass der NBD-Server "
+"auf diesem Host läuft und dass das Netzwerk korrekt konfiguriert ist; "
+"versuchen Sie es dann erneut."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "Keine weiteren Geräteknoten für Netzwerk-Speichergeräte mehr übrig"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"Entweder sind alle verfügbaren NBD-Geräteknoten in Benutzung oder "
+"irgendetwas ist bei der Erkennung der Geräteknoten schiefgelaufen."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"Es können keine weiteren NBD-Geräteknoten konfiguriert werden, bevor nicht "
+"die Verbindung zu einem bereits konfigurierten getrennt wird."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr ""
+"Es wurden keine verbundenen Geräteknoten für Netzwerk-Speichergeräte "
+"gefunden."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"Derzeit sind keinerlei Geräteknoten für Netzwerk-Speichergeräte mit "
+"irgendeinem Server verbunden. Daher können Sie auch keine Verbindung zu "
+"einem solchen trennen."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "Mit einem Netzwerk-Speichergerät verbinden"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "Verbindung zu einem Netzwerk-Speichergerät trennen"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "Abschließen und zum Partitionierungsprogramm zurückkehren"

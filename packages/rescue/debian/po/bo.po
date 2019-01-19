@@ -1,0 +1,369 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Tibetan translation for Debian Installer.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: rescue@packages.debian.org\n"
+"POT-Creation-Date: 2016-07-01 22:00+0000\n"
+"PO-Revision-Date: 2012-04-14 22:12+0600\n"
+"Last-Translator: Tennom <tankola@ymail.com, tennomyathog@gmail.com>\n"
+"Language-Team: bo <translation-team-bo@lists.sourceforge.net>\n"
+"Language: bo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Type: title
+#. Description
+#. Info message displayed when running in rescue mode
+#. :sl2:
+#: ../rescue-check.templates:2001
+msgid "Rescue mode"
+msgstr "མྱུར་སྐྱོབ་ཀྱི་རྣམ་པ"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../rescue-mode.templates:1001
+msgid "Enter rescue mode"
+msgstr "མྱུར་སྐྱོབ་ཀྱི་རྣམ་པའི་ནང་དུ་འཛུལ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:2001
+#, fuzzy
+msgid "No partitions found"
+msgstr "གསོག་སྡེར་ཁག་བཟོ་རུང་འཇུག་མཛོད་མེད་པ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:2001
+msgid ""
+"The installer could not find any partitions, so you will not be able to "
+"mount a root file system. This may be caused by the kernel failing to detect "
+"your hard disk drive or failing to read the partition table, or the disk may "
+"be unpartitioned. If you wish, you may investigate this from a shell in the "
+"installer environment."
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../rescue-mode.templates:3001
+msgid "Assemble RAID array"
+msgstr "RAID array མཉམ་དུ་སྒྲིག་པ"
+
+#. Type: select
+#. Choices
+#: ../rescue-mode.templates:3001
+msgid "Do not use a root file system"
+msgstr "རྩ་བའི་ཡིག་ཆ་མ་ལག་སྤྱོད་མི་ཉན"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:3002
+msgid "Device to use as root file system:"
+msgstr "རྩ་བའི་ཡིག་ཆ་མ་ལག་བཞིན་སྤྱོད་དགོས་པའི་སྒྲིག་ཆས："
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:3002
+msgid ""
+"Enter a device you wish to use as your root file system. You will be able to "
+"choose among various rescue operations to perform on this file system."
+msgstr ""
+"ཁྱོད་ཀྱི་རྩ་བའི་ཡིག་ཆ་མ་ལག་ལ་སྤྱོད་དགོས་པའི་སྒྲིག་ཆས་ཞིག་འཇུག་དགོས་པ ཁྱོད་ཀྱིས་མྱུར་སྐྱོབ་ཀྱི་ལས་འགུལ་འདྲ་"
+"མིན་གང་ཞིག་བདམས་ནས་ཡིག་ཆའི་མ་ལག་འདིའི་ཐོག་ཏུ་སྤྱོད་ཆོག"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:3002
+msgid ""
+"If you choose not to use a root file system, you will be given a reduced "
+"choice of operations that can be performed without one. This may be useful "
+"if you need to correct a partitioning problem."
+msgstr ""
+"གལ་སྲིད་རྩ་བའི་ཡིག་ཆ་མ་ལག་ཞིག་མ་བདམས་ན་ལས་འགུལ་དེ་ལས་ཉུང་ཙམ་བཏོན་པ་དང་ལས་འགུལ་དེ་མ་བདམས་"
+"པར་བཟོས་ནའང་ཆོག འདི་ཕལ་ཆེར་གསོག་སྡེར་ཁག་སྐྱོན་དག་བཅོས་སྐབས་ཕན་ཐོགས་ཆེ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:4001
+msgid "No such device"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:4001
+msgid ""
+"The device you entered for your root file system (${DEVICE}) does not exist. "
+"Please try again."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:5001
+#, fuzzy
+msgid "Mount failed"
+msgstr "ཡིག་ཆའི་མ་ལག་བཀར་བར་བཤིག་བཞིན་པ་་་"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:5001
+msgid ""
+"An error occurred while mounting the device you entered for your root file "
+"system (${DEVICE}) on /target."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:5001
+#, fuzzy
+msgid "Please check the syslog for more information."
+msgstr "དམིགས་འཛུགས་ཀྱི་དར་ཚིགས་ཞིག་གམ་ཡང་ན་གཞན་ཞིག་ལ་ལྟ་རོགས"
+
+#. Type: select
+#. Description
+#: ../rescue-mode.templates:6001
+msgid "Rescue operations"
+msgstr "གནས་ཚུལ་འཕྲད་སྐབས་མྱུར་སྐྱོབ་ཀྱི་སྤྱོད་བྱ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:7001
+#, fuzzy
+msgid "Rescue operation failed"
+msgstr "ཆེ་ཆུང་བསྒྱུར་བཟོའི་ལས་འགུལ་ལེགས་འགྲུབ་མ་ཐུབ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:7001
+#, fuzzy
+msgid "The rescue operation '${OPERATION}' failed with exit code ${CODE}."
+msgstr "བཀའ་བརྡ་ \"${COMMAND}\" བཀོལ་སྤྱོད་བྱས་མ་ཐུབ། ནོར་འཁྲུལ་ཨང་རྟགས་ ${CODE} རེད།"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:8001
+msgid "Execute a shell in ${DEVICE}"
+msgstr "${DEVICE} ནང་དུ་འཇུག་སྒོ་ཞིག་བཀོལ་སྤྱོད་བྱེད"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:9001
+msgid "Execute a shell in the installer environment"
+msgstr "སྒྲིག་འཇུག་ཆས་ཀྱི་ཁོར་ཡུག་ནང་དུ་འཇུག་སྒོ་ཞིག་བཀོལ་སྤྱོད་བྱེད་པ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:10001
+msgid "Choose a different root file system"
+msgstr "རྩ་བའི་ཡིག་ཆ་མ་ལག་གཞན་ཞིག་འདེམས་པ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:11001
+msgid "Reboot the system"
+msgstr "མ་ལག་དེ་འགོ་བསྐྱར་འཛུགས་བྱེད་པ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. Type: text
+#. Description
+#. :sl2:
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:12001 ../rescue-mode.templates:16001
+#: ../rescue-mode.templates:17001
+msgid "Executing a shell"
+msgstr "འཇུག་སྒོ་ཞིག་བཀོལ་སྤྱོད་བྱེད་བཞིན་པ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:12001
+msgid ""
+"After this message, you will be given a shell with ${DEVICE} mounted on \"/"
+"\". If you need any other file systems (such as a separate \"/usr\"), you "
+"will have to mount those yourself."
+msgstr ""
+"བརྡ་འཕྲིན་འདིའི་རྗེས་སུ་ \"/\" ཐོག་ཏུ་བཀར་ཡོད་པའི་${DEVICE} འཇུག་སྒོ་ཞིག་མཁོ་སྤྲོད་བྱེད་སྲིད། གལ་སྲིད་"
+"ཡིག་ཆའི་མ་ལག་གཞན་ཞིག་(དཔེར་ན་\"/usr\"སོ་སོར་ཡིན་པ) དགོས་ན་རེ་རེར་བཞིན་རང་ཉིད་ཀྱིས་བཀར་དགོས"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:13001
+msgid "Error running shell in /target"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:13001
+msgid ""
+"A shell (${SHELL}) was found on your root file system (${DEVICE}), but an "
+"error occurred while running it."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:14001
+#, fuzzy
+msgid "No shell found in /target"
+msgstr "/target ཐོག་ཏུ་བཀར་ཡོད་པའི་ཡིག་ཆ་མ་ལག་མེད་པ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../rescue-mode.templates:14001
+msgid "No usable shell was found on your root file system (${DEVICE})."
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:15001
+msgid "Interactive shell on ${DEVICE}"
+msgstr "${DEVICE} ཐོག་གི་འཇུག་སྒོ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:16001
+msgid ""
+"After this message, you will be given a shell with ${DEVICE} mounted on \"/"
+"target\". You may work on it using the tools available in the installer "
+"environment. If you want to make it your root file system temporarily, run "
+"\"chroot /target\". If you need any other file systems (such as a separate "
+"\"/usr\"), you will have to mount those yourself."
+msgstr ""
+"བརྡ་འཕྲིན་འདིའི་རྗེས་སུ་\"/target\" ཐོག་ཏུ་བཀར་ཡོད་པའི་${DEVICE} འཇུག་སྒོ་ཞིག་མཁོ་སྤྲོད་བྱེད་སྲིད། "
+"ཁྱོད་ཀྱི་སྒྲིག་འཇུག་ཆས་ཀྱི་ནང་དུ་ཡོད་པའི་ལག་ཆ་སྤྱད་ནས་དེའི་ཐོག་བཟོ་བཅོས་བྱེད་ཆོག གནས་སྐབས་རིང་དེ་རྩ་བའི་"
+"མ་ལག་བཞིན་སྤྱོད་དགོས་ན་\"chroot /target\" འཁོར་སྐྱོད་བྱེད་དགོས། གལ་སྲིད་ཡིག་ཆའི་མ་ལག་གཞན་ཞིག་"
+"(དཔེར་ན་\"/usr\"སོ་སོར་ཡིན་པ) དགོས་ན་རེ་རེར་བཞིན་རང་ཉིད་ཀྱིས་བཀར་དགོས"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:17001
+msgid ""
+"After this message, you will be given a shell in the installer environment. "
+"No file systems have been mounted."
+msgstr ""
+"བརྡ་འཕྲིན་འདིའི་རྗེས་སུ་སྒྲིག་འཇུག་ཆས་ནང་དུ་འཇུག་སྒོ་ཞིག་སྟེར་སྲིད། ཡིག་ཆའི་མ་ལག་གང་ཡང་བཀར་མེད་པ"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:18001
+msgid "Interactive shell in the installer environment"
+msgstr "སྒྲིག་འཇུག་ཁོར་ཡུག་ནང་གི་འཇུག་སྒོ"
+
+#. Type: password
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:19001
+msgid "Passphrase for ${DEVICE}:"
+msgstr "${DEVICE} གི་གསང་གྲངས"
+
+#. Type: password
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:19001
+msgid "Please enter the passphrase for the encrypted volume ${DEVICE}."
+msgstr "གསང་གྲངས་ཀྱིས་སྲུང་ཡོད་པའི་ཚན་ཁག་${DEVICE} ལ་གསང་གྲངས་འཇུག་རོགས"
+
+#. Type: password
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:19001
+msgid ""
+"If you don't enter anything, the volume will not be available during rescue "
+"operations."
+msgstr "ཁྱོད་ཀྱིས་གང་ཡང་མ་འཇུག་ན་ཚན་ཁག་དེ་མྱུར་སྐྱོབ་ལས་འགུལ་གྱི་རིང་སྤྱོད་མི་རུང་བ"
+
+#. Type: multiselect
+#. Choices
+#: ../rescue-mode.templates:20001
+msgid "Automatic"
+msgstr "རང་འགུལ"
+
+#. Type: multiselect
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:20002
+msgid "Partitions to assemble:"
+msgstr "སྒྲིག་འཛུགས་བྱེད་དགོས་པའི་གསོག་སྡེར་ཁག："
+
+#. Type: multiselect
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:20002
+msgid ""
+"Select the partitions to assemble into a RAID array. If you select "
+"\"Automatic\", then all devices containing RAID physical volumes will be "
+"scanned and assembled."
+msgstr ""
+"RAID ནང་སྒྲིག་འཛུགས་བྱེད་དགོས་པའི་གསོག་སྡེར་ཁག་འདེམས་དགོས་པ། ཁྱོད་ཀྱིས་\"རང་འགུལ་\"བདམས་ན་RAID "
+"དངོས་ཡོད་ཚན་ཁག་དེ་དག་འཚོར་བཤེར་བྱེད་པ་དང་སྒྲིག་འཛུགས་བྱེད་དོ"
+
+#. Type: multiselect
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:20002
+msgid ""
+"Note that a RAID partition at the end of a disk may sometimes cause that "
+"disk to be mistakenly detected as containing a RAID physical volume. In that "
+"case, you should select the appropriate partitions individually."
+msgstr ""
+"གསལ་བརྡ། གསོག་སྡེར་མཐའ་ཡི་RAID ཁག་འདིས་སྐབས་རེ་གསོག་སྡེར་ཐོག་ཏུ་RAID དངོས་ཡོད་ཚན་ཁག་དང་ནོར་"
+"འགྲོ་བས་གནས་ཚུལ་འདིའི་སྐབས་འོས་འཚམས་ཀྱི་གསོག་སྡེར་ཁག་ཞིག་འདེམས་དགོས"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:21001
+#, fuzzy
+msgid "Mount separate ${FILESYSTEM} partition?"
+msgstr "/home ལ་ཁག་ལོག་ཏུ་བཟོ་བ"
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:21001
+msgid "The installed system appears to use a separate ${FILESYSTEM} partition."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl2:
+#: ../rescue-mode.templates:21001
+msgid ""
+"It is normally a good idea to mount it as it will allow operations such as "
+"reinstalling the boot loader. However, if the file system on ${FILESYSTEM} "
+"is corrupt then you may want to avoid mounting it."
+msgstr ""

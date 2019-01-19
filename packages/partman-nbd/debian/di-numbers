@@ -1,0 +1,3 @@
+choose_partition lib/partman
+init.d lib/partman
+finish.d lib/partman

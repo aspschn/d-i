@@ -1,0 +1,24 @@
+Source: media-retriever
+Section: debian-installer
+Priority: optional
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: dpkg-dev (>= 1.7.0), po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/media-retriever
+Vcs-Git: https://salsa.debian.org/installer-team/media-retriever.git
+
+Package: media-retriever
+Package-Type: udeb
+Architecture: all
+Depends: ${misc:Depends}, mountmedia
+Provides: retriever
+Description: Fetches modules from removable media
+
+Package: load-media
+Package-Type: udeb
+Architecture: all
+Priority: optional
+Depends: ${misc:Depends}, media-retriever, anna
+XB-Installer-Menu-Item: 1100
+Description: Load installer components from removable media

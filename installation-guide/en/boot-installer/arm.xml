@@ -1,0 +1,522 @@
+<!-- retain these comments for translator revision tracking -->
+<!-- $Id$ -->
+
+
+  <sect2 arch="armhf;armel" id="boot-image-formats">
+    <title>Boot image formats</title>
+    <para>
+      On ARM-based systems in most cases one of two formats for boot images
+      is used: a) standard Linux zImage-format kernels
+      (<quote>vmlinuz</quote>) in conjunction with standard Linux initial
+      ramdisks (<quote>initrd.gz</quote>) or b) uImage-format kernels
+      (<quote>uImage</quote>) in conjunction with corresponding initial
+      ramdisks (<quote>uInitrd</quote>).
+    </para>
+    <para>
+      uImage/uInitrd are image formats designed for the U-Boot firmware that
+      is used on many ARM-based systems (mostly 32-bit ones). Older U-Boot versions can only
+      boot files in uImage/uInitrd format, so these are often used on
+      older armel systems. Newer U-Boot versions can - besides booting
+      uImages/uInitrds - also boot standard Linux kernels and ramdisk images,
+      but the command syntax to do that is slightly different from that
+      for booting uImages.
+    </para>
+    <para>
+      For systems using a multiplatform kernel, besides kernel and initial
+      ramdisk a so-called device-tree file (or device-tree blob,
+      <quote>dtb</quote>) is needed. It is specific to each supported system
+      and contains a description of the particular hardware. The dtb
+      should be supplied on the device by the firmware, but in practice a
+      newer one often needs to be loaded.
+    </para>
+  </sect2>
+
+  <sect2 arch="armhf" id="armhf-console-setup">
+    <title>Console configuration</title>
+    <para>
+      The netboot tarball (<xref
+      linkend="boot-armhf-netboot.tar.gz"/>), and the installer
+      SD-card images (<xref linkend="boot-installer-sd-image"/>) use
+      the (platform-specific) default console that is defined by
+      U-Boot in the <quote>console</quote> variable.  In most cases
+      that is a serial console, so on those platforms you by default
+      need a serial console cable to use the installer.
+    </para>
+    <para>
+      On platforms which also support a video console, you can modify the
+      U-Boot <quote>console</quote> variable accordingly if you would like
+      the installer to start on the video console.
+    </para>
+  </sect2>
+
+  <sect2 arch="arm64" id="arm64-console-setup">
+    <title>Console configuration</title>
+    <para>
+      The graphical installer is not enabled on the arm64 &d-i; images
+      for stretch so the serial console is used. The console device
+      should be detected automatically from the firmware, but if it is
+      not then after you boot linux from the GRUB menu you will see a
+      <quote>Booting Linux</quote> message, then nothing more.
+    </para>
+    <para>
+      If you hit this issue you will need to set a specific console
+      config on the kernel command line. Hit <userinput>e</userinput>
+      for <quote>Edit Kernel command-line</quote> at the GRUB menu, and change
+      <informalexample><screen>--- quiet</screen></informalexample> to
+      <informalexample><screen>console=&lt;device&gt;,&lt;speed&gt;</screen></informalexample>
+      e.g. <informalexample><screen>console=ttyAMA0,115200n8</screen></informalexample>.
+      When finished hit <keycombo><keycap>Control</keycap>
+      <keycap>x</keycap></keycombo> to continue booting with new
+      setting.
+    </para>
+  </sect2>
+
+  <sect2 arch="arm64" id="juno-installation">
+    <title>Juno Installation</title>
+    <para>
+      Juno has UEFI so the install is straightforward.  The most
+      practical method is installing from USB stick. You need up to
+      date firmware for USB-booting to work. Builds from <ulink
+      url="&url-juno-firmware;">&url-juno-firmware;</ulink> after March
+      2015 tested OK. Consult Juno documentation on firmware updating.
+    </para>
+    <para>
+      Prepare a standard arm64 CD image on a USB stick. Insert it in
+      one of the USB ports on the back. Plug a serial cable into the
+      upper 9-pin serial port on the back. If you need networking
+      (netboot image) plug the ethernet cable into the socket on the
+      front of the machine.
+    </para>
+    <para>
+      Run a serial console at 115200, 8bit no parity, and boot the
+      Juno. It should boot from the USB stick to a GRUB menu.
+      The console config is not correctly detected on Juno so just hitting
+      &enterkey; will show no kernel output. Set the console to  
+<informalexample><screen>console=ttyAMA0,115200n8</screen></informalexample>
+      (as described in <xref linkend="arm64-console-setup"/>). <keycombo><keycap>Control</keycap>
+<keycap>x</keycap></keycombo> to boot should show you the &d-i; screens,
+      and allow you to proceed with a standard installation.
+    </para>
+  </sect2>
+
+  <sect2 arch="arm64" id="apm-installation">
+    <title>Applied Micro Mustang Installation</title>
+    <para>
+      UEFI is available for this machine but it is normally shipped
+      with U-Boot so you will need to either install UEFI firmware
+      first then use standard boot/install methods, or use U-Boot boot
+      methods. You must use a serial
+      console to control the installation because the graphical
+      installer is not enabled on the arm64 architecture.
+    </para>
+    <para>
+      The recommended install method is to copy the &d-i; kernel and
+      initrd onto the hard drive, using the openembedded system
+      supplied with the machine, then boot from that to run the
+      installer. Alternatively use TFTP to get the kernel/dtb/initrd
+      copied over and booted (<xref linkend="boot-tftp-uboot"/>). After
+      installation, manual changes to boot from the installed image
+      are needed.
+    </para>
+    <para>
+      Run a serial console at 115200, 8bit no parity, and boot the
+      machine. Reboot the machine and when you see <quote>Hit any key to
+      stop autoboot:</quote> hit a key to get a Mustang# prompt. Then use
+      U-Boot commands to load and boot the kernel, dtb and initrd.
+     </para>
+  </sect2>
+
+
+  <sect2 arch="arm" id="boot-tftp-arm"><title>Booting by TFTP</title>
+
+&boot-installer-intro-net.xml;
+
+    <sect3 arch="arm" id="boot-tftp-uboot">
+      <title>TFTP-booting in U-Boot</title>
+      <para>
+        Network booting on systems using the U-Boot firmware consists of
+        three steps: a) configuring the network, b) loading the images
+        (kernel/initial ramdisk/dtb) into memory and c) actually executing
+        the previosly loaded code.
+      </para>
+      <para>
+        First you have to configure the network, either automatically via
+        DHCP by running
+<informalexample><screen>
+setenv autoload no
+dhcp
+</screen></informalexample>
+        or manually by setting several environment variables
+<informalexample><screen>
+setenv ipaddr &lt;ip address of the client&gt;
+setenv netmask &lt;netmask&gt;
+setenv serverip &lt;ip address of the tftp server&gt;
+setenv dnsip &lt;ip address of the nameserver&gt;
+setenv gatewayip &lt;ip address of the default gateway&gt;
+</screen></informalexample>
+        If you prefer, you can make these settings permanent by running
+<informalexample><screen>
+saveenv
+</screen></informalexample>
+      </para>
+      <para>
+        Afterwards you need to load the images (kernel/initial
+        ramdisk/dtb) into memory. This is done with the tftpboot command,
+        which has to be provided with the address at which the image
+        shall be stored in memory. Unfortunately the memory map can vary
+        from system to system, so there is no general rule which addresses
+        can be used for this.                           
+      </para>
+      <para>
+        On some systems, U-Boot predefines a set of environment variables
+        with suitable load addresses: kernel_addr_r, ramdisk_addr_r and
+        fdt_addr_r. You can check whether they are defined by running
+<informalexample><screen>
+printenv kernel_addr_r ramdisk_addr_r fdt_addr_r
+</screen></informalexample>
+        If they are not defined, you have to check your system's
+        documentation for appropriate values and set them manually.  For
+        systems based on Allwinner SunXi SOCs (e.g.  the Allwinner A10,
+        architecture name <quote>sun4i</quote> or the Allwinner A20,
+        architecture name <quote>sun7i</quote>), you can e.g.  use the
+        following values:
+<informalexample><screen>
+setenv kernel_addr_r 0x46000000
+setenv fdt_addr_r 0x47000000
+setenv ramdisk_addr_r 0x48000000
+</screen></informalexample>
+      </para>
+      <para>
+        When the load addresses are defined, you can load the images
+        into memory from the previously defined tftp server with
+<informalexample><screen>
+tftpboot ${kernel_addr_r} &lt;filename of the kernel image&gt;
+tftpboot ${fdt_addr_r} &lt;filename of the dtb&gt;
+tftpboot ${ramdisk_addr_r} &lt;filename of the initial ramdisk image&gt;
+</screen></informalexample>
+      </para>
+      <para>
+        The third part is setting the kernel commandline and actually
+        executing the loaded code.  U-Boot passes the content of the
+        <quote>bootargs</quote> environment variable as commandline to the
+        kernel, so any parameters for the kernel and the installer - such as
+        the console device (see <xref linkend="boot-console"/>) or
+        preseeding options (see <xref linkend="installer-args"/> and <xref
+        linkend="appendix-preseed"/>) - can be set with a command like
+<informalexample><screen>
+setenv bootargs console=ttyS0,115200 rootwait panic=10
+</screen></informalexample>
+        The exact command to execute the previously loaded code depends on
+        the image format used.  With uImage/uInitrd, the command is
+<informalexample><screen>
+bootm ${kernel_addr_r} ${ramdisk_addr_r} ${fdt_addr_r}
+</screen></informalexample>
+       and with native Linux images it is
+<informalexample><screen>
+bootz ${kernel_addr_r} ${ramdisk_addr_r}:${filesize} ${fdt_addr_r}
+</screen></informalexample>
+      </para>
+      <para>
+        Note: When booting standard linux images, it is important to load
+        the initial ramdisk image after the kernel and the dtb as U-Boot
+        sets the filesize variable to the size of the last file loaded and
+        the bootz command requires the size of the ramdisk image to work
+        correctly.  In case of booting a platform-specific kernel, i.e.  a
+        kernel without device-tree, simply omit the ${fdt_addr_r} parameter. 
+        </para>
+    </sect3>
+
+    <sect3 arch="armhf" id="boot-armhf-netboot.tar.gz">
+      <title>Pre-built netboot tarball</title>
+      <para>
+        &debian; provides a pre-built tarball (&armmp-netboot-tarball;)
+        that can simply be unpacked on your tftp server and contains
+        all files necessary for netbooting.  It also includes a boot
+        script that automates all steps to load the installer.  Modern
+        U-Boot versions contain a tftp autoboot feature that becomes
+        active if there is no bootable local storage device (MMC/SD,
+        USB, IDE/SATA/SCSI) and then loads this boot script from the
+        tftp server.  Prerequisite for using this feature is that you
+        have a dhcp server in your network which provides the client
+        with the address of the tftp server.
+      </para>
+      <para>
+        If you would like to trigger the tftp autoboot feature from the
+        U-Boot commandline, you can use the follwing command:
+        <informalexample><screen>run bootcmd_dhcp</screen></informalexample>
+      </para>
+      <para>
+        To manually load the bootscript provided by the tarball, you can
+        alternatively issue the following commands at the U-Boot prompt:
+
+<informalexample><screen>
+setenv autoload no
+dhcp
+tftpboot ${scriptaddr} /debian-installer/armhf/tftpboot.scr
+source ${scriptaddr}
+</screen></informalexample>
+
+      </para>
+    </sect3>
+  </sect2> 
+
+
+  <sect2 arch="arm64" condition="bootable-usb" id="usb-boot-arm64">
+  <title>Booting from USB Memory Stick with UEFI</title>
+
+&boot-installer-intro-usb.xml;
+
+  </sect2>
+
+  <sect2 arch="armhf" id="boot-hd-media">
+    <title>Booting from a USB stick in U-Boot</title>
+    <para>
+    
+      Many modern U-Boot versions have USB support and allow booting from
+      USB mass storage devices such as USB sticks.  Unfortunately the exact
+      steps required to do that can vary quite a bit from device to device.
+      
+    </para>
+    <para>
+    
+      U-Boot v2014.10 has introduced a common commandline handling and
+      autoboot framework.  This allows building generic boot images that
+      work on any system implementing this framework.  The &d-i; supports
+      installation from a USB stick on such systems, but unfortunately not
+      all platforms have adopted this new framework yet.
+
+    </para>
+    <para>
+    
+      To build a bootable USB stick for installing &debian;, unpack the
+      hd-media tarball (see <xref linkend="where-files"/>) onto a
+      USB stick formatted with a filesystem supported by the U-Boot version
+      on your device.  For modern U-Boot versions, any of FAT16 / FAT32 /
+      ext2 / ext3 / ext4 usually works. Then copy the ISO image file of the
+      first &debian; installation CD or DVD onto the stick.
+
+    </para>
+    <para>
+      The autoboot framework in modern U-Boot versions works similar to the
+      boot ordering options in a PC BIOS, i.e.  it checks a list of possible
+      boot devices for a valid boot image and starts the first one it finds. 
+      If there is no operating system installed, plugging in the USB stick
+      and powering up the system should result in starting the installer. 
+      You can also initiate the USB-boot process any time from the U-Boot
+      prompt by entering the <quote>run bootcmd_usb0</quote> command.
+    </para>
+    
+    <para>
+      One problem that can come up when booting from a USB stick while using
+      a serial console can be a console baudrate mismatch.  If a console
+      variable is defined in U-Boot, the &d-i; boot script automatically
+      passes it to the kernel to set the primary console device and, if
+      applicable, the console baudrate.  Unfortunately the handling of the
+      console variable varies from platform to platform - on some platforms,
+      the console variable includes the baudrate (as in
+      <quote>console=ttyS0,115200</quote>), while on other platforms the
+      console variable contains only the device (as in
+      <quote>console=ttyS0</quote>).  The latter case leads to a garbled
+      console output when the default baudrate differs between U-Boot and
+      the kernel.  Modern U-Boot versions often use 115200 baud while the
+      kernel still defaults to the traditional 9600 baud. If this happens,
+      you should manually set the console variable to contain the correct
+      baudrate for your system and then start the installer with the
+      <quote>run bootcmd_usb0</quote> command.
+    </para>
+  </sect2>     
+
+  <sect2 arch="armhf" id="boot-installer-sd-image">
+    <title>Using pre-built SD-card images with the installer</title>
+    <para>
+      For a number of systems, Debian provides SD card images that contain
+      both U-Boot and the &d-i;.  These images are provided in two variants
+      - one for downloading the software packages over the network
+      (available at &armmp-netboot-sd-img;) and one for offline
+      installations using a Debian CD/DVD (available at
+      &armmp-hd-media-sd-img;).  To save space and network bandwidth, the
+      images consist of two parts - a system-dependent part named
+      <quote>firmware.&lt;system-type&gt;.img.gz</quote>, and a
+      system-independent part named <quote>partition.img.gz</quote>.
+    </para>
+    <para>
+      To create a complete image from the two parts on Linux systems, you
+      can use zcat as follows:
+      
+      <informalexample><screen>zcat firmware.&lt;system-type&gt;.img.gz partition.img.gz &gt; complete_image.img</screen></informalexample>
+            
+      On Windows systems, you have to first decompress the two parts
+      separately, which can be done e.g.  by using 7-Zip, and then
+      concatenate the decompressed parts together by running the command
+      
+      <informalexample><screen>copy /b firmware.&lt;system-type&gt;.img + partition.img complete_image.img</screen></informalexample>
+          
+      in a Windows CMD.exe window.
+    </para>
+    <para>
+      Write the resulting image onto an SD card, e.g. by running the
+      following command on a Linux system:
+      
+      <informalexample><screen>cat complete_image.img &gt; /dev/SD_CARD_DEVICE</screen></informalexample>
+
+      After plugging the SD card into the target system and powering the
+      system up, the installer is loaded from the SD card.  If you use the
+      hd-media variant for offline installations, you must provide the
+      installer with access to the first &debian; CD/DVD on a separate
+      medium, which can e.g. be a CD/DVD ISO image on a USB stick.
+    </para>
+    <para>
+      When you come to the partitioning step in the installer (see <xref
+      linkend="di-partition"/>), you can delete or replace any previous
+      partitions on the card.  Once the installer is started, it runs
+      completely in the system's main memory and does not need to access the
+      SD card anymore, so you can use the full card for installing &debian;. 
+      The easiest way to create a proper partition layout on the SD card is
+      to let the installer automatically create one for you (see
+      <xref linkend="partman-auto"/>).
+    </para>
+  </sect2>
+    
+<!-- # None of the arm systems supported in Jessie is able to boot from
+     # CD/DVD -> commenting out the "Booting from CD-ROM section" for arm
+     
+  <sect2 arch="arm"><title>Booting from CD-ROM</title>
+
+&boot-installer-intro-cd.xml;
+
+  </sect2>
+-->
+
+<!--
+
+  <sect2 arch="arm" id="boot-firmware"><title>Booting from Firmware</title>
+
+&boot-installer-intro-firmware.xml;
+
+   <sect3 arch="arm" id="boot-firmware-ss4000e">
+   <title>Booting the SS4000-E</title>
+<para>
+
+Due to limitations in the SS4000-E firmware, it unfortunately is not
+possible to boot the installer without the use of a serial port at
+this time. To boot the installer, you will need a serial nullmodem
+cable; a computer with a serial port<footnote id="arm-s4ke-port">
+
+<para>
+A USB serial converter will also work.
+</para>
+
+</footnote>; and a ribbon cable with a male DB9 connector at one end,
+and a 10-pin .1" IDC header at the other<footnote id="arm-s4k-rib">
+
+<para>
+This cable is often found in older desktop machines with builtin 9-pin
+serial ports.
+</para>
+
+</footnote>.
+
+</para><para>
+
+To boot the SS4000-E, use your serial nullmodem cable and the ribbon
+cable to connect to the serial port of the SS4000-E, and reboot the
+machine. You need to use a serial terminal application to communicate
+with the machine; a good option on a &debian; GNU/Linux is to use the
+<command>cu</command> program, in the package of the same name. Assuming
+the serial port on your computer is to be found on
+<filename>/dev/ttyS0</filename>, use the following command line:
+
+</para>
+
+<informalexample><screen>
+cu -lttyS0 -s115200
+</screen></informalexample>
+
+<para>
+
+If using Windows, you may want to consider using the program
+<classname>hyperterminal</classname>. Use a baud rate of 115200,
+8 bits word length, no stop bits, and one parity bit.
+
+</para><para>
+
+When the machine boots, you will see the following line of output:
+
+</para>
+
+<informalexample><screen>
+No network interfaces found
+
+EM-7210 ver.T04 2005-12-12 (For ver.AA)
+== Executing boot script in 1.000 seconds - enter ^C to abort
+</screen></informalexample>
+
+<para>
+
+At this point, hit Control-C to interrupt the boot
+loader<footnote id="arm-s4ke-sec">
+
+<para>
+Note that you have only one second to do so; if you miss this window,
+just powercycle the machine and try again.
+</para>
+
+</footnote>. This will give you the RedBoot prompt. Enter the
+following commands:
+
+<informalexample><screen>
+load -v -r -b 0x01800000 -m ymodem ramdisk.gz
+load -v -r -b 0x01008000 -m ymodem zImage
+exec -c "console=ttyS0,115200 rw root=/dev/ram mem=256M@0xa0000000" -r 0x01800000
+</screen></informalexample>
+
+</para><para>
+
+After every <command>load</command> command, the system will expect a
+file to be transmitted using the YMODEM protocol. When using cu, make
+sure you have the package <classname>lrzsz</classname> installed, then
+hit enter, followed by the <quote>~&lt;</quote> escape sequence to start
+an external program, and run <command>sb initrd.gz</command> or
+<command>sb vmlinuz</command>.
+
+</para><para>
+
+Alternatively, it is possible to load the kernel and ramdisk using
+HTTP rather than YMODEM. This is faster, but requires a working HTTP
+server on the network. To do so, first switch the bootloader to RAM mode:
+
+<informalexample><screen>
+fis load rammode
+g
+</screen></informalexample>
+
+</para><para>
+
+This will seemingly restart the machine; but in reality, it loads
+redboot to RAM and restarts it from there. Not doing this step will cause
+the system to hang in the necessary ip_address step that comes next.
+
+</para><para>
+
+You will need to hit Ctrl-C again to interrupt the boot. Then:
+
+<informalexample><screen>
+ip_address -l <replaceable>192.168.2.249</replaceable> -h <replaceable>192.168.2.4</replaceable>
+load -v -r -b 0x01800000 -m http /initrd.gz
+load -v -r -b 0x01008000 -m http /zImage
+exec -c "console=ttyS0,115200 rw root=/dev/ram mem=256M@0xa0000000" -r 0x01800000
+</screen></informalexample>
+
+Where <replaceable>192.168.2.249</replaceable> is the IP address of the
+installed system and <replaceable>192.168.2.4</replaceable> the IP address
+of the HTTP server containing the kernel and ramdisk files.
+
+</para><para>
+
+The installer will now start as usual.
+
+</para>
+   </sect3>
+  </sect2>
+
+-->

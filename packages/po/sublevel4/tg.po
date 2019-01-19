@@ -1,0 +1,734 @@
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2018-02-08 14:17+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: TAJIK <victor.ibragimov@gmail.com>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "Диски виртуалии %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "Диски виртуалии %s, қисми диски #%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - бо дастгирии Рӯйхати идоракунии дастрасии POSIX.1e"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr ""
+"shortnames - истифода бурдани танҳо номҳои файлҳои кӯҳнаи сабки MS-DOS 8.3"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"Барои оғоз кардани низоми нави шумо, \"худроҳандозӣ\" истифода мешавад.  Он "
+"ба қисми диски роҳандозӣ насб карда мешавад.  Шумо бояд байрақчаи "
+"роҳандозиро барои қисми диск таъин намоед. Чунин қисми диск дар менюи асосии "
+"қисмбандӣ бо байрақчаи \"${BOOTABLE}\" қайд карда мешавад."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! ХАТО: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "ТУГМАҲО:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "'%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "Намоиш додани ин паёми кумак"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "Бозгашт ба саволи қаблӣ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "Воридаи холиро интихоб намоед"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr "Интихоби дигар бо иловаи '%c' ва '%c’ дастрас аст"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr "Интихоби қаблӣ бо иловаи '%c’ дастрас аст"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr "Интихоби навбатӣ бо иловаи '%c’ дастрас аст"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "Пешниҳод: \"%c\" барои кумак, пешфарз=%d> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "Пешниҳод: \"%c\" барои кумак> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "Пешниҳод: \"%c\" барои кумак, пешфарз=%s> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[Барои идома додан тугмаи enter-ро зер намоед]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "Интерфейс барои истифода:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"Бастаҳое, ки debconf-ро барои танзимот истифода мебаранд, дорои интерфейси "
+"ягона мебошанд. Шумо метавонед намуди интерфейси корбареро, ки онҳо истифода "
+"мебаранд, интихоб намоед."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "Ҳеҷ"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "Агар 'Ҳеҷ' интихоб шавад, ягон савол дигар пурсида намешавад."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "Матн"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "'Text' - ин интерфейси матнии анъанавӣ мебошад."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "Newt"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "'Newt' - ин интерфейси васеъэкран дар асоси аломатҳо мебошад."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "GTK"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr ""
+"\"GTK\" -ин интерфейси графикӣ мебошад, ки дар ҳамаи муҳитҳои графикӣ "
+"истифода бурда мешавад."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "/target/proc васл карда нашуд"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "Низоми файлии proc дар /target/proc бо нокомӣ дучор шуд."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "Огоҳӣ: Эҳтимол аст, ки низоми шумо худроҳандозӣ намешавад!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "Танзимкунии тағйирёбандаҳои нармафзор барои роҳандозии худкор"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"Барои ба таври худкор роҳандозӣ шудани низоми шумо, баъзе тағйирёбандаҳо "
+"бояд дар нармафзори дарунсохти Genesi таъин карда шаванд.  Дар охири "
+"насбкунӣ низоми шумо бозоғозӣ мешавад.  Дар сатри фармони нармафзори "
+"дарунсохт барои фаъол кардани роҳандозии худкор тағйирёбандаҳои зеринро "
+"таъин намоед:"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"Ба шумо иҷрои ин амал танҳо як маротиба лозим мешавад.  Баъдан, фармони "
+"\"boot\"-ро ворид намоед, ё ки низомро бозоғозӣ намоед, то ин ки ба низоми "
+"насбшудаи нави худ гузаред."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"Илова бар ин, шумо метавонед мағзро ба таври дастӣ роҳандозӣ намоед - барои "
+"ин дар сатри фармони миёнафзор зеринро ворид намоед:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"Барои ба таври худкор бор шудани низоми шумо, баъзе тағйирёбандаҳо бояд дар "
+"CFE таъин шуда бошанд. Дар охири насбкунӣ, низом бозоғозӣ мешавад. Дар сатри "
+"фармони нармафзори дарунсохт барои осон кардани роҳандозӣ тағйирёбандаҳои "
+"зеринро таъин намоед:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"Ба шумо иҷрои ин амал танҳо як маротиба лозим мешавад. Ин ба шумо имкон "
+"медиҳад, ки танҳо фармони \"boot_debian\"-ро дар сатри фармони CFE иҷро "
+"намоед."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"Агар шумо хоҳед, ки ҳангоми ҳар як оғози кор роҳандозии худкор иҷро шавад, "
+"шумо метавонед ба ғайр аз тағйирёбандаҳои дар боло номбаршуда тағйирёбандаи "
+"зеринро таъин намоед:"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "GRUB-ро насб мекунед?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"GRUB 2 - ин насли дуюми GNU GRUB мебошад, ки худроҳандозие мебошад, ки дар "
+"компютерҳои i386/amd64 истифода мешавад. Ҳозир он инчунин барои ${ARCH} "
+"дастрас аст."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"Он дорои хусусиятҳои шавқовари нав мебошад, аммо барои ин сохтор то ҳол "
+"санҷишӣ мебошад. Агар шумо интихоб намоед, ки онро насб мекунед, шумо бояд "
+"ба мушкилиҳо омода бошед ва донед, ки дар ҳолати роҳандозӣ нашудани низоми "
+"худ онро чӣ тавр барқарор мекунед."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "Насб кардани боркунандаи роҳандозии Arcboot дар диски компютерӣ"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "Диск барои насби боркунандаи роҳандозӣ:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"Arcboot бояд ба сарварақи ҳаҷми диск бо тамғаи SGI насб карда шавад. Одатан "
+"сарварақи ҳаҷми /dev/sda барои ин мақсад истифода мешавад. Лутфан, ба "
+"дастгоҳи диск дар куҷое, ки arcboot ҷойгир мешавад, ном гузоред."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "Arcboot барои истифодаи консоли сериягӣ танзим шудааст"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"Arcboot барои истифодаи порти силсилавии ${PORT} ҳамчун консол танзим "
+"шудааст. Суръати порти силсилавӣ ба ${SPEED} таъин шудааст."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "Насби Arcboot қатъ шудааст. Ба ҳар ҳол идома медиҳед?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"Насби қуттии arcboot ба /target/ қатъ карда шудааст. Насбкунии Arcboot "
+"ҳамчун боркунандаи роҳандозӣ қадами ҳатмист.  Эҳтимол аст, ки ин мушкилии "
+"насб ба Arcboot тааллуқ надорад, бинобар ин шумо метавонед насбро идома "
+"диҳед."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "Танзими тағйирёбандаи PROM барои Arcboot"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"Агар насби Linux дар ин компютер аввалин бор бошад, ё агар дискҳои компютерӣ "
+"аз нав қисмбандӣ карда бошанд, барои роҳандозии стандартии низом, баъзе "
+"тағйирёбандаҳои PROM бояд танзим карда шаванд."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"Дар поёни ин қадами насб, низом бозоғозӣ карда мешавад. Баъд аз ин ба "
+"монитори фармоишӣ аз имкони \"Stop for Maintenance\" ворид шавед ва "
+"фармонҳои зеринро ворид намоед:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "Танзими дастгоҳи чандқабатаи шабакавӣ"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "Амали танзими NBD:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "Дар айни ҳол ${NUMBER} дастгоҳ пайваст шудааст."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "Хидматрасони дастгоҳи чандқабатаи шабакавӣ:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"Лутфан, номи мизбон ё нишонии IP-и низоми хидматрасони NBD-ро ворид намоед."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "Ном барои содироти NBD"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"Лутфан, барои пайдо кардани дастрасӣ ба хидматрасони NBD (nbd-server) номи "
+"содиротии NBD-ро ворид намоед. Номе, ки дар ин ҷо ворид карда мешавад, бояд "
+"ба содири мавҷудбуда дар хидматрасон мувофиқат кунад."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "Гиреҳи дастгоҳи чандқабатаи шабакавӣ:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"Лутфан, гиреҳи дастгоҳи NBD-ро, ки мехоҳед пайваст ё қатъ намоед, интихоб "
+"намоед."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "Ба хидматрасони NBD пайваст карда натавонист"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"Пайвастшавӣ бо хидматрасони nbd қатъ шудааст. Лутфан, мутмаин шавед, ки шумо "
+"номи порт ва мизбонеро, ки хидматрасони nbd дар он порт ва мизбони шабака (ё "
+"номи шабака) иҷро шуда истодааст, дуруст ворид кардед ва баъд амалро аз нав "
+"кӯшиш намоед."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "Ягон гиреҳи дастгоҳи чандқабатаи шабакавии дигар вуҷуд надорад"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"Чунин менамояд, ки ҳамаи гиреҳҳои дастгоҳи NBD-и дастрас машғуланд ё низоми "
+"муайянкунии гиреҳҳои дастгоҳ кор намекунад."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"Ягон гиреҳи дастгоҳи NBD-и дигар танзим карда намешавад, то вақте ки "
+"пайвасти як дастгоҳи танзимшуда қатъ нашавад."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "Ягон гиреҳи дастгоҳи чандқабатаи шабакавии пайвастшуда ёфт нашуд"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"Ягон гиреҳи дастгоҳи чандқабатаи шабакавии ба ягон хидматрасон пайвастшуда "
+"ёфт нашуд. Бинобар ин шумо наметавонед пайвасти дастгоҳеро қатъ намоед."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "Пайваст кардан ба дастгоҳи чандқабатаи шабакавӣ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "Қатъ кардани пайвасти дастгоҳи чандқабатаи шабакавӣ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "Ба анҷом расонидан ва бозгашт ба василаи қисмбандӣ"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "Танзимкунии ҳофизаи флеш барои роҳандозии низом"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "Таҳиякунии низоми боршаванда"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "Омодасозии низом..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "Сабткунии ҳаста ба ҳофизаи флеш..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "Эҷодкунии тасвири роҳандозӣ дар диск..."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "Таҳия кардани низоми боршаванда"

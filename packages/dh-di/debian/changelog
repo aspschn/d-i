@@ -1,0 +1,82 @@
+dh-di (9) unstable; urgency=medium
+
+  * Team upload
+
+  [ Cyril Brulebois ]
+  * Update Vcs-{Browser,Git} to point to salsa (alioth's replacement).
+
+ -- Holger Wansing <hwansing@mailbox.org>  Wed, 29 Aug 2018 12:21:54 +0200
+
+dh-di (8) unstable; urgency=medium
+
+  * Use HTTPS for Vcs-* URLs, and link to cgit rather than gitweb.
+  * Declare binary package as Multi-Arch: foreign.
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 31 Jan 2016 16:45:54 +0000
+
+dh-di (7) unstable; urgency=medium
+
+  [ Colin Watson ]
+  * Policy version 3.9.6: no changes required.
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 17 Jan 2016 21:31:42 +0100
+
+dh-di (6) unstable; urgency=medium
+
+  [ Colin Watson ]
+  * Add Files field to licence paragraph in debian/copyright, as required by
+    the current specification.
+
+  [ Christian Perrier ]
+  * Update Standards to 3.9.5 (checked)
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 02 Jan 2014 10:01:50 +0100
+
+dh-di (5) unstable; urgency=low
+
+  [ Colin Watson ]
+  * Tell dh to skip dh_di_numbers if a di-numbers file doesn't exist.
+
+  [ Dmitrijs Ledkovs ]
+  * Set debian source format to '3.0 (native)'.
+  * Bump debhelper compat level to 9.
+  * Set Vcs-* to canonical format.
+
+  [ Christian Perrier ]
+  * Add myself to Uploaders
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 14 Jul 2013 12:46:29 +0200
+
+dh-di (4) unstable; urgency=low
+
+  * Team upload
+
+  [ Colin Watson ]
+  * Make debian/copyright non-executable.
+
+  [ Christian Perrier ]
+  * Use 1.0 as Format-Specification for debian/copyright
+  * Policy version 3.9.4: no changes required.
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 12 May 2013 14:10:16 +0200
+
+dh-di (3) unstable; urgency=low
+
+  * Policy version 3.8.3: no changes required.
+  * Add FILES section to dh_di_numbers(1); compare debhelper 7.4.1.
+  * Only append the basename of each source directory in di-numbers to the
+    destination directory, not the whole source directory (LP: #430724).
+
+ -- Colin Watson <cjwatson@debian.org>  Wed, 16 Sep 2009 23:27:06 +0100
+
+dh-di (2) unstable; urgency=low
+
+  * Fix semantics of symlink creation in _numbers files.
+
+ -- Colin Watson <cjwatson@debian.org>  Wed, 26 Aug 2009 23:30:31 +0100
+
+dh-di (1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Colin Watson <cjwatson@debian.org>  Thu, 13 Aug 2009 13:51:07 +0100

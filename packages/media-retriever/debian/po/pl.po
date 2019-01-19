@@ -1,0 +1,158 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Polish messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Copyright (C) 2004-2010 Bartosz Feński <fenio@debian.org>
+#
+#
+# Translations from iso-codes:
+#     Translations taken from ICU SVN on 2007-09-09
+#
+#      Translations from KDE:
+#      - Jacek Stolarczyk <jacek@mer.chemia.polsl.gliwice.pl>
+#
+#   Tobias Toedter <t.toedter@gmx.net>, 2007.
+#   Jakub Bogusz <qboosh@pld-linux.org>, 2009-2011.
+#      Alastair McKinstry <mckinstry@computer.org>, 2001.
+#      Alastair McKinstry, <mckinstry@debian.org>, 2004.
+#      Andrzej M. Krzysztofowicz <ankry@mif.pg.gda.pl>, 2007.
+#      Cezary Jackiewicz <cjackiewicz@poczta.onet.pl>, 2000-2001.
+#      Free Software Foundation, Inc., 2000-2010.
+#      Free Software Foundation, Inc., 2004-2009.
+#      GNOME PL Team <translators@gnome.pl>, 2001.
+#      Jakub Bogusz <qboosh@pld-linux.org>, 2007-2011.
+#      Tomasz Z. Napierala <zen@debian.linux.org.pl>, 2004, 2006.
+# Marcin Owsiany <porridge@debian.org>, 2011.
+# Michał Kułach <michal.kulach@gmail.com>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-07-10 22:49+0000\n"
+"PO-Revision-Date: 2012-02-17 19:39+0000\n"
+"Last-Translator: Michał Kułach <michal.kulach@gmail.com>\n"
+"Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../media-retriever.templates:1001
+msgid "Scanning removable media"
+msgstr "Skanowanie zewnętrznego urządzenia"
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../media-retriever.templates:2001
+msgid "Cannot read removable media, or no drivers found."
+msgstr ""
+"Nie mogę odczytać zewnętrznego urządzenia lub nie zawiera ono sterowników."
+
+#. Type: text
+#. Description
+#. :sl2:
+#: ../media-retriever.templates:2001
+msgid ""
+"There was a problem reading data from the removable media. Please make sure "
+"that the right media is present. If you continue to have trouble, your "
+"removable media might be bad."
+msgstr ""
+"Wystąpił problem podczas odczytu danych z zewnętrznego urządzenia. Upewnij "
+"się, że urządzenie jest podłączone. Jeśli problem będzie się powtarzał, "
+"możliwe, że urządzenie jest uszkodzone."
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:1001
+msgid "Load drivers from removable media now?"
+msgstr "Załadować sterowniki CD-ROM-u z zewnętrznego urządzenia?"
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:1001
+msgid ""
+"You probably need to load drivers from removable media before continuing "
+"with the installation. If you know that the install will work without extra "
+"drivers, you can skip this step."
+msgstr ""
+"Prawdopodobnie, przed kontynuacją instalacji, potrzebujesz załadować "
+"sterowniki z urządzenia zewnętrznego. Jeśli wiesz, że instalacja zadziała "
+"bez dodatkowych sterowników, możesz opuścić ten etap."
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:1001
+msgid ""
+"If you do need to load drivers, insert the appropriate removable media, such "
+"as a driver floppy or USB stick before continuing."
+msgstr ""
+"Jeśli musisz załadować sterowniki, przed kontynuacją podłącz urządzenie, "
+"takie jak pendrive lub dyskietka."
+
+#. Type: text
+#. Description
+#. main-menu
+#: ../load-media.templates:2001
+msgid "Load drivers from removable media"
+msgstr "Załadować sterowniki zewnętrznego urządzenia?"
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:3001
+msgid "Unknown removable media. Try to load anyway?"
+msgstr "Nieznane urządzenie zewnętrzne. Ładować mimo to?"
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:3001
+msgid ""
+"Detected removable media that is not a known driver media. Please make sure "
+"that the correct media is inserted. You can still continue if you have an "
+"unofficial removable media you want to use."
+msgstr ""
+"Wykryte urządzenie zewnętrzne nie zawiera znanych sterowników. Upewnij się, "
+"podłączono prawidłowe urządzenie. Nadal możesz kontynuować jeśli chcesz użyć "
+"nieoficjalnego urządzenia zewnętrznego."
+
+#. Type: text
+#. Description
+#: ../load-media.templates:4001
+msgid "Please insert ${DISK_LABEL} ('${DISK_NAME}') first."
+msgstr "Proszę najpierw włożyć ${DISK_LABEL} ('${DISK_NAME}')."
+
+#. Type: text
+#. Description
+#: ../load-media.templates:4001
+msgid ""
+"Due to dependencies between packages, drivers must be loaded in the correct "
+"order."
+msgstr ""
+"Z powodu zależności pomiędzy pakietami, sterowniki muszą być załadowane w "
+"odpowiedniej kolejności."
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:5001
+msgid "Load drivers from another removable media?"
+msgstr "Załadować sterowniki z innego urządzenia zewnętrznego?"
+
+#. Type: boolean
+#. Description
+#: ../load-media.templates:5001
+msgid ""
+"To load additional drivers from another removable media, please insert the "
+"appropriate removable media, such as a driver floppy or USB stick before "
+"continuing."
+msgstr ""
+"By załadować sterowniki z innego urządzenia zewnętrznego, podłącz je przed "
+"kontynuacją."

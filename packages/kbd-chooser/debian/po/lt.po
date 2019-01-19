@@ -1,0 +1,149 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Lithuanian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Marius Gedminas <mgedmin@b4net.lt>, 2004.
+# Darius Skilinskas <darius10@takas.lt>, 2005.
+# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004...2010.
+# Translations from iso-codes:
+# Gintautas Miliauskas <gintas@akl.lt>, 2008.
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Translations from KDE:
+# - Ričardas Čepas <rch@richard.eu.org>
+# Free Software Foundation, Inc., 2000-2001, 2004
+# Gediminas Paulauskas <menesis@delfi.lt>, 2000-2001.
+# Alastair McKinstry <mckinstry@computer.org>, 2001,2002.
+# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004, 2006, 2008, 2009, 2010.
+# Rimas Kudelis <rq@akl.lt>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: kbd-chooser@packages.debian.org\n"
+"POT-Creation-Date: 2016-05-19 10:50+0200\n"
+"PO-Revision-Date: 2012-05-27 19:07+0300\n"
+"Last-Translator: Rimas Kudelis <rq@akl.lt>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Type: text
+#. Description
+#. Main menu item. Please keep below 55 columns
+#. :sl1:
+#: ../kbd-chooser.templates-in:1001
+msgid "Select a keyboard layout"
+msgstr "Klaviatūros išdėstymo pasirinkimas"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../kbd-chooser.templates-in:2001
+msgid "Type of keyboard:"
+msgstr "Klaviatūros tipas:"
+
+#. Type: select
+#. Description
+#. :sl2:
+#: ../kbd-chooser.templates-in:2001
+msgid "Please choose the type of keyboard to configure."
+msgstr "Pasirinkite konfigūruojamos klaviatūros tipą."
+
+#. Type: text
+#. Description
+#. :sl2:
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#: ../kbd-chooser.templates-in:6001
+msgid "No keyboard to configure"
+msgstr "Nepasirinkta konfigūruotina klaviatūra"
+
+#. Type: text
+#. Description
+#. :sl2:
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#: ../kbd-chooser.templates-in:7001
+msgid "Do not configure keyboard; keep kernel keymap"
+msgstr "Klaviatūros nekonfigūruoti; išsaugot branduolio klavišų lentelę"
+
+#. Type: text
+#. Description
+#. :sl1:
+#. base-installer progress bar item
+#: ../kbd-chooser.templates-in:8001
+msgid "Configuring keyboard..."
+msgstr "Konfigūruojama klaviatūra ..."
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-at.templates:1001
+msgid "PC-style (AT or PS-2 connector) keyboard"
+msgstr "PC-tipo (AT arba PS-2 jungtis) klaviatūra"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-atari.templates:1001
+msgid "Atari keyboard"
+msgstr "Atari klaviatūra"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-amiga.templates:1001
+msgid "Amiga keyboard"
+msgstr "Amiga klaviatūra"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-acorn.templates:1001
+msgid "Acorn keyboard"
+msgstr "Acorn klaviatūra"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-mac.templates:1001
+msgid "Mac keyboard"
+msgstr "Mac klaviatūra"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-sparc.templates:1001
+msgid "Sun keyboard"
+msgstr "Sun klaviatūra"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-usb.templates:1001
+msgid "USB keyboard"
+msgstr "USB klaviatūra"
+
+#. Type: text
+#. Description
+#. Translators, this is a menu choice. MUST BE UNDER 65 COLUMNS
+#. :sl2:
+#: ../keyboard-hil.templates:1001
+msgid "HP HIL keyboard"
+msgstr "HP HIL klaviatūra"
+
+#~ msgid "DEC keyboard"
+#~ msgstr "DEC klaviatūra"

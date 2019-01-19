@@ -1,0 +1,726 @@
+# translation of Debian Installer Level 1 - sublevel4 to malayalam
+# Copyright (c)  2006-2007 Debian Project
+# Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, 2006-2009.
+# Santhosh Thottingal <santhosh00@gmail.com>, 2006.
+# Sreejith :: ശ്രീജിത്ത് കെ <sreejithk2000@gmail.com>, 2006.
+# Credits:  V Sasi Kumar, Sreejith N, Seena N, Anivar Aravind, Hiran Venugopalan and Suresh P
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt#
+# Anish A <aneesh.nl@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: Debian Installer Level 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-10-14 19:00+0530\n"
+"Last-Translator: Anish A <aneesh.nl@gmail.com>\n"
+"Language-Team: Swatantra Malayalam Computing\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Poedit-Language: Malayalam\n"
+"X-Poedit-Country: INDIA\n"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1 (xvda)
+#. :sl4:
+#: ../partman-base.templates:64001
+#, no-c-format
+msgid "Virtual disk %s (%s)"
+msgstr "മായാ ഡിസ്ക് %s (%s)"
+
+#. Type: text
+#. Description
+#. eg. Virtual disk 1, partition #1 (xvda1)
+#. :sl4:
+#: ../partman-base.templates:65001
+#, no-c-format
+msgid "Virtual disk %s, partition #%s (%s)"
+msgstr "മായാ ഡിസ്ക്, ഭാഗം #%s (%s)"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:58001
+msgid "acls - support POSIX.1e Access Control List"
+msgstr "acls - POSIX.1e ആക്സസ് കണ്ട്രോള്‍ ലിസ്റ്റ്"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Note to translators: Please keep your translations of this string below
+#. a 65 columns limit (which means 65 characters in single-byte languages)
+#: ../partman-basicfilesystems.templates:59001
+msgid "shortnames - only use the old MS-DOS 8.3 style filenames"
+msgstr "shortnames - പഴയ എംഎസ്-ഡോസ് 8.3 ശൈലിയിലുള്ള ഫയലിന്റെ പേരുകള്‍ മാത്രം ഉപയോഗിയ്ക്കുക"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-target.templates:3001
+msgid ""
+"In order to start your new system, a so called boot loader is used.  It is "
+"installed in a boot partition.  You must set the bootable flag for the "
+"partition.  Such a partition will be marked with \"${BOOTABLE}\" in the main "
+"partitioning menu."
+msgstr ""
+"നിങ്ങളുടെ സിസ്റ്റം തുടങ്ങുന്നതിന് ബൂട്ട് ലോഡര്‍ എന്നു് വിളിക്കുന്ന ഒന്നാണു് ഉപയോഗിയ്ക്കുന്നതു്. ഒരു ബൂട്ട് "
+"ഭാഗത്താണ് ഇതു് ഇന്‍സ്റ്റാള്‍ ചെയ്തിരിക്കുന്നതു്. നിങ്ങള്‍ ആ ഭാഗത്തിന് ബൂട്ട് ചെയ്യാവുന്ന എന്ന കൊടി സെറ്റ് "
+"ചെയ്യണം. പ്രധാന വിഭജന മെനുവില്‍ അങ്ങനെയൊരു ഭാഗം \"${BOOTABLE}\" എന്നു് "
+"അടയാളപ്പെടുത്തിയിരിക്കും."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:1001
+#, no-c-format
+msgid "!! ERROR: %s"
+msgstr "!! തെറ്റ്: %s"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:2001
+msgid "KEYSTROKES:"
+msgstr "കീസ്ട്രോക്കുകള്‍:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:3001
+#, no-c-format
+msgid "'%c'"
+msgstr "'%c'"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:4001
+msgid "Display this help message"
+msgstr "ഈ സഹായ സന്ദേശം പ്രദര്‍ശിപ്പിയ്ക്കുക"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:5001
+msgid "Go back to previous question"
+msgstr "മുന്‍പത്തെ ചോദ്യത്തിലേയ്ക്കു് തിരിച്ചു് പോകുക"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:6001
+msgid "Select an empty entry"
+msgstr "ഒരു ശൂന്യ വരി തെരഞ്ഞെടുക്കുക"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:7001
+#, no-c-format
+msgid "Other choices are available with '%c' and '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:8001
+#, no-c-format
+msgid "Previous choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:9001
+#, no-c-format
+msgid "Next choices are available with '%c'"
+msgstr ""
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:12001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%d> "
+msgstr "പ്രോംപ്റ്റ്: സഹായത്തിനായി '%c', ഡിഫാള്‍ട്ട്=%d> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:13001
+#, no-c-format
+msgid "Prompt: '%c' for help> "
+msgstr "പ്രോംപ്റ്റ്: സഹായത്തിനായി '%c'> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:14001
+#, no-c-format
+msgid "Prompt: '%c' for help, default=%s> "
+msgstr "പ്രോംപ്റ്റ്: സഹായത്തിനായി '%c', ഡിഫാള്‍ട്ട്=%s> "
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../cdebconf-text-udeb.templates:15001
+msgid "[Press enter to continue]"
+msgstr "[തുടരാന്‍ എന്റര്‍ അമര്‍ത്തുക]"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid "Interface to use:"
+msgstr "ഉപയോഗിക്കേണ്ട ഇന്റര്ഫേസ്:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:1001
+msgid ""
+"Packages that use debconf for configuration share a common look and feel. "
+"You can select the type of user interface they use."
+msgstr ""
+"ക്രമീകരണത്തിനായി ഡെബ്കോണ്‍ഫ്  ഉപയോഗിക്കുന്ന പാക്കേജുകള്‍ ഒരു പൊതുവായ കാഴ്ചയും അനുഭവവും നല്കുന്നു. "
+"അവ ഉപയോഗിക്കുന്ന ഇന്റര്‍ഫേസിന്റെ തരം നിങ്ങളള്‍ക്ക് തിരഞ്ഞെടുക്കാം."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "None"
+msgstr "ഒന്നുമില്ല"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:2001
+msgid "'None' will never ask you any question."
+msgstr "'ഒന്നുമില്ല' ഒരിക്കലും താങ്കളോട് ഒരു ചോദ്യവും ചോദിക്കില്ല."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "Text"
+msgstr "വാചകം"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:3001
+msgid "'Text' is a traditional plain text interface."
+msgstr "'വാചകം'എന്നത് പരമ്പരാഗതമായ ഒരു ടെക്സ്റ്റ് ഇന്റര്‍ഫേസ് ആണ്."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "Newt"
+msgstr "നെവ്റ്റ്"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:4001
+msgid "'Newt' is a full-screen, character based interface."
+msgstr "'നെവ്റ്റ്' എന്നത് കാരക്ടറിനെ ആധാരമാക്കിയുള്ള ഒരു മുഴുവന്‍ സ്ക്രീന്‍ ഇന്റര്‍ഫേസ് ആണ്."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid "GTK"
+msgstr "GTK"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../cdebconf.templates:5001
+msgid ""
+"'GTK' is a graphical interface that may be used in any graphical environment."
+msgstr ""
+"'GTK' എന്നത് ഏതൊരു ഗ്രാഫിക്കല്‍ പരിസ്ഥിതിയിലും ഉപയോകിക്കാവുന്ന ഒരു ഗ്രാഫിക്കല്‍ ഇന്റര്‍ഫേസ് ആണ്."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Failed to mount /target/proc"
+msgstr "/target/proc മൌണ്ട് ചെയ്യുന്നതില്‍ പരാജയപ്പെട്ടു"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Mounting the proc file system on /target/proc failed."
+msgstr "proc ഫയല്‍ സിസ്റ്റം /target/proc ല്‍ മൌണ്ട് ചെയ്യുന്നതില്‍ പരാജയപ്പെട്ടു."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:2001 ../grub-installer.templates:32001
+msgid "Warning: Your system may be unbootable!"
+msgstr "മുന്നറിയിപ്പ്: നിങ്ങളുടെ സിസ്റ്റം ബൂട്ട് ചെയ്യാന്‍ പറ്റാതായിട്ടുണ്ടാകാം!"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001 ../nobootloader.templates:4001
+msgid "Setting firmware variables for automatic boot"
+msgstr "സ്വയം ബൂട്ട് ചെയ്യുന്നതിനു് ഫേംവെയര്‍ വാരിയബിളുകള്‍ സജ്ജീകരിച്ചു് കൊണ്ടിരിയ്ക്കുന്നു"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Some variables need to be set in the Genesi firmware in order for your "
+"system to boot automatically.  At the end of the installation, the system "
+"will reboot.  At the firmware prompt, set the following firmware variables "
+"to enable auto-booting:"
+msgstr ""
+"നിങ്ങളുടെ സിസ്റ്റം സ്വയം ബൂട്ട് ചെയ്യുന്നതിനു് ജെനസി ഫേംവെയറില്‍ ചില വാരിയബിളുകള്‍ "
+"സജ്ജീകരിയ്ക്കേണ്ടതായുണ്ടു്. ഇന്‍സ്റ്റലേഷനവസാനം സിസ്റ്റം റീബൂട്ട് ചെയ്യും. സ്വയം-ബൂട്ടിങ്ങ് "
+"പ്രാവര്‍ത്തികമാക്കാന്‍ ഫേംവെയര്‍ പ്രോംപ്റ്റില്‍ താഴെ കൊടുത്തിരിക്കുന്ന ഫേംവെയര്‍ വാരിയബിളുകള്‍ "
+"സജ്ജീകരിയ്ക്കുക:"
+
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. #-#-#-#-#  templates.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../nobootloader.templates:3001 ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"നിങ്ങള്‍ക്കിത് ഒരു തവണയേ ചെയ്യേണ്ടി വരൂ. അതിനു ശേഷം \"boot\" കമാന്‍ഡ് നല്‍കുക അല്ലെങ്കില്‍ "
+"നിങ്ങളുടെ പുതുതായി ഇന്‍സ്റ്റാള്‍ ചെയ്ത സിസ്റ്റത്തിലേയ്ക്കു് പോകാനായി റീബൂട്ട് ചെയ്യുക."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:3001
+msgid ""
+"Alternatively, you will be able to boot the kernel manually by entering, at "
+"the firmware prompt:"
+msgstr ""
+"ഇതിനു പകരമായി ഫേംവെയര്‍ പ്രോംപ്റ്റില്‍ കെര്‍ണല്‍ മാന്വലായി നല്‍കി നിങ്ങള്‍ക്കു് ബൂട്ട് ചെയ്യാന്‍ കഴിയും:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"Some variables need to be set in CFE in order for your system to boot "
+"automatically. At the end of installation, the system will reboot. At the "
+"firmware prompt, set the following variables to simplify booting:"
+msgstr ""
+"നിങ്ങളുടെ സിസ്റ്റം സ്വയം ബൂട്ട് ചെയ്യുന്നതിനു് സിഎഫ്ഇയില്‍ ചില വാരിയബിളുകള്‍ "
+"സജ്ജീകരിയ്ക്കേണ്ടതായുണ്ടു്. ഇന്‍സ്റ്റലേഷനവസാനം സിസ്റ്റം റീബൂട്ട് ചെയ്യും. ബൂട്ടിങ്ങ് ലളിതമാക്കാന്‍ "
+"ഫേംവെയറിന്റെ സ്ഥാനത്തു് താഴെ കൊടുത്ത വാരിയബിളുകള്‍ കൂടി സജ്ജീകരിയ്ക്കുക:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"You will only need to do this once. This enables you to just issue the "
+"command \"boot_debian\" at the CFE prompt."
+msgstr ""
+"ഇതു് നിങ്ങള്‍ ഒരിയ്ക്കല്‍ മാത്രം ചെയ്താല്‍ മതി. \"boot_debian\" എന്ന ആജ്ഞ സിഎഫ്ഇയുടെ സ്ഥാനത്തു് "
+"നല്‍കാന്‍ ഇതു് നിങ്ങളെ പര്യാപ്തമാക്കുന്നു."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../nobootloader.templates:4001
+msgid ""
+"If you prefer to auto-boot on every startup, you can set the following "
+"variable in addition to the ones above:"
+msgstr ""
+"ഓരോ പ്രാവശ്യം തുടങ്ങുമ്പോഴും സ്വയം ബൂട്ട് ചെയ്യാനാണു് നിങ്ങളാഗ്രഹിയ്ക്കുന്നതെങ്കില്‍ മുകളില്‍ പറഞ്ഞവ "
+"കൂടാതെ താഴെ കൊടുത്തിരിയ്ക്കുന്ന വാരിയബിളുകള്‍ കൂടി നിങ്ങള്‍ക്കു് സജ്ജമാക്കാം:"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid "Install GRUB?"
+msgstr "ഗ്രബ് സ്ഥാപിക്കണോ?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"GRUB 2 is the next generation of GNU GRUB, the boot loader that is commonly "
+"used on i386/amd64 PCs. It is now also available for ${ARCH}."
+msgstr ""
+"i386/amd64 സിസ്റ്റത്തില്‍ സാധാരണയായി ഉപയോഗിക്കുന്ന ബൂട്ട് ലോഡറായ GNU GRUB ന്റെ അടുത്ത "
+"തലമുറയില്‍ പെട്ടതാണ് GRUB2. ഇത് ${ARCH} ല്‍ ഇപ്പോള്‍ ലഭ്യമാണ്."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../grub-installer.templates:17001
+msgid ""
+"It has interesting new features but is still experimental software for this "
+"architecture. If you choose to install it, you should be prepared for "
+"breakage, and have an idea on how to recover your system if it becomes "
+"unbootable. You're advised not to try this in production environments."
+msgstr ""
+"ഇതില്‍ പുതിയ പ്രത്യേകതകള്‍ ഉണ്ടെങ്കിലും ഈ ആര്‍ക്കിടെക്ച്ചറില്‍ ഇപ്പോഴും ഇത് പരീക്ഷണ ചിത്രമാണ്. "
+"ഇന്‍സ്റ്റാള്‍ ചെയ്യണമെങ്കില്‍, കുഴപ്പങ്ങള്‍ക്കായി തയ്യാറെടുക്കുക, മാത്രമല്ല സിസ്റ്റം ബൂട്ട് "
+"ചെയ്യാനാകുന്നില്ലെങ്കില്‍ എങ്ങനെ പഴയത് പോലെയാക്കണമെന്നറിയണം. പ്രധാന ആവശ്യങ്ങള്‍ക്കായി ഇത് "
+"പരീക്ഷിക്കാതിരിക്കുന്നതാണ് നല്ലത്."
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "ആര്‍ക്ക്ബൂട്ട് ബൂട്ട് ലോഡര്‍ ഒരു ഹാര്‍ഡ് ഡിസ്കില്‍ ഇന്‍സ്റ്റാള്‍ ചെയ്യുക"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "ബൂട്ട് ലോഡര്‍ ഇന്‍സ്റ്റാളേഷനു വേണ്ട ഡിസ്ക്:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"ആര്‍ക്ക്ബൂട്ട് ഒരു SGI ഡിസ്ക് ലേബലുള്ള ഡിസ്കിന്റെ വാള്യം ഹെഡറിലേക്ക് ഇന്‍സ്റ്റാള്‍ ചെയ്യേണ്ടതുണ്ടു്. "
+"സാധാരണയായി /dev/sda യുടെ വാള്യം ഹെഡറാണ് ഉപയോഗിയ്ക്കുന്നതു്. ദയവായി ആര്‍ക്ക്ബൂട്ട് വക്കേണ്ട "
+"ഡിസ്കിന്റെ ഉപകരണ നാമം നല്കുക."
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "ആര്‍ക്ക്ബൂട്ട് സീരിയല്‍ കണ്‍സോള്‍ ഉപയോഗിക്കാനായി ക്രമീകരിച്ചിരിക്കുന്നു"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"ആര്‍ക്ക്ബൂട്ട് സീരിയല്‍ പോര്‍ട്ട് ${PORT} കണ്‍സോളായി ഉപയോഗിക്കാനായി ക്രമീകരിച്ചിരിക്കുന്നു. സീരിയല്‍ "
+"പോര്‍ട്ട് വേഗത ${SPEED} ലേക്ക് സെറ്റ് ചെയ്തിരിയ്ക്കുന്നു."
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "ആര്‍ക്ക്ബൂട്ട് ഇന്‍സ്റ്റളേഷന്‍ പരാജയപ്പെട്ടു. എന്നാലും തുടരണമോ?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"ആര്‍ക്ക്ബൂട്ട് പാക്കേജ് /target/ ലേക്ക് ഇന്‍സ്റ്റാള്‍ ചെയ്യുന്നതില്‍ പരാജയപ്പെട്ടു. ആര്‍ക്ക്ബൂട്ട് ബൂട്ട് "
+"ലോഡറായി ഇന്‍സ്റ്റാള്‍ ചെയ്യുന്നത് ഒരു അവശ്യ നടപടിക്രമമാണു്. എന്നിരുന്നാലും ഇന്‍സ്റ്റാള്‍ പ്രശ്നം "
+"ആര്‍ക്ക്ബൂട്ടുമായി ബന്ധമില്ലാത്തതാകാം, അതു കൊണ്ട് തന്നെ ഇന്‍സ്റ്റളേഷന്‍ തുടരാന്‍ സാധ്യമായേക്കാം."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "ആര്‍ക്ക്ബൂട്ടിനായി PROM വാരിയബിളുകള്‍ സെറ്റ് ചെയ്തു കൊണ്ടിരിയ്ക്കുന്നു"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"ഈ യന്ത്രത്തിലെ ആദ്യത്തെ ലിനക്സ് ഇന്‍സ്റ്റാലേഷനാണങ്കിലോ നിങ്ങളുടെ ഹാര്‍ഡ് ഡ്രൈവുകള്‍ വീണ്ടും "
+"വിഭജിച്ചിട്ടുണ്ടെങ്കിലോ സാധാരണഗതിയില്‍ സിസ്റ്റം ബൂട്ട് ചെയ്യുന്നതിന് മുമ്പു് PROM ല്‍ ചില "
+"വാരിയബിളുകള്‍ സെറ്റ് ചെയ്യേണ്ടതാവശ്യമാണു്."
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"ഈ ഇന്‍സ്റ്റളേഷന്‍ ഘട്ടത്തിനവസാനം സിസ്റ്റം റീബൂട്ട് ചെയ്യും. അതിന് ശേഷം \"Stop for Maintenance"
+"\" എന്ന തെരഞ്ഞെടുക്കാവുന്ന വിലയില്‍ നിന്നും ആജ്ഞാ മോണിറ്ററില്‍ കടക്കുകയും താഴെ കൊടുത്തിരിക്കുന്ന "
+"ആജ്ഞകള്‍ നല്‍കുകയും ചെയ്യുക:"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "ശൃഖല ബ്ലോക്ക് ഉപകരണം ക്രമീകരിയ്ക്കുക"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD ക്രമീകരണ നടപടി:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "ഇപ്പോള് ${NUMBER} ഉപകരണങ്ങള്‍ ബന്ധിപ്പിച്ചിട്ടുണ്ട്."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "ശൃഖല ബ്ലോക്ക് ഉപകരണ സേവകന്‍:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "nbd സേവകന്‍ പ്രവര്‍ത്തിക്കുന്ന സിസ്റ്റത്തിന്റെ IP വിലാസമോ ഹോസ്റ്റ് നാമമോ നല്‍കുക."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "ശൃഖല ബ്ലോക്ക് ഉപകരണ നോഡ്:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"ദയവായി നിങ്ങള്‍ക്ക് ബന്ധിപ്പിക്കേണ്ട അല്ലെങ്കില്‍ വിച്ഛേദിക്കേണ്ട NBD ഉപകരണ നോഡ് തെരഞ്ഞെടുക്കുക."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD സേവകനിലേക്ക് കണക്ട് ചെയ്യുന്നതില്‍ പരാജയം"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+#| msgid ""
+#| "Connecting to the nbd-server failed. Please ensure that the host and the "
+#| "port or the name which you entered are correct, that the nbd-server "
+#| "process is running on that host and port (or using that name), that the "
+#| "network is configured correctly, and retry."
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd സേവകനിലേക്ക് ബന്ധിപ്പിക്കാനാകുന്നില്ല. ഹോസ്റ്റ്, പോര്‍ട്ട്, പേര് തുടങ്ങിയവ കൊടുത്തത് ശരിയാണോ "
+"എന്ന് നോക്കു, ആ ഹോസ്റ്റിലും പോര്‍ട്ടിലും (അല്ലെങ്കില്‍ ആ പേരില്‍) nbd സേവകന്‍ പ്രവര്‍ത്തിക്കുന്നോ, "
+"ശ്രംഖല ശരിയായി ക്രമീകരിച്ചോ തുടങ്ങിയവ ദയവായി ഉറപ്പാക്കിയിട്ട് വീണ്ടും ശ്രമീക്കു."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ഇനി കൂടുതല്‍ ശ്രംഘല ബ്ലോക്ക് ഉപകരണങ്ങളില്ല"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"ഒന്നുകില്‍ എല്ലാ NBD ഉപകരണ നൊഡുകളും ഉപയോഗത്തിലാണ്, അല്ലെങ്കില്‍ ഉപകരണ നോഡുകള്‍ "
+"കണ്ടുപിടിക്കുന്നതില്‍ എന്തോ പിശക് സംഭവിച്ചു."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"ഇപ്പോള്‍ ക്രമീകരിച്ചിരിക്കുന്ന ഒരെണ്ണം മാറ്റാതെ കൂടുതല്‍ NBD ഉപകരണ നോഡുകള്‍ ബന്ധിപ്പിക്കാന്‍ "
+"പറ്റില്ല."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "ബന്ധിപ്പിച്ച ശ്രംഘല ബ്ലോക്ക് ഉപകരണങ്ങളൊന്നും കണ്ടില്ല"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"ഇപ്പോള്‍ ശ്രംഘല ബ്ലോക്ക് ഉപകരണങ്ങളൊന്നും ഒരു സേവകനിലും ബന്ധിപ്പിച്ചിട്ടില്ല. അതുകൊണ്ട്, അതൊന്നും "
+"വിച്ഛേദിക്കാനാകില്ല."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "ശൃഖല ബ്ലോക്ക് ഉപകരണം ബന്ധിപ്പിക്കുക"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "ശൃഖല ബ്ലോക്ക് ഉപകരണം വിച്ഛേദിക്കുക"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "തീര്‍ത്ത് വിഭജകനിലേക്ക് തിരിച്ച് പോകുക"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when the system configures
+#. some flashable memory used by many embedded devices
+#. :sl4:
+#: ../flash-kernel-installer.templates:1001
+msgid "Configuring flash memory to boot the system"
+msgstr "സിസ്റ്റം ബൂട്ട് ചെയ്യാന്‍ ഫ്ലാഷ് മെമറി ക്രമീകരിച്ചു കൊണ്ടിരിയ്ക്കുന്നു"
+
+#. Type: text
+#. Description
+#. This item is a progress bar heading when an embedded device is
+#. configured so it will boot from disk
+#. :sl4:
+#: ../flash-kernel-installer.templates:2001
+msgid "Making the system bootable"
+msgstr "സിസ്റ്റം ബൂട്ട് ചെയ്യാവുന്നതാക്കുന്നു"
+
+#. Type: text
+#. Description
+#. This is "preparing the system" to flash the kernel and initrd
+#. on a flashable memory
+#. :sl4:
+#: ../flash-kernel-installer.templates:3001
+msgid "Preparing the system..."
+msgstr "സിസ്റ്റം തയ്യാറാക്കി കൊണ്ടിരിയ്ക്കുന്നു..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system
+#. write the kernel to the flashable memory of the embedded device
+#. :sl4:
+#: ../flash-kernel-installer.templates:4001
+msgid "Writing the kernel to flash memory..."
+msgstr "കെര്‍ണല്‍ ഫ്ലാഷ് മെമ്മറിയിലേയ്ക്ക് എഴുതിക്കൊണ്ടിരിയ്ക്കുന്നു..."
+
+#. Type: text
+#. Description
+#. This is a progress bar showing up when the system generates a
+#. special boot image on disk for some embedded device so they
+#. can boot.
+#. :sl4:
+#: ../flash-kernel-installer.templates:5001
+msgid "Generating boot image on disk..."
+msgstr "ഡിസ്കില്‍ ബൂട്ട് ഇമേജ് സൃഷ്ടിച്ചുകൊണ്ടിരിയ്ക്കുന്നു..."
+
+#. Type: text
+#. Description
+#. Main menu item
+#. This item is a menu entry for a step where the system configures
+#. the flashable memory used by many embedded devices
+#. (writing the kernel and initrd to it)
+#. :sl4:
+#: ../flash-kernel-installer.templates:6001
+msgid "Make the system bootable"
+msgstr "സിസ്റ്റം ബൂട്ട് ചെയ്യാവുന്നതാക്കുക"

@@ -1,0 +1,17 @@
+#! /bin/sh
+
+# Script run at the beginning of the installation (as set in preseed.cfg).
+
+set -e
+
+. /usr/share/debconf/confmodule
+db_subst babelbox/info LANGNAME "English" || true
+db_info babelbox/info || true
+
+mkdir -p /lib/partman/init.d
+cp /hd-media/srv/babelbox/00del_partition /lib/partman/init.d/
+
+apt-install alsa-base || true
+apt-install alsa-utils || true
+
+exit 0

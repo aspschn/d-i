@@ -1,0 +1,138 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of lo.po to Lao
+# Lao translation of debian-installer.
+# Copyright (C) 2006-2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Anousak Souphavanh <anousak@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: lo\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:33+0000\n"
+"PO-Revision-Date: 2010-11-26 09:11+0700\n"
+"Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
+"Language-Team: Lao <lo@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:1001
+msgid "Install the Arcboot boot loader on a hard disk"
+msgstr "ຕິດຕັ້ງບູດໂຫຼດເດີ Arcboot ລົງໃນຮາດດິດສ໌"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid "Disk for boot loader installation:"
+msgstr "ດິດສ໌ສຳລັບຕິດຕັ້ງບູດໂຫຼດເດີ"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:2001
+msgid ""
+"Arcboot must be installed into the volume header of a disk with a SGI "
+"disklabel. Usually the volume header of /dev/sda is used. Please give the "
+"device name of the disk on which to put arcboot."
+msgstr ""
+"arcboot ຈະຕ້ອງຕິດຕັ້ງລົງໃນສ່ວນຕົ້ນຂອງດິດສ໌ທີ່ມີປ້າຍຊື່ດິດສ໌ແບບ SGI ຊື່ງໂດຍປົກະຕິແລ້ວ ຈະໃຊ້ສ່ວນຕົ້ນຂອງ /"
+"dev/sda ກະລຸນາລະບຸຊື່ອຸປະກອນຂອງດິດສ໌ທີ່ຈະຕ້ອງຕິດຕັ້ງ arcboot"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid "Arcboot configured to use a serial console"
+msgstr "arcboot ຖືກຕັ້ງຄ່າໃວ້ໃຫ້ໃຊ້ຄອນໂຊນແບບລຽນ"
+
+#. Type: note
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:3001
+msgid ""
+"Arcboot is configured to use the serial port ${PORT} as the console. The "
+"serial port speed is set to ${SPEED}."
+msgstr ""
+"arcboot ຖືກຕັ້ງຄ່າໃວ້ໃຫ້ໃຊ້ແບບຕໍ່ລຽນ ${PORT} ເປັນຄອນໂຊນ ຄວາມໄວຂອງພອດແບບລຽນຖືກກຳນົດໃວ້ເປັນ "
+"${SPEED}"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid "Arcboot installation failed.  Continue anyway?"
+msgstr "ຕິດຕັງ arcboot ບໍ່ສຳເລັດ ຈະດຳເນີນງານຕໍ່ໄປ ຫຼື ບໍ?"
+
+#. Type: boolean
+#. Description
+#. :sl4:
+#: ../arcboot-installer.templates:4001
+msgid ""
+"The arcboot package failed to install into /target/.  Installing Arcboot as "
+"a boot loader is a required step.  The install problem might however be "
+"unrelated to Arcboot, so continuing the installation may be possible."
+msgstr ""
+"ຕິດຕັງແພັກເກັດ arcboot ລົງໃນ /target/ ບໍ່ສຳເລັດ ການຕິດຕັ້ງ Arcboot ເປັນບູດໂຫຼດເດີ "
+"ເປັນຂັ້ນຕອນທີ່ຈຳເປັນ ແຕ່ບັນຫາຂອງການຕິດຕັ້ງອາດບໍ່ກ່ຽວກັບ Arcboot ກໍ່ໄດ້ ດັ່ງນີ້ "
+"ການດຳເນີນການຕິດຕັ້ງຕໍ່ໄປກໍ່ອາດເຮັດໄດ້"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid "Setting PROM variables for Arcboot"
+msgstr "ກຳລັງກຳນົດຄ່າ PROM ສຳລັບ Arcboot"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"If this is the first Linux installation on this machine, or if the hard "
+"drives have been repartitioned, some variables need to be set in the PROM "
+"before the system is able to boot normally."
+msgstr ""
+"ຖ້ານີ້ເປັນການຕິດຕັ້ງລີນຸກຄັ້ງທຳອິດໃນເຄື່ອງນີ້ ຫຼື ມີການແບ່ງພາທິຊັ້ນໃນຮາດດິດສ໌ໃໝ່ ຄ່າບາງຄ່າໃນ PROM "
+"ຈະຕ້ອງຖືກກຳນົດໃໝ່ ເພື່ອໃຫ້ລະບົບສາມາດບູດໄດ້ປົກະຕິ"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#. "Stop for Maintenance" should be left in English
+#: ../arcboot-installer.templates:5001
+msgid ""
+"At the end of this installation stage, the system will reboot.  After this, "
+"enter the command monitor from the \"Stop for Maintenance\" option, and "
+"enter the following commands:"
+msgstr ""
+"ເມື່ອຈົບຂັນຕອນການຕິດຕັ້ງນີ້ ລະບົບຈະບູດໃໝ່ຫຼັງຈາກນັ້ນ ໃຫ້ທ່ານເຂົ້າສູ່ໜ້າຈໍຄຳສັ່ງຈາກຕົວເລືອກ \"Stop for "
+"Maintenance\" ແລ້ວປ້ອນຄຳສັ່ງຕໍ່ໄປນີ້:"
+
+#. Type: note
+#. Description
+#. :sl4:
+#. Translators, the 4th string of this description has been dropped from
+#. PO files. It contains firmware commands and should not be translated.
+#: ../arcboot-installer.templates:5001
+msgid ""
+"You will only need to do this once.  Afterwards, enter the \"boot\" command "
+"or reboot the system to proceed to your newly installed system."
+msgstr ""
+"ການສັ່ງດັ່ງກ່າວພຽງເທື່ອດຽວກໍ່ພຽງພໍ ໃນເທື່ອຕໍ່ໄປ ພຽງປ້ອນຄຳສັ່ງ \"boot\" "
+"ຫຼືບູດເຄື່ອງໃໝ່ເພື່ອເຂົ້າສູ້ລະບົບເພື່ອຕິດຕັ້ງໃໝ່"

@@ -1,0 +1,88 @@
+<!-- $Id$ -->
+<!-- original version: 68011 -->
+
+ <sect1 arch="not-s390"><title>Hardware určený pro GNU/&arch-kernel;</title>
+
+<para arch="linux-any">
+
+V současnosti již někteří prodejci dodávají počítače s <ulink
+url="&url-pre-installed;">nainstalovaným</ulink> &debian;em, případně
+jinou distribucí GNU/Linuxu. Patrně si za tuto výhodu něco připlatíte,
+ale zbavíte se starostí, poněvadž máte jistotu, že hardware počítače
+je se systémem GNU/Linux plně kompatibilní.
+
+</para><para arch="any-x86">
+
+Budete-li nuceni zakoupit počítač se systémem Windows, přečtěte si
+pozorně jejich licenci, jestli můžete software odmítnout a zda vám
+budou vráceny peníze. Více najdete na Internetu, když budete hledat
+klíčová slova <quote>Windows refund</quote>.
+
+</para><para>
+
+Ať už zakoupíte počítač se systémem GNU/&arch-kernel; nebo bez něj, je
+důležité se přesvědčit, že je hardware podporován jádrem operačního
+systému. Zkontrolujte si, jestli jsou všechna zařízení v počítači
+uvedena ve výše zmíněných odkazech jako podporovaná. Při nákupu se
+netajte tím, že kupujete počítač, na kterém poběží &arch-kernel;.
+Dejte přednost zboží, jehož výrobci &arch-kernel; podporují.
+
+</para>
+
+  <sect2><title>Vyvarujte se uzavřených technologií</title>
+<para>
+
+Někteří výrobci hardwaru nám neposkytují informace potřebné k napsání
+ovladačů pro &arch-kernel;, případně požadují podepsat smlouvu
+o uchování těchto informací v tajnosti před třetími osobami, což
+znemožňuje uveřejnění zdrojového kódu pro takový ovladač.
+
+</para><para>
+
+Z důvodu nedostupnosti dokumentace pro tento hardware neexistují
+ovladače pro &arch-kernel;.
+
+</para><para>
+
+V mnoha případech existují standardy (nebo alespoň nepsané standardy),
+které popisují, jak má operační systém komunikovat s určitou skupinou
+zařízení. Všechna zařízení, která takový (nepsaný) standard dodržují,
+mohou být obsluhována jediným společným ovladačem. Konkrétním
+příkladem skupin zařízení, kde to funguje extrémně dobře, jsou třeba
+<firstterm>USB Human Interface Devices</firstterm> (klávesnice, myši,
+herní ovladače) nebo <firstterm>USB Mass Storage Devices</firstterm>
+(USB klíčenky a čtečky paměťových karet), kde prakticky každé zařízení
+na trhu odpovídá standardům.
+
+</para><para>
+
+Naproti tomu třeba v oblasti tiskáren je situace výrazně horší. I když
+existují tiskárny, které se dají ovládat několika (více či méně)
+standardními ovládacími jazyky a tudíž je lze zprovoznit v téměř
+libovolném operačním systému, existuje dost modelů, které rozumí pouze
+proprietárním příkazům, ke kterým neexistuje žádná dostupná
+dokumentace. Takové tiskárny se ve svobodných operačních systémech buď
+nedají používat vůbec, nebo pouze s uzavřeným ovladačem od výrobce.
+
+</para><para>
+
+V případě existence uzavřeného ovladače od výrobce mějte na paměti, že
+praktická životnost takového zařízení je omezena na dobu, po kterou je
+dostupný ovladač. Se zkracováním životního cyklu výrobku není
+neobvyklé, že výrobce přestane aktualizovat ovladač krátce po ukončení
+výroby daného zařízení. Pokud po aktualizaci systému přestane uzavřený
+ovladač fungovat, stává se tím jinak funkční zařízení hromadou
+nepoužitelného šrotu. Takovému hardwaru je dobré se zdaleka vyhnout
+a to bez ohledu na operační systém, se kterým chcete zařízení
+provozovat.
+
+</para><para>
+
+Pomoci můžete tím, že výrobce uzavřeného hardwaru požádáte o uvolnění
+nezbytné dokumentace, podle které můžeme napsat svobodné ovladače pro
+jejich hardware.
+
+</para>
+</sect2>
+
+ </sect1>

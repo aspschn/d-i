@@ -1,0 +1,11 @@
+configure
+build-stamp
+config.status
+config.log
+config.sub
+config.guess
+*.so
+*.opic
+Makefile
+aclocal.m4
+

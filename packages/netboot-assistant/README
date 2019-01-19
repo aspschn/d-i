@@ -1,0 +1,309 @@
+
+                 Debian-Installer NetBoot Assistant
+                ====================================
+
+Overview
+--------
+    'di-netboot-assistant' is a tool to simplify the preparation of
+    files for TFTP net booting: It downloads and extracts all the
+    files needed and takes care of organizing them.
+    In addition, it prepares a top level menu, which allows to choose
+    from all installed netboot images.
+    It supports completely automatic installations by preseeding the
+    installer.  For details consult the 'README.preseed'.
+
+
+QuickStart
+----------
+    1. Install the 'di-netboot-assistant' package and a TFTP
+       server, for example 'dnsmasq' configured with
+       'enable-tftp' [2].
+    2. Run 'di-netboot-assistant install stable' or similar.
+       'di-netboot-assistant install' returns a list of netboot images
+       available for download and installation.
+    3. Configure a DHCP server, as explained in [1]. For further
+       information, read the 'architecture specific notes' below and
+       the example configuration samples [2].
+
+
+Using packaged debian-installer images
+--------------------------------------
+    You can also use the images provided by the
+    debian-installer-*-netboot-* packages.
+
+    1. Install the needed debian-installer-*-netboot-* packages.
+    2. Bind mount or copy '/usr/lib/debian-installer/' to your
+       tftp root directory:
+
+         mount --bind /usr/lib/debian-installer/ $TFTP_ROOT/d-i/n-pkg/
+
+       To make this persistent, add the following line to '/etc/fstab':
+
+         /usr/lib/debian-installer/  $TFTP_ROOT/d-i/n-pkg/  none  bind  0  0
+
+    3. Add the corresponding menu entries to the boot menu by running:
+
+         di-netboot-assistant -v rebuild-menu
+
+
+Architecture specific notes
+---------------------------
+• i386 / amd64
+    The Debian-Installer uses Syslinux's PXElinux[3] for BIOS
+    platforms.  Syslinux is a boot-loader that provide a menu system
+    to select the kernel you want to boot.
+    For systems with EFI, grub-efi and the grub menu system is used.
+    Make sure you have the grub-efi-amd64-bin package installed for
+    building the grub-efi netboot image.
+
+    Absolute filenames in PXElinux:
+      TFTP filenames inside PXElinux configuration files
+      ('pxelinux.HEAD', 'default', …) must be prefixed with '::/'.
+      PXElinux then treats them as absolute filenames (starting from
+      the root of the TFTP server).  Paths starting with a slash ('/')
+      are relative to the directory of 'pxelinux.0'.
+
+    Configure DHCP:
+
+        - In /etc/dhcp/dhcpd.conf (for isc-dhcp-server), configure the
+          TFTP server's IP address:
+
+           next-server 192.168.0.10;
+
+        - Provide netboot/pxelinux information:
+
+           filename "d-i/n-a/pxelinux.0";
+
+        and/or:
+
+           filename "d-i/n-a/bootnetx64.efi";
+
+        for the grub EFI image.  Consult the examples [2] on how to
+        configure the DHCP server to send the correct file automatically.
+
+        If you prefer to boot a specific installer, make it the default
+        in the top level menu and automatically boot it (perhaps after
+        some timeout).
+
+  The architectures below are rarely tested and the information might
+  be out of date.  Help in providing support for them is highly
+  appreciated.
+
+• ia64
+    Support for ia64 was available in older versions of
+    'di-netboot-assistant', but has been removed due to insufficient
+    developer support.
+
+• alpha
+• hppa
+• sparc
+    Those  architectures  netboot using  BOOTP  (some  can use RARP or
+    DHCP).  They don't have a boot-loader that would present a menu at
+    boot-time.  This means that you must configure the DHCP server to
+    provide one given kernel. (The DHCP server can of course provide
+    different kernel images, based on the MAC and/or IP address).
+
+    You can declare a kernel filename for all hosts in
+    '/etc/dhcpd3/dhcpd.conf':
+
+        subnet 192.168.0.0 netmask 255.255.255.0 {
+            filename "d-i/n-a/stable/sparc/boot.img"
+        }
+
+    or declare a single host:
+
+        host myhost1 {
+            hardware ethernet 00:40:63:d8:02:2c;
+            filename "d-i/n-a/stable/sparc/boot.img"
+        }
+
+• arm, armel, armhf, arm64
+
+• mips,mipsel,mips64el
+    Those architectures can do netbooting, but are not supported  by
+    this tool at the moment (because there is no '.tar.gz' archive).
+
+• m68k
+• ppc64el
+• s390, s390x
+
+Mirrors
+-------
+    The file 'di-sources.list' contains the canonical URLs for
+    repositories of netboot image.
+    You can set the variable 'MIRROR_REGEXPS' to rewrite the URLs to
+    your preferred mirror (you can specify multiple space-separated
+    regexp).
+
+    For example, if you want to search "://ftp.debian.org/" and
+    replace it with "://ftp.fr.debian.org/debian/", then you declare
+    MIRROR_REGEXPS="s=://ftp.debian.org/=://ftp.fr.debian.org/debian/="
+    in '/etc/di-netboot-assistant/di-netboot-assistant.conf'.
+
+TFTP server
+-----------
+    Depending on the TFTP server you use, adjust either 'TFTP_ROOT='
+    in '/etc/di-netboot-assistant/di-netboot-assistant.conf' or the
+    root directory of the TFTP server.
+
+DHCP server
+-----------
+    There are two typical scenarios:
+
+                                      +--------+
+         ___                          | Switch |  +-------------------+
+      __/   \__                       +--------+  |     This host     |
+     /         \    +--------------+    |  | |    |    is the only    |
+    (  Internet )---| (DSL) Modem  +----+  | +----|    DHCP server    |
+     \__     __/    |   or router  |       |      +-------------------+
+        \___/       +--------------+       |    +-------------------+
+                                           +----| A client computer |
+                                                +-------------------+
+
+    First case:  The TFTP server also provides DHCP for the local
+                 network.  This is the most simple and recommended
+                 configuration.  You simply have to add some options
+                 to enable netbooting (typically, the filename to
+                 boot, and the tftp server's address).  Read [1],
+                 examples [2] and architecture specific notes.
+
+
+
+                                       +--------+
+         ___                           | Switch |
+      __/   \__     +---------------+  +--------+
+     /         \    |  (DSL) Modem  |    |  | |    +-------------------+
+    (  Internet )---|       with    +----+  | +----|     This host     |
+     \__     __/    | build-in DHCP |       |      +-------------------+
+        \___/       +---------------+       |    +-------------------+
+                                            +----| A client computer |
+                                                 +-------------------+
+
+    Second case: A DHCP already exists, but you can't/don't want to use it
+                 for netbooting. This isn't the recommended configuration,
+                 but it was successfully tested for netbooting PXE clients
+                 (i386, amd64 and ia64) on network where the existing DHCP
+                 server didn't provide netboot informations.
+                 !!!! Do not setup rogue dhcp servers in your company !!!!
+
+                 In this situation, you have to divide your DHCP subnet in
+                 two ranges of IP address. The first range will still be
+                 served by the existing DHCP server.
+                 The second part will be served by "this host". It will only
+                 reply to DHCP request sent during PXE netboot step. This is
+                 possible because client computers (actually, their PXE agent
+                 in the NIC's ROM) sends an option like this during PXE boot:
+                    vendor-class-id= "PXEClient:Arch:00000:UNDI:002001"
+                 Both dhcpd and dnsmasq can be instructed to provide answer
+                 depending on such strings.
+
+                 Note: For easy _home_ setup, you can choose not to reduce the
+                 range of IP served by the existing DHCP server, and just
+                 declare a *small* range of addresses on *both* DHCP (some
+                 addresses that are unlikely to be used on the first one)
+                 That's ugly, but it can work ! (as long your existing DHCP
+                 don't allocate some of those IP ;-)
+
+
+Using 'dnsmasq'
+---------------
+    'dnsmasq' is a simple all-in-one (DNS, SHCP and TFTP) server.
+
+  QuickStart :
+    Install the package 'dnsmasq':
+        apt install dnsmasq
+
+    Create the TFTP server's root directory:
+	mkdir /var/lib/tftpboot
+
+    Configure 'dnsmasq':
+        cp /usr/share/doc/di-netboot-assistant/examples/dnsmasq.conf.simple \
+                                               /etc/dnsmasq.d/netboot-installer
+        systemctl restart dnsmasq
+
+    Install the netboot images:
+        di-netboot-assistant install stable
+
+
+Running as non-root
+-------------------
+    It is possible to run di-netboot-assistant as non root. There are
+    actually two ways to achieve that:
+
+  • Delegate to a group (that manage the system wide netboot images)
+
+        In this case, we want to delegate the management of netboot files
+        to one or more people that don't have access to root account.
+
+        Create a group and add those user to the group
+            addgroup dina-admin
+            adduser johndoe dina-admin
+
+        Purge the package (and existing files that are owned by root !).
+            # Note : you will loose existing configuration file!
+            apt-get purge di-netboot-assistant
+
+        Allow that group to modify the files
+            # note: the four lines below are on single command.
+            for dir in /var/cache/di-netboot-assistant \
+                /var/lib/di-netboot-assistant \
+                /var/lib/tftpboot/; do
+                dpkg-statoverride --update --add root dina-admin 2775 $dir
+            done
+
+            # add the following line in di-netboot-assistant.conf, so
+            # so new file are writable by other members of the group.
+            umask 0002
+
+            # Do not grant write permission on di-netboot-assistant.conf to
+            # anybody but root. This would lead to privilege escalation since
+            # the configuration file are executed (sourced) by the script.
+
+        Reinstall the package
+            apt-get install di-netboot-assistant
+
+  • Per-user tftpboot
+        It is possible to have per user configuration files and repositories.
+        The user just have to create a configuration file in
+           ~/.di-netboot-assistant/di-netboot-assistant.conf
+        and configure it. A sample file is provided in
+           /usr/share/doc/di-netboot-assistant/examples/peruser.di-netboot-assistant.conf
+
+  • Sudo
+        Do *NOT* use di-netboot-assistant with sudo.
+        Allowing sudo execution of di-netboot-assistant allows one to
+        become root (because the sudoer can edit ~/.di-netboot-assistant/*)
+
+Testing
+-------
+    Qemu (and kvm) can emulate a TFTP server, to it's easy to test netboot:
+        cd /var/lib/tftpboot
+        qemu -boot n -tftp . -bootp /d-i/n-a/pxelinux.0
+
+See also
+--------
+    http://wiki.debian.org/DebianInstaller/NetbootAssistant
+    http://www.debian.org/releases/stable/debian-installer/
+
+--------------------------------------------------------------------------
+    [1] "Installation Guide", especially the sections
+        "4.6 Preparing Files for TFTP Net Booting"
+        and "5.1.5 Booting with TFTP"
+        http://www.debian.org/releases/stable/installmanual
+
+    [2] Sample DHCP configuration files:
+        /usr/share/doc/di-netboot-assistant/examples/dnsmasq.conf.simple
+        /usr/share/doc/di-netboot-assistant/examples/dnsmasq.conf.multiarch
+        /usr/share/doc/di-netboot-assistant/examples/dhcpd.conf.simple
+        /usr/share/doc/di-netboot-assistant/examples/dhcpd.conf.multiarch
+
+    [3] PXElinux homepage.
+        http://syslinux.zytor.com/wiki/index.php/PXELINUX
+
+    [ ] Preboot Execution Environment (PXE) Specification
+        http://www.intel.com/design/archives/wfm/downloads/pxespec.htm
+
+    [ ] Extensible Firmware Interface (EFI)
+        http://developer.intel.com/technology/efi/index.htm
+
+ -- Franklin PIAT, Andreas B. Mundt

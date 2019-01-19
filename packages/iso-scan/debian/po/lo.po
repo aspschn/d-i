@@ -1,0 +1,295 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of lo.po to Lao
+# Lao translation of debian-installer.
+# Copyright (C) 2006-2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Anousak Souphavanh <anousak@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: lo\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2012-04-25 09:05+0700\n"
+"Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
+"Language-Team: Lao <lo@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "ກວດຂໍ້ມູນຮາດດີສເພື່ອຫາຮູບ ISO ສຳຫລັບໂປຣແກມຕິດຕັ້ງ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "ກຳລັງກວດສອບຮາດແວເພື່ອຫາຮາດດິກ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "ກຳລັງົ້ນຮາດດິກເພື່ອຫາອິມເມດ ISO ຂອງໂປແກຣມຕິດຕັ້ງ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "ກຳລັງເມົາ ${DRIVE}..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr " ກຳລັງສຳຫຼວດຂໍ້ມູນໃນ ${DRIVE} (ໃນ ${DIRECTORY})..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "ຈະຄົ້ນທັງຮາດດິກເພື່ອຫາອິມເມດ ISO ຂອງໂປແກຣມຕິດຕັ້ງ ຫຼື ບໍ່ ?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"ການສຳຫຼວດຂໍ້ມູນຢ່າງໄວໃນຕຳແໜ່ງສຳຄັນ ISO "
+"ຂອງໂປແກຣມຕິດຕັ້ງເປັນໄປໄດ້ວ່າການຄົ້ນຫາທົ່ວທັງຮາດດິກອາດພບົອິມເມດ ISO ດັ່ງກ່ວາໄດ້ແຕ່ອາດໃຊ້ເວລານານ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "ຫາອິມເມດ ISO ຂອງໂປແກຣມຕິດຕັ້ງບໍ່ພົບ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"ບໍ່ພົບອິມເມດ ISO ຂອງໂປແກຣມຕິດຕັ້ງ ຖ້າທ່ານໄດ້ດາວໂຫຼດອິມເມດ ISO "
+"ດັ່ງກ່ວາໄວ້ກໍ່ເປັນໄປໄດ້ວ່າຊື່ແຟ້ມອາດຈະຜິດ (ເຊັ່ນບໍ່ໄດ້ລົງທ້າຍດ້າຍ \".iso\") "
+"ຫຼືອາດຈະຢູ່ໃນລະບົບແຟ້ມທີ່ບໍ່ສາມາດເມົາໄດ້"
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"ທ່ານຈະຕ້ອງໃຊ້ວິທີການຕິດຕັ້ງເປັນທາງເລືອກທີ່ໃຫ້ເລືອກອຸປະກອນເພື່ອຄົ້ນຫາ ISO ຫຼືລອງອີກຄັ້ງຫຼັງຈາກໄດ້ແກ້ໄຂມັນ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"ເຖີງຈະພົບອິມເມດ ISO ທີ່ອາດເປັນໄປໄດ້ແຕ່ກໍ່ບໍ່ສາມາດເມົາໄດ້ ເປັນໄປໄດ້ວ່າອິມເມດ ISO "
+"ທີ່ທ່ານດາວໂຫຼດໄດ້ອາດຈະເສຍ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "ບໍ່ພົບອິມເມດ ISO ຂອງໂປມແກມຕິດຕັ້ງ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr "ເຖີງຈະພົບອິມເມດ ISO ອາດເປັນໄປໄດ້ແຕ່ກໍ່ຈະເບີ່ງຄືຈະບໍ່ໃຊ້ອິມເມດ ISO ທີ່ໃຊ້ການໄດ້"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "ເມົ້າທ໌ອິມເມດ ISO ຂອງໂປແກຼມຕິດຕັ້ງ ${SUITE} ສຳເລັດ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr "ຈະໃຊ້ແຟ້ມ ISO ${FILENAME} ທີ່ ${DEVICE} (${SUITE}) ເປັນອິມເມດ ISO ສຳລັບຕິດຕັ້ງ"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "ອຸປະກອນທີ່ກວດພົບທັງໝົດ"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "ໃສ່ອຸປະກອນດ້ວຍຕົນເອງ"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "ອຸປະກອນຫຼືພາທີຊັນເພື່ອຄົ້ນຫາການຕິດຕັ້ງລະບົບ ISO (s) :"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"ທ່ານສາມາດເລືອກອຸປະກອນທີ່ຕົນເອງລະບຸອຸປະກອນທີ່ຕົນເອງບໍ່ໄດ້ກວດພົບຫຼືອຸປະກອນທີ່ສາມາດໃຊ້ໄດ້ rescan "
+"(ມີປະໂຫຍດສຳລັບອປະກອນ USB ຊ້າ)"
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "ຊື່ອຸປະກອນ:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "ການຄົ້ນຫາແບບເຕັມ"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "ໄຟລ໌ ISO ທີ່ຈະໃຊ້:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"ໜຶ່ງຫຼືຫຼາຍໄຟລ໌ ISO ໄດ້ຮັບການກວດພົບໃນອຸປະກອນທີ່ເລືອກ (s) "
+"ກະລຸນາເລືອກທີ່ທ່ານຕ້ອງການໃຊ້ຫຼືຂໍສຳລັບການຄົ້ນຫາຢ່າງລະອຽດຫຼາຍຂື້ນ"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr "ມາດຕະຖານສຳລັບ ISO ໄຟລ໌ ${FILENAME} ເປັນພາບທີ່ຖືກຕ້ອງສຳລັບການຕິດຕັ້ງ?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"ຈະໃຊ້ແຟ້ມ ISO ${FILENAME} ທີ່ ${DEVICE} (${SUITE}, ລະຫັດ ${CODENAME}, "
+"ອະທິບາຍໃນຕົວເເບບ '${DESCRIPTION}')ຈະຖືກໃຊ້ເປັນການຕິດຕັ້ງເເບບ ISO."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr "ຫາກໄຟລ໌ ISO ຫຼາຍໆ ທີ່ມີຢູ່ເທິງໄດຣຟ໌ທີ່ຕິດຕັ້ງດຽວກັບທີ່ທ່ານອາດເລືອກທີ່ໜຶ່ງທີ່ທ່ານຕ້ອໃຊ້"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "ໂຫລດອົງປະກອບໂປຣແກມຕິດຕັ້ງຈາກ ISO ຂອງໂປຣແກມຕິດຕັ້ງ"

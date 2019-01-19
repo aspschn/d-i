@@ -1,0 +1,179 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of lo.po to Lao
+# Lao translation of debian-installer.
+# Copyright (C) 2006-2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Anousak Souphavanh <anousak@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: lo\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2010-11-26 09:11+0700\n"
+"Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
+"Language-Team: Lao <lo@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:1001
+msgid "Check CD-ROM integrity?"
+msgstr "ຈະກວດສອບຄວາມສົມບູນຂອງຊີດີລອມ ຫຼື ບໍ?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:1001
+msgid "Warning: this check depends on your hardware and may take some time."
+msgstr "ຄຳເຕືອນ: ການກວດສອບນີ້ຂື້ນຢູ່ກັບຮາດແວຂອງທ່ານ ແລະ ອາດໃຊ້ເວລາດົນ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:2001
+msgid "Insert a Debian CD-ROM"
+msgstr "ໃສ່ແຜ່ນຊີດີລອມເດບຽນ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:2001
+msgid ""
+"Please insert one of the official Debian CD-ROMs into the drive before "
+"continuing."
+msgstr "ກະລຸນ່ໃສ່ແຜ່ນຊີດີລອມເດບຽນທີ່ເປັນທາງການລົງໃນໄດເວີກ່ອນຈະດຳເນີນການຕໍ່ໄປ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:3001
+msgid "Failed to mount CD-ROM"
+msgstr "ເມົ້າທ໌ຊີດີລອມບໍ່ສຳເລັດ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:3001
+msgid ""
+"The CD-ROM ${CDROM} could not be mounted correctly. Please check the media "
+"and cables, and try it again."
+msgstr "ບໍ່ສາມາດເມົ້າທ໌ຊີດີລອມ ${CDROM} ໄດ້ ກະລຸນາກວດສອບແຜ່ນ ແລະ ສາຍສັນຍານແລ້ວລອງໃໝ່"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:4001
+msgid "No valid Debian CD-ROM"
+msgstr "ບໍ່ມີແຜ່ນຊີດີລອມເດບຽນທີ່ໃຊ້ການໄດ້"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:4001
+msgid ""
+"The CD-ROM you have inserted is not a valid Debian CD-ROM. Please change the "
+"disk."
+msgstr "ແຜ່ນຊີດີລອມທີ່ເຈົ້າໃສ່ບໍ່ແມ່ນແຜ່ນຊີດີລອມເດບຽນທີ່ໃຊ້ການໄດ້ກະລຸນາປ່ຽນແຜ່ນ"
+
+#. Type: error
+#. Description
+#. TRANSLATORS: MD5 is a file name, don't translate it.
+#. :sl3:
+#: ../cdrom-checker.templates:5001
+msgid "Failed to open checksum file"
+msgstr "ເປີດແຟ້ມກວດສອບຜົນລວມບໍ່ສຳເລັດ"
+
+#. Type: error
+#. Description
+#. TRANSLATORS: MD5 is a file name, don't translate it.
+#. :sl3:
+#: ../cdrom-checker.templates:5001
+msgid ""
+"Opening the MD5 file on the CD-ROM failed. This file contains the checksums "
+"of the files located on the CD-ROM."
+msgstr "ເປີດແຟ້ມ MD5 ໃນຊີດີລອມບໍ່ສຳເລັດ ແຟ້ມດັ່ງກ່າວເກັບຜົນລວມກວດສອບຂອງແຟ້ມຕ່າງທີ່ຢູ່ໃນຊີດີລອມ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:6001
+msgid "Integrity test successful"
+msgstr "ການກວດກາຄວາມສົມບູນຜ່ານ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:6001
+msgid "The CD-ROM integrity test was successful. The CD-ROM is valid."
+msgstr "ການກວດກາຄວາມສົມບູນຂອງຊີດີລອມຜ່ານແລ້ວ ແຜ່ນຊີດີລອມໃຊ້ການໄດ້"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:7001
+msgid "Integrity test failed"
+msgstr "ການກວດສອບຄວາມສົມບູນບໍ່ຜ່ານ"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:7001
+msgid ""
+"The ${FILE} file failed the MD5 checksum verification. Your CD-ROM or this "
+"file may have been corrupted."
+msgstr "ແຟ້ມ ${FILE} ບໍ່ຜ່ານການກວດສອບຜົນລວມ MD5 ແຜ່ນຊີດີລອມຫຼືແຟ້ມດັ່ງກ່ວາອາດຈະບໍ່ດີ"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:8001
+msgid "Check the integrity of another CD-ROM?"
+msgstr "ກວດສອບຄວາມສົມບູນຂອງຊີດີລອມອື່ນ ຫຼື ບໍ່ ?"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:9001
+msgid "Insert Debian boot CD-ROM"
+msgstr "ໃສແຜ່ນຊີດີລອມສຳລັບບຣູດເດບຽນ"
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:9001
+msgid ""
+"Please make sure you have inserted the Debian boot CD-ROM  to continue with "
+"the installation."
+msgstr "ກາລຸນາກວບສອບໃຫ້ແນ່ໃຈວ່າທ່ານໄດ້ໃຊ້ແຜ່ນຊີດີລອມສຳລັບບູດເດບຽນແລ້ວ ເພື່ອດຳເນີນການຕິດຕັ້ງຕໍ່"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:10001
+msgid "Checking CD-ROM integrity"
+msgstr "ກຳລັງກວດສອບຄວາມສົມບູນຂອງຊີດີລອມ"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../cdrom-checker.templates:11001
+msgid "Checking file: ${FILE}"
+msgstr "ກຳລັງກວດສອບແຟ້ມ: ${FILE}"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. Translators: keep it under 65 columns
+#. :sl2:
+#: ../cdrom-checker.templates:12001
+msgid "Check the CD-ROM(s) integrity"
+msgstr "ກວດສອບຄວາມສົມບູນຂອງຊີດີລອມ"

@@ -1,0 +1,73 @@
+<!-- retain these comments for translator revision tracking -->
+<!-- original version: 22839 -->
+
+<bookinfo id="debian_installation_guide">
+<title>&debian-gnu; Instalazio Gida-Liburua</title>
+
+<abstract>
+<para>
+Dokumentu honek &debian-gnu; &release; sistema  &arch-title; 
+(<quote>&architecture;</quote>) arkitekruran instalatzeko 
+argibideak ditu. &debian; sistematan gauzak nola egiten diren 
+argibideak eta argibide gehiagotara estekeak ditu ere.
+</para>
+
+<warning condition="not-checked"><para>
+Instalazio gida hau haurreko instalazio metodoarako 
+("boot-floopies") eginitakoan oinarriturik dago eta 
+Debian instalatzaile berrirako eguneraturik izan da.
+
+Hala ere &architecture; arkitekturarentzat ez da guztiz 
+eguneratu eta frogatua izan. Oraindik guztiz osatu gabe 
+edo zaharkiturik geraturiko manual zatiak daude. Manual 
+honen bertsio berriago bat, ziurrenik arkitektura honentzat 
+eguneratagorik egongo dena 
+<ulink url="&url-d-i;">&d-i; webgunean</ulink> aurkitu daiteke, 
+Han beste itzulpen batzuek ere aurki ditzakezu.
+
+</para></warning>
+
+<note condition="checked"><para>
+
+&architecture; -rentzat instalazio gida amaitu artean nahiko maiz
+eguneratuko da, &releasename; argitaratze ofiziala baino lehen 
+aldaketak egin eta atalak berrantolatzeko asmoa dugu.
+Manual honenbertsio berriago bat, ziurrenik arkitektura honentzat 
+eguneratagorik egongo dena 
+<ulink url="&url-d-i;">&d-i; home page</ulink> webgunean aurkitu daiteke, 
+Han beste itzulpen batzuek ere aurki ditzazkezu.
+</para></note>
+
+<warning condition="outdated-translation"><para>
+<!-- Translators: This paragraph will be displayed only in translations
+which are outdated and not in active maintenance. It shall be left
+untranslated. Keep it as the following: -->
+This translation of the installation guide is not up-to-date and
+currently there is noone actively working on updating it. Keep this in
+mind when reading it; it may contain outdated or wrong information.
+Read or double-check the English variant, if in doubt. If you can help us
+with updating the translation, please contact
+<email>debian-boot@lists.debian.org</email> or the <ulink
+url="https://lists.debian.org/i18n.html">debian-l10n-xxx mailinglist</ulink>
+for this language. Many thanks
+</para></warning>
+
+</abstract>
+
+<copyright>
+ <year>2004 &ndash; &current-year;
+ <trademark class="copyright">
+ </trademark>
+ </year>
+ <holder>Debian Instalatzailearen Garatzaile taldea</holder>
+</copyright>
+
+<legalnotice>
+<para>
+
+Manual hau software librea da, berau GNU lizentziak ezartzen duen eran 
+eraldatu eta zabaldu daiteke. Lizentzia ikusteko jo 
+<xref linkend="appendix-gpl"/> atalera.
+</para>
+</legalnotice>
+</bookinfo>

@@ -1,0 +1,7 @@
+*.debhelper*
+*.substvars
+files
+mklibs
+mklibs-copy
+tmp
+

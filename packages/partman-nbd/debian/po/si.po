@@ -1,0 +1,188 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+#
+#
+# Danishka Navin <danishka@gmail.com>, 2009, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2012-02-28 10:16+0530\n"
+"Last-Translator: Danishka Navin <danishka@gmail.com>\n"
+"Language-Team: Sinhala <info@hanthana.org>\n"
+"Language: si\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "ජාල වැලකුම් උපකරණය සකසන්න"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD සැකසුම් ක්‍රියාව:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "දැනට උපකරණ ${NUMBER} ගණනක් සබඳ කර ඇත."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "ජාල වැලකුම් සේවාදායකය:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "කරුණාකර nbd-සේවාදායකය ධාවනය වන ධාරක නාමය හෝ IP ලිපින ඇතුළත් කරන්න."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "ජාල වැලකුම් උපකරණ නෝඩය:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr "කරුණාකර ඔබ සබඳ හෝ විසන්ධි කිරීමට බලාපොරොත්තු වන NBD උපකරණ තෝරන්න."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD සේවාදායකයට සම්බන්ධවීම අසාර්ථකයි"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd-server සබඳවීම අසාර්ථක විය. කරුණාකර ඔබ ඇතුළත් කල ධාරකය හා පේනුව නිවැරදිද, nbd-"
+"server සැකසීම එම ධාරයක හා පේනුවේ ධාවනය වේද, එම ජාලය නිසි පරිදි සකසා ඇද්ද යන්න තහවුරු "
+"කරගෙන, යළි උත්සාහ කරන්න. "
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ජාල වැලකුම් උපකරණ කිසිවක් ඉතිරිව නැත"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"සියළු NBD උපකරණ නෝඩ භාවිතයේ පවතී නොහොත් උපකරණ නෝඩ හඳුනාගැනීමේ ගැටළුවක් පැන නැගී ඇත."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr "සැකසූ එකක් විසන්ධි කරන තෙක් තවත් කිසිඳු NBD උපකරණ නෝඩයක් සැකසිය නොහැක."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "කිසිඳු සබඳ කල ජාල වැලකුම් උපකරණ නෝඩයම් හමු නොවිනි"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"කිසිඳු සේවාදායකයකට සබඳ කල ජාල වැලකුම් උපකරණ නෝඩයක් නොමැත. තිබියහොත්, ඔබට ඒවා කිසිවක් "
+"විසන්ධි කල නොහැක."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "ජාල වැලකුම් උපකරණයක් සබඳ කරන්න"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "ජාල වැලකුම් උපකරණයක් විසන්ධි කරන්න"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "අවසන්කර කොටස්කාරයකට නැවත පැමිණෙන්න"

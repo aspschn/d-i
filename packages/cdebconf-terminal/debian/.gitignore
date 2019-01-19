@@ -1,0 +1,7 @@
+*.debhelper*
+*.substvars
+cdebconf-gtk-terminal
+cdebconf-newt-terminal
+files
+tmp
+

@@ -1,0 +1,139 @@
+#!/bin/sh
+
+. /lib/partman/lib/base.sh
+. /usr/share/debconf/confmodule
+
+connect() {
+	local device server name choices
+
+	choices=""
+	for i in /dev/nbd*
+	do
+		if [ ! -f /sys/block/${i#/dev/}/pid ]
+		then
+			if [ -z "$choices" ]
+			then
+				choices=$i
+			else
+				choices="$choices, $i"
+			fi
+		fi
+	done
+	if [ -z "$choices" ]
+	then
+		db_input critical partman-nbd/error/nodev
+		db_go || true
+		return
+	fi
+	db_subst partman-nbd/device CHOICES "$choices"
+
+	db_reset partman-nbd/device
+	db_reset partman-nbd/server
+	db_reset partman-nbd/name
+
+	db_input critical partman-nbd/device
+	db_input critical partman-nbd/server
+	db_input critical partman-nbd/name
+
+	db_go || return
+
+	db_get partman-nbd/device
+	device="$RET"
+	db_get partman-nbd/server
+	server="$RET"
+	db_get partman-nbd/name
+	name="$RET"
+
+	nbd-client $server -N $name $device -swap
+	if [ $? -gt 0 ]
+	then
+		db_input critical partman-nbd/error/noserver
+		db_go || true
+		return
+	fi
+
+	# Store for future reference
+	cat > /var/lib/partman-nbd/${device#/dev/} <<EOF
+server=$server
+name=$name
+EOF
+	return
+}
+
+disconnect () {
+	local device choices
+
+	choices=""
+	for i in /dev/nbd*
+	do
+		if [ -f /sys/block/${i#/dev/}/pid ]
+		then
+			if [ -z "$choices" ]
+			then
+				choices=$i
+			else
+				choices="$choices, $i"
+			fi
+		fi
+	done
+	if [ -z "$choices" ]
+	then
+		db_input critical partman-nbd/error/noconnected
+		db_go || true
+		return
+	fi
+
+	db_subst partman-nbd/device CHOICES "$choices"
+
+	db_reset partman-nbd/device
+	
+	db_input critical partman-nbd/device
+
+	db_go || return
+
+	db_get partman-nbd/device
+	nbd-client -d "$RET"
+}
+
+db_metaget partman-nbd/menu/connect description
+choices="$RET"
+db_metaget partman-nbd/menu/disconnect description
+choices="$choices, $RET"
+db_metaget partman-nbd/menu/finish description
+choices="$choices, $RET"
+db_subst partman-nbd/mainmenu CHOICES "$choices"
+
+cont=1
+while [ 1 ]
+do
+	count=0
+	for i in /sys/block/nbd*
+	do
+		[ -f $i/pid ] && count=$(( $count + 1 ))
+	done
+	db_reset partman-nbd/mainmenu
+	db_subst partman-nbd/mainmenu NUMBER $count
+	db_input critical partman-nbd/mainmenu
+	db_go || break
+	db_get partman-nbd/mainmenu
+	option="$RET"
+	case "$option" in
+		connect)
+			connect
+		;;
+		disconnect)
+			disconnect
+		;;
+		finish)
+			break
+		;;
+	esac
+	# allow nbd-client connections to settle
+	sleep 1
+done
+
+stop_parted_server
+
+restart_partman
+
+exit 0

@@ -1,0 +1,27 @@
+<!ENTITY MSG-YES "<userinput>Ja</userinput>">
+<!ENTITY MSG-NO "<userinput>Nein</userinput>">
+<!ENTITY BTN-CONT "<guibutton>Weiter</guibutton>">
+<!ENTITY BTN-CANCEL "<guibutton>Abbrechen</guibutton>">
+<!ENTITY BTN-GOBACK "<guibutton>Zurück</guibutton>">
+<!ENTITY ekey "<keycap>E</keycap>">
+<!ENTITY downkey "<keycap>Pfeil abwärts</keycap>">
+<!ENTITY endkey "<keycap>Ende</keycap>">
+
+<!ENTITY archive-mirror "ftp2.de.debian.org">
+
+<!-- translation of architecture names -->
+<!ENTITY arch-title
+  "<phrase arch='any-amd64'>64-Bit PC</phrase><phrase 
+   arch='armel'>32-Bit Soft-float-ARM</phrase><phrase 
+   arch='armhf'>32-Bit Hard-float-ARMv7</phrase><phrase 
+   arch='arm64'>64-Bit ARM</phrase><phrase 
+   arch='hppa'>PA-RISC</phrase><phrase 
+   arch='any-i386'>32-Bit PC</phrase><phrase 
+   arch='ia64'>IA-64</phrase><phrase 
+   arch='mips'>32-Bit MIPS (Big-Endian)</phrase><phrase 
+   arch='mips64el'>64-Bit MIPS (Little-Endian)</phrase><phrase 
+   arch='mipsel'>32-Bit MIPS (Little-Endian)</phrase><phrase 
+   arch='powerpc'>PowerPC</phrase><phrase 
+   arch='ppc64el'>64-Bit PowerPC (Little-endian)</phrase><phrase 
+   arch='sparc'>SPARC</phrase><phrase
+   arch='s390'>S/390</phrase>">

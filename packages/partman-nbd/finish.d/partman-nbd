@@ -1,0 +1,92 @@
+#!/bin/sh
+
+. /lib/partman/lib/base.sh
+
+dcfile=/var/lib/partman-nbd/debconf-sets
+devices=
+nbdrootdev=
+
+for dev in $DEVICES/*
+do
+	[ -d "$dev" ] || continue
+	cd $dev
+	partitions=
+	open_dialog PARTITIONS
+	while { read_line num id size type fs path name; [ "$id" ]; }
+	do
+		[ "$fs" != free ] || continue
+		[ -f $id/method ] || continue
+		device=$(cat device)
+		device=${device#/dev/}
+		device=${device%p*}
+		case $device in
+		nbd*)
+			mkdir -p $id/options
+			touch $id/options/_netdev
+			mount=$(cat $id/mountpoint)
+			if [ "$mount" = "/" ]
+			then
+				nbdrootdev=$device
+			else
+				# /etc/nbd-client *must not* be used for the
+				# root filesystem
+				if [ "$device" = "$nbdrootdev" ]
+				then
+					continue
+				fi
+				. /var/lib/partman-nbd/$device
+				case $(cat $id/method) in
+				*swap)
+					eval type_$device=swap
+					;;
+				keep)
+					if  [ -z "$(eval echo \$type_$device)" ]
+					then
+						eval type_$device=filesystem
+					fi
+					;;
+				esac
+				eval host_$device="\$server"
+				eval name_$device="\$name"
+			fi
+			if ( echo $devices | grep -qv $device )
+			then
+				devices="$devices $device"
+			fi
+			;;
+		*)
+			continue
+			;;
+		esac
+	done
+	close_dialog
+done
+
+if [ ! -z "$devices" ]
+then
+	nbdtab=/tmp/nbdtab.$$
+	for device in $devices
+	do
+		if [ ! -z "$nbdrootdev" -a "$device" != "$nbdrootdev" ]
+		then
+			eval server=\$host_$device
+			eval name=\$name_$device
+			echo "$device  $server $name" >$nbdtab
+		fi
+	done
+	apt-install nbd-client || true
+	cp $nbdtab /target/etc/nbdtab
+fi
+
+if [ ! -z $nbdrootdev ]
+then
+	kopts=''
+	if db_get debian-installer/add-kernel-opts && [ "$RET" ]
+	then
+		kopts="$RET"
+	fi
+	. /var/lib/partman-nbd/$nbdrootdev
+	server=$(resolv $server | head -n 1)
+	kopts="$kopts nbdroot=$server,$name,$nbdrootdev"
+	db_set debian-installer/add-kernel-opts "$kopts"
+fi

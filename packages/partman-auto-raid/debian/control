@@ -1,0 +1,14 @@
+Source: partman-auto-raid
+Section: debian-installer
+Priority: standard
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Simon Huggins <huggie@earth.li>, Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
+Vcs-Browser: https://salsa.debian.org/installer-team/partman-auto-raid
+Vcs-Git: https://salsa.debian.org/installer-team/partman-auto-raid.git
+
+Package: partman-auto-raid
+Package-Type: udeb
+Architecture: all
+Depends: ${misc:Depends}, partman-base (>= 114), partman-basicfilesystems, partman-ext3, partman-auto (>= 58), partman-md
+Description: Allow preseeded RAID installs

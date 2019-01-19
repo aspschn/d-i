@@ -1,0 +1,6 @@
+*.debhelper*
+*.substvars
+files
+kbd-chooser
+kbd-chooser.templates
+

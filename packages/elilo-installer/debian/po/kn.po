@@ -1,0 +1,111 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# Kannada Translations
+# Vikram Vincent <vincentvikram@gmail.com>, 2007, 2010, 2011.
+# Raghavendra S <raghuarr@gmail.com>, 2010.
+#
+# Translators:
+# shashi kiran <shashi859@gmail.com>, 2010, 2011.
+# Prabodh CP <prabodhcp@gmail.com>, 2011.
+#
+#
+# Translations from iso-codes:
+#   Shankar Prasad <svenkate@redhat.com>, 2009.
+#   Vikram Vincent <vincentvikram@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kn\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2008-01-26 07:32+0000\n"
+"PO-Revision-Date: 2011-11-01 23:07+0530\n"
+"Last-Translator: vignesh prabhu <stove311987@gmail.com>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: select
+#. Description
+#: ../elilo-installer.templates:1001
+msgid "Partition for boot loader installation:"
+msgstr "ಬೂಟ್ ಲೋಡರ್  ಅನುಸ್ಥಾಪನೆಗಾಗಿ ಡಿಸ್ಕ್: "
+
+#. Type: select
+#. Description
+#: ../elilo-installer.templates:1001
+msgid ""
+"Partitions currently available in your system are listed. Please choose the "
+"one you want elilo to use to boot your new system."
+msgstr ""
+"ನಿಮ್ಮ ಗಣಕದಲ್ಲಿರುವ ವಿಭಾಗಗಳು ಈ ಪಟ್ಟಿಯಲ್ಲಿವೆ. ಯಾವ ವಿಭಾಗದಲ್ಲಿಎಲಿಲೋ ಸ್ವಯಂ ಸಿದ್ಧತ "
+"ಅನುಸ್ಥಾಪಕವನ್ನು ಮಾಡಬೇಕೆಂದು ಆಯ್ಕೆ ಮಾಡಿ"
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:2001
+msgid "No boot partitions detected"
+msgstr "ಯಾವುದೇ  ಬೂಟ್ ವಿಭಜನೆಗಳು ಪತ್ತೆಯಾಗಲಿಲ್ಲ"
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:2001
+msgid ""
+"There were no suitable partitions found for elilo to use.  Elilo needs a "
+"partition with a FAT file system, and the boot flag set."
+msgstr ""
+"ಸೂಕ್ತ ವಿಭಾಗಗಳು ಎಲಿಲೋ ಬಳಸಲು ದೊರಕಲಿಲ್ಲ.  'ಬೂಟ್' ಪತಾಕೆ ಸಕ್ರಿಯವಾಗಿರುವFAT ಕಡತ ರಚನೆ "
+"ಎಲಿಲೋಗೆ ಅಗತ್ಯವಿದೆ "
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../elilo-installer.templates:3001
+msgid "Install the elilo boot loader on a hard disk"
+msgstr "ಲಿಲೊ ಬೂಟ್ ಲೋಡರ್ ಅನ್ನು ಡಿಸ್ಕ್ಗೆ ಅನುಸ್ಥಾಪಿಸಿ "
+
+#. Type: text
+#. Description
+#: ../elilo-installer.templates:4001
+msgid "Installing the ELILO package"
+msgstr "ಲಿಲೊ ತಂತ್ರಾಂಶ ಕಂತೆಯನ್ನು ಅನುಷ್ಠಾಪಿಸಲಾಗುತ್ತಿದೆ"
+
+#. Type: text
+#. Description
+#: ../elilo-installer.templates:5001
+msgid "Running ELILO for ${bootdev}"
+msgstr "${bootdev}ಗೆ ಚಾಲ್ತಿಯಲ್ಲಿರುವ ELILO "
+
+#. Type: boolean
+#. Description
+#: ../elilo-installer.templates:6001
+msgid "ELILO installation failed.  Continue anyway?"
+msgstr "ಲಿಲೊ ಅನುಷ್ಠಾಪನೆ ವಿಫಲಗೊಂಡಿದೆ.ಎನಾದರಾಗಲಿ ಮುಂದುವರೆ?"
+
+#. Type: boolean
+#. Description
+#: ../elilo-installer.templates:6001
+msgid ""
+"The elilo package failed to install into /target/.  Installing ELILO as a "
+"boot loader is a required step.  The install problem might however be "
+"unrelated to ELILO, so continuing the installation may be possible."
+msgstr ""
+"ಲಿಲೊ ಅನ್ನು /target/ನಲ್ಲಿ ಅನುಷ್ಠಾಪಿಸಲಾಗಿಲ್ಲ.ಲಿಲೊ ಅನ್ನು ಬೂಟ್ ಲೋಡರ್ ಆಗಿ ಅನುಷ್ಠಾಪಿಸುವುದೆ "
+"ನೀವು ಮಾಡಬೇಕಿರುವ ಮುಂದಿನ ಕಾರ್ಯ.ಅನುಷ್ಠಾಪಿಸಿವ ತೊಂದರೆ ಲಿಲೊಗೆ ಸಂಭಂದವಿರದೆ ಇರಬಹುದು "
+"ಆದ್ದರಿಂದ ಅನುಷ್ಠಾಪನೆಗೆ ಯಾವುದೇ ತೊಂದರೆ ಆಗದಿರಬಹುದು"
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:7001
+msgid "ELILO installation failed"
+msgstr "ಲಿಲೊ ಅನುಸ್ಥಾಪನೆಯು ವಿಫಲಗೊಂಡಿದೆ!"
+
+#. Type: error
+#. Description
+#: ../elilo-installer.templates:7001
+msgid "Running \"/usr/sbin/elilo\" failed with error code \"${ERRCODE}\"."
+msgstr ""
+"ಚಾಲ್ತಿಯಲ್ಲಿರುವ \"/usr/sbin/elilo\" failed with error code \"${ERRCODE}\"."

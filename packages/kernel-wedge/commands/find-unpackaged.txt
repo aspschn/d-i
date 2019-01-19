@@ -1,0 +1,5 @@
+find-unpackaged kernel-name
+
+List modules that are not packaged in a udeb. Pass the kernel name.
+
+Always return 0.

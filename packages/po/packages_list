@@ -1,0 +1,117 @@
+# List of packages with translatable material
+# which we want translators to work on
+#
+# ONLY i18n COORDINATORS or release managers should add packages here
+#
+# Developers, if your package has translatable material and
+# is not listed here, please get in touch with the i18n coordinators
+# and request for it to be added
+#
+# These packages are sorted by order of "importance". This is the order
+# which will be used in master PO files
+#
+# The full path of the package root (relative to packages/) must
+# be used here. DO NOT USE THE SOURCE PACKAGE NAME.
+
+# To exclude a package from the translation statistics that trigger the
+# display of warnings for incomplete translations, add a "-" after the
+# package name. See also: scripts/l10n/calc-release-status.
+
+# General d-i stuff
+main-menu
+debian-installer-utils
+anna
+
+# First half
+localechooser
+# No longer used
+# kbd-chooser
+console-setup
+cdrom-detect
+hw-detect
+netcfg
+choose-mirror
+net-retriever
+cdrom-retriever
+media-retriever
+
+# Generic and i386 partman
+partman-base
+partman-auto
+partman-basicmethods
+partman-partitioning
+partman-basicfilesystems
+partman-ext3
+partman-btrfs
+partman-jfs
+partman-xfs
+partman-target
+
+# Second half
+tzsetup
+clock-setup
+base-installer
+apt-setup
+user-setup
+cdebconf
+cdebconf-terminal
+pkgsel
+finish-install
+nobootloader
+
+# i386 bootloader
+grub-installer
+lilo-installer
+
+# powerpc partman and bootloader
+# # Not release architecture
+# partman-newworld
+# partman-prep
+# powerpc only : de-activated as it is no longer a release architecture
+# quik-installer
+# yaboot-installer
+# powerpc only : de-activated as it is no longer a release architecture
+# prep-installer
+
+# Optional components
+preseed
+rescue
+iso-scan
+installation-report
+cdrom-checker
+network-console
+# Not used
+# live-installer
+debian-installer-launcher
+partman-iscsi
+
+# Other architectures partman and bootloader
+# HPPA is disabled
+# partman-palo
+# Not used yet...or no longer used
+# partman-efi
+# kfreebsd is no longer a release architecture
+# partman-zfs
+# ia64 is no longer a release architecture
+# elilo-installer
+# Sparc is disabled
+# silo-installer
+arcboot-installer
+
+# Expert components
+mdcfg
+lvmcfg
+partman-md
+partman-lvm
+partman-auto-lvm
+partman-auto-raid
+partman-crypto
+partman-auto-crypto
+partman-nbd
+cdebconf-entropy
+
+# Rest
+s390-netdevice
+s390-dasd
+zipl-installer
+flash-kernel

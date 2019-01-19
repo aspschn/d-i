@@ -1,0 +1,154 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of el.po to
+# Greek messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+#
+# Translations from iso-codes:
+#     Translations taken from ICU SVN on 2007-09-09
+#   Panayotis Pakos <aeikineton@yahoo.com>
+# George Papamichelakis <george@step.gr>, 2004.
+# Emmanuel Galatoulas <galas@tee.gr>, 2004.
+# Konstantinos Margaritis <markos@debian.org>, 2004, 2006.
+# Greek Translation Team <debian-l10n-greek@lists.debian.org>, 2004, 2005.
+# quad-nrg.net <galaxico@quad-nrg.net>, 2005, 2006, 2007.
+# quad-nrg.net <yodesy@quad-nrg.net>, 2006, 2008.
+# QUAD-nrg.net <yodesy@quad-nrg.net>, 2006.
+# galaxico@quad-nrg.net <galaxico@quad-nrg.net>, 2009, 2011.
+# Emmanuel Galatoulas <galaxico@quad-nrg.net>, 2009, 2010, 2013, 2014.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#   Free Software Foundation, Inc., 2004.
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   QUAD-nrg.net <yodesy@quad-nrg.net>, 2006, 2010.
+#   Simos Xenitellis <simos@hellug.gr>, 2001.
+#   Konstantinos Margaritis <markos@debian.org>, 2004.
+#   Athanasios Lefteris <alefteris@gmail.com>, 2008, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: el\n"
+"Report-Msgid-Bugs-To: pkgsel@packages.debian.org\n"
+"POT-Creation-Date: 2018-06-27 14:00+0200\n"
+"PO-Revision-Date: 2018-11-29 08:08+0000\n"
+"Last-Translator: Vangelis Skarmoutsos <skarmoutsosv@gmail.com>\n"
+"Language-Team: el <debian-l10n-greek@lists.debian.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. should not be more than 55 columns
+#. pkgsel is the module that installs packages by running tasksel to
+#. select "tasks". Please use "install *software*" and not
+#. "install *packages*" which is less adapted for non technical users
+#: ../pkgsel.templates:1001
+msgid "Select and install software"
+msgstr "Επιλέξτε και εγκαταστήστε λογισμικό"
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when pkgsel is launched, before it installs packages
+#: ../pkgsel.templates:2001
+msgid "Setting up..."
+msgstr "Ρύθμιση..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when upgrading already installed packages.
+#: ../pkgsel.templates:4001
+msgid "Upgrading software..."
+msgstr "Αναβάθμιση του λογισμικού..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used when running tasksel to allow selecting packages
+#. Tasksel will then display its own screens
+#: ../pkgsel.templates:5001
+msgid "Running tasksel..."
+msgstr "Εκτέλεση του tasksel..."
+
+#. Type: text
+#. Description
+#. This appears in a progress bar when running pkgsel
+#. The text is used at the end of the installation phase while
+#. cleaning up pkgsel's stuff
+#: ../pkgsel.templates:6001
+msgid "Cleaning up..."
+msgstr "Τακτοποίηση..."
+
+#. Type: text
+#. Description
+#: ../pkgsel.templates:8001
+msgid "Running ${SCRIPT}..."
+msgstr "Εκτελείται το ${SCRIPT}..."
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "No automatic updates"
+msgstr "Χωρίς αυτόματες ενημερώσεις"
+
+#. Type: select
+#. Choices
+#: ../pkgsel.templates:9001
+msgid "Install security updates automatically"
+msgstr "Αυτόματη εγκατάσταση ενημερώσεων ασφαλείας"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid "Updates management on this system:"
+msgstr "Διαχείριση ενημερώσεων σε αυτό το σύστημα:"
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Applying updates on a frequent basis is an important part of keeping the "
+"system secure."
+msgstr ""
+"Η συχνή εφαρμογή ενημερώσεων είναι σημαντικό μέρος ώστε να διατηρείται το "
+"σύστημα ασφαλές."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"By default, security updates are not automatically installed, as security "
+"advisories should be reviewed before manual installation of the updates "
+"using standard package management tools."
+msgstr ""
+"Από προεπιλογή, οι ενημερώσεις ασφάλειας δεν εγκαθίστανται αυτόματα, καθώς "
+"οι γνωμοδοτήσεις ασφάλειας πρέπει να επανεξεταστούν πριν την χειροκίνητη "
+"εγκατάσταση των ενημερώσεων με τη χρήση τυπικών εργαλείων εγκατάστασης "
+"πακέτων."
+
+#. Type: select
+#. Description
+#: ../pkgsel.templates:9002
+msgid ""
+"Alternatively the unattended-upgrades package can be installed, which will "
+"install security updates automatically. Note however that automatic "
+"installation of updates may occasionally cause unexpected downtime of "
+"services provided by this machine in the rare cases where the update is not "
+"fully backward-compatible, or where the security advisory requires the "
+"administrator to perform some other manual operation."
+msgstr ""
+"Εναλλακτικά μπορεί να εγκατασταθεί το πακέτο unattended-upgrades, το οποίο "
+"θα εγκαθιστά τις ενημερώσεις ασφάλειας αυτόματα. Παρόλο αυτά, σημειώστε ότι "
+"η αυτόματη εγκατάσταση ενημερώσεων μπορεί περιστασιακά να προκαλέσει μη "
+"αναμενόμενη διακοπή λειτουργίας υπηρεσιών που παρέχονται από αυτή τη μηχανή, "
+"στην σπάνια περίπτωση όπου η ενημέρωση δεν είναι πλήρως συμβατή-προς-τα-πίσω "
+"ή όπου η προειδοποίηση ασφάλειας απαιτεί από τον διαχειριστή να εκτελέσει "
+"κάποια άλλη χειροκίνητη λειτουργία."

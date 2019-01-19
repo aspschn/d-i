@@ -1,0 +1,31 @@
+Source: cdebconf-terminal
+Priority: optional
+Section: debian-installer
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Jérémy Bobbio <lunar@debian.org>, Colin Watson <cjwatson@debian.org>, Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9~), po-debconf (>= 0.5.0),
+ libdebian-installer4-dev, libdebconfclient0-dev (>= 0.146),
+ libnewt-dev,
+ libgtk2.0-dev (>= 2.24), libvte-dev (>> 1:0.25.0),
+# libgtk-3-dev, libvte-2.91-dev,
+ dh-autoreconf
+Vcs-Browser: https://salsa.debian.org/installer-team/cdebconf-terminal
+Vcs-Git: https://salsa.debian.org/installer-team/cdebconf-terminal.git
+
+Package: cdebconf-gtk-terminal
+Architecture: any
+Depends: cdebconf-gtk-udeb, fonts-dejavu-mono-udeb, ${shlibs:Depends}, ${misc:Depends}
+Provides: cdebconf-terminal
+Package-Type: udeb
+Description: cdebconf gtk plugin displaying a terminal
+ cdebconf plugin to display a terminal inside the debian-installer graphical
+ frontend.
+
+Package: cdebconf-newt-terminal
+Architecture: any
+Depends: cdebconf-newt-udeb (>= 0.146), ${shlibs:Depends}, ${misc:Depends}
+Provides: cdebconf-terminal
+Package-Type: udeb
+Description: cdebconf newt plugin to provide a clean terminal
+ cdebconf plugin to run a program in a clean terminal environment, shutting
+ down newt to do so.

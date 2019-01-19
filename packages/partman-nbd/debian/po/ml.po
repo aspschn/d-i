@@ -1,0 +1,198 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of Debian Installer Level 1 - sublevel 1 to malayalam
+# Copyright (c)  2006-2010 Debian Project
+# Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, 2006-2010.
+# Santhosh Thottingal <santhosh00@gmail.com>, 2006.
+# Sreejith :: ശ്രീജിത്ത് കെ <sreejithk2000@gmail.com>, 2006.
+# Credits:  V Sasi Kumar, Sreejith N, Seena N, Anivar Aravind, Hiran Venugopalan and Suresh P
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt#
+# Translations from iso-codes:
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Praveen A <pravi.a@gmail.com>, 2006, 2008.
+# Ani Peter <peter.ani@gmail.com>, 2009
+# Anish Sheela <aneesh.nl@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: Debian Installer Level 1\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2013-09-30 12:04+0530\n"
+"Last-Translator: Anish Sheela <aneesh.nl@gmail.com>\n"
+"Language-Team: Swatantra Malayalam Computing <discuss@lists.smc.org.in>\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "ശൃഖല ബ്ലോക്ക് ഉപകരണം ക്രമീകരിയ്ക്കുക"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "NBD ക്രമീകരണ നടപടി:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "ഇപ്പോള് ${NUMBER} ഉപകരണങ്ങള്‍ ബന്ധിപ്പിച്ചിട്ടുണ്ട്."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "ശൃഖല ബ്ലോക്ക് ഉപകരണ സേവകന്‍:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr "nbd സേവകന്‍ പ്രവര്‍ത്തിക്കുന്ന സിസ്റ്റത്തിന്റെ IP വിലാസമോ ഹോസ്റ്റ് നാമമോ നല്‍കുക."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr ""
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "ശൃഖല ബ്ലോക്ക് ഉപകരണ നോഡ്:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"ദയവായി നിങ്ങള്‍ക്ക് ബന്ധിപ്പിക്കേണ്ട അല്ലെങ്കില്‍ വിച്ഛേദിക്കേണ്ട NBD ഉപകരണ നോഡ് തെരഞ്ഞെടുക്കുക."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "NBD സേവകനിലേക്ക് കണക്ട് ചെയ്യുന്നതില്‍ പരാജയം"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+#, fuzzy
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"nbd സേവകനിലേക്ക് ബന്ധിപ്പിക്കാനാകുന്നില്ല. ഹോസ്റ്റ്, പോര്‍ട്ട്, പേര് തുടങ്ങിയവ കൊടുത്തത് ശരിയാണോ "
+"എന്ന് നോക്കു, ആ ഹോസ്റ്റിലും പോര്‍ട്ടിലും (അല്ലെങ്കില്‍ ആ പേരില്‍) nbd സേവകന്‍ പ്രവര്‍ത്തിക്കുന്നോ, "
+"ശ്രംഖല ശരിയായി ക്രമീകരിച്ചോ തുടങ്ങിയവ ദയവായി ഉറപ്പാക്കിയിട്ട് വീണ്ടും ശ്രമീക്കു."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "ഇനി കൂടുതല്‍ ശ്രംഘല ബ്ലോക്ക് ഉപകരണങ്ങളില്ല"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"ഒന്നുകില്‍ എല്ലാ NBD ഉപകരണ നൊഡുകളും ഉപയോഗത്തിലാണ്, അല്ലെങ്കില്‍ ഉപകരണ നോഡുകള്‍ "
+"കണ്ടുപിടിക്കുന്നതില്‍ എന്തോ പിശക് സംഭവിച്ചു."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"ഇപ്പോള്‍ ക്രമീകരിച്ചിരിക്കുന്ന ഒരെണ്ണം മാറ്റാതെ കൂടുതല്‍ NBD ഉപകരണ നോഡുകള്‍ ബന്ധിപ്പിക്കാന്‍ "
+"പറ്റില്ല."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "ബന്ധിപ്പിച്ച ശ്രംഘല ബ്ലോക്ക് ഉപകരണങ്ങളൊന്നും കണ്ടില്ല"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"ഇപ്പോള്‍ ശ്രംഘല ബ്ലോക്ക് ഉപകരണങ്ങളൊന്നും ഒരു സേവകനിലും ബന്ധിപ്പിച്ചിട്ടില്ല. അതുകൊണ്ട്, അതൊന്നും "
+"വിച്ഛേദിക്കാനാകില്ല."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "ശൃഖല ബ്ലോക്ക് ഉപകരണം ബന്ധിപ്പിക്കുക"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "ശൃഖല ബ്ലോക്ക് ഉപകരണം വിച്ഛേദിക്കുക"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "തീര്‍ത്ത് വിഭജകനിലേക്ക് തിരിച്ച് പോകുക"

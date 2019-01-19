@@ -1,0 +1,311 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of ta.po to Tamil
+# Tamil messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+#
+# Translations from iso-codes:
+# drtvasudevan <agnihot3@gmail.com>, 2006.
+# Damodharan Rajalingam <rdamodharan@gmail.com>, 2006.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2008, 2010.
+# Dr,T,Vasudevan <agnihot3@gmail.com>, 2010.
+#   Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2008, 2011.
+#   Dwayne Bailey <dwayne@translate.org.za>, 2009.
+# I. Felix <ifelix25@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: ta\n"
+"Report-Msgid-Bugs-To: iso-scan@packages.debian.org\n"
+"POT-Creation-Date: 2017-11-29 05:17+0000\n"
+"PO-Revision-Date: 2012-01-22 06:31+0530\n"
+"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
+"Language-Team: Tamil <ubuntu-tam@lists.ubuntu.com>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: text
+#. Description
+#. Main menu item
+#. :sl1:
+#: ../iso-scan.templates:1001
+msgid "Scan hard drives for an installer ISO image"
+msgstr "நிறுவி ஐஎஸ்ஓ பிம்பம் உள்ளதா என வன்தட்டுக்களை வருடு"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:4001
+msgid "Detecting hardware to find hard drives"
+msgstr "வன் தட்டுக்களை கண்டறிய வன் பொருட்களை கண்டறிகிறது."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:5001
+msgid "Searching drives for an installer ISO image"
+msgstr "நிறுவி ஐஎஸ்ஓ பிம்பம் உள்ளதா என இயக்கிகளை தேடுகிறது."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:6001
+msgid "Mounting ${DRIVE}..."
+msgstr "${DRIVE} ஏற்றப்படுகிறது..."
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:7001
+msgid "Scanning ${DRIVE} (in ${DIRECTORY})..."
+msgstr "${DRIVE} ஐ (${DIRECTORY} இல்) வருடுகிறது..."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid "Do full disk search for installer ISO image?"
+msgstr "நிறுவி ஐஎஸ்ஓ பிம்பம் உள்ளதா என அனைத்து தட்டுகள் முழவதும் தேடவா?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:8001
+msgid ""
+"The quick scan for installer ISO images, which looks only in common places, "
+"did not find an installer ISO image. It's possible that a more thorough "
+"search will find the ISO image, but it may take a long time."
+msgstr ""
+"வழக்கமான இடங்களை பார்க்கும் விரைவு வருடலில் நிறுவி ஐஎஸ்ஓ பிம்பம் ஏதும் கிடைக்கவில்லை. "
+"நுணுக்கமான தேடலில் அது கிடைக்கலாம். ஆனால் அது அதிக நேரம் எடுத்துக் கொள்ளும்."
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+msgid "Failed to find an installer ISO image"
+msgstr "நிறுவி ஐஎஸ்ஓ பிம்பம் கண்டு பிடித்தல் தோல்வியுற்றது."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001
+msgid ""
+"No installer ISO images were found. If you downloaded the ISO image, it may "
+"have a bad filename (not ending in \".iso\"), or it may be on a file system "
+"that could not be mounted."
+msgstr ""
+"நிறுவி ஐஎஸ்ஓ பிம்பம் ஏதும் கிடைக்கவில்லை. நீங்கள் அதை தரவிறக்கியிருந்தால் ( \".iso\" இல் "
+"முடியாத) தவறான கோப்புப் பெயருடன் இருக்கலாம். அல்லது ஏற்ற இயலாத கோப்பு அமைப்பில் "
+"இருக்கலாம். "
+
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:9001 ../iso-scan.templates:10001
+#: ../iso-scan.templates:11001
+msgid ""
+"You'll have to use an alternative installation method, select another device "
+"to look for ISO image, or try again after you've fixed it."
+msgstr ""
+"நீங்கள் ஒன்று மாற்று நிறுவல் முறையை கையாள வேண்டும். இன்னொரு சாதனத்தில் ஐசோ பிம்பத்தை தேட "
+"வேண்டும் . அல்லது சரி செய்த பின் மீண்டும் முயற்சிக்க வேண்டும்."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:10001
+msgid ""
+"While one or more possible ISO images were found, they could not be mounted. "
+"The ISO image you downloaded may be corrupt."
+msgstr ""
+"ஒன்று அல்லது அதிக ஐஎஸ்ஓ பிம்பங்கள் போன்ற சில கிடைக்கப் பெற்றன. ஆனால் அவற்றை ஏற்ற இயவில்லை. "
+"நீங்கள் தரவிறக்கிய பிம்பம் சிதைந்து இருக்கலாம்."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid "No installer ISO image found"
+msgstr "நிறுவி ஐஎஸ்ஓ பிம்பம் ஏதும் கிடைக்கவில்லை."
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:11001
+msgid ""
+"While one or more possible ISO images were found, they did not look like "
+"valid installer ISO images."
+msgstr ""
+"ஒன்று அல்லது அதிக ஐஎஸ்ஓ பிம்பங்கள் கிடைத்தன. ஆனால் அவை செல்லுபடியாகும் நிறுவி ஐஎஸ்ஓ "
+"பிம்பங்கள் போல தென்படவில்லை."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid "Successfully mounted ${SUITE} installer ISO image"
+msgstr "${SUITE} நிறுவி ஐஎஸ்ஓ பிம்பம் வெற்றிகரமாக ஏற்றப் பட்டது."
+
+#. Type: note
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:12001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}) will be used as the "
+"installation ISO image."
+msgstr ""
+"${DEVICE} இல் உள்ள ${FILENAME} ஐஎஸ்ஓ கோப்பு (${SUITE}) நிறுவி ஐஎஸ்ஓ பிம்பமாக பயன் "
+"படுத்தப் படும்."
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "All detected devices"
+msgstr "கண்டுபிடிக்கப்பட்ட சாதனங்களும்"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:14001
+msgid "Enter device manually"
+msgstr "கைமுறையாக சாதனத்தை உள்ளீடு செய்ய"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid "Device or partition to search for installation ISO(s):"
+msgstr "சாதனம் அல்லது பகிர்வு, நிறுவல் ஐசோவை (ஐசோக்களை) தேட:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:14002
+msgid ""
+"You can select a device, manually specify a non-detected device, or rescan "
+"available devices (useful for slow USB devices)."
+msgstr ""
+"நீங்கள் ஒரு சாதனத்தை தேர்ந்தெடுக்கலாம், கைமுறையாக கண்டுபிடிக்காத சாதனத்தை குறீப்பிடலாம், "
+"அல்லது கிடைக்கும் சாதங்களை மீண்டும் வருடலாம். (மெதுவான யூஎஸ்பி சாதனங்களுக்கு பயனாகும்)."
+
+#. Type: string
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:15001
+msgid "Device name:"
+msgstr "சாதனம்  பெயர்:"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../iso-scan.templates:16001
+msgid "Full search"
+msgstr "முழு தேடல்"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid "ISO file to use:"
+msgstr "பயன்படுத்த வேண்டிய ஐசோ கோப்பு:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:16002
+msgid ""
+"One or multiple ISO files have been detected on the selected device(s). "
+"Please choose which one you want to use, or ask for a more thorough search."
+msgstr ""
+"தேர்ந்தெடுத்த சாதனம்(ங்களில்) ஒன்றூக்கு மேற்பட்ட ஐசோ கோப்புகள் காண்கின்றன. உங்களுக்கு "
+"பயன்படுத்த விருப்பமானதை தேர்ந்தெடுக்கவும். அல்லது இன்னும் துல்லிய தேடலுக்கு கேட்கவும்."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid "Is ISO file ${FILENAME} the correct image for installation?"
+msgstr "ஐசோ கோப்பு ${FILENAME} நிறுவ சரியான பிம்பமா?"
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"The ISO file ${FILENAME} on ${DEVICE} (${SUITE}, code ${CODENAME}, self-"
+"described as '${DESCRIPTION}') will be used as the installation ISO image."
+msgstr ""
+"${DEVICE}  (${SUITE} code ${CODENAME} இல் உள்ள '${DESCRIPTION}') என்று "
+"சொல்லிக்கொள்லும் ${FILENAME} ஐஎஸ்ஓ கோப்பு நிறுவி ஐஎஸ்ஓ பிம்பமாக பயன் படுத்தப் படும்."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:17001
+msgid ""
+"If multiple ISO files exist on the same installer drive, you may select "
+"which one you want to use."
+msgstr ""
+"ஒரே நிறுவல் சாதனத்தில் ஒன்றுக்கு மேற்பட்ட ஐசோக்கள் இருப்பின் நீங்கள் நிறுவ விரும்பும் "
+"பிம்பத்தை தேர்ந்தெடுக்கலாம்."
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid "Copy the ISO image into RAM before mounting it?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"There is enough available memory to be able to copy the ISO image into RAM."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Choosing this option allows reusing the disk hosting the ISO image. If you "
+"don't do it, the disk will be actively used to access the ISO image and it "
+"can't be partitioned by the installer."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../iso-scan.templates:18001
+msgid ""
+"Note however that if you overwrite the disk containing the ISO image, you "
+"should not reboot before the end of the installation as you will not be able "
+"to restart the installer since the ISO image will be gone from the hard disk "
+"and memory."
+msgstr ""
+
+#. Type: text
+#. Description
+#. Main menu item
+#: ../load-iso.templates:1001
+msgid "Load installer components from an installer ISO"
+msgstr "ஒரு நிறுவி ஐஎஸ்ஓ பிம்பத்திலிருந்து நிறுவி பாகங்களை ஏற்றுக."

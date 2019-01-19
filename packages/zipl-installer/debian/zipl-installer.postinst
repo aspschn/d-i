@@ -1,0 +1,81 @@
+#!/bin/sh -e
+
+. /usr/share/debconf/confmodule
+
+log() {
+	logger -t zipl-installer "$@"
+}
+
+info() {
+	log "info: $@"
+}
+
+findfs() {
+	mount | grep "on /target${1%/} " | tail -n1 | cut -d' ' -f1
+}
+
+rootfs_devfs="$(findfs /)"
+rootfs="$(mapdevfs $rootfs_devfs)"
+log "Root filesystem on ${rootfs} (${rootfs_devfs})"
+
+PARAMETER="root=${rootfs}"
+if rootlvm="$(lvm lvdisplay -C -ovg_name,lv_name --noheadings ${rootfs})"
+then
+    info "Root filesystem is on LV (${rootlvm})"
+elif rootuuid="$(block-attr --uuid ${rootfs})"
+then
+    info "Root filesystem UUID is ${rootuuid}"
+    PARAMETER="root=UUID=${rootuuid}"
+fi
+
+subvol="$(btrfs subvolume show /target 2>/dev/null | sed -n '2s/.*:[\t ]*//p')"
+if [ -n "$subvol" ]
+then
+    info "Root filesystem on btrfs subvolume ${subvol}"
+    PARAMETER="$PARAMETER rootflags=subvol=${subvol}"
+fi
+
+cat > /target/etc/zipl.conf << EOF
+[defaultboot]
+defaultmenu = menu
+
+:menu
+target = /boot
+1 = debian
+2 = old
+default = 1
+prompt = 1
+timeout = 10
+
+[debian]
+target = /boot
+image = /boot/vmlinuz
+ramdisk = /boot/initrd.img
+parameters = $PARAMETER
+
+[old]
+target = /boot
+image = /boot/vmlinuz.old
+ramdisk = /boot/initrd.img.old
+parameters = $PARAMETER
+optional = 1
+EOF
+
+sed -e 's/^do_bootloader.*$/do_bootloader = yes/' < /target/etc/kernel-img.conf > /target/etc/kernel-img.conf.$$
+mv /target/etc/kernel-img.conf.$$ /target/etc/kernel-img.conf
+
+mount -o bind /proc /target/proc || true
+mount -o bind /sys /target/sys || true
+mount -o bind /dev /target/dev || true
+
+rc=0
+if ! log-output -t zipl-installer chroot /target /sbin/zipl -V; then
+       # Unmount the bound file systems before exiting
+       rc=1
+fi
+
+umount /target/dev || true
+umount /target/sys || true
+umount /target/proc || true
+
+exit $rc

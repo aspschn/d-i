@@ -1,0 +1,195 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: partman-nbd@packages.debian.org\n"
+"POT-Creation-Date: 2015-10-28 22:02+0000\n"
+"PO-Revision-Date: 2018-02-08 14:24+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#. Type: text
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:1001
+msgid "Configure the Network Block Device"
+msgstr "Танзими дастгоҳи чандқабатаи шабакавӣ"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "NBD configuration action:"
+msgstr "Амали танзими NBD:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:2001
+msgid "There are currently ${NUMBER} devices connected."
+msgstr "Дар айни ҳол ${NUMBER} дастгоҳ пайваст шудааст."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid "Network Block Device server:"
+msgstr "Хидматрасони дастгоҳи чандқабатаи шабакавӣ:"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:3001
+msgid ""
+"Please enter the host name or the IP address of the system running nbd-"
+"server."
+msgstr ""
+"Лутфан, номи мизбон ё нишонии IP-и низоми хидматрасони NBD-ро ворид намоед."
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid "Name for NBD export"
+msgstr "Ном барои содироти NBD"
+
+#. Type: string
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:4001
+msgid ""
+"Please enter the NBD export name needed to access nbd-server. The name "
+"entered here should match an existing export on the server."
+msgstr ""
+"Лутфан, барои пайдо кардани дастрасӣ ба хидматрасони NBD (nbd-server) номи "
+"содиротии NBD-ро ворид намоед. Номе, ки дар ин ҷо ворид карда мешавад, бояд "
+"ба содири мавҷудбуда дар хидматрасон мувофиқат кунад."
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid "Network Block Device device node:"
+msgstr "Гиреҳи дастгоҳи чандқабатаи шабакавӣ:"
+
+#. Type: select
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:5001
+msgid ""
+"Please select the NBD device node that you wish to connect or disconnect."
+msgstr ""
+"Лутфан, гиреҳи дастгоҳи NBD-ро, ки мехоҳед пайваст ё қатъ намоед, интихоб "
+"намоед."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid "Failed to connect to the NBD server"
+msgstr "Ба хидматрасони NBD пайваст карда натавонист"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:6001
+msgid ""
+"Connecting to the nbd-server failed. Please ensure that the host and the "
+"export name which you entered are correct, that the nbd-server process is "
+"running on that host, that the network is configured correctly, and retry."
+msgstr ""
+"Пайвастшавӣ бо хидматрасони nbd қатъ шудааст. Лутфан, мутмаин шавед, ки шумо "
+"номи порт ва мизбонеро, ки хидматрасони nbd дар он порт ва мизбони шабака (ё "
+"номи шабака) иҷро шуда истодааст, дуруст ворид кардед ва баъд амалро аз нав "
+"кӯшиш намоед."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid "No more Network Block Device nodes left"
+msgstr "Ягон гиреҳи дастгоҳи чандқабатаи шабакавии дигар вуҷуд надорад"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"Either all available NBD device nodes are in use or something went wrong "
+"with the detection of the device nodes."
+msgstr ""
+"Чунин менамояд, ки ҳамаи гиреҳҳои дастгоҳи NBD-и дастрас машғуланд ё низоми "
+"муайянкунии гиреҳҳои дастгоҳ кор намекунад."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:7001
+msgid ""
+"No more NBD device nodes can be configured until a configured one is "
+"disconnected."
+msgstr ""
+"Ягон гиреҳи дастгоҳи NBD-и дигар танзим карда намешавад, то вақте ки "
+"пайвасти як дастгоҳи танзимшуда қатъ нашавад."
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid "No connected Network Block Device nodes were found"
+msgstr "Ягон гиреҳи дастгоҳи чандқабатаи шабакавии пайвастшуда ёфт нашуд"
+
+#. Type: error
+#. Description
+#. :sl4:
+#: ../partman-nbd.templates:8001
+msgid ""
+"There are currently no Network Block Device nodes connected to any server. "
+"As such, you can't disconnect any of them."
+msgstr ""
+"Ягон гиреҳи дастгоҳи чандқабатаи шабакавии ба ягон хидматрасон пайвастшуда "
+"ёфт нашуд. Бинобар ин шумо наметавонед пайвасти дастгоҳеро қатъ намоед."
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:9001
+msgid "Connect a Network Block Device"
+msgstr "Пайваст кардан ба дастгоҳи чандқабатаи шабакавӣ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:10001
+msgid "Disconnect a Network Block Device"
+msgstr "Қатъ кардани пайвасти дастгоҳи чандқабатаи шабакавӣ"
+
+#. Type: text
+#. Description
+#. :sl4:
+#. Menu entry
+#. Use infinite form
+#: ../partman-nbd.templates:11001
+msgid "Finish and return to the partitioner"
+msgstr "Ба анҷом расонидан ва бозгашт ба василаи қисмбандӣ"
